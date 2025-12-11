@@ -2,44 +2,41 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <!-- 关键：禁止缩放，适配刘海屏 -->
+    <!-- 核心：禁止缩放，适配刘海屏，全屏显示 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     
-    <!-- PWA 核心配置 -->
+    <!-- PWA 标准配置 -->
     <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#ffffff">
     
-    <!-- iOS 专用配置 (苹果手机必须加这些才能全屏) -->
+    <!-- iOS 专用配置 -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="背词神器">
     <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/2232/2232688.png">
-    
+
     <title>背词神器</title>
+    
+    <!-- 引入资源 -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     
-    <!-- 保持之前的 style 样式不变 -->
     <style>
-        /* ... 这里保留你之前复制的样式代码 ... */
-        /* 如果你丢失了样式，请告诉我，我再发一遍完整版 */
-    </style>
-</head>
         :root {
-            --primary: #007AFF;       /* iOS Blue */
+            --primary: #007AFF;
             --bg: #F2F2F7;
-            --card-bg: #FFFFFF;
+            --card: #FFFFFF;
             --text-main: #000000;
             --text-sub: #8E8E93;
-            --separator: #C6C6C8;
-            --safe-bottom: env(safe-area-inset-bottom, 20px);
             --safe-top: env(safe-area-inset-top, 20px);
-            --radius: 16px;
+            --safe-bottom: env(safe-area-inset-bottom, 20px);
+            --shadow: 0 4px 12px rgba(0,0,0,0.05);
         }
 
         * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; user-select: none; }
         
         body {
-            margin: 0; padding: 0;
+            margin: 0; 
             font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", Helvetica, Arial, sans-serif;
             background-color: var(--bg);
             color: var(--text-main);
@@ -48,259 +45,215 @@
             display: flex; flex-direction: column;
         }
 
-        #app { height: 100%; display: flex; flex-direction: column; width: 100%; position: relative; }
+        #app { height: 100%; display: flex; flex-direction: column; width: 100%; }
 
-        /* --- 顶部栏 --- */
+        /* 顶部导航 */
         .header {
-            height: 44px; padding-top: var(--safe-top);
-            display: flex; align-items: center; justify-content: center;
+            padding-top: var(--safe-top);
+            height: calc(44px + var(--safe-top));
             background: rgba(255,255,255,0.9); backdrop-filter: blur(10px);
+            display: flex; align-items: center; justify-content: center;
+            font-weight: 600; font-size: 17px;
             border-bottom: 0.5px solid rgba(0,0,0,0.1);
-            font-size: 17px; font-weight: 600; z-index: 10;
+            position: fixed; top: 0; width: 100%; z-index: 10;
         }
-        .header-btn { position: absolute; right: 15px; top: calc(var(--safe-top) + 10px); font-size: 20px; color: var(--primary); }
+        .header-icon { position: absolute; right: 15px; top: calc(var(--safe-top) + 10px); font-size: 22px; color: var(--primary); }
 
-        /* --- 主视口 --- */
+        /* 主内容区 */
         .viewport {
-            flex: 1; overflow-y: auto; overflow-x: hidden;
-            padding: 15px; padding-bottom: 90px;
+            flex: 1; overflow-y: auto; 
+            padding: calc(44px + var(--safe-top) + 15px) 15px 80px 15px;
             -webkit-overflow-scrolling: touch;
         }
 
-        /* --- 学习卡片 (核心重构) --- */
-        .study-area {
-            height: 100%; display: flex; flex-direction: column;
+        /* --- 学习页面 --- */
+        .study-card {
+            background: var(--card); border-radius: 16px; padding: 40px 20px;
+            box-shadow: var(--shadow); min-height: 50vh;
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            transition: all 0.2s; position: relative;
         }
         
-        .progress-info {
-            display: flex; justify-content: space-between; font-size: 13px; color: var(--text-sub);
-            margin-bottom: 10px; padding: 0 5px;
-        }
-
-        .word-card {
-            flex: 1;
-            background: var(--card-bg);
-            border-radius: var(--radius);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-            display: flex; flex-direction: column;
-            align-items: center; justify-content: center;
-            padding: 30px 20px;
-            margin-bottom: 20px;
-            transition: all 0.2s ease;
-            position: relative;
-        }
-
-        /* 单词部分 */
-        .word-text { font-size: 42px; font-weight: 800; text-align: center; margin-bottom: 10px; line-height: 1.2; }
-        .tap-hint { font-size: 14px; color: var(--primary); margin-top: 20px; background: #eef5ff; padding: 8px 16px; border-radius: 20px; }
-
-        /* 释义部分 (点击后显示) */
-        .meaning-container {
-            width: 100%;
-            margin-top: 30px;
-            padding-top: 30px;
-            border-top: 1px solid #eee;
-            text-align: left;
-            animation: fadeIn 0.3s ease;
-        }
-        .meaning-text { font-size: 18px; line-height: 1.6; color: #333; white-space: pre-wrap; }
+        .word-title { font-size: 42px; font-weight: 800; text-align: center; margin-bottom: 10px; line-height: 1.1; }
+        .tap-tip { font-size: 14px; color: var(--primary); background: #eef5ff; padding: 6px 12px; border-radius: 20px; margin-top: 20px; }
         
-        /* 底部操作按钮 */
+        /* 释义区域 (点击后出现) */
+        .meaning-area {
+            width: 100%; margin-top: 30px; padding-top: 25px; border-top: 1px solid #f0f0f0;
+            text-align: left; animation: slideDown 0.3s ease;
+        }
+        .meaning-text { font-size: 18px; line-height: 1.6; color: #333; }
+
+        /* 底部按钮 (固定) */
         .action-bar {
             position: fixed; bottom: calc(60px + var(--safe-bottom)); left: 15px; right: 15px;
-            display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;
-            z-index: 20;
+            display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; z-index: 20;
         }
-        .btn-action {
-            height: 54px; border: none; border-radius: 14px; color: white; font-weight: 600; font-size: 16px;
-            display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1); cursor: pointer;
+        .btn {
+            border: none; height: 56px; border-radius: 12px; color: white; font-weight: 600; font-size: 16px;
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15); cursor: pointer;
         }
-        .btn-action span { font-size: 10px; font-weight: normal; opacity: 0.9; }
-        .btn-action:active { transform: scale(0.96); }
+        .btn:active { transform: scale(0.96); }
+        .btn span { font-size: 10px; font-weight: normal; opacity: 0.9; margin-top: 2px; }
+        
+        .bg-red { background: #FF3B30; }
+        .bg-orange { background: #FF9500; }
+        .bg-green { background: #34C759; }
+        .bg-blue { background: #007AFF; }
 
-        .btn-1 { background: #FF3B30; } /* Red */
-        .btn-2 { background: #FF9500; } /* Orange */
-        .btn-3 { background: #34C759; } /* Green */
-        .btn-4 { background: #007AFF; } /* Blue */
+        /* --- 书架页面 --- */
+        .stat-board {
+            display: flex; gap: 10px; margin-bottom: 20px;
+        }
+        .stat-box { flex: 1; background: white; padding: 15px; border-radius: 12px; text-align: center; box-shadow: var(--shadow); }
+        .stat-val { display: block; font-size: 24px; font-weight: 800; color: var(--text-main); margin-bottom: 4px; }
+        .stat-lbl { font-size: 11px; color: var(--text-sub); }
 
-        /* --- 书架 --- */
-        .book-list { display: flex; flex-direction: column; gap: 12px; }
         .book-item {
-            background: white; padding: 18px; border-radius: 14px; display: flex; align-items: center;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05); position: relative;
+            background: white; padding: 18px; border-radius: 14px; margin-bottom: 12px;
+            display: flex; align-items: center; box-shadow: 0 1px 3px rgba(0,0,0,0.05); position: relative;
         }
         .book-item.active { border: 2px solid var(--primary); background: #f5f9ff; }
-        .book-icon { font-size: 28px; margin-right: 15px; color: var(--primary); }
-        .book-info h3 { margin: 0; font-size: 17px; font-weight: 600; }
-        .book-info p { margin: 4px 0 0; font-size: 13px; color: var(--text-sub); }
-        .check-icon { position: absolute; right: 15px; color: var(--primary); font-size: 22px; }
-        .del-btn { position: absolute; right: 15px; color: #ff3b30; font-size: 20px; padding: 5px; opacity: 0.6; }
-
-        .add-btn {
-            margin-top: 20px; background: white; border: 1.5px dashed #C6C6C8; color: var(--text-sub);
-            padding: 15px; border-radius: 14px; text-align: center; font-size: 15px; font-weight: 500;
+        .book-icon { font-size: 28px; color: var(--primary); margin-right: 15px; }
+        .book-info h3 { margin: 0 0 4px; font-size: 16px; }
+        .book-info p { margin: 0; font-size: 12px; color: var(--text-sub); }
+        
+        .upload-box {
+            margin-top: 20px; border: 2px dashed #C6C6C8; border-radius: 14px; padding: 20px;
+            text-align: center; color: var(--text-sub); background: white;
         }
 
-        /* --- 底部 Tab --- */
+        /* 底部导航 Tab */
         .tab-bar {
             position: fixed; bottom: 0; width: 100%; height: calc(50px + var(--safe-bottom));
-            background: rgba(255,255,255,0.95); backdrop-filter: blur(20px); border-top: 0.5px solid rgba(0,0,0,0.15);
-            display: flex; align-items: flex-start; justify-content: space-around; padding-top: 8px; z-index: 50;
+            background: rgba(255,255,255,0.95); backdrop-filter: blur(20px);
+            border-top: 0.5px solid rgba(0,0,0,0.15);
+            display: flex; padding-bottom: var(--safe-bottom); z-index: 50;
         }
-        .tab-item { display: flex; flex-direction: column; align-items: center; color: #999; width: 60px; }
+        .tab-item { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #999; font-size: 10px; }
         .tab-item i { font-size: 24px; margin-bottom: 2px; }
-        .tab-item span { font-size: 10px; font-weight: 500; }
         .tab-item.active { color: var(--primary); }
 
-        /* 状态页 */
-        .stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-        .stat-box { background: white; padding: 20px; border-radius: 14px; text-align: center; box-shadow: 0 2px 6px rgba(0,0,0,0.03); }
-        .stat-val { font-size: 28px; font-weight: 800; display: block; margin-bottom: 5px; color: var(--text-main); }
-        .stat-lbl { font-size: 12px; color: var(--text-sub); }
-
         /* 空状态 */
-        .empty-view { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 60vh; color: var(--text-sub); text-align: center; }
-        .empty-btn { margin-top: 20px; padding: 10px 24px; background: var(--primary); color: white; border-radius: 20px; border: none; font-size: 15px; }
+        .empty { text-align: center; margin-top: 30%; color: var(--text-sub); }
+        .empty-btn { margin-top: 20px; padding: 10px 24px; background: var(--primary); color: white; border: none; border-radius: 20px; font-size: 15px; }
 
-        /* 动画 */
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes slideDown { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
     </style>
 </head>
 <body>
     <div id="app">
-        <!-- 顶部 -->
+        <!-- 标题栏 -->
         <div class="header">
             <span>{{ pageTitle }}</span>
-            <!-- 学习设置入口 -->
-            <i v-if="currentTab==='library'" class="ri-settings-3-line header-btn" @click="showSettings"></i>
+            <i v-if="currentTab==='library'" class="ri-settings-3-line header-icon" @click="setLimit"></i>
         </div>
 
-        <!-- 主内容 -->
+        <!-- 滚动视图 -->
         <div class="viewport">
             
             <!-- 1. 学习页 -->
-            <div v-if="currentTab === 'study'" class="study-area">
-                <!-- 无书状态 -->
-                <div v-if="!currentBookId" class="empty-view">
-                    <i class="ri-book-read-line" style="font-size: 60px; margin-bottom: 15px; opacity:0.3"></i>
-                    <p>还没有选择单词书</p>
-                    <button class="empty-btn" @click="currentTab='library'">去选择</button>
+            <div v-if="currentTab === 'study'">
+                <!-- 情况A：没选书 -->
+                <div v-if="!currentBookId" class="empty">
+                    <i class="ri-book-open-line" style="font-size: 64px; opacity: 0.3;"></i>
+                    <p>请先到书架选择一本书</p>
+                    <button class="empty-btn" @click="currentTab='library'">去书架</button>
                 </div>
 
-                <!-- 今日完成 -->
-                <div v-else-if="todayQueue.length === 0" class="empty-view">
-                    <div style="width:80px; height:80px; background:#e8f5e9; border-radius:50%; display:flex; align-items:center; justify-content:center; margin-bottom:20px">
-                        <i class="ri-check-line" style="font-size:40px; color:#34C759"></i>
+                <!-- 情况B：今日完成 -->
+                <div v-else-if="todayQueue.length === 0" class="empty">
+                    <div style="background:#e8f5e9; width:80px; height:80px; border-radius:50%; margin:0 auto 20px; display:flex; align-items:center; justify-content:center;">
+                        <i class="ri-check-line" style="font-size: 40px; color: #34C759;"></i>
                     </div>
-                    <h3>今日打卡成功</h3>
-                    <p>已完成今日新词和复习任务</p>
+                    <h3>今日任务完成</h3>
+                    <p>休息一下，明天继续！</p>
                 </div>
 
-                <!-- 学习卡片 -->
-                <template v-else>
-                    <div class="progress-info">
-                        <span>待学: {{ todayQueue.length }}</span>
-                        <span>{{ currentBookName }}</span>
+                <!-- 情况C：背单词 -->
+                <div v-else class="study-card" @click="reveal">
+                    <div style="position:absolute; top:15px; right:15px; font-size:12px; color:#999; font-weight:bold">
+                        {{ queueType }}
                     </div>
+                    <div class="word-title">{{ currentWord.word }}</div>
+                    
+                    <!-- 提示语（未展开时） -->
+                    <div v-if="!isRevealed" class="tap-tip">点击查看释义</div>
 
-                    <!-- 单词卡 (点击整个区域展开) -->
-                    <div class="word-card" @click="reveal">
-                        <div class="word-text">{{ currentWord.word }}</div>
-                        
-                        <!-- 未展开时显示提示 -->
-                        <div v-if="!isRevealed" class="tap-hint">点击查看释义</div>
-
-                        <!-- 展开后显示释义 (无翻转动画) -->
-                        <div v-if="isRevealed" class="meaning-container">
-                            <div class="meaning-text">{{ currentWord.meaning }}</div>
-                        </div>
+                    <!-- 释义区（展开后） -->
+                    <div v-if="isRevealed" class="meaning-area">
+                        <div class="meaning-text">{{ currentWord.meaning }}</div>
                     </div>
-                </template>
-            </div>
-
-            <!-- 底部按钮区 (只有展开后显示) -->
-            <div class="action-bar" v-if="currentTab === 'study' && isRevealed && todayQueue.length > 0">
-                <button class="btn-action btn-1" @click.stop="rate(1)">忘记<span>1分钟</span></button>
-                <button class="btn-action btn-2" @click.stop="rate(2)">模糊<span>10分钟</span></button>
-                <button class="btn-action btn-3" @click.stop="rate(3)">认识<span>1天</span></button>
-                <button class="btn-action btn-4" @click.stop="rate(4)">简单<span>4天</span></button>
+                </div>
             </div>
 
             <!-- 2. 书架页 -->
             <div v-if="currentTab === 'library'">
-                <div class="book-list">
-                    <div v-for="book in books" :key="book.id" 
-                         class="book-item" :class="{active: currentBookId === book.id}"
-                         @click="switchBook(book.id)">
-                        <i class="ri-book-2-fill book-icon"></i>
-                        <div class="book-info">
-                            <h3>{{ book.name }}</h3>
-                            <p>{{ book.count }} 词 · 待复习 {{ getBookStats(book.id).due }}</p>
-                        </div>
-                        <i v-if="currentBookId === book.id" class="ri-checkbox-circle-fill check-icon"></i>
-                        <i v-else class="ri-delete-bin-line del-btn" @click.stop="deleteBook(book.id)"></i>
+                <div class="stat-board">
+                    <div class="stat-box">
+                        <span class="stat-val" style="color:var(--primary)">{{ todayLearned }}</span>
+                        <span class="stat-lbl">今日新学</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-val" style="color:#FF9500">{{ dailyLimit }}</span>
+                        <span class="stat-lbl">每日上限</span>
                     </div>
                 </div>
 
-                <div class="add-btn" @click="$refs.fileInput.click()">
-                    <i class="ri-add-line" style="vertical-align:middle"></i> 导入 CSV 单词书
+                <div v-for="book in books" :key="book.id" 
+                     class="book-item" :class="{active: currentBookId === book.id}"
+                     @click="switchBook(book.id)">
+                    <i class="ri-book-2-fill book-icon"></i>
+                    <div class="book-info">
+                        <h3>{{ book.name }}</h3>
+                        <p>共 {{ book.total }} 词 · 待复习 {{ getDueCount(book.id) }}</p>
+                    </div>
+                    <i v-if="currentBookId === book.id" class="ri-checkbox-circle-fill" style="color:var(--primary); font-size:24px; position:absolute; right:15px"></i>
+                    <i v-else class="ri-delete-bin-line" style="color:#ff3b30; opacity:0.5; position:absolute; right:15px; padding:10px" @click.stop="deleteBook(book.id)"></i>
                 </div>
-                <input type="file" ref="fileInput" accept=".csv" style="display:none" @change="importCSV">
+
+                <div class="upload-box" @click="$refs.csvInput.click()">
+                    <i class="ri-add-line" style="font-size:24px; vertical-align:middle"></i> 
+                    <span style="font-weight:600">导入 CSV 单词书</span>
+                    <div style="font-size:12px; margin-top:5px; opacity:0.6">UTF-8 格式，无表头 (单词,意思)</div>
+                </div>
+                <input type="file" ref="csvInput" accept=".csv" style="display:none" @change="importCSV">
             </div>
 
-            <!-- 3. 数据页 -->
-            <div v-if="currentTab === 'stats'">
-                <div v-if="currentBookId" class="stat-grid">
-                    <div class="stat-box">
-                        <span class="stat-val" style="color:var(--success)">{{ stats.learned }}</span>
-                        <span class="stat-lbl">已掌握</span>
-                    </div>
-                    <div class="stat-box">
-                        <span class="stat-val" style="color:#FF9500">{{ stats.due }}</span>
-                        <span class="stat-lbl">今日待复习</span>
-                    </div>
-                    <div class="stat-box" style="grid-column:span 2">
-                        <span class="stat-val" style="color:var(--primary)">{{ stats.newLimit }}</span>
-                        <span class="stat-lbl">今日新词配额</span>
-                    </div>
-                </div>
-                <div v-else class="empty-view">请先选择一本书</div>
-            </div>
         </div>
 
-        <!-- 底部 Tab -->
+        <!-- 底部浮动操作栏 (仅在学习且展开时显示) -->
+        <div class="action-bar" v-if="currentTab === 'study' && isRevealed && todayQueue.length > 0">
+            <button class="btn bg-red" @click.stop="rate(1)">忘记<span>1m</span></button>
+            <button class="btn bg-orange" @click.stop="rate(2)">模糊<span>10m</span></button>
+            <button class="btn bg-green" @click.stop="rate(3)">认识<span>1d</span></button>
+            <button class="btn bg-blue" @click.stop="rate(4)">简单<span>4d</span></button>
+        </div>
+
+        <!-- 底部导航栏 -->
         <div class="tab-bar">
             <div class="tab-item" :class="{active: currentTab==='study'}" @click="currentTab='study'">
-                <i class="ri-macbook-line" v-if="currentTab!=='study'"></i>
-                <i class="ri-macbook-fill" v-else></i>
-                <span>学习</span>
+                <i class="ri-macbook-line"></i><span>学习</span>
             </div>
             <div class="tab-item" :class="{active: currentTab==='library'}" @click="currentTab='library'">
-                <i class="ri-book-read-line" v-if="currentTab!=='library'"></i>
-                <i class="ri-book-read-fill" v-else></i>
-                <span>书架</span>
-            </div>
-            <div class="tab-item" :class="{active: currentTab==='stats'}" @click="currentTab='stats'">
-                <i class="ri-pie-chart-line" v-if="currentTab!=='stats'"></i>
-                <i class="ri-pie-chart-fill" v-else></i>
-                <span>数据</span>
+                <i class="ri-book-read-line"></i><span>书架</span>
             </div>
         </div>
     </div>
 
     <script>
         const { createApp, ref, computed, onMounted } = Vue;
-        const DB_NAME = 'SmartVocab_Final';
+        const DB_NAME = 'VocabMaster_V5';
         
-        // 数据库初始化
+        // 数据库封装
         const openDB = () => new Promise((resolve) => {
             const req = indexedDB.open(DB_NAME, 1);
             req.onupgradeneeded = e => {
                 const db = e.target.result;
-                if (!db.objectStoreNames.contains('books')) db.createObjectStore('books', { keyPath: 'id' });
-                if (!db.objectStoreNames.contains('progress')) db.createObjectStore('progress', { keyPath: 'key' });
-                if (!db.objectStoreNames.contains('settings')) db.createObjectStore('settings', { keyPath: 'id' });
+                if(!db.objectStoreNames.contains('books')) db.createObjectStore('books', {keyPath: 'id'});
+                if(!db.objectStoreNames.contains('progress')) db.createObjectStore('progress', {keyPath: 'key'});
+                if(!db.objectStoreNames.contains('logs')) db.createObjectStore('logs', {keyPath: 'date'});
             };
             req.onsuccess = e => resolve(e.target.result);
         });
@@ -310,71 +263,70 @@
                 const currentTab = ref('study');
                 const db = ref(null);
                 const books = ref([]);
-                const currentBookId = ref(localStorage.getItem('sv_book_id'));
+                const currentBookId = ref(localStorage.getItem('vb_curr_book'));
                 const currentBookName = ref('');
                 
-                // 学习数据
                 const wordList = ref([]);
                 const progressMap = ref({});
                 const todayQueue = ref([]);
                 const currentWord = ref(null);
-                const isRevealed = ref(false); // 控制是否显示释义
-                const dailyLimit = ref(20); // 默认每日新词
-                const todayLearned = ref(0); // 今日已学新词数
+                const isRevealed = ref(false); // 释义是否显示
+                const dailyLimit = ref(parseInt(localStorage.getItem('vb_limit')) || 20);
+                const todayLearned = ref(0);
 
-                const pageTitle = computed(() => {
-                    if (currentTab.value === 'study') return '开始学习';
-                    if (currentTab.value === 'library') return '我的书架';
-                    return '学习数据';
+                const pageTitle = computed(() => currentTab.value === 'study' ? (currentBookName.value || '开始学习') : '我的书架');
+                const queueType = computed(() => {
+                    if(!currentWord.value) return '';
+                    const p = progressMap.value[currentWord.value.id];
+                    return (p && p.level > 0) ? '复习' : '新词';
                 });
 
                 onMounted(async () => {
                     db.value = await openDB();
-                    await loadSettings();
                     loadBooks();
-                    if (currentBookId.value) loadBookData(currentBookId.value);
+                    loadDailyLog();
+                    if(currentBookId.value) loadBookData(currentBookId.value);
                 });
 
-                // --- 1. CSV 导入 ---
+                // --- 业务逻辑 ---
                 const importCSV = (e) => {
                     const file = e.target.files[0];
-                    if (!file) return;
+                    if(!file) return;
                     const reader = new FileReader();
                     reader.onload = (ev) => {
                         const text = ev.target.result;
+                        // 兼容各种换行符
                         const lines = text.replace(/\r\n/g, '\n').split('\n');
                         const words = [];
                         lines.forEach(line => {
-                            // 简单智能分割：找第一个逗号或中文逗号
+                            // 查找第一个逗号或中文逗号
                             let idx = line.indexOf(',');
                             if(idx === -1) idx = line.indexOf('，');
                             
-                            if (idx > 0) {
+                            if(idx > 0) {
                                 const w = line.slice(0, idx).trim();
-                                let m = line.slice(idx+1).trim();
-                                m = m.replace(/^"|"$/g, ''); // 去掉Excel可能加的引号
-                                if (w && m) words.push({ id: w.toLowerCase(), word: w, meaning: m });
+                                let m = line.slice(idx+1).trim().replace(/^"|"$/g, '');
+                                if(w && m) words.push({ id: w.toLowerCase(), word: w, meaning: m });
                             }
                         });
                         
-                        if (words.length === 0) return alert('未识别到单词，请检查CSV格式');
+                        if(words.length === 0) return alert('无法识别内容，请检查CSV格式');
                         
                         const book = { id: Date.now().toString(), name: file.name.replace('.csv',''), total: words.length, words };
                         const tx = db.value.transaction('books', 'readwrite');
                         tx.objectStore('books').put(book);
-                        tx.oncomplete = () => { loadBooks(); switchBook(book.id); alert('导入成功'); };
+                        tx.oncomplete = () => { loadBooks(); switchBook(book.id); alert('导入成功！'); };
                     };
                     reader.readAsText(file, 'UTF-8');
                 };
 
-                // --- 2. 核心逻辑 ---
                 const loadBooks = () => {
-                    db.value.transaction('books','readonly').objectStore('books').getAll().onsuccess = e => books.value = e.target.result;
+                    db.value.transaction('books','readonly').objectStore('books').getAll().onsuccess = e => books.value = e.target.result || [];
                 };
 
                 const switchBook = (id) => {
                     currentBookId.value = id;
-                    localStorage.setItem('sv_book_id', id);
+                    localStorage.setItem('vb_curr_book', id);
                     loadBookData(id);
                     currentTab.value = 'study';
                 };
@@ -386,16 +338,15 @@
                         if(res) {
                             currentBookName.value = res.name;
                             wordList.value = res.words;
-                            // 加载进度
                             tx.objectStore('progress').getAll().onsuccess = ev => {
-                                const all = ev.target.result;
+                                const all = ev.target.result || [];
                                 const map = {};
                                 all.forEach(p => { if(p.key.startsWith(id+'_')) map[p.wid] = p; });
                                 progressMap.value = map;
                                 generateQueue();
                             };
                         } else {
-                            currentBookId.value = null; // 书被删了
+                            currentBookId.value = null; 
                         }
                     };
                 };
@@ -405,21 +356,15 @@
                     const reviews = [];
                     const news = [];
                     
-                    // 获取今日已学新词数 (简单存localStorage)
-                    const todayStr = new Date().toLocaleDateString();
-                    const logKey = `log_${currentBookId.value}_${todayStr}`;
-                    todayLearned.value = parseInt(localStorage.getItem(logKey) || 0);
-
                     wordList.value.forEach(w => {
                         const p = progressMap.value[w.id];
                         if (!p) {
-                            if (news.length < (dailyLimit.value - todayLearned.value)) news.push(w);
+                            if(news.length < (dailyLimit.value - todayLearned.value)) news.push(w);
                         } else if (p.due <= now) {
                             reviews.push(w);
                         }
                     });
-
-                    // 优先复习，再学新词
+                    
                     todayQueue.value = [...reviews, ...news];
                     loadNext();
                 };
@@ -433,9 +378,9 @@
                     }
                 };
 
-                // 点击显示释义
+                // 点击展开释义
                 const reveal = () => {
-                    if (!isRevealed.value) {
+                    if(!isRevealed.value) {
                         isRevealed.value = true;
                         // 自动发音
                         const u = new SpeechSynthesisUtterance(currentWord.value.word);
@@ -444,14 +389,14 @@
                     }
                 };
 
-                // 评分
+                // 艾宾浩斯/SM2 评分
                 const rate = (q) => {
                     const w = currentWord.value;
-                    let p = progressMap.value[w.id] || { interval: 0, reps: 0, ef: 2.5 };
+                    const pid = w.id;
+                    let p = progressMap.value[pid] || { interval: 0, reps: 0, ef: 2.5 };
                     const now = Date.now();
 
-                    // 算法
-                    if (q < 3) {
+                    if (q < 3) { // 忘/模糊
                         p.reps = 0; p.interval = 1;
                     } else {
                         if (p.reps === 0) p.interval = 1;
@@ -461,91 +406,74 @@
                         p.ef = Math.max(1.3, p.ef + (0.1 - (5-q)*(0.08+(5-q)*0.02)));
                     }
 
-                    // 下次时间
+                    // 计算下次时间
                     let nextTime = now;
-                    if (q === 1) nextTime += 60000; // 1m
-                    else if (q === 2) nextTime += 600000; // 10m
+                    if(q === 1) nextTime += 60000; // 1m
+                    else if(q === 2) nextTime += 600000; // 10m
                     else nextTime += (q>=3 ? p.interval : 0) * 86400000; // 天
 
                     // 记录今日新学
-                    if (!progressMap.value[w.id] && q >= 3) {
+                    if (!progressMap.value[pid] && q >= 3) {
                         todayLearned.value++;
-                        const todayStr = new Date().toLocaleDateString();
-                        localStorage.setItem(`log_${currentBookId.value}_${todayStr}`, todayLearned.value);
+                        updateDailyLog();
                     }
 
-                    const record = { key: `${currentBookId.value}_${w.id}`, wid: w.id, due: nextTime, ...p };
-                    
-                    // 存库
+                    const record = { key: `${currentBookId.value}_${pid}`, wid: pid, due: nextTime, ...p };
                     const tx = db.value.transaction('progress', 'readwrite');
                     tx.objectStore('progress').put(record);
-                    progressMap.value[w.id] = record;
+                    progressMap.value[pid] = record;
 
-                    // 队列处理
                     todayQueue.value.shift();
-                    if (q < 3) todayQueue.value.push(w); // 不熟的放回队尾
-                    
+                    if (q < 3) todayQueue.value.push(w); // 不熟的，放入队尾今天继续背
                     loadNext();
                 };
 
+                // 辅助功能
                 const deleteBook = (id) => {
-                    if(!confirm("删除书？")) return;
+                    if(!confirm("确认删除？")) return;
                     const tx = db.value.transaction('books', 'readwrite');
                     tx.objectStore('books').delete(id);
-                    tx.oncomplete = () => { loadBooks(); if(currentBookId.value==id) currentBookId.value=null; };
+                    tx.oncomplete = () => { 
+                        if(currentBookId.value==id) currentBookId.value=null;
+                        loadBooks(); 
+                    };
                 };
 
-                // 设置
-                const showSettings = () => {
-                    const val = prompt("设置每日新词上限（个）：", dailyLimit.value);
+                const setLimit = () => {
+                    const val = prompt("每日新词数量：", dailyLimit.value);
                     if(val) {
                         dailyLimit.value = parseInt(val);
-                        saveSettings();
-                        if(currentBookId.value) loadBookData(currentBookId.value); // 刷新队列
+                        localStorage.setItem('vb_limit', dailyLimit.value);
+                        if(currentBookId.value) loadBookData(currentBookId.value);
                     }
                 };
 
-                const saveSettings = () => {
-                    const tx = db.value.transaction('settings', 'readwrite');
-                    tx.objectStore('settings').put({ id: 'config', limit: dailyLimit.value });
+                const loadDailyLog = () => {
+                    const date = new Date().toLocaleDateString();
+                    // 这里简化处理，直接用 localStorage 存今日数据，避免复杂DB操作
+                    todayLearned.value = parseInt(localStorage.getItem('log_'+date) || 0);
                 };
 
-                const loadSettings = () => new Promise(r => {
-                    const tx = db.value.transaction('settings', 'readonly');
-                    tx.objectStore('settings').get('config').onsuccess = e => {
-                        if(e.target.result) dailyLimit.value = e.target.result.limit;
-                        r();
-                    };
-                });
-
-                // 统计
-                const getBookStats = (id) => {
-                    // 简单计算：遍历所有缓存（需优化）
-                    // 此处简化，仅返回当前已载入书的，未载入的显示 0
-                    if (id !== currentBookId.value) return { due: 0 };
-                    
-                    let due = 0;
-                    const now = Date.now();
-                    todayQueue.value.forEach(w => { // 粗略估计
-                         // 实际应遍历 progressMap
-                    });
-                    // 为提高性能，列表中暂不显示精确数字，只在详情页显示
-                    return { due: '?' }; 
+                const updateDailyLog = () => {
+                    const date = new Date().toLocaleDateString();
+                    localStorage.setItem('log_'+date, todayLearned.value);
                 };
 
-                const stats = computed(() => {
-                    const total = wordList.value.length;
-                    const learned = Object.keys(progressMap.value).filter(k => progressMap.value[k].reps > 0).length;
-                    return { total, learned, due: todayQueue.value.length, newLimit: dailyLimit.value };
-                });
+                const getDueCount = (bookId) => {
+                    // 仅供显示用，简单返回 '?'，因为需要遍历，性能消耗大
+                    // 如果是当前书，可以精确显示
+                    if(bookId === currentBookId.value) return todayQueue.value.length;
+                    return '-';
+                };
 
                 return {
-                    currentTab, books, currentBookId, currentBookName, todayQueue, currentWord, isRevealed, stats,
-                    importCSV, switchBook, deleteBook, reveal, rate, showSettings, getBookStats
+                    currentTab, books, currentBookId, currentBookName, todayQueue, currentWord, isRevealed,
+                    dailyLimit, todayLearned, queueType,
+                    importCSV, switchBook, deleteBook, reveal, rate, setLimit, getDueCount
                 };
             }
         }).mount('#app');
-
+        
         if ('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js');
     </script>
 </body>
