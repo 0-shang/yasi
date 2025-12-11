@@ -1,10 +1,10 @@
 {
-  "name": "雅思真经背词",
-  "short_name": "真经词汇",
+  "name": "智能背词",
+  "short_name": "背词",
   "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#f8f9fa",
-  "theme_color": "#2c3e50",
+  "background_color": "#F2F2F7",
+  "theme_color": "#5856D6",
   "icons": [
     {
       "src": "https://cdn-icons-png.flaticon.com/512/3225/3225272.png",
