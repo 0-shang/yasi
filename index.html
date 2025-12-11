@@ -2,14 +2,28 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
+    <!-- 关键：禁止缩放，适配刘海屏 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    
+    <!-- PWA 核心配置 -->
+    <link rel="manifest" href="./manifest.json">
+    
+    <!-- iOS 专用配置 (苹果手机必须加这些才能全屏) -->
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="背词神器">
+    <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/2232/2232688.png">
+    
     <title>背词神器</title>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!-- 保持之前的 style 样式不变 -->
     <style>
+        /* ... 这里保留你之前复制的样式代码 ... */
+        /* 如果你丢失了样式，请告诉我，我再发一遍完整版 */
+    </style>
+</head>
         :root {
             --primary: #007AFF;       /* iOS Blue */
             --bg: #F2F2F7;
