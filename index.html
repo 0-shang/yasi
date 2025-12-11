@@ -3,49 +3,207 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>雅思真经 PWA</title>
-    <link rel="manifest" href="manifest.json">
+    <title>雅思真经背词 (自动整理版)</title>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <style>
-        :root { --primary: #2c3e50; --accent: #27ae60; --bg: #f8f9fa; }
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: var(--bg); margin: 0; padding: 0; display: flex; justify-content: center; height: 100vh; overflow: hidden; }
-        #app { width: 100%; max-width: 600px; height: 100%; display: flex; flex-direction: column; position: relative; }
-        
-        /* 导入页样式 */
-        .upload-screen { padding: 40px; text-align: center; display: flex; flex-direction: column; justify-content: center; height: 100%; }
-        textarea { width: 100%; height: 200px; border: 1px solid #ddd; border-radius: 8px; padding: 10px; margin-bottom: 20px; font-family: monospace; }
-        
+        :root {
+            --primary: #42b983;
+            --secondary: #2c3e50;
+            --bg: #f0f2f5;
+            --card-bg: #ffffff;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        #app {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 0 auto;
+            width: 100%;
+            position: relative;
+        }
+        /* 顶部栏 */
+        .header {
+            padding: 15px 20px;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 10;
+        }
+        .progress-text { font-size: 14px; color: #666; }
+        .progress-bar {
+            height: 4px;
+            background: #eee;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        .progress-fill { height: 100%; background: var(--primary); transition: width 0.3s; }
+
         /* 卡片区域 */
-        .study-screen { flex: 1; display: flex; flex-direction: column; padding: 20px; position: relative; }
-        .card-container { perspective: 1000px; flex: 1; display: flex; align-items: center; justify-content: center; }
-        .card { width: 100%; height: 80%; position: relative; transform-style: preserve-3d; transition: transform 0.6s; box-shadow: 0 10px 20px rgba(0,0,0,0.1); border-radius: 20px; background: white; cursor: pointer; }
+        .card-area {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            perspective: 1000px;
+            padding: 20px;
+        }
+        .card {
+            width: 100%;
+            height: 100%;
+            max-height: 500px;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
+            cursor: pointer;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-radius: 20px;
+        }
         .card.is-flipped { transform: rotateY(180deg); }
-        .card-face { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 20px; box-sizing: border-box; text-align: center; border-radius: 20px; }
-        .card-back { transform: rotateY(180deg); background: #fff; overflow-y: auto; justify-content: flex-start; padding-top: 40px; }
         
-        .word-text { font-size: 3em; font-weight: bold; color: var(--primary); margin-bottom: 10px; }
-        .logic-group { color: #7f8c8d; font-size: 0.9em; background: #ecf0f1; padding: 5px 10px; border-radius: 15px; margin-bottom: 20px; }
-        .meaning-text { font-size: 1.2em; color: #34495e; margin: 20px 0; line-height: 1.6; }
-        .context-text { font-style: italic; color: #7f8c8d; border-left: 4px solid var(--accent); padding-left: 15px; text-align: left; width: 100%; margin-top: 20px; }
+        .card-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 20px;
+            background: var(--card-bg);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            box-sizing: border-box;
+            text-align: center;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
         
+        /* 正面样式 */
+        .card-front {
+            z-index: 2;
+        }
+        .logic-tag {
+            background: #e8f5e9;
+            color: var(--primary);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .word { font-size: 42px; font-weight: 800; color: var(--secondary); margin-bottom: 10px; }
+        .hint { color: #999; font-size: 14px; margin-top: 20px; }
+
+        /* 背面样式 */
+        .card-back {
+            transform: rotateY(180deg);
+            justify-content: flex-start;
+            overflow-y: auto;
+            align-items: flex-start;
+            text-align: left;
+        }
+        .back-word { font-size: 24px; color: var(--primary); margin-bottom: 15px; font-weight: bold; width: 100%; border-bottom: 1px solid #eee; padding-bottom: 10px;}
+        .meaning-box { font-size: 18px; color: #333; line-height: 1.6; margin-bottom: 20px; }
+        .context-box { background: #f8f9fa; padding: 15px; border-radius: 8px; width: 100%; font-size: 15px; color: #555; }
+        .context-title { font-size: 12px; color: #999; margin-bottom: 5px; text-transform: uppercase; }
+
         /* 底部按钮 */
-        .controls { display: flex; gap: 10px; padding: 20px; background: white; box-shadow: 0 -5px 10px rgba(0,0,0,0.05); }
-        .btn { flex: 1; padding: 15px; border: none; border-radius: 12px; font-size: 16px; font-weight: bold; cursor: pointer; transition: 0.2s; color: white; }
-        .btn-know { background: var(--accent); }
-        .btn-forgot { background: #e74c3c; }
-        .btn-upload { background: var(--primary); color: white; padding: 10px 20px; border-radius: 8px; border:none; margin-top: 10px; cursor: pointer;}
-        
-        .progress-bar { height: 4px; background: #eee; width: 100%; position: absolute; top: 0; left: 0; }
-        .progress-fill { height: 100%; background: var(--accent); transition: width 0.3s; }
+        .controls {
+            padding: 20px 30px;
+            display: flex;
+            gap: 20px;
+            padding-bottom: 40px;
+        }
+        .btn {
+            flex: 1;
+            padding: 16px;
+            border: none;
+            border-radius: 15px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.1s;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .btn:active { transform: scale(0.96); }
+        .btn-unknown { background: #fff; color: #e74c3c; border: 2px solid #e74c3c; }
+        .btn-known { background: var(--primary); color: white; }
+
+        /* 加载页 */
+        .loading { display: flex; height: 100%; align-items: center; justify-content: center; color: #999; }
     </style>
 </head>
 <body>
     <div id="app">
-        <!-- 1. 数据导入界面 -->
-        <div v-if="words.length === 0" class="upload-screen">
-            <h1>📚 雅思真经 PWA</h1>
-            <p>请将第一步生成的 data.json 内容粘贴到下方，或点击按钮直接开始演示。</p>
-            [
+        <div v-if="!dataLoaded" class="loading">正在整理词汇数据...</div>
+        
+        <template v-else>
+            <!-- 头部 -->
+            <div class="header">
+                <div style="font-weight: bold;">雅思真经</div>
+                <div class="progress-text">{{ currentIndex + 1 }} / {{ cleanList.length }}</div>
+                <div class="progress-bar"><div class="progress-fill" :style="{width: progress + '%'}"></div></div>
+            </div>
+
+            <!-- 卡片 -->
+            <div class="card-area">
+                <div class="card" :class="{ 'is-flipped': isFlipped }" @click="flipCard">
+                    <!-- 正面 -->
+                    <div class="card-face card-front">
+                        <div class="logic-tag" v-if="currentWord.logic_group">{{ currentWord.logic_group }}</div>
+                        <div class="word">{{ currentWord.word }}</div>
+                        <div class="hint">点击查看解析</div>
+                    </div>
+
+                    <!-- 背面 -->
+                    <div class="card-face card-back">
+                        <div class="back-word">{{ currentWord.word }}</div>
+                        
+                        <div class="meaning-box" v-if="currentWord.meaning">
+                            <div v-for="(m, idx) in currentWord.meaning.split('|')" :key="idx">
+                                {{ m }}
+                            </div>
+                        </div>
+
+                        <div class="context-box" v-if="currentWord.context">
+                            <div class="context-title">语境 / 例句 / 搭配</div>
+                            <div v-html="highlight(currentWord.context, currentWord.word)"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 按钮 -->
+            <div class="controls">
+                <button class="btn btn-unknown" @click.stop="nextWord">不认识</button>
+                <button class="btn btn-known" @click.stop="nextWord">认识</button>
+            </div>
+        </template>
+    </div>
+
+    <script>
+        const { createApp, ref, computed, onMounted } = Vue;
+
+        createApp({
+            setup() {
+                // ==========================================
+                // 🔴 请把你的 JSON 数据粘贴到下面这个空数组里 [ ... ]
+                // ==========================================
+                const rawData = [
+                   [
   {
     "id": 1,
     "word": "abstract",
@@ -83620,117 +83778,110 @@
     "context": "6 分词汇 7 分词汇 附录1：2000个最常用词汇 附录2：听力真题场景词汇 附录3：阅读真题认知词汇 "
   }
 ]
-            <textarea v-model="jsonInput" placeholder='粘贴 [{"word": "abundant", ...}]'></textarea>
-            <button class="btn-upload" @click="loadData">加载数据</button>
-            <button class="btn-upload" style="background:#95a5a6; margin-top:10px" @click="loadDemo">加载演示数据</button>
-        </div>
+                ]; 
 
-        <!-- 2. 背词界面 -->
-        <div v-else class="study-screen">
-            <div class="progress-bar"><div class="progress-fill" :style="{width: progress + '%'}"></div></div>
-            
-            <div class="card-container" @click="flip">
-                <div class="card" :class="{ 'is-flipped': isFlipped }">
-                    <!-- 正面 -->
-                    <div class="card-face card-front">
-                        <div class="logic-group">逻辑组: {{ current.logic_group || '通用' }}</div>
-                        <div class="word-text">{{ current.word }}</div>
-                        <div style="font-size:0.8rem; color:#999">点击查看解析</div>
-                    </div>
-                    <!-- 背面 -->
-                    <div class="card-face card-back">
-                        <div class="word-text" style="font-size:1.5rem">{{ current.word }}</div>
-                        <div class="meaning-text">{{ current.meaning }}</div>
-                        <div class="context-text" v-if="current.context" v-html="highlight(current.context, current.word)"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="controls">
-                <button class="btn btn-forgot" @click.stop="handleResult(false)">模糊 / 不认识</button>
-                <button class="btn btn-know" @click.stop="handleResult(true)">认识 / 下一个</button>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        const { createApp, ref, computed } = Vue;
-
-        createApp({
-            setup() {
-                const words = ref([]);
+                const cleanList = ref([]);
                 const currentIndex = ref(0);
                 const isFlipped = ref(false);
-                const jsonInput = ref('');
+                const dataLoaded = ref(false);
 
-                // 尝试从本地存储读取
-                const saved = localStorage.getItem('ielts_data');
-                const savedIdx = localStorage.getItem('ielts_index');
-                if(saved) {
-                    words.value = JSON.parse(saved);
-                    currentIndex.value = parseInt(savedIdx) || 0;
-                }
+                // 数据清洗与合并算法
+                const processData = () => {
+                    if (rawData.length === 0) {
+                        // 如果用户还没粘贴数据，显示演示数据
+                        cleanList.value = [{ word: "请粘贴数据", meaning: "打开 index.html 源码，找到 rawData，把你的 JSON 粘贴进去。", logic_group: "提示", context: "" }];
+                        dataLoaded.value = true;
+                        return;
+                    }
 
-                const current = computed(() => words.value[currentIndex.value] || {});
-                const progress = computed(() => (currentIndex.value / words.value.length) * 100);
+                    let merged = [];
+                    let lastWord = null;
 
-                const flip = () => {
-                    isFlipped.value = !isFlipped.value;
-                    if(isFlipped.value) speak(current.value.word);
-                };
-
-                const speak = (text) => {
-                    const u = new SpeechSynthesisUtterance(text);
-                    u.lang = 'en-US';
-                    window.speechSynthesis.speak(u);
-                };
-
-                const handleResult = (known) => {
-                    isFlipped.value = false;
-                    setTimeout(() => {
-                        if (currentIndex.value < words.value.length - 1) {
-                            currentIndex.value++;
-                            localStorage.setItem('ielts_index', currentIndex.value);
+                    rawData.forEach(item => {
+                        // 1. 过滤掉无效标题和页码
+                        if (!item.word || item.word.includes("Table of") || item.word.includes("Take the") || item.word.length < 2) return;
+                        
+                        // 2. 智能合并：如果这个词跟上一个词一样，就把意思合并起来
+                        if (lastWord && lastWord.word.toLowerCase() === item.word.toLowerCase()) {
+                            if (item.meaning) lastWord.meaning += " | " + item.meaning;
+                            if (item.context) lastWord.context += "<br>" + item.context;
                         } else {
-                            alert('本轮复习完成！');
-                            currentIndex.value = 0;
+                            // 3. 这是一个新词
+                            let newObj = {
+                                word: item.word,
+                                meaning: item.meaning || "", 
+                                logic_group: item.logic_group.replace("真经逻辑词群", "逻辑词群"), // 简化标签
+                                context: item.context || ""
+                            };
+                            
+                            // 修正：有时候解释跑到了context里
+                            if (!newObj.meaning && newObj.context.includes("adj.")) {
+                                newObj.meaning = newObj.context;
+                            }
+
+                            merged.push(newObj);
+                            lastWord = newObj;
                         }
-                    }, 300);
+                    });
+
+                    cleanList.value = merged;
+                    
+                    // 读取上次进度
+                    const savedIndex = localStorage.getItem('ielts_progress');
+                    if (savedIndex) currentIndex.value = parseInt(savedIndex);
+                    
+                    dataLoaded.value = true;
                 };
 
-                const loadData = () => {
-                    try {
-                        const data = JSON.parse(jsonInput.value);
-                        words.value = data;
-                        localStorage.setItem('ielts_data', JSON.stringify(data));
-                        localStorage.setItem('ielts_index', 0);
-                    } catch(e) {
-                        alert('JSON 格式错误，请检查');
+                onMounted(() => {
+                    processData();
+                });
+
+                const currentWord = computed(() => cleanList.value[currentIndex.value] || {});
+                const progress = computed(() => ((currentIndex.value + 1) / cleanList.value.length) * 100);
+
+                const flipCard = () => {
+                    isFlipped.value = !isFlipped.value;
+                    if (isFlipped.value) {
+                        // 简单的发音功能
+                        const u = new SpeechSynthesisUtterance(currentWord.value.word);
+                        window.speechSynthesis.speak(u);
                     }
                 };
 
-                const loadDemo = () => {
-                    jsonInput.value = JSON.stringify([
-                        {id:1, word:"abundant", meaning:"adj. 大量的，丰富的", context:"Fish are abundant in the lake.", logic_group:"rich/wealthy"},
-                        {id:2, word:"optician", meaning:"n. 配镜师", context:"The optician examined my eyes.", logic_group:"hospital/doctor"}
-                    ]);
-                    loadData();
+                const nextWord = () => {
+                    isFlipped.value = false;
+                    setTimeout(() => {
+                        if (currentIndex.value < cleanList.value.length - 1) {
+                            currentIndex.value++;
+                            localStorage.setItem('ielts_progress', currentIndex.value);
+                        } else {
+                            alert("恭喜！背完了！");
+                            currentIndex.value = 0;
+                        }
+                    }, 200); // 等待翻转动画
                 };
 
-                const highlight = (sentence, word) => {
-                    if(!sentence) return '';
-                    const reg = new RegExp(`(${word})`, 'gi');
-                    return sentence.replace(reg, '<span style="color:#e74c3c;font-weight:bold">$1</span>');
+                const highlight = (text, word) => {
+                    if (!text) return "";
+                    // 高亮关键词
+                    const regex = new RegExp(`(${word})`, 'gi');
+                    return text.replace(regex, '<span style="color:#e74c3c;font-weight:bold;">$1</span>');
                 };
 
-                return { words, current, isFlipped, flip, handleResult, jsonInput, loadData, loadDemo, progress, highlight };
+                return {
+                    cleanList,
+                    currentIndex,
+                    currentWord,
+                    isFlipped,
+                    dataLoaded,
+                    progress,
+                    flipCard,
+                    nextWord,
+                    highlight
+                };
             }
         }).mount('#app');
-
-        // 注册 PWA Service Worker
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('./sw.js');
-        }
     </script>
 </body>
 </html>
