@@ -4,246 +4,311 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="theme-color" content="#4f46e5">
-    <title>我的单词本</title>
-    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#f5f7fa">
+    <title>背词神器</title>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <style>
+        /* --- 1. 移动端专属设计系统 --- */
         :root {
-            --primary: #4f46e5;
-            --bg: #f3f4f6;
-            --surface: #ffffff;
-            --text-main: #1f2937;
-            --text-sub: #6b7280;
-            --safe-bottom: env(safe-area-inset-bottom);
+            --primary: #5856d6;       /* iOS 风格蓝紫色 */
+            --primary-bg: #eef1ff;
+            --success: #34c759;
+            --warning: #ff9500;
+            --danger: #ff3b30;
+            --info: #007aff;
+            --bg: #f2f2f7;            /* iOS 背景灰 */
+            --card-bg: #ffffff;
+            --text-main: #000000;
+            --text-sub: #8e8e93;
+            --radius: 20px;
+            --shadow: 0 8px 24px rgba(0,0,0,0.06);
+            --safe-bottom: env(safe-area-inset-bottom, 20px);
+            --header-height: 50px;
+            --tab-height: 60px;
         }
+
         * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; user-select: none; }
-        body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: var(--bg); color: var(--text-main); height: 100vh; overflow: hidden; display: flex; flex-direction: column; }
-
-        /* 底部导航 */
-        .tab-bar {
-            background: rgba(255,255,255,0.95);
-            backdrop-filter: blur(10px);
-            border-top: 1px solid #e5e7eb;
+        
+        body {
+            margin: 0; padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            height: 100vh;
+            height: 100dvh; /* 动态视口高度，解决手机地址栏跳动问题 */
+            overflow: hidden;
             display: flex;
-            justify-content: space-around;
-            padding: 10px 0 calc(10px + var(--safe-bottom));
-            position: fixed; bottom: 0; width: 100%; z-index: 100;
-        }
-        .tab-item { display: flex; flex-direction: column; align-items: center; color: var(--text-sub); font-size: 10px; gap: 4px; cursor: pointer; transition: 0.2s; }
-        .tab-item i { font-size: 24px; }
-        .tab-item.active { color: var(--primary); transform: scale(1.1); }
-
-        /* 主视口 */
-        .viewport { flex: 1; overflow-y: auto; padding-bottom: 80px; position: relative; }
-
-        /* 页面：书架 */
-        .page-library { padding: 20px; }
-        .page-header { margin-bottom: 20px; }
-        .page-title { font-size: 24px; font-weight: 800; }
-        .page-subtitle { font-size: 13px; color: var(--text-sub); margin-top: 5px; }
-
-        .book-card {
-            background: white; border-radius: 16px; padding: 20px; margin-bottom: 15px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.04); display: flex; align-items: center; justify-content: space-between;
-            border: 2px solid transparent; transition: 0.2s;
-        }
-        .book-card:active { transform: scale(0.98); }
-        .book-card.active-book { border-color: var(--primary); background: #eef2ff; }
-        .book-meta h3 { margin: 0 0 5px 0; font-size: 17px; }
-        .book-meta p { margin: 0; font-size: 13px; color: var(--text-sub); }
-        
-        .upload-zone {
-            border: 2px dashed #cbd5e1; border-radius: 16px; padding: 25px; text-align: center;
-            color: var(--text-sub); margin-top: 30px; cursor: pointer; background: white;
-            display: flex; flex-direction: column; align-items: center; gap: 10px;
+            flex-direction: column;
         }
 
-        /* 页面：学习 */
-        .page-study { height: 100%; display: flex; flex-direction: column; padding: 20px; }
-        .progress-indicator { 
-            display: flex; justify-content: space-between; margin-bottom: 15px; font-size: 12px; color: var(--text-sub); font-weight: bold;
+        #app { height: 100%; display: flex; flex-direction: column; width: 100%; max-width: 600px; margin: 0 auto; position: relative; }
+
+        /* --- 顶部栏 --- */
+        .top-nav {
+            height: var(--header-height);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 17px; font-weight: 600;
+            background: rgba(242, 242, 247, 0.8);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            position: fixed; top: 0; width: 100%; max-width: 600px; z-index: 10;
+            border-bottom: 0.5px solid rgba(0,0,0,0.1);
         }
-        
+
+        /* --- 主内容滚动区 --- */
+        .main-content {
+            flex: 1;
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding: calc(var(--header-height) + 15px) 20px calc(var(--tab-height) + var(--safe-bottom) + 20px);
+            -webkit-overflow-scrolling: touch;
+        }
+
+        /* --- 学习卡片 (核心优化) --- */
+        .card-wrapper {
+            width: 100%;
+            height: 65vh; /* 占据屏幕大部分高度 */
+            perspective: 1500px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
         .flashcard {
-            flex: 1; width: 100%; max-width: 600px; margin: 0 auto; background: white; border-radius: 24px;
-            box-shadow: 0 10px 30px -10px rgba(0,0,0,0.1); position: relative;
-            transform-style: preserve-3d; transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-            cursor: pointer; max-height: 65vh;
-        }
-        .flashcard.flipped { transform: rotateY(180deg); }
-        
-        .face {
-            position: absolute; top:0; left:0; width: 100%; height: 100%; backface-visibility: hidden;
-            display: flex; flex-direction: column; align-items: center; justify-content: center;
-            padding: 40px 30px; border-radius: 24px; box-sizing: border-box;
-        }
-        
-        /* 正面 */
-        .front { background: white; z-index: 2; }
-        .word-text { font-size: 48px; font-weight: 800; color: var(--text-main); margin-bottom: 10px; text-align: center; line-height: 1.1; }
-        .tap-hint { font-size: 13px; color: #9ca3af; margin-top: 30px; animation: pulse 2s infinite; }
-        
-        /* 背面 */
-        .back { transform: rotateY(180deg); background: #fff; align-items: flex-start; justify-content: flex-start; overflow-y: auto; text-align: left; }
-        .word-small { font-size: 24px; font-weight: bold; color: var(--primary); margin-bottom: 20px; border-bottom: 1px solid #eee; width: 100%; padding-bottom: 10px; }
-        .meaning-text { 
-            font-size: 20px; line-height: 1.6; color: #374151; white-space: pre-wrap; 
-            border-left: 4px solid var(--primary); padding-left: 15px; margin-bottom: 20px;
+            width: 100%; height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            cursor: pointer;
         }
 
-        /* 动作按钮 */
-        .action-container { 
-            width: 100%; max-width: 600px; margin: 20px auto 0; display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 12px; height: 64px;
+        .flashcard.is-flipped {
+            transform: rotateY(180deg);
+        }
+
+        .face {
+            position: absolute; width: 100%; height: 100%;
+            backface-visibility: hidden; /* 关键：隐藏背面 */
+            -webkit-backface-visibility: hidden;
+            border-radius: var(--radius);
+            background: var(--card-bg);
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            padding: 30px;
+            border: 1px solid rgba(0,0,0,0.02);
+        }
+
+        /* 正面 */
+        .face.front { z-index: 2; transform: rotateY(0deg); }
+        .word-main { font-size: 48px; font-weight: 800; text-align: center; color: var(--text-main); margin-bottom: 10px; line-height: 1.1; word-break: break-all;}
+        .word-hint { font-size: 14px; color: var(--text-sub); margin-top: 30px; background: #f2f2f7; padding: 6px 12px; border-radius: 20px;}
+
+        /* 背面 */
+        .face.back { 
+            transform: rotateY(180deg); 
+            z-index: 1; 
+            align-items: flex-start; 
+            justify-content: flex-start;
+            overflow-y: auto; /* 允许背面内容滚动 */
+        }
+        
+        .meaning-content { width: 100%; padding-top: 10px; }
+        .meaning-item { 
+            font-size: 20px; line-height: 1.6; color: #333; margin-bottom: 15px; 
+            padding: 15px; background: #f9f9fb; border-radius: 12px;
+            border-left: 5px solid var(--primary);
+        }
+        .small-word { font-size: 24px; font-weight: bold; color: var(--primary); margin-bottom: 20px; width: 100%; border-bottom: 1px solid #eee; padding-bottom: 10px;}
+
+        /* --- 底部操作按钮 --- */
+        .action-bar {
+            position: fixed; bottom: calc(var(--tab-height) + var(--safe-bottom) + 15px);
+            left: 0; right: 0; margin: 0 auto; max-width: 600px;
+            padding: 0 20px;
+            display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;
+            z-index: 20;
         }
         .btn {
-            border: none; border-radius: 14px; font-weight: bold; color: white; font-size: 15px;
-            cursor: pointer; display: flex; flex-direction: column; align-items: center; justify-content: center;
-            transition: transform 0.1s; box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border: none; height: 56px; border-radius: 14px; color: white; font-size: 15px; font-weight: 600;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px;
         }
-        .btn:active { transform: scale(0.95); }
-        .btn span { font-size: 10px; opacity: 0.85; margin-top: 2px; font-weight: normal; }
+        .btn span { font-size: 10px; opacity: 0.9; font-weight: normal;}
+        .btn:active { transform: scale(0.95); opacity: 0.9; }
+
+        .btn-1 { background: var(--danger); }
+        .btn-2 { background: var(--warning); }
+        .btn-3 { background: var(--success); }
+        .btn-4 { background: var(--info); }
+
+        /* --- 书架样式 --- */
+        .book-list { display: flex; flex-direction: column; gap: 15px; }
+        .book-item {
+            background: white; padding: 20px; border-radius: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+            display: flex; align-items: center; transition: 0.2s; position: relative; overflow: hidden;
+        }
+        .book-item:active { background: #f9f9f9; transform: scale(0.99); }
+        .book-item.active-book { border: 2px solid var(--primary); background: #f0f0ff; }
         
-        .btn-1 { background: #ef4444; } 
-        .btn-2 { background: #f59e0b; } 
-        .btn-3 { background: #10b981; } 
-        .btn-4 { background: #3b82f6; } 
+        .book-icon { width: 50px; height: 50px; background: var(--bg); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-right: 15px; font-size: 24px; color: var(--primary);}
+        .book-info h3 { margin: 0 0 5px 0; font-size: 17px; }
+        .book-info p { margin: 0; font-size: 13px; color: var(--text-sub); }
+        .check-mark { position: absolute; right: 20px; color: var(--primary); font-size: 24px; }
 
-        /* 统计页 */
-        .stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
-        .stat-card { background: white; padding: 25px 20px; border-radius: 16px; text-align: center; }
-        .stat-val { font-size: 32px; font-weight: 900; color: var(--text-main); display: block; margin-bottom: 5px; }
-        .stat-label { font-size: 13px; color: var(--text-sub); }
+        .add-book-btn {
+            margin-top: 20px; background: white; border: 2px dashed #d1d1d6; color: #8e8e93;
+            width: 100%; padding: 20px; border-radius: 16px; font-size: 16px; font-weight: 600;
+            display: flex; align-items: center; justify-content: center; gap: 8px;
+        }
 
-        /* 动画 */
-        @keyframes pulse { 0% { opacity: 0.4; } 50% { opacity: 1; } 100% { opacity: 0.4; } }
+        /* --- 底部 Tab 导航 --- */
+        .tab-bar {
+            height: calc(var(--tab-height) + var(--safe-bottom));
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(20px);
+            border-top: 0.5px solid rgba(0,0,0,0.1);
+            position: fixed; bottom: 0; width: 100%; max-width: 600px;
+            display: flex; justify-content: space-around; padding-bottom: var(--safe-bottom);
+            z-index: 50;
+        }
+        .tab-item {
+            flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;
+            color: #aeaeB2; font-size: 10px; gap: 4px;
+        }
+        .tab-item i { font-size: 24px; margin-bottom: 2px; }
+        .tab-item.active { color: var(--primary); }
+
+        /* 状态页 */
+        .stat-card { background: white; border-radius: 16px; padding: 20px; text-align: center; margin-bottom: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.02);}
+        .stat-num { font-size: 32px; font-weight: 800; color: var(--text-main); display: block;}
+        
+        .empty-tip { text-align: center; color: var(--text-sub); margin-top: 50%; transform: translateY(-50%); }
     </style>
 </head>
 <body>
     <div id="app">
-        <!-- 主视口 -->
-        <div class="viewport">
+        <!-- 顶部标题 -->
+        <div class="top-nav">
+            <span v-if="currentTab === 'study'">{{ currentBookName || '背词神器' }}</span>
+            <span v-if="currentTab === 'library'">我的书架</span>
+            <span v-if="currentTab === 'stats'">学习数据</span>
+        </div>
+
+        <!-- 主内容区 -->
+        <div class="main-content">
             
             <!-- 1. 学习页面 -->
-            <div v-if="currentTab === 'study'" class="page-study">
-                <!-- 无书状态 -->
-                <div v-if="!currentBookId" style="flex:1; display:flex; flex-direction:column; justify-content:center; align-items:center; color:#9ca3af;">
-                    <i class="ri-book-open-line" style="font-size: 80px; margin-bottom: 20px; opacity: 0.5;"></i>
-                    <p>请先在“书架”导入并选择一本书</p>
-                    <button @click="currentTab='library'" style="margin-top:20px; padding:12px 30px; background:var(--primary); color:white; border:none; border-radius:20px; font-size:16px;">去书架</button>
+            <div v-if="currentTab === 'study'">
+                <!-- 空状态 -->
+                <div v-if="!currentBookId" class="empty-tip">
+                    <i class="ri-book-mark-line" style="font-size: 64px; color: #d1d1d6; margin-bottom: 20px;"></i>
+                    <p>还没有选择单词书</p>
+                    <button @click="currentTab='library'" style="padding:10px 24px; background:var(--primary); color:white; border:none; border-radius:20px; font-size:15px; margin-top:10px;">去选择</button>
                 </div>
 
                 <!-- 任务完成 -->
-                <div v-else-if="todayQueue.length === 0" style="flex:1; display:flex; flex-direction:column; justify-content:center; align-items:center;">
-                    <div style="background:#d1fae5; width:100px; height:100px; border-radius:50%; display:flex; align-items:center; justify-content:center; margin-bottom:20px;">
-                        <i class="ri-check-line" style="font-size: 50px; color: #10b981;"></i>
+                <div v-else-if="todayQueue.length === 0" class="empty-tip">
+                    <div style="width:80px; height:80px; background:#e8f5e9; border-radius:50%; margin:0 auto 20px; display:flex; align-items:center; justify-content:center;">
+                        <i class="ri-check-line" style="font-size: 40px; color: var(--success);"></i>
                     </div>
-                    <h2 style="margin:0 0 10px 0;">太棒了！</h2>
-                    <p style="color:var(--text-sub)">今日复习任务已全部完成</p>
+                    <h3>今日任务完成</h3>
+                    <p>休息一下吧，明天继续！</p>
                 </div>
 
-                <!-- 背词卡片 -->
-                <template v-else>
-                    <div class="progress-indicator">
-                        <span>待复习: {{ todayQueue.length }}</span>
-                        <span>{{ currentBookName }}</span>
-                    </div>
-
-                    <div class="flashcard" :class="{flipped: isFlipped}" @click="flipCard">
+                <!-- 卡片区域 -->
+                <div v-else class="card-wrapper">
+                    <div class="flashcard" :class="{ 'is-flipped': isFlipped }" @click="flipCard">
                         <!-- 正面 -->
                         <div class="face front">
-                            <div class="word-text">{{ currentWord.word }}</div>
-                            <div class="tap-hint">点击查看释义</div>
+                            <div class="word-main">{{ currentWord.word }}</div>
+                            <div class="word-hint">点击查看释义</div>
                         </div>
                         <!-- 背面 -->
                         <div class="face back">
-                            <div class="word-small">{{ currentWord.word }}</div>
-                            <div class="meaning-text">{{ currentWord.meaning }}</div>
+                            <div class="small-word">{{ currentWord.word }}</div>
+                            <div class="meaning-content">
+                                <div class="meaning-item" v-if="currentWord.meaning">{{ currentWord.meaning }}</div>
+                                <div v-else style="color:#999; font-style:italic">暂无详细释义</div>
+                            </div>
                         </div>
                     </div>
-
-                    <!-- 只有翻面后才显示按钮 -->
-                    <div class="action-container" v-if="isFlipped">
-                        <button class="btn btn-1" @click.stop="rate(1)">忘记<span>1分钟</span></button>
-                        <button class="btn btn-2" @click.stop="rate(2)">模糊<span>10分钟</span></button>
-                        <button class="btn btn-3" @click.stop="rate(3)">认识<span>1天</span></button>
-                        <button class="btn btn-4" @click.stop="rate(4)">简单<span>4天</span></button>
-                    </div>
-                    <!-- 占位符保持布局稳定 -->
-                    <div class="action-container" v-else style="visibility:hidden"></div>
-                </template>
+                </div>
             </div>
 
             <!-- 2. 书架页面 -->
-            <div v-if="currentTab === 'library'" class="page-library">
-                <div class="page-header">
-                    <div class="page-title">我的书架</div>
-                    <div class="page-subtitle">管理你的单词书和进度</div>
-                </div>
-
-                <div v-for="book in books" :key="book.id" 
-                     class="book-card" :class="{'active-book': currentBookId === book.id}"
-                     @click="switchBook(book.id)">
-                    <div style="display:flex; align-items:center">
-                        <div style="background:#f3f4f6; width:48px; height:48px; border-radius:12px; display:flex; align-items:center; justify-content:center; margin-right:15px;">
-                            <i class="ri-book-2-fill" style="color:var(--primary); font-size:24px;"></i>
-                        </div>
-                        <div class="book-meta">
+            <div v-if="currentTab === 'library'">
+                <div class="book-list">
+                    <div v-for="book in books" :key="book.id" 
+                         class="book-item" :class="{'active-book': currentBookId === book.id}"
+                         @click="switchBook(book.id)">
+                        <div class="book-icon"><i class="ri-book-2-line"></i></div>
+                        <div class="book-info">
                             <h3>{{ book.name }}</h3>
-                            <p>{{ book.count }} 词 · 进度 {{ getProgress(book.id) }}%</p>
+                            <p>共 {{ book.count }} 词 · 已完成 {{ getProgress(book.id) }}%</p>
                         </div>
+                        <i v-if="currentBookId === book.id" class="ri-checkbox-circle-fill check-mark"></i>
+                        <i v-else class="ri-delete-bin-line" @click.stop="deleteBook(book.id)" style="position:absolute; right:20px; color:#ff3b30; opacity:0.5; padding:10px;"></i>
                     </div>
-                    <i v-if="currentBookId === book.id" class="ri-checkbox-circle-fill" style="color:var(--primary); font-size:24px"></i>
-                    <i v-else class="ri-delete-bin-line" @click.stop="deleteBook(book.id)" style="color:#ef4444; opacity:0.3; padding:10px"></i>
                 </div>
 
-                <div class="upload-zone" @click="$refs.fileInput.click()">
-                    <i class="ri-file-add-line" style="font-size:36px; color:#9ca3af"></i>
-                    <div style="font-weight:bold; color:#4b5563">导入 CSV 单词书</div>
-                    <div style="font-size:12px">支持格式：单词,意思 (逗号分隔)</div>
+                <div class="add-book-btn" @click="$refs.csvInput.click()">
+                    <i class="ri-add-line"></i> 导入 CSV 单词书
                 </div>
-                <input type="file" ref="fileInput" accept=".csv" style="display:none" @change="handleCSVImport">
+                <!-- 隐藏的文件输入 -->
+                <input type="file" ref="csvInput" accept=".csv" style="display:none" @change="handleCSVImport">
+                
+                <div style="margin-top:20px; font-size:12px; color:#999; padding:0 10px; line-height:1.5">
+                    <strong>提示：</strong> CSV文件格式要求：第一列是单词，第二列是意思。不要表头。支持 UTF-8 编码。
+                </div>
             </div>
 
             <!-- 3. 数据页面 -->
-            <div v-if="currentTab === 'stats'" class="page-library">
-                <div class="page-header">
-                    <div class="page-title">学习数据</div>
-                </div>
-                
-                <div class="stat-grid" v-if="currentBookId">
-                    <div class="stat-card">
-                        <span class="stat-val">{{ stats.learned }}</span>
-                        <span class="stat-label">已掌握单词</span>
+            <div v-if="currentTab === 'stats'">
+                <div v-if="currentBookId">
+                    <div style="display:grid; grid-template-columns: 1fr 1fr; gap:15px; margin-bottom:15px;">
+                        <div class="stat-card">
+                            <span class="stat-num" style="color:var(--success)">{{ stats.learned }}</span>
+                            <span style="font-size:12px; color:#999">已掌握</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num" style="color:var(--warning)">{{ stats.due }}</span>
+                            <span style="font-size:12px; color:#999">今日待复习</span>
+                        </div>
                     </div>
                     <div class="stat-card">
-                        <span class="stat-val">{{ stats.due }}</span>
-                        <span class="stat-label">今日待复习</span>
-                    </div>
-                    <div class="stat-card" style="grid-column: span 2">
-                        <span class="stat-val">{{ stats.total }}</span>
-                        <span class="stat-label">本书总词汇量</span>
+                        <span class="stat-num" style="color:var(--primary)">{{ stats.total }}</span>
+                        <span style="font-size:12px; color:#999">总词汇量 ({{ currentBookName }})</span>
                     </div>
                 </div>
-                <div v-else style="text-align:center; padding-top:100px; color:#9ca3af;">
-                    请先选择一本书
-                </div>
+                <div v-else class="empty-tip">请先选择一本书</div>
             </div>
+
         </div>
 
-        <!-- 底部导航 -->
+        <!-- 底部浮动按钮 (只在学习且翻面时显示) -->
+        <div class="action-bar" v-if="currentTab === 'study' && isFlipped && todayQueue.length > 0">
+            <button class="btn btn-1" @click.stop="rate(1)">忘记<span>1分钟</span></button>
+            <button class="btn btn-2" @click.stop="rate(2)">模糊<span>10分钟</span></button>
+            <button class="btn btn-3" @click.stop="rate(3)">认识<span>1天</span></button>
+            <button class="btn btn-4" @click.stop="rate(4)">简单<span>4天</span></button>
+        </div>
+
+        <!-- 底部 Tab 栏 -->
         <div class="tab-bar">
             <div class="tab-item" :class="{active: currentTab==='study'}" @click="currentTab='study'">
-                <i class="ri-brain-line"></i>
+                <i class="ri-macbook-line" v-if="currentTab!=='study'"></i>
+                <i class="ri-macbook-fill" v-else></i>
                 <span>学习</span>
             </div>
             <div class="tab-item" :class="{active: currentTab==='library'}" @click="currentTab='library'">
-                <i class="ri-book-read-line"></i>
+                <i class="ri-book-2-line" v-if="currentTab!=='library'"></i>
+                <i class="ri-book-2-fill" v-else></i>
                 <span>书架</span>
             </div>
             <div class="tab-item" :class="{active: currentTab==='stats'}" @click="currentTab='stats'">
-                <i class="ri-bar-chart-box-line"></i>
+                <i class="ri-pie-chart-2-line" v-if="currentTab!=='stats'"></i>
+                <i class="ri-pie-chart-2-fill" v-else></i>
                 <span>数据</span>
             </div>
         </div>
@@ -251,12 +316,12 @@
 
     <script>
         const { createApp, ref, computed, onMounted, watch } = Vue;
-        
+
         // 数据库配置
-        const DB_NAME = 'WordMasterPro_CSV';
+        const DB_NAME = 'WordMaster_V3'; // 使用新数据库名避免冲突
         const DB_VERSION = 1;
 
-        // 打开数据库
+        // 打开 IndexedDB
         const openDB = () => {
             return new Promise((resolve, reject) => {
                 const req = indexedDB.open(DB_NAME, DB_VERSION);
@@ -274,22 +339,26 @@
             setup() {
                 const currentTab = ref('study');
                 const books = ref([]);
-                const currentBookId = ref(localStorage.getItem('wm_curr_book') || null);
+                const currentBookId = ref(localStorage.getItem('wm_curr_book_v3') || null);
                 const currentBookName = ref('');
-                const wordList = ref([]); // 当前书单词表
-                const progressMap = ref({}); // 进度缓存
+                const wordList = ref([]);
+                const progressMap = ref({});
                 const todayQueue = ref([]);
                 const currentWord = ref(null);
                 const isFlipped = ref(false);
                 let db = null;
 
                 onMounted(async () => {
-                    db = await openDB();
-                    loadBooks();
-                    if (currentBookId.value) loadBookData(currentBookId.value);
+                    try {
+                        db = await openDB();
+                        loadBooks();
+                        if (currentBookId.value) loadBookData(currentBookId.value);
+                    } catch (e) {
+                        alert("数据库加载失败，请使用现代浏览器");
+                    }
                 });
 
-                // --- 核心功能：CSV 解析与导入 ---
+                // --- 1. CSV 导入逻辑 (增强版) ---
                 const handleCSVImport = (event) => {
                     const file = event.target.files[0];
                     if (!file) return;
@@ -297,42 +366,40 @@
                     const reader = new FileReader();
                     reader.onload = (e) => {
                         const text = e.target.result;
-                        const lines = text.split(/\r\n|\n/);
+                        if (!text) { alert("文件内容为空"); return; }
+                        
+                        // 兼容不同换行符
+                        const lines = text.replace(/\r\n/g, '\n').split('\n');
                         const words = [];
                         
-                        lines.forEach((line, index) => {
-                            if (!line.trim()) return; // 跳过空行
+                        lines.forEach((line) => {
+                            line = line.trim();
+                            if (!line) return;
                             
-                            // 简单 CSV 解析：按第一个逗号分隔
-                            // 如果你的 CSV 包含英文逗号在意思里，这行逻辑通常也能工作，因为我们只切分第一个逗号
-                            const firstCommaIndex = line.indexOf(',');
-                            if (firstCommaIndex === -1) return; 
+                            // 查找第一个逗号的位置 (支持中文逗号兼容)
+                            let commaIdx = line.indexOf(',');
+                            if (commaIdx === -1) commaIdx = line.indexOf('，');
 
-                            const word = line.substring(0, firstCommaIndex).trim();
-                            // 去掉意思周围可能的引号
-                            let meaning = line.substring(firstCommaIndex + 1).trim();
-                            if (meaning.startsWith('"') && meaning.endsWith('"')) {
-                                meaning = meaning.slice(1, -1);
-                            }
-                            
-                            // 过滤表头（如果第一行是 Word,Meaning）
-                            if (index === 0 && (word.toLowerCase() === 'word' || word === '单词')) return;
-
-                            if (word && meaning) {
-                                words.push({ id: word.toLowerCase(), word, meaning });
+                            if (commaIdx !== -1) {
+                                const w = line.substring(0, commaIdx).trim();
+                                let m = line.substring(commaIdx + 1).trim();
+                                // 去除可能存在的引号
+                                m = m.replace(/^"|"$/g, '');
+                                if (w && m) {
+                                    words.push({ id: w.toLowerCase(), word: w, meaning: m });
+                                }
                             }
                         });
 
                         if (words.length === 0) {
-                            alert('未识别到单词，请检查 CSV 格式 (例如: apple,苹果)');
+                            alert('未能识别单词。请确保格式为：单词,意思');
                             return;
                         }
 
-                        // 存入数据库
                         const bookId = Date.now().toString();
                         const newBook = {
                             id: bookId,
-                            name: file.name.replace('.csv', ''),
+                            name: file.name.replace(/\.csv$/i, ''),
                             count: words.length,
                             words: words
                         };
@@ -346,68 +413,48 @@
                             alert(`成功导入 ${words.length} 个单词！`);
                         };
                     };
-                    reader.readAsText(file); // 默认 UTF-8，如果乱码可改为 'gbk'
+                    reader.readAsText(file, 'UTF-8'); // 强制 UTF-8
                 };
 
-                // --- 业务逻辑 ---
+                // --- 2. 核心业务 ---
                 const loadBooks = () => {
                     const tx = db.transaction('books', 'readonly');
                     tx.objectStore('books').getAll().onsuccess = (e) => {
-                        books.value = e.target.result;
+                        books.value = e.target.result || [];
                     };
                 };
 
                 const switchBook = (id) => {
                     currentBookId.value = id;
-                    localStorage.setItem('wm_curr_book', id);
+                    localStorage.setItem('wm_curr_book_v3', id);
                     loadBookData(id);
                 };
 
                 const loadBookData = (id) => {
                     const tx = db.transaction(['books', 'progress'], 'readonly');
-                    
-                    // 获取书名和单词
                     tx.objectStore('books').get(id).onsuccess = (e) => {
                         const res = e.target.result;
                         if (res) {
                             currentBookName.value = res.name;
                             wordList.value = res.words;
-                            generateQueue();
-                        }
-                    };
-
-                    // 获取进度
-                    tx.objectStore('progress').getAll().onsuccess = (e) => {
-                        const all = e.target.result;
-                        // 筛选当前书的进度
-                        const map = {};
-                        all.forEach(p => {
-                            if (p.key.startsWith(id + '_')) map[p.wid] = p;
-                        });
-                        progressMap.value = map;
-                        generateQueue(); // 进度加载完再生成一次队列，确保准确
-                    };
-                };
-
-                const deleteBook = (id) => {
-                    if(!confirm('确定删除这本书吗？进度也会丢失。')) return;
-                    const tx = db.transaction('books', 'readwrite');
-                    tx.objectStore('books').delete(id);
-                    tx.oncomplete = () => {
-                        loadBooks();
-                        if (currentBookId.value === id) {
+                            // 加载进度
+                            tx.objectStore('progress').getAll().onsuccess = (ev) => {
+                                const allProg = ev.target.result || [];
+                                const map = {};
+                                allProg.forEach(p => {
+                                    if (p.key.startsWith(id + '_')) map[p.wid] = p;
+                                });
+                                progressMap.value = map;
+                                generateQueue();
+                            };
+                        } else {
+                            // 书可能被删了
                             currentBookId.value = null;
-                            wordList.value = [];
-                            todayQueue.value = [];
-                            currentWord.value = null;
                         }
                     };
                 };
 
-                // 艾宾浩斯核心逻辑
                 const generateQueue = () => {
-                    if (!wordList.value.length) return;
-                    
                     const now = Date.now();
                     const newWords = [];
                     const reviewWords = [];
@@ -421,8 +468,8 @@
                         }
                     });
 
-                    // 每日计划：优先复习，再学新词 (这里设限 30 个防止压力过大)
-                    todayQueue.value = [...reviewWords, ...newWords.slice(0, 20)].slice(0, 50);
+                    // 优先级：先复习，后新词 (限制每次 20 个新词)
+                    todayQueue.value = [...reviewWords, ...newWords.slice(0, 20)];
                     
                     if (todayQueue.value.length > 0) {
                         currentWord.value = todayQueue.value[0];
@@ -430,36 +477,41 @@
                     }
                 };
 
+                // 翻卡
+                const flipCard = () => {
+                    isFlipped.value = !isFlipped.value;
+                    if (isFlipped.value && currentWord.value) {
+                        // 播放发音
+                        const u = new SpeechSynthesisUtterance(currentWord.value.word);
+                        u.lang = 'en-US';
+                        window.speechSynthesis.speak(u);
+                    }
+                };
+
+                // 评分 (SM-2)
                 const rate = (quality) => {
                     const w = currentWord.value;
                     const pid = w.id;
                     let p = progressMap.value[pid] || { interval: 0, reps: 0, ef: 2.5 };
 
-                    // SM-2 算法
                     if (quality < 3) {
                         p.reps = 0;
-                        p.interval = 1; 
+                        p.interval = 1;
                     } else {
                         if (p.reps === 0) p.interval = 1;
                         else if (p.reps === 1) p.interval = 6;
                         else p.interval = Math.round(p.interval * p.ef);
-                        
                         p.reps++;
                         p.ef = p.ef + (0.1 - (5 - quality) * (0.08 + (5 - quality) * 0.02));
                         if (p.ef < 1.3) p.ef = 1.3;
                     }
 
-                    // 计算下次复习时间 (毫秒)
-                    // 演示模式：1天=真正1天。如果需要测试，可把 24*60*60 改小
                     let nextDue = Date.now();
-                    if (quality < 3) {
-                        nextDue += 60 * 1000; // 1分钟后
-                    } else {
-                        // 简单映射按钮到天数
-                        const days = [0, 0, 0, 1, 4]; // 对应 btn 1,2,3,4
-                        let dayAdd = quality >= 3 ? p.interval : 0;
-                        nextDue += dayAdd * 24 * 60 * 60 * 1000;
-                    }
+                    // 按钮逻辑：1=1min, 2=10min, 3=1day, 4=4days (简化)
+                    if (quality === 1) nextDue += 60 * 1000;
+                    else if (quality === 2) nextDue += 10 * 60 * 1000;
+                    else if (quality === 3) nextDue += 24 * 60 * 60 * 1000;
+                    else nextDue += 4 * 24 * 60 * 60 * 1000;
 
                     const record = { 
                         key: currentBookId.value + '_' + pid, 
@@ -468,55 +520,45 @@
                         ...p 
                     };
 
-                    // 更新数据库
                     const tx = db.transaction('progress', 'readwrite');
                     tx.objectStore('progress').put(record);
-                    
-                    // 更新内存
                     progressMap.value[pid] = record;
 
-                    // UI 逻辑
                     isFlipped.value = false;
-                    todayQueue.value.shift(); // 移除当前
+                    todayQueue.value.shift();
                     
-                    if (quality < 3) {
-                        // 如果不认识，放到队尾待会儿再背
-                        todayQueue.value.push(w);
-                    }
-
+                    if (quality < 3) todayQueue.value.push(w); // 不认识的放队尾
+                    
                     if (todayQueue.value.length > 0) {
                         currentWord.value = todayQueue.value[0];
                     }
                 };
 
-                const flipCard = () => {
-                    isFlipped.value = !isFlipped.value;
-                    if(isFlipped.value) {
-                         const u = new SpeechSynthesisUtterance(currentWord.value.word);
-                         window.speechSynthesis.speak(u);
-                    }
+                const deleteBook = (id) => {
+                    if(!confirm("确定删除？")) return;
+                    const tx = db.transaction('books', 'readwrite');
+                    tx.objectStore('books').delete(id);
+                    tx.oncomplete = () => {
+                        if(currentBookId.value === id) {
+                            currentBookId.value = null;
+                            todayQueue.value = [];
+                        }
+                        loadBooks();
+                    };
                 };
 
-                // 辅助数据
+                // 统计
                 const getProgress = (bookId) => {
-                    // 由于progressMap只存当前书，这里粗略计算
-                    // 实际应该遍历数据库，这里为了性能简化：如果是当前书显示实时，否则显示0 (或需复杂查询)
-                    if (bookId === currentBookId.value && wordList.value.length) {
-                        const learned = Object.keys(progressMap.value).length;
-                        return Math.round((learned / wordList.value.length) * 100);
-                    }
-                    return 0; // 简化处理
+                    // 这里仅做简单展示，实际需要实时计算
+                    // 因为在 library 列表里无法实时获取每本书的 progressMap，所以先返回 0 或保存缓存
+                    // 为了简化，这里暂不显示复杂进度，或者需要重新架构数据存储
+                    return 0; 
                 };
 
                 const stats = computed(() => {
                     const total = wordList.value.length || 0;
-                    const learned = Object.keys(progressMap.value).length || 0;
-                    return {
-                        total,
-                        learned,
-                        due: todayQueue.value.length,
-                        percent: total ? Math.round((learned/total)*100) : 0
-                    };
+                    const learned = Object.keys(progressMap.value).length;
+                    return { total, learned, due: todayQueue.value.length };
                 });
 
                 return {
@@ -525,8 +567,8 @@
                 };
             }
         }).mount('#app');
-        
-        // 注册 Service Worker 实现 PWA
+
+        // 注册 PWA
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('./sw.js');
         }
