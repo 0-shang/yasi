@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "未命名.md",
+                "file": "我们不应该提涨工资.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "未命名"
+              "title": "我们不应该提涨工资"
             }
           }
         ]
@@ -112,7 +112,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "未命名.md",
+            "file": "我们不应该提涨工资.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -169,10 +169,11 @@
   },
   "active": "327179ea2466360d",
   "lastOpenFiles": [
-    "new.md",
     "未命名.md",
     "_templates/九宫格写作模板.md",
+    "我们不应该提涨工资.md",
     "未命名 1.md",
+    "new.md",
     "/未命名 1.md",
     "/_templates/九宫格写作模板.md",
     "_templates",
