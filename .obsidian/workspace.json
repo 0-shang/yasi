@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_templates/九宫格写作模板.md",
+                "file": "new.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "九宫格写作模板"
+              "title": "new"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_templates/九宫格写作模板.md",
+                "file": "new.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "九宫格写作模板 的反向链接列表"
+              "title": "new 的反向链接列表"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_templates/九宫格写作模板.md",
+                "file": "new.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "九宫格写作模板 的出链列表"
+              "title": "new 的出链列表"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_templates/九宫格写作模板.md",
+                "file": "new.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "九宫格写作模板 的大纲"
+              "title": "new 的大纲"
             }
           },
           {
@@ -196,14 +196,13 @@
   },
   "active": "bfb2327421f410b1",
   "lastOpenFiles": [
-    "未命名 1.md",
     "_templates/九宫格写作模板.md",
-    "未命名.base",
-    "new.md",
     "九宫格写作模板.md.md",
     "九宫格写作模板.md",
     "_templates",
     "新建文件夹",
+    "new.md",
+    "未命名 1.md",
     "未命名",
     "未命名.md"
   ]
