@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_templates/九宫格写作模板.md",
+                "file": "不要带着打工思维打工.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "九宫格写作模板"
+              "title": "不要带着打工思维打工"
             }
           }
         ]
@@ -164,13 +164,23 @@
               "icon": "lucide-list",
               "title": "九宫格写作模板 的大纲"
             }
+          },
+          {
+            "id": "657e48bc08f54cc2",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -185,5 +195,11 @@
     }
   },
   "active": "4753bc9ecad66948",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "情绪的反馈与自我的反省.md",
+    "不要带着打工思维打工.md",
+    "我们不应该提涨工资.md",
+    "未命名 1.md",
+    "_templates/九宫格写作模板.md"
+  ]
 }
