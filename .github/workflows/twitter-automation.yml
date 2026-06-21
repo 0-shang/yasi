@@ -37,13 +37,8 @@ jobs:
         cd tweets-automator
         npm install
 
-    - name: Run Draft Generator & Publisher
+    - name: Run Publisher
       env:
-        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        GEMINI_MODEL: ${{ secrets.GEMINI_MODEL || 'gemini-2.5-flash' }}
-        DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
-        DEEPSEEK_MODEL: ${{ secrets.DEEPSEEK_MODEL || 'deepseek-chat' }}
-        AI_PROVIDER: ${{ secrets.AI_PROVIDER }}
         TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
         TWITTER_API_SECRET: ${{ secrets.TWITTER_API_SECRET }}
         TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
@@ -53,9 +48,7 @@ jobs:
         MAX_TWEETS_PER_RUN: "1"
       run: |
         cd tweets-automator
-        # 1. 扫描并生成新草稿
-        npm run generate
-        # 2. 扫描并发布已批准的推文
+        # 扫描并发布已批准的推文
         npm run publish
 
     - name: Commit and Push Changes back to Repo
