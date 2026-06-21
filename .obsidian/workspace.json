@@ -208,6 +208,11 @@
   },
   "active": "f6a32fb02e990459",
   "lastOpenFiles": [
+    "关闭推特自动发布监控.bat",
+    "启动推特自动发布监控.vbs",
+    "tweets-automator/src/watch.js",
+    "双击发布已批准推文.bat",
+    "双击生成推文草稿.bat",
     "情绪的反馈与自我的反省.md",
     "tweets/published",
     "tweets/state.json",
@@ -215,10 +220,6 @@
     "tweets/failed",
     "tweets/approved",
     "tweets",
-    "tweets-automator/package-lock.json",
-    "tweets-automator/node_modules/@types/node/util/types.d.ts",
-    "tweets-automator/node_modules/@types/node/util",
-    "tweets-automator/node_modules/@types/node/web-globals/url.d.ts",
     "tweets-automator/node_modules/protobufjs/ext/debug/README.md",
     "tweets-automator/node_modules/protobufjs/ext/descriptor/README.md",
     "tweets-automator/node_modules/protobufjs/google/README.md",
@@ -242,7 +243,6 @@
     "tweets-automator/node_modules/data-uri-to-buffer/README.md",
     "tweets-automator/node_modules/fetch-blob/README.md",
     "tweets-automator/node_modules/jwa/README.md",
-    "tweets-automator/node_modules/undici-types/README.md",
-    "tweets-automator/node_modules/node-domexception/README.md"
+    "tweets-automator/node_modules/undici-types/README.md"
   ]
 }

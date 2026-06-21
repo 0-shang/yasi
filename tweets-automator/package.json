@@ -5,7 +5,8 @@
   "main": "src/generate.js",
   "scripts": {
     "generate": "node src/generate.js",
-    "publish": "node src/publish.js"
+    "publish": "node src/publish.js",
+    "watch": "node src/watch.js"
   },
   "dependencies": {
     "@google/genai": "*",
