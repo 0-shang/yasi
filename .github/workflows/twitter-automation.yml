@@ -8,6 +8,8 @@ on:
     paths-ignore:
       - '.github/**'
       - 'README.md'
+  schedule:
+    - cron: '0 * * * *'  # Runs every hour
   workflow_dispatch:
 
 permissions:
@@ -48,6 +50,7 @@ jobs:
         TWITTER_ACCESS_SECRET: ${{ secrets.TWITTER_ACCESS_SECRET }}
         WORKSPACE_PATH: "../"
         TWEETS_DIR: "../tweets/"
+        MAX_TWEETS_PER_RUN: "1"
       run: |
         cd tweets-automator
         # 1. 扫描并生成新草稿

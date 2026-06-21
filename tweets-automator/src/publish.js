@@ -56,14 +56,15 @@ async function main() {
     });
   }
 
-  if (approvedFiles.length === 0) {
-    console.log('No approved tweets found to publish.');
-    return;
-  }
+  // Sort approvedFiles alphabetically by filename to ensure oldest/earliest is processed first
+  approvedFiles.sort((a, b) => a.filename.localeCompare(b.filename));
 
-  console.log(`Found ${approvedFiles.length} approved tweet(s) to publish.\n`);
+  const maxTweets = process.env.MAX_TWEETS_PER_RUN ? parseInt(process.env.MAX_TWEETS_PER_RUN, 10) : Infinity;
+  const filesToPublish = approvedFiles.slice(0, maxTweets);
 
-  for (const fileItem of approvedFiles) {
+  console.log(`Found ${approvedFiles.length} approved tweet(s) in queue. Will publish ${filesToPublish.length} tweet(s) in this run.\n`);
+
+  for (const fileItem of filesToPublish) {
     console.log(`Publishing: "${fileItem.filename}" (from ${fileItem.origin})...`);
     
     let fileContent;
