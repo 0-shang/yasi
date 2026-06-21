@@ -9,6 +9,9 @@ on:
       - '.github/**'
       - 'README.md'
 
+permissions:
+  contents: write
+
 jobs:
   run-automation:
     runs-on: ubuntu-latest
