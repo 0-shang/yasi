@@ -2,7 +2,6 @@ const fs = require('fs');
 const path = require('path');
 const config = require('./config');
 const { generateTweetsFromContent } = require('./ai');
-const matter = require('gray-matter');
 
 // Set up directories
 config.ensureDirs();
@@ -105,19 +104,7 @@ async function main() {
         continue;
       }
 
-      const parsed = matter(fileContent);
-      if (!parsed.data || (parsed.data.tweet !== true && parsed.data.tweets !== true)) {
-        console.log('Frontmatter does not contain "tweet: true", skipping.');
-        // Update state to avoid scanning this file again until it is modified
-        state.processedFiles[fileItem.relativePath] = {
-          lastModified: fileItem.mtime,
-          lastProcessedAt: new Date().toISOString()
-        };
-        fs.writeFileSync(stateFile, JSON.stringify(state, null, 2), 'utf-8');
-        continue;
-      }
-
-      const tweets = await generateTweetsFromContent(parsed.content);
+      const tweets = await generateTweetsFromContent(fileContent);
       console.log(`Generated ${tweets.length} draft tweet(s).`);
 
       const dateStr = new Date().toISOString().split('T')[0];
