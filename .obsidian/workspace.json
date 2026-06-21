@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "情绪的反馈与自我的反省.md",
+                "file": "tweets-automator/README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "情绪的反馈与自我的反省"
+              "title": "README"
             }
           }
         ]
@@ -190,7 +190,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 358.5
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -207,30 +208,41 @@
   },
   "active": "f6a32fb02e990459",
   "lastOpenFiles": [
-    "tweets-automator/README.md",
-    "tweets-automator/src/publish.js",
-    "tweets-automator/src/generate.js",
-    "tweets-automator/src/twitter.js",
-    "tweets-automator/src/gemini.js",
-    "tweets-automator/src/config.js",
-    "tweets-automator/src",
-    "tweets-automator/package.json",
-    "tweets-automator",
-    "新建文件夹",
-    "道理我都懂，可我就是被现实困住了.md",
-    "Clippings/Post by @WY_mask on X.md",
-    "2025-06-11-英语提升指南介绍.md",
-    "不要带着打工思维打工.md",
-    "第五次疟疾.md",
-    "Clippings/油管大神Dan Koe： 这样用AI学东西，速度快18倍.md",
-    "Dan Koe 的学习方法论：用 AI 把学习速度提升 10 倍的完整框架.md",
-    "AI时代的投资利器 - Vibe-Trading 与 MungerMode 深度解析.md",
-    "我们不应该提涨工资.md",
-    "未命名 1.md",
     "情绪的反馈与自我的反省.md",
-    "未命名.base",
-    "Clippings/Post by @ai_suxiaole on X.md",
-    "Clippings/byoungdEnglish-level-up-tips An advanced guide to learn English which might benefit you a lot 🎉 .  离谱的英语学习指南英语学习教程英语学习学英语.md",
-    "_templates/九宫格写作模板.md"
+    "tweets/published",
+    "tweets/state.json",
+    "tweets/drafts",
+    "tweets/failed",
+    "tweets/approved",
+    "tweets",
+    "tweets-automator/package-lock.json",
+    "tweets-automator/node_modules/@types/node/util/types.d.ts",
+    "tweets-automator/node_modules/@types/node/util",
+    "tweets-automator/node_modules/@types/node/web-globals/url.d.ts",
+    "tweets-automator/node_modules/protobufjs/ext/debug/README.md",
+    "tweets-automator/node_modules/protobufjs/ext/descriptor/README.md",
+    "tweets-automator/node_modules/protobufjs/google/README.md",
+    "tweets-automator/node_modules/protobufjs/README.md",
+    "tweets-automator/node_modules/node-fetch/README.md",
+    "tweets-automator/node_modules/node-fetch/LICENSE.md",
+    "tweets-automator/node_modules/gaxios/README.md",
+    "tweets-automator/node_modules/twitter-api-v2/README.md",
+    "tweets-automator/node_modules/gcp-metadata/README.md",
+    "tweets-automator/node_modules/google-auth-library/README.md",
+    "tweets-automator/node_modules/ws/README.md",
+    "tweets-automator/node_modules/google-logging-utils/README.md",
+    "tweets-automator/node_modules/ecdsa-sig-formatter/README.md",
+    "tweets-automator/node_modules/jws/readme.md",
+    "tweets-automator/node_modules/jws/CHANGELOG.md",
+    "tweets-automator/node_modules/bignumber.js/README.md",
+    "tweets-automator/node_modules/bignumber.js/LICENCE.md",
+    "tweets-automator/node_modules/bignumber.js/CHANGELOG.md",
+    "tweets-automator/node_modules/long/README.md",
+    "tweets-automator/node_modules/buffer-equal-constant-time/README.md",
+    "tweets-automator/node_modules/data-uri-to-buffer/README.md",
+    "tweets-automator/node_modules/fetch-blob/README.md",
+    "tweets-automator/node_modules/jwa/README.md",
+    "tweets-automator/node_modules/undici-types/README.md",
+    "tweets-automator/node_modules/node-domexception/README.md"
   ]
 }
