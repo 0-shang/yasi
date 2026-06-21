@@ -14,6 +14,20 @@ const failedDir = config.paths.tweets.failed;
 
 async function main() {
   console.log('=== Starting Twitter Publishing Process ===');
+
+  // Check if current Beijing Time (UTC+8) is within active posting hours (9:00 - 22:00)
+  const now = new Date();
+  const bjHour = (now.getUTCHours() + 8) % 24;
+  console.log(`Current UTC time: ${now.toUTCString()}`);
+  console.log(`Current Beijing hour: ${bjHour}:00`);
+
+  const ignoreTimeRestriction = process.env.IGNORE_TIME_RESTRICTION === 'true';
+  if (!ignoreTimeRestriction && (bjHour < 9 || bjHour > 22)) {
+    console.log(`Outside of active posting hours (Beijing Time 9:00 - 22:00). Posting is suspended. Current hour: ${bjHour}:00`);
+    console.log('=== Publishing Process Suspended (Outside active hours) ===');
+    return;
+  }
+
   console.log('Approved directory:', approvedDir);
   console.log('Drafts directory (checking for "approved" status):', draftsDir);
 
