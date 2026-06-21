@@ -1,8 +1,14 @@
 ---
 source: "Clippings/AI时代的投资利器 - Vibe-Trading 与 MungerMode 深度解析.md"
-generated_at: "2026-06-21T18:37:21.436Z"
+generated_at: "2026-06-21T18:51:48.141Z"
 status: "draft"
-angle: "从量化因子库和Swarm多智能体切入，强调实用性和开源优势，吸引量化交易爱好者。"
+angle: "突出工具的‘开箱即用’和‘免费高质量因子库’，吸引量化交易入门和研究者。"
 ---
 
-Vibe-Trading内置了452个预置量化因子，来自Qlib、Alpha101、国泰君安191等，全部配有中文注释。还支持29套多智能体Swarm预设，可以组建你的"投资委员会"。完全开源MIT协议，支持A股、港美股、加密货币。想做量化策略研究的不妨看看。
+量化交易的起点：452个预置 Alpha 因子，全部中文注释，不需要 API Key。
+
+Vibe-Trading 把 Microsoft Qlib 的 158 因子、Alpha101、国泰君安 191 因子全部打包。还自带 7 种回测引擎，可以一键对比。
+
+从因子研究到回测报告，一条 CLI 命令完成。适合想入门量化但不想从零搭轮子的同学。
+
+GitHub 11.4k⭐，MIT 协议。

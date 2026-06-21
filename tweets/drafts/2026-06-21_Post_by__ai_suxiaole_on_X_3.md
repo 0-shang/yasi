@@ -1,14 +1,16 @@
 ---
 source: "Clippings/Post by @ai_suxiaole on X.md"
-generated_at: "2026-06-21T17:45:52.169Z"
+generated_at: "2026-06-21T18:52:00.002Z"
 status: "draft"
-angle: "点出核心观点，激发行动力"
+angle: "反转常规定义，建立新认知，激发行动"
 ---
 
-中国程序员不缺技术，缺的是突破英语瓶颈的方法。
+英语不是天赋，是技术文档堆出来的。
 
-一个GitHub 50k star的项目，全程干货，没有废话。作者说：英语不是学出来的，是用出来的。
+很多程序员以为英语差是记忆力问题，其实是用错了方法。
 
-开源精神，自取。
+一份50k star的GitHub指南，专门写给程序员。
 
-github.com/English-level-up-tips
+每天读10分钟，比报班强十倍。
+
+链接自取👇
