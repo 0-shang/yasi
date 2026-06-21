@@ -59,3 +59,28 @@ jobs:
         
         # 仅在有更改时进行提交和推送，防止触发无限循环构建 (使用 [skip ci] 避免再次触发 Actions)
         git diff --quiet && git diff --staged --quiet || (git commit -m "chore: auto-update tweets [skip ci]" && git push)
+
+    - name: Sync Tweets to Personal Website (ai-nav)
+      env:
+        PAT_GH: ${{ secrets.PAT_GH }}
+      run: |
+        if [ -z "${PAT_GH}" ]; then
+          echo "Warning: PAT_GH secret is not configured. Skipping sync."
+          exit 0
+        fi
+        
+        if [ -d "tweets/published" ] && [ "$(ls -A tweets/published 2>/dev/null)" ]; then
+          echo "Published tweets found. Starting sync to ai-nav repo..."
+          git clone https://${PAT_GH}@github.com/0-shang/ai-nav.git temp-web
+          mkdir -p temp-web/content/insights
+          cp -r tweets/published/*.md temp-web/content/insights/
+          cd temp-web
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add content/insights/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore: auto-sync published tweets from yasi" && git push)
+          cd ..
+          rm -rf temp-web
+        else
+          echo "No published tweets found to sync."
+        fi
