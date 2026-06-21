@@ -1,0 +1,24 @@
+{
+  "id": "conv-1780355787156-tsw8cfcj2",
+  "providerId": "claude",
+  "title": "这个文章写的主观性还是不够强，尤其是职业的代价之后的内容",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1780355787157,
+  "updatedAt": 1781213208793,
+  "lastResponseAt": 1780522401407,
+  "sessionId": "c6f46e7e-6f92-4e15-952f-72efcd81cc74",
+  "providerState": {
+    "providerSessionId": "c6f46e7e-6f92-4e15-952f-72efcd81cc74"
+  },
+  "currentNote": "未命名.md",
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 128,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 50304,
+    "contextWindow": 200000,
+    "contextTokens": 50432,
+    "percentage": 25,
+    "contextWindowIsAuthoritative": true
+  }
+}

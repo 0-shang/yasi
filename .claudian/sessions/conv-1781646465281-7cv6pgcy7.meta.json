@@ -1,0 +1,24 @@
+{
+  "id": "conv-1781646465281-7cv6pgcy7",
+  "providerId": "claude",
+  "title": "Let me first look at the files in your workspac...",
+  "titleGenerationStatus": "success",
+  "createdAt": 1781646465281,
+  "updatedAt": 1781647656505,
+  "lastResponseAt": 1781647656505,
+  "sessionId": "95781bcf-2c8e-49c2-928a-e78a78f03c27",
+  "providerState": {
+    "providerSessionId": "95781bcf-2c8e-49c2-928a-e78a78f03c27"
+  },
+  "currentNote": "Clippings/油管大神Dan Koe： 这样用AI学东西，速度快18倍.md",
+  "usage": {
+    "model": "haiku",
+    "inputTokens": 696,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 40832,
+    "contextWindow": 200000,
+    "contextTokens": 41528,
+    "percentage": 21,
+    "contextWindowIsAuthoritative": true
+  }
+}
