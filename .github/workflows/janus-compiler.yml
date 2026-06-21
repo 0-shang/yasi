@@ -1,0 +1,26 @@
+name: Project Janus Alchemist
+
+# 触发条件：只要 Obsidian Git 插件往 01_原始聊天记录 文件夹推了新文件，就启动
+on:
+  push:
+    paths:
+      - '01_原始聊天记录/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: 1. 检查云端仓库代码
+      uses: actions/checkout@v3
+
+    - name: 2. 安装 Python 环境
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: 3. 运行炼金术脚本
+      env:
+        GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
+      run: |
+        python .github/workflows/cloud_alchemist.py
