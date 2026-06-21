@@ -109,11 +109,37 @@ async function main() {
       const result = await postTweetOrThread(tweetTexts);
       console.log(`- Successfully published! ID: ${result.id}`);
       
+      // Generate fields for personal blog/website compatibility (Nuxt Content v3)
+      let title = frontmatter.title || frontmatter.angle;
+      if (!title) {
+        const base = path.basename(fileItem.filename, '.md');
+        let cleanName = base.replace(/^\d{4}-\d{2}-\d{2}_/, '');
+        cleanName = cleanName.replace(/_\d+$/, '');
+        title = cleanName.replace(/_/g, ' ');
+      }
+
+      const publishedDate = new Date().toISOString();
+      const dateVal = frontmatter.date || publishedDate.split('T')[0];
+
+      let description = frontmatter.description;
+      if (!description) {
+        const cleanBody = body.replace(/[\r\n]+/g, ' ').trim();
+        description = cleanBody.slice(0, 100);
+        if (cleanBody.length > 100) description += '...';
+      }
+
+      const tags = Array.isArray(frontmatter.tags) ? [...frontmatter.tags] : [];
+      if (!tags.includes('feed')) tags.push('feed');
+
       // Update frontmatter
       const updatedFrontmatter = {
         ...frontmatter,
+        title,
+        date: dateVal,
+        description,
+        tags,
         status: 'published',
-        published_at: new Date().toISOString(),
+        published_at: publishedDate,
         tweet_id: result.id,
         urls: result.urls
       };
