@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const config = require('./config');
 const { generateTweetsFromContent } = require('./ai');
+const matter = require('gray-matter');
 
 // Set up directories
 config.ensureDirs();
@@ -98,13 +99,25 @@ async function main() {
   for (const fileItem of newOrModifiedFiles) {
     console.log(`\nProcessing: "${fileItem.relativePath}"...`);
     try {
-      const content = fs.readFileSync(fileItem.absolutePath, 'utf-8');
-      if (content.trim().length < 10) {
+      const fileContent = fs.readFileSync(fileItem.absolutePath, 'utf-8');
+      if (fileContent.trim().length < 10) {
         console.log('File content too short, skipping.');
         continue;
       }
 
-      const tweets = await generateTweetsFromContent(content);
+      const parsed = matter(fileContent);
+      if (!parsed.data || (parsed.data.tweet !== true && parsed.data.tweets !== true)) {
+        console.log('Frontmatter does not contain "tweet: true", skipping.');
+        // Update state to avoid scanning this file again until it is modified
+        state.processedFiles[fileItem.relativePath] = {
+          lastModified: fileItem.mtime,
+          lastProcessedAt: new Date().toISOString()
+        };
+        fs.writeFileSync(stateFile, JSON.stringify(state, null, 2), 'utf-8');
+        continue;
+      }
+
+      const tweets = await generateTweetsFromContent(parsed.content);
       console.log(`Generated ${tweets.length} draft tweet(s).`);
 
       const dateStr = new Date().toISOString().split('T')[0];
