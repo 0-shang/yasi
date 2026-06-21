@@ -207,6 +207,15 @@
   },
   "active": "f6a32fb02e990459",
   "lastOpenFiles": [
+    "tweets-automator/README.md",
+    "tweets-automator/src/publish.js",
+    "tweets-automator/src/generate.js",
+    "tweets-automator/src/twitter.js",
+    "tweets-automator/src/gemini.js",
+    "tweets-automator/src/config.js",
+    "tweets-automator/src",
+    "tweets-automator/package.json",
+    "tweets-automator",
     "新建文件夹",
     "道理我都懂，可我就是被现实困住了.md",
     "Clippings/Post by @WY_mask on X.md",
@@ -222,7 +231,6 @@
     "未命名.base",
     "Clippings/Post by @ai_suxiaole on X.md",
     "Clippings/byoungdEnglish-level-up-tips An advanced guide to learn English which might benefit you a lot 🎉 .  离谱的英语学习指南英语学习教程英语学习学英语.md",
-    "Clippings",
     "_templates/九宫格写作模板.md"
   ]
 }
