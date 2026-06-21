@@ -205,8 +205,19 @@
       "claudian:Open Claudian": false
     }
   },
-  "active": "f6a32fb02e990459",
+  "active": "063256e07a86f099",
   "lastOpenFiles": [
+    "Clippings/我们不应该提涨工资.md",
+    "Clippings/未命名.base",
+    "Clippings/双击生成推文草稿.bat",
+    "Clippings/双击发布已批准推文.bat",
+    "Clippings/情绪的反馈与自我的反省.md",
+    "Clippings/第五次疟疾.md",
+    "Clippings/道理我都懂，可我就是被现实困住了.md",
+    "Clippings/不要带着打工思维打工.md",
+    "Clippings/Dan Koe 的学习方法论：用 AI 把学习速度提升 10 倍的完整框架.md",
+    "Clippings/AI时代的投资利器 - Vibe-Trading 与 MungerMode 深度解析.md",
+    "Clippings/2025-06-11-英语提升指南介绍.md",
     "tweets/drafts/2026-06-21_Post_by__WY_mask_on_X_2.md",
     "tweets/drafts/2026-06-21_Post_by__WY_mask_on_X_1.md",
     "tweets/drafts/2026-06-21_AI时代的投资利器___Vibe_Trading_与_Mun_1.md",
@@ -225,23 +236,12 @@
     "tweets/drafts/2026-06-21_道理我都懂_可我就是被现实困住了_2.md",
     "tweets/drafts/2026-06-21_不要带着打工思维打工_3.md",
     "tweets/drafts/2026-06-21_道理我都懂_可我就是被现实困住了_1.md",
-    "tweets/drafts/2026-06-21_Post_by__ai_suxiaole_on_X_3.md",
-    "tweets/drafts/2026-06-21_Dan_Koe_的学习方法论_用_AI_把学习速度提升_10_1.md",
-    "tweets/drafts/2026-06-21_byoungdEnglish_level_up_tips_A_2.md",
-    "tweets/drafts/2026-06-21_byoungdEnglish_level_up_tips_A_1.md",
-    "tweets/drafts/2026-06-21_AI时代的投资利器___Vibe_Trading_与_Mun_2.md",
-    "tweets/drafts/2026-06-21_我们不应该提涨工资_1.md",
-    "tweets/drafts/2026-06-21_情绪的反馈与自我的反省_3.md",
-    "tweets/drafts/2026-06-21_情绪的反馈与自我的反省_2.md",
     "tweets-automator/src/ai.js",
     "关闭推特自动发布监控.bat",
     "启动推特自动发布监控.vbs",
     "tweets-automator/src/watch.js",
     "双击发布已批准推文.bat",
     "双击生成推文草稿.bat",
-    "tweets/published",
-    "tweets/state.json",
-    "tweets/drafts",
-    "tweets/failed"
+    "tweets/published"
   ]
 }
