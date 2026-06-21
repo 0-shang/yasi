@@ -1,14 +1,16 @@
 ---
 source: "Clippings/Post by @WY_mask on X.md"
-generated_at: "2026-06-21T17:45:48.300Z"
+generated_at: "2026-06-21T18:05:31.213Z"
 status: "draft"
-angle: "从用户痛点出发（不会写代码），强调工具的易用性和低门槛，吸引潜在用户。"
+angle: "推荐长期投资者使用MungerMode，强调信息聚合和减少噪音的价值"
 ---
 
-想做量化交易但写不出代码？
+做长期投资，信息源比策略更重要。
 
-Vibe-Trading把这事儿给干了——一个多agent工具，覆盖A股到加密，74个skill直接调用，策略都能预设好。
+MungerMode 这个工具跟踪你关注的每份 SEC 文件、财报电话会、播客、内部交易，甚至超级投资者的动态。
 
-小白也能让AI帮你跑回测、导数据。
+不用自己刷新闻，系统帮你筛好。
 
-门槛，正在消失。
+适合想减少噪音、专注深度研究的投资者。
+
+https://mungermode.com
