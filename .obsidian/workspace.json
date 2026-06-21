@@ -208,6 +208,7 @@
   },
   "active": "f6a32fb02e990459",
   "lastOpenFiles": [
+    "tweets-automator/src/ai.js",
     "关闭推特自动发布监控.bat",
     "启动推特自动发布监控.vbs",
     "tweets-automator/src/watch.js",
@@ -219,7 +220,6 @@
     "tweets/drafts",
     "tweets/failed",
     "tweets/approved",
-    "tweets",
     "tweets-automator/node_modules/protobufjs/ext/debug/README.md",
     "tweets-automator/node_modules/protobufjs/ext/descriptor/README.md",
     "tweets-automator/node_modules/protobufjs/google/README.md",

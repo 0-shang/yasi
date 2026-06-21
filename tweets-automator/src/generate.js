@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const config = require('./config');
-const { generateTweetsFromContent } = require('./gemini');
+const { generateTweetsFromContent } = require('./ai');
 
 // Set up directories
 config.ensureDirs();

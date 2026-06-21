@@ -14,6 +14,13 @@ if (fs.existsSync(envPath)) {
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-2.5-flash';
 
+const DEEPSEEK_API_KEY = process.env.DEEPSEEK_API_KEY;
+const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL || 'deepseek-chat';
+
+// Auto-detect provider based on credentials
+const AI_PROVIDER = process.env.AI_PROVIDER || 
+  (DEEPSEEK_API_KEY && DEEPSEEK_API_KEY !== 'your_deepseek_api_key_here' ? 'deepseek' : 'gemini');
+
 const TWITTER_API_KEY = process.env.TWITTER_API_KEY;
 const TWITTER_API_SECRET = process.env.TWITTER_API_SECRET;
 const TWITTER_ACCESS_TOKEN = process.env.TWITTER_ACCESS_TOKEN;
@@ -58,6 +65,9 @@ function ensureDirs() {
 module.exports = {
   GEMINI_API_KEY,
   GEMINI_MODEL,
+  DEEPSEEK_API_KEY,
+  DEEPSEEK_MODEL,
+  AI_PROVIDER,
   TWITTER: {
     apiKey: TWITTER_API_KEY,
     apiSecret: TWITTER_API_SECRET,
