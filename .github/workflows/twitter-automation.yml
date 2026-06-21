@@ -11,6 +11,12 @@ on:
   schedule:
     - cron: '0 1-14 * * *'  # Runs every hour from 9:00 to 22:00 Beijing Time (1:00 to 14:00 UTC)
   workflow_dispatch:
+    inputs:
+      ignore_time_restriction:
+        description: 'Ignore Beijing Time posting restrictions (9:00 - 22:00)'
+        required: false
+        default: 'false'
+        type: boolean
 
 permissions:
   contents: write
@@ -46,6 +52,7 @@ jobs:
         WORKSPACE_PATH: "../"
         TWEETS_DIR: "../tweets/"
         MAX_TWEETS_PER_RUN: "1"
+        IGNORE_TIME_RESTRICTION: ${{ github.event.inputs.ignore_time_restriction || 'false' }}
       run: |
         cd tweets-automator
         # 扫描并发布已批准的推文

@@ -1,0 +1,11 @@
+# Ignore IDE and internal tool directories
+.claudian/
+.claude/
+.obsidian/
+.trash/
+
+# Ignore Node dependencies and local environments
+node_modules/
+tweets-automator/node_modules/
+.env
+tweets-automator/.env
