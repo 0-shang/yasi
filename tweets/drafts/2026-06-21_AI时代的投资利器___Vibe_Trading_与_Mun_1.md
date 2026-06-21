@@ -1,10 +1,8 @@
 ---
-source: "AI时代的投资利器 - Vibe-Trading 与 MungerMode 深度解析.md"
-generated_at: "2026-06-21T18:05:27.276Z"
+source: "Clippings/AI时代的投资利器 - Vibe-Trading 与 MungerMode 深度解析.md"
+generated_at: "2026-06-21T18:37:21.435Z"
 status: "draft"
-angle: "Shadow Account 的独特价值亮点"
+angle: "突出Shadow Account功能，将行为金融学与个人交易复盘结合，吸引对交易心理学感兴趣的读者。"
 ---
 
-开源交易项目 Vibe-Trading 的 Shadow Account 是我今年见过最有想象力的功能：读取你的券商流水，逆向分析交易行为，自动检测处置效应、过度交易、追涨杀跌...相当于给你配了个行为金融学教练。
-
-552个量化因子+29套多智能体团队，MIT协议，免费数据，完全本地可跑。
+最近研究了Vibe-Trading，一个开源的多智能体AI交易系统，最惊艳的是Shadow Account功能——直接通过券商流水逆向分析你的交易行为，识别处置效应、过度交易等认知偏差。相当于一个帮你做复盘的私人教练，把行为金融学落地到了实战。

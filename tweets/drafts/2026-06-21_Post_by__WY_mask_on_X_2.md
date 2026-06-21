@@ -1,16 +1,11 @@
 ---
 source: "Clippings/Post by @WY_mask on X.md"
-generated_at: "2026-06-21T18:05:31.213Z"
+generated_at: "2026-06-21T18:37:30.254Z"
 status: "draft"
-angle: "推荐长期投资者使用MungerMode，强调信息聚合和减少噪音的价值"
+angle: "串联两个推荐，形成投资链条的对比"
 ---
 
-做长期投资，信息源比策略更重要。
-
-MungerMode 这个工具跟踪你关注的每份 SEC 文件、财报电话会、播客、内部交易，甚至超级投资者的动态。
-
-不用自己刷新闻，系统帮你筛好。
-
-适合想减少噪音、专注深度研究的投资者。
-
-https://mungermode.com
+最近发现两个很有意思的项目：
+1. Vibe-Trading——多agent交易工具，覆盖五大市场，还能导出通达信；
+2. mungermode.com——专为长期投资者设计，跟踪SEC文件、财报电话会、超级投资者动态。
+一个是自动化执行，一个是深度投研，刚好互补。
