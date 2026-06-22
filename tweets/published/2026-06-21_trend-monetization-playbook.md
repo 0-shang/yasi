@@ -1,7 +1,22 @@
 ---
-status: approved
+status: published
 folder: tweets/drafts
 filename: 2026-06-21_trend-monetization-playbook
+title: trend-monetization-playbook
+date: '2026-06-22'
+description: >-
+  下次看见什么火了 别只当观众。 建立这套肌肉记忆： --- 做流量的人只有两种玩法。 前者赚快钱，后者建资产。 但底层逻辑是一样的——
+  看到趋势，拆解它，然后变现。 --- 自媒体玩法（轻资产，跑得快...
+tags:
+  - feed
+published_at: '2026-06-22T22:56:02.574Z'
+tweet_id: '2069192714336231705'
+urls:
+  - 'https://x.com/i/web/status/2069192714336231705'
+  - 'https://x.com/i/web/status/2069192716253110372'
+  - 'https://x.com/i/web/status/2069192718023004516'
+  - 'https://x.com/i/web/status/2069192720678039670'
+  - 'https://x.com/i/web/status/2069192722548736359'
 ---
 
 下次看见什么火了

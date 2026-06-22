@@ -1,11 +1,29 @@
 ---
-status: failed
+status: published
 folder: tweets/drafts
 filename: 2026-06-21_Show_Your_Work_Core_Laws
 last_error: >-
   Twitter API credentials are not set or are still placeholders. Please update
   your .env file.
 failed_at: '2026-06-22T07:00:56.526Z'
+title: Show Your Work Core Laws
+date: '2026-06-22'
+description: >-
+  "你不必是个天才，才能让人关注你的工作。" 绝大多数人搞反了一件事： 他们觉得要先有成果，再分享。 但 Austin Kleon
+  告诉你——分享过程，比分享结果更重要。 --- 以下是《Show Yo...
+tags:
+  - feed
+published_at: '2026-06-22T23:06:55.899Z'
+tweet_id: '2069195451102826699'
+urls:
+  - 'https://x.com/i/web/status/2069195451102826699'
+  - 'https://x.com/i/web/status/2069195452822548602'
+  - 'https://x.com/i/web/status/2069195454613446878'
+  - 'https://x.com/i/web/status/2069195456505085991'
+  - 'https://x.com/i/web/status/2069195458136641790'
+  - 'https://x.com/i/web/status/2069195459843723594'
+  - 'https://x.com/i/web/status/2069195461609607318'
+  - 'https://x.com/i/web/status/2069195463274762277'
 ---
 
 "你不必是个天才，才能让人关注你的工作。"
