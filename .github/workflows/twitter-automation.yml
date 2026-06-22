@@ -9,7 +9,7 @@ on:
       - '.github/**'
       - 'README.md'
   schedule:
-    - cron: '0 1-14 * * *'  # Runs every hour from 9:00 to 22:00 Beijing Time (1:00 to 14:00 UTC)
+    - cron: '0,30 1-14 * * *'  # Runs every 30 minutes from 9:00 to 22:00 Beijing Time (1:00 to 14:00 UTC)
   workflow_dispatch:
     inputs:
       ignore_time_restriction:
