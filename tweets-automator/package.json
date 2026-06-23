@@ -6,12 +6,14 @@
   "scripts": {
     "generate": "node src/generate.js",
     "publish": "node src/publish.js",
-    "watch": "node src/watch.js"
+    "watch": "node src/watch.js",
+    "bot": "node src/bot.js"
   },
   "dependencies": {
     "@google/genai": "*",
     "dotenv": "*",
     "gray-matter": "*",
+    "telegraf": "^4.16.3",
     "twitter-api-v2": "*"
   },
   "type": "commonjs"

@@ -31,7 +31,7 @@ async function main() {
   console.log('Approved directory:', approvedDir);
   console.log('Drafts directory (checking for "approved" status):', draftsDir);
 
-  const approvedFiles = [];
+  let approvedFiles = [];
 
   // 1. Scan approved/ folder for markdown files
   if (fs.existsSync(approvedDir)) {
@@ -73,10 +73,20 @@ async function main() {
   // Sort approvedFiles alphabetically by filename to ensure oldest/earliest is processed first
   approvedFiles.sort((a, b) => a.filename.localeCompare(b.filename));
 
+  const targetFile = process.env.TARGET_FILE;
+  if (targetFile) {
+    const fileIndex = approvedFiles.findIndex(f => f.filename === targetFile);
+    if (fileIndex !== -1) {
+      approvedFiles = [approvedFiles[fileIndex]];
+    } else {
+      approvedFiles = [];
+    }
+  }
+
   const maxTweets = process.env.MAX_TWEETS_PER_RUN ? parseInt(process.env.MAX_TWEETS_PER_RUN, 10) : Infinity;
   const filesToPublish = approvedFiles.slice(0, maxTweets);
 
-  console.log(`Found ${approvedFiles.length} approved tweet(s) in queue. Will publish ${filesToPublish.length} tweet(s) in this run.\n`);
+  console.log(`Found ${approvedFiles.length} approved tweet(s) matching criteria. Will publish ${filesToPublish.length} tweet(s) in this run.\n`);
 
   for (const fileItem of filesToPublish) {
     console.log(`Publishing: "${fileItem.filename}" (from ${fileItem.origin})...`);

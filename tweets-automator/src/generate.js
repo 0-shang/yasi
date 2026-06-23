@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const crypto = require('crypto');
 const config = require('./config');
 const { generateTweetsFromContent } = require('./ai');
 
@@ -74,16 +75,22 @@ async function main() {
   
   for (const file of files) {
     const relativePath = path.relative(workspaceDir, file);
-    const stat = fs.statSync(file);
-    const mtime = stat.mtimeMs;
+    
+    // Calculate MD5 hash of the file content instead of using mtime
+    // Because Git doesn't preserve mtime, so mtime changes on every GitHub Action run!
+    const fileContent = fs.readFileSync(file, 'utf-8');
+    const hashSum = crypto.createHash('md5');
+    hashSum.update(fileContent);
+    const contentHash = hashSum.digest('hex');
     
     const processedInfo = state.processedFiles[relativePath];
     
-    if (!processedInfo || processedInfo.lastModified !== mtime) {
+    if (!processedInfo || processedInfo.hash !== contentHash) {
       newOrModifiedFiles.push({
         absolutePath: file,
         relativePath,
-        mtime
+        contentHash,
+        fileContent // pass it down so we don't read it again
       });
     }
   }
@@ -98,7 +105,7 @@ async function main() {
   for (const fileItem of newOrModifiedFiles) {
     console.log(`\nProcessing: "${fileItem.relativePath}"...`);
     try {
-      const fileContent = fs.readFileSync(fileItem.absolutePath, 'utf-8');
+      const fileContent = fileItem.fileContent;
       if (fileContent.trim().length < 10) {
         console.log('File content too short, skipping.');
         continue;
@@ -133,7 +140,7 @@ ${tweet.content}
 
       // Update state
       state.processedFiles[fileItem.relativePath] = {
-        lastModified: fileItem.mtime,
+        hash: fileItem.contentHash,
         lastProcessedAt: new Date().toISOString()
       };
       
