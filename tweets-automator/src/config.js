@@ -26,6 +26,8 @@ const TWITTER_API_SECRET = process.env.TWITTER_API_SECRET;
 const TWITTER_ACCESS_TOKEN = process.env.TWITTER_ACCESS_TOKEN;
 const TWITTER_ACCESS_SECRET = process.env.TWITTER_ACCESS_SECRET;
 
+const RSS_FEED_URL = process.env.RSS_FEED_URL || 'https://news.ycombinator.com/rss';
+
 // Resolve workspaces and tweets directories
 const baseDir = path.resolve(__dirname, '..');
 const workspacePath = path.resolve(baseDir, process.env.WORKSPACE_PATH || '../');
@@ -68,6 +70,7 @@ module.exports = {
   DEEPSEEK_API_KEY,
   DEEPSEEK_MODEL,
   AI_PROVIDER,
+  RSS_FEED_URL,
   TWITTER: {
     apiKey: TWITTER_API_KEY,
     apiSecret: TWITTER_API_SECRET,

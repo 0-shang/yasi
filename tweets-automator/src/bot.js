@@ -6,7 +6,9 @@ const matter = require('gray-matter');
 const { exec } = require('child_process');
 const config = require('./config');
 const { postTweetOrThread } = require('./twitter');
-const { generateTweetsFromContent } = require('./ai');
+const { generateTweetsFromContent, generateHotTweetsFromRSS } = require('./ai');
+const Parser = require('rss-parser');
+const parser = new Parser();
 
 // Setup environment and paths
 config.ensureDirs();
@@ -125,7 +127,71 @@ bot.start((ctx) => {
   if (ctx.from.id !== myUserId) {
     return ctx.reply("Sorry, you are not authorized to use this bot.");
   }
-  ctx.reply("👋 Welcome! Send me any text, and I will help you post it to Twitter/X.\n\nTips:\n- Use `---` to separate paragraphs into a Twitter Thread.\n- Send /check to read your GitHub 'approved' folder and publish pending tweets!");
+  ctx.reply("👋 Welcome! Send me any text, and I will help you post it to Twitter/X.\n\nTips:\n- Use `---` to separate paragraphs into a Twitter Thread.\n- Send /check to read your GitHub 'approved' folder and publish pending tweets!\n- Send /rss to fetch today's RSS feed and generate 10 hot tweet ideas.");
+});
+
+bot.command('rss', async (ctx) => {
+  if (ctx.from.id !== myUserId) return;
+  const loadingMsg = await ctx.reply('🔄 Fetching daily RSS feed and generating 10 hot tweets... Please wait, this might take a minute.');
+  
+  if (!config.RSS_FEED_URL) {
+    return ctx.telegram.editMessageText(ctx.chat.id, loadingMsg.message_id, undefined, '❌ RSS_FEED_URL is not configured in .env file.');
+  }
+
+  try {
+    const feed = await parser.parseURL(config.RSS_FEED_URL);
+    
+    // Filter for last 24 hours
+    const oneDayAgo = new Date(Date.now() - 24 * 60 * 60 * 1000);
+    let recentItems = feed.items.filter(item => {
+      if (!item.isoDate && !item.pubDate) return true; // keep if no date
+      const d = new Date(item.isoDate || item.pubDate);
+      return d > oneDayAgo;
+    });
+    
+    // If we have none in the last 24 hours, fallback to the latest 15
+    if (recentItems.length === 0) {
+      recentItems = feed.items.slice(0, 15);
+    }
+    
+    recentItems = recentItems.slice(0, 30); // limit to 30 to avoid huge prompt
+    
+    if (recentItems.length === 0) {
+      return ctx.telegram.editMessageText(ctx.chat.id, loadingMsg.message_id, undefined, '📭 No items found in the RSS feed.');
+    }
+    
+    // Truncate snippet to max 400 characters to save tokens and focus on main points
+    const feedText = recentItems.map(item => {
+      let snippet = item.contentSnippet || item.content || '';
+      if (snippet.length > 400) snippet = snippet.substring(0, 400) + '...';
+      // Clean up HTML tags if there are any left
+      snippet = snippet.replace(/<[^>]*>?/gm, ''); 
+      return `Title: ${item.title}\nLink: ${item.link}\nSnippet: ${snippet}`;
+    }).join('\n\n');
+    
+    const aiResults = await generateHotTweetsFromRSS(feedText);
+    
+    await ctx.telegram.editMessageText(ctx.chat.id, loadingMsg.message_id, undefined, `✅ Generated exactly 10 hot tweets from today's RSS (${feed.title || config.RSS_FEED_URL}):`);
+    
+    for (let i = 0; i < aiResults.length; i++) {
+      const option = aiResults[i];
+      const newMsgId = Date.now() + i;
+      pendingTweets.set(newMsgId, option.content);
+      
+      await ctx.reply(
+        `💡 **Angle**: ${option.angle}\n\n${option.content}`,
+        Markup.inlineKeyboard([
+          [Markup.button.callback('🚀 发布这个版本', `post_${newMsgId}`)],
+          [Markup.button.callback('✏️ 修改', `edittweet_${newMsgId}`)],
+          [Markup.button.callback('💾 存为草稿', `save_${newMsgId}`)]
+        ])
+      );
+    }
+    
+  } catch (err) {
+    console.error(err);
+    return ctx.telegram.editMessageText(ctx.chat.id, loadingMsg.message_id, undefined, `❌ Failed to process RSS:\n${err.message}`);
+  }
 });
 
 bot.command('check', async (ctx) => {
