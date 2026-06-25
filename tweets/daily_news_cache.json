@@ -1,82 +1,152 @@
 {
   "1": {
+    "category": "科技 (Tech)",
     "title": "The 'papers, please' era of the internet will decimate your privacy",
     "link": "https://expression.fire.org/p/the-papers-please-era-of-the-internet",
     "snippet": "Comments"
   },
   "2": {
+    "category": "科技 (Tech)",
     "title": "An entire Herculaneum scroll has been read for the first time",
     "link": "https://scrollprize.org/firstscroll",
     "snippet": "Comments"
   },
   "3": {
+    "category": "科技 (Tech)",
     "title": "Un-0: Generating Images with Coupled Oscillators",
     "link": "https://unconv.ai/blog/introducing-un-0-generating-images-with-coupled-oscillators/",
     "snippet": "Comments"
   },
   "4": {
+    "category": "科技 (Tech)",
     "title": "IBM debuts sub-1 nanometer chip technology",
     "link": "https://newsroom.ibm.com/2026-06-25-ibm-debuts-worlds-first-sub-1-nanometer-chip-technology",
     "snippet": "Comments"
   },
   "5": {
+    "category": "科技 (Tech)",
     "title": "An oral history of Bank Python (2021)",
     "link": "https://calpaterson.com/bank-python.html",
     "snippet": "Comments"
   },
   "6": {
+    "category": "科技 (Tech)",
     "title": "Show HN: OpenKnowledge – open source AI-first alternative to Obsidian/Notion",
     "link": "https://github.com/inkeep/open-knowledge",
     "snippet": "Comments"
   },
   "7": {
+    "category": "科技 (Tech)",
     "title": "Om Malik has died",
     "link": "https://om.co/2026/06/24/1966-2026/",
     "snippet": "Comments"
   },
   "8": {
+    "category": "科技 (Tech)",
     "title": "Parallel Parentheses Matching",
     "link": "https://williamdue.github.io/blog/parallel-parentheses-matching",
     "snippet": "Comments"
   },
   "9": {
+    "category": "科技 (Tech)",
     "title": "Zig's new bitCast semantics and LLVM back end improvements",
     "link": "https://ziglang.org/devlog/2026/#2026-06-25",
     "snippet": "Comments"
   },
   "10": {
+    "category": "科技 (Tech)",
     "title": "OS9Map",
     "link": "https://yllan.org/software/OS9Map/",
     "snippet": "Comments"
   },
   "11": {
-    "title": "Apple raises prices of MacBooks, iPads",
-    "link": "https://www.reuters.com/world/asia-pacific/apple-raises-prices-macbooks-ipads-memory-costs-skyrocket-2026-06-25/",
-    "snippet": "Comments"
+    "category": "AI (人工智能)",
+    "title": "WorkBuddy 上手实战：打造一个可用的本地 AI 工作台",
+    "link": "https://juejin.cn/post/7655157905101062178",
+    "snippet": "很多 AI 产品看上去都能聊天，但真正进到日常使用里，最常见的需求并不是闲聊，而是整理一段零散记录、起草一段通知、输出一份周报，或者把一个任务拆成清单"
   },
   "12": {
-    "title": "Besimple AI (YC P25) Is Hiring",
-    "link": "https://www.ycombinator.com/companies/besimple-ai/jobs/yWfhhOR-strategic-projects-lead-audio-data",
-    "snippet": "Comments"
+    "category": "AI (人工智能)",
+    "title": "Tauri (26)——托盘图标总对不上系统主题？一行 Template Image 搞定",
+    "link": "https://juejin.cn/post/7655157905101013026",
+    "snippet": "起因：托盘图标颜色不对劲 事情是这样的。我最近在做 PinWall —— 一个 macOS 桌面透明便签应用，基于 Tauri v2 构建。 有一次我打开应用，发现菜单栏上的托盘图标颜色不对。别的 a"
   },
   "13": {
-    "title": "Migrating from Proxmox to NixOS and Incus",
-    "link": "https://www.nijho.lt/post/proxmox-to-nixos/",
-    "snippet": "Comments"
+    "category": "AI (人工智能)",
+    "title": "从一次栈溢出报错说起，我把递归彻底扒明白了",
+    "link": "https://juejin.cn/post/7655221987896049664",
+    "snippet": "先从一个爆栈的报错说起 昨天在写一个数组工具函数，需要把深层嵌套的数组拍平。我顺手写了个递归版本，自测用个三层嵌套的数组没问题，就丢进去测了个十几层的大数组。结果控制台直接红了一片，报 Maximum"
   },
   "14": {
-    "title": "Show HN: I made Google Trends for Hacker News by indexing 18 years of comments",
-    "link": "https://hackernewstrends.com",
-    "snippet": "Comments"
+    "category": "AI (人工智能)",
+    "title": "火山AgentPlan/CodingPlan同步上线GLM-5.2",
+    "link": "https://juejin.cn/post/7655245911811964974",
+    "snippet": "火山方舟上线 Agent Plan 与 Coding Plan，搭载 GLM-5.2 旗舰模型，1M 上下文，编码与长程任务能力提升，欢迎体验。"
   },
   "15": {
-    "title": "OpenAI Leans Toward Waiting Until Next Year for IPO",
-    "link": "https://www.nytimes.com/2026/06/25/technology/openai-ipo-artificial-intelligence.html",
-    "snippet": "Comments"
+    "category": "AI (人工智能)",
+    "title": "面试官问你：“AI 能写 80% 的代码了，公司为什么还需要你？”",
+    "link": "https://juejin.cn/post/7655245911811784750",
+    "snippet": "先说一个事实：2026 年的技术面试，已经和两年前完全不一样了。两年前面试问的是：\"手写一个 Promise\"、\"说说 React Fiber 原理\"...现在面试官默认你会用 AI。他们真正想知道的"
   },
   "16": {
-    "title": "Political bias in AI: Where the AI models stand",
-    "link": "https://trakkr.ai/bias",
-    "snippet": "Comments"
+    "category": "AI (人工智能)",
+    "title": "Skill 系列（05）：Skill 工作流串联——4 种模式实测，并发加速 1.5x",
+    "link": "https://juejin.cn/post/7655160488179564579",
+    "snippet": "实现并测量 4 种 Skill 串联模式：顺序链（35.1s）、并发 fan-out（加速 1.5x，不是理论的 3x）、条件路由（3/3 正确分类）、反馈循环（首轮得 8/10 直接通过）。"
+  },
+  "17": {
+    "category": "AI (人工智能)",
+    "title": "每日一个开源项目（第141篇）：hiring-agent - HackerRank 开源了他们的简历评分系统，你的简历能得几分？",
+    "link": "https://juejin.cn/post/7655161567955386368",
+    "snippet": "HackerRank 开源了内部的简历评分流水线：四个维度加权打分，最高 120 分。对程序员来说，意义不只是「了解招聘系统」，而是「用招聘方的视角 review 自己的简历」。"
+  },
+  "18": {
+    "category": "AI (人工智能)",
+    "title": "又升级咯！坦克大战2026，科技与复古并存！",
+    "link": "https://juejin.cn/post/7655138581694185510",
+    "snippet": "Opus 4.8 又帮我升级《坦克大战 3D》这个游戏了！ 这一波更新重点是：战场地图！ 我把整个地图系统独立出来了，这样的好处是，可以快速管理和修改地图。 现在主界面已经添加了一个地图设置功能： 点"
+  },
+  "19": {
+    "category": "AI (人工智能)",
+    "title": "Few-shot、Chain-of-Thought、ReAct模式是什么",
+    "link": "https://juejin.cn/post/7655175450838777862",
+    "snippet": "一、前置基础：三种范式的演进背景 在讲解具体方法前，先明确两个基础认知，理解这三类技术的诞生逻辑： 零样本（Zero-shot）：大模型的原生提问方式直接向模型提出任务要求、不提供任何示例，就是零样本"
+  },
+  "20": {
+    "category": "AI (人工智能)",
+    "title": "【机器人 / 强化学习】SERL：让真机强化学习从“难用”走向“可复现”的强化学习框架 ----（3）算法篇（RLPD）",
+    "link": "https://juejin.cn/post/7655217832595292211",
+    "snippet": "【机器人 / 强化学习】SERL：让真机强化学习从“难用”走向“可复现”的强化学习框架 ----（3）算法篇（RLPD） 0x00 概要 0x01 基础 & 背景 1.1 总体流程图 1.2 面临的问"
+  },
+  "21": {
+    "category": "理财 (Finance)",
+    "title": "威尼斯双年展随笔：黎明之前，溪水入海",
+    "link": "https://www.ftchinese.com/story/001110137",
+    "snippet": "黎蓉：这届双年展看似特别“黑暗”--战火、生态崩塌、算法碾压以及来自评审和策展的种种争议，一直挥之不去。但艺术家们的作品，让我看见了光和希望，让我相信这是黎明前的黑暗。"
+  },
+  "22": {
+    "category": "理财 (Finance)",
+    "title": "美加墨世界杯札记之三：天王的修罗场与“最高的景色”",
+    "link": "https://www.ftchinese.com/story/001110148",
+    "snippet": "范力文：在这届世界杯的跌宕起伏之中，可以看到个人在命运面前的挫败与反击，也可以看到团队冷酷如精密齿轮般的纪律和协作。"
+  },
+  "23": {
+    "category": "理财 (Finance)",
+    "title": "《抓特务》对观众来说，太复杂了",
+    "link": "https://www.ftchinese.com/story/001110150",
+    "snippet": "刘远举：历史中的真实冲突，未必比短剧中的冲突更弱，但作为电影，总有其自身的局限，这就造成了电影的理解难度。"
+  },
+  "24": {
+    "category": "理财 (Finance)",
+    "title": "回望斯塔默的两年首相时光",
+    "link": "https://www.ftchinese.com/story/001110149",
+    "snippet": "张璐诗：英国人曾经受够了会撒谎、会闯祸、会制造戏剧性的首相；于是他们选出了一个认真工作、不轻易冒险也不轻易撒谎的首相。但两年后他们发现，这并不足以解决英国的问题。"
+  },
+  "25": {
+    "category": "理财 (Finance)",
+    "title": "安东尼奥•高迪的灵感之窗",
+    "link": "https://www.ftchinese.com/story/001110145",
+    "snippet": "崔莹：这位西班牙建筑师认为，窗是建筑与自然持续对话的媒介，他不仅关注光如何进入建筑，也关心风如何穿过空间。"
   }
 }

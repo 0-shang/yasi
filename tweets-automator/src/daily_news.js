@@ -26,6 +26,10 @@ const defaultRssSources = {
     "https://www.mittrchina.com/rss",
     "https://juejin.cn/rss"
   ],
+  "开源工具 (Open Source)": [
+    "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
+    "https://www.producthunt.com/feed"
+  ],
   "理财 (Finance)": [
     "https://www.ftchinese.com/rss/feed",
     "https://money.163.com/special/00252EQ2/wealthrss.xml"
