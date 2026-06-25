@@ -23,17 +23,18 @@ const defaultRssSources = {
     "https://www.huxiu.com/rss/0.xml"
   ],
   "AI (人工智能)": [
-    "https://www.mittrchina.com/rss",
-    "https://juejin.cn/rss"
+    "https://juejin.cn/rss",
+    "https://www.qbitai.com/feed",
+    "https://openai.com/blog/rss.xml"
   ],
-  "开源工具 (Open Source)": [
+  "实用工具与资源 (Tools & Resources)": [
     "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
     "https://www.producthunt.com/feed"
   ],
   "理财投资 (Finance)": [
-    "https://36kr.com/feed",
-    "https://feeds.bloomberg.com/markets/news.rss",
-    "https://seekingalpha.com/market_currents.xml"
+    "https://xueqiu.com/hots/topic/rss",
+    "https://www.moneyweek.com/rss",
+    "https://www.fool.com/feeds/index.aspx"
   ],
   "社会 (Society)": [
     "http://feeds.bbci.co.uk/zhongwen/simp/rss.xml",

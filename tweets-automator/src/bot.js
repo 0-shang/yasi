@@ -136,11 +136,61 @@ bot.start((ctx) => {
     return ctx.reply("Sorry, you are not authorized to use this bot.");
   }
   ctx.reply(
-    "👋 欢迎！您可以直接发送任何长篇文字/链接，我将为您提炼为专业推文。\n\n💡 快捷指令:\n- 发送 `/check` 检查并发布队列推文\n- 点击下方按钮获取中文早报看板",
+    "👋 欢迎！您可以直接发送任何长篇文字/链接，我将为您提炼为专业推文。\n\n💡 快捷指令:\n- `/daily` 抓取最新早报\n- `/news` 一键唤出上次早报\n- `/check` 检查并发布队列推文",
     Markup.inlineKeyboard([
-      [Markup.button.callback('📰 获取今日中文早报', 'fetch_daily')]
+      [Markup.button.callback('📰 抓取最新早报', 'fetch_daily')],
+      [Markup.button.callback('📋 查看上次早报', 'show_cached_news')]
     ])
   );
+});
+
+// Helper: re-send cached news board
+async function sendCachedNews(ctx) {
+  const cacheFile = path.join(config.paths.tweets.base, 'daily_news_cache.json');
+  if (!fs.existsSync(cacheFile)) {
+    return ctx.reply('📭 还没有缓存的早报，请先点击「抓取最新早报」或发送 /daily');
+  }
+  
+  const cache = JSON.parse(fs.readFileSync(cacheFile, 'utf-8'));
+  const keys = Object.keys(cache).sort((a, b) => parseInt(a) - parseInt(b));
+  
+  if (keys.length === 0) {
+    return ctx.reply('📭 缓存为空，请先抓取早报。');
+  }
+  
+  function escapeHTML(str) {
+    return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+  
+  let msg = "📰 <b>早报看板（缓存）</b>\n\n回复【数字序号】生成推文草稿：\n\n";
+  let currentCategory = "";
+  
+  for (const key of keys) {
+    const item = cache[key];
+    if (item.category && item.category !== currentCategory) {
+      currentCategory = item.category;
+      msg += `\n🔹 <b>【${currentCategory}】</b>\n`;
+    }
+    const title = escapeHTML(item.title || '');
+    if (item.link) {
+      msg += `<b>[${key}]</b> <a href="${escapeHTML(item.link)}">${title}</a>\n\n`;
+    } else {
+      msg += `<b>[${key}]</b> ${title}\n\n`;
+    }
+  }
+  
+  await ctx.reply(msg, { parse_mode: 'HTML', disable_web_page_preview: true });
+}
+
+bot.command('news', async (ctx) => {
+  if (ctx.from.id !== myUserId) return;
+  await sendCachedNews(ctx);
+});
+
+bot.action('show_cached_news', async (ctx) => {
+  if (ctx.from.id !== myUserId) return;
+  await ctx.answerCbQuery();
+  await sendCachedNews(ctx);
 });
 
 bot.command('daily', async (ctx) => {
