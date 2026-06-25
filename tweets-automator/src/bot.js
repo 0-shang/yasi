@@ -712,6 +712,15 @@ bot.action(/cancel_(.+)/, async (ctx) => {
   await ctx.deleteMessage();
 });
 
+bot.telegram.setMyCommands([
+  { command: 'daily', description: '📰 抓取最新全矩阵早报' },
+  { command: 'news', description: '📋 一键唤出上次早报缓存' },
+  { command: 'check', description: '🚀 检查并发布草稿队列推文' },
+  { command: 'start', description: '🏠 回到主菜单' }
+]).then(() => {
+  console.log('✅ Bot commands menu set!');
+}).catch(console.error);
+
 console.log('🤖 Telegram Bot is running! You can now send messages to it in Telegram.');
 bot.launch().catch(err => {
   console.error('Failed to start bot:', err);

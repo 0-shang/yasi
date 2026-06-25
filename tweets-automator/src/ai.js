@@ -87,10 +87,10 @@ ${content}
 """
 
 Output Format:
-You MUST output a valid JSON array of objects. Do not write any explanations before or after the JSON.
-Each object in the array must have exactly the following keys:
-- "content": The exact text content of the tweet/post.
-- "angle": A brief description of the angle, hook, or concept used for this tweet.
+You MUST output a valid JSON object (NOT an array). Do not write any explanations before or after the JSON.
+The object must have exactly these keys:
+- "content": The complete tweet text. If it's a thread, join all thread parts with a line containing ONLY --- between them. All thread parts go in this ONE field.
+- "angle": A brief description of the angle or concept used.
 `;
 
   try {
@@ -132,12 +132,13 @@ Each object in the array must have exactly the following keys:
     }
 
     let parsed = JSON.parse(text);
-    if (!Array.isArray(parsed)) {
-      if (parsed.tweets && Array.isArray(parsed.tweets)) {
-        parsed = parsed.tweets;
-      } else {
-        parsed = [parsed];
-      }
+    // Normalize to array
+    if (Array.isArray(parsed)) {
+      parsed = parsed;
+    } else if (parsed.tweets && Array.isArray(parsed.tweets)) {
+      parsed = parsed.tweets;
+    } else {
+      parsed = [parsed];
     }
     return parsed;
   } catch (error) {
@@ -168,26 +169,26 @@ ${content}
       config: {
         responseMimeType: 'application/json',
         responseSchema: {
-          type: 'array',
-          items: {
-            type: 'object',
-            properties: {
-              content: { 
-                type: 'string', 
-                description: 'The exact text content of the tweet/post, formatted for Twitter/X. Under 280 characters.' 
-              },
-              angle: { 
-                type: 'string', 
-                description: 'A brief description of the angle, hook, or concept used for this tweet.' 
-              }
+          type: 'object',
+          properties: {
+            content: { 
+              type: 'string', 
+              description: 'The exact text content of the tweet/post. If it is a thread, join all thread parts with a line containing ONLY --- between them. All thread parts must go in this one string.' 
             },
-            required: ['content', 'angle']
-          }
+            angle: { 
+              type: 'string', 
+              description: 'A brief description of the angle, hook, or concept used for this tweet.' 
+            }
+          },
+          required: ['content', 'angle']
         }
       }
     });
 
-    const parsed = JSON.parse(response.text);
+    let parsed = JSON.parse(response.text);
+    if (!Array.isArray(parsed)) {
+      parsed = [parsed];
+    }
     return parsed;
   } catch (error) {
     console.error('Error generating tweets via Gemini API:', error.message);
