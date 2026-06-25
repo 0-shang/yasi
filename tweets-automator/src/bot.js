@@ -35,7 +35,7 @@ const editingState = new Map();
 const chatMemory = new Map();
 
 // Helper: Save to markdown file and sync to github
-function saveAndSyncToGithub(content, type = 'published', tweetResult = null, scheduleTime = null) {
+function saveAndSyncToGithub(content, type = 'published', tweetResult = null, scheduleTime = null, ctx = null) {
   const dateStr = new Date().toISOString().split('T')[0];
   const timeStr = Date.now().toString().slice(-6); // Just for uniqueness
   const filename = `${dateStr}_tg_bot_${timeStr}.md`;
@@ -74,10 +74,11 @@ function saveAndSyncToGithub(content, type = 'published', tweetResult = null, sc
   exec(`git add tweets/ && git commit -m "bot: auto saved ${type} tweet" && git pull --rebase origin main && git push`, { cwd: repoRoot }, (err, stdout, stderr) => {
     if (err) {
       console.error('Git sync failed:', err);
+      if (ctx) ctx.reply(`❌ Git sync failed: ${err.message}`);
     } else {
       console.log('Git sync success.');
       if (type === 'published') {
-        syncCrossRepo();
+        syncCrossRepo(ctx);
       }
     }
   });
@@ -523,7 +524,7 @@ bot.action(/post_(.+)/, async (ctx) => {
     const tweetTexts = text.split(/\r?\n---\r?\n/).map(t => t.trim()).filter(t => t.length > 0);
     const result = await postTweetOrThread(tweetTexts);
     
-    saveAndSyncToGithub(text, 'published', result);
+    saveAndSyncToGithub(text, 'published', result, null, ctx);
     pendingTweets.delete(msgId);
 
     await ctx.editMessageText(`✅ Published successfully!\nLink: ${result.urls[0]}`);

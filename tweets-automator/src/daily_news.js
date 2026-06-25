@@ -51,6 +51,7 @@ async function main() {
 
     const cacheData = {};
     let messageText = "📰 **今日早报聚合看板**\n\n请直接回复对应【数字序号】，我将为您生成专属推文：\n\n";
+    let textToTranslate = "";
 
     allItems.forEach((item, index) => {
       const num = index + 1;
@@ -64,8 +65,19 @@ async function main() {
         snippet: snippet
       };
 
-      messageText += `**[${num}]** ${item.title}\n`;
+      textToTranslate += `[${num}] ${item.title}\n`;
     });
+
+    const { translateToChinese } = require('./ai');
+    let translatedText = textToTranslate;
+    try {
+      console.log('Translating to Chinese...');
+      translatedText = await translateToChinese(textToTranslate);
+    } catch(e) {
+      console.log('Translation failed, using English', e);
+    }
+
+    messageText += translatedText;
 
     // Save cache
     fs.writeFileSync(cacheFile, JSON.stringify(cacheData, null, 2), 'utf-8');
