@@ -30,16 +30,18 @@ const defaultRssSources = {
     "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
     "https://www.producthunt.com/feed"
   ],
-  "理财 (Finance)": [
-    "https://www.ftchinese.com/rss/feed",
-    "https://money.163.com/special/00252EQ2/wealthrss.xml"
+  "理财投资 (Finance)": [
+    "https://36kr.com/feed",
+    "https://feeds.bloomberg.com/markets/news.rss",
+    "https://seekingalpha.com/market_currents.xml"
   ],
   "社会 (Society)": [
     "http://feeds.bbci.co.uk/zhongwen/simp/rss.xml",
     "https://cn.nytimes.com/rss/"
   ],
-  "民生 (Livelihood)": [
-    "https://www.v2ex.com/index.xml"
+  "民生热议 (Livelihood)": [
+    "https://www.reddit.com/r/China_irl/.rss",
+    "https://www.solidot.org/index.rss"
   ]
 };
 
