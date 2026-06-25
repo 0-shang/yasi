@@ -470,8 +470,18 @@ bot.on('text', async (ctx) => {
             const option = aiResults[i];
             const newMsgId = Date.now() + i;
             pendingTweets.set(newMsgId, option.content);
+            
+            // Format preview: show thread parts with visual divider
+            const parts = option.content.split(/\r?\n---\r?\n/);
+            let preview;
+            if (parts.length > 1) {
+              preview = `🧵 Thread (${parts.length} 条)\n\n` + parts.map((p, idx) => `[${idx+1}/${parts.length}]\n${p.trim()}`).join('\n\n────────────\n\n');
+            } else {
+              preview = option.content;
+            }
+            
             await ctx.reply(
-              `💡 **Angle**: ${option.angle}\n\n${option.content}`,
+              `💡 Angle: ${option.angle}\n\n${preview}`,
               Markup.inlineKeyboard([
                 [Markup.button.callback('🚀 发布', `post_${newMsgId}`)],
                 [Markup.button.callback('✏️ 修改', `edittweet_${newMsgId}`)],
@@ -507,8 +517,18 @@ bot.on('text', async (ctx) => {
         const option = result.tweets[i];
         const newMsgId = Date.now() + i;
         pendingTweets.set(newMsgId, option.content);
+        
+        // Format preview: show thread parts with visual divider
+        const parts = option.content.split(/\r?\n---\r?\n/);
+        let preview;
+        if (parts.length > 1) {
+          preview = `🧵 Thread (${parts.length} 条)\n\n` + parts.map((p, idx) => `[${idx+1}/${parts.length}]\n${p.trim()}`).join('\n\n────────────\n\n');
+        } else {
+          preview = option.content;
+        }
+        
         await ctx.reply(
-          `💡 **Angle**: ${option.angle}\n\n${option.content}`,
+          `💡 Angle: ${option.angle}\n\n${preview}`,
           Markup.inlineKeyboard([
             [Markup.button.callback('🚀 发布', `post_${newMsgId}`)],
             [Markup.button.callback('✏️ 修改', `edittweet_${newMsgId}`)],

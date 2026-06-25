@@ -26,30 +26,36 @@ The JSON object must have exactly the following structure:
   "is_tweet": boolean (true ONLY if you generated tweets, false if it's just a conversational reply),
   "reply": "your rich, highly intelligent conversation reply here (only if is_tweet is false)",
   "tweets": [ 
-    { "content": "tweet text here", "angle": "brief description of the angle" } 
+    { "content": "the full tweet text here — if it's a thread, join all parts with a line containing only --- between them", "angle": "brief description" } 
   ] (only if is_tweet is true)
 }
 
 If generating tweets, follow these rules:
-1. 【黄金第一句 (Hook)】：极具吸引力。
-2. 【极简排版】：每句话独立成行，段落之间留空行。
+1. 【灵活判断】：根据内容的丰富程度自行决定是生成单条推文还是 Thread。简短观点用单推，干货多才用 Thread。
+2. 【黄金第一句 (Hook)】：极具吸引力，让人停下刷屏。
 3. 【精简人话】：大白话，自信真诚，不要AI味，禁感叹号和无意义标签。
-4. 【字数限制】：单条推文 130 中文以内。
-5. 【Thread格式】：如内容多，生成 2-4 条的 Thread，推文之间用单独的 \`---\` 分隔。
+4. 【字数限制】：单条推文或 Thread 中每一段控制在 130 中文字符以内。
+5. 【Thread格式】：如果生成 Thread，所有段落写在同一个 content 字段里，段落之间用单独一行 --- 分隔。
 `;
 
 const userTweetPrompt = `
-你是一个顶级的 X (Twitter) 个人 IP 运营专家与文案大师，擅长将长篇干货笔记提炼成高互动率、高传播性的推文。
+你是一个顶级的 X (Twitter) 个人 IP 运营专家与文案大师。
 
-请阅读我提供的这篇笔记/收藏文章，提取出其中最核心的【黄金认知】、【颠覆性观点】或【实操指南】，将其重写为一条 Twitter 单推，或一个逻辑严密的 Twitter Thread (系列推文)。
+请阅读我提供的内容，提炼出最核心的价值点，重写为适合 Twitter 发布的推文。
 
-请遵循以下【文案准则】：
-1. 【黄金第一句 (Hook)】：第一句必须极具吸引力，能够让读者在信息流中停下刷屏。可以使用：反直觉观点、冲突对比、痛点揭示或直接给出的巨大收益。
-2. 【极简排版】：每句话独立成行，段落之间留空行。每行不要太长。多用列表呈现步骤。
-3. 【精简人话】：使用大白话，语气要自信、真诚、平视读者，不要带那种AI的味道。绝对不要使用任何死板的翻译腔，禁止使用过度夸张的感叹号，禁止使用无意义的标签（如 #AI #学习）。
-4. 【字数限制】：每个推文区块的字数必须控制在 130 个中文字符以内（防止超出 Twitter 限制）。
-5. 【系统兼容格式】：如果内容较多，请生成 2-4 条组成的 Thread，并在两条推文之间用单独一行的 \`---\` 分隔。不要自己加上任何 \`status: draft\` 等头部信息，直接输出内容即可。
+【核心原则：灵活，不死板】
+- 如果内容简短、观点犀利，就写一条精悍的单推（一两句话就够了，不要硬凑字数）。
+- 如果内容丰富、干货很多，才考虑写一个 2-4 条的 Thread。
+- 不要每次都千篇一律地用 Thread，也不要每次都只写一句话。根据素材本身来决定最佳形式。
+
+【文案准则】：
+1. 【Hook】：第一句必须能让人在信息流中停下来。可以用：反直觉观点、冲突对比、痛点揭示、或直接抛出巨大收益。
+2. 【排版】：每句话独立成行，段落之间留空行，读起来轻松。
+3. 【人话】：大白话，语气自信、真诚、平视读者。绝对禁止AI味、翻译腔、过度感叹号、无意义标签（如 #AI #学习）。
+4. 【字数】：每个推文区块控制在 130 个中文字符以内。
+5. 【Thread 格式】：如果是 Thread，所有段落写在一起，两段之间用单独一行的 --- 分隔。不要加任何 status: draft 等头部信息。
 `;
+
 
 
 /**
