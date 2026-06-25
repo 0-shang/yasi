@@ -6,7 +6,7 @@ const matter = require('gray-matter');
 const { exec } = require('child_process');
 const config = require('./config');
 const { postTweetOrThread } = require('./twitter');
-const { generateTweetsFromContent, generateHotTweetsFromRSS } = require('./ai');
+const { generateTweetsFromContent, generateHotTweetsFromRSS, chatWithAI } = require('./ai');
 const Parser = require('rss-parser');
 const parser = new Parser();
 
@@ -31,9 +31,11 @@ const pendingTweets = new Map();
 const checkPendingFiles = new Map();
 // In-memory store for edit state
 const editingState = new Map();
+// In-memory store for conversational chat
+const chatMemory = new Map();
 
 // Helper: Save to markdown file and sync to github
-function saveAndSyncToGithub(content, type = 'published', tweetResult = null) {
+function saveAndSyncToGithub(content, type = 'published', tweetResult = null, scheduleTime = null) {
   const dateStr = new Date().toISOString().split('T')[0];
   const timeStr = Date.now().toString().slice(-6); // Just for uniqueness
   const filename = `${dateStr}_tg_bot_${timeStr}.md`;
@@ -52,6 +54,11 @@ function saveAndSyncToGithub(content, type = 'published', tweetResult = null) {
     tags: ['feed'],
     status: type
   };
+
+  if (scheduleTime) {
+    frontmatter.schedule_time = scheduleTime;
+    frontmatter.status = 'approved';
+  }
 
   if (tweetResult) {
     frontmatter.published_at = new Date().toISOString();
@@ -183,7 +190,8 @@ bot.command('rss', async (ctx) => {
         Markup.inlineKeyboard([
           [Markup.button.callback('🚀 发布这个版本', `post_${newMsgId}`)],
           [Markup.button.callback('✏️ 修改', `edittweet_${newMsgId}`)],
-          [Markup.button.callback('💾 存为草稿', `save_${newMsgId}`)]
+          [Markup.button.callback('💾 存为草稿', `save_${newMsgId}`)],
+          [Markup.button.callback('📅 定时发送', `schedule_${newMsgId}`)]
         ])
       );
     }
@@ -404,26 +412,99 @@ bot.on('text', async (ctx) => {
           [Markup.button.callback('🚀 立即发布', `post_${state.msgId}`)],
           [Markup.button.callback('✨ AI 润色 (AI Polish)', `ai_${state.msgId}`)],
           [Markup.button.callback('💾 存为草稿', `save_${state.msgId}`)],
+          [Markup.button.callback('📅 定时发送', `schedule_${state.msgId}`)],
           [Markup.button.callback('✏️ 再次修改', `edittweet_${state.msgId}`)],
           [Markup.button.callback('❌ 取消', `cancel_${state.msgId}`)]
         ])
       );
       return;
+    } else if (state.type === 'schedule') {
+      const pendingText = pendingTweets.get(state.msgId);
+      if (!pendingText) {
+        return ctx.reply('❌ 找不到对应的推文内容，可能已过期。');
+      }
+      // Check if text looks like a time
+      saveAndSyncToGithub(pendingText, 'draft', null, text);
+      pendingTweets.delete(state.msgId);
+      await ctx.reply(`✅ 已加入定时队列，计划发送时间: ${text}\n(将存入 drafts 并标记 approved)`);
+      return;
     }
   }
 
-  // Normal processing for a new idea/tweet
-  pendingTweets.set(msgId, text);
+  // Check for number wakeup (daily news)
+  if (/^\d+$/.test(text.trim())) {
+    const num = text.trim();
+    const cacheFile = path.join(config.paths.tweets.base, 'daily_news_cache.json');
+    if (fs.existsSync(cacheFile)) {
+      const cache = JSON.parse(fs.readFileSync(cacheFile, 'utf-8'));
+      if (cache[num]) {
+        const item = cache[num];
+        await ctx.reply(`🔄 正在提取早报内容 [${num}] 并生成推文...`);
+        const feedText = `Title: ${item.title}\nLink: ${item.link}\nSnippet: ${item.snippet}`;
+        try {
+          const aiResults = await generateHotTweetsFromRSS(feedText);
+          for (let i = 0; i < aiResults.length; i++) {
+            const option = aiResults[i];
+            const newMsgId = Date.now() + i;
+            pendingTweets.set(newMsgId, option.content);
+            await ctx.reply(
+              `💡 **Angle**: ${option.angle}\n\n${option.content}`,
+              Markup.inlineKeyboard([
+                [Markup.button.callback('🚀 发布', `post_${newMsgId}`)],
+                [Markup.button.callback('✏️ 修改', `edittweet_${newMsgId}`)],
+                [Markup.button.callback('💾 草稿', `save_${newMsgId}`)],
+                [Markup.button.callback('📅 定时', `schedule_${newMsgId}`)]
+              ])
+            );
+          }
+        } catch (e) {
+          await ctx.reply(`❌ 生成失败: ${e.message}`);
+        }
+        return;
+      }
+    }
+  }
 
-  await ctx.reply(
-    "📝 What would you like to do with this tweet?",
-    Markup.inlineKeyboard([
-      [Markup.button.callback('🚀 立即发布 (Post Now)', `post_${msgId}`)],
-      [Markup.button.callback('✨ AI 润色 (AI Polish)', `ai_${msgId}`)],
-      [Markup.button.callback('💾 存为草稿 (Save Draft)', `save_${msgId}`)],
-      [Markup.button.callback('❌ 取消 (Cancel)', `cancel_${msgId}`)]
-    ])
-  );
+  // Normal chat processing via Memory
+  await ctx.sendChatAction('typing');
+  let history = chatMemory.get(myUserId) || [];
+  history.push({ role: 'user', content: text });
+  
+  // Keep last 10 turns (20 messages max if we include assistant)
+  if (history.length > 20) history = history.slice(-20);
+  
+  try {
+    const result = await chatWithAI(history);
+    
+    if (result.is_tweet && result.tweets && result.tweets.length > 0) {
+      history.push({ role: 'assistant', content: '我为您生成了推文草稿，请查阅下方。' });
+      chatMemory.set(myUserId, history);
+      
+      for (let i = 0; i < result.tweets.length; i++) {
+        const option = result.tweets[i];
+        const newMsgId = Date.now() + i;
+        pendingTweets.set(newMsgId, option.content);
+        await ctx.reply(
+          `💡 **Angle**: ${option.angle}\n\n${option.content}`,
+          Markup.inlineKeyboard([
+            [Markup.button.callback('🚀 发布', `post_${newMsgId}`)],
+            [Markup.button.callback('✏️ 修改', `edittweet_${newMsgId}`)],
+            [Markup.button.callback('💾 草稿', `save_${newMsgId}`)],
+            [Markup.button.callback('📅 定时', `schedule_${newMsgId}`)]
+          ])
+        );
+      }
+    } else {
+      history.push({ role: 'assistant', content: result.reply });
+      chatMemory.set(myUserId, history);
+      await ctx.reply(result.reply);
+    }
+  } catch (e) {
+    console.error(e);
+    await ctx.reply(`❌ AI 处理失败: ${e.message}`);
+    // remove the last user message on failure
+    history.pop();
+  }
 });
 
 bot.action(/post_(.+)/, async (ctx) => {
@@ -516,12 +597,26 @@ bot.action(/save_(.+)/, async (ctx) => {
   await ctx.editMessageText('💾 Saved to local draft folder and syncing to GitHub...');
 });
 
+bot.action(/schedule_(.+)/, async (ctx) => {
+  if (ctx.from.id !== myUserId) return;
+  const msgId = parseInt(ctx.match[1], 10);
+  const text = pendingTweets.get(msgId);
+
+  if (!text) {
+    return ctx.answerCbQuery('Tweet content expired or not found.');
+  }
+
+  editingState.set(myUserId, { type: 'schedule', msgId: msgId });
+  await ctx.answerCbQuery();
+  await ctx.reply('📅 **设置定时发送**\n\n请直接回复我想发送的时间（格式建议：`2026-06-26 15:30`，或者直接输入 `明天上午10点` 等，格式不限只要发布脚本能懂即可，建议用标准时间格式）。');
+});
+
 bot.action(/cancel_(.+)/, async (ctx) => {
   if (ctx.from.id !== myUserId) return;
   const msgId = parseInt(ctx.match[1], 10);
   pendingTweets.delete(msgId);
   await ctx.answerCbQuery('Cancelled');
-  await ctx.editMessageText('🚫 Cancelled.');
+  await ctx.deleteMessage();
 });
 
 console.log('🤖 Telegram Bot is running! You can now send messages to it in Telegram.');

@@ -38,11 +38,28 @@ async function main() {
     const files = fs.readdirSync(approvedDir);
     files.forEach(file => {
       if (file.endsWith('.md')) {
-        approvedFiles.push({
-          absolutePath: path.join(approvedDir, file),
-          filename: file,
-          origin: 'approved_folder'
-        });
+        const filePath = path.join(approvedDir, file);
+        try {
+          const content = fs.readFileSync(filePath, 'utf-8');
+          const parsed = matter(content);
+          let canPublish = true;
+          if (parsed.data && parsed.data.schedule_time) {
+            const scheduleTime = new Date(parsed.data.schedule_time);
+            if (now < scheduleTime) {
+              canPublish = false;
+              console.log(`Skipping ${file} (scheduled for ${scheduleTime.toUTCString()})`);
+            }
+          }
+          if (canPublish) {
+            approvedFiles.push({
+              absolutePath: filePath,
+              filename: file,
+              origin: 'approved_folder'
+            });
+          }
+        } catch(e) {
+          // ignore
+        }
       }
     });
   }
@@ -57,11 +74,21 @@ async function main() {
           const content = fs.readFileSync(filePath, 'utf-8');
           const parsed = matter(content);
           if (parsed.data && parsed.data.status === 'approved') {
-            approvedFiles.push({
-              absolutePath: filePath,
-              filename: file,
-              origin: 'drafts_folder'
-            });
+            let canPublish = true;
+            if (parsed.data.schedule_time) {
+              const scheduleTime = new Date(parsed.data.schedule_time);
+              if (now < scheduleTime) {
+                canPublish = false;
+                console.log(`Skipping ${file} (scheduled for ${scheduleTime.toUTCString()})`);
+              }
+            }
+            if (canPublish) {
+              approvedFiles.push({
+                absolutePath: filePath,
+                filename: file,
+                origin: 'drafts_folder'
+              });
+            }
           }
         } catch (e) {
           // Ignore files that fail to parse
