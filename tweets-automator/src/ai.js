@@ -370,8 +370,14 @@ async function chatWithDeepSeek(messages) {
   if (!response.ok) throw new Error(`DeepSeek API error: ${await response.text()}`);
   const result = await response.json();
   let text = result.choices[0].message.content.trim();
-  if (text.startsWith('\`\`\`')) text = text.replace(/^\`\`\`json\s*/i, '').replace(/\`\`\`$/, '').trim();
-  return JSON.parse(text);
+  if (text.startsWith('```')) text = text.replace(/^```json\s*/i, '').replace(/```$/, '').trim();
+  
+  try {
+    return JSON.parse(text);
+  } catch (e) {
+    // Fallback if AI didn't output JSON
+    return { is_tweet: false, reply: text || "对不起，我暂时无法回应。" };
+  }
 }
 
 async function chatWithGemini(messages) {
@@ -394,7 +400,12 @@ async function chatWithGemini(messages) {
     }
   });
   
-  return JSON.parse(response.text);
+  let text = response.text || "";
+  try {
+    return JSON.parse(text);
+  } catch (e) {
+    return { is_tweet: false, reply: text || "对不起，我暂时无法回应。" };
+  }
 }
 
 async function chatWithAI(messages) {
