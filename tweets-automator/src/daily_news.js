@@ -35,11 +35,11 @@ const defaultRssSources = {
     "https://money.163.com/special/00252EQ2/wealthrss.xml"
   ],
   "社会 (Society)": [
-    "http://news.163.com/special/00011K6L/rss_newstop.xml",
-    "https://news.qq.com/newsgn/rss_newsgn.xml"
+    "http://feeds.bbci.co.uk/zhongwen/simp/rss.xml",
+    "https://cn.nytimes.com/rss/"
   ],
   "民生 (Livelihood)": [
-    "https://www.thepaper.cn/rss"
+    "https://www.v2ex.com/index.xml"
   ]
 };
 
