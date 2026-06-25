@@ -50,7 +50,7 @@ async function main() {
     }
 
     const cacheData = {};
-    let messageText = "📰 **今日早报聚合看板**\n\n请直接回复对应【数字序号】，我将为您生成专属推文：\n\n";
+    let messageText = "📰 <b>今日早报聚合看板</b>\n\n请直接回复对应【数字序号】，我将为您生成专属推文：\n\n";
     let textToTranslate = "";
 
     allItems.forEach((item, index) => {
@@ -77,13 +77,33 @@ async function main() {
       console.log('Translation failed, using English', e);
     }
 
-    messageText += translatedText;
+    // Process translated lines into HTML links
+    function escapeHTML(str) {
+      return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    }
+    
+    const lines = translatedText.split('\n');
+    for (const line of lines) {
+      const match = line.match(/^\[(\d+)\]\s*(.*)$/);
+      if (match) {
+        const num = match[1];
+        const title = match[2].trim();
+        const link = cacheData[num] ? cacheData[num].link : '';
+        if (link) {
+          messageText += `<b>[${num}]</b> <a href="${escapeHTML(link)}">${escapeHTML(title)}</a>\n\n`;
+        } else {
+          messageText += `<b>[${num}]</b> ${escapeHTML(title)}\n\n`;
+        }
+      } else if (line.trim() !== "") {
+        messageText += escapeHTML(line) + "\n\n";
+      }
+    }
 
     // Save cache
     fs.writeFileSync(cacheFile, JSON.stringify(cacheData, null, 2), 'utf-8');
 
     // Send via Bot
-    await bot.telegram.sendMessage(myUserId, messageText, { parse_mode: 'Markdown' });
+    await bot.telegram.sendMessage(myUserId, messageText, { parse_mode: 'HTML', disable_web_page_preview: true });
     console.log('✅ Daily news board sent and cached!');
 
   } catch (err) {

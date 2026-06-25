@@ -135,7 +135,29 @@ bot.start((ctx) => {
   if (ctx.from.id !== myUserId) {
     return ctx.reply("Sorry, you are not authorized to use this bot.");
   }
-  ctx.reply("👋 Welcome! Send me any text, and I will help you post it to Twitter/X.\n\nTips:\n- Use `---` to separate paragraphs into a Twitter Thread.\n- Send /check to read your GitHub 'approved' folder and publish pending tweets!\n- Send /rss to fetch today's RSS feed and generate 10 hot tweet ideas.");
+  ctx.reply(
+    "👋 欢迎！您可以直接发送任何长篇文字/链接，我将为您提炼为专业推文。\n\n💡 快捷指令:\n- 发送 `/check` 检查并发布队列推文\n- 点击下方按钮获取中文早报看板",
+    Markup.inlineKeyboard([
+      [Markup.button.callback('📰 获取今日中文早报', 'fetch_daily')]
+    ])
+  );
+});
+
+bot.command('daily', async (ctx) => {
+  if (ctx.from.id !== myUserId) return;
+  await ctx.reply('🔄 正在呼叫后台引擎抓取、筛选并翻译多源早报...（可能需要1-2分钟，请稍候）');
+  exec('npm run daily', { cwd: path.join(__dirname, '..') }, (err) => {
+    if (err) console.error('Daily fetch error:', err);
+  });
+});
+
+bot.action('fetch_daily', async (ctx) => {
+  if (ctx.from.id !== myUserId) return;
+  await ctx.answerCbQuery();
+  await ctx.reply('🔄 正在呼叫后台引擎抓取、筛选并翻译多源早报...（可能需要1-2分钟，请稍候）');
+  exec('npm run daily', { cwd: path.join(__dirname, '..') }, (err) => {
+    if (err) console.error('Daily fetch error:', err);
+  });
 });
 
 bot.command('rss', async (ctx) => {
