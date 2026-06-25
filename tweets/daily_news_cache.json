@@ -1,22 +1,22 @@
 {
   "1": {
+    "title": "The 'papers, please' era of the internet will decimate your privacy",
+    "link": "https://expression.fire.org/p/the-papers-please-era-of-the-internet",
+    "snippet": "Comments"
+  },
+  "2": {
     "title": "An entire Herculaneum scroll has been read for the first time",
     "link": "https://scrollprize.org/firstscroll",
     "snippet": "Comments"
   },
-  "2": {
+  "3": {
     "title": "Un-0: Generating Images with Coupled Oscillators",
     "link": "https://unconv.ai/blog/introducing-un-0-generating-images-with-coupled-oscillators/",
     "snippet": "Comments"
   },
-  "3": {
+  "4": {
     "title": "IBM debuts sub-1 nanometer chip technology",
     "link": "https://newsroom.ibm.com/2026-06-25-ibm-debuts-worlds-first-sub-1-nanometer-chip-technology",
-    "snippet": "Comments"
-  },
-  "4": {
-    "title": "Show HN: OpenKnowledge – open source AI-first alternative to Obsidian/Notion",
-    "link": "https://github.com/inkeep/open-knowledge",
     "snippet": "Comments"
   },
   "5": {
@@ -25,8 +25,8 @@
     "snippet": "Comments"
   },
   "6": {
-    "title": "Parallel Parentheses Matching",
-    "link": "https://williamdue.github.io/blog/parallel-parentheses-matching",
+    "title": "Show HN: OpenKnowledge – open source AI-first alternative to Obsidian/Notion",
+    "link": "https://github.com/inkeep/open-knowledge",
     "snippet": "Comments"
   },
   "7": {
@@ -35,13 +35,13 @@
     "snippet": "Comments"
   },
   "8": {
-    "title": "Zig's new bitCast semantics and LLVM back end improvements",
-    "link": "https://ziglang.org/devlog/2026/#2026-06-25",
+    "title": "Parallel Parentheses Matching",
+    "link": "https://williamdue.github.io/blog/parallel-parentheses-matching",
     "snippet": "Comments"
   },
   "9": {
-    "title": "Apple raises prices of MacBooks, iPads",
-    "link": "https://www.reuters.com/world/asia-pacific/apple-raises-prices-macbooks-ipads-memory-costs-skyrocket-2026-06-25/",
+    "title": "Zig's new bitCast semantics and LLVM back end improvements",
+    "link": "https://ziglang.org/devlog/2026/#2026-06-25",
     "snippet": "Comments"
   },
   "10": {
@@ -50,23 +50,23 @@
     "snippet": "Comments"
   },
   "11": {
+    "title": "Apple raises prices of MacBooks, iPads",
+    "link": "https://www.reuters.com/world/asia-pacific/apple-raises-prices-macbooks-ipads-memory-costs-skyrocket-2026-06-25/",
+    "snippet": "Comments"
+  },
+  "12": {
     "title": "Besimple AI (YC P25) Is Hiring",
     "link": "https://www.ycombinator.com/companies/besimple-ai/jobs/yWfhhOR-strategic-projects-lead-audio-data",
     "snippet": "Comments"
   },
-  "12": {
-    "title": "The 'papers, please' era of the internet will decimate your privacy",
-    "link": "https://expression.fire.org/p/the-papers-please-era-of-the-internet",
-    "snippet": "Comments"
-  },
   "13": {
-    "title": "Show HN: I made Google Trends for Hacker News by indexing 18 years of comments",
-    "link": "https://hackernewstrends.com",
+    "title": "Migrating from Proxmox to NixOS and Incus",
+    "link": "https://www.nijho.lt/post/proxmox-to-nixos/",
     "snippet": "Comments"
   },
   "14": {
-    "title": "Migrating from Proxmox to NixOS and Incus",
-    "link": "https://www.nijho.lt/post/proxmox-to-nixos/",
+    "title": "Show HN: I made Google Trends for Hacker News by indexing 18 years of comments",
+    "link": "https://hackernewstrends.com",
     "snippet": "Comments"
   },
   "15": {
