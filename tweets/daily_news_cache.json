@@ -5,13 +5,13 @@
     "snippet": "Comments"
   },
   "2": {
-    "title": "IBM debuts sub-1 nanometer chip technology",
-    "link": "https://newsroom.ibm.com/2026-06-25-ibm-debuts-worlds-first-sub-1-nanometer-chip-technology",
+    "title": "Un-0: Generating Images with Coupled Oscillators",
+    "link": "https://unconv.ai/blog/introducing-un-0-generating-images-with-coupled-oscillators/",
     "snippet": "Comments"
   },
   "3": {
-    "title": "Un-0: Generating Images with Coupled Oscillators",
-    "link": "https://unconv.ai/blog/introducing-un-0-generating-images-with-coupled-oscillators/",
+    "title": "IBM debuts sub-1 nanometer chip technology",
+    "link": "https://newsroom.ibm.com/2026-06-25-ibm-debuts-worlds-first-sub-1-nanometer-chip-technology",
     "snippet": "Comments"
   },
   "4": {
@@ -20,23 +20,23 @@
     "snippet": "Comments"
   },
   "5": {
-    "title": "The Doorman's Fallacy in Action",
-    "link": "https://rozumem.xyz/posts/17",
+    "title": "An oral history of Bank Python (2021)",
+    "link": "https://calpaterson.com/bank-python.html",
     "snippet": "Comments"
   },
   "6": {
-    "title": "Zig's new bitCast semantics and LLVM back end improvements",
-    "link": "https://ziglang.org/devlog/2026/#2026-06-25",
-    "snippet": "Comments"
-  },
-  "7": {
     "title": "Parallel Parentheses Matching",
     "link": "https://williamdue.github.io/blog/parallel-parentheses-matching",
     "snippet": "Comments"
   },
+  "7": {
+    "title": "Om Malik has died",
+    "link": "https://om.co/2026/06/24/1966-2026/",
+    "snippet": "Comments"
+  },
   "8": {
-    "title": "OS9Map",
-    "link": "https://yllan.org/software/OS9Map/",
+    "title": "Zig's new bitCast semantics and LLVM back end improvements",
+    "link": "https://ziglang.org/devlog/2026/#2026-06-25",
     "snippet": "Comments"
   },
   "9": {
@@ -45,8 +45,8 @@
     "snippet": "Comments"
   },
   "10": {
-    "title": "Om Malik, 1966-2026",
-    "link": "https://om.co/2026/06/24/1966-2026/",
+    "title": "OS9Map",
+    "link": "https://yllan.org/software/OS9Map/",
     "snippet": "Comments"
   },
   "11": {
@@ -55,28 +55,28 @@
     "snippet": "Comments"
   },
   "12": {
+    "title": "The 'papers, please' era of the internet will decimate your privacy",
+    "link": "https://expression.fire.org/p/the-papers-please-era-of-the-internet",
+    "snippet": "Comments"
+  },
+  "13": {
     "title": "Show HN: I made Google Trends for Hacker News by indexing 18 years of comments",
     "link": "https://hackernewstrends.com",
     "snippet": "Comments"
   },
-  "13": {
-    "title": "Political bias in AI: Where the AI models stand",
-    "link": "https://trakkr.ai/bias",
-    "snippet": "Comments"
-  },
   "14": {
-    "title": "How physicists track and trap the elusive neutrino",
-    "link": "https://www.quantamagazine.org/how-physicists-track-and-trap-the-elusive-neutrino-20260624/",
+    "title": "Migrating from Proxmox to NixOS and Incus",
+    "link": "https://www.nijho.lt/post/proxmox-to-nixos/",
     "snippet": "Comments"
   },
   "15": {
-    "title": "Show HN: Turn native language audio into flashcards and shadowing practice",
-    "link": "https://lingochunk.com/try",
+    "title": "OpenAI Leans Toward Waiting Until Next Year for IPO",
+    "link": "https://www.nytimes.com/2026/06/25/technology/openai-ipo-artificial-intelligence.html",
     "snippet": "Comments"
   },
   "16": {
-    "title": "An oral history of Bank Python (2021)",
-    "link": "https://calpaterson.com/bank-python.html",
+    "title": "Political bias in AI: Where the AI models stand",
+    "link": "https://trakkr.ai/bias",
     "snippet": "Comments"
   }
 }

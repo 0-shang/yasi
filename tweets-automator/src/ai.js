@@ -10,6 +10,9 @@ function getGeminiClient() {
   if (!geminiInstance) {
     geminiInstance = new GoogleGenAI({ apiKey: config.GEMINI_API_KEY });
   }
+  return geminiInstance;
+}
+
 const chatSystemPrompt = `
 You are a highly intelligent and capable AI assistant (acting as a Telegram Bot). 
 When the user chats with you, answers questions, or makes general requests, respond in a natural, helpful, and friendly conversational tone (just like ChatGPT or Gemini). You can use formatting, emojis, and be as smart as possible.
