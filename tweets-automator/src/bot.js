@@ -262,6 +262,7 @@ bot.command('rss', async (ctx) => {
         `💡 **Angle**: ${option.angle}\n\n${option.content}`,
         Markup.inlineKeyboard([
           [Markup.button.callback('🚀 发布这个版本', `post_${newMsgId}`)],
+          [Markup.button.callback('🧵 转为 Thread', `thread_${newMsgId}`)],
           [Markup.button.callback('✏️ 修改', `edittweet_${newMsgId}`)],
           [Markup.button.callback('💾 存为草稿', `save_${newMsgId}`)],
           [Markup.button.callback('📅 定时发送', `schedule_${newMsgId}`)]
@@ -483,6 +484,7 @@ bot.on('text', async (ctx) => {
         `✅ Tweet updated!\n\n${text}`,
         Markup.inlineKeyboard([
           [Markup.button.callback('🚀 立即发布', `post_${state.msgId}`)],
+          [Markup.button.callback('🧵 转为 Thread', `thread_${state.msgId}`)],
           [Markup.button.callback('✨ AI 润色 (AI Polish)', `ai_${state.msgId}`)],
           [Markup.button.callback('💾 存为草稿', `save_${state.msgId}`)],
           [Markup.button.callback('📅 定时发送', `schedule_${state.msgId}`)],
@@ -533,8 +535,9 @@ bot.on('text', async (ctx) => {
             await ctx.reply(
               `💡 Angle: ${option.angle}\n\n${preview}`,
               Markup.inlineKeyboard([
-                [Markup.button.callback('🚀 发布', `post_${newMsgId}`)],
-                [Markup.button.callback('✏️ 修改', `edittweet_${newMsgId}`)],
+            [Markup.button.callback('🚀 发布', `post_${newMsgId}`)],
+            [Markup.button.callback('🧵 转为 Thread', `thread_${newMsgId}`)],
+            [Markup.button.callback('✏️ 修改', `edittweet_${newMsgId}`)],
                 [Markup.button.callback('💾 草稿', `save_${newMsgId}`)],
                 [Markup.button.callback('📅 定时', `schedule_${newMsgId}`)]
               ])
@@ -652,6 +655,7 @@ bot.action(/ai_(.+)/, async (ctx) => {
         `💡 **Angle**: ${option.angle}\n\n${option.content}`,
         Markup.inlineKeyboard([
           [Markup.button.callback('🚀 发布这个版本', `post_${newMsgId}`)],
+          [Markup.button.callback('🧵 转为 Thread', `thread_${newMsgId}`)],
           [Markup.button.callback('✏️ 修改', `edittweet_${newMsgId}`)],
           [Markup.button.callback('💾 存为草稿', `save_${newMsgId}`)]
         ])
@@ -660,6 +664,61 @@ bot.action(/ai_(.+)/, async (ctx) => {
   } catch (error) {
     console.error(error);
     await ctx.reply(`❌ AI Generation failed: ${error.message}`);
+  }
+});
+
+bot.action(/thread_(.+)/, async (ctx) => {
+  if (ctx.from.id !== myUserId) return;
+  const msgId = parseInt(ctx.match[1], 10);
+  const text = pendingTweets.get(msgId);
+
+  if (!text) {
+    return ctx.answerCbQuery('Tweet content expired or not found.');
+  }
+
+  await ctx.answerCbQuery('Converting to Thread...');
+  await ctx.editMessageText('🧵 AI 正在将其重写为 Thread 格式... 请稍候。');
+
+  try {
+    const history = [{ 
+      role: 'user', 
+      content: `请将以下内容重新组织、扩充或拆分，强制改写为一个内容丰富的 Twitter Thread（连推）。\n要求：\n1. 必须是多条推文，段落之间用单独一行的 --- 分隔。\n2. 第一条推文必须有吸引力（Hook）。\n3. 排版必须留白，推文内部的段落或短句之间务必有空行（两次换行）。\n4. 千万不要把文字挤成一坨。\n\n原内容：\n${text}` 
+    }];
+    const result = await chatWithAI(history);
+    
+    if (result.is_tweet && result.tweets && result.tweets.length > 0) {
+      await ctx.editMessageText('✨ Thread 生成完毕！请查看下方新消息。');
+      
+      for (let i = 0; i < result.tweets.length; i++) {
+        const option = result.tweets[i];
+        const newMsgId = Date.now() + i;
+        pendingTweets.set(newMsgId, option.content);
+        
+        const parts = option.content.split(/\r?\n---\r?\n/);
+        let preview;
+        if (parts.length > 1) {
+          preview = `🧵 Thread (${parts.length} 条)\n\n` + parts.map((p, idx) => `[${idx+1}/${parts.length}]\n${p.trim()}`).join('\n\n────────────\n\n');
+        } else {
+          preview = option.content;
+        }
+        
+        await ctx.reply(
+          `💡 Angle: ${option.angle}\n\n${preview}`,
+          Markup.inlineKeyboard([
+            [Markup.button.callback('🚀 发布', `post_${newMsgId}`)],
+            [Markup.button.callback('🧵 转为 Thread', `thread_${newMsgId}`)],
+            [Markup.button.callback('✏️ 修改', `edittweet_${newMsgId}`)],
+            [Markup.button.callback('💾 草稿', `save_${newMsgId}`)],
+            [Markup.button.callback('📅 定时', `schedule_${newMsgId}`)]
+          ])
+        );
+      }
+    } else {
+      await ctx.editMessageText(`❌ 生成 Thread 失败，AI 返回：${result.reply}`);
+    }
+  } catch (error) {
+    console.error(error);
+    await ctx.editMessageText(`❌ 生成 Thread 失败: ${error.message}`);
   }
 });
 
