@@ -1,152 +1,362 @@
 {
   "1": {
     "category": "科技 (Tech)",
-    "title": "The 'papers, please' era of the internet will decimate your privacy",
-    "link": "https://expression.fire.org/p/the-papers-please-era-of-the-internet",
+    "title": "We All Depend on Open Source. We Will Defend It Together",
+    "link": "https://akrites.org/letter/",
     "snippet": "Comments"
   },
   "2": {
-    "category": "科技 (Tech)",
-    "title": "An entire Herculaneum scroll has been read for the first time",
-    "link": "https://scrollprize.org/firstscroll",
-    "snippet": "Comments"
-  },
-  "3": {
-    "category": "科技 (Tech)",
-    "title": "Un-0: Generating Images with Coupled Oscillators",
-    "link": "https://unconv.ai/blog/introducing-un-0-generating-images-with-coupled-oscillators/",
-    "snippet": "Comments"
-  },
-  "4": {
-    "category": "科技 (Tech)",
-    "title": "IBM debuts sub-1 nanometer chip technology",
-    "link": "https://newsroom.ibm.com/2026-06-25-ibm-debuts-worlds-first-sub-1-nanometer-chip-technology",
-    "snippet": "Comments"
-  },
-  "5": {
-    "category": "科技 (Tech)",
-    "title": "An oral history of Bank Python (2021)",
-    "link": "https://calpaterson.com/bank-python.html",
-    "snippet": "Comments"
-  },
-  "6": {
-    "category": "科技 (Tech)",
-    "title": "Show HN: OpenKnowledge – open source AI-first alternative to Obsidian/Notion",
-    "link": "https://github.com/inkeep/open-knowledge",
-    "snippet": "Comments"
-  },
-  "7": {
     "category": "科技 (Tech)",
     "title": "Om Malik has died",
     "link": "https://om.co/2026/06/24/1966-2026/",
     "snippet": "Comments"
   },
+  "3": {
+    "category": "科技 (Tech)",
+    "title": "An entire Herculaneum scroll has been read for the first time",
+    "link": "https://scrollprize.org/firstscroll",
+    "snippet": "Comments"
+  },
+  "4": {
+    "category": "科技 (Tech)",
+    "title": "Libre Barcode Project",
+    "link": "https://graphicore.github.io/librebarcode/",
+    "snippet": "Comments"
+  },
+  "5": {
+    "category": "科技 (Tech)",
+    "title": "Captcha proves you're human. HATCHA proves you're not",
+    "link": "https://github.com/mondaycom/HATCHA",
+    "snippet": "Comments"
+  },
+  "6": {
+    "category": "科技 (Tech)",
+    "title": "Framework's 10G Ethernet module exposes USB-C's complexity",
+    "link": "https://www.jeffgeerling.com/blog/2026/framework-10g-ethernet-module-usb-c-complexity/",
+    "snippet": "Comments"
+  },
+  "7": {
+    "category": "科技 (Tech)",
+    "title": "What happened after 2k people tried to hack my AI assistant",
+    "link": "https://www.fernandoi.cl/posts/hackmyclaw/",
+    "snippet": "Comments"
+  },
   "8": {
     "category": "科技 (Tech)",
-    "title": "Parallel Parentheses Matching",
-    "link": "https://williamdue.github.io/blog/parallel-parentheses-matching",
+    "title": "The 'papers, please' era of the internet will decimate your privacy",
+    "link": "https://expression.fire.org/p/the-papers-please-era-of-the-internet",
     "snippet": "Comments"
   },
   "9": {
     "category": "科技 (Tech)",
-    "title": "Zig's new bitCast semantics and LLVM back end improvements",
-    "link": "https://ziglang.org/devlog/2026/#2026-06-25",
+    "title": "The Garbage Collection Handbook: The Art of Automatic Memory Management (2nd Ed) (2023)",
+    "link": "https://gchandbook.org/",
     "snippet": "Comments"
   },
   "10": {
     "category": "科技 (Tech)",
-    "title": "OS9Map",
-    "link": "https://yllan.org/software/OS9Map/",
+    "title": "IBM debuts sub-1 nanometer chip technology",
+    "link": "https://newsroom.ibm.com/2026-06-25-ibm-debuts-worlds-first-sub-1-nanometer-chip-technology",
     "snippet": "Comments"
   },
   "11": {
     "category": "AI (人工智能)",
-    "title": "WorkBuddy 上手实战：打造一个可用的本地 AI 工作台",
-    "link": "https://juejin.cn/post/7655157905101062178",
-    "snippet": "很多 AI 产品看上去都能聊天，但真正进到日常使用里，最常见的需求并不是闲聊，而是整理一段零散记录、起草一段通知、输出一份周报，或者把一个任务拆成清单"
+    "title": "谷歌「推理之王」也跑路Meta了，当年还是李飞飞挖来的",
+    "link": "https://www.qbitai.com/2026/06/438848.html",
+    "snippet": "Coding为王"
   },
   "12": {
     "category": "AI (人工智能)",
-    "title": "Tauri (26)——托盘图标总对不上系统主题？一行 Template Image 搞定",
-    "link": "https://juejin.cn/post/7655157905101013026",
-    "snippet": "起因：托盘图标颜色不对劲 事情是这样的。我最近在做 PinWall —— 一个 macOS 桌面透明便签应用，基于 Tauri v2 构建。 有一次我打开应用，发现菜单栏上的托盘图标颜色不对。别的 a"
+    "title": "Claude Fable 5分批重新上线！GPT-5.6秒跟",
+    "link": "https://www.qbitai.com/2026/06/438789.html",
+    "snippet": "这不能是营销计划的一部分吧？"
   },
   "13": {
     "category": "AI (人工智能)",
-    "title": "从一次栈溢出报错说起，我把递归彻底扒明白了",
-    "link": "https://juejin.cn/post/7655221987896049664",
-    "snippet": "先从一个爆栈的报错说起 昨天在写一个数组工具函数，需要把深层嵌套的数组拍平。我顺手写了个递归版本，自测用个三层嵌套的数组没问题，就丢进去测了个十几层的大数组。结果控制台直接红了一片，报 Maximum"
+    "title": "从需求到设计到代码，一个软件全搞定！TRAE Work Design实测来了",
+    "link": "https://www.qbitai.com/2026/06/438750.html",
+    "snippet": "精准识别设计系统"
   },
   "14": {
     "category": "AI (人工智能)",
-    "title": "火山AgentPlan/CodingPlan同步上线GLM-5.2",
-    "link": "https://juejin.cn/post/7655245911811964974",
-    "snippet": "火山方舟上线 Agent Plan 与 Coding Plan，搭载 GLM-5.2 旗舰模型，1M 上下文，编码与长程任务能力提升，欢迎体验。"
+    "title": "华勤技术与正行创新达成战略合作，加速机器人“走进工厂、走上产线”",
+    "link": "https://www.qbitai.com/2026/06/438741.html",
+    "snippet": "共建工业物理智能“数据底座与智能大脑”"
   },
   "15": {
     "category": "AI (人工智能)",
-    "title": "面试官问你：“AI 能写 80% 的代码了，公司为什么还需要你？”",
-    "link": "https://juejin.cn/post/7655245911811784750",
-    "snippet": "先说一个事实：2026 年的技术面试，已经和两年前完全不一样了。两年前面试问的是：\"手写一个 Promise\"、\"说说 React Fiber 原理\"...现在面试官默认你会用 AI。他们真正想知道的"
+    "title": "让机器人学会“预判接触”：它石智航牵头四大顶尖机构发布TacForeSight，破解精细操作难题",
+    "link": "https://www.qbitai.com/2026/06/438701.html",
+    "snippet": "提前200毫秒预判"
   },
   "16": {
     "category": "AI (人工智能)",
-    "title": "Skill 系列（05）：Skill 工作流串联——4 种模式实测，并发加速 1.5x",
-    "link": "https://juejin.cn/post/7655160488179564579",
-    "snippet": "实现并测量 4 种 Skill 串联模式：顺序链（35.1s）、并发 fan-out（加速 1.5x，不是理论的 3x）、条件路由（3/3 正确分类）、反馈循环（首轮得 8/10 直接通过）。"
+    "title": "英伟达MoE新开源：一行import，微调加速3.7倍",
+    "link": "https://www.qbitai.com/2026/06/438703.html",
+    "snippet": "在Transformers v5的基础上，增加了专家并行、DeepEP和TransformerEngine"
   },
   "17": {
     "category": "AI (人工智能)",
-    "title": "每日一个开源项目（第141篇）：hiring-agent - HackerRank 开源了他们的简历评分系统，你的简历能得几分？",
-    "link": "https://juejin.cn/post/7655161567955386368",
-    "snippet": "HackerRank 开源了内部的简历评分流水线：四个维度加权打分，最高 120 分。对程序员来说，意义不只是「了解招聘系统」，而是「用招聘方的视角 review 自己的简历」。"
+    "title": "WAVES 2026：今年盛夏，在创投浪潮里，做迎风而立的少数人！",
+    "link": "https://www.qbitai.com/2026/06/438698.html",
+    "snippet": ""
   },
   "18": {
     "category": "AI (人工智能)",
-    "title": "又升级咯！坦克大战2026，科技与复古并存！",
-    "link": "https://juejin.cn/post/7655138581694185510",
-    "snippet": "Opus 4.8 又帮我升级《坦克大战 3D》这个游戏了！ 这一波更新重点是：战场地图！ 我把整个地图系统独立出来了，这样的好处是，可以快速管理和修改地图。 现在主界面已经添加了一个地图设置功能： 点"
+    "title": "库克临走给苹果涨价！电脑iPad全线上调，iPhone 18也跑不了",
+    "link": "https://www.qbitai.com/2026/06/438690.html",
+    "snippet": "Macbook涨了2500元"
   },
   "19": {
     "category": "AI (人工智能)",
-    "title": "Few-shot、Chain-of-Thought、ReAct模式是什么",
-    "link": "https://juejin.cn/post/7655175450838777862",
-    "snippet": "一、前置基础：三种范式的演进背景 在讲解具体方法前，先明确两个基础认知，理解这三类技术的诞生逻辑： 零样本（Zero-shot）：大模型的原生提问方式直接向模型提出任务要求、不提供任何示例，就是零样本"
+    "title": "How agents are transforming work",
+    "link": "https://openai.com/index/how-agents-are-transforming-work",
+    "snippet": "A new OpenAI research paper shows how AI agents are transforming work, enabling longer, more complex tasks and expanding productivity across roles."
   },
   "20": {
     "category": "AI (人工智能)",
-    "title": "【机器人 / 强化学习】SERL：让真机强化学习从“难用”走向“可复现”的强化学习框架 ----（3）算法篇（RLPD）",
-    "link": "https://juejin.cn/post/7655217832595292211",
-    "snippet": "【机器人 / 强化学习】SERL：让真机强化学习从“难用”走向“可复现”的强化学习框架 ----（3）算法篇（RLPD） 0x00 概要 0x01 基础 & 背景 1.1 总体流程图 1.2 面临的问"
+    "title": "OpenAI and Broadcom unveil LLM-optimized inference chip",
+    "link": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
+    "snippet": "OpenAI and Broadcom introduce Jalapeño, a custom AI chip built for LLM inference to improve performance, efficiency, and scale across AI systems."
   },
   "21": {
-    "category": "理财 (Finance)",
-    "title": "威尼斯双年展随笔：黎明之前，溪水入海",
-    "link": "https://www.ftchinese.com/story/001110137",
-    "snippet": "黎蓉：这届双年展看似特别“黑暗”--战火、生态崩塌、算法碾压以及来自评审和策展的种种争议，一直挥之不去。但艺术家们的作品，让我看见了光和希望，让我相信这是黎明前的黑暗。"
+    "category": "实用工具与资源 (Tools & Resources)",
+    "title": "google-labs-code/design.md",
+    "link": "https://github.com/google-labs-code/design.md",
+    "snippet": "A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.\n\nDESIGN.md\n \nA format specification for desc..."
   },
   "22": {
-    "category": "理财 (Finance)",
-    "title": "美加墨世界杯札记之三：天王的修罗场与“最高的景色”",
-    "link": "https://www.ftchinese.com/story/001110148",
-    "snippet": "范力文：在这届世界杯的跌宕起伏之中，可以看到个人在命运面前的挫败与反击，也可以看到团队冷酷如精密齿轮般的纪律和协作。"
+    "category": "实用工具与资源 (Tools & Resources)",
+    "title": "calesthio/OpenMontage",
+    "link": "https://github.com/calesthio/OpenMontage",
+    "snippet": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio.\n\n  \n \nOpenMontage\n \nThe first ..."
   },
   "23": {
-    "category": "理财 (Finance)",
-    "title": "《抓特务》对观众来说，太复杂了",
-    "link": "https://www.ftchinese.com/story/001110150",
-    "snippet": "刘远举：历史中的真实冲突，未必比短剧中的冲突更弱，但作为电影，总有其自身的局限，这就造成了电影的理解难度。"
+    "category": "实用工具与资源 (Tools & Resources)",
+    "title": "xbtlin/ai-berkshire",
+    "link": "https://github.com/xbtlin/ai-berkshire",
+    "snippet": "AI 时代的伯克希尔：基于 Claude Code 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework built on Claude Code. 4 masters' methodologies + multi-agent adversarial a..."
   },
   "24": {
-    "category": "理财 (Finance)",
-    "title": "回望斯塔默的两年首相时光",
-    "link": "https://www.ftchinese.com/story/001110149",
-    "snippet": "张璐诗：英国人曾经受够了会撒谎、会闯祸、会制造戏剧性的首相；于是他们选出了一个认真工作、不轻易冒险也不轻易撒谎的首相。但两年后他们发现，这并不足以解决英国的问题。"
+    "category": "实用工具与资源 (Tools & Resources)",
+    "title": "mauriceboe/TREK",
+    "link": "https://github.com/mauriceboe/TREK",
+    "snippet": "A self-hosted travel/trip planner with real-time collaboration, interactive maps, PWA support, SSO, budgets, packing lists, and more.\n\n \n \n \n   \n   \n   \n \n \n \n \n \n \n   \n   \n   \n \n \n \nA self-hosted, re..."
   },
   "25": {
-    "category": "理财 (Finance)",
-    "title": "安东尼奥•高迪的灵感之窗",
-    "link": "https://www.ftchinese.com/story/001110145",
-    "snippet": "崔莹：这位西班牙建筑师认为，窗是建筑与自然持续对话的媒介，他不仅关注光如何进入建筑，也关心风如何穿过空间。"
+    "category": "实用工具与资源 (Tools & Resources)",
+    "title": "apple/container",
+    "link": "https://github.com/apple/container",
+    "snippet": "A tool for creating and running Linux containers using lightweight virtual machines on a Mac. It is written in Swift, and optimized for Apple silicon.\n\n   container \n \ncontainer is a tool that you can..."
+  },
+  "26": {
+    "category": "实用工具与资源 (Tools & Resources)",
+    "title": "JCodesMore/ai-website-cloner-template",
+    "link": "https://github.com/JCodesMore/ai-website-cloner-template",
+    "snippet": "Clone any website with one command using AI coding agents\n\nAI Website Cloner Template\n \n  \n \nA reusable template for reverse-engineering any website into a clean, modern Next.js codebase using AI codi..."
+  },
+  "27": {
+    "category": "实用工具与资源 (Tools & Resources)",
+    "title": "every-app/open-seo",
+    "link": "https://github.com/every-app/open-seo",
+    "snippet": "Open source alternative to Semrush and Ahrefs\n\nOpenSEO\n \n \n \nOpen source alternative to Semrush and Ahrefs\n \n \nOpenSEO is an SEO tool for the people. If tools like Semrush or Ahrefs are too expensive ..."
+  },
+  "28": {
+    "category": "实用工具与资源 (Tools & Resources)",
+    "title": "garrytan/gstack",
+    "link": "https://github.com/garrytan/gstack",
+    "snippet": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA\n\ngstack\n \n \n \n\"I don't think I've typed like a line of cod..."
+  },
+  "29": {
+    "category": "实用工具与资源 (Tools & Resources)",
+    "title": "aws/agent-toolkit-for-aws",
+    "link": "https://github.com/aws/agent-toolkit-for-aws",
+    "snippet": "Official, AWS-supported MCP servers, skills, and plugins to help AI agents build on AWS\n\nAgent Toolkit for AWS\n \n  \n \nHelp AI coding agents build, deploy, and manage applications on AWS.\n \nThe Agent T..."
+  },
+  "30": {
+    "category": "实用工具与资源 (Tools & Resources)",
+    "title": "mukul975/Anthropic-Cybersecurity-Skills",
+    "link": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+    "snippet": "817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF & MITRE F3 (Fight Fraud) · agentskills.io standard · Works with..."
+  },
+  "31": {
+    "category": "理财投资 (Finance)",
+    "title": "朱酒看点（6月26日公开版）",
+    "link": "http://xueqiu.com/6056806984/396838150",
+    "snippet": "本话题在雪球有43条讨论，点击查看。\n雪球是一个投资者的社交网络，聪明的投资者都在这里。\n点击下载雪球手机客户端 http://xueqiu.com/xz]]>"
+  },
+  "32": {
+    "category": "理财投资 (Finance)",
+    "title": "泡泡玛特（十）Hellokitty母公司六年的至暗时刻——一个IP帝国的衰败，不是因为IP老了",
+    "link": "http://xueqiu.com/9326334102/396854310",
+    "snippet": "它会不会有衰败的那一天？\n想要回答这个问题，最好的办法不是预测未来，而是回溯历史——去看看这个行业里的老前辈，那些曾经风光无限的IP公司，是怎么走过兴衰周期的。\n三丽鸥，Hellokitty的母公司，就是这样一个绝佳的研究样本。它在2014年到2019年间经历了一场持续六年的衰退——不是一年两年的波动，而是营收和利润的双双下滑，一路跌到谷底。（三丽鸥FY2013达到业绩峰值后连续6年减收减利，营业..."
+  },
+  "33": {
+    "category": "理财投资 (Finance)",
+    "title": "美银喊加息三次，瑞银说根本加不了，黄金到底应该听谁的？",
+    "link": "http://xueqiu.com/6087293231/396974699",
+    "snippet": "当下黄金交易的核心矛盾，是美联储年内到底加不加息。而当前华尔街头部投行之间，出现了极其罕见的极致分歧，多空观点完全针锋相对。\n其中最具代表性的就是美银与瑞银，一家极致鹰派、一家极致鸽派，两家机构的判断直接决定了当下黄金的短期定价。今天我们把两家机构的核心逻辑完整拆解，搞清楚加息的真假预期，才能看懂黄金接下来的走势。\n一、美银：2026年美联储将加息三次（全市场最鹰派预期）\n美银最新核心结论非常明确..."
+  },
+  "34": {
+    "category": "理财投资 (Finance)",
+    "title": "红利低波年均线策略还有效吗？",
+    "link": "http://xueqiu.com/3529405310/396934161",
+    "snippet": "红利低波年均线抄底策略很受大家欢迎\n#分红季，享红利# #食息族征文#\n但是最近红利低波持续走弱，中证红利已经跌破500日均线，且还在继续下行。很多朋友开始怀疑：年均线策略是不是失效了？\n今天我用三组历史数据（2016年熔断、2018年贸易战、2020年疫情）带大家看看，红利低波在长周期跌破后，最终是如何修复的。\n一、2020年成长股狂欢，红利低波全年横盘\n2020年是典型的大分化年份。创业板指全..."
+  },
+  "35": {
+    "category": "理财投资 (Finance)",
+    "title": "AI越强，增长飞轮越可能卡住？",
+    "link": "http://xueqiu.com/5690576263/396866856",
+    "snippet": "但从经济运行的角度看，技术只是起点。真正决定一轮技术革命能不能转化为长期增长，关键在于效率红利能否重新变成劳动收入、消费能力和新增需求。生产率提高之后，如果成本下降带不来足够大的需求扩张，或者劳动收入无法被新岗位承接，技术进步就很难自动变成社会层面的繁荣。\n我对此有一个概括：前三次工业革命，本质上是同一个增长飞轮在运转。效率提升带来成本下降，成本下降释放需求，需求扩张形成规模效应，规模效应继续压低..."
+  },
+  "36": {
+    "category": "理财投资 (Finance)",
+    "title": "成长，即使只爱一点点",
+    "link": "http://xueqiu.com/3559889031/396826304",
+    "snippet": "尤其是私募，一些成名许久的老将，纷纷写信解释净值回撤的原因，以及对当下持股的坚守与坚信。\n看完这些信，突然想起之前和一位FOF基金经理闲聊时提及的两个概念：资产管理和财富管理。\n资产管理，主语是资产，那些抽象的、不具有人情味的金融投资标的。在许多老将心中，他们做的，显然是资产管理，将自己的人生观、价值观映射在资产走势的涨涨跌跌上，而持有人的资金，则是他们募集来践行这种资产管理的手段。我甚至觉得，许..."
+  },
+  "37": {
+    "category": "理财投资 (Finance)",
+    "title": "红利和自由现金流“渣”到不行，还能爱吗？",
+    "link": "http://xueqiu.com/2356382715/396870331",
+    "snippet": "我很理解他们的感受。下跌本身不一定错，但眼看着宽基指数在科技成长板块的带领下不断创新高，自己手里的红利和自由现金流却阴跌不止——这种感觉，就像全班都在进步，唯独自己在退步。错上加错，莫过于此。\n这之前写过多篇文章谈过红利和自由现金流，但面对当下的市场环境和投资者的真实焦虑，我觉得有几个观点还需要再重申一遍。\n01 年度正收益是常态，但波动不小也是常态\n如果看红利低波和自由现金流全收益指数，近十年来..."
+  },
+  "38": {
+    "category": "理财投资 (Finance)",
+    "title": "硅基囚徒：没有LTD的算力帝国为何必然崩塌",
+    "link": "http://xueqiu.com/7297620365/396824075",
+    "snippet": "一、算力狂欢下的认知盲区\n英伟达的市值冲破3万亿美元那天，硅谷的香槟泡沫淹没了所有质疑。OpenAI的GPT-5传闻满天飞，国内百模大战的参赛选手超过130个，每一家都在比谁的参数量更大、谁的算力集群更密、谁的融资额更高。整个行业像打了兴奋剂的运动员，只顾着往前冲，没人回头看一眼脚下的路。\n这场景你熟悉吗？像极了1990年的日本地产商，像极了2018年的中国房企，像极了公元前220年的秦军将领——..."
+  },
+  "39": {
+    "category": "理财投资 (Finance)",
+    "title": " Artist David Hockney’s enduring legacy ",
+    "link": "https://moneyweek.com/people/british-artist-david-hockney-legacy",
+    "snippet": "British artist David Hockney has died aged 88, but he will live on through his work"
+  },
+  "40": {
+    "category": "理财投资 (Finance)",
+    "title": " Review: An ideal weekend getaway at Mallory Court in Warwickshire ",
+    "link": "https://moneyweek.com/spending-it/travel-holidays/review-mallory-court-warwickshire",
+    "snippet": "Mallory Court is an elegant country house hotel just outside Leamington Spa, where you can enjoy quintessentially British food while connecting with nature."
+  },
+  "41": {
+    "category": "社会 (Society)",
+    "title": "日本簽證漲價五倍，中國人為何反應激烈？",
+    "link": "https://www.bbc.com/zhongwen/articles/c7vy8q88pl0o/trad?at_medium=RSS&at_campaign=rss",
+    "snippet": "日本政府宣布，自今年7月1日起，外國人入境簽證費用上漲至5倍，此舉在中國引起軒然大波。"
+  },
+  "42": {
+    "category": "社会 (Society)",
+    "title": "中國票房黑馬《給阿嬤的情書》 在新加坡掀起身份認同「大辯論」",
+    "link": "https://www.bbc.com/zhongwen/articles/cd6e7w6lwe3o/trad?at_medium=RSS&at_campaign=rss",
+    "snippet": "一個關於家庭、希望與困境的懷舊故事，意外地引發了一場對話。"
+  },
+  "43": {
+    "category": "社会 (Society)",
+    "title": "英王查爾斯與王后為何放棄遷入白金漢宮",
+    "link": "https://www.bbc.com/zhongwen/articles/cj6gng2ln6xo/trad?at_medium=RSS&at_campaign=rss",
+    "snippet": "白金漢宮表示，查爾斯國王與卡蜜拉王后將繼續居住於相距不遠的克拉倫斯宮。"
+  },
+  "44": {
+    "category": "社会 (Society)",
+    "title": "蓋房子、裝水電、洗空調：中國各地興起「全女維修隊」",
+    "link": "https://www.bbc.com/zhongwen/articles/cn0v5xzzlgyo/trad?at_medium=RSS&at_campaign=rss",
+    "snippet": "她們曾被告誡要好好讀書，遠離工地；如今，在AI焦慮和就業不景氣環境下，卻主動回到這個傳統上由男性主導的行業。從辦公室白領到裝修師傅，這群中國女性正在用自己的方式，重新定義什麼是「體面的工作」。"
+  },
+  "45": {
+    "category": "社会 (Society)",
+    "title": "從圖片看委內瑞拉雙重地震後的滿目蒼夷",
+    "link": "https://www.bbc.com/zhongwen/articles/c0qyp294pn7o/trad?at_medium=RSS&at_campaign=rss",
+    "snippet": "在甚短時間內，委內瑞拉接連發生7.2級與7.5級地震，造成的破壞相當嚴重。"
+  },
+  "46": {
+    "category": "社会 (Society)",
+    "title": "聯合國暫停霍爾木茲海峽撤離行動　一貨船遭襲觸發安全疑慮",
+    "link": "https://www.bbc.com/zhongwen/articles/ce8kge0xw44o/trad?at_medium=RSS&at_campaign=rss",
+    "snippet": "據報這艘船在接近阿曼海域時遭「不明彈體」擊中，但並無人員傷亡。"
+  },
+  "47": {
+    "category": "社会 (Society)",
+    "title": "重庆男子虐狗引发抗议，示威者呼吁制定反虐待动物法律",
+    "link": "https://cn.nytimes.com/china/20260626/dog-animal-abuse-china-protest/?utm_source=RSS",
+    "snippet": "重庆一名男子的虐狗视频在社交媒体曝光后，数百人聚集在他的公寓外抗议，示威者与警方发生暴力冲突。随着养宠人数的增加，越来越多中国人呼吁推动反虐待动物立法。\n\n                    \nVideo obtained by The New York Times"
+  },
+  "48": {
+    "category": "社会 (Society)",
+    "title": "一分钟内两次超7级强震：详解委内瑞拉地震",
+    "link": "https://cn.nytimes.com/science/20260626/venezeula-earthquakes-faults-geology/?utm_source=RSS",
+    "snippet": "为什么一次强震之后紧接着又发生了一次强震？这次双震为何破坏性如此之大？会有强余震吗？本文总结了目前对这次委内瑞拉灾难性地震的认识，以及对未来几天的预期。\n\n                    \nLeonardo Fernandez Viloria/Reuters\n                    \n周四，加拉加斯一处倒塌建筑现场的急救人员。"
+  },
+  "49": {
+    "category": "社会 (Society)",
+    "title": "西瓜有多健康？",
+    "link": "https://cn.nytimes.com/health/20260626/watermelon-health-benefits-recipes/?utm_source=RSS",
+    "snippet": "西瓜的含水量高达91%，在炎热夏日里能帮助你补水；口感很甜但含糖量远低于想象，热量也很低；它不含脂肪和钠，对心脏有益。西瓜不适合在反季节食用，新鲜即美味。\n\n                    \nChristopher Simpson for The New York Times. Food Stylist: Simon Andrews. Prop Stylist: Paige Hicks."
+  },
+  "50": {
+    "category": "社会 (Society)",
+    "title": "伊朗袭击货船，霍尔木兹海峡航运再次中断",
+    "link": "https://cn.nytimes.com/world/20260626/iran-strait-of-hormuz-threat-rubio-bahrain/?utm_source=RSS",
+    "snippet": "遇袭货船隶属台湾船运公司长荣海运，美国官员称该船在途径霍尔木兹海峡时遭到无人机打击。袭击导致恢复这条关键水道航运的努力再次遭受重挫。袭击发生后油价跳涨。\n\n                    \nElke Scholiers/Getty Images\n                    \n周二，靠近霍尔木兹海峡阿曼海岸外的油轮和货船。"
+  },
+  "51": {
+    "category": "民生热议 (Livelihood)",
+    "title": "卧槽这下911了",
+    "link": "https://www.reddit.com/r/China_irl/comments/1ug3qsl/卧槽这下911了/",
+    "snippet": "submitted by    /u/Dontlike-washroom  \n [link]   [comments]"
+  },
+  "52": {
+    "category": "民生热议 (Livelihood)",
+    "title": "据说一个单发小通航撞了中国尊",
+    "link": "https://www.reddit.com/r/China_irl/comments/1ug4xk8/据说一个单发小通航撞了中国尊/",
+    "snippet": "2026年6月26日，东时双悦通航B-12PP飞机，刘俊华(会员)机长本场空域单飞，17:30石佛寺机场起飞，17:40准备返场着陆，在加入18号跑道西航线时，飞机没有正常加入起落，偏出本场空域一直保持270度航向飞行，本场ADS-B监控到飞机在东五环附近，后续无信号。后续联系进近和空军均联系不上该机。\n    submitted by    /u/Perfect_HH  \n [link]   [..."
+  },
+  "53": {
+    "category": "民生热议 (Livelihood)",
+    "title": "安徽合肥慢生活",
+    "link": "https://www.reddit.com/r/China_irl/comments/1ug30oa/安徽合肥慢生活/",
+    "snippet": "其实人生哪有那么多大事，很多时间都是去欣赏身边的景色，用慢节奏的眼光去看待，原本普通的风景，也会让你眼前一亮。人生不过3万多天，善待自己，善待身边的人和事。\n    submitted by    /u/Over-Science8571  \n [link]   [comments]"
+  },
+  "54": {
+    "category": "民生热议 (Livelihood)",
+    "title": "如何在美国完全不怀念中餐",
+    "link": "https://www.reddit.com/r/China_irl/comments/1ufk91a/如何在美国完全不怀念中餐/",
+    "snippet": "本人是个大吃货，在上海时一直外卖和出去吃，评价好的餐厅基本都打卡过了\n 现在在加州生活几年了，做饭和出去吃1:1；因为这边中餐性价比不高，给小费也没啥服务，所以吃的少，倒是越南菜/墨西哥菜/印度菜/美国菜/意大利菜/中东菜换着吃，每个菜系都有可圈可点的地方，而且据（从那个国家来的朋友）说很地道\n 前段时间跟国内朋友聊天，ta第一句就是“在那边吃不惯吧” ；当时愣了一下，因为完全没这个感觉，反而觉得..."
+  },
+  "55": {
+    "category": "民生热议 (Livelihood)",
+    "title": "大家还记得年轻时候的梦想吗",
+    "link": "https://www.reddit.com/r/China_irl/comments/1ufyxwf/大家还记得年轻时候的梦想吗/",
+    "snippet": "那种小孩子说我想当科学家非常笼统地不算了，比较成熟的时候的有没有想做某一项。\n 我先来不要脸的说一下子自己的，我想当A片导演，青春期的时候网上找的片子看的大多数是日本的少数是过去港台的，后来也看过欧美的。我就想着如果未来有一天中国也合法化的话，可能会去拍A片。中国有一个题材非华人演不了的历史背景，以五、六、七十年代为背景拍摄诸如领导玩文工团女兵啦，村干部睡下乡女大学生了，知青和知青还有农村人的大乱..."
+  },
+  "56": {
+    "category": "民生热议 (Livelihood)",
+    "title": "13岁女孩被强奸，最新消息",
+    "link": "https://www.reddit.com/r/China_irl/comments/1ufzauj/13岁女孩被强奸最新消息/",
+    "snippet": "节选自浪潮新闻的报道\n “6月25日，浪潮新闻记者从受害女孩家属处获悉，山西运城“13岁女孩称遭强奸警方不予立案”一事有了进展。受害女孩的哥哥张磊（化名）向记者证实，警方已于6月24日晚上正式向家属送达了《立案告知书》，涉嫌强奸的嫌疑人韩某某（绰号“黑哥”）已被刑事拘留。”\n    submitted by    /u/human_4023  \n [link]   [comments]"
+  },
+  "57": {
+    "category": "民生热议 (Livelihood)",
+    "title": "之前抓间谍时，我就觉得苦茶开始不正常，现在给我说反军购是民粹？",
+    "link": "https://www.reddit.com/r/China_irl/comments/1ug4fwg/之前抓间谍时我就觉得苦茶开始不正常现在给我说反军购是民粹/",
+    "snippet": "屁股歪到不知道哪里去了？我对有人爆他领台湾民进党钱越来越相信了。\n    submitted by    /u/yunaiyue  \n [link]   [comments]"
+  },
+  "58": {
+    "category": "民生热议 (Livelihood)",
+    "title": "网络并非法外之地！",
+    "link": "https://www.reddit.com/r/China_irl/comments/1ug0etg/网络并非法外之地/",
+    "snippet": "submitted by    /u/heydashuai  \n [link]   [comments]"
+  },
+  "59": {
+    "category": "民生热议 (Livelihood)",
+    "title": "13岁女孩被强奸，帽子上门“和解”后续：警方已成立专门调查组",
+    "link": "https://www.reddit.com/r/China_irl/comments/1ufx872/13岁女孩被强奸帽子上门和解后续警方已成立专门调查组/",
+    "snippet": "13岁女孩被强奸后续：施暴方是社会人员 外号：运城黑哥\n 后续帽子公告立案侦查，（家属多次被施暴方上门威胁，帽子晚上上门让“和解”警方不予立案）\n    submitted by    /u/kami718  \n [link]   [comments]"
+  },
+  "60": {
+    "category": "民生热议 (Livelihood)",
+    "title": "翔天净网国内外搜索结果",
+    "link": "https://www.reddit.com/r/China_irl/comments/1ug3758/翔天净网国内外搜索结果/",
+    "snippet": "居然两个搜索框差异这么大。\n 就是好奇这种强迫安装的软件，既然能搜集上网人的信息，那么使用它的用户是否有知情权？\n 国内完全对于网吧内电脑系统里的软件没有任何告知，对群众进行欺瞒和蒙骗，是否侵犯了网吧用户的知情权和人权？\n 网吧系统中安排的诸多软件程序中还包括摄像头系统，在人脸识别是否存在非法搜集信息的可能性？\n    submitted by    /u/hsgsgh_726  \n [link]..."
   }
 }
