@@ -58,7 +58,7 @@ const userTweetPrompt = `
 - 你自己判断是用一条推文讲完，还是用 Thread。
 - 如果一条推文就能讲清楚，就不要强行拆成 Thread。
 - 如果内容确实丰富，用 2-4 条的 Thread，段落之间用单独一行的 --- 分隔。
-- 排版要舒服：适当换行，不要挤成一坨。
+- 排版必须留白：推文内部的段落或短句之间，请务必使用空行（即连续两次换行）分隔。千万不要把所有文字挤成一整段，推特用户喜欢有“呼吸感”的排版。
 
 【禁止事项】
 - 不要输出 status: draft 或任何 frontmatter
@@ -225,7 +225,8 @@ Rules for each tweet:
 2. Language: Write in Chinese (simplified). Keep the tone natural and authentic.
 3. Tone: Direct, engaging, conversational, and informative.
 4. Content: Present the news/idea concisely, maybe add a brief insightful comment. You can include a URL if relevant (will count towards length).
-5. Output EXACTLY 10 items.
+5. Formatting: MUST use blank lines (empty lines) between sentences or short paragraphs to create "breathing room". Do NOT write a single dense block of text. Twitter users prefer spacious formatting.
+6. Output EXACTLY 10 items.
 
 Source content:
 """
@@ -307,7 +308,8 @@ Rules for each tweet:
 2. Language: Write in Chinese (simplified). Keep the tone natural and authentic.
 3. Tone: Direct, engaging, conversational, and informative.
 4. Content: Present the news/idea concisely, maybe add a brief insightful comment. You can include a URL if relevant (will count towards length).
-5. Output EXACTLY 10 items.
+5. Formatting: MUST use blank lines (empty lines) between sentences or short paragraphs to create "breathing room". Do NOT write a single dense block of text. Twitter users prefer spacious formatting.
+6. Output EXACTLY 10 items.
 
 Source content:
 """
