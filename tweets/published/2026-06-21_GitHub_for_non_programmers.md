@@ -1,7 +1,24 @@
 ---
-status: approved
+status: published
 folder: tweets/drafts
 filename: 2026-06-21_GitHub_for_non_programmers
+title: GitHub for non programmers
+date: '2026-06-27'
+description: >-
+  GitHub 不只是一个代码网站 如果你是 AI 工具的重度用户但不会写代码，GitHub 可能是你正在错过的最重要的信息入口 很多新的 AI
+  工具、Agent 项目、MCP 插件、Prompt 模板...
+tags:
+  - feed
+published_at: '2026-06-27T23:00:06.013Z'
+tweet_id: '2071005668539347197'
+urls:
+  - 'https://x.com/i/web/status/2071005668539347197'
+  - 'https://x.com/i/web/status/2071005670393196699'
+  - 'https://x.com/i/web/status/2071005671966072852'
+  - 'https://x.com/i/web/status/2071005673559937474'
+  - 'https://x.com/i/web/status/2071005675254415685'
+  - 'https://x.com/i/web/status/2071005676785307923'
+  - 'https://x.com/i/web/status/2071005678400139358'
 ---
 
 GitHub 不只是一个代码网站
