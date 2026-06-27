@@ -4,7 +4,7 @@ const { Telegraf } = require('telegraf');
 const Parser = require('rss-parser');
 const config = require('./config');
 
-const parser = new Parser();
+const parser = new Parser({ timeout: 10000 });
 const botToken = process.env.TELEGRAM_BOT_TOKEN;
 const myUserId = parseInt(process.env.TELEGRAM_USER_ID, 10);
 
@@ -16,194 +16,204 @@ if (!botToken || !myUserId) {
 const bot = new Telegraf(botToken);
 const cacheFile = path.join(config.paths.tweets.base, 'daily_news_cache.json');
 
+// ============================================================
+// RSS 信息源配置
+// 严格按照: 实用工具30条 + 科技AI10条 + 理财10条 + 社会民生10条 = 60条
+// 每个分类的 sources 按优先级排列，自动补位
+// ============================================================
 const defaultRssSources = {
   "实用工具资源 (Tools & Resources)": {
     limit: 30,
     sources: [
-      // GitHub Trending - 固定 10 条
-      { url: "https://rsshub.rssforever.com/github/trending/daily/any", quota: 10 },
-      // 以下各站自由分配共 20 条
-      { url: "https://rsshub.rssforever.com/reddit/r/InternetIsBeautiful/top/day", quota: 5 }, // Reddit 实用网站挖掘
-      { url: "https://alternativeto.net/news/feed/", quota: 5 },    // 大厂平替软件
-      { url: "https://feeds.appinn.com/appinn/", quota: 5 },        // 小众软件
-      { url: "https://www.producthunt.com/feed", quota: 3 },        // Product Hunt
-      { url: "https://www.v2ex.com/feed/share.xml", quota: 2 },     // V2EX 分享
-      { url: "https://www.v2ex.com/feed/create.xml", quota: 2 }     // V2EX 创造
+      { url: "https://rsshub.rssforever.com/github/trending/daily/any", quota: 10 }, // GitHub Trending 主
+      { url: "https://rsshub.app/github/trending/daily/any",            quota: 10 }, // GitHub Trending 备
+      { url: "https://feeds.appinn.com/appinn/",                        quota: 5  }, // 小众软件
+      { url: "https://alternativeto.net/news/feed/",                    quota: 5  }, // 大厂平替工具
+      { url: "https://www.producthunt.com/feed",                        quota: 5  }, // Product Hunt
+      { url: "https://rsshub.rssforever.com/reddit/r/InternetIsBeautiful/top/day", quota: 5 }, // Reddit神奇网站
+      { url: "https://www.v2ex.com/feed/share.xml",                     quota: 3  }, // V2EX分享
+      { url: "https://www.v2ex.com/feed/create.xml",                    quota: 3  }, // V2EX创造
     ]
   },
   "科技人工智能 (Tech & AI)": {
     limit: 10,
     sources: [
-      { url: "https://feeds.feedburner.com/ruanyifeng", quota: 3 }, // 阮一峰网络日志(移至此处)
-      { url: "https://www.qbitai.com/feed", quota: 3 },             // 量子位
-      { url: "https://sspai.com/feed", quota: 2 },                  // 少数派
-      { url: "https://openai.com/blog/rss.xml", quota: 1 },         // OpenAI 官方博客
-      { url: "https://news.ycombinator.com/rss", quota: 2 }         // HackerNews
+      { url: "https://feeds.feedburner.com/ruanyifeng",  quota: 3 }, // 阮一峰网络日志
+      { url: "https://www.qbitai.com/feed",              quota: 3 }, // 量子位
+      { url: "https://sspai.com/feed",                   quota: 3 }, // 少数派
+      { url: "https://openai.com/blog/rss.xml",          quota: 2 }, // OpenAI 博客
+      { url: "https://news.ycombinator.com/rss",         quota: 3 }, // HackerNews 备用补位
+      { url: "https://juejin.cn/rss",                    quota: 3 }, // 掘金 备用补位
     ]
   },
   "理财投资 (Finance & Investment)": {
     limit: 10,
     sources: [
-      { url: "https://xueqiu.com/hots/topic/rss", quota: 5 },
-      { url: "https://www.moneyweek.com/rss", quota: 3 },
-      { url: "https://www.fool.com/feeds/index.aspx", quota: 2 }
+      { url: "https://xueqiu.com/hots/topic/rss",           quota: 5 }, // 雪球热帖
+      { url: "https://www.fool.com/feeds/index.aspx",        quota: 4 }, // Motley Fool
+      { url: "https://www.moneyweek.com/rss",                quota: 4 }, // MoneyWeek
+      { url: "https://feeds.a.dj.com/rss/RSSMarketsMain.xml",quota: 3 }, // 华尔街日报市场 备用
     ]
   },
   "社会民生 (Society & Life)": {
     limit: 10,
     sources: [
-      // 使用原生稳定 RSS，不依赖 RSSHub
-      { url: "https://www.zaobao.com.sg/rss/china", quota: 3 },         // 联合早报中国版(境外媒体,稳定)
-      { url: "https://feeds.bbci.co.uk/zhongwen/simp/rss.xml", quota: 3 }, // BBC中文
-      { url: "https://rthk9.rthk.hk/rthk/news/rss/c_expressnews_cchinalocal.xml", quota: 2 }, // RTHK香港本地
-      { url: "http://news.163.com/special/00011K6L/rss_newstop.xml", quota: 3 }, // 网易头条(原生RSS)
-      { url: "https://rsshub.rssforever.com/weibo/search/hot", quota: 3 }  // 微博热搜(备用)
+      { url: "http://news.163.com/special/00011K6L/rss_newstop.xml",               quota: 5 }, // 网易头条 (原生RSS,最稳定)
+      { url: "https://feeds.bbci.co.uk/zhongwen/simp/rss.xml",                    quota: 4 }, // BBC中文
+      { url: "https://www.zaobao.com.sg/rss/china",                               quota: 4 }, // 联合早报中国版
+      { url: "https://rthk9.rthk.hk/rthk/news/rss/c_expressnews_cchinalocal.xml",quota: 3 }, // RTHK
+      { url: "https://rsshub.rssforever.com/weibo/search/hot",                    quota: 4 }, // 微博热搜 备用
     ]
   }
 };
 
+// 对单个分类执行抓取，若某源失败则自动跳过并让后续源补位，直到达到 limit
+async function fetchCategoryItems(sources, limit) {
+  const collected = [];
+
+  for (const source of sources) {
+    if (collected.length >= limit) break;
+    const stillNeed = limit - collected.length;
+    const fetchQuota = Math.min(source.quota, stillNeed);
+
+    try {
+      const feed = await parser.parseURL(source.url);
+      let items = feed.items.map(item => {
+        let d = new Date(0);
+        if (item.isoDate) d = new Date(item.isoDate);
+        else if (item.pubDate) d = new Date(item.pubDate);
+        item._parsedDate = d;
+        return item;
+      });
+      items.sort((a, b) => b._parsedDate - a._parsedDate);
+      const toAdd = items.slice(0, fetchQuota);
+      collected.push(...toAdd);
+      console.log(`  ✅ [${toAdd.length}/${fetchQuota}] ${source.url.slice(0, 70)}`);
+    } catch(e) {
+      console.error(`  ⚠️ FAILED: ${source.url.slice(0, 70)} — ${e.message}`);
+      // 失败时不打断循环，继续尝试下一个源补位
+    }
+  }
+
+  return collected.slice(0, limit);
+}
+
 async function main() {
-  console.log('🔄 Fetching categorized daily RSS feeds...');
+  console.log('🔄 Starting strict 60-item daily news fetch (30+10+10+10)...');
 
   try {
     let globalIndex = 1;
-    let messageText = "📰 <b>今日早报全矩阵看板</b>\n\n请直接回复对应【数字序号】，我将为您生成专属推文：\n\n";
     let textToTranslate = "";
     const cacheData = {};
+    let totalFetched = 0;
+
+    // 先建立 finalMessage 框架，后面填入内容
+    const categoryResults = {};
 
     for (const [category, configData] of Object.entries(defaultRssSources)) {
-      let categoryItems = [];
-      const sources = configData.sources;
-      const limit = configData.limit;
-      let fetchedCount = 0;
-      
-      for (const source of sources) {
-        if (fetchedCount >= limit) break; // Skip if we already hit the limit
-        const url = source.url;
-        const quota = source.quota;
-        
-        try {
-          let sourceItems = [];
-          const feed = await parser.parseURL(url);
-          feed.items.forEach(item => {
-            let itemDate = new Date(0);
-            if (item.isoDate) itemDate = new Date(item.isoDate);
-            else if (item.pubDate) itemDate = new Date(item.pubDate);
-            item._parsedDate = itemDate;
-            sourceItems.push(item);
-          });
-          
-          // Sort this specific source by newest
-          sourceItems.sort((a, b) => b._parsedDate - a._parsedDate);
-          
-          // Slice only the quota we want from this source
-          const itemsToAdd = sourceItems.slice(0, quota);
-          categoryItems.push(...itemsToAdd);
-          fetchedCount += itemsToAdd.length;
-          
-        } catch(e) {
-          console.error(`⚠️ Failed to fetch ${url}:`, e.message);
-        }
-      }
+      const { sources, limit } = configData;
+      console.log(`\n📂 [${category}] target: ${limit}`);
+      const items = await fetchCategoryItems(sources, limit);
+      console.log(`  📊 Got ${items.length}/${limit} items`);
+      categoryResults[category] = items;
+      totalFetched += items.length;
 
-      // Sort by newest first and limit to exact config amount
-      categoryItems.sort((a, b) => b._parsedDate - a._parsedDate);
-      categoryItems = categoryItems.slice(0, limit);
-      
-      if (categoryItems.length > 0) {
-        messageText += `🔹 <b>【${category}】</b>\n`;
-        categoryItems.forEach(item => {
-          const num = globalIndex++;
-          let snippet = item.contentSnippet || item.content || '';
-          if (snippet.length > 200) snippet = snippet.substring(0, 200) + '...';
-          snippet = snippet.replace(/<[^>]*>?/gm, ''); // clean HTML
+      items.forEach(item => {
+        const num = globalIndex++;
+        let snippet = item.contentSnippet || item.content || '';
+        snippet = snippet.replace(/<[^>]*>?/gm, '').trim();
+        if (snippet.length > 200) snippet = snippet.substring(0, 200) + '...';
 
-          cacheData[num] = {
-            category: category,
-            title: item.title,
-            link: item.link,
-            snippet: snippet
-          };
-          textToTranslate += `[${num}] ${item.title}\n`;
-        });
-      }
+        cacheData[num] = {
+          category,
+          title: item.title || '(无标题)',
+          link: item.link || '',
+          snippet
+        };
+        textToTranslate += `[${num}] ${item.title || ''}\n`;
+      });
     }
 
+    console.log(`\n✅ Total fetched: ${totalFetched} items`);
+
     if (globalIndex === 1) {
-      console.log('📭 No items found across any sources.');
+      console.log('📭 No items found at all.');
+      await bot.telegram.sendMessage(myUserId, '❌ 早报抓取失败，所有 RSS 源均无法访问，请稍后重试。');
       return;
     }
 
+    // 翻译标题
     const { translateToChinese } = require('./ai');
     let translatedText = textToTranslate;
     try {
-      console.log('Translating and polishing titles...');
+      console.log('Translating titles...');
       translatedText = await translateToChinese(textToTranslate);
     } catch(e) {
-      console.log('Translation failed, using original', e);
+      console.log('Translation failed, using originals:', e.message);
     }
 
-    // Process translated lines into map
     const translatedMap = {};
-    const lines = translatedText.split('\n');
-    for (const line of lines) {
+    for (const line of translatedText.split('\n')) {
       const match = line.match(/^\[(\d+)\]\s*(.*)$/);
-      if (match) {
-        translatedMap[match[1]] = match[2].trim();
-      }
+      if (match) translatedMap[match[1]] = match[2].trim();
     }
 
     function escapeHTML(str) {
-      return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
     }
 
-    let finalMessage = "📰 <b>今日早报全矩阵看板</b>\n\n请直接回复【数字序号】生成推文草稿：\n\n";
-    let currentCategory = "";
+    // 构建最终消息
+    let finalMessage = `📰 <b>今日早报全矩阵看板</b> (共${totalFetched}条)\n\n回复【序号】一键生成推文草稿：\n`;
 
+    for (const [category, items] of Object.entries(categoryResults)) {
+      if (items.length === 0) continue;
+      finalMessage += `\n🔹 <b>【${category}】</b> ${items.length}条\n`;
+    }
+
+    finalMessage += '\n───────────────────\n';
+
+    let currentCategory = '';
     for (let i = 1; i < globalIndex; i++) {
       const data = cacheData[i];
+      if (!data) continue;
       if (data.category !== currentCategory) {
         currentCategory = data.category;
         finalMessage += `\n🔹 <b>【${currentCategory}】</b>\n`;
       }
-      const finalTitle = translatedMap[i] ? translatedMap[i] : data.title;
+      const title = translatedMap[i] || data.title;
       if (data.link) {
-        finalMessage += `<b>[${i}]</b> <a href="${escapeHTML(data.link)}">${escapeHTML(finalTitle)}</a>\n\n`;
+        finalMessage += `<b>[${i}]</b> <a href="${escapeHTML(data.link)}">${escapeHTML(title)}</a>\n\n`;
       } else {
-        finalMessage += `<b>[${i}]</b> ${escapeHTML(finalTitle)}\n\n`;
+        finalMessage += `<b>[${i}]</b> ${escapeHTML(title)}\n\n`;
       }
     }
 
-    // Save cache
+    // 保存缓存
     fs.writeFileSync(cacheFile, JSON.stringify(cacheData, null, 2), 'utf-8');
 
-    // Send via Bot
-    // Split message into chunks of 4000 characters to avoid Telegram limits
+    // 分块发送（每块 ≤ 4000字符）
     const maxLen = 4000;
-    for (let start = 0; start < finalMessage.length; start += maxLen) {
-      let chunk = finalMessage.slice(start, start + maxLen);
-      // Ensure we don't break HTML tags, though it's unlikely with just tags and links,
-      // a simple approach is just send the slice. For safety, it's better to split by newlines.
-    }
-    
-    // Better splitting by lines
-    const linesMessage = finalMessage.split('\n');
-    let currentChunk = '';
-    for (const line of linesMessage) {
-      if (currentChunk.length + line.length + 1 > maxLen) {
-        await bot.telegram.sendMessage(myUserId, currentChunk, { parse_mode: 'HTML', disable_web_page_preview: true });
-        currentChunk = '';
+    const linesMsg = finalMessage.split('\n');
+    let chunk = '';
+    for (const line of linesMsg) {
+      if (chunk.length + line.length + 1 > maxLen) {
+        await bot.telegram.sendMessage(myUserId, chunk, { parse_mode: 'HTML', disable_web_page_preview: true });
+        chunk = '';
       }
-      currentChunk += line + '\n';
+      chunk += line + '\n';
     }
-    if (currentChunk.trim().length > 0) {
-      await bot.telegram.sendMessage(myUserId, currentChunk, { parse_mode: 'HTML', disable_web_page_preview: true });
+    if (chunk.trim().length > 0) {
+      await bot.telegram.sendMessage(myUserId, chunk, { parse_mode: 'HTML', disable_web_page_preview: true });
     }
 
-    console.log('✅ Daily news board sent and cached!');
+    console.log(`✅ Daily news sent! Total: ${totalFetched} items`);
 
   } catch (err) {
-    console.error('Error fetching RSS:', err);
+    console.error('Fatal error:', err);
     await bot.telegram.sendMessage(myUserId, `❌ 早报获取失败: ${err.message}`);
   }
 }
