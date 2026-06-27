@@ -54,11 +54,12 @@ const userTweetPrompt = `
   要写成："某某刚搞了个大事 —— ..."
 - 禁止感叹号轰炸。禁止无意义的标签（#AI #学习）。禁止空洞的总结句。
 
-【格式】
+【格式与排版风格（非常重要）】
+- 必须使用“单句成段”的排版风格，拒绝密密麻麻的一大块文字。
+- 每句话或每个观点结束后，必须换行，并且段落与段落之间【必须留有一个空行】（即两行换行符），制造清爽的呼吸感。
 - 你自己判断是用一条推文讲完，还是用 Thread。
 - 如果一条推文就能讲清楚，就不要强行拆成 Thread。
-- 如果内容确实丰富，用 2-4 条的 Thread，段落之间用单独一行的 --- 分隔。
-- 排版必须留白：推文内部的段落或短句之间，请务必使用空行（即连续两次换行）分隔。千万不要把所有文字挤成一整段，推特用户喜欢有“呼吸感”的排版。
+- 如果内容确实丰富，用 2-4 条的 Thread，不同推文之间用单独一行的 --- 分隔。千万不要把所有文字挤成一整段，推特用户喜欢有“呼吸感”的排版。
 
 【禁止事项】
 - 不要输出 status: draft 或任何 frontmatter
@@ -221,11 +222,11 @@ Read the following daily RSS feed items (titles, links, and snippets).
 Select the most interesting, important, or trending topics and write EXACTLY 10 distinct, high-quality, engaging tweets.
 
 Rules for each tweet:
-1. Length: Must be under 280 characters.
+1. Length: No strict length limit, but keep it concise and punchy.
 2. Language: Write in Chinese (simplified). Keep the tone natural and authentic.
 3. Tone: Direct, engaging, conversational, and informative.
-4. Content: Present the news/idea concisely, maybe add a brief insightful comment. You can include a URL if relevant (will count towards length).
-5. Formatting: MUST use blank lines (empty lines) between sentences or short paragraphs to create "breathing room". Do NOT write a single dense block of text. Twitter users prefer spacious formatting.
+4. Content: Present the news/idea concisely, maybe add a brief insightful comment. You can include a URL if relevant.
+5. Formatting (CRITICAL): MUST use "one sentence per line" style. After every single sentence or short thought, you MUST press Enter twice to create a blank empty line. Do NOT write dense blocks of text. Twitter users prefer spacious, high-breathing-room formatting.
 6. Output EXACTLY 10 items.
 
 Source content:
@@ -304,11 +305,11 @@ Read the following daily RSS feed items (titles, links, and snippets).
 Select the most interesting, important, or trending topics and write EXACTLY 10 distinct, high-quality, engaging tweets.
 
 Rules for each tweet:
-1. Length: Must be under 280 characters.
+1. Length: No strict length limit, but keep it concise and punchy.
 2. Language: Write in Chinese (simplified). Keep the tone natural and authentic.
 3. Tone: Direct, engaging, conversational, and informative.
-4. Content: Present the news/idea concisely, maybe add a brief insightful comment. You can include a URL if relevant (will count towards length).
-5. Formatting: MUST use blank lines (empty lines) between sentences or short paragraphs to create "breathing room". Do NOT write a single dense block of text. Twitter users prefer spacious formatting.
+4. Content: Present the news/idea concisely, maybe add a brief insightful comment. You can include a URL if relevant.
+5. Formatting (CRITICAL): MUST use "one sentence per line" style. After every single sentence or short thought, you MUST press Enter twice to create a blank empty line. Do NOT write dense blocks of text. Twitter users prefer spacious, high-breathing-room formatting.
 6. Output EXACTLY 10 items.
 
 Source content:
