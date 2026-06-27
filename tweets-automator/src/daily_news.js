@@ -20,10 +20,13 @@ const defaultRssSources = {
   "实用资源 (Tools & Resources)": {
     limit: 30,
     urls: [
-      "https://feeds.appinn.com/appinns/", 
-      "https://ruanyf.github.io/ruanyf-weekly/rss.xml", 
-      "https://www.reddit.com/r/InternetIsBeautiful/.rss",
-      "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
+      "https://rsshub.app/reddit/r/InternetIsBeautiful/top/day",
+      "https://alternativeto.net/news/feed/",
+      "https://rsshub.app/github/trending/daily/any",
+      "https://feeds.appinn.com/appinn/",
+      "https://feeds.feedburner.com/ruanyifeng",
+      "https://www.v2ex.com/feed/share.xml",
+      "https://www.v2ex.com/feed/create.xml",
       "https://www.producthunt.com/feed"
     ]
   },
@@ -50,7 +53,9 @@ const defaultRssSources = {
     urls: [
       "https://rsshub.app/weibo/search/hot",
       "https://rsshub.app/zhihu/hotlist",
-      "https://rsshub.app/baidu/topwords/1"
+      "https://rsshub.app/baidu/topwords/1",
+      "https://rss.shab.fun/weibo/search/hot", // backup mirror
+      "https://rss.shab.fun/zhihu/hotlist" // backup mirror
     ]
   }
 };
