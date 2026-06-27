@@ -435,6 +435,55 @@ async function chatWithAI(messages) {
   }
 }
 
+async function simpleChatWithDeepSeek(messages) {
+  if (!config.DEEPSEEK_API_KEY || config.DEEPSEEK_API_KEY === 'your_deepseek_api_key_here') throw new Error('Missing API key');
+  
+  const deepseekMessages = [
+    { role: 'system', content: 'You are a highly intelligent and capable AI assistant (acting as a Telegram Bot). Respond in a natural, helpful, and friendly conversational tone.' },
+    ...messages
+  ];
+
+  const response = await fetch('https://api.deepseek.com/chat/completions', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${config.DEEPSEEK_API_KEY}`
+    },
+    body: JSON.stringify({
+      model: config.DEEPSEEK_MODEL,
+      messages: deepseekMessages
+    })
+  });
+
+  if (!response.ok) throw new Error(`DeepSeek API error: ${await response.text()}`);
+  const result = await response.json();
+  return result.choices[0].message.content.trim();
+}
+
+async function simpleChatWithGemini(messages) {
+  const ai = getGeminiClient();
+  const contents = messages.map(msg => ({
+    role: msg.role === 'user' ? 'user' : 'model',
+    parts: [{ text: msg.content }]
+  }));
+  contents.unshift({ role: 'user', parts: [{ text: 'You are a highly intelligent and capable AI assistant (acting as a Telegram Bot). Respond in a natural, helpful, and friendly conversational tone.' }] });
+
+  const response = await ai.models.generateContent({
+    model: config.GEMINI_MODEL,
+    contents: contents
+  });
+  
+  return response.text;
+}
+
+async function simpleChatWithAI(messages) {
+  if (config.AI_PROVIDER === 'deepseek') {
+    return simpleChatWithDeepSeek(messages);
+  } else {
+    return simpleChatWithGemini(messages);
+  }
+}
+
 async function translateToChinese(text) {
   const prompt = `Translate the following RSS headlines and snippets into Chinese. Do not add any extra conversational filler, just return the translated text directly.\n\n${text}`;
   
@@ -467,5 +516,6 @@ module.exports = {
   generateTweetsFromContent,
   generateHotTweetsFromRSS,
   chatWithAI,
+  simpleChatWithAI,
   translateToChinese
 };

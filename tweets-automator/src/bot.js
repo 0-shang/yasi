@@ -6,9 +6,10 @@ const matter = require('gray-matter');
 const { exec } = require('child_process');
 const config = require('./config');
 const { postTweetOrThread } = require('./twitter');
-const { generateTweetsFromContent, generateHotTweetsFromRSS, chatWithAI } = require('./ai');
+const { generateTweetsFromContent, generateHotTweetsFromRSS, chatWithAI, simpleChatWithAI } = require('./ai');
 const Parser = require('rss-parser');
 const parser = new Parser();
+const cron = require('node-cron');
 
 // Setup environment and paths
 config.ensureDirs();
@@ -33,6 +34,8 @@ const checkPendingFiles = new Map();
 const editingState = new Map();
 // In-memory store for conversational chat
 const chatMemory = new Map();
+// In-memory store for chat mode toggle
+const isChatMode = new Map();
 
 // Helper: Save to markdown file and sync to github
 function saveAndSyncToGithub(content, type = 'published', tweetResult = null, scheduleTime = null, ctx = null) {
@@ -71,7 +74,12 @@ function saveAndSyncToGithub(content, type = 'published', tweetResult = null, sc
 
   // Trigger Git Sync in background
   const repoRoot = path.join(__dirname, '..', '..');
-  exec(`git add tweets/ && git commit -m "bot: auto saved ${type} tweet" && git pull --rebase origin main && git push`, { cwd: repoRoot }, (err, stdout, stderr) => {
+  const pat = process.env.GITHUB_PAT || '';
+  let pushCmd = `git push`;
+  if (pat) {
+    pushCmd = `git push https://${pat}@github.com/0-shang/yasi.git HEAD:main`;
+  }
+  exec(`git add tweets/ && git commit -m "bot: auto saved ${type} tweet" && git pull --rebase origin main && ${pushCmd}`, { cwd: repoRoot }, (err, stdout, stderr) => {
     if (err) {
       console.error('Git sync failed:', err);
       if (ctx) ctx.reply(`❌ Git sync failed: ${err.message}`);
@@ -122,7 +130,7 @@ function syncCrossRepo(ctx = null) {
     }
     
     // Commit and push
-    const cmd = `git config user.name "bot" && git config user.email "bot@example.com" && git add content/insights/feed/ && git commit -m "bot: auto-sync published tweets" && git push`;
+    const cmd = `git config user.name "bot" && git config user.email "bot@example.com" && git add content/insights/feed/ && git commit -m "bot: auto-sync published tweets" && git push https://${pat}@github.com/0-shang/ai-nav.git HEAD:main`;
     exec(cmd, { cwd: tempDir }, () => {
       // Cleanup
       fs.rmSync(tempDir, { recursive: true, force: true });
@@ -131,17 +139,56 @@ function syncCrossRepo(ctx = null) {
   });
 }
 
+// Setup Cron Job for hourly publishing between 7:00 and 23:00 Beijing time
+cron.schedule('0 7-23 * * *', () => {
+  console.log('Running scheduled hourly publish task (7-23 Beijing time)...');
+  const automatorDir = path.join(__dirname, '..');
+  const env = Object.assign({}, process.env, { 
+    IGNORE_TIME_RESTRICTION: 'true',
+    MAX_TWEETS_PER_RUN: '1' // Only publish one per hour
+  });
+  
+  exec('npm run publish', { cwd: automatorDir, env }, (err, stdout, stderr) => {
+    if (err) {
+      console.error('Hourly publish failed:', err.message);
+      return;
+    }
+    const repoRoot = path.join(__dirname, '..', '..');
+    const pat = process.env.GITHUB_PAT || '';
+    let pushCmd = 'git push';
+    if (pat) pushCmd = `git push https://${pat}@github.com/0-shang/yasi.git HEAD:main`;
+    
+    exec(`git add tweets/ && git commit -m "bot: auto hourly publish" && git pull --rebase origin main && ${pushCmd}`, { cwd: repoRoot }, (errSync) => {
+      if (errSync) console.error('Git sync failed after hourly publish:', errSync);
+      syncCrossRepo(null);
+    });
+  });
+}, {
+  timezone: "Asia/Shanghai"
+});
+
 bot.start((ctx) => {
   if (ctx.from.id !== myUserId) {
     return ctx.reply("Sorry, you are not authorized to use this bot.");
   }
   ctx.reply(
-    "👋 欢迎！您可以直接发送任何长篇文字/链接，我将为您提炼为专业推文。\n\n💡 快捷指令:\n- `/daily` 抓取最新早报\n- `/news` 一键唤出上次早报\n- `/check` 检查并发布队列推文",
+    "👋 欢迎！您可以直接发送任何长篇文字/链接，我将为您提炼为专业推文。\n\n💡 快捷指令:\n- `/daily` 抓取最新早报\n- `/news` 一键唤出上次早报\n- `/check` 检查并发布队列推文\n- `/chat` 切换纯聊天模式",
     Markup.inlineKeyboard([
       [Markup.button.callback('📰 抓取最新早报', 'fetch_daily')],
       [Markup.button.callback('📋 查看上次早报', 'show_cached_news')]
     ])
   );
+});
+
+bot.command('chat', (ctx) => {
+  if (ctx.from.id !== myUserId) return;
+  const current = isChatMode.get(myUserId) || false;
+  isChatMode.set(myUserId, !current);
+  if (!current) {
+    ctx.reply("🤖 已切换到【闲聊模式】。在这个模式下，我会像一个普通的智能体助手一样与你对话，不会自动帮你生成推文。再次发送 /chat 可以切回推文模式。");
+  } else {
+    ctx.reply("🐦 已切换回【推文生成模式】。你发送给我的任何想法都会被提炼为推文草稿。");
+  }
 });
 
 // Helper: re-send cached news board
@@ -559,6 +606,20 @@ bot.on('text', async (ctx) => {
   // Keep last 10 turns (20 messages max if we include assistant)
   if (history.length > 20) history = history.slice(-20);
   
+  if (isChatMode.get(myUserId)) {
+    try {
+      const replyText = await simpleChatWithAI(history);
+      history.push({ role: 'assistant', content: replyText });
+      chatMemory.set(myUserId, history);
+      await ctx.reply(replyText);
+    } catch (e) {
+      console.error(e);
+      await ctx.reply(`❌ AI 处理失败: ${e.message}`);
+      history.pop();
+    }
+    return;
+  }
+
   try {
     const result = await chatWithAI(history);
     
@@ -775,6 +836,7 @@ bot.telegram.setMyCommands([
   { command: 'daily', description: '📰 抓取最新全矩阵早报' },
   { command: 'news', description: '📋 一键唤出上次早报缓存' },
   { command: 'check', description: '🚀 检查并发布草稿队列推文' },
+  { command: 'chat', description: '💬 切换纯聊天模式/推文模式' },
   { command: 'start', description: '🏠 回到主菜单' }
 ]).then(() => {
   console.log('✅ Bot commands menu set!');

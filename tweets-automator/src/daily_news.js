@@ -17,33 +17,42 @@ const bot = new Telegraf(botToken);
 const cacheFile = path.join(config.paths.tweets.base, 'daily_news_cache.json');
 
 const defaultRssSources = {
-  "科技 (Tech)": [
-    "https://news.ycombinator.com/rss",
-    "https://sspai.com/feed",
-    "https://www.huxiu.com/rss/0.xml"
-  ],
-  "AI (人工智能)": [
-    "https://juejin.cn/rss",
-    "https://www.qbitai.com/feed",
-    "https://openai.com/blog/rss.xml"
-  ],
-  "实用工具与资源 (Tools & Resources)": [
-    "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
-    "https://www.producthunt.com/feed"
-  ],
-  "理财投资 (Finance)": [
-    "https://xueqiu.com/hots/topic/rss",
-    "https://www.moneyweek.com/rss",
-    "https://www.fool.com/feeds/index.aspx"
-  ],
-  "社会 (Society)": [
-    "http://feeds.bbci.co.uk/zhongwen/simp/rss.xml",
-    "https://cn.nytimes.com/rss/"
-  ],
-  "民生热议 (Livelihood)": [
-    "https://www.reddit.com/r/China_irl/.rss",
-    "https://www.solidot.org/index.rss"
-  ]
+  "实用资源 (Tools & Resources)": {
+    limit: 30,
+    urls: [
+      "https://feeds.appinn.com/appinns/", 
+      "https://ruanyf.github.io/ruanyf-weekly/rss.xml", 
+      "https://www.reddit.com/r/InternetIsBeautiful/.rss",
+      "https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml",
+      "https://www.producthunt.com/feed"
+    ]
+  },
+  "科技人工智能 (Tech & AI)": {
+    limit: 10,
+    urls: [
+      "https://juejin.cn/rss",
+      "https://www.qbitai.com/feed",
+      "https://openai.com/blog/rss.xml",
+      "https://sspai.com/feed",
+      "https://news.ycombinator.com/rss"
+    ]
+  },
+  "理财投资 (Finance & Investment)": {
+    limit: 10,
+    urls: [
+      "https://xueqiu.com/hots/topic/rss",
+      "https://www.moneyweek.com/rss",
+      "https://www.fool.com/feeds/index.aspx"
+    ]
+  },
+  "社会热点 (Society Trends)": {
+    limit: 10,
+    urls: [
+      "https://rsshub.app/weibo/search/hot",
+      "https://rsshub.app/zhihu/hotlist",
+      "https://rsshub.app/baidu/topwords/1"
+    ]
+  }
 };
 
 async function main() {
@@ -55,8 +64,10 @@ async function main() {
     let textToTranslate = "";
     const cacheData = {};
 
-    for (const [category, urls] of Object.entries(defaultRssSources)) {
+    for (const [category, configData] of Object.entries(defaultRssSources)) {
       let categoryItems = [];
+      const urls = configData.urls;
+      const limit = configData.limit;
       for (const url of urls) {
         try {
           const feed = await parser.parseURL(url);
@@ -73,8 +84,8 @@ async function main() {
         }
       }
 
-      // Limit to 10 items per category
-      categoryItems = categoryItems.slice(0, 10);
+      // Limit items per category according to config
+      categoryItems = categoryItems.slice(0, limit);
       
       if (categoryItems.length > 0) {
         messageText += `🔹 <b>【${category}】</b>\n`;
@@ -144,7 +155,28 @@ async function main() {
     fs.writeFileSync(cacheFile, JSON.stringify(cacheData, null, 2), 'utf-8');
 
     // Send via Bot
-    await bot.telegram.sendMessage(myUserId, finalMessage, { parse_mode: 'HTML', disable_web_page_preview: true });
+    // Split message into chunks of 4000 characters to avoid Telegram limits
+    const maxLen = 4000;
+    for (let start = 0; start < finalMessage.length; start += maxLen) {
+      let chunk = finalMessage.slice(start, start + maxLen);
+      // Ensure we don't break HTML tags, though it's unlikely with just tags and links,
+      // a simple approach is just send the slice. For safety, it's better to split by newlines.
+    }
+    
+    // Better splitting by lines
+    const linesMessage = finalMessage.split('\n');
+    let currentChunk = '';
+    for (const line of linesMessage) {
+      if (currentChunk.length + line.length + 1 > maxLen) {
+        await bot.telegram.sendMessage(myUserId, currentChunk, { parse_mode: 'HTML', disable_web_page_preview: true });
+        currentChunk = '';
+      }
+      currentChunk += line + '\n';
+    }
+    if (currentChunk.trim().length > 0) {
+      await bot.telegram.sendMessage(myUserId, currentChunk, { parse_mode: 'HTML', disable_web_page_preview: true });
+    }
+
     console.log('✅ Daily news board sent and cached!');
 
   } catch (err) {
