@@ -162,7 +162,7 @@ function syncCrossRepo(ctx = null) {
     }
     
     // Pull rebase first to avoid non-fast-forward, then push
-    const cmd = `git config user.name "bot" && git config user.email "bot@example.com" && git add content/insights/feed/ && (git diff-index --quiet HEAD || git commit -m "bot: auto-sync published tweets") && git pull --rebase https://${pat}@github.com/0-shang/ai-nav.git main && git push https://${pat}@github.com/0-shang/ai-nav.git HEAD:main`;
+    const cmd = `git config user.name "bot" && git config user.email "bot@example.com" && git add content/insights/feed/ && (git diff-index --quiet HEAD || git commit -m "bot: auto-sync published tweets") && git pull --rebase https://${pat}@github.com/0-shang/ai-nav.git master && git push https://${pat}@github.com/0-shang/ai-nav.git HEAD:master`;
     exec(cmd, { cwd: tempDir }, (err, stdout, stderr) => {
       if (err) {
         console.error('Cross-repo sync push failed:', err.message);
