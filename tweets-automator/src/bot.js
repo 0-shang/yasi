@@ -161,12 +161,17 @@ function syncCrossRepo(ctx = null) {
       });
     }
     
-    // Commit and push
-    const cmd = `git config user.name "bot" && git config user.email "bot@example.com" && git add content/insights/feed/ && git commit -m "bot: auto-sync published tweets" && git push https://${pat}@github.com/0-shang/ai-nav.git HEAD:main`;
-    exec(cmd, { cwd: tempDir }, () => {
+    // Commit and push (allow empty commit just in case, or ignore if nothing to commit)
+    const cmd = `git config user.name "bot" && git config user.email "bot@example.com" && git add content/insights/feed/ && (git diff-index --quiet HEAD || git commit -m "bot: auto-sync published tweets") && git push https://${pat}@github.com/0-shang/ai-nav.git HEAD:main`;
+    exec(cmd, { cwd: tempDir }, (err, stdout, stderr) => {
+      if (err) {
+        console.error('Cross-repo sync push failed:', err.message);
+        if (ctx) ctx.reply(`⚠️ ai-nav 同步过程中出现问题 (通常是因为没有新文件): ${err.message}`);
+      } else {
+        if (ctx) ctx.reply('✅ Successfully synced cross-repository to ai-nav!');
+      }
       // Cleanup
       fs.rmSync(tempDir, { recursive: true, force: true });
-      if (ctx) ctx.reply('✅ Successfully synced cross-repository to ai-nav!');
     });
   });
 }

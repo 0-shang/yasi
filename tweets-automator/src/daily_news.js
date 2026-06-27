@@ -18,17 +18,17 @@ const cacheFile = path.join(config.paths.tweets.base, 'daily_news_cache.json');
 
 const defaultRssSources = {
   "实用资源 (Tools & Resources)": {
-    limit: 30,
+    limit: 40,
     sources: [
       { url: "https://rsshub.rssforever.com/github/trending/daily/any", quota: 10 },
       { url: "https://rsshub.app/github/trending/daily/any", quota: 10 }, // fallback
-      { url: "https://rsshub.rssforever.com/reddit/r/InternetIsBeautiful/top/day", quota: 4 },
-      { url: "https://alternativeto.net/news/feed/", quota: 4 },
-      { url: "https://feeds.appinn.com/appinn/", quota: 4 },
-      { url: "https://feeds.feedburner.com/ruanyifeng", quota: 2 },
-      { url: "https://www.v2ex.com/feed/share.xml", quota: 3 },
-      { url: "https://www.v2ex.com/feed/create.xml", quota: 3 },
-      { url: "https://www.producthunt.com/feed", quota: 4 }
+      { url: "https://rsshub.rssforever.com/reddit/r/InternetIsBeautiful/top/day", quota: 5 },
+      { url: "https://alternativeto.net/news/feed/", quota: 5 },
+      { url: "https://feeds.appinn.com/appinn/", quota: 5 },
+      { url: "https://feeds.feedburner.com/ruanyifeng", quota: 5 },
+      { url: "https://www.v2ex.com/feed/share.xml", quota: 5 },
+      { url: "https://www.v2ex.com/feed/create.xml", quota: 5 },
+      { url: "https://www.producthunt.com/feed", quota: 5 }
     ]
   },
   "科技人工智能 (Tech & AI)": {
@@ -52,10 +52,10 @@ const defaultRssSources = {
   "社会热点 (Society Trends)": {
     limit: 10,
     sources: [
-      { url: "http://news.163.com/special/00011K6L/rss_newstop.xml", quota: 3 }, // 网易头条 (原生RSS极度稳定)
+      { url: "https://rsshub.rssforever.com/douyin/hot", quota: 4 }, // 抖音热点
+      { url: "https://rsshub.rssforever.com/bilibili/ranking/0/3", quota: 4 }, // B站热门
       { url: "https://rsshub.rssforever.com/weibo/search/hot", quota: 3 }, // 微博热搜
-      { url: "https://rsshub.rssforever.com/zhihu/hotlist", quota: 3 }, // 知乎热榜
-      { url: "https://rsshub.liubing.me/weibo/search/hot", quota: 3 }, // 备用
+      { url: "http://news.163.com/special/00011K6L/rss_newstop.xml", quota: 3 }, // 网易头条
       { url: "https://rsshub.liubing.me/zhihu/hotlist", quota: 3 } // 备用
     ]
   }
