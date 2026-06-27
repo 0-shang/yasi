@@ -19,43 +19,44 @@ const cacheFile = path.join(config.paths.tweets.base, 'daily_news_cache.json');
 const defaultRssSources = {
   "实用资源 (Tools & Resources)": {
     limit: 30,
-    urls: [
-      "https://rsshub.app/reddit/r/InternetIsBeautiful/top/day",
-      "https://alternativeto.net/news/feed/",
-      "https://rsshub.app/github/trending/daily/any",
-      "https://feeds.appinn.com/appinn/",
-      "https://feeds.feedburner.com/ruanyifeng",
-      "https://www.v2ex.com/feed/share.xml",
-      "https://www.v2ex.com/feed/create.xml",
-      "https://www.producthunt.com/feed"
+    sources: [
+      { url: "https://rsshub.rssforever.com/github/trending/daily/any", quota: 10 },
+      { url: "https://rsshub.app/github/trending/daily/any", quota: 10 }, // fallback
+      { url: "https://rsshub.rssforever.com/reddit/r/InternetIsBeautiful/top/day", quota: 4 },
+      { url: "https://alternativeto.net/news/feed/", quota: 4 },
+      { url: "https://feeds.appinn.com/appinn/", quota: 4 },
+      { url: "https://feeds.feedburner.com/ruanyifeng", quota: 2 },
+      { url: "https://www.v2ex.com/feed/share.xml", quota: 3 },
+      { url: "https://www.v2ex.com/feed/create.xml", quota: 3 },
+      { url: "https://www.producthunt.com/feed", quota: 4 }
     ]
   },
   "科技人工智能 (Tech & AI)": {
     limit: 10,
-    urls: [
-      "https://juejin.cn/rss",
-      "https://www.qbitai.com/feed",
-      "https://openai.com/blog/rss.xml",
-      "https://sspai.com/feed",
-      "https://news.ycombinator.com/rss"
+    sources: [
+      { url: "https://juejin.cn/rss", quota: 3 },
+      { url: "https://www.qbitai.com/feed", quota: 3 },
+      { url: "https://openai.com/blog/rss.xml", quota: 2 },
+      { url: "https://sspai.com/feed", quota: 3 },
+      { url: "https://news.ycombinator.com/rss", quota: 2 }
     ]
   },
   "理财投资 (Finance & Investment)": {
     limit: 10,
-    urls: [
-      "https://xueqiu.com/hots/topic/rss",
-      "https://www.moneyweek.com/rss",
-      "https://www.fool.com/feeds/index.aspx"
+    sources: [
+      { url: "https://xueqiu.com/hots/topic/rss", quota: 5 },
+      { url: "https://www.moneyweek.com/rss", quota: 3 },
+      { url: "https://www.fool.com/feeds/index.aspx", quota: 2 }
     ]
   },
   "社会热点 (Society Trends)": {
     limit: 10,
-    urls: [
-      "https://rsshub.app/weibo/search/hot",
-      "https://rsshub.app/zhihu/hotlist",
-      "https://rsshub.app/baidu/topwords/1",
-      "https://rss.shab.fun/weibo/search/hot", // backup mirror
-      "https://rss.shab.fun/zhihu/hotlist" // backup mirror
+    sources: [
+      { url: "http://news.163.com/special/00011K6L/rss_newstop.xml", quota: 3 }, // 网易头条 (原生RSS极度稳定)
+      { url: "https://rsshub.rssforever.com/weibo/search/hot", quota: 3 }, // 微博热搜
+      { url: "https://rsshub.rssforever.com/zhihu/hotlist", quota: 3 }, // 知乎热榜
+      { url: "https://rsshub.liubing.me/weibo/search/hot", quota: 3 }, // 备用
+      { url: "https://rsshub.liubing.me/zhihu/hotlist", quota: 3 } // 备用
     ]
   }
 };
@@ -71,18 +72,34 @@ async function main() {
 
     for (const [category, configData] of Object.entries(defaultRssSources)) {
       let categoryItems = [];
-      const urls = configData.urls;
+      const sources = configData.sources;
       const limit = configData.limit;
-      for (const url of urls) {
+      let fetchedCount = 0;
+      
+      for (const source of sources) {
+        if (fetchedCount >= limit) break; // Skip if we already hit the limit
+        const url = source.url;
+        const quota = source.quota;
+        
         try {
+          let sourceItems = [];
           const feed = await parser.parseURL(url);
           feed.items.forEach(item => {
             let itemDate = new Date(0);
             if (item.isoDate) itemDate = new Date(item.isoDate);
             else if (item.pubDate) itemDate = new Date(item.pubDate);
             item._parsedDate = itemDate;
-            categoryItems.push(item);
+            sourceItems.push(item);
           });
+          
+          // Sort this specific source by newest
+          sourceItems.sort((a, b) => b._parsedDate - a._parsedDate);
+          
+          // Slice only the quota we want from this source
+          const itemsToAdd = sourceItems.slice(0, quota);
+          categoryItems.push(...itemsToAdd);
+          fetchedCount += itemsToAdd.length;
+          
         } catch(e) {
           console.error(`⚠️ Failed to fetch ${url}:`, e.message);
         }
