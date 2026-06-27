@@ -1,332 +1,272 @@
 {
   "1": {
-    "category": "实用资源 (Tools & Resources)",
+    "category": "实用工具资源 (Tools & Resources)",
     "title": "检查一下自己的抖音自动扣费，汽水音乐已扣 1 年多。",
     "link": "https://www.v2ex.com/t/1223379#reply2",
     "snippet": "检查一下自己的抖音自动扣费，汽水音乐已经默默的扣了我一年多的 svip 了…一年我打开汽水音乐听歌没超过 2 小时。  \n然后排查了一下账单，原来是 2025 年初下载汽水音乐的时候，提示 1 分钱听 vip 歌曲 7 天开通的，被稀里糊涂的给我来了个自动续费，更牛逼的是自动扣费的通知还只在汽水音乐 app 内通知。一年听不了 2 个小时的我，怎么可能天天看你的站内信息，而且站内信息全是广告通知。..."
   },
   "2": {
-    "category": "实用资源 (Tools & Resources)",
+    "category": "实用工具资源 (Tools & Resources)",
     "title": "LLMRelayService：比 NewAPI 更轻量的大模型网关",
     "link": "https://www.v2ex.com/t/1223374#reply0",
     "snippet": "最近频繁在 CodingPlan 、官方渠道间切换，折腾了 NewAPI 。但 NewAPI 的设计更偏向于中转站运营，配置繁琐，对个人自用来说显得过重（往往不需要复杂的注册、邀请、令牌分组等概念）。\n结合自己的实际需求，我写了一个更适合个人自用的网关：LLMRelayService。\n核心特性\n格式透传，原生兼容\n只做 chat/responses 间的最小化转换，彻底避免因格式二次转换带来的各..."
   },
   "3": {
-    "category": "实用资源 (Tools & Resources)",
+    "category": "实用工具资源 (Tools & Resources)",
     "title": "Binance’s EU services face disruption after the exchange withdraws Greek license bid",
     "link": "https://alternativeto.net/news/2026/6/binance-s-eu-services-face-disruption-after-the-exchange-withdraws-greek-license-bid/",
     "snippet": "Binance has told its European users that its services may be affected after withdrawing its application for EU authorization through Greece, just days before the July 1 MiCA deadline. Under the Market..."
   },
   "4": {
-    "category": "实用资源 (Tools & Resources)",
+    "category": "实用工具资源 (Tools & Resources)",
     "title": "国内旗舰模型中转站，邀请 10 个用户，每人送 1 亿 token",
     "link": "https://www.v2ex.com/t/1223368#reply0",
     "snippet": "https://ai.modelzoo.tech/\n\n微信：Y2hlbmZqbQ=="
   },
   "5": {
-    "category": "实用资源 (Tools & Resources)",
+    "category": "实用工具资源 (Tools & Resources)",
     "title": "终端工作区：从 WindTerm 到 NyaTerm",
     "link": "https://www.v2ex.com/t/1223359#reply14",
     "snippet": "NyaTerm：一个受 WindTerm 启发的开源远程终端工作区\n项目地址： https://github.com/nyakang/nyaterm\n官网： https://nyaterm.app\n\n一个月前，我在 WindTerm 的 Issue 区发了一条开源自荐：\n受 WindTerm 启发，我做了一个开源终端管理工具：NyaTerm 。\n当时其实挺忐忑的。\n因为 WindTerm 对我来说..."
   },
   "6": {
-    "category": "实用资源 (Tools & Resources)",
-    "title": "AI 互动悬疑游戏",
-    "link": "https://www.v2ex.com/t/1223356#reply0",
-    "snippet": "https://www.bilibili.com/video/BV1ce7H63EEK"
-  },
-  "7": {
-    "category": "实用资源 (Tools & Resources)",
-    "title": "YeeroAI 更新： 300+ 模型并排对比 / 对话像 Git 一样分支 / CLI + 桌面端上线",
-    "link": "https://www.v2ex.com/t/1223348#reply0",
-    "snippet": "消息多选捡出到分支\n长对话里有些回复挺有用的，但散落在各处，找起来挺费劲。现在支持勾选多条消息，一键\"捡出\"到指定分支或新建分支，捡出后自动跳过去。整理对话方便多了。\n全局搜索\"全部\"分类 + 固定标签页\n之前全局搜索要切对话、消息、文件、应用、模型等分类分别搜。加了\"全部\"分类后，可以一次性搜索跨所有的分类，结果分组展示。AI 语义搜索在\"全部\"下同样生效。\n对话标签页也支持固定了，多标签并行时..."
-  },
-  "8": {
-    "category": "实用资源 (Tools & Resources)",
-    "title": "我写了本书：关于企业落地 agent 平台的~欢迎大家提意见",
-    "link": "https://www.v2ex.com/t/1223328#reply1",
-    "snippet": "我整理并开源了一本书，主题是 企业级 Agent 平台工程。结合了我这两年给企业做落地智能体的经历，总结了需要的一些信息。整本书都关注一个点：怎么能做出来工业级可以落地企业的智能体平台。\ngithub: https://github.com/datagallery-lab/enterprise_agent_platform_engineering\n\n我自己觉得现在很多 Agent 讨论还停留在框架..."
-  },
-  "9": {
-    "category": "实用资源 (Tools & Resources)",
-    "title": "mimo 明天过期, 还有一百亿, 各位使劲蹬",
-    "link": "https://www.v2ex.com/t/1223274#reply6",
-    "snippet": "api tp-ctnrpo8ay7snzh1dfwqviox9dpio4wt8laxy27nj525pni49\nbase_url\nhttps://token-plan-cn.xiaomimimo.com/anthropic\nhttps://token-plan-cn.xiaomimimo.com/v1\n没铜币了, 麻烦各位用完回复下"
-  },
-  "10": {
-    "category": "实用资源 (Tools & Resources)",
-    "title": "继新浪云后。LeanCloud 也终止服务 了",
-    "link": "https://www.v2ex.com/t/1223260#reply9",
-    "snippet": "[重要提醒]  LeanCloud 将于 2027 年 1 月 12 日全面终止服务，届时所有数据将依法销毁且无法恢复。请于此日期前尽快完成数据备份与迁移，迁移后可申请账户余额退款。\n详情： https://docs.leancloud.app/sdk/announcements/sunset-announcement/"
-  },
-  "11": {
-    "category": "实用资源 (Tools & Resources)",
-    "title": "[ios] 分享个管理保号 eSIM 信息的小工具-simhub",
-    "link": "https://www.v2ex.com/t/1223248#reply6",
-    "snippet": "主要用途-记录 eSIM 和 提醒保号\nTestFlight： https://testflight.apple.com/join/u9AdX6nz\nTestFlight： https://testflight.apple.com/join/SSQfEAHA\nsimkit 兼容 15/ 16 系统的用户\nsimhub 17.0 以上用户"
-  },
-  "12": {
-    "category": "实用资源 (Tools & Resources)",
+    "category": "实用工具资源 (Tools & Resources)",
     "title": "Supra Player",
     "link": "https://www.producthunt.com/products/supra-player",
     "snippet": "Discussion\n            |\n            Link"
   },
-  "13": {
-    "category": "实用资源 (Tools & Resources)",
+  "7": {
+    "category": "实用工具资源 (Tools & Resources)",
     "title": "YouTube Shorts get clean mode, x2 playback speed, new heart icon & dislike button removal",
     "link": "https://alternativeto.net/news/2026/6/youtube-shorts-get-clean-mode-x2-playback-speed-new-heart-icon-and-dislike-button-removal/",
     "snippet": "Google has delivered a round of updates to YouTube Shorts, introducing a cleaner and more intuitive interface. The rollout’s most visible addition is a Clear Screen mode that temporarily hides all ico..."
   },
-  "14": {
-    "category": "实用资源 (Tools & Resources)",
+  "8": {
+    "category": "实用工具资源 (Tools & Resources)",
     "title": "Deno 2.9 introduces native desktop app builder and boosts Node.js project migration",
     "link": "https://alternativeto.net/news/2026/6/deno-2-9-introduces-native-desktop-app-builder-and-boosts-node-js-project-migration/",
     "snippet": "Deno 2.9 has been released as the latest version of this popular open-source JavaScript runtime. This major update introduces deno desktop, a new tool designed to streamline native desktop application..."
   },
-  "15": {
-    "category": "实用资源 (Tools & Resources)",
+  "9": {
+    "category": "实用工具资源 (Tools & Resources)",
     "title": "Next.js 16.3 preview adds instant navigations and partial prefetching",
     "link": "https://alternativeto.net/news/2026/6/next-js-16-3-preview-adds-instant-navigations-and-partial-prefetching/",
     "snippet": "Next.js 16.3 preview introduces Instant Navigations, enabling server-driven apps to offer instant, SPA-like page transitions.\nThe release also debuts partial prefetching, which fetches and caches reus..."
   },
-  "16": {
-    "category": "实用资源 (Tools & Resources)",
+  "10": {
+    "category": "实用工具资源 (Tools & Resources)",
     "title": "Microsoft Copilot now available in Excel: finance automation and major data connectors",
     "link": "https://alternativeto.net/news/2026/6/microsoft-copilot-now-available-in-excel-finance-automation-and-major-data-connectors/",
     "snippet": "Microsoft 365 Copilot in Excel now supports new skills for automating multi-step financial workflows, including processes like DCF modeling, variance analysis, and monthly reporting.0\nExpanded financi..."
   },
-  "17": {
-    "category": "实用资源 (Tools & Resources)",
+  "11": {
+    "category": "实用工具资源 (Tools & Resources)",
     "title": "Aurora Notch",
     "link": "https://www.producthunt.com/products/aurora-21",
     "snippet": "Discussion\n            |\n            Link"
   },
-  "18": {
-    "category": "实用资源 (Tools & Resources)",
+  "12": {
+    "category": "实用工具资源 (Tools & Resources)",
     "title": "RetroMac",
     "link": "https://www.producthunt.com/products/retromac",
     "snippet": "Discussion\n            |\n            Link"
   },
-  "19": {
-    "category": "实用资源 (Tools & Resources)",
-    "title": "Basedash for Excel",
-    "link": "https://www.producthunt.com/products/basedash",
-    "snippet": "Discussion\n            |\n            Link"
-  },
-  "20": {
-    "category": "实用资源 (Tools & Resources)",
-    "title": "Group Subscriptions by beehiiv",
-    "link": "https://www.producthunt.com/products/beehiiv",
-    "snippet": "Discussion\n            |\n            Link"
-  },
-  "21": {
-    "category": "实用资源 (Tools & Resources)",
-    "title": "科技爱好者周刊（第 401 期）：如何赚到10亿美元",
-    "link": "http://www.ruanyifeng.com/blog/2026/06/weekly-issue-401.html",
-    "snippet": "这里记录每周值得分享的科技内容，周五发布。\n本杂志开源，欢迎投稿。另有《谁在招人》服务，发布程序员招聘信息。合作请邮件联系（yifeng.ruan@gmail.com）。\n封面图\n\n在中国南方，人们穿戴巨型荷叶制作的防晒面罩。（via）\n如何赚到10亿美元\n保罗·格雷厄姆（Paul Graham）是美国最大的创业孵化器 Y Combinator 的创始人，公认的创业导师，《黑客与画家》的作者。\n他..."
-  },
-  "22": {
-    "category": "实用资源 (Tools & Resources)",
-    "title": "科技爱好者周刊（第 400 期）：rsync 的争论",
-    "link": "http://www.ruanyifeng.com/blog/2026/06/weekly-issue-400.html",
-    "snippet": "这里记录每周值得分享的科技内容，周五发布。（[通知] 下周端午假期，周刊休息。）\n本杂志开源，欢迎投稿。另有《谁在招人》服务，发布程序员招聘信息。合作请邮件联系（yifeng.ruan@gmail.com）。\n封面图\n\n上海体育学院内的绿瓦书店，是上海首家体育主题书店。中庭有13米高的\"明月山\"，四周是小路，意为\"书山有路勤为径\"。（via）\nrsync 的争论\nrsync 是计算机同步最常用的工..."
-  },
-  "23": {
-    "category": "实用资源 (Tools & Resources)",
-    "title": "科技爱好者周刊（第 399 期）：中国 AI 大厂访问记",
-    "link": "http://www.ruanyifeng.com/blog/2026/06/weekly-issue-399.html",
-    "snippet": "这里记录每周值得分享的科技内容，周五发布。\n本杂志开源，欢迎投稿。另有《谁在招人》服务，发布程序员招聘信息。合作请邮件联系（yifeng.ruan@gmail.com）。\n封面图\n\n本周开馆的深圳国际美术馆。（via）\n中国 AI 大厂访问记\n今年5月上旬，一个美国访问团来到中国，访问了14家  AI 和机器人公司。\n\n访问对象包括 DeepSeek、月之暗面、MiniMax、智谱、字节跳动、阿里..."
-  },
-  "24": {
-    "category": "实用资源 (Tools & Resources)",
-    "title": "科技爱好者周刊（第 398 期）：Token 费用难以负担",
-    "link": "http://www.ruanyifeng.com/blog/2026/05/weekly-issue-398.html",
-    "snippet": "这里记录每周值得分享的科技内容，周五发布。\n本杂志开源，欢迎投稿。另有《谁在招人》服务，发布程序员招聘信息。合作请邮件联系（yifeng.ruan@gmail.com）。\n封面图\n\n去年开放的浙江省安吉县的安吉文化艺术中心。当地盛产竹子，屋顶都采用竹叶造型。（daemin_kg@ig）\nToken 费用难以负担\n上周，OpenClaw（龙虾）的创始人彼得·斯坦伯格（Peter Steinberge..."
-  },
-  "25": {
-    "category": "实用资源 (Tools & Resources)",
-    "title": "科技爱好者周刊（第 397 期）：财富正在向 AI 集中",
-    "link": "http://www.ruanyifeng.com/blog/2026/05/weekly-issue-397.html",
-    "snippet": "这里记录每周值得分享的科技内容，周五发布。\n本杂志开源，欢迎投稿。另有《谁在招人》服务，发布程序员招聘信息。合作请邮件联系（yifeng.ruan@gmail.com）。\n封面图\n\n马岩松事务所设计的海南科技馆，今年五一开馆。（via）\n财富正在向 AI 集中\nAI 相关的所有东西，最近都在上涨。\n看看股票，就知道了。内存、储存、CPU、服务器、液冷、光通信、变压器......股价全部在涨，更不要..."
-  },
-  "26": {
-    "category": "实用资源 (Tools & Resources)",
+  "13": {
+    "category": "实用工具资源 (Tools & Resources)",
     "title": "simplex-chat/simplex-chat",
     "link": "https://github.com/simplex-chat/simplex-chat",
-    "snippet": "SimpleX - the first messaging network operating without user identifiers of any kind - 100% private by design! iOS, Android and desktop apps 📱!\nLanguage: Haskell\nStars: 13662\nForks: 786"
+    "snippet": "SimpleX - the first messaging network operating without user identifiers of any kind - 100% private by design! iOS, Android and desktop apps 📱!\nLanguage: Haskell\nStars: 13674\nForks: 787"
   },
-  "27": {
-    "category": "实用资源 (Tools & Resources)",
+  "14": {
+    "category": "实用工具资源 (Tools & Resources)",
     "title": "xbtlin/ai-berkshire",
     "link": "https://github.com/xbtlin/ai-berkshire",
     "snippet": "AI 时代的伯克希尔：基于 Claude Code 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework   built on Claude Code. 4 masters' methodologies + multi-agent adversarial..."
   },
-  "28": {
-    "category": "实用资源 (Tools & Resources)",
+  "15": {
+    "category": "实用工具资源 (Tools & Resources)",
     "title": "commaai/openpilot",
     "link": "https://github.com/commaai/openpilot",
-    "snippet": "openpilot is an operating system for robotics. Currently, it upgrades the driver assistance system on 300+ supported cars.\nLanguage: Python\nStars: 62029\nForks: 11062"
+    "snippet": "openpilot is an operating system for robotics. Currently, it upgrades the driver assistance system on 300+ supported cars.\nLanguage: Python\nStars: 62033\nForks: 11062"
   },
-  "29": {
-    "category": "实用资源 (Tools & Resources)",
+  "16": {
+    "category": "实用工具资源 (Tools & Resources)",
     "title": "IceWhaleTech/CasaOS",
     "link": "https://github.com/IceWhaleTech/CasaOS",
-    "snippet": "CasaOS - A simple, easy-to-use, elegant open-source Personal Cloud system.\nLanguage: Go\nStars: 35725\nForks: 2042"
+    "snippet": "CasaOS - A simple, easy-to-use, elegant open-source Personal Cloud system.\nLanguage: Go\nStars: 35733\nForks: 2042"
   },
-  "30": {
-    "category": "实用资源 (Tools & Resources)",
+  "17": {
+    "category": "实用工具资源 (Tools & Resources)",
     "title": "ripienaar/free-for-dev",
     "link": "https://github.com/ripienaar/free-for-dev",
-    "snippet": "A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev\nLanguage: HTML\nStars: 124107\nForks: 13076"
+    "snippet": "A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev\nLanguage: HTML\nStars: 124113\nForks: 13077"
   },
-  "31": {
-    "category": "实用资源 (Tools & Resources)",
+  "18": {
+    "category": "实用工具资源 (Tools & Resources)",
     "title": "google-labs-code/design.md",
     "link": "https://github.com/google-labs-code/design.md",
-    "snippet": "A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.\nLanguage: TypeScript\nStars: 22230\nForks: 178..."
+    "snippet": "A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.\nLanguage: TypeScript\nStars: 22235\nForks: 178..."
   },
-  "32": {
-    "category": "实用资源 (Tools & Resources)",
+  "19": {
+    "category": "实用工具资源 (Tools & Resources)",
     "title": "microsoft/PowerToys",
     "link": "https://github.com/microsoft/PowerToys",
     "snippet": "Microsoft PowerToys is a collection of utilities that supercharge productivity and customization on Windows\nLanguage: C\nStars: 135670\nForks: 8166"
   },
-  "33": {
-    "category": "实用资源 (Tools & Resources)",
+  "20": {
+    "category": "实用工具资源 (Tools & Resources)",
     "title": "hugohe3/ppt-master",
     "link": "https://github.com/hugohe3/ppt-master",
     "snippet": "AI generates a real, editable PowerPoint from any document — native shapes & animations, speaker notes voiced as audio narration, and the option to follow your own .pptx template, not slide images · b..."
   },
-  "34": {
-    "category": "实用资源 (Tools & Resources)",
+  "21": {
+    "category": "实用工具资源 (Tools & Resources)",
     "title": "JCodesMore/ai-website-cloner-template",
     "link": "https://github.com/JCodesMore/ai-website-cloner-template",
-    "snippet": "Clone any website with one command using AI coding agents\nLanguage: TypeScript\nStars: 22009\nForks: 3159"
+    "snippet": "Clone any website with one command using AI coding agents\nLanguage: TypeScript\nStars: 22018\nForks: 3159"
   },
-  "35": {
-    "category": "实用资源 (Tools & Resources)",
+  "22": {
+    "category": "实用工具资源 (Tools & Resources)",
     "title": "garrytan/gstack",
     "link": "https://github.com/garrytan/gstack",
-    "snippet": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA\nLanguage: TypeScript\nStars: 117129\nForks: 17400"
+    "snippet": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA\nLanguage: TypeScript\nStars: 117141\nForks: 17402"
   },
-  "36": {
+  "23": {
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "IP Crawl: living atlas of open webcams discovered on the public internet",
+    "link": "https://ipcrawl.com/",
+    "snippet": "Comments"
+  },
+  "24": {
     "category": "科技人工智能 (Tech & AI)",
     "title": "Ships keep moving through Hormuz despite strike",
     "link": "https://www.lloydslist.com/LL1157680/Ships-keep-moving-through-Hormuz-despite-strike-and-suspension-of-IMO-exit-strategy",
     "snippet": "Comments"
   },
-  "37": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "The Card That Made the Apple II Serious",
-    "link": "https://www.wiseowl.com/articles/a2fpga-videx-01-the-card-that-made-the-apple-ii-serious/",
-    "snippet": "Comments"
-  },
-  "38": {
+  "25": {
     "category": "科技人工智能 (Tech & AI)",
     "title": "BrowserBC：克隆人类点击，让一次网页操作转化为所有Agent的能力",
     "link": "https://www.qbitai.com/2026/06/439393.html",
     "snippet": "人类一次录制，Agent就能模拟"
   },
-  "39": {
+  "26": {
     "category": "科技人工智能 (Tech & AI)",
     "title": "第一批一人公司，现在怎么样了？",
     "link": "https://www.qbitai.com/2026/06/439237.html",
     "snippet": "我们跟一群OPC创业者聊了聊"
   },
-  "40": {
+  "27": {
     "category": "科技人工智能 (Tech & AI)",
     "title": "CVPR 2026最热方向，被一家杭州团队率先跑进了端侧！",
     "link": "https://www.qbitai.com/2026/06/439236.html",
     "snippet": "VLM- R1之后再次出手！全球首个端侧流式多模态来了！"
   },
-  "41": {
+  "28": {
     "category": "科技人工智能 (Tech & AI)",
     "title": "俄西双城游记：莫斯科时代折叠，圣彼得堡文化巡礼",
     "link": "https://sspai.com/post/111347",
     "snippet": "在莫斯科的时代折叠与彼得堡的文化巡礼之间，发现俄罗斯的不同面貌。查看全文"
   },
-  "42": {
+  "29": {
     "category": "科技人工智能 (Tech & AI)",
     "title": "本周看什么 | 最近值得一看的 10 部作品",
     "link": "https://sspai.com/post/111562",
     "snippet": "📅本周新预告《克拉拉与太阳》首支预告6月23日，电影《克拉拉与太阳》发布了首支预告，将于10月23日在北美上映。塔伊加·维迪提执导，詹娜·奥尔特加、艾米·亚当斯主演，改编自石黑一雄的同名小说，人工智能 ...查看全文"
   },
-  "43": {
+  "30": {
     "category": "科技人工智能 (Tech & AI)",
     "title": "Previewing GPT-5.6 Sol: a next-generation model",
     "link": "https://openai.com/index/previewing-gpt-5-6-sol",
     "snippet": "OpenAI previews GPT-5.6 Sol, a next-generation model with stronger capabilities in coding, science, and cybersecurity, paired with its most advanced safety stack."
   },
-  "44": {
+  "31": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "探索快捷指令的上限：用网页视图创建丰富界面与交互",
-    "link": "https://sspai.com/prime/story/create-webview-in-shortcuts",
-    "snippet": "从锁屏按钮、锁屏小组件、负一屏小组件，到桌面小组件、控制中心、Siri、自动化触发……iPhone的快捷指令有着超级多的打开方式，我们也可以为自己写的或从网络上获取的实用快捷指令设置一种最顺手的。与之 ...查看全文\n本文为会员文章，出自《单篇文章》，订阅后可阅读全文。"
+    "title": "科技爱好者周刊（第 401 期）：如何赚到10亿美元",
+    "link": "http://www.ruanyifeng.com/blog/2026/06/weekly-issue-401.html",
+    "snippet": "这里记录每周值得分享的科技内容，周五发布。\n本杂志开源，欢迎投稿。另有《谁在招人》服务，发布程序员招聘信息。合作请邮件联系（yifeng.ruan@gmail.com）。\n封面图\n\n在中国南方，人们穿戴巨型荷叶制作的防晒面罩。（via）\n如何赚到10亿美元\n保罗·格雷厄姆（Paul Graham）是美国最大的创业孵化器 Y Combinator 的创始人，公认的创业导师，《黑客与画家》的作者。\n他..."
   },
-  "45": {
+  "32": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "How agents are transforming work",
-    "link": "https://openai.com/index/how-agents-are-transforming-work",
-    "snippet": "A new OpenAI research paper shows how AI agents are transforming work, enabling longer, more complex tasks and expanding productivity across roles."
+    "title": "科技爱好者周刊（第 400 期）：rsync 的争论",
+    "link": "http://www.ruanyifeng.com/blog/2026/06/weekly-issue-400.html",
+    "snippet": "这里记录每周值得分享的科技内容，周五发布。（[通知] 下周端午假期，周刊休息。）\n本杂志开源，欢迎投稿。另有《谁在招人》服务，发布程序员招聘信息。合作请邮件联系（yifeng.ruan@gmail.com）。\n封面图\n\n上海体育学院内的绿瓦书店，是上海首家体育主题书店。中庭有13米高的\"明月山\"，四周是小路，意为\"书山有路勤为径\"。（via）\nrsync 的争论\nrsync 是计算机同步最常用的工..."
   },
-  "46": {
+  "33": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "Prediction: Buying Rivian Stock Today Could Set You Up for Life",
-    "link": "https://www.fool.com/investing/2026/06/27/prediction-buying-stock-today-could-set-you-up-for/?source=iedfolrf0000001",
-    "snippet": "Rivian is copying Tesla's playbook for growth."
+    "title": "Oruka Stock Is Now Up Nearly 700%. Here's What a $687,000 Insider Sale Could Mean",
+    "link": "https://www.fool.com/coverage/filings/2026/06/27/oruka-stock-is-now-up-nearly-700-here-s-what-a-usd687-000-insider-sale-could-mean/?source=iedfolrf0000001",
+    "snippet": "This biotech innovator in monoclonal antibody therapies reported a notable insider sale amid ongoing clinical-stage developments."
   },
-  "47": {
+  "34": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "What to Know About This $1.56 Million Dream Finders Homes Insider Sale After Shares Fell 29%",
-    "link": "https://www.fool.com/coverage/filings/2026/06/27/what-to-know-about-this-usd1-56-million-dream-finders-homes-insider-sale-after-shares-fell-29/?source=iedfolrf0000001",
-    "snippet": "Dream Finders Homes builds single-family residences nationwide; a recent insider sale comes amid a year of notable stock declines."
+    "title": "OneSpaWorld Director Sold 10,500 Shares, but Here's What Investors Should Watch Next",
+    "link": "https://www.fool.com/coverage/filings/2026/06/27/onespaworld-director-sold-10-500-shares-but-here-s-what-investors-should-watch-next/?source=iedfolrf0000001",
+    "snippet": "This global wellness operator, serving cruise and resort guests, reported a notable insider sale following a year of strong share gains."
   },
-  "48": {
+  "35": {
     "category": "理财投资 (Finance & Investment)",
     "title": "质量投资的因子：只买最好的",
     "link": "http://xueqiu.com/9927088462/396108414",
     "snippet": "我们都知道，伟大公司都是事后才知道。如果事先就能确定某家公司未来将成为一家伟大公司，那投资就简单了。西蒙·科尔德所著的《投资伟大的企业：如何挑选优质且持久的好公司》虽然名为投资“伟大的企业”，但实际上他在序言中就明确指出，这本书旨在为投资者提供一套评价企业质量及持久性的分析框架。而且，就这本书的英文版书名而言，原本就是“寻找优质的公司”——对高质量公司进行长期价值投资，是创造可持续收益的最佳方式。..."
   },
-  "49": {
+  "36": {
     "category": "理财投资 (Finance & Investment)",
     "title": "美国医疗费用的自费经历",
     "link": "http://xueqiu.com/3769952153/397128771",
     "snippet": "几个月前，她半夜把我叫醒说一只眼睛疼得厉害，连带着头疼。这种情况不用多说，急性青光眼。属于去一下医院很容易缓解的事。在急诊做了脑部CT，拍了X光片，最后开了一个口服药3种眼药水，症状现场缓解。我妈心疼钱，对我抱怨为什么要拍CT和X光。因为头疼，医生要排除中风；因为咳嗽，医生要排除肺部感染。这些都是诊疗手册的标准操作。只要来了医院，一个都少不了。一共在急诊待了4个小时，2个月后收到医院部分的账单，8..."
   },
-  "50": {
+  "37": {
     "category": "理财投资 (Finance & Investment)",
     "title": "听完这场股东会，我选择继续重仓药明合联",
     "link": "http://xueqiu.com/9926192452/397076326",
     "snippet": "提前一天到的，住了一晚。昨晚群里的秉哥请客吃了顿私宴，开着他的比亚迪仰望来的——相当高大上。\n\n今天股东会，李锦才博士因为在国外谈生意，管理层基本都在线上接入，董秘方园总和她的 IR 团队在线下主持。\n正式会议流程很快。双语走完，审议年报、重选董事、续聘德勤、授权发股回购，投票不到二十分钟就结束了。前面这部分没什么花头，跟所有上市公司股东会一样。但李总在 QA 环节讲的几件事，让我觉得这一趟来得值..."
   },
-  "51": {
+  "38": {
     "category": "理财投资 (Finance & Investment)",
     "title": "油运投资的回顾梳理与展望",
     "link": "http://xueqiu.com/2979842247/397127034",
     "snippet": "海峡解封，先出后进，相关方为了体现掌控力约束指定航线，又要排除水雷，通航风险反反复复船东要求风险溢价，但是里面那些早已满载的油轮集中放出来，缓解了燃眉之急，买家有时间与船东博弈……\n当前这个抢运潮，是飘在海峡里面的库存集中放出来，新成交的货盘甚少，而且黑船还是这其中的重要参与者，这不是油运股东所期待的抢船运油……\n才一个多星期，运价大起大落，运价高点低于一些人的预期，运价回落的速度快于很多人的预期..."
   },
-  "52": {
+  "39": {
     "category": "理财投资 (Finance & Investment)",
     "title": " Investing in facilities management, an industry at a crossroads ",
     "link": "https://moneyweek.com/investments/facilities-management-industry-at-a-crossroads",
     "snippet": "Facilities management is changing, says Nick Lawson. Successful companies must specialise rather than spread themselves too thin"
   },
-  "53": {
+  "40": {
     "category": "理财投资 (Finance & Investment)",
     "title": " 8 of the best properties for sale with home offices ",
     "link": "https://moneyweek.com/spending-it/properties/properties-for-sale-with-home-offices",
     "snippet": "The best properties for sale with home offices – from a Grade I-listed Tudor manor house in Northamptonshire to a garden apartment in London's Belsize Park."
   },
-  "54": {
+  "41": {
     "category": "理财投资 (Finance & Investment)",
     "title": " Private credit can weather the storm ",
     "link": "https://moneyweek.com/investments/funds/why-private-credit-can-weather-the-storm",
     "snippet": "Fears that private credit is facing an impending financial crisis are overdone. Some funds offer attractive yields – so should you buy in?"
   },
-  "55": {
+  "42": {
     "category": "理财投资 (Finance & Investment)",
     "title": "为什么AI是第四次工业革命",
     "link": "http://xueqiu.com/4716631839/397093062",
     "snippet": "$英伟达(NVDA)$ $XD贵州茅(SH600519)$ $恒瑞医药(SH600276)$\n目前东西两面市场的核心主线都是AI，互相看不惯也两边掐不死，相爱相杀。核心原因是谁也不想错过第四次工业革命改变国运的风口，但又谁也不敢闭门造车，生怕闭关锁国成为历史罪人。\n人类工业迭代从未停下脚步：蒸汽机解放体力、电力普及能源、互联网实现数字化传输，而人工智能是人类历史上首个全行业通用、能自我迭代、自我进..."
+  },
+  "43": {
+    "category": "社会民生 (Society & Life)",
+    "title": "小型飛機撞上北京最高樓「中國尊」 官方時隔近一天後證實",
+    "link": "https://www.bbc.com/zhongwen/articles/c8625lpy12yo/trad?at_medium=RSS&at_campaign=rss",
+    "snippet": "一架小型飛機撞上了中國首都北京的最高建築——「中國尊」，官方在事發後將近一天證實一人死亡，未知事發原因。"
+  },
+  "44": {
+    "category": "社会民生 (Society & Life)",
+    "title": "從圖片看委內瑞拉雙重地震後的滿目蒼夷",
+    "link": "https://www.bbc.com/zhongwen/articles/c0qyp294pn7o/trad?at_medium=RSS&at_campaign=rss",
+    "snippet": "在甚短時間內，委內瑞拉接連發生7.2級與7.5級地震，造成的破壞相當嚴重。"
+  },
+  "45": {
+    "category": "社会民生 (Society & Life)",
+    "title": "英王查爾斯與王后為何放棄遷入白金漢宮",
+    "link": "https://www.bbc.com/zhongwen/articles/cj6gng2ln6xo/trad?at_medium=RSS&at_campaign=rss",
+    "snippet": "白金漢宮表示，查爾斯國王與卡蜜拉王后將繼續居住於相距不遠的克拉倫斯宮。"
   }
 }
