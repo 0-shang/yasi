@@ -1,15 +1,16 @@
 require('dotenv').config();
 const { Telegraf, Markup } = require('telegraf');
+const { exec } = require('child_process');
 const fs = require('fs');
 const path = require('path');
 const matter = require('gray-matter');
-const { exec } = require('child_process');
 const config = require('./config');
 const { postTweetOrThread } = require('./twitter');
 const { generateTweetsFromContent, generateHotTweetsFromRSS, chatWithAI, simpleChatWithAI } = require('./ai');
 const Parser = require('rss-parser');
 const parser = new Parser();
 const cron = require('node-cron');
+const cheerio = require('cheerio');
 
 // Setup environment and paths
 config.ensureDirs();
@@ -36,6 +37,37 @@ const editingState = new Map();
 const chatMemory = new Map();
 // In-memory store for chat mode toggle
 const isChatMode = new Map();
+
+// Helper: Fetch URL content
+async function enrichTextWithUrls(text) {
+  const urlRegex = /(https?:\/\/[^\s]+)/g;
+  const urls = text.match(urlRegex);
+  if (!urls) return text;
+
+  let enrichedText = text + '\n\n--- [系统自动抓取的链接内容] ---\n';
+  for (const url of urls) {
+    try {
+      // Basic fetch
+      const response = await fetch(url, {
+        headers: { 'User-Agent': 'Mozilla/5.0 (compatible; Twitterbot/1.0)' }
+      });
+      const html = await response.text();
+      const $ = cheerio.load(html);
+      
+      // Remove noise
+      $('script, style, noscript, iframe, img, svg, video, nav, footer, header').remove();
+      
+      let pageText = $('body').text().replace(/\s+/g, ' ').trim();
+      if (pageText.length > 3000) {
+        pageText = pageText.substring(0, 3000) + '... (内容过长已截断)';
+      }
+      enrichedText += `\n【${url}】:\n${pageText}\n`;
+    } catch (e) {
+      enrichedText += `\n【${url}】无法读取内容: ${e.message}\n`;
+    }
+  }
+  return enrichedText;
+}
 
 // Helper: Save to markdown file and sync to github
 function saveAndSyncToGithub(content, type = 'published', tweetResult = null, scheduleTime = null, ctx = null) {
@@ -598,10 +630,23 @@ bot.on('text', async (ctx) => {
     }
   }
 
+  // Intercept URLs and fetch content
+  let processingMsg = null;
+  const urlRegex = /(https?:\/\/[^\s]+)/;
+  if (urlRegex.test(text)) {
+    processingMsg = await ctx.reply('🔄 检测到链接，正在尝试抓取网页内容，请稍候...');
+  }
+  
+  const enrichedText = await enrichTextWithUrls(text);
+  
+  if (processingMsg) {
+    await ctx.telegram.deleteMessage(ctx.chat.id, processingMsg.message_id).catch(() => {});
+  }
+
   // Normal chat processing via Memory
   await ctx.sendChatAction('typing');
   let history = chatMemory.get(myUserId) || [];
-  history.push({ role: 'user', content: text });
+  history.push({ role: 'user', content: enrichedText });
   
   // Keep last 10 turns (20 messages max if we include assistant)
   if (history.length > 20) history = history.slice(-20);

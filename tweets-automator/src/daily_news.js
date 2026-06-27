@@ -71,20 +71,20 @@ async function main() {
       for (const url of urls) {
         try {
           const feed = await parser.parseURL(url);
-          const oneDayAgo = new Date(Date.now() - 24 * 60 * 60 * 1000);
-          let recent = feed.items.filter(item => {
-            if (!item.isoDate && !item.pubDate) return true;
-            const d = new Date(item.isoDate || item.pubDate);
-            return d > oneDayAgo;
+          feed.items.forEach(item => {
+            let itemDate = new Date(0);
+            if (item.isoDate) itemDate = new Date(item.isoDate);
+            else if (item.pubDate) itemDate = new Date(item.pubDate);
+            item._parsedDate = itemDate;
+            categoryItems.push(item);
           });
-          if (recent.length === 0) recent = feed.items.slice(0, 3);
-          categoryItems.push(...recent);
         } catch(e) {
           console.error(`⚠️ Failed to fetch ${url}:`, e.message);
         }
       }
 
-      // Limit items per category according to config
+      // Sort by newest first and limit to exact config amount
+      categoryItems.sort((a, b) => b._parsedDate - a._parsedDate);
       categoryItems = categoryItems.slice(0, limit);
       
       if (categoryItems.length > 0) {
