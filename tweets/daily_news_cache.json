@@ -1,302 +1,278 @@
 {
   "1": {
-    "category": "科技 (Tech)",
-    "title": "OpenTTD 16.0-Beta1",
-    "link": "https://www.openttd.org/news/2026/06/25/openttd-16-0-beta1",
-    "snippet": "Comments"
+    "category": "实用资源 (Tools & Resources)",
+    "title": "检查一下自己的抖音自动扣费，汽水音乐已扣 1 年多。",
+    "link": "https://www.v2ex.com/t/1223379#reply1",
+    "snippet": "检查一下自己的抖音自动扣费，汽水音乐已经默默的扣了我一年多的 svip 了…一年我打开汽水音乐听歌没超过 2 小时。  \n然后排查了一下账单，原来是 2025 年初下载汽水音乐的时候，提示 1 分钱听 vip 歌曲 7 天开通的，被稀里糊涂的给我来了个自动续费，更牛逼的是自动扣费的通知还只在汽水音乐 app 内通知。一年听不了 2 个小时的我，怎么可能天天看你的站内信息，而且站内信息全是广告通知。..."
   },
   "2": {
-    "category": "科技 (Tech)",
-    "title": "Previewing GPT‑5.6 Sol: a next-generation model",
-    "link": "https://openai.com/index/previewing-gpt-5-6-sol/",
-    "snippet": "Comments"
+    "category": "实用资源 (Tools & Resources)",
+    "title": "LLMRelayService：比 NewAPI 更轻量的大模型网关",
+    "link": "https://www.v2ex.com/t/1223374#reply0",
+    "snippet": "最近频繁在 CodingPlan 、官方渠道间切换，折腾了 NewAPI 。但 NewAPI 的设计更偏向于中转站运营，配置繁琐，对个人自用来说显得过重（往往不需要复杂的注册、邀请、令牌分组等概念）。\n结合自己的实际需求，我写了一个更适合个人自用的网关：LLMRelayService。\n核心特性\n格式透传，原生兼容\n只做 chat/responses 间的最小化转换，彻底避免因格式二次转换带来的各..."
   },
   "3": {
-    "category": "科技 (Tech)",
-    "title": "WordStar: A Writer's Word Processor (1996)",
-    "link": "https://www.sfwriter.com/wordstar.htm",
-    "snippet": "Comments"
+    "category": "实用资源 (Tools & Resources)",
+    "title": "Binance’s EU services face disruption after the exchange withdraws Greek license bid",
+    "link": "https://alternativeto.net/news/2026/6/binance-s-eu-services-face-disruption-after-the-exchange-withdraws-greek-license-bid/",
+    "snippet": "Binance has told its European users that its services may be affected after withdrawing its application for EU authorization through Greece, just days before the July 1 MiCA deadline. Under the Market..."
   },
   "4": {
-    "category": "科技 (Tech)",
-    "title": "Why does kinetic energy increase quadratically, not linearly, with speed? (2011)",
-    "link": "https://physics.stackexchange.com/questions/535/why-does-kinetic-energy-increase-quadratically-not-linearly-with-speed",
-    "snippet": "Comments"
+    "category": "实用资源 (Tools & Resources)",
+    "title": "国内旗舰模型中转站，邀请 10 个用户，每人送 1 亿 token",
+    "link": "https://www.v2ex.com/t/1223368#reply0",
+    "snippet": "https://ai.modelzoo.tech/\n\n微信：Y2hlbmZqbQ=="
   },
   "5": {
-    "category": "科技 (Tech)",
-    "title": "IBM MCGA Gate Array Reverse Engineering",
-    "link": "https://github.com/schlae/IBM_MCGA",
-    "snippet": "Comments"
+    "category": "实用资源 (Tools & Resources)",
+    "title": "终端工作区：从 WindTerm 到 NyaTerm",
+    "link": "https://www.v2ex.com/t/1223359#reply14",
+    "snippet": "NyaTerm：一个受 WindTerm 启发的开源远程终端工作区\n项目地址： https://github.com/nyakang/nyaterm\n官网： https://nyaterm.app\n\n一个月前，我在 WindTerm 的 Issue 区发了一条开源自荐：\n受 WindTerm 启发，我做了一个开源终端管理工具：NyaTerm 。\n当时其实挺忐忑的。\n因为 WindTerm 对我来说..."
   },
   "6": {
-    "category": "科技 (Tech)",
-    "title": "U.S. allows Anthropic to release Mythos AI to ‘trusted’ US organizations",
-    "link": "https://www.semafor.com/article/06/27/2026/us-releases-powerful-anthropic-model-mythos-to-some-us-companies",
-    "snippet": "Comments"
+    "category": "实用资源 (Tools & Resources)",
+    "title": "AI 互动悬疑游戏",
+    "link": "https://www.v2ex.com/t/1223356#reply0",
+    "snippet": "https://www.bilibili.com/video/BV1ce7H63EEK"
   },
   "7": {
-    "category": "科技 (Tech)",
-    "title": "Show HN: Hacker News on a train station-style flip board",
-    "link": "https://popflame.quickish.space/hn-flipboard/",
-    "snippet": "Comments"
+    "category": "实用资源 (Tools & Resources)",
+    "title": "mimo 明天过期, 还有一百亿, 各位使劲蹬",
+    "link": "https://www.v2ex.com/t/1223274#reply6",
+    "snippet": "api tp-ctnrpo8ay7snzh1dfwqviox9dpio4wt8laxy27nj525pni49\nbase_url\nhttps://token-plan-cn.xiaomimimo.com/anthropic\nhttps://token-plan-cn.xiaomimimo.com/v1\n没铜币了, 麻烦各位用完回复下"
   },
   "8": {
-    "category": "科技 (Tech)",
-    "title": "U.S. government will decide who gets to use GPT-5.6",
-    "link": "https://www.washingtonpost.com/technology/2026/06/26/openai-says-us-government-will-vet-users-its-latest-ai-model/",
-    "snippet": "Comments"
+    "category": "实用资源 (Tools & Resources)",
+    "title": "Supra Player",
+    "link": "https://www.producthunt.com/products/supra-player",
+    "snippet": "Discussion\n            |\n            Link"
   },
   "9": {
-    "category": "科技 (Tech)",
-    "title": "Anatomy of a Failed (Nation-State?) Attack",
-    "link": "https://grack.com/blog/2026/06/25/dissecting-a-failed-nation-state-attack/",
-    "snippet": "Comments"
+    "category": "实用资源 (Tools & Resources)",
+    "title": "YouTube Shorts get clean mode, x2 playback speed, new heart icon & dislike button removal",
+    "link": "https://alternativeto.net/news/2026/6/youtube-shorts-get-clean-mode-x2-playback-speed-new-heart-icon-and-dislike-button-removal/",
+    "snippet": "Google has delivered a round of updates to YouTube Shorts, introducing a cleaner and more intuitive interface. The rollout’s most visible addition is a Clear Screen mode that temporarily hides all ico..."
   },
   "10": {
-    "category": "科技 (Tech)",
-    "title": "Om",
-    "link": "https://daringfireball.net/2026/06/om",
-    "snippet": "Comments"
+    "category": "实用资源 (Tools & Resources)",
+    "title": "Deno 2.9 introduces native desktop app builder and boosts Node.js project migration",
+    "link": "https://alternativeto.net/news/2026/6/deno-2-9-introduces-native-desktop-app-builder-and-boosts-node-js-project-migration/",
+    "snippet": "Deno 2.9 has been released as the latest version of this popular open-source JavaScript runtime. This major update introduces deno desktop, a new tool designed to streamline native desktop application..."
   },
   "11": {
-    "category": "AI (人工智能)",
-    "title": "微软年度AI职场报告：员工已经准备好了，公司还没有",
-    "link": "https://www.qbitai.com/2026/06/439032.html",
-    "snippet": "28页干货爆炸"
+    "category": "实用资源 (Tools & Resources)",
+    "title": "Next.js 16.3 preview adds instant navigations and partial prefetching",
+    "link": "https://alternativeto.net/news/2026/6/next-js-16-3-preview-adds-instant-navigations-and-partial-prefetching/",
+    "snippet": "Next.js 16.3 preview introduces Instant Navigations, enabling server-driven apps to offer instant, SPA-like page transitions.\nThe release also debuts partial prefetching, which fetches and caches reus..."
   },
   "12": {
-    "category": "AI (人工智能)",
-    "title": "GPT-5.6突然发布！Fable5痛失最强基模王座",
-    "link": "https://www.qbitai.com/2026/06/438895.html",
-    "snippet": "一口气端出三款GPT 5.6系列模型"
+    "category": "实用资源 (Tools & Resources)",
+    "title": "Aurora Notch",
+    "link": "https://www.producthunt.com/products/aurora-21",
+    "snippet": "Discussion\n            |\n            Link"
   },
   "13": {
-    "category": "AI (人工智能)",
-    "title": "两个月连获两轮数亿元融资 深度机智以全栈自主路线加速国产物理AI基座模型落地",
-    "link": "https://www.qbitai.com/2026/06/438887.html",
-    "snippet": ""
+    "category": "实用资源 (Tools & Resources)",
+    "title": "RetroMac",
+    "link": "https://www.producthunt.com/products/retromac",
+    "snippet": "Discussion\n            |\n            Link"
   },
   "14": {
-    "category": "AI (人工智能)",
-    "title": "谷歌「推理之王」也跑路Meta了，当年还是李飞飞挖来的",
-    "link": "https://www.qbitai.com/2026/06/438848.html",
-    "snippet": "Coding为王"
+    "category": "实用资源 (Tools & Resources)",
+    "title": "Basedash for Excel",
+    "link": "https://www.producthunt.com/products/basedash",
+    "snippet": "Discussion\n            |\n            Link"
   },
   "15": {
-    "category": "AI (人工智能)",
+    "category": "实用资源 (Tools & Resources)",
+    "title": "科技爱好者周刊（第 401 期）：如何赚到10亿美元",
+    "link": "http://www.ruanyifeng.com/blog/2026/06/weekly-issue-401.html",
+    "snippet": "这里记录每周值得分享的科技内容，周五发布。\n本杂志开源，欢迎投稿。另有《谁在招人》服务，发布程序员招聘信息。合作请邮件联系（yifeng.ruan@gmail.com）。\n封面图\n\n在中国南方，人们穿戴巨型荷叶制作的防晒面罩。（via）\n如何赚到10亿美元\n保罗·格雷厄姆（Paul Graham）是美国最大的创业孵化器 Y Combinator 的创始人，公认的创业导师，《黑客与画家》的作者。\n他..."
+  },
+  "16": {
+    "category": "实用资源 (Tools & Resources)",
+    "title": "科技爱好者周刊（第 400 期）：rsync 的争论",
+    "link": "http://www.ruanyifeng.com/blog/2026/06/weekly-issue-400.html",
+    "snippet": "这里记录每周值得分享的科技内容，周五发布。（[通知] 下周端午假期，周刊休息。）\n本杂志开源，欢迎投稿。另有《谁在招人》服务，发布程序员招聘信息。合作请邮件联系（yifeng.ruan@gmail.com）。\n封面图\n\n上海体育学院内的绿瓦书店，是上海首家体育主题书店。中庭有13米高的\"明月山\"，四周是小路，意为\"书山有路勤为径\"。（via）\nrsync 的争论\nrsync 是计算机同步最常用的工..."
+  },
+  "17": {
+    "category": "实用资源 (Tools & Resources)",
+    "title": "simplex-chat/simplex-chat",
+    "link": "https://github.com/simplex-chat/simplex-chat",
+    "snippet": "SimpleX - the first messaging network operating without user identifiers of any kind - 100% private by design! iOS, Android and desktop apps 📱!\nLanguage: Haskell\nStars: 13639\nForks: 785"
+  },
+  "18": {
+    "category": "实用资源 (Tools & Resources)",
+    "title": "xbtlin/ai-berkshire",
+    "link": "https://github.com/xbtlin/ai-berkshire",
+    "snippet": "AI 时代的伯克希尔：基于 Claude Code 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework   built on Claude Code. 4 masters' methodologies + multi-agent adversarial..."
+  },
+  "19": {
+    "category": "实用资源 (Tools & Resources)",
+    "title": "commaai/openpilot",
+    "link": "https://github.com/commaai/openpilot",
+    "snippet": "openpilot is an operating system for robotics. Currently, it upgrades the driver assistance system on 300+ supported cars.\nLanguage: Python\nStars: 62025\nForks: 11062"
+  },
+  "20": {
+    "category": "实用资源 (Tools & Resources)",
+    "title": "IceWhaleTech/CasaOS",
+    "link": "https://github.com/IceWhaleTech/CasaOS",
+    "snippet": "CasaOS - A simple, easy-to-use, elegant open-source Personal Cloud system.\nLanguage: Go\nStars: 35716\nForks: 2041"
+  },
+  "21": {
+    "category": "实用资源 (Tools & Resources)",
+    "title": "ripienaar/free-for-dev",
+    "link": "https://github.com/ripienaar/free-for-dev",
+    "snippet": "A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev\nLanguage: HTML\nStars: 124094\nForks: 13075"
+  },
+  "22": {
+    "category": "实用资源 (Tools & Resources)",
+    "title": "google-labs-code/design.md",
+    "link": "https://github.com/google-labs-code/design.md",
+    "snippet": "A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.\nLanguage: TypeScript\nStars: 22210\nForks: 177..."
+  },
+  "23": {
+    "category": "实用资源 (Tools & Resources)",
+    "title": "microsoft/PowerToys",
+    "link": "https://github.com/microsoft/PowerToys",
+    "snippet": "Microsoft PowerToys is a collection of utilities that supercharge productivity and customization on Windows\nLanguage: C\nStars: 135665\nForks: 8166"
+  },
+  "24": {
+    "category": "实用资源 (Tools & Resources)",
+    "title": "hugohe3/ppt-master",
+    "link": "https://github.com/hugohe3/ppt-master",
+    "snippet": "AI generates a real, editable PowerPoint from any document — native shapes & animations, speaker notes voiced as audio narration, and the option to follow your own .pptx template, not slide images · b..."
+  },
+  "25": {
+    "category": "实用资源 (Tools & Resources)",
+    "title": "JCodesMore/ai-website-cloner-template",
+    "link": "https://github.com/JCodesMore/ai-website-cloner-template",
+    "snippet": "Clone any website with one command using AI coding agents\nLanguage: TypeScript\nStars: 21993\nForks: 3157"
+  },
+  "26": {
+    "category": "实用资源 (Tools & Resources)",
+    "title": "garrytan/gstack",
+    "link": "https://github.com/garrytan/gstack",
+    "snippet": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA\nLanguage: TypeScript\nStars: 117121\nForks: 17399"
+  },
+  "27": {
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "Turn your site into a place people can bump into each other",
+    "link": "https://cauenapier.com/blog/townsquare_release/",
+    "snippet": "Comments"
+  },
+  "28": {
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "Supabase (YC S20) Is Hiring for Multigres",
+    "link": "https://jobs.ashbyhq.com/supabase/2e718684-4f75-4a99-8d6b-3b6bd44e4228",
+    "snippet": "Comments"
+  },
+  "29": {
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "BrowserBC：克隆人类点击，让一次网页操作转化为所有Agent的能力",
+    "link": "https://www.qbitai.com/2026/06/439393.html",
+    "snippet": "人类一次录制，Agent就能模拟"
+  },
+  "30": {
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "第一批一人公司，现在怎么样了？",
+    "link": "https://www.qbitai.com/2026/06/439237.html",
+    "snippet": "我们跟一群OPC创业者聊了聊"
+  },
+  "31": {
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "CVPR 2026最热方向，被一家杭州团队率先跑进了端侧！",
+    "link": "https://www.qbitai.com/2026/06/439236.html",
+    "snippet": "VLM- R1之后再次出手！全球首个端侧流式多模态来了！"
+  },
+  "32": {
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "俄西双城游记：莫斯科时代折叠，圣彼得堡文化巡礼",
+    "link": "https://sspai.com/post/111347",
+    "snippet": "在莫斯科的时代折叠与彼得堡的文化巡礼之间，发现俄罗斯的不同面貌。查看全文"
+  },
+  "33": {
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "本周看什么 | 最近值得一看的 10 部作品",
+    "link": "https://sspai.com/post/111562",
+    "snippet": "📅本周新预告《克拉拉与太阳》首支预告6月23日，电影《克拉拉与太阳》发布了首支预告，将于10月23日在北美上映。塔伊加·维迪提执导，詹娜·奥尔特加、艾米·亚当斯主演，改编自石黑一雄的同名小说，人工智能 ...查看全文"
+  },
+  "34": {
+    "category": "科技人工智能 (Tech & AI)",
     "title": "Previewing GPT-5.6 Sol: a next-generation model",
     "link": "https://openai.com/index/previewing-gpt-5-6-sol",
     "snippet": "OpenAI previews GPT-5.6 Sol, a next-generation model with stronger capabilities in coding, science, and cybersecurity, paired with its most advanced safety stack."
   },
-  "16": {
-    "category": "实用工具与资源 (Tools & Resources)",
-    "title": "simplex-chat/simplex-chat",
-    "link": "https://github.com/simplex-chat/simplex-chat",
-    "snippet": "SimpleX - the first messaging network operating without user identifiers of any kind - 100% private by design! iOS, Android and desktop apps 📱!\n\n    \n \n| 30/03/2023 | EN, FR, CZ, PL |\n \n \nSimpleX - t..."
+  "35": {
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "探索快捷指令的上限：用网页视图创建丰富界面与交互",
+    "link": "https://sspai.com/prime/story/create-webview-in-shortcuts",
+    "snippet": "从锁屏按钮、锁屏小组件、负一屏小组件，到桌面小组件、控制中心、Siri、自动化触发……iPhone的快捷指令有着超级多的打开方式，我们也可以为自己写的或从网络上获取的实用快捷指令设置一种最顺手的。与之 ...查看全文\n本文为会员文章，出自《单篇文章》，订阅后可阅读全文。"
   },
-  "17": {
-    "category": "实用工具与资源 (Tools & Resources)",
-    "title": "google-labs-code/design.md",
-    "link": "https://github.com/google-labs-code/design.md",
-    "snippet": "A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.\n\nDESIGN.md\n \nA format specification for desc..."
+  "36": {
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "How agents are transforming work",
+    "link": "https://openai.com/index/how-agents-are-transforming-work",
+    "snippet": "A new OpenAI research paper shows how AI agents are transforming work, enabling longer, more complex tasks and expanding productivity across roles."
   },
-  "18": {
-    "category": "实用工具与资源 (Tools & Resources)",
-    "title": "commaai/openpilot",
-    "link": "https://github.com/commaai/openpilot",
-    "snippet": "openpilot is an operating system for robotics. Currently, it upgrades the driver assistance system on 300+ supported cars.\n\n \n \nopenpilot\n \n \n openpilot is an operating system for robotics. \n Currentl..."
+  "37": {
+    "category": "理财投资 (Finance & Investment)",
+    "title": "SpaceX's Out-of-This-World Plan Has Flaws. That Bodes Well for This Terrestial Stock.",
+    "link": "https://www.fool.com/investing/2026/06/27/spacex-world-plan-flaws-bode-well-aep-stock/?source=iedfolrf0000001",
+    "snippet": "While SpaceX tries to bring AI to space, a down-to-earth company will reap the rewards if SpaceX fails."
   },
-  "19": {
-    "category": "实用工具与资源 (Tools & Resources)",
-    "title": "kunchenguid/no-mistakes",
-    "link": "https://github.com/kunchenguid/no-mistakes",
-    "snippet": "git push no-mistakes\n\ngit push no-mistakes\n \n     \n \nKill all the slop. Raise clean PR.\n \nEnglish · 简体中文\n \n  \n \nno-mistakes puts a local git proxy in front of your real remote. Push to no-mistakes ins..."
+  "38": {
+    "category": "理财投资 (Finance & Investment)",
+    "title": "Dividend Stock Showdown: NextEra Energy vs. Dominion Energy -- Which Should You Own?",
+    "link": "https://www.fool.com/investing/2026/06/27/dividend-stock-showdown-nextera-energy-vs-dominion/?source=iedfolrf0000001",
+    "snippet": "NextEra Energy is buying Dominion, but the deal is probably a year away from completion."
   },
-  "20": {
-    "category": "实用工具与资源 (Tools & Resources)",
-    "title": "grafana/grafana",
-    "link": "https://github.com/grafana/grafana",
-    "snippet": "The open and composable observability and data visualization platform. Visualize metrics, logs, and traces from multiple sources like Prometheus, Loki, Elasticsearch, InfluxDB, Postgres and many more...."
+  "39": {
+    "category": "理财投资 (Finance & Investment)",
+    "title": "质量投资的因子：只买最好的",
+    "link": "http://xueqiu.com/9927088462/396108414",
+    "snippet": "我们都知道，伟大公司都是事后才知道。如果事先就能确定某家公司未来将成为一家伟大公司，那投资就简单了。西蒙·科尔德所著的《投资伟大的企业：如何挑选优质且持久的好公司》虽然名为投资“伟大的企业”，但实际上他在序言中就明确指出，这本书旨在为投资者提供一套评价企业质量及持久性的分析框架。而且，就这本书的英文版书名而言，原本就是“寻找优质的公司”——对高质量公司进行长期价值投资，是创造可持续收益的最佳方式。..."
   },
-  "21": {
-    "category": "实用工具与资源 (Tools & Resources)",
-    "title": "ripienaar/free-for-dev",
-    "link": "https://github.com/ripienaar/free-for-dev",
-    "snippet": "A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev\n\nfree-for.dev\n \nDevelopers and Open Source authors now have many services offering free tiers, but findi..."
+  "40": {
+    "category": "理财投资 (Finance & Investment)",
+    "title": "美国医疗费用的自费经历",
+    "link": "http://xueqiu.com/3769952153/397128771",
+    "snippet": "几个月前，她半夜把我叫醒说一只眼睛疼得厉害，连带着头疼。这种情况不用多说，急性青光眼。属于去一下医院很容易缓解的事。在急诊做了脑部CT，拍了X光片，最后开了一个口服药3种眼药水，症状现场缓解。我妈心疼钱，对我抱怨为什么要拍CT和X光。因为头疼，医生要排除中风；因为咳嗽，医生要排除肺部感染。这些都是诊疗手册的标准操作。只要来了医院，一个都少不了。一共在急诊待了4个小时，2个月后收到医院部分的账单，8..."
   },
-  "22": {
-    "category": "实用工具与资源 (Tools & Resources)",
-    "title": "opendatalab/MinerU",
-    "link": "https://github.com/opendatalab/MinerU",
-    "snippet": "Transforms complex documents like PDFs and Office docs into LLM-ready markdown/JSON for your Agentic workflows.\n\n \n  \n \n  \n \n  \n \n               \n \n \n\n \n  \n \nEnglish | 简体中文\n \n  \n \n 🚀Access MinerU Now..."
+  "41": {
+    "category": "理财投资 (Finance & Investment)",
+    "title": "听完这场股东会，我选择继续重仓药明合联",
+    "link": "http://xueqiu.com/9926192452/397076326",
+    "snippet": "提前一天到的，住了一晚。昨晚群里的秉哥请客吃了顿私宴，开着他的比亚迪仰望来的——相当高大上。\n\n今天股东会，李锦才博士因为在国外谈生意，管理层基本都在线上接入，董秘方园总和她的 IR 团队在线下主持。\n正式会议流程很快。双语走完，审议年报、重选董事、续聘德勤、授权发股回购，投票不到二十分钟就结束了。前面这部分没什么花头，跟所有上市公司股东会一样。但李总在 QA 环节讲的几件事，让我觉得这一趟来得值..."
   },
-  "23": {
-    "category": "实用工具与资源 (Tools & Resources)",
-    "title": "alchaincyf/zhangxuefeng-skill",
-    "link": "https://github.com/alchaincyf/zhangxuefeng-skill",
-    "snippet": "张雪峰.skill — 张雪峰的认知操作系统。高考志愿/考研/职业规划的实战思维框架。由女娲.skill生成。\n\n \n \n张雪峰.skill\n \n \n  \n 动画由 huashu-design skill 制作 \n \n \n \n  \n「社会就是一个大筛子，用学历筛孩子，用房子筛父母，用工作筛家庭。」\n \n \n \n \n    \n \n \n \n \n张雪峰的认知操作系统。不是语录合集，是可运行的思维框架。\n..."
+  "42": {
+    "category": "理财投资 (Finance & Investment)",
+    "title": "油运投资的回顾梳理与展望",
+    "link": "http://xueqiu.com/2979842247/397127034",
+    "snippet": "海峡解封，先出后进，相关方为了体现掌控力约束指定航线，又要排除水雷，通航风险反反复复船东要求风险溢价，但是里面那些早已满载的油轮集中放出来，缓解了燃眉之急，买家有时间与船东博弈……\n当前这个抢运潮，是飘在海峡里面的库存集中放出来，新成交的货盘甚少，而且黑船还是这其中的重要参与者，这不是油运股东所期待的抢船运油……\n才一个多星期，运价大起大落，运价高点低于一些人的预期，运价回落的速度快于很多人的预期..."
   },
-  "24": {
-    "category": "实用工具与资源 (Tools & Resources)",
-    "title": "mauriceboe/TREK",
-    "link": "https://github.com/mauriceboe/TREK",
-    "snippet": "A self-hosted travel/trip planner with real-time collaboration, interactive maps, PWA support, SSO, budgets, packing lists, and more.\n\n \n \n \n   \n   \n   \n \n \n \n \n \n \n   \n   \n   \n \n \n \nA self-hosted, re..."
+  "43": {
+    "category": "理财投资 (Finance & Investment)",
+    "title": " Investing in facilities management, an industry at a crossroads ",
+    "link": "https://moneyweek.com/investments/facilities-management-industry-at-a-crossroads",
+    "snippet": "Facilities management is changing, says Nick Lawson. Successful companies must specialise rather than spread themselves too thin"
   },
-  "25": {
-    "category": "实用工具与资源 (Tools & Resources)",
-    "title": "xbtlin/ai-berkshire",
-    "link": "https://github.com/xbtlin/ai-berkshire",
-    "snippet": "AI 时代的伯克希尔：基于 Claude Code 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework built on Claude Code. 4 masters' methodologies + multi-agent adversarial a..."
+  "44": {
+    "category": "理财投资 (Finance & Investment)",
+    "title": " 8 of the best properties for sale with home offices ",
+    "link": "https://moneyweek.com/spending-it/properties/properties-for-sale-with-home-offices",
+    "snippet": "The best properties for sale with home offices – from a Grade I-listed Tudor manor house in Northamptonshire to a garden apartment in London's Belsize Park."
   },
-  "26": {
-    "category": "理财投资 (Finance)",
+  "45": {
+    "category": "理财投资 (Finance & Investment)",
+    "title": " Private credit can weather the storm ",
+    "link": "https://moneyweek.com/investments/funds/why-private-credit-can-weather-the-storm",
+    "snippet": "Fears that private credit is facing an impending financial crisis are overdone. Some funds offer attractive yields – so should you buy in?"
+  },
+  "46": {
+    "category": "理财投资 (Finance & Investment)",
     "title": "为什么AI是第四次工业革命",
     "link": "http://xueqiu.com/4716631839/397093062",
     "snippet": "$英伟达(NVDA)$ $XD贵州茅(SH600519)$ $恒瑞医药(SH600276)$\n目前东西两面市场的核心主线都是AI，互相看不惯也两边掐不死，相爱相杀。核心原因是谁也不想错过第四次工业革命改变国运的风口，但又谁也不敢闭门造车，生怕闭关锁国成为历史罪人。\n人类工业迭代从未停下脚步：蒸汽机解放体力、电力普及能源、互联网实现数字化传输，而人工智能是人类历史上首个全行业通用、能自我迭代、自我进..."
-  },
-  "27": {
-    "category": "理财投资 (Finance)",
-    "title": "美国头部猪企多年平均头猪利润仅10美元？",
-    "link": "http://xueqiu.com/9135070491/397103666",
-    "snippet": "美国头部猪企多年平均下来，头均利润确实是10美元左右！\n但是这也不算利空啊！\n10美元＝70人民币！\n美国那边肉价比中国便宜20%，也就是他们正常出栏一头猪是1300元左右。\n70/1300=0.054，净利率5.4%！这是很常见很普通很标准的工业化企业利润！\n那按照温氏肉价常态化后预估的1200亿营收，同等取5.4%净利率，1200×0.054=64.8亿，也没什么问题啊！\n牧原净利率取比温氏高..."
-  },
-  "28": {
-    "category": "理财投资 (Finance)",
-    "title": "重资产行业投资与现金流",
-    "link": "http://xueqiu.com/7103876041/397107756",
-    "snippet": "从这个角度再解一下。\n大致讲清楚电解铝、晶硅，电力。\n也同时讲明白股票投资要点。\n大致是个什么事呢。\n就是这类企业为什么在中国一直被低估。\n价值发现在什么时段。\n高估在什么时段。\n先看电解铝，超级好行业。\n为什么。\n正面说是比较优势。\n细点说是比较优势vs资本投入 。\n是因为电解铝好坏企业成本差20003000么？\n对一半。\n核心原因是吨铝投资只要5000。\n因为吨铝投资只要5000，低电价地区差..."
-  },
-  "29": {
-    "category": "理财投资 (Finance)",
-    "title": "战争四个月后的反思",
-    "link": "http://xueqiu.com/1170975436/397107676",
-    "snippet": "冷静的分析一下过去4个月。主要误判有几点。\n1. 听了太多能源多头打鸡血。铺天盖地的主流能源专家这几个月都是一致看多油气，甚至签完MOU以后还在往150看。对反面专业观点不够重视。国内外很多石油多头专家的问题是分析的不够全面细致，忽视了一些细节。典型的就是GR，我之前就说，GR看黄金很准，但看能源经常一直都错。\n对于反面观点，我说的不是那种凭感觉，凭算命看空油气的。而是真的能源专家有理有据地分析（..."
-  },
-  "30": {
-    "category": "理财投资 (Finance)",
-    "title": "朱酒看点（6月26日公开版）",
-    "link": "http://xueqiu.com/6056806984/396838150",
-    "snippet": "本话题在雪球有49条讨论，点击查看。\n雪球是一个投资者的社交网络，聪明的投资者都在这里。\n点击下载雪球手机客户端 http://xueqiu.com/xz]]>"
-  },
-  "31": {
-    "category": "理财投资 (Finance)",
-    "title": "泡泡玛特（十）Hellokitty母公司六年的至暗时刻——一个IP帝国的衰败，不是因为IP老了",
-    "link": "http://xueqiu.com/9326334102/396854310",
-    "snippet": "它会不会有衰败的那一天？\n想要回答这个问题，最好的办法不是预测未来，而是回溯历史——去看看这个行业里的老前辈，那些曾经风光无限的IP公司，是怎么走过兴衰周期的。\n三丽鸥，Hellokitty的母公司，就是这样一个绝佳的研究样本。它在2014年到2019年间经历了一场持续六年的衰退——不是一年两年的波动，而是营收和利润的双双下滑，一路跌到谷底。（三丽鸥FY2013达到业绩峰值后连续6年减收减利，营业..."
-  },
-  "32": {
-    "category": "理财投资 (Finance)",
-    "title": "美银喊加息三次，瑞银说根本加不了，黄金到底应该听谁的？",
-    "link": "http://xueqiu.com/6087293231/396974699",
-    "snippet": "当下黄金交易的核心矛盾，是美联储年内到底加不加息。而当前华尔街头部投行之间，出现了极其罕见的极致分歧，多空观点完全针锋相对。\n其中最具代表性的就是美银与瑞银，一家极致鹰派、一家极致鸽派，两家机构的判断直接决定了当下黄金的短期定价。今天我们把两家机构的核心逻辑完整拆解，搞清楚加息的真假预期，才能看懂黄金接下来的走势。\n一、美银：2026年美联储将加息三次（全市场最鹰派预期）\n美银最新核心结论非常明确..."
-  },
-  "33": {
-    "category": "理财投资 (Finance)",
-    "title": "红利低波年均线策略还有效吗？",
-    "link": "http://xueqiu.com/3529405310/396934161",
-    "snippet": "红利低波年均线抄底策略很受大家欢迎\n#分红季，享红利# #食息族征文#\n但是最近红利低波持续走弱，中证红利已经跌破500日均线，且还在继续下行。很多朋友开始怀疑：年均线策略是不是失效了？\n今天我用三组历史数据（2016年熔断、2018年贸易战、2020年疫情）带大家看看，红利低波在长周期跌破后，最终是如何修复的。\n一、2020年成长股狂欢，红利低波全年横盘\n2020年是典型的大分化年份。创业板指全..."
-  },
-  "34": {
-    "category": "理财投资 (Finance)",
-    "title": "AI越强，增长飞轮越可能卡住？",
-    "link": "http://xueqiu.com/5690576263/396866856",
-    "snippet": "但从经济运行的角度看，技术只是起点。真正决定一轮技术革命能不能转化为长期增长的关键，在于效率红利能否重新变成劳动收入、消费能力和新增需求。生产率提高之后，如果成本下降带不来足够大的需求扩张，或者劳动收入无法通过新岗位创造，技术进步就很难变成社会层面的繁荣。\n我对此有一个概括：前三次工业革命，本质上是同一个增长飞轮在运转。效率提升带来成本下降，成本下降释放需求，需求扩张形成规模效应，规模效应继续压低..."
-  },
-  "35": {
-    "category": "理财投资 (Finance)",
-    "title": "成长，即使只爱一点点",
-    "link": "http://xueqiu.com/3559889031/396826304",
-    "snippet": "尤其是私募，一些成名许久的老将，纷纷写信解释净值回撤的原因，以及对当下持股的坚守与坚信。\n看完这些信，突然想起之前和一位FOF基金经理闲聊时提及的两个概念：资产管理和财富管理。\n资产管理，主语是资产，那些抽象的、不具有人情味的金融投资标的。在许多老将心中，他们做的，显然是资产管理，将自己的人生观、价值观映射在资产走势的涨涨跌跌上，而持有人的资金，则是他们募集来践行这种资产管理的手段。我甚至觉得，许..."
-  },
-  "36": {
-    "category": "社会 (Society)",
-    "title": "北京最高樓「中國尊」遭小型飛機撞擊",
-    "link": "https://www.bbc.com/zhongwen/articles/c8625lpy12yo/trad?at_medium=RSS&at_campaign=rss",
-    "snippet": "一架小型飛機似乎撞上了中國首都北京的最高建築——「中國尊」，事故原因和傷亡情況尚不清楚。"
-  },
-  "37": {
-    "category": "社会 (Society)",
-    "title": "日本簽證漲價五倍，中國人為何反應激烈？",
-    "link": "https://www.bbc.com/zhongwen/articles/c7vy8q88pl0o/trad?at_medium=RSS&at_campaign=rss",
-    "snippet": "日本政府宣布，自今年7月1日起，外國人入境簽證費用上漲至5倍，此舉在中國引起軒然大波。"
-  },
-  "38": {
-    "category": "社会 (Society)",
-    "title": "英王查爾斯與王后為何放棄遷入白金漢宮",
-    "link": "https://www.bbc.com/zhongwen/articles/cj6gng2ln6xo/trad?at_medium=RSS&at_campaign=rss",
-    "snippet": "白金漢宮表示，查爾斯國王與卡蜜拉王后將繼續居住於相距不遠的克拉倫斯宮。"
-  },
-  "39": {
-    "category": "社会 (Society)",
-    "title": "從圖片看委內瑞拉雙重地震後的滿目蒼夷",
-    "link": "https://www.bbc.com/zhongwen/articles/c0qyp294pn7o/trad?at_medium=RSS&at_campaign=rss",
-    "snippet": "在甚短時間內，委內瑞拉接連發生7.2級與7.5級地震，造成的破壞相當嚴重。"
-  },
-  "40": {
-    "category": "社会 (Society)",
-    "title": "北京最高楼“中国尊”遭小型飞机撞击",
-    "link": "https://cn.nytimes.com/china/20260627/china-plane-crash-beijing/?utm_source=RSS",
-    "snippet": "事发周五晚高峰时段，数据显示飞机从平谷起飞后飞往市中心。目前尚不清楚这起事故是意外还是人为造成。飞行员的身份、下落以及现场伤亡情况也尚不明确。\n\n                    \nMaxim Shemetov/Reuters\n                    \n周五，北京的中国尊大厦（又名中信大厦）外墙受损。"
-  },
-  "41": {
-    "category": "民生热议 (Livelihood)",
-    "title": "据说一个单发小通航撞了中国尊",
-    "link": "https://www.reddit.com/r/China_irl/comments/1ug4xk8/据说一个单发小通航撞了中国尊/",
-    "snippet": "2026年6月26日，东时双悦通航B-12PP飞机，刘俊华(会员)机长本场空域单飞，17:30石佛寺机场起飞，17:40准备返场着陆，在加入18号跑道西航线时，飞机没有正常加入起落，偏出本场空域一直保持270度航向飞行，本场ADS-B监控到飞机在东五环附近，后续无信号。后续联系进近和空军均联系不上该机。\n    submitted by    /u/Perfect_HH  \n [link]   [..."
-  },
-  "42": {
-    "category": "民生热议 (Livelihood)",
-    "title": "这个航迹说明什么问题",
-    "link": "https://www.reddit.com/r/China_irl/comments/1ug7v4g/这个航迹说明什么问题/",
-    "snippet": "submitted by    /u/Complete-Pirate9488  \n [link]   [comments]"
-  },
-  "43": {
-    "category": "民生热议 (Livelihood)",
-    "title": "习主席再显神威，拿掉6个军头，包括网军司令",
-    "link": "https://www.reddit.com/r/China_irl/comments/1ugvlvr/习主席再显神威拿掉6个军头包括网军司令/",
-    "snippet": "看来习主席对网军洗地的结果很不满意。有一说一，中国现在这样子确实工作也很难展开。\n 前中央军委装备发展部部长许学强\n 联勤保障部队司令员王抗平\n 前西部战区政治委员李凤彪\n 南部战区陆军政委尹红星\n 前解放军空军政委郭普校\n 网络空间部队司令员张明华\n    submitted by    /u/Pale-Boysenberry3288  \n [link]   [comments]"
-  },
-  "44": {
-    "category": "民生热议 (Livelihood)",
-    "title": "林肯纪念堂倒影池还有高手",
-    "link": "https://www.reddit.com/r/China_irl/comments/1ugsmp3/林肯纪念堂倒影池还有高手/",
-    "snippet": "背景：为了迎接美国建国250周年（和川普80大寿），特意将林肯纪念堂面前的倒影池装修一翻，让池水永呈蓝色，命名为美国国旗蓝。\n 接下来每一步都是神人操作：\n  \n1400万刀工程，不招标直接用非竞争性磋商包给之前为特朗普庄园装修的工程队。\n \n工程队选择涂油漆，但是使用含有磷化物的底漆。不出所料，磷化池水藻类爆发登上新闻。\n \n 4.工程队紧急修复，倒入大量硫酸铜。本来硫酸铜确实可以杀藻，但是之前..."
-  },
-  "45": {
-    "category": "民生热议 (Livelihood)",
-    "title": "主席先生，中国在遭受攻击",
-    "link": "https://www.reddit.com/r/China_irl/comments/1ugh0jy/主席先生中国在遭受攻击/",
-    "snippet": "submitted by    /u/Most_Client_166  \n [link]   [comments]"
-  },
-  "46": {
-    "category": "民生热议 (Livelihood)",
-    "title": "北京飞机撞大楼的消息墙内竟然一点没有",
-    "link": "https://www.reddit.com/r/China_irl/comments/1ugn6oq/北京飞机撞大楼的消息墙内竟然一点没有/",
-    "snippet": "能封锁得这么严，待遇堪比8964了\n    submitted by    /u/LeagueAromatic5686  \n [link]   [comments]"
-  },
-  "47": {
-    "category": "民生热议 (Livelihood)",
-    "title": "“B-12PP不 存在”，豆包辟谣",
-    "link": "https://www.reddit.com/r/China_irl/comments/1ugpf88/b12pp不_存在豆包辟谣/",
-    "snippet": "submitted by    /u/Complete-Pirate9488  \n [link]   [comments]"
-  },
-  "48": {
-    "category": "民生热议 (Livelihood)",
-    "title": "小飞机撞大厦，北京是否已经陷入了极权者悖论？？？",
-    "link": "https://www.reddit.com/r/China_irl/comments/1ugs499/小飞机撞大厦北京是否已经陷入了极权者悖论/",
-    "snippet": "极权不能长久就是因为极权依赖不断地清洗，不断地运动，这中间就会有无数漏洞，也有无数掉落的人铤而走险。\n 地铁安检记得不？北京最严，还到处查公民身份证。\n 四通桥抗议记得不？北京从此增设了看桥员。\n 马杜洛被活捉记得不？北京从此禁止小型无人机。\n 越怕越发现四处漏风，不管你怎么防都防不住，耗费如此大资源去防民，最终也是防不住的。\n    submitted by    /u/DowntownHurr..."
-  },
-  "49": {
-    "category": "民生热议 (Livelihood)",
-    "title": "乌克兰无人机迫使俄罗斯在被占领的克里米亚宣布进入紧急状态",
-    "link": "https://www.reddit.com/r/China_irl/comments/1ugokwj/乌克兰无人机迫使俄罗斯在被占领的克里米亚宣布进入紧急状态/",
-    "snippet": "submitted by    /u/magehah  \n [link]   [comments]"
-  },
-  "50": {
-    "category": "民生热议 (Livelihood)",
-    "title": "东大封锁消息简直堪比本能反应，这飞机撞楼大概率不就是个意外事故吗？有什么好封锁的？",
-    "link": "https://www.reddit.com/r/China_irl/comments/1ugw8xt/东大封锁消息简直堪比本能反应这飞机撞楼大概率不就是个意外事故吗有什么好封锁的/",
-    "snippet": "又一次超级封锁，国内app上相关信息一个字都找不到，还是偶然间刷推特看到的，这敏感肌敏感成什么样了，除了封锁消息还会干什么？\n 这么小的飞机，撞的面积就两面玻璃，能有什么阴谋？\n 真他妈的恶心，什么jb事情都要偷偷摸摸的，感觉不做贼就不知道怎么活了\n    submitted by    /u/John_sp  \n [link]   [comments]"
   }
 }
