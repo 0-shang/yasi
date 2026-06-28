@@ -194,7 +194,9 @@ cron.schedule('0 7-23 * * *', () => {
   exec('git pull --rebase origin main', { cwd: repoRoot }, (pullErr) => {
     if (pullErr) {
       console.error('Pre-publish git pull failed:', pullErr.message);
-      // pull 失败也继续发推，避免因网络问题导致全天不发推
+      // 必须在这里阻断！如果 pull 失败（如 rebase 卡死、冲突等），VPS 本地可能残留已经被 GitHub 删掉的旧推文。
+      // 如果继续发推，会导致机器人发出旧内容或者重复发推。
+      return;
     }
     exec('npm run publish', { cwd: automatorDir, env }, (err, stdout, stderr) => {
       if (err) {
