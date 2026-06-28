@@ -1,362 +1,362 @@
 {
   "1": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "simplex-chat/simplex-chat",
-    "link": "https://github.com/simplex-chat/simplex-chat",
-    "snippet": "SimpleX - the first messaging network operating without user identifiers of any kind - 100% private by design! iOS, Android and desktop apps 📱!\nLanguage: Haskell\nStars: 14420\nForks: 827"
+    "title": "Show HN: QuicMic – Use your phone as a PC mic in the browser (Rust, QUIC)",
+    "link": "https://github.com/Fix3dll/QuicMic",
+    "snippet": "Article URL: https://github.com/Fix3dll/QuicMic\nComments URL: https://news.ycombinator.com/item?id=48707249\nPoints: 1\n# Comments: 0"
   },
   "2": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "ripienaar/free-for-dev",
-    "link": "https://github.com/ripienaar/free-for-dev",
-    "snippet": "A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev\nLanguage: HTML\nStars: 124499\nForks: 13108"
+    "title": "Show HN: Custom domain emails for open source projects (KaiMail)",
+    "link": "https://kaimail.net/",
+    "snippet": "I've always had the need to quickly just setup an email service for all the different projects and communities that I run, so I built KaiMail to do that. I can't stand the fact that getting emails for..."
   },
   "3": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "commaai/openpilot",
-    "link": "https://github.com/commaai/openpilot",
-    "snippet": "openpilot is an operating system for robotics. Currently, it upgrades the driver assistance system on 300+ supported cars.\nLanguage: Python\nStars: 62212\nForks: 11079"
+    "title": "Show HN: Nomina – Single Binary DNS and Nameserver with WebUI for Homelabs",
+    "link": "https://news.ycombinator.com/item?id=48706884",
+    "snippet": "Hey everyone,\nI was always tired of setting up PowerDNS, Bind and PiHole and I am trying to do more projects in Rust, so here is Nomina.\nIt has:\n* Split Horizon DNS (return a different IP/record if re..."
   },
   "4": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "xbtlin/ai-berkshire",
-    "link": "https://github.com/xbtlin/ai-berkshire",
-    "snippet": "AI 时代的伯克希尔：基于 Claude Code / Codex 的价值投资研究框架。巴菲特·芒格·段永平·李录四大师方法论 + 多Agent并行研究。| AI-era Berkshire: a value investing research framework built for Claude Code / Codex. 4 masters' methodologies + multi-ag..."
+    "title": "Show HN: O11y.jobs is a job board focused specifically on Observability",
+    "link": "https://o11y.jobs/",
+    "snippet": "I built a jobs board that will sift out the jobs that are live that are solely around jobs using modern observability technology.\nCheck it out.\nComments URL: https://news.ycombinator.com/item?id=48706..."
   },
   "5": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "Robbyant/lingbot-map",
-    "link": "https://github.com/Robbyant/lingbot-map",
-    "snippet": "A feed-forward 3D foundation model for reconstructing scenes from streaming data\nLanguage: Python\nStars: 7994\nForks: 789"
+    "title": "Show HN: Meta Ads vs. ASA vs. GAC for indie apps (2026 data)",
+    "link": "https://launchshots.app/blog/meta-ads-app-install-2026",
+    "snippet": "Article URL: https://launchshots.app/blog/meta-ads-app-install-2026\nComments URL: https://news.ycombinator.com/item?id=48706736\nPoints: 3\n# Comments: 0"
   },
   "6": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "DeusData/codebase-memory-mcp",
-    "link": "https://github.com/DeusData/codebase-memory-mcp",
-    "snippet": "High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph — average repo in milliseconds. 158 languages, sub-ms queries, 99% fewer tokens. Single static binary..."
+    "title": "Show HN: Sambee – browser-based file manager for SMB shares and local drives",
+    "link": "https://sambee.net",
+    "snippet": "I'm introducing Sambee, a browser-based alternative to traditional file managers. Sambee provides access to SMB network file shares via a Docker container backend, and to your machine's local drives v..."
   },
   "7": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "cupy/cupy",
-    "link": "https://github.com/cupy/cupy",
-    "snippet": "NumPy & SciPy for GPU\nLanguage: Python\nStars: 11352\nForks: 1061"
+    "title": "Show HN: Parseflow – Extract data from any document. Entirely on your Mac",
+    "link": "https://www.parseflow.io/",
+    "snippet": "Article URL: https://www.parseflow.io/\nComments URL: https://news.ycombinator.com/item?id=48706658\nPoints: 1\n# Comments: 0"
   },
   "8": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "altic-dev/FluidVoice",
-    "link": "https://github.com/altic-dev/FluidVoice",
-    "snippet": "FluidVoice - Fastest macOS Offline Dictation app - Voice to Text fully Local. One ⭐ takes us a long way :)) \nLanguage: Swift\nStars: 3290\nForks: 217"
+    "title": "Show HN: Warren – run isolated instances of any CLI tool (no containers,no root)",
+    "link": "https://github.com/swadhinbiswas/warren",
+    "snippet": "Article URL: https://github.com/swadhinbiswas/warren\nComments URL: https://news.ycombinator.com/item?id=48706502\nPoints: 1\n# Comments: 0"
   },
   "9": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "opendatalab/MinerU",
-    "link": "https://github.com/opendatalab/MinerU",
-    "snippet": "Transforms complex documents like PDFs and Office docs into LLM-ready markdown/JSON for your Agentic workflows.\nLanguage: Python\nStars: 71239\nForks: 5989"
+    "title": "Show HN: Genius AI Detector",
+    "link": "https://geniusaidetector.com/",
+    "snippet": "Article URL: https://geniusaidetector.com/\nComments URL: https://news.ycombinator.com/item?id=48706490\nPoints: 2\n# Comments: 0"
   },
   "10": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "HKUDS/Vibe-Trading",
-    "link": "https://github.com/HKUDS/Vibe-Trading",
-    "snippet": "\"Vibe-Trading: Your Personal Trading Agent\"\nLanguage: Python\nStars: 13984\nForks: 2605"
+    "title": "Show HN: A faithful MUMPS 76 anniversary implementation – the original NoSQL DB",
+    "link": "https://github.com/rochus-keller/mumps/",
+    "snippet": "Article URL: https://github.com/rochus-keller/mumps/\nComments URL: https://news.ycombinator.com/item?id=48706481\nPoints: 2\n# Comments: 1"
   },
   "11": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "ByteByteGoHq/system-design-101",
-    "link": "https://github.com/ByteByteGoHq/system-design-101",
-    "snippet": "Explain complex systems using visuals and simple terms. Help you prepare for system design interviews.\nLanguage: Unknown\nStars: 84112\nForks: 9326"
+    "title": "Show HN: UnfoldCMS – self-hosted Laravel CMS, one-time pricing, no subscriptions",
+    "link": "https://unfoldcms.com",
+    "snippet": "Article URL: https://unfoldcms.com\nComments URL: https://news.ycombinator.com/item?id=48706455\nPoints: 1\n# Comments: 0"
   },
   "12": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "usestrix/strix",
-    "link": "https://github.com/usestrix/strix",
-    "snippet": "Open-source AI hackers to find and fix your app’s vulnerabilities.\nLanguage: Python\nStars: 26387\nForks: 2970"
+    "title": "SHOW HN: Experimental GCC/GAS inline assembly bridge for Python",
+    "link": "https://pypi.org/project/sfpy-asm/0.1.1/",
+    "snippet": "Article URL: https://pypi.org/project/sfpy-asm/0.1.1/\nComments URL: https://news.ycombinator.com/item?id=48706444\nPoints: 2\n# Comments: 0"
   },
   "13": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "browser-use/video-use",
-    "link": "https://github.com/browser-use/video-use",
-    "snippet": "Edit videos with coding agents\nLanguage: Python\nStars: 10644\nForks: 1506"
+    "title": "Show HN: Cjam – A non-destructive MP3 editor",
+    "link": "https://github.com/cutandjoin/Cjam/releases/tag/v2500",
+    "snippet": "Cjam is a frame-based MP3 editor that works without decoding or re-encoding.\nv2.5.0.0 adds clipboard-based integration with mp3DirectCut and REAPER.\nComments URL: https://news.ycombinator.com/item?id=..."
   },
   "14": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "Prime Day 2026 Live Blog: The Best Deals on Headphones, TVs, Fitness Tech, and More",
-    "link": "https://lifehacker.com/tech/amazon-prime-day-live-blog-06-26-2026?utm_medium=RSS",
-    "snippet": "From tech to kitchen supplies to tools, the deals are coming fast and furious."
+    "title": "Show HN: DepGuard, Visualize and simulate NPM vulnerability blast radiuses",
+    "link": "https://github.com/EgglezosHub/DepGuard",
+    "snippet": "Article URL: https://github.com/EgglezosHub/DepGuard\nComments URL: https://news.ycombinator.com/item?id=48706326\nPoints: 1\n# Comments: 0"
   },
   "15": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "The Best Last-Minute Prime Day Deals on Laptops, Monitors, and PC Accessories",
-    "link": "https://lifehacker.com/tech/laptops-monitors-pc-accessories-prime-day-june-26-2026?utm_medium=RSS",
-    "snippet": "There is still time to upgrade your home office with these deals on the last day of Prime Day."
+    "title": "Show HN: AgentWatch – Prevent runaway AI agents with runtime budget enforcement",
+    "link": "https://agent-watch.dev/",
+    "snippet": "Hi HN,\nI’m a solo developer and built AgentWatch to solve a problem I kept running into while building AI agents: preventing runaway loops and unexpected LLM spend before requests reach the model.\nAge..."
   },
   "16": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "You Can Now Use Google Wallet at Airport Security Instead Your ID",
-    "link": "https://lifehacker.com/tech/google-wallet-for-tsa-precheck?utm_medium=RSS",
-    "snippet": "Touchless ID is expanding for Android users who have TSA PreCheck."
+    "title": "Show HN: Hacker Times – HN Reader",
+    "link": "https://times.hntrends.net/",
+    "snippet": "This has been a play project for a little while, trying to build an interface that's comfortable to read on any device. It's a bit of a mashup of a Pocket-like interface, digital newspaper and Hacker ..."
   },
   "17": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "Garmin's Most Basic Running Watch Is Now Cheaper Than Ever",
-    "link": "https://lifehacker.com/health/garmin-forerunner-55-prime-day-deal-2026?utm_medium=RSS",
-    "snippet": "The Forerunner 55 is $129 new, or $99.99 refurbished."
+    "title": "Show HN: role-model, a router for hybrid local/cloud AI",
+    "link": "https://github.com/try-works/role-model",
+    "snippet": "Hey everyone, I'm launching role-model today: a routing protocol, a reference router runtime, and an extension for Pi that allows for better informed routing decisions.\nrole-model is mostly determinis..."
   },
   "18": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "Whoop's 12-Month Peak Subscription Is at Its Lowest Price Ever for Prime Day",
-    "link": "https://lifehacker.com/health/whoop-peak-subscription-prime-day-2026?utm_medium=RSS",
-    "snippet": "Whoop Peak, the mid-range tier, is now cheaper than Whoop One"
+    "title": "Show HN: Free Notion alternative because I think Notion is overpriced",
+    "link": "https://dokyo.app/",
+    "snippet": "Article URL: https://dokyo.app/\nComments URL: https://news.ycombinator.com/item?id=48706164\nPoints: 1\n# Comments: 0"
   },
   "19": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "These 15 Apple Products Didn't Get a Price Increase (Yet)",
-    "link": "https://lifehacker.com/tech/apple-products-that-didnt-get-price-increase-yet?utm_medium=RSS",
-    "snippet": "You can still buy an iPhone 17 for the same price today as you could on Wednesday."
+    "title": "Show HN: uvx qrdrop – instant LAN file sharing from your terminal",
+    "link": "https://github.com/itsloopyo/qrdrop",
+    "snippet": "I’m working on some projects that involve moving files between macOS, Linux, Windows, Android, and iOS, and wanted a no-fuss, cross-platform way to do it over the LAN. I already have uv installed ever..."
   },
   "20": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "These Are the Best Last-Minute Prime Day Deals on Headphones",
-    "link": "https://lifehacker.com/tech/best-headphones-deals-prime-day-june-26-2026?utm_medium=RSS",
-    "snippet": "Your favorite songs will sound sweeter on the headphones you got for a steal."
+    "title": "Show HN: I built a strategic PvP word game where each move is just one letter",
+    "link": "https://letterphile.com",
+    "snippet": "When I was in school, my teacher used to play this game to our class. You add one letter turnwise and try to make a word. Later, I tried searching for this game but didn't find the exact match anywher..."
   },
   "21": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "The Best Last-Minute Prime Day Deals on Amazon Devices, up to 74% Off",
-    "link": "https://lifehacker.com/tech/last-chance-deals-on-amazon-devices-prime-day-june-26-2026?utm_medium=RSS",
-    "snippet": "Every Prime Day, Amazon reserves the best discounts for its own tech."
+    "title": "These Bluetooth Speakers Are up to 50% Off Until Prime Day Ends Tonight",
+    "link": "https://lifehacker.com/tech/last-chance-bluetooth-speaker-deals-prime-day-june-26-2026?utm_medium=RSS",
+    "snippet": "Great deals on portable speakers, AI-powered smart speakers, and more."
   },
   "22": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "The Best Books, Movies, Video Games, and Podcasts to Check Out After Watching ‘The Office’",
-    "link": "https://lifehacker.com/entertainment/the-office-streamalikes-books-movies-video-games-podcasts?utm_medium=RSS",
-    "snippet": "Media to help you resurrect the cringey vibes of the Dunder Mifflin Scranton office."
+    "title": "I Wore Amazfit for Hyrox Training, and Their Watches up to 27% Off on the Last Day of Prime Day",
+    "link": "https://lifehacker.com/health/last-chance-best-amazfit-watch-deals-prime-day-june-26-2026?utm_medium=RSS",
+    "snippet": "Serious training watches don't need to cost a fortune—but only for a few more hours."
   },
   "23": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "You Can Save up to 78% on These Smart Glasses, but Only Until Prime Day Ends Tonight",
-    "link": "https://lifehacker.com/tech/last-chance-smart-glasses-deals-prime-day-june-26-2026?utm_medium=RSS",
-    "snippet": "These are the best last-minute deals on audio, AI, and display smart glasses."
+    "title": "These Deals on Video Games, Controllers, and Peripherals Will Disappear When Prime Day Ends Tonight",
+    "link": "https://lifehacker.com/entertainment/last-chance-best-deals-video-games-controllers-prime-day-june-26-2026?utm_medium=RSS",
+    "snippet": "Amazon's big sale is a great time to level up your gaming setup."
   },
   "24": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "These Deals on VR Headsets Are Still Live Until Prime Day Ends Tonight",
-    "link": "https://lifehacker.com/tech/last-chance-vr-headset-and-accessory-deals-prime-day-june-26-2026?utm_medium=RSS",
-    "snippet": "Here are the most notable Prime Day price drops on everything VR."
+    "title": "Garmin Watches Are My Favorite Training Partner, and It's Your Last Chance to Get These Prime Day Deals up to 50% Off",
+    "link": "https://lifehacker.com/health/last-chance-garmin-fitness-deals-prime-day-june-26-2026?utm_medium=RSS",
+    "snippet": "Time is running out on these deals—which you would know if you checked your Garmin watch."
   },
   "25": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "These Portable Projectors Are Still up to 40% Off Until Prime Day Ends Tonight",
-    "link": "https://lifehacker.com/tech/last-chance-projector-deals-prime-day-june-26-2026?utm_medium=RSS",
-    "snippet": "Take movie night outdoors without spending a ton of money."
+    "title": "It's Your Last Chance to Save up to 38% on These Apple Devices Before Prime Day Ends Tonight",
+    "link": "https://lifehacker.com/tech/apple-device-deals-prime-day-june-26-2026?utm_medium=RSS",
+    "snippet": "Amazon is offering exclusive deals on Apple Watches, AirTags, and more."
   },
   "26": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "The Best Last-Minute Prime Day Deals on Treadmills and Walking Pads, up to 24% Off",
-    "link": "https://lifehacker.com/health/best-treadmills-walking-pads-deals-prime-day-2026?utm_medium=RSS",
-    "snippet": "I love a walking pad, but you need to run to catch these deals."
+    "title": "These Exercise Bikes Are Still up to 33% Off, but Prime Day Ends Tonight",
+    "link": "https://lifehacker.com/health/last-chance-best-exercise-bike-deals-prime-day-june-26-2026?utm_medium=RSS",
+    "snippet": "Even the latest Peloton bikes are on sale until Prime Day is over."
   },
   "27": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "My Picks for the Best Home Gym Equipment for Apartments Are up to 30% Off Until Prime Day Ends Tonight",
-    "link": "https://lifehacker.com/health/last-chance-home-gym-equipment-for-apartments-prime-day-june-26-2026?utm_medium=RSS",
-    "snippet": "There's still time to seriously upgrade your home gym, no matter where you live."
+    "title": "Five of the Best Workout Headphones (Including My Personal Favorite) Are on Sale Until Prime Day Ends Tonight",
+    "link": "https://lifehacker.com/health/last-chance-best-workout-headphones-deals-prime-day-june-26-2026?utm_medium=RSS",
+    "snippet": "The Shokz OpenRun Pro 2 are a game-changer, but all of these workout headphones are excellent choices."
   },
   "28": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "The Best Last-Minute Prime Day Deals on Fitness Equipment, up to 50% Off",
-    "link": "https://lifehacker.com/health/last-chance-fitness-equipment-deals-prime-day-june-26-2026?utm_medium=RSS",
-    "snippet": "You still have a few more hours to snag great deals on bikes, treadmills, and adjustable dumbbells."
+    "title": "I'm a Tech Editor, and These Are My Favorite Last-Minute Prime Day Deals",
+    "link": "https://lifehacker.com/tech/my-favorite-tech-deals-prime-day-june-26-2026?utm_medium=RSS",
+    "snippet": "It's a great time to save some cash on in-demand devices."
   },
   "29": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "Every Apple Watch, Including the Series 11, Is up to 28% Off on the Last Day of Prime Day",
-    "link": "https://lifehacker.com/tech/last-chance-every-apple-watch-is-on-sale-for-prime-day-june-26-2026?utm_medium=RSS",
-    "snippet": "There are still a few more hours to snag these deals on a new Apple Watch."
+    "title": "These Peloton Bikes, Treadmills, and More Are up to 33% Off on the Last Day of Prime Day",
+    "link": "https://lifehacker.com/health/peloton-bikes-treads-dumbbells-sale-prime-day-june-26-2026?utm_medium=RSS",
+    "snippet": "In addition to these Bikes and Treads, Peloton's dumbbells and accessories are on sale."
   },
   "30": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "The Best Deals on Basic Tech Essentials, From Batteries to Power Strips, for the Last Day of Prime Day",
-    "link": "https://lifehacker.com/tech/best-deals-on-tech-basics-prime-day-june-26-2026?utm_medium=RSS",
-    "snippet": "It's a good time to score discounts on routers, surge protectors, batteries, and more."
+    "title": "These Apple and Android Tablets Are up to 46% Off for Prime Day",
+    "link": "https://lifehacker.com/tech/best-android-apple-tablet-deals-prime-day-june-26-2026?utm_medium=RSS",
+    "snippet": "You can save on Apple iPads, Samsung Galaxy Tabs, Amazon Fire tablets, and more."
   },
   "31": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "科技爱好者周刊（第 401 期）：如何赚到10亿美元",
-    "link": "http://www.ruanyifeng.com/blog/2026/06/weekly-issue-401.html",
-    "snippet": "这里记录每周值得分享的科技内容，周五发布。\n本杂志开源，欢迎投稿。另有《谁在招人》服务，发布程序员招聘信息。合作请邮件联系（yifeng.ruan@gmail.com）。\n封面图\n\n在中国南方，人们穿戴巨型荷叶制作的防晒面罩。（via）\n如何赚到10亿美元\n保罗·格雷厄姆（Paul Graham）是美国最大的创业孵化器 Y Combinator 的创始人，公认的创业导师，《黑客与画家》的作者。\n他..."
+    "title": "第一批一人公司，现在怎么样了？",
+    "link": "https://www.qbitai.com/2026/06/439237.html",
+    "snippet": "我们跟一群OPC创业者聊了聊"
   },
   "32": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "科技爱好者周刊（第 400 期）：rsync 的争论",
-    "link": "http://www.ruanyifeng.com/blog/2026/06/weekly-issue-400.html",
-    "snippet": "这里记录每周值得分享的科技内容，周五发布。（[通知] 下周端午假期，周刊休息。）\n本杂志开源，欢迎投稿。另有《谁在招人》服务，发布程序员招聘信息。合作请邮件联系（yifeng.ruan@gmail.com）。\n封面图\n\n上海体育学院内的绿瓦书店，是上海首家体育主题书店。中庭有13米高的\"明月山\"，四周是小路，意为\"书山有路勤为径\"。（via）\nrsync 的争论\nrsync 是计算机同步最常用的工..."
+    "title": "CVPR 2026最热方向，被一家杭州团队率先跑进了端侧！",
+    "link": "https://www.qbitai.com/2026/06/439236.html",
+    "snippet": "VLM- R1之后再次出手！全球首个端侧流式多模态来了！"
   },
   "33": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "科技爱好者周刊（第 399 期）：中国 AI 大厂访问记",
-    "link": "http://www.ruanyifeng.com/blog/2026/06/weekly-issue-399.html",
-    "snippet": "这里记录每周值得分享的科技内容，周五发布。\n本杂志开源，欢迎投稿。另有《谁在招人》服务，发布程序员招聘信息。合作请邮件联系（yifeng.ruan@gmail.com）。\n封面图\n\n本周开馆的深圳国际美术馆。（via）\n中国 AI 大厂访问记\n今年5月上旬，一个美国访问团来到中国，访问了14家  AI 和机器人公司。\n\n访问对象包括 DeepSeek、月之暗面、MiniMax、智谱、字节跳动、阿里..."
+    "title": "微软年度AI职场报告：员工已经准备好了，公司还没有",
+    "link": "https://www.qbitai.com/2026/06/439032.html",
+    "snippet": "28页干货爆炸"
   },
   "34": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "科技爱好者周刊（第 398 期）：Token 费用难以负担",
-    "link": "http://www.ruanyifeng.com/blog/2026/05/weekly-issue-398.html",
-    "snippet": "这里记录每周值得分享的科技内容，周五发布。\n本杂志开源，欢迎投稿。另有《谁在招人》服务，发布程序员招聘信息。合作请邮件联系（yifeng.ruan@gmail.com）。\n封面图\n\n去年开放的浙江省安吉县的安吉文化艺术中心。当地盛产竹子，屋顶都采用竹叶造型。（daemin_kg@ig）\nToken 费用难以负担\n上周，OpenClaw（龙虾）的创始人彼得·斯坦伯格（Peter Steinberge..."
+    "title": "GPT-5.6突然发布！Fable5痛失最强基模王座",
+    "link": "https://www.qbitai.com/2026/06/438895.html",
+    "snippet": "一口气端出三款GPT 5.6系列模型"
   },
   "35": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "科技爱好者周刊（第 397 期）：财富正在向 AI 集中",
-    "link": "http://www.ruanyifeng.com/blog/2026/05/weekly-issue-397.html",
-    "snippet": "这里记录每周值得分享的科技内容，周五发布。\n本杂志开源，欢迎投稿。另有《谁在招人》服务，发布程序员招聘信息。合作请邮件联系（yifeng.ruan@gmail.com）。\n封面图\n\n马岩松事务所设计的海南科技馆，今年五一开馆。（via）\n财富正在向 AI 集中\nAI 相关的所有东西，最近都在上涨。\n看看股票，就知道了。内存、储存、CPU、服务器、液冷、光通信、变压器......股价全部在涨，更不要..."
+    "title": "两个月连获两轮数亿元融资 深度机智以全栈自主路线加速国产物理AI基座模型落地",
+    "link": "https://www.qbitai.com/2026/06/438887.html",
+    "snippet": ""
   },
   "36": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "科技爱好者周刊（第 396 期）：互联网通信的替代方案",
-    "link": "http://www.ruanyifeng.com/blog/2026/05/weekly-issue-396.html",
-    "snippet": "这里记录每周值得分享的科技内容，周五发布。\n本杂志开源，欢迎投稿。另有《谁在招人》服务，发布程序员招聘信息。合作请邮件联系（yifeng.ruan@gmail.com）。\n封面图\n\n浙江新昌县的\"新昌小球中心\"，将酒店、商场、体育馆、体育场、户外健身步道都融合在一个建筑里面。（via）\n互联网通信的替代方案\n某天清晨，你醒来发现互联网断了，怎么办？\n我说的是彻底的中断，完全不能运作，整个城市无法上..."
+    "title": "谷歌「推理之王」也跑路Meta了，当年还是李飞飞挖来的",
+    "link": "https://www.qbitai.com/2026/06/438848.html",
+    "snippet": "Coding为王"
   },
   "37": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "梁文锋署名的DSpark，看懂这10个点就够了！",
-    "link": "https://www.qbitai.com/2026/06/439548.html",
-    "snippet": "精髓在于极强的系统工程"
+    "title": "Previewing GPT-5.6 Sol: a next-generation model",
+    "link": "https://openai.com/index/previewing-gpt-5-6-sol",
+    "snippet": "OpenAI previews GPT-5.6 Sol, a next-generation model with stronger capabilities in coding, science, and cybersecurity, paired with its most advanced safety stack."
   },
   "38": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "前端工程师最不想看到的开源项目出现了，一行命令克隆任意网站",
-    "link": "https://www.qbitai.com/2026/06/439515.html",
-    "snippet": "GitHub 20k Star"
+    "title": "How agents are transforming work",
+    "link": "https://openai.com/index/how-agents-are-transforming-work",
+    "snippet": "A new OpenAI research paper shows how AI agents are transforming work, enabling longer, more complex tasks and expanding productivity across roles."
   },
   "39": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "一次吃下一本书！百度开源新OCR，作者疑似前DeepSeek研究员",
-    "link": "https://www.qbitai.com/2026/06/439464.html",
-    "snippet": ""
+    "title": "OpenAI and Broadcom unveil LLM-optimized inference chip",
+    "link": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
+    "snippet": "OpenAI and Broadcom introduce Jalapeño, a custom AI chip built for LLM inference to improve performance, efficiency, and scale across AI systems."
   },
   "40": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "BrowserBC：克隆人类点击，让一次网页操作转化为所有Agent的能力",
-    "link": "https://www.qbitai.com/2026/06/439393.html",
-    "snippet": "人类一次录制，Agent就能模拟"
+    "title": "How GPT-5 helped immunologist Derya Unutmaz solve a 3-year-old mystery",
+    "link": "https://openai.com/index/gpt-5-immunology-mystery",
+    "snippet": "GPT-5 Pro helped solve a 3-year-old immunology mystery, offering insights into T cell behavior. The breakthrough could support cancer and autoimmune research."
   },
   "41": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "首次解析康宁GlassBridge，机会点识别",
-    "link": "http://xueqiu.com/5672579962/397193639",
-    "snippet": "作为更广泛的连接器系统架构的一部分，GlassBridge 既是精密的玻璃组件，又是完整的连接器组件，为系统设计人员提供了一条通往下一代光学架构（NPO、CPO、XPO）的实用、可制造的途径。\nFAU的作用\nFAU（Fiber Array Unit） 是光纤 ↔ 硅光 PIC 光子芯片的无源光路转接核心，是 CPO/NPO 光引擎对外收发光信号的唯一物理接口，相当于多通道光纤精密排线耦合器。 标准..."
+    "title": "估值在左，产业在右——港股医药的光已经照进来了",
+    "link": "http://xueqiu.com/5673225518/397207198",
+    "snippet": "首先，我承认我没本事，知识面有限，哪怕理得清科技，也没有上去满仓的勇气，其次，在医药行业：你往左看，估值在左边的坑里趴着；你往右看，创新药和CXO在同时加速——左边是恐惧，右边是事实。而中间这个裂缝，就是机会。\n我今天再次明确表个态（欢迎日后打脸）：港股医药已经在底部区间。创新药和CXO都会起来，介于CXO的业绩确定性更强，大概率率先走出独立行情。\n下面我用多家机构的数据交叉验证，一个板块一个板块..."
   },
   "42": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "坚守自己的投资理念--《大空头》",
-    "link": "http://xueqiu.com/5068022281/397180172",
-    "snippet": "最近的一九行情，硬科技股把所有资金吸走，预期打满再打满，不少价值投资者们开始纷纷割肉，鸡精们减仓追高硬科技，一轮造势不断合力推高估值到市梦率水平。\n\n不少关注和同车的球友，也纷纷下车，像极了大空头末端的故事情节，听说不少价值大V都停更了，我这种小散仍然保持日更，主要是我“脸皮厚”。\n\n但是，多了很多人来讽刺的，我也觉得有点不爽，不爽的是，你还得花时间搭理他们。最后只能出绝招\n来投资市场已经20多年..."
+    "title": "重资产行业投资与现金流",
+    "link": "http://xueqiu.com/7103876041/397107756",
+    "snippet": "从这个角度再解一下。\n大致讲清楚电解铝、晶硅，电力。\n也同时讲明白股票投资要点。\n大致是个什么事呢。\n就是这类企业为什么在中国一直被低估。\n价值发现在什么时段。\n高估在什么时段。\n先看电解铝，超级好行业。\n为什么。\n正面说是比较优势。\n细点说是比较优势vs资本投入 。\n是因为电解铝好坏企业成本差20003000么？\n对一半。\n核心原因是吨铝投资只要5000。\n因为吨铝投资只要5000，低电价地区差..."
   },
   "43": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "周末聊聊AI的几个“利空”",
-    "link": "http://xueqiu.com/2799488232/397192393",
-    "snippet": "文章大部分是在飞机上写的，比较水，依然保持陪聊风格。给大家留了个结尾彩蛋，想看行业干货的直接拉到最后就行。\n————————————\n消除恐惧最好的办法就是面对恐惧。先不按摩，先直视一下市场最近的几个利空。\n1.两个“疑难杂症”，见怪不怪。\n对于科技/制造业来说。技术迭代恐惧症，扩产恐惧症，是两条刻在了A股投资者基因里的恐怖染色体。\n这两条基因都来源于上一轮新能源周期：锂电光伏后期的各种技术路线争..."
+    "title": "战争四个月后的反思",
+    "link": "http://xueqiu.com/1170975436/397107676",
+    "snippet": "冷静的分析一下过去4个月。主要误判有几点。\n1. 听了太多能源多头打鸡血。铺天盖地的主流能源专家这几个月都是一致看多油气，甚至签完MOU以后还在往150看。对反面专业观点不够重视。国内外很多石油多头专家的问题是分析的不够全面细致，忽视了一些细节。典型的就是GR，我之前就说，GR看黄金很准，但看能源经常一直都错。\n对于反面观点，我说的不是那种凭感觉，凭算命看空油气的。而是真的能源专家有理有据地分析（..."
   },
   "44": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "复盘2000年科技股泡沫：今时今日持有老登股的我们，应该何去何从？",
-    "link": "http://xueqiu.com/9363345092/397182980",
-    "snippet": "最近点赞少得可怜，如果市赚率对您有用，烦请多多点赞+收藏，感谢大家。\nAI泡沫何时破灭？或许是明天或许是明年，这是一个没有准确答案的问题。但AI泡沫破灭之后，老登股将会遭受怎样的境遇？答案却是有迹可循的！在这里，不妨复盘一下2000年科技股泡沫。今时今日持有老登股的我们，应该何去何从？答案尽在本文当中！\n复盘2000年科技股泡沫：老登小登高低切，竟可无缝连接！\n2000年3月10日，纳指在创出51..."
+    "title": "朱酒看点（6月26日公开版）",
+    "link": "http://xueqiu.com/6056806984/396838150",
+    "snippet": "本话题在雪球有50条讨论，点击查看。\n雪球是一个投资者的社交网络，聪明的投资者都在这里。\n点击下载雪球手机客户端 http://xueqiu.com/xz]]>"
   },
   "45": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "质量投资的因子：只买最好的",
-    "link": "http://xueqiu.com/9927088462/396108414",
-    "snippet": "我们都知道，伟大公司都是事后才知道。如果事先就能确定某家公司未来将成为一家伟大公司，那投资就简单了。西蒙·科尔德所著的《投资伟大的企业：如何挑选优质且持久的好公司》虽然名为投资“伟大的企业”，但实际上他在序言中就明确指出，这本书旨在为投资者提供一套评价企业质量及持久性的分析框架。而且，就这本书的英文版书名而言，原本就是“寻找优质的公司”——对高质量公司进行长期价值投资，是创造可持续收益的最佳方式。..."
+    "title": "泡泡玛特（十）Hellokitty母公司六年的至暗时刻——一个IP帝国的衰败，不是因为IP老了",
+    "link": "http://xueqiu.com/9326334102/396854310",
+    "snippet": "它会不会有衰败的那一天？\n想要回答这个问题，最好的办法不是预测未来，而是回溯历史——去看看这个行业里的老前辈，那些曾经风光无限的IP公司，是怎么走过兴衰周期的。\n三丽鸥，Hellokitty的母公司，就是这样一个绝佳的研究样本。它在2014年到2019年间经历了一场持续六年的衰退——不是一年两年的波动，而是营收和利润的双双下滑，一路跌到谷底。（三丽鸥FY2013达到业绩峰值后连续6年减收减利，营业..."
   },
   "46": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "美国医疗费用的自费经历",
-    "link": "http://xueqiu.com/3769952153/397128771",
-    "snippet": "几个月前，她半夜把我叫醒说一只眼睛疼得厉害，连带着头疼。这种情况不用多说，急性青光眼。属于去一下医院很容易缓解的事。在急诊做了脑部CT，拍了X光片，最后开了一个口服药3种眼药水，症状现场缓解。我妈心疼钱，对我抱怨为什么要拍CT和X光。因为头疼，医生要排除中风；因为咳嗽，医生要排除肺部感染。这些都是诊疗手册的标准操作。只要来了医院，一个都少不了。一共在急诊待了4个小时，2个月后收到医院部分的账单，8..."
+    "title": "美银喊加息三次，瑞银说根本加不了，黄金到底应该听谁的？",
+    "link": "http://xueqiu.com/6087293231/396974699",
+    "snippet": "当下黄金交易的核心矛盾，是美联储年内到底加不加息。而当前华尔街头部投行之间，出现了极其罕见的极致分歧，多空观点完全针锋相对。\n其中最具代表性的就是美银与瑞银，一家极致鹰派、一家极致鸽派，两家机构的判断直接决定了当下黄金的短期定价。今天我们把两家机构的核心逻辑完整拆解，搞清楚加息的真假预期，才能看懂黄金接下来的走势。\n一、美银：2026年美联储将加息三次（全市场最鹰派预期）\n美银最新核心结论非常明确..."
   },
   "47": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "听完这场股东会，我选择继续重仓药明合联",
-    "link": "http://xueqiu.com/9926192452/397076326",
-    "snippet": "提前一天到的，住了一晚。昨晚群里的秉哥请客吃了顿私宴，开着他的比亚迪仰望来的——相当高大上。\n\n今天股东会，李锦才博士因为在国外谈生意，管理层基本都在线上接入，董秘方园总和她的 IR 团队在线下主持。\n正式会议流程很快。双语走完，审议年报、重选董事、续聘德勤、授权发股回购，投票不到二十分钟就结束了。前面这部分没什么花头，跟所有上市公司股东会一样。但李总在 QA 环节讲的几件事，让我觉得这一趟来得值..."
+    "title": "红利低波年均线策略还有效吗？",
+    "link": "http://xueqiu.com/3529405310/396934161",
+    "snippet": "红利低波年均线抄底策略很受大家欢迎\n#分红季，享红利# #食息族征文#\n但是最近红利低波持续走弱，中证红利已经跌破500日均线，且还在继续下行。很多朋友开始怀疑：年均线策略是不是失效了？\n今天我用三组历史数据（2016年熔断、2018年贸易战、2020年疫情）带大家看看，红利低波在长周期跌破后，最终是如何修复的。\n一、2020年成长股狂欢，红利低波全年横盘\n2020年是典型的大分化年份。创业板指全..."
   },
   "48": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "油运投资的回顾梳理与展望",
-    "link": "http://xueqiu.com/2979842247/397127034",
-    "snippet": "海峡解封，先出后进，相关方为了体现掌控力约束指定航线，又要排除水雷，通航风险反反复复船东要求风险溢价，但是里面那些早已满载的油轮集中放出来，缓解了燃眉之急，买家有时间与船东博弈……\n当前这个抢运潮，是飘在海峡里面的库存集中放出来，新成交的货盘甚少，而且黑船还是这其中的重要参与者，这不是油运股东所期待的抢船运油……\n才一个多星期，运价大起大落，运价高点低于一些人的预期，运价回落的速度快于很多人的预期..."
+    "title": "AI越强，增长飞轮越可能卡住？",
+    "link": "http://xueqiu.com/5690576263/396866856",
+    "snippet": "但从经济运行的角度看，技术只是起点。真正决定一轮技术革命能不能转化为长期增长的关键，在于效率红利能否重新变成劳动收入、消费能力和新增需求。生产率提高之后，如果成本下降带不来足够大的需求扩张，或者劳动收入无法通过新岗位创造，技术进步就很难变成社会层面的繁荣。\n我对此有一个概括：前三次工业革命，本质上是同一个增长飞轮在运转。效率提升带来成本下降，成本下降释放需求，需求扩张形成规模效应，规模效应继续压低..."
   },
   "49": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "为什么AI是第四次工业革命",
-    "link": "http://xueqiu.com/4716631839/397093062",
-    "snippet": "$英伟达(NVDA)$ $XD贵州茅(SH600519)$ $恒瑞医药(SH600276)$\n目前东西两面市场的核心主线都是AI，互相看不惯也两边掐不死，相爱相杀。核心原因是谁也不想错过第四次工业革命改变国运的风口，但又谁也不敢闭门造车，生怕闭关锁国成为历史罪人。\n人类工业迭代从未停下脚步：蒸汽机解放体力、电力普及能源、互联网实现数字化传输，而人工智能是人类历史上首个全行业通用、能自我迭代、自我进..."
+    "title": "成长，即使只爱一点点",
+    "link": "http://xueqiu.com/3559889031/396826304",
+    "snippet": "尤其是私募，一些成名许久的老将，纷纷写信解释净值回撤的原因，以及对当下持股的坚守与坚信。\n看完这些信，突然想起之前和一位FOF基金经理闲聊时提及的两个概念：资产管理和财富管理。\n资产管理，主语是资产，那些抽象的、不具有人情味的金融投资标的。在许多老将心中，他们做的，显然是资产管理，将自己的人生观、价值观映射在资产走势的涨涨跌跌上，而持有人的资金，则是他们募集来践行这种资产管理的手段。我甚至觉得，许..."
   },
   "50": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "美国头部猪企多年平均头猪利润仅10美元？",
-    "link": "http://xueqiu.com/9135070491/397103666",
-    "snippet": "美国头部猪企多年平均下来，头均利润确实是10美元左右！\n但是这也不算利空啊！\n10美元＝70人民币！\n美国那边肉价比中国便宜20%，也就是他们正常出栏一头猪是1300元左右。\n70/1300=0.054，净利率5.4%！这是很常见很普通很标准的工业化企业利润！\n那按照温氏肉价常态化后预估的1200亿营收，同等取5.4%净利率，1200×0.054=64.8亿，也没什么问题啊！\n牧原净利率取比温氏高..."
+    "title": "红利和自由现金流“渣”到不行，还能爱吗？",
+    "link": "http://xueqiu.com/2356382715/396870331",
+    "snippet": "我很理解他们的感受。下跌本身不一定错，但眼看着宽基指数在科技成长板块的带领下不断创新高，自己手里的红利和自由现金流却阴跌不止——这种感觉，就像全班都在进步，唯独自己在退步。错上加错，莫过于此。\n这之前写过多篇文章谈过红利和自由现金流，但面对当下的市场环境和投资者的真实焦虑，我觉得有几个观点还需要再重申一遍。\n01 年度正收益是常态，但波动不小也是常态\n如果看红利低波和自由现金流全收益指数，近十年来..."
   },
   "51": {
     "category": "社会民生 (Society & Life)",
-    "title": "兜兜转转四款笔记软件，我终于为思考找到了安身之所",
-    "link": "https://sspai.com/post/110935",
-    "snippet": "Matrix首页推荐Matrix是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选Matrix最优质的文章，展示来自用户的最真实的体验和观点。文章代表作者个人观点 ...查看全文"
+    "title": "北京最高楼“中国尊”遭小型飞机撞击",
+    "link": "https://cn.nytimes.com/china/20260627/china-plane-crash-beijing/?utm_source=RSS",
+    "snippet": "事发周五晚高峰时段，数据显示飞机从平谷起飞后飞往市中心。目前尚不清楚这起事故是意外还是人为造成。飞行员的身份、下落以及现场伤亡情况也尚不明确。\n\n                    \nMaxim Shemetov/Reuters\n                    \n周五，北京的中国尊大厦（又名中信大厦）外墙受损。"
   },
   "52": {
     "category": "社会民生 (Society & Life)",
-    "title": "俄西双城游记：莫斯科时代折叠，圣彼得堡文化巡礼",
-    "link": "https://sspai.com/post/111347",
-    "snippet": "在莫斯科的时代折叠与彼得堡的文化巡礼之间，发现俄罗斯的不同面貌。查看全文"
+    "title": "西瓜有多健康？",
+    "link": "https://cn.nytimes.com/health/20260626/watermelon-health-benefits-recipes/?utm_source=RSS",
+    "snippet": "西瓜的含水量高达91%，在炎热夏日里能帮助你补水；口感很甜但含糖量远低于想象，热量也很低；它不含脂肪和钠，对心脏有益。西瓜不适合在反季节食用，新鲜即美味。\n\n                    \nChristopher Simpson for The New York Times. Food Stylist: Simon Andrews. Prop Stylist: Paige Hicks."
   },
   "53": {
     "category": "社会民生 (Society & Life)",
-    "title": "本周看什么 | 最近值得一看的 10 部作品",
-    "link": "https://sspai.com/post/111562",
-    "snippet": "📅本周新预告《克拉拉与太阳》首支预告6月23日，电影《克拉拉与太阳》发布了首支预告，将于10月23日在北美上映。塔伊加·维迪提执导，詹娜·奥尔特加、艾米·亚当斯主演，改编自石黑一雄的同名小说，人工智能 ...查看全文"
+    "title": "伊朗袭击货船，霍尔木兹海峡航运再次中断",
+    "link": "https://cn.nytimes.com/world/20260626/iran-strait-of-hormuz-threat-rubio-bahrain/?utm_source=RSS",
+    "snippet": "遇袭货船隶属台湾船运公司长荣海运，美国官员称该船在途径霍尔木兹海峡时遭到无人机打击。袭击导致恢复这条关键水道航运的努力再次遭受重挫。袭击发生后油价跳涨。\n\n                    \nElke Scholiers/Getty Images\n                    \n周二，靠近霍尔木兹海峡阿曼海岸外的油轮和货船。"
   },
   "54": {
     "category": "社会民生 (Society & Life)",
-    "title": "探索快捷指令的上限：用网页视图创建丰富界面与交互",
-    "link": "https://sspai.com/prime/story/create-webview-in-shortcuts",
-    "snippet": "从锁屏按钮、锁屏小组件、负一屏小组件，到桌面小组件、控制中心、Siri、自动化触发……iPhone的快捷指令有着超级多的打开方式，我们也可以为自己写的或从网络上获取的实用快捷指令设置一种最顺手的。与之 ...查看全文\n本文为会员文章，出自《单篇文章》，订阅后可阅读全文。"
+    "title": "朝鲜“崔贤号”驱逐舰服役，凸显金正恩海军核武化雄心",
+    "link": "https://cn.nytimes.com/asia-pacific/20260626/north-korea-destroyer-nuclear/?utm_source=RSS",
+    "snippet": "金正恩宣布该国首艘海军驱逐舰“崔贤号”入役，并称其装备了可搭载核弹头的导弹。这是朝鲜有史以来建造的最大战舰，已成为金正恩扩大海军并使其核武化努力的象征。\n\n                    \nKorean Central News Agency, via Reuters\n                    \n朝中社发布的一张照片据称显示了朝鲜最高领导人金正恩（中）周二在南浦港出席新型驱逐..."
   },
   "55": {
     "category": "社会民生 (Society & Life)",
-    "title": "空调续命之外的清凉：这是我们的夏日降温「新」方案",
-    "link": "https://sspai.com/post/100319",
-    "snippet": "当夏天的热浪席卷城市，北方在烈日下承受着如烤箱般的双面炙烤，南方在骄阳下忍受着如蒸笼般的闷湿高温，能够每天陪伴我们的「降温好物」成为必需。又是一年盛夏时，我们邀请了6位少数派作者，聊聊那些真正融入日常 ...查看全文"
+    "title": "中国AI模型与Anthropic、OpenAI性能差距缩小",
+    "link": "https://cn.nytimes.com/technology/20260626/zai-china-artificial-intelligence-models/?utm_source=RSS",
+    "snippet": "中国初创公司智谱新发布的人工智能模型性能几乎与Anthropic的Fable和Mythos模型相当，使用成本却更为低廉。目前全球人工智能模型排行榜中有六款来自中国。"
   },
   "56": {
     "category": "社会民生 (Society & Life)",
-    "title": "林檎越东瀛：苹果的日本之旅",
-    "link": "https://sspai.com/post/111297",
-    "snippet": "当年「林檎渡东瀛」的试探，终演变成一场与亚洲产业命运相依的交响。查看全文"
+    "title": "一项关于癌症治疗时机的中国研究被《自然-医学》撤稿",
+    "link": "https://cn.nytimes.com/science/20260626/china-cancer-treatment-research-retraction/?utm_source=RSS",
+    "snippet": "这项研究指出，上午接受静脉输注的癌症患者预后好于下午接受输注的患者。文章发表后遭到质疑，《自然-医学》本周撤回了这项研究，称其试验设计和结果存在不规范之处。\n\n                    \nJenny Kane/Associated Press\n                    \n《自然-医学》撤回了一项研究，该研究发现癌症治疗若在上午进行，疗效将大幅提升。"
   },
   "57": {
     "category": "社会民生 (Society & Life)",
-    "title": "派早报：鸿蒙智行发布尊界 S800 Grand Design 典藏大观",
-    "link": "https://sspai.com/post/111541",
-    "snippet": "Apple 调整产品价格，Figma 发布多项更新等。查看全文"
+    "title": "一场末日浩劫：被世界遗忘的缅甸内战",
+    "link": "https://cn.nytimes.com/asia-pacific/20260625/myanmar-civil-war-rebels-airstrikes/?utm_source=RSS",
+    "snippet": "当乌克兰和伊朗的冲突吸引全世界的聚光灯，有5000万人口的缅甸正在一场持续五年、无人关注的内战中崩溃。时报记者探访了仿佛迷失于末日浩劫中的战场腹地。\n\n                    \nDaniel Berehulak/The New York Times\n                    \n在一条被遗忘的前线上，反抗军在丛林深处作战。"
   },
   "58": {
     "category": "社会民生 (Society & Life)",
-    "title": "新玩意 245｜少数派的编辑们最近买了啥？",
-    "link": "https://sspai.com/post/111518",
-    "snippet": "关于栏目很多读者都会好奇少数派的编辑们到底平时都「买了啥」。我们希望通过「编辑部的新玩意」介绍编辑部成员们最近在用的新奇产品，让他们自己来谈谈这些新玩意的使用体验究竟如何。@克莱德：GoogleSta ...查看全文"
+    "title": "重庆男子虐狗引发抗议，示威者呼吁制定反虐待动物法律",
+    "link": "https://cn.nytimes.com/china/20260626/dog-animal-abuse-china-protest/?utm_source=RSS",
+    "snippet": "重庆一名男子的虐狗视频在社交媒体曝光后，数百人聚集在他的公寓外抗议，示威者与警方发生暴力冲突。随着养宠人数的增加，越来越多中国人呼吁推动反虐待动物立法。\n\n                    \nVideo obtained by The New York Times"
   },
   "59": {
     "category": "社会民生 (Society & Life)",
-    "title": "给记忆一个归处：我为什么开始使用 Apple 手记",
-    "link": "https://sspai.com/post/111421",
-    "snippet": "《手记》是Apple在iOS17.2中推出的原生日记应用，它可以帮助用户更轻松地记录生活、保存回忆、培养反思与感恩等习惯。今年以来，我频繁地使用手记这款应用。不过，我开始使用它的契机并不是为了写日记， ...查看全文"
+    "title": "一分钟内两次超7级强震：详解委内瑞拉地震",
+    "link": "https://cn.nytimes.com/science/20260626/venezeula-earthquakes-faults-geology/?utm_source=RSS",
+    "snippet": "为什么一次强震之后紧接着又发生了一次强震？这次双震为何破坏性如此之大？会有强余震吗？本文总结了目前对这次委内瑞拉灾难性地震的认识，以及对未来几天的预期。\n\n                    \nLeonardo Fernandez Viloria/Reuters\n                    \n周四，加拉加斯一处倒塌建筑现场的急救人员。"
   },
   "60": {
     "category": "社会民生 (Society & Life)",
-    "title": "把心情贴在手机背面：XTREM INNO 极稚墨水屏手机壳体验",
-    "link": "https://sspai.com/post/111483",
-    "snippet": "手机主屏幕的个性化，如今越发受到重视。遍观各大手机操作系统的更新，几乎都会提到主屏幕装扮方式的增加——从壁纸、时钟再到图标、挂件，几乎没有哪个角落是不能按自己喜好调整的。对比之下，手机背面反而成为了「 ...查看全文"
+    "title": "AI热潮下的“K型分化”警钟：韩国台湾经济鸿沟扩大",
+    "link": "https://cn.nytimes.com/business/20260625/taiwan-korea-ai-chips/?utm_source=RSS",
+    "snippet": "人工智能需求推动了韩国和台湾股市上涨、出口繁荣，其他经济领域却被远远甩在了后面。大部分劳动力受雇于芯片行业之外，增长的主要成果并未流向大众，加剧了收入鸿沟。\n\n                    \nAn Rong Xu for The New York Times"
   }
 }
