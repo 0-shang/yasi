@@ -38,27 +38,10 @@ const defaultRssSources = {
   "实用工具资源 (Tools & Resources)": {
     limit: 30,
     sources: [
-      // ── GitHub Trending (双镜像保证可用性) ──
-      { url: "https://rsshub.rssforever.com/github/trending/daily/any", quota: 10, label: "GitHub Trending (主)" },
-      { url: "https://rsshub.app/github/trending/daily/any",            quota: 10, label: "GitHub Trending (备)" },
-
-      // ── Show HN: 开发者分享自己做的工具/网站/项目 ──
-      { url: "https://hnrss.org/show",                                  quota: 5,  label: "Show HN" },
-
-      // ── Lifehacker: 实用生活/效率小技巧与工具推荐 ──
-      { url: "https://lifehacker.com/feed/rss",                         quota: 4,  label: "Lifehacker" },
-
-      // ── MakeUseOf: 各平台实用工具/App/网站测评 ──
-      { url: "https://www.makeuseof.com/feed/",                         quota: 4,  label: "MakeUseOf" },
-
-      // ── Lobste.rs: 程序员社区，专注实用技术工具讨论 ──
-      { url: "https://lobste.rs/rss",                                   quota: 3,  label: "Lobste.rs" },
-
-      // ── It's FOSS: 开源软件测评/推荐 ──
-      { url: "https://itsfoss.com/rss",                                 quota: 3,  label: "It's FOSS" },
-
-      // ── AlternativeTo: 发现更好替代品的网站 (补位备用) ──
-      { url: "https://alternativeto.net/rss/",                          quota: 3,  label: "AlternativeTo" },
+      // ── 全部改为 GitHub 资源，确保都是开源项目/代码工具 ──
+      { url: "https://rsshub.rssforever.com/github/trending/daily/any",    quota: 15, label: "GitHub 每日趋势" },
+      { url: "https://rsshub.app/github/trending/daily/any",               quota: 10, label: "GitHub 每日趋势(备)" },
+      { url: "https://rsshub.rssforever.com/github/trending/weekly/any",   quota: 5,  label: "GitHub 每周趋势" }
     ]
   },
   "科技人工智能 (Tech & AI)": {
@@ -84,16 +67,12 @@ const defaultRssSources = {
   "社会民生 (Society & Life)": {
     limit: 10,
     sources: [
-      // ── 微博热搜: 实时热议话题，是当下最真实的民间声音 ──
-      { url: "https://rsshub.rssforever.com/weibo/search/hot",          quota: 5, label: "微博热搜" },
-      // ── 知乎热榜: 高质量问答，充满反常识与人生洞察 ──
-      { url: "https://rsshub.rssforever.com/zhihu/hot",                 quota: 5, label: "知乎热榜" },
-      // ── 少数派: 生活方式、效率工具、消费观念 ──
-      { url: "https://sspai.com/feed",                                  quota: 3, label: "少数派" },
-      // ── 纽约时报中文: 全球视野下的社会现象 ──
-      { url: "https://cn.nytimes.com/rss.html",                         quota: 3, label: "纽约时报中文" },
-      // ── BBC中文 (备用兜底) ──
-      { url: "https://feeds.bbci.co.uk/zhongwen/simp/rss.xml",          quota: 2, label: "BBC中文" },
+      // ── V2EX 热门主题: 程序员/互联网人的真实生活、职场、情感、搞钱吐槽，极具话题性 ──
+      { url: "https://rsshub.rssforever.com/v2ex/topics/hot",           quota: 4, label: "V2EX 热门讨论" },
+      // ── 虎扑步行街: 极度接地气的两性、生活、社会毒打真实案例 ──
+      { url: "https://rsshub.rssforever.com/hupu/bbs/bxj",              quota: 3, label: "虎扑步行街" },
+      // ── 知乎热榜: 经典的高质量/反常识问答聚集地 ──
+      { url: "https://rsshub.rssforever.com/zhihu/hot",                 quota: 3, label: "知乎热榜" }
     ]
   }
 };
