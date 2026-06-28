@@ -205,7 +205,7 @@ cron.schedule('0 7-23 * * *', () => {
       let pushCmd = 'git push';
       if (pat) pushCmd = `git push https://${pat}@github.com/0-shang/yasi.git HEAD:main`;
 
-      exec(`git add tweets/ && git commit -m "bot: auto hourly publish" && git pull --rebase origin main && ${pushCmd}`, { cwd: repoRoot }, (errSync) => {
+      exec(`git add tweets/ && git commit --allow-empty -m "bot: auto hourly publish" && ${pushCmd}`, { cwd: repoRoot }, (errSync) => {
         if (errSync) console.error('Git sync failed after hourly publish:', errSync);
         syncCrossRepo(null);
       });
@@ -533,7 +533,9 @@ bot.action(/pubfile_(.+)/, async (ctx) => {
     
     // Automatically commit and push the changes (moved files from approved to published)
     const repoRoot = path.join(__dirname, '..', '..');
-    exec(`git add tweets/ && git commit -m "bot: published ${filename}" && git pull --rebase origin main && git push`, { cwd: repoRoot }, () => {
+    const patForPub = process.env.GITHUB_PAT || '';
+    const pushCmdForPub = patForPub ? `git push https://${patForPub}@github.com/0-shang/yasi.git HEAD:main` : 'git push';
+    exec(`git add tweets/ && git commit --allow-empty -m "bot: published ${filename}" && ${pushCmdForPub}`, { cwd: repoRoot }, () => {
       const lines = stdout.split('\n');
       const urlLines = lines.filter(l => l.includes('Moved file to'));
       
@@ -565,7 +567,9 @@ bot.action('publish_approved', async (ctx) => {
     
     // Automatically commit and push the changes (moved files from approved to published)
     const repoRoot = path.join(__dirname, '..', '..');
-    exec(`git add tweets/ && git commit -m "bot: published from approved folder" && git pull --rebase origin main && git push`, { cwd: repoRoot }, () => {
+    const patForBulk = process.env.GITHUB_PAT || '';
+    const pushCmdForBulk = patForBulk ? `git push https://${patForBulk}@github.com/0-shang/yasi.git HEAD:main` : 'git push';
+    exec(`git add tweets/ && git commit --allow-empty -m "bot: published from approved folder" && ${pushCmdForBulk}`, { cwd: repoRoot }, () => {
       // Find the Twitter URLs from the stdout logs to show to the user
       const lines = stdout.split('\n');
       const urlLines = lines.filter(l => l.includes('Moved file to'));
