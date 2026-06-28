@@ -183,24 +183,31 @@ function syncCrossRepo(ctx = null) {
 cron.schedule('0 7-23 * * *', () => {
   console.log('Running scheduled hourly publish task (7-23 Beijing time)...');
   const automatorDir = path.join(__dirname, '..');
+  const repoRoot = path.join(__dirname, '..', '..');
   const env = Object.assign({}, process.env, { 
     IGNORE_TIME_RESTRICTION: 'true',
     MAX_TWEETS_PER_RUN: '1' // Only publish one per hour
   });
-  
-  exec('npm run publish', { cwd: automatorDir, env }, (err, stdout, stderr) => {
-    if (err) {
-      console.error('Hourly publish failed:', err.message);
-      return;
+
+  // 先 git pull，同步 GitHub 上的删除操作，再执行发布
+  exec('git pull --rebase origin main', { cwd: repoRoot }, (pullErr) => {
+    if (pullErr) {
+      console.error('Pre-publish git pull failed:', pullErr.message);
+      // pull 失败也继续发推，避免因网络问题导致全天不发推
     }
-    const repoRoot = path.join(__dirname, '..', '..');
-    const pat = process.env.GITHUB_PAT || '';
-    let pushCmd = 'git push';
-    if (pat) pushCmd = `git push https://${pat}@github.com/0-shang/yasi.git HEAD:main`;
-    
-    exec(`git add tweets/ && git commit -m "bot: auto hourly publish" && git pull --rebase origin main && ${pushCmd}`, { cwd: repoRoot }, (errSync) => {
-      if (errSync) console.error('Git sync failed after hourly publish:', errSync);
-      syncCrossRepo(null);
+    exec('npm run publish', { cwd: automatorDir, env }, (err, stdout, stderr) => {
+      if (err) {
+        console.error('Hourly publish failed:', err.message);
+        return;
+      }
+      const pat = process.env.GITHUB_PAT || '';
+      let pushCmd = 'git push';
+      if (pat) pushCmd = `git push https://${pat}@github.com/0-shang/yasi.git HEAD:main`;
+
+      exec(`git add tweets/ && git commit -m "bot: auto hourly publish" && git pull --rebase origin main && ${pushCmd}`, { cwd: repoRoot }, (errSync) => {
+        if (errSync) console.error('Git sync failed after hourly publish:', errSync);
+        syncCrossRepo(null);
+      });
     });
   });
 }, {
