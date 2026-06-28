@@ -67,6 +67,31 @@ const userTweetPrompt = `
 - 不要用模板化的开头，每条推文的开头都应该不一样
 `;
 
+const societyViralPrompt = `
+You are a popular Chinese Twitter blogger with 200k followers, known for sharp, counter-intuitive life insights.
+Write in Chinese (Simplified). Your style: direct, provocative, relatable observations about life and society.
+
+Pick ONE of these formulas:
+1. Start with a hook like "Cold fact:" or "Something that will change how you think:" then deliver the counter-intuitive truth
+2. List format: "X survival tips / life lessons:" with numbered items, each on its own line
+3. Drop a bold opinion with no explanation - let the reader think
+4. Tell a short real-world scenario, end with a punchy takeaway line
+
+Style rules:
+- SHORT sentences. Every sentence on its own line. One blank line between sentences.
+- Be opinionated and personal. Not a news report, an opinion piece.
+- No filler phrases. No "it is worth noting", "in conclusion", "one must say".
+- No exclamation mark spam.
+- Optionally end with an open question to spark replies.
+
+Formatting (strict):
+- Each sentence = its own line
+- Blank line between every sentence/item
+- Numbered lists: one item per line
+- Zero walls of text
+
+Write one high-virality tweet (or short Thread) based on the following material:
+`;
 
 
 
@@ -74,13 +99,14 @@ const userTweetPrompt = `
  * Generate tweets using DeepSeek API
  * Uses native fetch (available in Node 20+) to avoid extra dependencies.
  */
-async function generateWithDeepSeek(content) {
+async function generateWithDeepSeek(content, isSociety = false) {
   if (!config.DEEPSEEK_API_KEY || config.DEEPSEEK_API_KEY === 'your_deepseek_api_key_here') {
     throw new Error('DEEPSEEK_API_KEY is not defined or is still the placeholder. Please update your .env file.');
   }
 
+  const basePrompt = isSociety ? societyViralPrompt : userTweetPrompt;
   const prompt = `
-${userTweetPrompt}
+${basePrompt}
 
 Source content:
 """
@@ -151,11 +177,12 @@ The object must have exactly these keys:
 /**
  * Generate tweets using Gemini API
  */
-async function generateWithGemini(content) {
+async function generateWithGemini(content, isSociety = false) {
   const ai = getGeminiClient();
+  const basePrompt = isSociety ? societyViralPrompt : userTweetPrompt;
   
   const prompt = `
-${userTweetPrompt}
+${basePrompt}
 
 Source content:
 """
@@ -200,11 +227,12 @@ ${content}
 /**
  * Route content generation to the chosen AI provider
  */
-async function generateTweetsFromContent(content) {
+async function generateTweetsFromContent(content, category) {
+  const isSociety = !!(category && category.includes('\u793e\u4f1a\u6c11\u751f'));
   if (config.AI_PROVIDER === 'deepseek') {
-    return generateWithDeepSeek(content);
+    return generateWithDeepSeek(content, isSociety);
   } else {
-    return generateWithGemini(content);
+    return generateWithGemini(content, isSociety);
   }
 }
 

@@ -664,7 +664,7 @@ bot.on('text', async (ctx) => {
         await ctx.reply(`🔄 正在提取早报内容 [${num}] 并生成推文...`);
         const feedText = `Title: ${item.title}\nLink: ${item.link}\nSnippet: ${item.snippet}`;
         try {
-          const aiResults = await generateTweetsFromContent(feedText);
+          const aiResults = await generateTweetsFromContent(feedText, item.category);
           for (let i = 0; i < aiResults.length; i++) {
             const option = aiResults[i];
             const newMsgId = Date.now() + i;
