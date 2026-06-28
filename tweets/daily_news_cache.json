@@ -1,362 +1,302 @@
 {
   "1": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "Show HN: Tool to Convert PDF to a Video",
-    "link": "https://caringmachines.com/shop/convert/pdf2vid",
-    "snippet": "Article URL: https://caringmachines.com/shop/convert/pdf2vid\nComments URL: https://news.ycombinator.com/item?id=48709552\nPoints: 1\n# Comments: 0"
+    "title": "calesthio/OpenMontage",
+    "link": "https://github.com/calesthio/OpenMontage",
+    "snippet": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio.\nLanguage: Python\nStars: 26623\n..."
   },
   "2": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "Show HN: Verigate – Cryptographic authorization receipts for AI agents",
-    "link": "https://verigate.cloud",
-    "snippet": "Article URL: https://verigate.cloud\nComments URL: https://news.ycombinator.com/item?id=48709538\nPoints: 1\n# Comments: 0"
+    "title": "kunchenguid/no-mistakes",
+    "link": "https://github.com/kunchenguid/no-mistakes",
+    "snippet": "git push no-mistakes\nLanguage: Go\nStars: 3986\nForks: 221"
   },
   "3": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "Show HN: Bcad – An OpenSCAD-syntax CAD powered by OpenCASCADE",
-    "link": "https://asm32.info/johnfound/bcad-openscad-syntax-with-exact-geometry",
-    "snippet": "Article URL: https://asm32.info/johnfound/bcad-openscad-syntax-with-exact-geometry\nComments URL: https://news.ycombinator.com/item?id=48709405\nPoints: 1\n# Comments: 1"
+    "title": "palmier-io/palmier-pro",
+    "link": "https://github.com/palmier-io/palmier-pro",
+    "snippet": "macOS video editor built for AI\nLanguage: Swift\nStars: 9276\nForks: 655"
   },
   "4": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "Show HN: Paige – A spoiler-free AI book chat",
-    "link": "https://github.com/derekmpeterson/paige",
-    "snippet": "I have a terrible memory and often forget characters or minor plot points if I put a book down for too long.  I built Paige as a way to ask questions to refresh my memory while avoiding spoilers for t..."
+    "title": "google-labs-code/design.md",
+    "link": "https://github.com/google-labs-code/design.md",
+    "snippet": "A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.\nLanguage: TypeScript\nStars: 22762\nForks: 181..."
   },
   "5": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "Show HN: Shikhu – Understand the code your agents write",
-    "link": "https://github.com/arjunpatel7/shikhu",
-    "snippet": "Agents write code really well, but it can get hard to understand what they've written and why. Shikhu is a CLI tool and Agent Skill that facilitates learning your code through self-quizzing, transcrip..."
+    "title": "JCodesMore/ai-website-cloner-template",
+    "link": "https://github.com/JCodesMore/ai-website-cloner-template",
+    "snippet": "Clone any website with one command using AI coding agents\nLanguage: TypeScript\nStars: 22675\nForks: 3240"
   },
   "6": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "Show HN: DRM-Free Books",
-    "link": "https://frequal.com/Perspectives/DrmFreeAuthors.html",
-    "snippet": "After several years of mandatory DRM lockdowns from most commercial book sources, now authors have a choice when it comes to DRM for their books.  Pick authors and books that are DRM-free, or download..."
+    "title": "interviewstreet/hiring-agent",
+    "link": "https://github.com/interviewstreet/hiring-agent",
+    "snippet": "AI agent to evaluate and score resumes.\nLanguage: Python\nStars: 3140\nForks: 697"
   },
   "7": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "Show HN: A directory of open source alternatives to proprietary software",
-    "link": "https://houseofopen.com/",
-    "snippet": "Article URL: https://houseofopen.com/\nComments URL: https://news.ycombinator.com/item?id=48709140\nPoints: 1\n# Comments: 0"
+    "title": "ZhuLinsen/daily_stock_analysis",
+    "link": "https://github.com/ZhuLinsen/daily_stock_analysis",
+    "snippet": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。  LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-f..."
   },
   "8": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "The Best VPNs of 2026 Are up to 85% Off During Prime Day",
-    "link": "https://lifehacker.com/tech/best-vpn-deals-prime-day-2026?utm_medium=RSS",
-    "snippet": "These five VPN subscriptions have big discounts during Prime Day."
+    "title": "stablyai/orca",
+    "link": "https://github.com/stablyai/orca",
+    "snippet": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop and mobile.\nLanguage: TypeScript\nStars: 8541\nForks: 595"
   },
   "9": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "Every Fitbit With a Screen Is on Sale for Prime Day, up to 47% Off",
-    "link": "https://lifehacker.com/health/best-fitbit-deals-prime-day-2026?utm_medium=RSS",
-    "snippet": "The Charge 6, Inspire 3, and more are all heavily discounted."
+    "title": "Panniantong/Agent-Reach",
+    "link": "https://github.com/Panniantong/Agent-Reach",
+    "snippet": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.\nLanguage: Python\nStars: 44272\nForks: 3528"
   },
   "10": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "Adjustable Dumbbells Are My Favorite Home Gym Upgrade, and These Sets Are up to 31% Off for Prime Day",
-    "link": "https://lifehacker.com/health/best-adjustable-dumbbell-deals-prime-day-2026?utm_medium=RSS",
-    "snippet": "If you're looking to build strength at home, but you're worried about space constraints,  adjustable dumbbells are the way to go."
+    "title": "mukul975/Anthropic-Cybersecurity-Skills",
+    "link": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
+    "snippet": "817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF & MITRE F3 (Fight Fraud) · agentskills.io standard · Works with..."
   },
   "11": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "The Best Books, Movies, Video Games, and Podcasts to Check Out After Watching ‘Succession’",
-    "link": "https://lifehacker.com/entertainment/succession-streamalikes-books-movies-video-games-podcasts?utm_medium=RSS",
-    "snippet": "If you want more family angst and business drama in your entertainment, I've got you covered."
+    "title": "penpot/penpot",
+    "link": "https://github.com/penpot/penpot",
+    "snippet": "Penpot: The open-source design tool for design and code collaboration\nLanguage: Clojure\nStars: 54353\nForks: 3528"
   },
   "12": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "10 Shows Like 'Mad Men' You Should Watch Next",
-    "link": "https://lifehacker.com/entertainment/10-shows-like-mad-men-you-should-watch-next?utm_medium=RSS",
-    "snippet": "We're all Mad here."
+    "title": "BuilderIO/agent-native",
+    "link": "https://github.com/BuilderIO/agent-native",
+    "snippet": "A framework for building agent-native applications.\nLanguage: TypeScript\nStars: 2831\nForks: 283"
   },
   "13": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "I Think Suunto Fitness Watches Are Way Underrated, and They're Discounted up to 25% Off for Prime Day",
-    "link": "https://lifehacker.com/health/suunto-run-best-deals-prime-day-2026?utm_medium=RSS",
-    "snippet": "The Suunto Run is one of my favorites—and there are also deals on the Vertical, Race, and Peak lines too."
+    "title": "jamiepine/voicebox",
+    "link": "https://github.com/jamiepine/voicebox",
+    "snippet": "The open-source AI voice studio. Clone, dictate, create.\nLanguage: TypeScript\nStars: 35305\nForks: 4239"
   },
   "14": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "Apple Just Raised Prices on These Devices by Hundreds of Dollars, but Many Are Still Discounted on Prime Day",
-    "link": "https://lifehacker.com/tech/apple-just-raised-its-prices-on-these-products?utm_medium=RSS",
-    "snippet": "Tim Cook warned us price hikes were coming, and now they're here."
+    "title": "aws/agent-toolkit-for-aws",
+    "link": "https://github.com/aws/agent-toolkit-for-aws",
+    "snippet": "Official, AWS-supported MCP servers, skills, and plugins to help AI agents build on AWS\nLanguage: Python\nStars: 1530\nForks: 128"
   },
   "15": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "These Cordless Tools Are up to 55% off for Home Depot's 4th of July Sale",
-    "link": "https://lifehacker.com/home/home-depot-cordless-tools-deals-prime-day-2026?utm_medium=RSS",
-    "snippet": "To get your DIY projects done under budget, take a look at these cordless power-tool deals."
+    "title": "alibaba/page-agent",
+    "link": "https://github.com/alibaba/page-agent",
+    "snippet": "JavaScript in-page GUI agent. Control web interfaces with natural language.\nLanguage: TypeScript\nStars: 20448\nForks: 1763"
   },
   "16": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "The Best Prime Day Smartphone Deals up to 35% Off",
-    "link": "https://lifehacker.com/tech/best-smartphone-deals-prime-day-2026?utm_medium=RSS",
-    "snippet": "Current Samsung Galaxy and Google Pixel phones, foldables, and unlocked Motorola models are starting as low as $85."
+    "title": "Stirling-Tools/Stirling-PDF",
+    "link": "https://github.com/Stirling-Tools/Stirling-PDF",
+    "snippet": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere\nLanguage: Java\nStars: 84917\nForks: 7380"
   },
   "17": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "The Best Prime Day Deals on Robot Vacuums, up to 45% Off",
-    "link": "https://lifehacker.com/tech/best-robot-vacuum-deals-prime-day-2026?utm_medium=RSS",
-    "snippet": "Prime Day features some robot-vacuum deals worth your attention from Roborock, Dreame, Ecovacs, and Eufy."
+    "title": "koala73/worldmonitor",
+    "link": "https://github.com/koala73/worldmonitor",
+    "snippet": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface\nLanguage: TypeScript\nStars: 6062..."
   },
   "18": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "15 of the Best Prime Day Deals Actually Worth Paying Attention To",
-    "link": "https://lifehacker.com/tech/the-best-deals-worth-paying-attention-to-prime-day-2026?utm_medium=RSS",
-    "snippet": "Literally millions of items are discounted for Prime Day, but these are the sales you don't want to miss."
+    "title": "NanmiCoder/MediaCrawler",
+    "link": "https://github.com/NanmiCoder/MediaCrawler",
+    "snippet": "小红书笔记 | 评论爬虫、抖音视频 | 评论爬虫、快手视频 | 评论爬虫、B 站视频 ｜ 评论爬虫、微博帖子 ｜ 评论爬虫、百度贴吧帖子 ｜ 百度贴吧评论回复爬虫  | 知乎问答文章｜评论爬虫\nLanguage: Python\nStars: 54004\nForks: 11034"
   },
   "19": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "The Best Prime Day Deals on Shokz Headphones, up to 40% Off",
-    "link": "https://lifehacker.com/health/shokz-open-ear-headphones-deals-prime-day-2026?utm_medium=RSS",
-    "snippet": "When you want to stay aware of your surroundings on the move, Shokz open-ear headphones are a good bet. Prime Day has knocked up to 40% off several models."
+    "title": "topoteretes/cognee",
+    "link": "https://github.com/topoteretes/cognee",
+    "snippet": "Cognee is the open-source AI memory platform for agents. Give your AI agents persistent long-term memory across sessions with a self-hosted knowledge graph engine.\nLanguage: Python\nStars: 24714\nForks:..."
   },
   "20": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "Save 30% on RingConn’s Gen 2 and Enjoy Health Data Without the Subscription Fees",
-    "link": "https://lifehacker.com/ad/tech/save-30-on-ringconns-gen-2-and-enjoy-health-data-without-the-subscription?utm_medium=RSS",
-    "snippet": "This smart ring is light, durable, comfortable, and extra easy to snag during Prime Day."
+    "title": "bytedance/deer-flow",
+    "link": "https://github.com/bytedance/deer-flow",
+    "snippet": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of ta..."
   },
   "21": {
-    "category": "实用工具资源 (Tools & Resources)",
-    "title": "What's New on Netflix in July 2026",
-    "link": "https://lifehacker.com/entertainment/whats-new-on-netflix-in-july-2026?utm_medium=RSS",
-    "snippet": "Enola Holmes returns, and Hot Ones comes to Netflix."
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "Access OpenAI models and Codex through your Oracle cloud commitment",
+    "link": "https://openai.com/index/openai-on-oracle-cloud",
+    "snippet": "Access OpenAI models and Codex through Oracle Cloud, using existing commitments to build and deploy AI with enterprise security and governance."
   },
   "22": {
-    "category": "实用工具资源 (Tools & Resources)",
-    "title": "Oura's Ceramic and Gold Rings Are Nearly 50% Off for Prime Day",
-    "link": "https://lifehacker.com/health/oura-ring-deals-prime-day-2026?utm_medium=RSS",
-    "snippet": "The Oura Ring 4's ceramic, gold, and rose-gold colors are nearly 50% off right now."
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "PRC-linked influence operations are targeting AI debates in the US",
+    "link": "https://openai.com/index/prc-linked-influence-operations-ai-debates",
+    "snippet": "A new report from OpenAI details PRC-linked influence operations using AI to target U.S. tech debates, data center narratives, tariffs, and false claims  about ChatGPT."
   },
   "23": {
-    "category": "实用工具资源 (Tools & Resources)",
-    "title": "The Best Prime Day TV Sales, According to a Tech Deals Writer",
-    "link": "https://lifehacker.com/tech/best-tv-deals-prime-day-2026?utm_medium=RSS",
-    "snippet": "These discounted TVs run the gamut from affordable 4K screens to premium OLEDs."
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "From data to decisions: how LSEG is scaling trusted AI",
+    "link": "https://openai.com/index/lseg",
+    "snippet": "See how LSEG uses OpenAI to scale trusted AI across its global business, accelerating insights, shrinking release cycles, and empowering 4,000 employees."
   },
   "24": {
-    "category": "实用工具资源 (Tools & Resources)",
-    "title": "These Gardening and Landscaping Tools Are up to 34% Off for Prime Day",
-    "link": "https://lifehacker.com/home/gardening-and-landscaping-tools-prime-day-2026?utm_medium=RSS",
-    "snippet": "Keep your yard trimmed and watered with these essentials."
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "How engineers at Nextdoor use Codex to build without limits",
+    "link": "https://openai.com/index/nextdoor",
+    "snippet": "How engineers at Nextdoor use Codex with GPT-5.5 to investigate hard-to-reproduce issues, build across platforms, and focus on product outcomes."
   },
   "25": {
-    "category": "实用工具资源 (Tools & Resources)",
-    "title": "These EGO Lawn Tools Will Make You Go Electric, and They're up to 44% Off for Prime Day",
-    "link": "https://lifehacker.com/home/ego-lawn-and-garden-cordless-tools-prime-day-2026?utm_medium=RSS",
-    "snippet": "Save some money on gas and invest in a set of cordless landscaping tools"
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "What Codex unlocks for Notion",
+    "link": "https://openai.com/index/notion",
+    "snippet": "How Notion uses Codex to one-shot specs, build AI Voice Input for the web, and multiply engineering power across small teams."
   },
   "26": {
-    "category": "实用工具资源 (Tools & Resources)",
-    "title": "This Powerful Eero Mesh Wifi System Is $120 Off Right Now, Its Lowest Price Yet",
-    "link": "https://lifehacker.com/tech/eero-pro-6e-mesh-wi-fi-system-sale-prime-day-2026?utm_medium=RSS",
-    "snippet": "Here's a straightforward way to improve wifi coverage across larger homes."
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "Industrial policy for the Intelligence Age",
+    "link": "https://openai.com/index/industrial-policy-for-the-intelligence-age",
+    "snippet": "Explore our ambitious, people-first industrial policy ideas for the AI era—focused on expanding opportunity, sharing prosperity, and building resilient institutions as advanced intelligence evolves."
   },
   "27": {
-    "category": "实用工具资源 (Tools & Resources)",
-    "title": "This Powerful Google Floodlight Camera Is $100 Off Right Now",
-    "link": "https://lifehacker.com/tech/google-floodlight-camera-prime-day-deal?utm_medium=RSS",
-    "snippet": "This is an all-in-one outdoor security solution for households already using Google's smart-home ecosystem."
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "Confidential submission of draft S-1 to the SEC",
+    "link": "https://openai.com/index/openai-submits-confidential-s-1",
+    "snippet": "OpenAI confirms a confidential S-1 submission to the SEC and has not yet determined timing for further action."
   },
   "28": {
-    "category": "实用工具资源 (Tools & Resources)",
-    "title": "The Samsung HW-Q800H Soundbar Is Over $350 Off Right Now, Its Lowest Price Yet",
-    "link": "https://lifehacker.com/tech/samsung-hw-q800h-soundbar-prime-day-2026?utm_medium=RSS",
-    "snippet": "The Samsung HW-Q800H is designed to help you hear even the mumbliest of dialogues—and it's at its lowest price ever for Prime Day."
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "Built to benefit everyone: our plan",
+    "link": "https://openai.com/index/built-to-benefit-everyone-our-plan",
+    "snippet": "A vision for the future of AI, focusing on access, safety, and shared prosperity as OpenAI works to ensure AGI benefits everyone."
   },
   "29": {
-    "category": "实用工具资源 (Tools & Resources)",
-    "title": "These Nothing Earbuds With Built-In ChatGPT Are 33% Off Right Now, Their Lowest Price Ever",
-    "link": "https://lifehacker.com/tech/nothing-earbuds-built-in-chatgpt-sale-prime-day-2026?utm_medium=RSS",
-    "snippet": "This Prime Day deal offers bass-forward sound, adjustable EQ, ANC, and transparent design."
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "Introducing the OpenAI Economic Research Exchange",
+    "link": "https://openai.com/index/economic-research-exchange",
+    "snippet": "OpenAI launches the Economic Research Exchange to study AI’s impact on jobs, productivity, and the economy. Applications are now open for selected research projects."
   },
   "30": {
-    "category": "实用工具资源 (Tools & Resources)",
-    "title": "This Five-Camera Blink Camera Bundle Is 65% Off Right Now, Its Lowest Price Ever",
-    "link": "https://lifehacker.com/tech/blink-outdoor-4-bundle-sale-prime-day-2026?utm_medium=RSS",
-    "snippet": "This Blink Outdoor 4 five-pack covers a surprising amount of ground for just over $100."
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "How Endava is redesigning software delivery around AI agents",
+    "link": "https://openai.com/index/endava-frontiers",
+    "snippet": "Learn how Endava is using AI agents, ChatGPT Enterprise, and Codex to accelerate software delivery, automate workflows, and build an AI-native culture across the enterprise."
   },
   "31": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "A near-autonomous AI chemist improves a challenging reaction in medicinal chemistry",
-    "link": "https://openai.com/index/ai-chemist-improves-reaction",
-    "snippet": "OpenAI and Molecule.one show how a near-autonomous AI chemist using GPT-5.4 improved a key drug-making reaction, advancing medicinal chemistry research."
+    "category": "理财投资 (Finance & Investment)",
+    "title": "Stocks Sink in Broad AI Rout Sparked by China's DeepSeek",
+    "link": "https://www.wsj.com/articles/nikkei-may-rise-as-weak-yen-raises-earnings-hopes-776a8056?mod=rss_markets_main",
+    "snippet": "U.S. stocks were mostly lower, with the Nasdaq leading declines as makers of AI infrastructure suffered steep falls, many in the double digits. Nvidia was down 16%."
   },
   "32": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "Introducing LifeSciBench",
-    "link": "https://openai.com/index/introducing-life-sci-bench",
-    "snippet": "Introducing LifeSciBench, an expert-authored, expert-reviewed benchmark for evaluating how AI systems handle real-world life science research tasks and decisions."
+    "category": "理财投资 (Finance & Investment)",
+    "title": "Comex Gold, Silver Settle Lower",
+    "link": "https://www.wsj.com/articles/gold-edges-lower-feds-rate-decision-in-focus-09dbfceb?mod=rss_markets_main",
+    "snippet": "Gold settled 1.4% lower, down two of the past three sessions, and silver fell 2.5%, down three of the past four sessions."
   },
   "33": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "Predicting model behavior before release by simulating deployment",
-    "link": "https://openai.com/index/deployment-simulation",
-    "snippet": "OpenAI introduces Deployment Simulation, a method to predict AI model behavior before deployment using real conversation data to improve safety and evaluation accuracy."
+    "category": "理财投资 (Finance & Investment)",
+    "title": "DeepSeek Won't Sink U.S. AI Titans",
+    "link": "https://www.wsj.com/articles/deepseek-us-ai-stocks-nvidia-broadcom-6cdfae81?mod=rss_markets_main",
+    "snippet": "Panic fueling the selloff of Nvidia, Broadcom and other tech giants is overblown."
   },
   "34": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "Introducing the OpenAI Partner Network",
-    "link": "https://openai.com/index/introducing-openai-partner-network",
-    "snippet": "OpenAI launches the Partner Network, investing $150M to help global partners accelerate enterprise AI adoption, deployment, and transformation."
+    "category": "理财投资 (Finance & Investment)",
+    "title": "Financial Services Roundup: Market Talk",
+    "link": "https://www.wsj.com/articles/financial-services-roundup-market-talk-94f52cba?mod=rss_markets_main",
+    "snippet": "Gain insight on Experian, SoFi Technologies and more in the latest Market Talks covering Financial Services."
   },
   "35": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "New OpenAI Academy courses for the next era of work",
-    "link": "https://openai.com/index/academy-courses-applying-ai-at-work",
-    "snippet": "OpenAI introduces three Academy courses that help people build practical AI skills, create repeatable workflows, and apply agents in everyday work."
+    "category": "理财投资 (Finance & Investment)",
+    "title": "Arabica Coffee Prices Hit Record on U.S., Colombia Tariff Spat",
+    "link": "https://www.wsj.com/articles/arabica-coffee-prices-hit-new-high-on-u-s-colombia-tariff-spat-582446fe?mod=rss_markets_main",
+    "snippet": "Arabica coffee prices hit a record level, as traders digested the withdrawal of President Trump’s threats to impose tariffs and economic sanctions on Colombia."
   },
   "36": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "How Preply combines AI and human tutors to personalize learning",
-    "link": "https://openai.com/index/preply",
-    "snippet": "Preply uses OpenAI to launch AI-generated lesson summaries, providing personalised feedback and language learning exercises."
+    "category": "理财投资 (Finance & Investment)",
+    "title": "Swiss franc, Japanese yen Rise as DeepSeek News Boosts Safe Havens",
+    "link": "https://www.wsj.com/articles/safe-haven-currencies-strengthen-amid-fears-over-global-tariffs-9964e17a?mod=rss_markets_main",
+    "snippet": "The Yen and Swiss Franc were stronger against the dollar as investors sought safe havens after Chinese start-up DeepSeek’s new AI model hit U.S. tech stocks."
   },
   "37": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "BBVA puts AI at the core of banking with OpenAI",
-    "link": "https://openai.com/index/bbva",
-    "snippet": "Learn how BBVA scaled ChatGPT Enterprise to 100,000 employees and partnered with OpenAI to accelerate AI-powered banking transformation worldwide."
+    "category": "理财投资 (Finance & Investment)",
+    "title": "Natural Gas Falls on Shifting Weather Forecasts",
+    "link": "https://www.wsj.com/articles/u-s-natural-gas-futures-fall-on-shifting-weather-forecasts-1ef3e457?mod=rss_markets_main",
+    "snippet": "U.S. natural gas futures fell after weekend updates took some of the chill out of early February weather forecasts."
   },
   "38": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "How an astrophysicist uses Codex to help simulate black holes",
-    "link": "https://openai.com/index/using-codex-to-simulate-black-holes",
-    "snippet": "Discover how astrophysicist Chi-kwan Chan uses Codex to build black hole simulations, helping scientists study extreme physics and test Einstein’s theory of general relativity."
+    "category": "理财投资 (Finance & Investment)",
+    "title": "Building-Products Distributor QXO Launches Hostile Bid for Beacon",
+    "link": "https://www.wsj.com/articles/building-products-distributor-qxo-launching-hostile-bid-for-beacon-de024410?mod=rss_markets_main",
+    "snippet": "QXO is taking its offer directly to shareholders after being rebuffed on several occasions."
   },
   "39": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "Supporting Europe’s work in ensuring a trustworthy AI ecosystem ",
-    "link": "https://openai.com/index/supporting-eu-trustworthy-ai-ecosystem",
-    "snippet": "OpenAI supports the EU Code of Practice on AI content transparency, advancing provenance standards and tools to help people understand AI-generated content."
+    "category": "理财投资 (Finance & Investment)",
+    "title": "Natural-Gas Firm Diversified Energy Strikes Deal for Permian Basin Player",
+    "link": "https://www.wsj.com/articles/natural-gas-firm-diversified-energy-nears-deal-for-permian-basin-player-4c1c5ff5?mod=rss_markets_main",
+    "snippet": "Maverick Natural Resources has operations in Texas and Oklahoma."
   },
   "40": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "OpenAI to acquire Ona",
-    "link": "https://openai.com/index/openai-to-acquire-ona",
-    "snippet": "OpenAI plans to acquire Ona to expand Codex with secure, persistent cloud environments, enabling long-running AI agents across enterprise workflows."
+    "category": "理财投资 (Finance & Investment)",
+    "title": "What's New This Tax Season That Can Save You Money",
+    "link": "https://www.wsj.com/articles/tax-season-2024-irs-filing-dates-explained-628a8b37?mod=rss_markets_main",
+    "snippet": "There are some new wrinkles, especially for those who sell things online or bought an EV."
   },
   "41": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "Blackstone Private Credit Limits Redemptions: It's \"a Feature, Not a Bug\"",
-    "link": "https://www.fool.com/investing/2026/06/28/blackstone-private-credit-limits-redemptions-its-a/?source=iedfolrf0000001",
-    "snippet": "Private credit funds are being swamped with redemption requests, but redemption limits aren't necessarily a bad thing."
+    "category": "社会民生 (Society & Life)",
+    "title": "[国产 API] GLM-5.2 满血 +纯血 DeepSeek V4，支持思维链、Cursor，全线 0.3 倍率 ｜注册送 5 美元 + 抽奖 200 美元",
+    "link": "https://www.v2ex.com/t/1223480",
+    "snippet": "huangyin0514: 官网地址： https://link-ai.cc/\n🤖 当前支持模型\nDeepSeek 系列（官签企业级高并发号池）\n💡 0.3x 极限倍率（全线支持最新 V4 架构）\ndeepseek-v4-pro （全新第四代旗舰，深度逻辑推理顶配）\ndeepseek-v4-flash （高吞吐极速响应，完美承接原 chat/reasoner 升级过渡）\n说明： 完美支持 20..."
   },
   "42": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "Why Thematic ETFs Make Me Nervous",
-    "link": "https://www.fool.com/investing/2026/06/28/why-thematic-etfs-make-me-nervous/?source=iedfolrf0000001",
-    "snippet": "Thematic ETFs highlight some of the hottest stocks on the market. However, they may not be for everyone."
+    "category": "社会民生 (Society & Life)",
+    "title": "性价比中转站，额度 0.06 倍分组特惠 Pro 分组，评论区送体验额度",
+    "link": "https://www.v2ex.com/t/1223449",
+    "snippet": "flymeto: \npro 特惠限时 0.06 倍率分组，pro 混合 puls-0.13 倍率；\n纯 pro-0.2 倍率，首字 1s ，支持高并发\ngpt-image-2 生图 1k 分辨率，0.02 一张，测试中\n注册留言邮箱送 1 刀测试，看到就会加\nhttps://api.0elog.com/\n小铺限时促销，下单 10 得 11 ，50 得 58\nhttps://pay.ldxp.cn/..."
   },
   "43": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "What Does a Silicon Motion Director's Sale of 2,000 Company Shares Mean for Investors?",
-    "link": "https://www.fool.com/coverage/filings/2026/06/28/what-does-a-silicon-motion-director-s-sale-of-2-000-company-shares-mean-for-investors/?source=iedfolrf0000001",
-    "snippet": "This semiconductor firm, known for NAND flash controllers, reported a notable insider sale amid strong recent price performance."
+    "category": "社会民生 (Society & Life)",
+    "title": "局座讲大量三哥涌入深圳抢 IT 工作，真有这个状况吗？",
+    "link": "https://www.v2ex.com/t/1223445",
+    "snippet": "jacketma: \n一方面因为美英澳等提高签证门槛，另一方面 CN 大量开发 K 签，于是大量三哥 IT 人才涌入国内，主要是到深圳地区抢工作机会，据说已有 50 万左右。\n咱国内的 IT 工作都不好找了，内卷的不行，再加上三哥也进来抢码农工作，不是更卷了\n三哥别的不说，英语和编程这两手还是可以的，要价还不高，竞争力挺行的"
   },
   "44": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "Cerebras Stock's Volatility Comes as AI Stock Momentum Is Slowing. Should Investors Be Worried?",
-    "link": "https://www.fool.com/investing/2026/06/28/cerebras-stock-volatility-ai-stock-momentum/?source=iedfolrf0000001",
-    "snippet": "Investors are right to scrutinize Cerebras and some AI companies right now."
+    "category": "社会民生 (Society & Life)",
+    "title": "某 mao 百亿补贴购买的 macbook air 未拆封在官网查询已经被激活，正常吗？",
+    "link": "https://www.v2ex.com/t/1223415",
+    "snippet": "zentraedi: 6.17 购买，黄纸皮包装箱上还有两个商家自己加的封条，21 到手查询在 18 日就已经激活了，有没有问题？是全新机器吗？看到网上说只有官网发货有预激活，第三方也可以吗？正在和商家交涉中，目前商家说只能退货，不给换"
   },
   "45": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "Palantir's Bold Biosecurity Opportunity Could Be Bigger Than Investors Think",
-    "link": "https://www.fool.com/investing/2026/06/28/palantirs-bold-biosecurity-opportunity-could-be-bi/?source=iedfolrf0000001",
-    "snippet": "A new biosecurity theme is emerging, and Palantir is leveraging it as an opportunity. Here's why that divide could matter for investors."
+    "category": "社会民生 (Society & Life)",
+    "title": "6 年前的洗面奶用完了，现在男的都用啥",
+    "link": "https://www.v2ex.com/t/1223399",
+    "snippet": "chenyu923132714: \nrt 男士洗面奶 \n爱出油洗完涩涩的最好"
   },
   "46": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "1 Nvidia-Backed AI Infrastructure Stock to Buy Hand Over Fist Right Now",
-    "link": "https://www.fool.com/investing/2026/06/28/1-nvidia-backed-ai-infrastructure-stock-to-buy-han/?source=iedfolrf0000001",
-    "snippet": "Nokia just signed a major new partnership with Nvidia."
+    "category": "社会民生 (Society & Life)",
+    "title": "Claude Pro 也被封号了",
+    "link": "https://www.v2ex.com/t/1223397",
+    "snippet": "Keine: \n不知道是昨天搞得自动切换代理模块问题还是新机场 ip 问题\n我错了 Pro 也被拿下了 能退钱吗？"
   },
   "47": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "SpaceX Has $100 Billion in Cash... Is It Enough?",
-    "link": "https://www.fool.com/investing/2026/06/28/spacex-has-100-billion-in-cash-is-it-enough/?source=iedfolrf0000001",
-    "snippet": "SpaceX just raised a huge sum of money, but it won't last long if history is any guide."
+    "category": "社会民生 (Society & Life)",
+    "title": "skills，真的重要嘛？大家来讨论下吧。",
+    "link": "https://www.v2ex.com/t/1223394",
+    "snippet": "mfsw: \n对于 codex 5.5 来说，个人开发网站应用，下面的这些 skill ，哪些是比较推荐的？谢谢大佬指教。\nsuperpowers\nBrainstorming\ngrill me\nFrontend Design\nclaude-design\nUI UX Pro Max\nclaude-mem\nGstack\nharness\nMatt 的前端 Skill\nponytail"
   },
   "48": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "The Ultimate AI Power Supercycle Winner: NextEra Energy or Vistra Stock? ",
-    "link": "https://www.fool.com/coverage/better-buy/2026/06/28/the-ultimate-ai-power-supercycle-winner-nextera-energy-or-vistra-stock/?source=iedfolrf0000001",
-    "snippet": "NextEra's $67 billion merger and Vistra's $4 billion acquisition are both huge growth moves for each company. Here's what you need to know."
+    "category": "社会民生 (Society & Life)",
+    "title": "codex business 48 个月的成品号靠谱吗?",
+    "link": "https://www.v2ex.com/t/1223392",
+    "snippet": "sigmadog: \n网上有卖的,说能换绑邮箱,有兄弟知道吗?"
   },
   "49": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "2 Dividend Stocks to Buy Even as New Fed Chair Kevin Warsh Holds Interest Rates Steady",
-    "link": "https://www.fool.com/investing/2026/06/28/2-dividend-stocks-to-buy-even-as-new-fed-chair-kev/?source=iedfolrf0000001",
-    "snippet": "These stocks, packing healthy payouts, are even better buys with the Fed's decision not to raise rates earlier this month."
+    "category": "社会民生 (Society & Life)",
+    "title": "大家在家的笔记本会外接显示器吗？",
+    "link": "https://www.v2ex.com/t/1223388",
+    "snippet": "sunwq:"
   },
   "50": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "The Bond ETF Most Investors Overlook -- and Why It Belongs in Your Portfolio Right Now",
-    "link": "https://www.fool.com/investing/2026/06/28/the-bond-etf-most-investors-overlook-and-why-it-be/?source=iedfolrf0000001",
-    "snippet": "These bonds offer the best features of other, more familiar bonds."
-  },
-  "51": {
     "category": "社会民生 (Society & Life)",
-    "title": "为什么诛仙这部小说里，张小凡不找道玄报仇？",
-    "link": "https://www.zhihu.com/question/2054661595121333246",
-    "snippet": "道玄不仅杀了碧瑶，后期入魔还杀了田不易，这张小凡为什么不找道玄报仇？这是不是有点太窝囊了，我看他最后还和道玄和解了…更难理解了。"
-  },
-  "52": {
-    "category": "社会民生 (Society & Life)",
-    "title": "派出所集体去KTV招异性陪侍被纪委抓现行，事发两年未通报，涉事人员免职但均保留公职，暴露出哪些问题？",
-    "link": "https://www.zhihu.com/question/2054635178702496761",
-    "snippet": "2024年4月下旬某晚，浙江台州温岭市公安局温峤派出所一群警务人员在两名副所长带领下，在温岭市政府附近的朗庭洲际酒店KTV招异性陪侍唱歌，被当地纪委当场查获。事发后，该派出所所长、教导员、两名副所长被集体免职，但均保留公职。该事件已过去两年多，当地一直未对外发布相关通报。 近日，爆料人汤先生向媒体揭露了此事。汤先生称，事发当晚，温峤派出所原副所长李某某和郑某某带领数名民警及辅警进入KTV，原教导员..."
-  },
-  "53": {
-    "category": "社会民生 (Society & Life)",
-    "title": "世界杯小组赛结束，亚足联仅日本澳大利亚进入 32 强，远不及扩军前给亚足联的世界杯名额，对此你怎么看？",
-    "link": "https://www.zhihu.com/question/2054540391236335233",
-    "snippet": ""
-  },
-  "54": {
-    "category": "社会民生 (Society & Life)",
-    "title": "世界杯 32 强对阵出炉，巴西vs日本、法国vs瑞典、葡萄牙vs克罗地亚，你看好哪些球队晋级？",
-    "link": "https://www.zhihu.com/question/2054536470178653026",
-    "snippet": "直播吧06月28日讯 2026美加墨世界杯12个小组的小组赛全部战罢，32强淘汰赛对阵出炉！淘汰赛将从明日开始，无缝衔接！ 32强淘汰赛对阵 6月29日（周一）03:00 南非vs加拿大 6月30日（周二）01:00 巴西vs日本 6月30日（周二）04:30 德国vs巴拉圭 6月30日（周二）09:00 荷兰vs摩洛哥 7月01日（周三）01:00 科特迪瓦vs挪威 7月01日（周三）05:00..."
-  },
-  "55": {
-    "category": "社会民生 (Society & Life)",
-    "title": "央视曝光手机测评黑幕，厂商与博主联手造假，特调机三层作弊，真实体验与宣传天差地别，哪些信息值得关注？",
-    "link": "https://www.zhihu.com/question/2054487183839474287",
-    "snippet": "[新闻直播间]谁给钱就夸谁 专业“测评”还是商业“套路”？手机厂商与网络测评博主暗藏“作弊”内幕 央视新闻频道曝光后，多个媒体和网友转载遭到起诉删除视频，该行为是否构成犯罪？"
-  },
-  "56": {
-    "category": "社会民生 (Society & Life)",
-    "title": "200 万粉丝网红诋毁袁隆平成果引发中国食品报发声，反映了哪些问题？这种造谣者背后有怎样的利益链条？",
-    "link": "https://www.zhihu.com/question/2054482230035191060",
-    "snippet": "近日，一名200万粉丝农业网红在视频中公然诋毁袁隆平院士的杂交水稻技术，将“三系杂交技术”歪曲为“变态杂交”，将专业术语“雄性不育”污名化为“怕吃完像骡子一样不生育”。中国食品报对此发文驳斥，指出该言论既无科学依据，又抹黑了支撑我国粮食安全数十年的基础育种技术。‌‌ 网红诋毁袁隆平成果 中国食品报发声超200万粉丝网红诋毁袁隆平成果，抖音：相关账号已被处置无限期封禁_腾讯新闻"
-  },
-  "57": {
-    "category": "社会民生 (Society & Life)",
-    "title": "美军连续第二天空袭伊朗，特朗普威胁伊朗或将不复存在，局势会再度持续升温吗？美方此轮袭击想达成哪些目标？",
-    "link": "https://www.zhihu.com/question/2054471851032539301",
-    "snippet": "央视记者获悉，当地时间6月27日，美国已对伊朗实施军事打击。 美国中央司令部发表声明称，在总统特朗普指示下，美军对伊朗境内多个目标实施了新一轮打击。 ○伊朗锡里克地区传出爆炸声 据伊朗方面消息，伊朗南部锡里克的一个村庄传出数次爆炸声。一名军方消息人士称，爆炸声是由数枚弹体击中一座通信塔所致。另据一知情人士消息，几枚炮弹还击中了伊朗南部格什姆岛。美军连续第二天空袭伊朗 当地时间6月27日，美国总统特..."
-  },
-  "58": {
-    "category": "社会民生 (Society & Life)",
-    "title": "如何看待奔驰将取消德国9万名员工年终奖，并计划延长工作时间且不支付补偿性报酬？奔驰当下处于什么境况？",
-    "link": "https://www.zhihu.com/question/2054316615341007572",
-    "snippet": "据报道，汽车制造商梅赛德斯奔驰集团将向德国约9万名员工停发年终奖金，并计划延长无额外报酬的工作时长。 该报援引内部文件写道:“梅赛德斯·奔驰将被迫拒绝向德国的约9万名员工拨出原定于7月发放的年度额外奖金。在经济困难时期，雇主可以选择推迟或取消这笔款项。”据评估，此举节省的金额可能超过一千万欧元。此外，管理层还打算讨论延长工作时间且不支付补偿性报酬的问题。目前奔驰员工每周工作时间为35小时。梅赛德斯..."
-  },
-  "59": {
-    "category": "社会民生 (Society & Life)",
-    "title": "已经看完《三国第一部：争洛阳》的人，如何评价这部电影？",
-    "link": "https://www.zhihu.com/question/2054299915073983689",
-    "snippet": ""
-  },
-  "60": {
-    "category": "社会民生 (Society & Life)",
-    "title": "人大博士肄业宅家六年靠父母供养，曾确诊焦虑症，为什么会出现这种情况？反映了哪些问题？",
-    "link": "https://www.zhihu.com/question/2054263250850669356",
-    "snippet": "人大博士肄业宅家六年，常年居家依靠父母接济度日，同住一室的父子隔阂深重，几乎无法正常交流。 曾经是小城引以为傲的天之骄子，考入中国人民大学攻读博士，却在科研压力与论文瓶颈下精神崩溃，最终遗憾肄业返乡。短暂尝试走入职场后，又因难以适应人情世故、放不下学历带来的心理落差，从此闭门不出，把自己困在了方寸房间里。 人大博士肄业宅家六年 长期居家依靠父母 父子隔阂深重无法正常交流 光鲜学历背后藏着怎样的困境..."
+    "title": "在家远程办公太容易分神了",
+    "link": "https://www.v2ex.com/t/1223386",
+    "snippet": "Slarda: \n不小心拿起手机，回过神半天就过去了😂\ntoken 还富裕，于是顺手给自己做了个专注工具，也分享给有同样需求的小伙伴。\n目前就 4 个专注场景 + 一个简单的番茄钟，对我来说基本够用了，没有乱七八糟的功能，打开就能用。\nhttps://deepfocus.space"
   }
 }
