@@ -15,6 +15,7 @@ const cheerio = require('cheerio');
 // Setup environment and paths
 config.ensureDirs();
 const publishedDir = config.paths.tweets.published;
+const approvedDir = config.paths.tweets.approved;
 const draftsDir = config.paths.tweets.drafts;
 
 const botToken = process.env.TELEGRAM_BOT_TOKEN;
@@ -75,7 +76,9 @@ function saveAndSyncToGithub(content, type = 'published', tweetResult = null, sc
   const timeStr = Date.now().toString().slice(-6); // Just for uniqueness
   const filename = `${dateStr}_tg_bot_${timeStr}.md`;
   
-  const targetDir = type === 'published' ? publishedDir : draftsDir;
+  const targetDir = type === 'published' ? publishedDir
+                   : type === 'approved'  ? approvedDir
+                   : draftsDir;
   const filePath = path.join(targetDir, filename);
 
   const cleanBody = content.replace(/[\r\n]+/g, ' ').trim();
