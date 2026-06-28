@@ -11,6 +11,7 @@ const Parser = require('rss-parser');
 const parser = new Parser();
 const cron = require('node-cron');
 const cheerio = require('cheerio');
+const { runFetch, categoryKeyMap } = require('./daily_news');
 
 // Setup environment and paths
 config.ensureDirs();
@@ -303,6 +304,54 @@ bot.action('fetch_daily', async (ctx) => {
     if (err) console.error('Daily fetch error:', err);
   });
 });
+
+// ─── 重新抓取：弹出选择菜单 ───
+bot.command('refetch', async (ctx) => {
+  if (ctx.from.id !== myUserId) return;
+  await ctx.reply(
+    '🔄 请选择重新抓取的范围：',
+    Markup.inlineKeyboard([
+      [Markup.button.callback('🔄 重新抓取全部',     'refetch_all')],
+      [Markup.button.callback('🛠️ 仅重抓 实用工具', 'refetch_tools')],
+      [Markup.button.callback('🤖 仅重抓 科技AI',   'refetch_tech')],
+      [Markup.button.callback('💰 仅重抓 理财投资', 'refetch_finance')],
+      [Markup.button.callback('🌍 仅重抓 社会民生', 'refetch_society')],
+    ])
+  );
+});
+
+// 重新抓取全部
+bot.action('refetch_all', async (ctx) => {
+  if (ctx.from.id !== myUserId) return;
+  await ctx.answerCbQuery();
+  await ctx.reply('🔄 正在重新抓取全部早报，请稍候（1-2分钟）...');
+  try {
+    await runFetch(bot, myUserId, null);
+  } catch (e) {
+    console.error('refetch_all error:', e);
+    await ctx.reply(`❌ 重新抓取失败: ${e.message}`);
+  }
+});
+
+// 重新抓取单个分类
+async function handleRefetchCategory(ctx, shortKey) {
+  if (ctx.from.id !== myUserId) return;
+  await ctx.answerCbQuery();
+  const categoryName = categoryKeyMap[shortKey];
+  if (!categoryName) return ctx.reply('❌ 未知分类');
+  await ctx.reply(`🔄 正在重新抓取【${categoryName}】，请稍候...`);
+  try {
+    await runFetch(bot, myUserId, [categoryName]);
+  } catch (e) {
+    console.error(`refetch_${shortKey} error:`, e);
+    await ctx.reply(`❌ 重新抓取失败: ${e.message}`);
+  }
+}
+
+bot.action('refetch_tools',   (ctx) => handleRefetchCategory(ctx, 'tools'));
+bot.action('refetch_tech',    (ctx) => handleRefetchCategory(ctx, 'tech'));
+bot.action('refetch_finance', (ctx) => handleRefetchCategory(ctx, 'finance'));
+bot.action('refetch_society', (ctx) => handleRefetchCategory(ctx, 'society'));
 
 bot.command('rss', async (ctx) => {
   if (ctx.from.id !== myUserId) return;
@@ -893,11 +942,12 @@ bot.action(/cancel_(.+)/, async (ctx) => {
 });
 
 bot.telegram.setMyCommands([
-  { command: 'daily', description: '📰 抓取最新全矩阵早报' },
-  { command: 'news', description: '📋 一键唤出上次早报缓存' },
-  { command: 'check', description: '🚀 检查并发布草稿队列推文' },
-  { command: 'chat', description: '💬 切换纯聊天模式/推文模式' },
-  { command: 'start', description: '🏠 回到主菜单' }
+  { command: 'daily',   description: '📰 抓取最新全矩阵早报' },
+  { command: 'refetch', description: '🔄 重新抓取（全部或单板块）' },
+  { command: 'news',    description: '📋 一键唤出上次早报缓存' },
+  { command: 'check',   description: '🚀 检查并发布草稿队列推文' },
+  { command: 'chat',    description: '💬 切换纯聊天模式/推文模式' },
+  { command: 'start',   description: '🏠 回到主菜单' }
 ]).then(() => {
   console.log('✅ Bot commands menu set!');
 }).catch(console.error);
