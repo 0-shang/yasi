@@ -1,362 +1,362 @@
 {
   "1": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "Show HN: QuicMic – Use your phone as a PC mic in the browser (Rust, QUIC)",
-    "link": "https://github.com/Fix3dll/QuicMic",
-    "snippet": "Article URL: https://github.com/Fix3dll/QuicMic\nComments URL: https://news.ycombinator.com/item?id=48707249\nPoints: 1\n# Comments: 0"
+    "title": "Show HN: Tool to Convert PDF to a Video",
+    "link": "https://caringmachines.com/shop/convert/pdf2vid",
+    "snippet": "Article URL: https://caringmachines.com/shop/convert/pdf2vid\nComments URL: https://news.ycombinator.com/item?id=48709552\nPoints: 1\n# Comments: 0"
   },
   "2": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "Show HN: Custom domain emails for open source projects (KaiMail)",
-    "link": "https://kaimail.net/",
-    "snippet": "I've always had the need to quickly just setup an email service for all the different projects and communities that I run, so I built KaiMail to do that. I can't stand the fact that getting emails for..."
+    "title": "Show HN: Verigate – Cryptographic authorization receipts for AI agents",
+    "link": "https://verigate.cloud",
+    "snippet": "Article URL: https://verigate.cloud\nComments URL: https://news.ycombinator.com/item?id=48709538\nPoints: 1\n# Comments: 0"
   },
   "3": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "Show HN: Nomina – Single Binary DNS and Nameserver with WebUI for Homelabs",
-    "link": "https://news.ycombinator.com/item?id=48706884",
-    "snippet": "Hey everyone,\nI was always tired of setting up PowerDNS, Bind and PiHole and I am trying to do more projects in Rust, so here is Nomina.\nIt has:\n* Split Horizon DNS (return a different IP/record if re..."
+    "title": "Show HN: Bcad – An OpenSCAD-syntax CAD powered by OpenCASCADE",
+    "link": "https://asm32.info/johnfound/bcad-openscad-syntax-with-exact-geometry",
+    "snippet": "Article URL: https://asm32.info/johnfound/bcad-openscad-syntax-with-exact-geometry\nComments URL: https://news.ycombinator.com/item?id=48709405\nPoints: 1\n# Comments: 1"
   },
   "4": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "Show HN: O11y.jobs is a job board focused specifically on Observability",
-    "link": "https://o11y.jobs/",
-    "snippet": "I built a jobs board that will sift out the jobs that are live that are solely around jobs using modern observability technology.\nCheck it out.\nComments URL: https://news.ycombinator.com/item?id=48706..."
+    "title": "Show HN: Paige – A spoiler-free AI book chat",
+    "link": "https://github.com/derekmpeterson/paige",
+    "snippet": "I have a terrible memory and often forget characters or minor plot points if I put a book down for too long.  I built Paige as a way to ask questions to refresh my memory while avoiding spoilers for t..."
   },
   "5": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "Show HN: Meta Ads vs. ASA vs. GAC for indie apps (2026 data)",
-    "link": "https://launchshots.app/blog/meta-ads-app-install-2026",
-    "snippet": "Article URL: https://launchshots.app/blog/meta-ads-app-install-2026\nComments URL: https://news.ycombinator.com/item?id=48706736\nPoints: 3\n# Comments: 0"
+    "title": "Show HN: Shikhu – Understand the code your agents write",
+    "link": "https://github.com/arjunpatel7/shikhu",
+    "snippet": "Agents write code really well, but it can get hard to understand what they've written and why. Shikhu is a CLI tool and Agent Skill that facilitates learning your code through self-quizzing, transcrip..."
   },
   "6": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "Show HN: Sambee – browser-based file manager for SMB shares and local drives",
-    "link": "https://sambee.net",
-    "snippet": "I'm introducing Sambee, a browser-based alternative to traditional file managers. Sambee provides access to SMB network file shares via a Docker container backend, and to your machine's local drives v..."
+    "title": "Show HN: DRM-Free Books",
+    "link": "https://frequal.com/Perspectives/DrmFreeAuthors.html",
+    "snippet": "After several years of mandatory DRM lockdowns from most commercial book sources, now authors have a choice when it comes to DRM for their books.  Pick authors and books that are DRM-free, or download..."
   },
   "7": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "Show HN: Parseflow – Extract data from any document. Entirely on your Mac",
-    "link": "https://www.parseflow.io/",
-    "snippet": "Article URL: https://www.parseflow.io/\nComments URL: https://news.ycombinator.com/item?id=48706658\nPoints: 1\n# Comments: 0"
+    "title": "Show HN: A directory of open source alternatives to proprietary software",
+    "link": "https://houseofopen.com/",
+    "snippet": "Article URL: https://houseofopen.com/\nComments URL: https://news.ycombinator.com/item?id=48709140\nPoints: 1\n# Comments: 0"
   },
   "8": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "Show HN: Warren – run isolated instances of any CLI tool (no containers,no root)",
-    "link": "https://github.com/swadhinbiswas/warren",
-    "snippet": "Article URL: https://github.com/swadhinbiswas/warren\nComments URL: https://news.ycombinator.com/item?id=48706502\nPoints: 1\n# Comments: 0"
+    "title": "The Best VPNs of 2026 Are up to 85% Off During Prime Day",
+    "link": "https://lifehacker.com/tech/best-vpn-deals-prime-day-2026?utm_medium=RSS",
+    "snippet": "These five VPN subscriptions have big discounts during Prime Day."
   },
   "9": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "Show HN: Genius AI Detector",
-    "link": "https://geniusaidetector.com/",
-    "snippet": "Article URL: https://geniusaidetector.com/\nComments URL: https://news.ycombinator.com/item?id=48706490\nPoints: 2\n# Comments: 0"
+    "title": "Every Fitbit With a Screen Is on Sale for Prime Day, up to 47% Off",
+    "link": "https://lifehacker.com/health/best-fitbit-deals-prime-day-2026?utm_medium=RSS",
+    "snippet": "The Charge 6, Inspire 3, and more are all heavily discounted."
   },
   "10": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "Show HN: A faithful MUMPS 76 anniversary implementation – the original NoSQL DB",
-    "link": "https://github.com/rochus-keller/mumps/",
-    "snippet": "Article URL: https://github.com/rochus-keller/mumps/\nComments URL: https://news.ycombinator.com/item?id=48706481\nPoints: 2\n# Comments: 1"
+    "title": "Adjustable Dumbbells Are My Favorite Home Gym Upgrade, and These Sets Are up to 31% Off for Prime Day",
+    "link": "https://lifehacker.com/health/best-adjustable-dumbbell-deals-prime-day-2026?utm_medium=RSS",
+    "snippet": "If you're looking to build strength at home, but you're worried about space constraints,  adjustable dumbbells are the way to go."
   },
   "11": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "Show HN: UnfoldCMS – self-hosted Laravel CMS, one-time pricing, no subscriptions",
-    "link": "https://unfoldcms.com",
-    "snippet": "Article URL: https://unfoldcms.com\nComments URL: https://news.ycombinator.com/item?id=48706455\nPoints: 1\n# Comments: 0"
+    "title": "The Best Books, Movies, Video Games, and Podcasts to Check Out After Watching ‘Succession’",
+    "link": "https://lifehacker.com/entertainment/succession-streamalikes-books-movies-video-games-podcasts?utm_medium=RSS",
+    "snippet": "If you want more family angst and business drama in your entertainment, I've got you covered."
   },
   "12": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "SHOW HN: Experimental GCC/GAS inline assembly bridge for Python",
-    "link": "https://pypi.org/project/sfpy-asm/0.1.1/",
-    "snippet": "Article URL: https://pypi.org/project/sfpy-asm/0.1.1/\nComments URL: https://news.ycombinator.com/item?id=48706444\nPoints: 2\n# Comments: 0"
+    "title": "10 Shows Like 'Mad Men' You Should Watch Next",
+    "link": "https://lifehacker.com/entertainment/10-shows-like-mad-men-you-should-watch-next?utm_medium=RSS",
+    "snippet": "We're all Mad here."
   },
   "13": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "Show HN: Cjam – A non-destructive MP3 editor",
-    "link": "https://github.com/cutandjoin/Cjam/releases/tag/v2500",
-    "snippet": "Cjam is a frame-based MP3 editor that works without decoding or re-encoding.\nv2.5.0.0 adds clipboard-based integration with mp3DirectCut and REAPER.\nComments URL: https://news.ycombinator.com/item?id=..."
+    "title": "I Think Suunto Fitness Watches Are Way Underrated, and They're Discounted up to 25% Off for Prime Day",
+    "link": "https://lifehacker.com/health/suunto-run-best-deals-prime-day-2026?utm_medium=RSS",
+    "snippet": "The Suunto Run is one of my favorites—and there are also deals on the Vertical, Race, and Peak lines too."
   },
   "14": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "Show HN: DepGuard, Visualize and simulate NPM vulnerability blast radiuses",
-    "link": "https://github.com/EgglezosHub/DepGuard",
-    "snippet": "Article URL: https://github.com/EgglezosHub/DepGuard\nComments URL: https://news.ycombinator.com/item?id=48706326\nPoints: 1\n# Comments: 0"
+    "title": "Apple Just Raised Prices on These Devices by Hundreds of Dollars, but Many Are Still Discounted on Prime Day",
+    "link": "https://lifehacker.com/tech/apple-just-raised-its-prices-on-these-products?utm_medium=RSS",
+    "snippet": "Tim Cook warned us price hikes were coming, and now they're here."
   },
   "15": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "Show HN: AgentWatch – Prevent runaway AI agents with runtime budget enforcement",
-    "link": "https://agent-watch.dev/",
-    "snippet": "Hi HN,\nI’m a solo developer and built AgentWatch to solve a problem I kept running into while building AI agents: preventing runaway loops and unexpected LLM spend before requests reach the model.\nAge..."
+    "title": "These Cordless Tools Are up to 55% off for Home Depot's 4th of July Sale",
+    "link": "https://lifehacker.com/home/home-depot-cordless-tools-deals-prime-day-2026?utm_medium=RSS",
+    "snippet": "To get your DIY projects done under budget, take a look at these cordless power-tool deals."
   },
   "16": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "Show HN: Hacker Times – HN Reader",
-    "link": "https://times.hntrends.net/",
-    "snippet": "This has been a play project for a little while, trying to build an interface that's comfortable to read on any device. It's a bit of a mashup of a Pocket-like interface, digital newspaper and Hacker ..."
+    "title": "The Best Prime Day Smartphone Deals up to 35% Off",
+    "link": "https://lifehacker.com/tech/best-smartphone-deals-prime-day-2026?utm_medium=RSS",
+    "snippet": "Current Samsung Galaxy and Google Pixel phones, foldables, and unlocked Motorola models are starting as low as $85."
   },
   "17": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "Show HN: role-model, a router for hybrid local/cloud AI",
-    "link": "https://github.com/try-works/role-model",
-    "snippet": "Hey everyone, I'm launching role-model today: a routing protocol, a reference router runtime, and an extension for Pi that allows for better informed routing decisions.\nrole-model is mostly determinis..."
+    "title": "The Best Prime Day Deals on Robot Vacuums, up to 45% Off",
+    "link": "https://lifehacker.com/tech/best-robot-vacuum-deals-prime-day-2026?utm_medium=RSS",
+    "snippet": "Prime Day features some robot-vacuum deals worth your attention from Roborock, Dreame, Ecovacs, and Eufy."
   },
   "18": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "Show HN: Free Notion alternative because I think Notion is overpriced",
-    "link": "https://dokyo.app/",
-    "snippet": "Article URL: https://dokyo.app/\nComments URL: https://news.ycombinator.com/item?id=48706164\nPoints: 1\n# Comments: 0"
+    "title": "15 of the Best Prime Day Deals Actually Worth Paying Attention To",
+    "link": "https://lifehacker.com/tech/the-best-deals-worth-paying-attention-to-prime-day-2026?utm_medium=RSS",
+    "snippet": "Literally millions of items are discounted for Prime Day, but these are the sales you don't want to miss."
   },
   "19": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "Show HN: uvx qrdrop – instant LAN file sharing from your terminal",
-    "link": "https://github.com/itsloopyo/qrdrop",
-    "snippet": "I’m working on some projects that involve moving files between macOS, Linux, Windows, Android, and iOS, and wanted a no-fuss, cross-platform way to do it over the LAN. I already have uv installed ever..."
+    "title": "The Best Prime Day Deals on Shokz Headphones, up to 40% Off",
+    "link": "https://lifehacker.com/health/shokz-open-ear-headphones-deals-prime-day-2026?utm_medium=RSS",
+    "snippet": "When you want to stay aware of your surroundings on the move, Shokz open-ear headphones are a good bet. Prime Day has knocked up to 40% off several models."
   },
   "20": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "Show HN: I built a strategic PvP word game where each move is just one letter",
-    "link": "https://letterphile.com",
-    "snippet": "When I was in school, my teacher used to play this game to our class. You add one letter turnwise and try to make a word. Later, I tried searching for this game but didn't find the exact match anywher..."
+    "title": "Save 30% on RingConn’s Gen 2 and Enjoy Health Data Without the Subscription Fees",
+    "link": "https://lifehacker.com/ad/tech/save-30-on-ringconns-gen-2-and-enjoy-health-data-without-the-subscription?utm_medium=RSS",
+    "snippet": "This smart ring is light, durable, comfortable, and extra easy to snag during Prime Day."
   },
   "21": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "These Bluetooth Speakers Are up to 50% Off Until Prime Day Ends Tonight",
-    "link": "https://lifehacker.com/tech/last-chance-bluetooth-speaker-deals-prime-day-june-26-2026?utm_medium=RSS",
-    "snippet": "Great deals on portable speakers, AI-powered smart speakers, and more."
+    "title": "What's New on Netflix in July 2026",
+    "link": "https://lifehacker.com/entertainment/whats-new-on-netflix-in-july-2026?utm_medium=RSS",
+    "snippet": "Enola Holmes returns, and Hot Ones comes to Netflix."
   },
   "22": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "I Wore Amazfit for Hyrox Training, and Their Watches up to 27% Off on the Last Day of Prime Day",
-    "link": "https://lifehacker.com/health/last-chance-best-amazfit-watch-deals-prime-day-june-26-2026?utm_medium=RSS",
-    "snippet": "Serious training watches don't need to cost a fortune—but only for a few more hours."
+    "title": "Oura's Ceramic and Gold Rings Are Nearly 50% Off for Prime Day",
+    "link": "https://lifehacker.com/health/oura-ring-deals-prime-day-2026?utm_medium=RSS",
+    "snippet": "The Oura Ring 4's ceramic, gold, and rose-gold colors are nearly 50% off right now."
   },
   "23": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "These Deals on Video Games, Controllers, and Peripherals Will Disappear When Prime Day Ends Tonight",
-    "link": "https://lifehacker.com/entertainment/last-chance-best-deals-video-games-controllers-prime-day-june-26-2026?utm_medium=RSS",
-    "snippet": "Amazon's big sale is a great time to level up your gaming setup."
+    "title": "The Best Prime Day TV Sales, According to a Tech Deals Writer",
+    "link": "https://lifehacker.com/tech/best-tv-deals-prime-day-2026?utm_medium=RSS",
+    "snippet": "These discounted TVs run the gamut from affordable 4K screens to premium OLEDs."
   },
   "24": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "Garmin Watches Are My Favorite Training Partner, and It's Your Last Chance to Get These Prime Day Deals up to 50% Off",
-    "link": "https://lifehacker.com/health/last-chance-garmin-fitness-deals-prime-day-june-26-2026?utm_medium=RSS",
-    "snippet": "Time is running out on these deals—which you would know if you checked your Garmin watch."
+    "title": "These Gardening and Landscaping Tools Are up to 34% Off for Prime Day",
+    "link": "https://lifehacker.com/home/gardening-and-landscaping-tools-prime-day-2026?utm_medium=RSS",
+    "snippet": "Keep your yard trimmed and watered with these essentials."
   },
   "25": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "It's Your Last Chance to Save up to 38% on These Apple Devices Before Prime Day Ends Tonight",
-    "link": "https://lifehacker.com/tech/apple-device-deals-prime-day-june-26-2026?utm_medium=RSS",
-    "snippet": "Amazon is offering exclusive deals on Apple Watches, AirTags, and more."
+    "title": "These EGO Lawn Tools Will Make You Go Electric, and They're up to 44% Off for Prime Day",
+    "link": "https://lifehacker.com/home/ego-lawn-and-garden-cordless-tools-prime-day-2026?utm_medium=RSS",
+    "snippet": "Save some money on gas and invest in a set of cordless landscaping tools"
   },
   "26": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "These Exercise Bikes Are Still up to 33% Off, but Prime Day Ends Tonight",
-    "link": "https://lifehacker.com/health/last-chance-best-exercise-bike-deals-prime-day-june-26-2026?utm_medium=RSS",
-    "snippet": "Even the latest Peloton bikes are on sale until Prime Day is over."
+    "title": "This Powerful Eero Mesh Wifi System Is $120 Off Right Now, Its Lowest Price Yet",
+    "link": "https://lifehacker.com/tech/eero-pro-6e-mesh-wi-fi-system-sale-prime-day-2026?utm_medium=RSS",
+    "snippet": "Here's a straightforward way to improve wifi coverage across larger homes."
   },
   "27": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "Five of the Best Workout Headphones (Including My Personal Favorite) Are on Sale Until Prime Day Ends Tonight",
-    "link": "https://lifehacker.com/health/last-chance-best-workout-headphones-deals-prime-day-june-26-2026?utm_medium=RSS",
-    "snippet": "The Shokz OpenRun Pro 2 are a game-changer, but all of these workout headphones are excellent choices."
+    "title": "This Powerful Google Floodlight Camera Is $100 Off Right Now",
+    "link": "https://lifehacker.com/tech/google-floodlight-camera-prime-day-deal?utm_medium=RSS",
+    "snippet": "This is an all-in-one outdoor security solution for households already using Google's smart-home ecosystem."
   },
   "28": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "I'm a Tech Editor, and These Are My Favorite Last-Minute Prime Day Deals",
-    "link": "https://lifehacker.com/tech/my-favorite-tech-deals-prime-day-june-26-2026?utm_medium=RSS",
-    "snippet": "It's a great time to save some cash on in-demand devices."
+    "title": "The Samsung HW-Q800H Soundbar Is Over $350 Off Right Now, Its Lowest Price Yet",
+    "link": "https://lifehacker.com/tech/samsung-hw-q800h-soundbar-prime-day-2026?utm_medium=RSS",
+    "snippet": "The Samsung HW-Q800H is designed to help you hear even the mumbliest of dialogues—and it's at its lowest price ever for Prime Day."
   },
   "29": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "These Peloton Bikes, Treadmills, and More Are up to 33% Off on the Last Day of Prime Day",
-    "link": "https://lifehacker.com/health/peloton-bikes-treads-dumbbells-sale-prime-day-june-26-2026?utm_medium=RSS",
-    "snippet": "In addition to these Bikes and Treads, Peloton's dumbbells and accessories are on sale."
+    "title": "These Nothing Earbuds With Built-In ChatGPT Are 33% Off Right Now, Their Lowest Price Ever",
+    "link": "https://lifehacker.com/tech/nothing-earbuds-built-in-chatgpt-sale-prime-day-2026?utm_medium=RSS",
+    "snippet": "This Prime Day deal offers bass-forward sound, adjustable EQ, ANC, and transparent design."
   },
   "30": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "These Apple and Android Tablets Are up to 46% Off for Prime Day",
-    "link": "https://lifehacker.com/tech/best-android-apple-tablet-deals-prime-day-june-26-2026?utm_medium=RSS",
-    "snippet": "You can save on Apple iPads, Samsung Galaxy Tabs, Amazon Fire tablets, and more."
+    "title": "This Five-Camera Blink Camera Bundle Is 65% Off Right Now, Its Lowest Price Ever",
+    "link": "https://lifehacker.com/tech/blink-outdoor-4-bundle-sale-prime-day-2026?utm_medium=RSS",
+    "snippet": "This Blink Outdoor 4 five-pack covers a surprising amount of ground for just over $100."
   },
   "31": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "第一批一人公司，现在怎么样了？",
-    "link": "https://www.qbitai.com/2026/06/439237.html",
-    "snippet": "我们跟一群OPC创业者聊了聊"
+    "title": "A near-autonomous AI chemist improves a challenging reaction in medicinal chemistry",
+    "link": "https://openai.com/index/ai-chemist-improves-reaction",
+    "snippet": "OpenAI and Molecule.one show how a near-autonomous AI chemist using GPT-5.4 improved a key drug-making reaction, advancing medicinal chemistry research."
   },
   "32": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "CVPR 2026最热方向，被一家杭州团队率先跑进了端侧！",
-    "link": "https://www.qbitai.com/2026/06/439236.html",
-    "snippet": "VLM- R1之后再次出手！全球首个端侧流式多模态来了！"
+    "title": "Introducing LifeSciBench",
+    "link": "https://openai.com/index/introducing-life-sci-bench",
+    "snippet": "Introducing LifeSciBench, an expert-authored, expert-reviewed benchmark for evaluating how AI systems handle real-world life science research tasks and decisions."
   },
   "33": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "微软年度AI职场报告：员工已经准备好了，公司还没有",
-    "link": "https://www.qbitai.com/2026/06/439032.html",
-    "snippet": "28页干货爆炸"
+    "title": "Predicting model behavior before release by simulating deployment",
+    "link": "https://openai.com/index/deployment-simulation",
+    "snippet": "OpenAI introduces Deployment Simulation, a method to predict AI model behavior before deployment using real conversation data to improve safety and evaluation accuracy."
   },
   "34": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "GPT-5.6突然发布！Fable5痛失最强基模王座",
-    "link": "https://www.qbitai.com/2026/06/438895.html",
-    "snippet": "一口气端出三款GPT 5.6系列模型"
+    "title": "Introducing the OpenAI Partner Network",
+    "link": "https://openai.com/index/introducing-openai-partner-network",
+    "snippet": "OpenAI launches the Partner Network, investing $150M to help global partners accelerate enterprise AI adoption, deployment, and transformation."
   },
   "35": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "两个月连获两轮数亿元融资 深度机智以全栈自主路线加速国产物理AI基座模型落地",
-    "link": "https://www.qbitai.com/2026/06/438887.html",
-    "snippet": ""
+    "title": "New OpenAI Academy courses for the next era of work",
+    "link": "https://openai.com/index/academy-courses-applying-ai-at-work",
+    "snippet": "OpenAI introduces three Academy courses that help people build practical AI skills, create repeatable workflows, and apply agents in everyday work."
   },
   "36": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "谷歌「推理之王」也跑路Meta了，当年还是李飞飞挖来的",
-    "link": "https://www.qbitai.com/2026/06/438848.html",
-    "snippet": "Coding为王"
+    "title": "How Preply combines AI and human tutors to personalize learning",
+    "link": "https://openai.com/index/preply",
+    "snippet": "Preply uses OpenAI to launch AI-generated lesson summaries, providing personalised feedback and language learning exercises."
   },
   "37": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "Previewing GPT-5.6 Sol: a next-generation model",
-    "link": "https://openai.com/index/previewing-gpt-5-6-sol",
-    "snippet": "OpenAI previews GPT-5.6 Sol, a next-generation model with stronger capabilities in coding, science, and cybersecurity, paired with its most advanced safety stack."
+    "title": "BBVA puts AI at the core of banking with OpenAI",
+    "link": "https://openai.com/index/bbva",
+    "snippet": "Learn how BBVA scaled ChatGPT Enterprise to 100,000 employees and partnered with OpenAI to accelerate AI-powered banking transformation worldwide."
   },
   "38": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "How agents are transforming work",
-    "link": "https://openai.com/index/how-agents-are-transforming-work",
-    "snippet": "A new OpenAI research paper shows how AI agents are transforming work, enabling longer, more complex tasks and expanding productivity across roles."
+    "title": "How an astrophysicist uses Codex to help simulate black holes",
+    "link": "https://openai.com/index/using-codex-to-simulate-black-holes",
+    "snippet": "Discover how astrophysicist Chi-kwan Chan uses Codex to build black hole simulations, helping scientists study extreme physics and test Einstein’s theory of general relativity."
   },
   "39": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "OpenAI and Broadcom unveil LLM-optimized inference chip",
-    "link": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip",
-    "snippet": "OpenAI and Broadcom introduce Jalapeño, a custom AI chip built for LLM inference to improve performance, efficiency, and scale across AI systems."
+    "title": "Supporting Europe’s work in ensuring a trustworthy AI ecosystem ",
+    "link": "https://openai.com/index/supporting-eu-trustworthy-ai-ecosystem",
+    "snippet": "OpenAI supports the EU Code of Practice on AI content transparency, advancing provenance standards and tools to help people understand AI-generated content."
   },
   "40": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "How GPT-5 helped immunologist Derya Unutmaz solve a 3-year-old mystery",
-    "link": "https://openai.com/index/gpt-5-immunology-mystery",
-    "snippet": "GPT-5 Pro helped solve a 3-year-old immunology mystery, offering insights into T cell behavior. The breakthrough could support cancer and autoimmune research."
+    "title": "OpenAI to acquire Ona",
+    "link": "https://openai.com/index/openai-to-acquire-ona",
+    "snippet": "OpenAI plans to acquire Ona to expand Codex with secure, persistent cloud environments, enabling long-running AI agents across enterprise workflows."
   },
   "41": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "估值在左，产业在右——港股医药的光已经照进来了",
-    "link": "http://xueqiu.com/5673225518/397207198",
-    "snippet": "首先，我承认我没本事，知识面有限，哪怕理得清科技，也没有上去满仓的勇气，其次，在医药行业：你往左看，估值在左边的坑里趴着；你往右看，创新药和CXO在同时加速——左边是恐惧，右边是事实。而中间这个裂缝，就是机会。\n我今天再次明确表个态（欢迎日后打脸）：港股医药已经在底部区间。创新药和CXO都会起来，介于CXO的业绩确定性更强，大概率率先走出独立行情。\n下面我用多家机构的数据交叉验证，一个板块一个板块..."
+    "title": "Blackstone Private Credit Limits Redemptions: It's \"a Feature, Not a Bug\"",
+    "link": "https://www.fool.com/investing/2026/06/28/blackstone-private-credit-limits-redemptions-its-a/?source=iedfolrf0000001",
+    "snippet": "Private credit funds are being swamped with redemption requests, but redemption limits aren't necessarily a bad thing."
   },
   "42": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "重资产行业投资与现金流",
-    "link": "http://xueqiu.com/7103876041/397107756",
-    "snippet": "从这个角度再解一下。\n大致讲清楚电解铝、晶硅，电力。\n也同时讲明白股票投资要点。\n大致是个什么事呢。\n就是这类企业为什么在中国一直被低估。\n价值发现在什么时段。\n高估在什么时段。\n先看电解铝，超级好行业。\n为什么。\n正面说是比较优势。\n细点说是比较优势vs资本投入 。\n是因为电解铝好坏企业成本差20003000么？\n对一半。\n核心原因是吨铝投资只要5000。\n因为吨铝投资只要5000，低电价地区差..."
+    "title": "Why Thematic ETFs Make Me Nervous",
+    "link": "https://www.fool.com/investing/2026/06/28/why-thematic-etfs-make-me-nervous/?source=iedfolrf0000001",
+    "snippet": "Thematic ETFs highlight some of the hottest stocks on the market. However, they may not be for everyone."
   },
   "43": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "战争四个月后的反思",
-    "link": "http://xueqiu.com/1170975436/397107676",
-    "snippet": "冷静的分析一下过去4个月。主要误判有几点。\n1. 听了太多能源多头打鸡血。铺天盖地的主流能源专家这几个月都是一致看多油气，甚至签完MOU以后还在往150看。对反面专业观点不够重视。国内外很多石油多头专家的问题是分析的不够全面细致，忽视了一些细节。典型的就是GR，我之前就说，GR看黄金很准，但看能源经常一直都错。\n对于反面观点，我说的不是那种凭感觉，凭算命看空油气的。而是真的能源专家有理有据地分析（..."
+    "title": "What Does a Silicon Motion Director's Sale of 2,000 Company Shares Mean for Investors?",
+    "link": "https://www.fool.com/coverage/filings/2026/06/28/what-does-a-silicon-motion-director-s-sale-of-2-000-company-shares-mean-for-investors/?source=iedfolrf0000001",
+    "snippet": "This semiconductor firm, known for NAND flash controllers, reported a notable insider sale amid strong recent price performance."
   },
   "44": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "朱酒看点（6月26日公开版）",
-    "link": "http://xueqiu.com/6056806984/396838150",
-    "snippet": "本话题在雪球有50条讨论，点击查看。\n雪球是一个投资者的社交网络，聪明的投资者都在这里。\n点击下载雪球手机客户端 http://xueqiu.com/xz]]>"
+    "title": "Cerebras Stock's Volatility Comes as AI Stock Momentum Is Slowing. Should Investors Be Worried?",
+    "link": "https://www.fool.com/investing/2026/06/28/cerebras-stock-volatility-ai-stock-momentum/?source=iedfolrf0000001",
+    "snippet": "Investors are right to scrutinize Cerebras and some AI companies right now."
   },
   "45": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "泡泡玛特（十）Hellokitty母公司六年的至暗时刻——一个IP帝国的衰败，不是因为IP老了",
-    "link": "http://xueqiu.com/9326334102/396854310",
-    "snippet": "它会不会有衰败的那一天？\n想要回答这个问题，最好的办法不是预测未来，而是回溯历史——去看看这个行业里的老前辈，那些曾经风光无限的IP公司，是怎么走过兴衰周期的。\n三丽鸥，Hellokitty的母公司，就是这样一个绝佳的研究样本。它在2014年到2019年间经历了一场持续六年的衰退——不是一年两年的波动，而是营收和利润的双双下滑，一路跌到谷底。（三丽鸥FY2013达到业绩峰值后连续6年减收减利，营业..."
+    "title": "Palantir's Bold Biosecurity Opportunity Could Be Bigger Than Investors Think",
+    "link": "https://www.fool.com/investing/2026/06/28/palantirs-bold-biosecurity-opportunity-could-be-bi/?source=iedfolrf0000001",
+    "snippet": "A new biosecurity theme is emerging, and Palantir is leveraging it as an opportunity. Here's why that divide could matter for investors."
   },
   "46": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "美银喊加息三次，瑞银说根本加不了，黄金到底应该听谁的？",
-    "link": "http://xueqiu.com/6087293231/396974699",
-    "snippet": "当下黄金交易的核心矛盾，是美联储年内到底加不加息。而当前华尔街头部投行之间，出现了极其罕见的极致分歧，多空观点完全针锋相对。\n其中最具代表性的就是美银与瑞银，一家极致鹰派、一家极致鸽派，两家机构的判断直接决定了当下黄金的短期定价。今天我们把两家机构的核心逻辑完整拆解，搞清楚加息的真假预期，才能看懂黄金接下来的走势。\n一、美银：2026年美联储将加息三次（全市场最鹰派预期）\n美银最新核心结论非常明确..."
+    "title": "1 Nvidia-Backed AI Infrastructure Stock to Buy Hand Over Fist Right Now",
+    "link": "https://www.fool.com/investing/2026/06/28/1-nvidia-backed-ai-infrastructure-stock-to-buy-han/?source=iedfolrf0000001",
+    "snippet": "Nokia just signed a major new partnership with Nvidia."
   },
   "47": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "红利低波年均线策略还有效吗？",
-    "link": "http://xueqiu.com/3529405310/396934161",
-    "snippet": "红利低波年均线抄底策略很受大家欢迎\n#分红季，享红利# #食息族征文#\n但是最近红利低波持续走弱，中证红利已经跌破500日均线，且还在继续下行。很多朋友开始怀疑：年均线策略是不是失效了？\n今天我用三组历史数据（2016年熔断、2018年贸易战、2020年疫情）带大家看看，红利低波在长周期跌破后，最终是如何修复的。\n一、2020年成长股狂欢，红利低波全年横盘\n2020年是典型的大分化年份。创业板指全..."
+    "title": "SpaceX Has $100 Billion in Cash... Is It Enough?",
+    "link": "https://www.fool.com/investing/2026/06/28/spacex-has-100-billion-in-cash-is-it-enough/?source=iedfolrf0000001",
+    "snippet": "SpaceX just raised a huge sum of money, but it won't last long if history is any guide."
   },
   "48": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "AI越强，增长飞轮越可能卡住？",
-    "link": "http://xueqiu.com/5690576263/396866856",
-    "snippet": "但从经济运行的角度看，技术只是起点。真正决定一轮技术革命能不能转化为长期增长的关键，在于效率红利能否重新变成劳动收入、消费能力和新增需求。生产率提高之后，如果成本下降带不来足够大的需求扩张，或者劳动收入无法通过新岗位创造，技术进步就很难变成社会层面的繁荣。\n我对此有一个概括：前三次工业革命，本质上是同一个增长飞轮在运转。效率提升带来成本下降，成本下降释放需求，需求扩张形成规模效应，规模效应继续压低..."
+    "title": "The Ultimate AI Power Supercycle Winner: NextEra Energy or Vistra Stock? ",
+    "link": "https://www.fool.com/coverage/better-buy/2026/06/28/the-ultimate-ai-power-supercycle-winner-nextera-energy-or-vistra-stock/?source=iedfolrf0000001",
+    "snippet": "NextEra's $67 billion merger and Vistra's $4 billion acquisition are both huge growth moves for each company. Here's what you need to know."
   },
   "49": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "成长，即使只爱一点点",
-    "link": "http://xueqiu.com/3559889031/396826304",
-    "snippet": "尤其是私募，一些成名许久的老将，纷纷写信解释净值回撤的原因，以及对当下持股的坚守与坚信。\n看完这些信，突然想起之前和一位FOF基金经理闲聊时提及的两个概念：资产管理和财富管理。\n资产管理，主语是资产，那些抽象的、不具有人情味的金融投资标的。在许多老将心中，他们做的，显然是资产管理，将自己的人生观、价值观映射在资产走势的涨涨跌跌上，而持有人的资金，则是他们募集来践行这种资产管理的手段。我甚至觉得，许..."
+    "title": "2 Dividend Stocks to Buy Even as New Fed Chair Kevin Warsh Holds Interest Rates Steady",
+    "link": "https://www.fool.com/investing/2026/06/28/2-dividend-stocks-to-buy-even-as-new-fed-chair-kev/?source=iedfolrf0000001",
+    "snippet": "These stocks, packing healthy payouts, are even better buys with the Fed's decision not to raise rates earlier this month."
   },
   "50": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "红利和自由现金流“渣”到不行，还能爱吗？",
-    "link": "http://xueqiu.com/2356382715/396870331",
-    "snippet": "我很理解他们的感受。下跌本身不一定错，但眼看着宽基指数在科技成长板块的带领下不断创新高，自己手里的红利和自由现金流却阴跌不止——这种感觉，就像全班都在进步，唯独自己在退步。错上加错，莫过于此。\n这之前写过多篇文章谈过红利和自由现金流，但面对当下的市场环境和投资者的真实焦虑，我觉得有几个观点还需要再重申一遍。\n01 年度正收益是常态，但波动不小也是常态\n如果看红利低波和自由现金流全收益指数，近十年来..."
+    "title": "The Bond ETF Most Investors Overlook -- and Why It Belongs in Your Portfolio Right Now",
+    "link": "https://www.fool.com/investing/2026/06/28/the-bond-etf-most-investors-overlook-and-why-it-be/?source=iedfolrf0000001",
+    "snippet": "These bonds offer the best features of other, more familiar bonds."
   },
   "51": {
     "category": "社会民生 (Society & Life)",
-    "title": "北京最高楼“中国尊”遭小型飞机撞击",
-    "link": "https://cn.nytimes.com/china/20260627/china-plane-crash-beijing/?utm_source=RSS",
-    "snippet": "事发周五晚高峰时段，数据显示飞机从平谷起飞后飞往市中心。目前尚不清楚这起事故是意外还是人为造成。飞行员的身份、下落以及现场伤亡情况也尚不明确。\n\n                    \nMaxim Shemetov/Reuters\n                    \n周五，北京的中国尊大厦（又名中信大厦）外墙受损。"
+    "title": "为什么诛仙这部小说里，张小凡不找道玄报仇？",
+    "link": "https://www.zhihu.com/question/2054661595121333246",
+    "snippet": "道玄不仅杀了碧瑶，后期入魔还杀了田不易，这张小凡为什么不找道玄报仇？这是不是有点太窝囊了，我看他最后还和道玄和解了…更难理解了。"
   },
   "52": {
     "category": "社会民生 (Society & Life)",
-    "title": "西瓜有多健康？",
-    "link": "https://cn.nytimes.com/health/20260626/watermelon-health-benefits-recipes/?utm_source=RSS",
-    "snippet": "西瓜的含水量高达91%，在炎热夏日里能帮助你补水；口感很甜但含糖量远低于想象，热量也很低；它不含脂肪和钠，对心脏有益。西瓜不适合在反季节食用，新鲜即美味。\n\n                    \nChristopher Simpson for The New York Times. Food Stylist: Simon Andrews. Prop Stylist: Paige Hicks."
+    "title": "派出所集体去KTV招异性陪侍被纪委抓现行，事发两年未通报，涉事人员免职但均保留公职，暴露出哪些问题？",
+    "link": "https://www.zhihu.com/question/2054635178702496761",
+    "snippet": "2024年4月下旬某晚，浙江台州温岭市公安局温峤派出所一群警务人员在两名副所长带领下，在温岭市政府附近的朗庭洲际酒店KTV招异性陪侍唱歌，被当地纪委当场查获。事发后，该派出所所长、教导员、两名副所长被集体免职，但均保留公职。该事件已过去两年多，当地一直未对外发布相关通报。 近日，爆料人汤先生向媒体揭露了此事。汤先生称，事发当晚，温峤派出所原副所长李某某和郑某某带领数名民警及辅警进入KTV，原教导员..."
   },
   "53": {
     "category": "社会民生 (Society & Life)",
-    "title": "伊朗袭击货船，霍尔木兹海峡航运再次中断",
-    "link": "https://cn.nytimes.com/world/20260626/iran-strait-of-hormuz-threat-rubio-bahrain/?utm_source=RSS",
-    "snippet": "遇袭货船隶属台湾船运公司长荣海运，美国官员称该船在途径霍尔木兹海峡时遭到无人机打击。袭击导致恢复这条关键水道航运的努力再次遭受重挫。袭击发生后油价跳涨。\n\n                    \nElke Scholiers/Getty Images\n                    \n周二，靠近霍尔木兹海峡阿曼海岸外的油轮和货船。"
+    "title": "世界杯小组赛结束，亚足联仅日本澳大利亚进入 32 强，远不及扩军前给亚足联的世界杯名额，对此你怎么看？",
+    "link": "https://www.zhihu.com/question/2054540391236335233",
+    "snippet": ""
   },
   "54": {
     "category": "社会民生 (Society & Life)",
-    "title": "朝鲜“崔贤号”驱逐舰服役，凸显金正恩海军核武化雄心",
-    "link": "https://cn.nytimes.com/asia-pacific/20260626/north-korea-destroyer-nuclear/?utm_source=RSS",
-    "snippet": "金正恩宣布该国首艘海军驱逐舰“崔贤号”入役，并称其装备了可搭载核弹头的导弹。这是朝鲜有史以来建造的最大战舰，已成为金正恩扩大海军并使其核武化努力的象征。\n\n                    \nKorean Central News Agency, via Reuters\n                    \n朝中社发布的一张照片据称显示了朝鲜最高领导人金正恩（中）周二在南浦港出席新型驱逐..."
+    "title": "世界杯 32 强对阵出炉，巴西vs日本、法国vs瑞典、葡萄牙vs克罗地亚，你看好哪些球队晋级？",
+    "link": "https://www.zhihu.com/question/2054536470178653026",
+    "snippet": "直播吧06月28日讯 2026美加墨世界杯12个小组的小组赛全部战罢，32强淘汰赛对阵出炉！淘汰赛将从明日开始，无缝衔接！ 32强淘汰赛对阵 6月29日（周一）03:00 南非vs加拿大 6月30日（周二）01:00 巴西vs日本 6月30日（周二）04:30 德国vs巴拉圭 6月30日（周二）09:00 荷兰vs摩洛哥 7月01日（周三）01:00 科特迪瓦vs挪威 7月01日（周三）05:00..."
   },
   "55": {
     "category": "社会民生 (Society & Life)",
-    "title": "中国AI模型与Anthropic、OpenAI性能差距缩小",
-    "link": "https://cn.nytimes.com/technology/20260626/zai-china-artificial-intelligence-models/?utm_source=RSS",
-    "snippet": "中国初创公司智谱新发布的人工智能模型性能几乎与Anthropic的Fable和Mythos模型相当，使用成本却更为低廉。目前全球人工智能模型排行榜中有六款来自中国。"
+    "title": "央视曝光手机测评黑幕，厂商与博主联手造假，特调机三层作弊，真实体验与宣传天差地别，哪些信息值得关注？",
+    "link": "https://www.zhihu.com/question/2054487183839474287",
+    "snippet": "[新闻直播间]谁给钱就夸谁 专业“测评”还是商业“套路”？手机厂商与网络测评博主暗藏“作弊”内幕 央视新闻频道曝光后，多个媒体和网友转载遭到起诉删除视频，该行为是否构成犯罪？"
   },
   "56": {
     "category": "社会民生 (Society & Life)",
-    "title": "一项关于癌症治疗时机的中国研究被《自然-医学》撤稿",
-    "link": "https://cn.nytimes.com/science/20260626/china-cancer-treatment-research-retraction/?utm_source=RSS",
-    "snippet": "这项研究指出，上午接受静脉输注的癌症患者预后好于下午接受输注的患者。文章发表后遭到质疑，《自然-医学》本周撤回了这项研究，称其试验设计和结果存在不规范之处。\n\n                    \nJenny Kane/Associated Press\n                    \n《自然-医学》撤回了一项研究，该研究发现癌症治疗若在上午进行，疗效将大幅提升。"
+    "title": "200 万粉丝网红诋毁袁隆平成果引发中国食品报发声，反映了哪些问题？这种造谣者背后有怎样的利益链条？",
+    "link": "https://www.zhihu.com/question/2054482230035191060",
+    "snippet": "近日，一名200万粉丝农业网红在视频中公然诋毁袁隆平院士的杂交水稻技术，将“三系杂交技术”歪曲为“变态杂交”，将专业术语“雄性不育”污名化为“怕吃完像骡子一样不生育”。中国食品报对此发文驳斥，指出该言论既无科学依据，又抹黑了支撑我国粮食安全数十年的基础育种技术。‌‌ 网红诋毁袁隆平成果 中国食品报发声超200万粉丝网红诋毁袁隆平成果，抖音：相关账号已被处置无限期封禁_腾讯新闻"
   },
   "57": {
     "category": "社会民生 (Society & Life)",
-    "title": "一场末日浩劫：被世界遗忘的缅甸内战",
-    "link": "https://cn.nytimes.com/asia-pacific/20260625/myanmar-civil-war-rebels-airstrikes/?utm_source=RSS",
-    "snippet": "当乌克兰和伊朗的冲突吸引全世界的聚光灯，有5000万人口的缅甸正在一场持续五年、无人关注的内战中崩溃。时报记者探访了仿佛迷失于末日浩劫中的战场腹地。\n\n                    \nDaniel Berehulak/The New York Times\n                    \n在一条被遗忘的前线上，反抗军在丛林深处作战。"
+    "title": "美军连续第二天空袭伊朗，特朗普威胁伊朗或将不复存在，局势会再度持续升温吗？美方此轮袭击想达成哪些目标？",
+    "link": "https://www.zhihu.com/question/2054471851032539301",
+    "snippet": "央视记者获悉，当地时间6月27日，美国已对伊朗实施军事打击。 美国中央司令部发表声明称，在总统特朗普指示下，美军对伊朗境内多个目标实施了新一轮打击。 ○伊朗锡里克地区传出爆炸声 据伊朗方面消息，伊朗南部锡里克的一个村庄传出数次爆炸声。一名军方消息人士称，爆炸声是由数枚弹体击中一座通信塔所致。另据一知情人士消息，几枚炮弹还击中了伊朗南部格什姆岛。美军连续第二天空袭伊朗 当地时间6月27日，美国总统特..."
   },
   "58": {
     "category": "社会民生 (Society & Life)",
-    "title": "重庆男子虐狗引发抗议，示威者呼吁制定反虐待动物法律",
-    "link": "https://cn.nytimes.com/china/20260626/dog-animal-abuse-china-protest/?utm_source=RSS",
-    "snippet": "重庆一名男子的虐狗视频在社交媒体曝光后，数百人聚集在他的公寓外抗议，示威者与警方发生暴力冲突。随着养宠人数的增加，越来越多中国人呼吁推动反虐待动物立法。\n\n                    \nVideo obtained by The New York Times"
+    "title": "如何看待奔驰将取消德国9万名员工年终奖，并计划延长工作时间且不支付补偿性报酬？奔驰当下处于什么境况？",
+    "link": "https://www.zhihu.com/question/2054316615341007572",
+    "snippet": "据报道，汽车制造商梅赛德斯奔驰集团将向德国约9万名员工停发年终奖金，并计划延长无额外报酬的工作时长。 该报援引内部文件写道:“梅赛德斯·奔驰将被迫拒绝向德国的约9万名员工拨出原定于7月发放的年度额外奖金。在经济困难时期，雇主可以选择推迟或取消这笔款项。”据评估，此举节省的金额可能超过一千万欧元。此外，管理层还打算讨论延长工作时间且不支付补偿性报酬的问题。目前奔驰员工每周工作时间为35小时。梅赛德斯..."
   },
   "59": {
     "category": "社会民生 (Society & Life)",
-    "title": "一分钟内两次超7级强震：详解委内瑞拉地震",
-    "link": "https://cn.nytimes.com/science/20260626/venezeula-earthquakes-faults-geology/?utm_source=RSS",
-    "snippet": "为什么一次强震之后紧接着又发生了一次强震？这次双震为何破坏性如此之大？会有强余震吗？本文总结了目前对这次委内瑞拉灾难性地震的认识，以及对未来几天的预期。\n\n                    \nLeonardo Fernandez Viloria/Reuters\n                    \n周四，加拉加斯一处倒塌建筑现场的急救人员。"
+    "title": "已经看完《三国第一部：争洛阳》的人，如何评价这部电影？",
+    "link": "https://www.zhihu.com/question/2054299915073983689",
+    "snippet": ""
   },
   "60": {
     "category": "社会民生 (Society & Life)",
-    "title": "AI热潮下的“K型分化”警钟：韩国台湾经济鸿沟扩大",
-    "link": "https://cn.nytimes.com/business/20260625/taiwan-korea-ai-chips/?utm_source=RSS",
-    "snippet": "人工智能需求推动了韩国和台湾股市上涨、出口繁荣，其他经济领域却被远远甩在了后面。大部分劳动力受雇于芯片行业之外，增长的主要成果并未流向大众，加剧了收入鸿沟。\n\n                    \nAn Rong Xu for The New York Times"
+    "title": "人大博士肄业宅家六年靠父母供养，曾确诊焦虑症，为什么会出现这种情况？反映了哪些问题？",
+    "link": "https://www.zhihu.com/question/2054263250850669356",
+    "snippet": "人大博士肄业宅家六年，常年居家依靠父母接济度日，同住一室的父子隔阂深重，几乎无法正常交流。 曾经是小城引以为傲的天之骄子，考入中国人民大学攻读博士，却在科研压力与论文瓶颈下精神崩溃，最终遗憾肄业返乡。短暂尝试走入职场后，又因难以适应人情世故、放不下学历带来的心理落差，从此闭门不出，把自己困在了方寸房间里。 人大博士肄业宅家六年 长期居家依靠父母 父子隔阂深重无法正常交流 光鲜学历背后藏着怎样的困境..."
   }
 }
