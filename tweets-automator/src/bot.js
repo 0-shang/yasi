@@ -853,11 +853,11 @@ bot.action(/save_(.+)/, async (ctx) => {
     return ctx.answerCbQuery('Tweet content expired or not found.');
   }
 
-  saveAndSyncToGithub(text, 'draft', null);
+  saveAndSyncToGithub(text, 'approved', null);
   pendingTweets.delete(msgId);
 
-  await ctx.answerCbQuery('Saved as draft!');
-  await ctx.editMessageText('💾 Saved to local draft folder and syncing to GitHub...');
+  await ctx.answerCbQuery('Saved to approved!');
+  await ctx.editMessageText('💾 Saved to approved folder and syncing to GitHub...');
 });
 
 bot.action(/schedule_(.+)/, async (ctx) => {
