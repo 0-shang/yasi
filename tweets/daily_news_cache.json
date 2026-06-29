@@ -1,362 +1,182 @@
 {
   "1": {
-    "category": "实用工具资源 (Tools & Resources)",
-    "title": "calesthio/OpenMontage",
-    "link": "https://github.com/calesthio/OpenMontage",
-    "snippet": "World's first open-source, agentic video production system. 12 pipelines, 52 tools, 500+ agent skills. Turn your AI coding assistant into a full video production studio.\nLanguage: Python\nStars: 26623\n..."
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "在格鲁吉亚的大地上：徒步篇",
+    "link": "https://sspai.com/post/111369",
+    "snippet": "Matrix首页推荐Matrix是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选Matrix最优质的文章，展示来自用户的最真实的体验和观点。文章代表作者个人观点 ...查看全文"
   },
   "2": {
-    "category": "实用工具资源 (Tools & Resources)",
-    "title": "kunchenguid/no-mistakes",
-    "link": "https://github.com/kunchenguid/no-mistakes",
-    "snippet": "git push no-mistakes\nLanguage: Go\nStars: 3986\nForks: 221"
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "A blueprint for democratic governance of frontier AI",
+    "link": "https://openai.com/index/frontier-safety-blueprint",
+    "snippet": "OpenAI outlines a blueprint for U.S. governance of frontier AI, proposing a federal framework for safety, resilience, and national security."
   },
   "3": {
-    "category": "实用工具资源 (Tools & Resources)",
-    "title": "palmier-io/palmier-pro",
-    "link": "https://github.com/palmier-io/palmier-pro",
-    "snippet": "macOS video editor built for AI\nLanguage: Swift\nStars: 9276\nForks: 655"
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "OpenAI public policy agenda",
+    "link": "https://openai.com/index/public-policy-agenda",
+    "snippet": "OpenAI outlines its public policy agenda for AI, including safety, youth protection, workforce transition, and global standards to ensure AI benefits society."
   },
   "4": {
-    "category": "实用工具资源 (Tools & Resources)",
-    "title": "google-labs-code/design.md",
-    "link": "https://github.com/google-labs-code/design.md",
-    "snippet": "A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.\nLanguage: TypeScript\nStars: 22762\nForks: 181..."
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "Travelers deploys AI-powered claims countrywide with OpenAI",
+    "link": "https://openai.com/index/travelers",
+    "snippet": "Travelers built an AI-powered Claim Assistant with OpenAI to guide customers through filing claims, provide 24/7 support, and scale operations during peak demand."
   },
   "5": {
-    "category": "实用工具资源 (Tools & Resources)",
-    "title": "JCodesMore/ai-website-cloner-template",
-    "link": "https://github.com/JCodesMore/ai-website-cloner-template",
-    "snippet": "Clone any website with one command using AI coding agents\nLanguage: TypeScript\nStars: 22675\nForks: 3240"
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "Codex for every role, tool, and workflow",
+    "link": "https://openai.com/index/codex-for-every-role-tool-workflow",
+    "snippet": "Discover new Codex plugins, sites, and annotations that help analysts, marketers, designers, investors, and other teams get more done with AI."
   },
   "6": {
-    "category": "实用工具资源 (Tools & Resources)",
-    "title": "interviewstreet/hiring-agent",
-    "link": "https://github.com/interviewstreet/hiring-agent",
-    "snippet": "AI agent to evaluate and score resumes.\nLanguage: Python\nStars: 3140\nForks: 697"
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "Advancing youth safety and opportunity through global leadership",
+    "link": "https://openai.com/index/advancing-youth-safety-and-opportunity-through-global-leadership",
+    "snippet": "OpenAI calls for global action on youth AI safety, proposing an international institute to strengthen safeguards, standards, and opportunities for young people."
   },
   "7": {
-    "category": "实用工具资源 (Tools & Resources)",
-    "title": "ZhuLinsen/daily_stock_analysis",
-    "link": "https://github.com/ZhuLinsen/daily_stock_analysis",
-    "snippet": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。  LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-f..."
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "Codex is becoming a productivity tool for everyone",
+    "link": "https://openai.com/index/codex-for-knowledge-work",
+    "snippet": "The Next Era of Knowledge Work report explores how Codex is transforming productivity through AI-powered research, data analysis, workflow automation, and content creation."
   },
   "8": {
-    "category": "实用工具资源 (Tools & Resources)",
-    "title": "stablyai/orca",
-    "link": "https://github.com/stablyai/orca",
-    "snippet": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop and mobile.\nLanguage: TypeScript\nStars: 8541\nForks: 595"
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "Our views on AI policy and political advocacy",
+    "link": "https://openai.com/index/our-views-on-ai-policy-and-political-advocacy",
+    "snippet": "Our approach to AI policy and political advocacy, transparency, support for thoughtful regulation and AI safety, and that no outside political group speaks on the company’s behalf."
   },
   "9": {
-    "category": "实用工具资源 (Tools & Resources)",
-    "title": "Panniantong/Agent-Reach",
-    "link": "https://github.com/Panniantong/Agent-Reach",
-    "snippet": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.\nLanguage: Python\nStars: 44272\nForks: 3528"
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "Building the infrastructure for the Intelligence Age in Michigan",
+    "link": "https://openai.com/index/stargate-michigan-data-center",
+    "snippet": "OpenAI breaks ground on a 1GW data center project in Michigan as part of Stargate, building AI infrastructure to expand access, create jobs, and support communities."
   },
   "10": {
-    "category": "实用工具资源 (Tools & Resources)",
-    "title": "mukul975/Anthropic-Cybersecurity-Skills",
-    "link": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
-    "snippet": "817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITRE ATT&CK, NIST CSF 2.0, MITRE ATLAS, D3FEND, NIST AI RMF & MITRE F3 (Fight Fraud) · agentskills.io standard · Works with..."
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "OpenAI frontier models and Codex are now available on AWS",
+    "link": "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws",
+    "snippet": "OpenAI frontier models and Codex are now generally available on AWS, giving enterprises a new path to build with OpenAI through the AWS environments, controls, and procurement workflows they already u..."
   },
   "11": {
-    "category": "实用工具资源 (Tools & Resources)",
-    "title": "penpot/penpot",
-    "link": "https://github.com/penpot/penpot",
-    "snippet": "Penpot: The open-source design tool for design and code collaboration\nLanguage: Clojure\nStars: 54353\nForks: 3528"
+    "category": "理财投资 (Finance & Investment)",
+    "title": "OpenAI Reportedly Considers Delaying Its IPO. Should You Worry About AI Stocks?",
+    "link": "https://www.fool.com/investing/2026/06/28/openai-reportedly-considers-delaying-its-ipo-shoul/?source=iedfolrf0000001",
+    "snippet": "Investors were expecting OpenAI to launch an IPO this year."
   },
   "12": {
-    "category": "实用工具资源 (Tools & Resources)",
-    "title": "BuilderIO/agent-native",
-    "link": "https://github.com/BuilderIO/agent-native",
-    "snippet": "A framework for building agent-native applications.\nLanguage: TypeScript\nStars: 2831\nForks: 283"
+    "category": "理财投资 (Finance & Investment)",
+    "title": "Tesla Reports Q2 Deliveries in a Matter of Days. Here's the Number That Matters.",
+    "link": "https://www.fool.com/investing/2026/06/28/tesla-reports-q2-deliveries-in-a-matter-of-days-he/?source=iedfolrf0000001",
+    "snippet": "One number due in the first few days of July matters more than any robotaxi update right now."
   },
   "13": {
-    "category": "实用工具资源 (Tools & Resources)",
-    "title": "jamiepine/voicebox",
-    "link": "https://github.com/jamiepine/voicebox",
-    "snippet": "The open-source AI voice studio. Clone, dictate, create.\nLanguage: TypeScript\nStars: 35305\nForks: 4239"
+    "category": "理财投资 (Finance & Investment)",
+    "title": "3 Artificial Intelligence Stocks You Can Buy and Hold for the Next Decade",
+    "link": "https://www.fool.com/investing/2026/06/28/3-artificial-intelligence-stocks-you-can-buy-and-h/?source=iedfolrf0000001",
+    "snippet": "Growth investors are prioritizing AI stocks for market-beating returns, and it's no wonder why that's the case."
   },
   "14": {
-    "category": "实用工具资源 (Tools & Resources)",
-    "title": "aws/agent-toolkit-for-aws",
-    "link": "https://github.com/aws/agent-toolkit-for-aws",
-    "snippet": "Official, AWS-supported MCP servers, skills, and plugins to help AI agents build on AWS\nLanguage: Python\nStars: 1530\nForks: 128"
+    "category": "理财投资 (Finance & Investment)",
+    "title": "This Unstoppable Vanguard ETF Could Set You Up for Life With $300 a Month. Here's How.",
+    "link": "https://www.fool.com/investing/2026/06/28/this-unstoppable-vanguard-etf-could-set-you-up-for/?source=iedfolrf0000001",
+    "snippet": "The right investment could help build life-changing wealth."
   },
   "15": {
-    "category": "实用工具资源 (Tools & Resources)",
-    "title": "alibaba/page-agent",
-    "link": "https://github.com/alibaba/page-agent",
-    "snippet": "JavaScript in-page GUI agent. Control web interfaces with natural language.\nLanguage: TypeScript\nStars: 20448\nForks: 1763"
+    "category": "理财投资 (Finance & Investment)",
+    "title": "The Case For and Against Buying Chevron Right Now",
+    "link": "https://www.fool.com/investing/2026/06/28/the-case-for-and-against-buying-chevron-right-now/?source=iedfolrf0000001",
+    "snippet": "Chevron is a high-yield energy giant, but industry fundamentals are being trumped by emotions today."
   },
   "16": {
-    "category": "实用工具资源 (Tools & Resources)",
-    "title": "Stirling-Tools/Stirling-PDF",
-    "link": "https://github.com/Stirling-Tools/Stirling-PDF",
-    "snippet": "#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere\nLanguage: Java\nStars: 84917\nForks: 7380"
+    "category": "理财投资 (Finance & Investment)",
+    "title": "Is Micron Stock the New Nvidia?",
+    "link": "https://www.fool.com/investing/2026/06/28/is-micron-stock-the-new-nvidia/?source=iedfolrf0000001",
+    "snippet": "Nvidia has been a major winner in the AI boom."
   },
   "17": {
-    "category": "实用工具资源 (Tools & Resources)",
-    "title": "koala73/worldmonitor",
-    "link": "https://github.com/koala73/worldmonitor",
-    "snippet": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface\nLanguage: TypeScript\nStars: 6062..."
+    "category": "理财投资 (Finance & Investment)",
+    "title": "Worried You'll Run Out of Money in Retirement? Don't Do This.",
+    "link": "https://www.fool.com/retirement/2026/06/28/worried-youll-run-out-of-money-in-retirement-dont/?source=iedfolrf0000001",
+    "snippet": "In an attempt to preserve your savings, you might overcorrect."
   },
   "18": {
-    "category": "实用工具资源 (Tools & Resources)",
-    "title": "NanmiCoder/MediaCrawler",
-    "link": "https://github.com/NanmiCoder/MediaCrawler",
-    "snippet": "小红书笔记 | 评论爬虫、抖音视频 | 评论爬虫、快手视频 | 评论爬虫、B 站视频 ｜ 评论爬虫、微博帖子 ｜ 评论爬虫、百度贴吧帖子 ｜ 百度贴吧评论回复爬虫  | 知乎问答文章｜评论爬虫\nLanguage: Python\nStars: 54004\nForks: 11034"
+    "category": "理财投资 (Finance & Investment)",
+    "title": "Buy AST SpaceMobile Before Aug. 1 Due to This Opportunity",
+    "link": "https://www.fool.com/investing/2026/06/28/buy-ast-spacemobile-before-aug-1-due-to-this-oppor/?source=iedfolrf0000001",
+    "snippet": "AST SpaceMobile's next satellite launches could reveal more about whether its satellite network can get to scale."
   },
   "19": {
-    "category": "实用工具资源 (Tools & Resources)",
-    "title": "topoteretes/cognee",
-    "link": "https://github.com/topoteretes/cognee",
-    "snippet": "Cognee is the open-source AI memory platform for agents. Give your AI agents persistent long-term memory across sessions with a self-hosted knowledge graph engine.\nLanguage: Python\nStars: 24714\nForks:..."
+    "category": "理财投资 (Finance & Investment)",
+    "title": "Wall Street Sees SpaceX Surpassing Nvidia in Long-Term Valuation",
+    "link": "https://www.fool.com/investing/2026/06/28/wall-street-sees-spacex-passing-nvidia-valuation/?source=iedfolrf0000001",
+    "snippet": "The space company has a long way to go to dethrone Nvidia."
   },
   "20": {
-    "category": "实用工具资源 (Tools & Resources)",
-    "title": "bytedance/deer-flow",
-    "link": "https://github.com/bytedance/deer-flow",
-    "snippet": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of ta..."
+    "category": "理财投资 (Finance & Investment)",
+    "title": "The Smartest Dividend Stocks to Buy With $3,000 Right Now",
+    "link": "https://www.fool.com/investing/2026/06/28/smartest-dividend-stocks-buy-with-3000-right-now/?source=iedfolrf0000001",
+    "snippet": "If you're an investor looking to generate more income from your holdings, you've come to the right place."
   },
   "21": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "Access OpenAI models and Codex through your Oracle cloud commitment",
-    "link": "https://openai.com/index/openai-on-oracle-cloud",
-    "snippet": "Access OpenAI models and Codex through Oracle Cloud, using existing commitments to build and deploy AI with enterprise security and governance."
+    "category": "社会民生 (Society & Life)",
+    "title": "法国 5 日内死亡人数飙升，医院紧急下单三万台空调，这一举措能缓解高温致死吗？欧洲需要普及空调吗？",
+    "link": "https://www.zhihu.com/question/2054894865851184155",
+    "snippet": "6月28日，法国国家公共卫生署发布报告称，过去五天每日死亡人数有所增加。自6月24日以来，该机构记录的死亡人数比前几个月同期增加了约1000人。 6月24日，法国记录的死亡人数（包括所有死因）超过1200人，6月25日和26日的单日死亡人数超过1400人，较4月和5月同期每天的死亡人数高出约40%。 法国卫生署称，该机构观察到的死亡病例中，有85%涉及65岁以上人群，其中家庭中发生的死亡人数大幅增..."
   },
   "22": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "PRC-linked influence operations are targeting AI debates in the US",
-    "link": "https://openai.com/index/prc-linked-influence-operations-ai-debates",
-    "snippet": "A new report from OpenAI details PRC-linked influence operations using AI to target U.S. tech debates, data center narratives, tariffs, and false claims  about ChatGPT."
+    "category": "社会民生 (Society & Life)",
+    "title": "曾卓君夺得 2026 美国 EVO《饿狼传说》项目冠军，个人第七个 EVO 冠军，对此你有什么想说？",
+    "link": "https://www.zhihu.com/question/2054891757674784154",
+    "snippet": "XIAOHAI曾卓君获得了美国EVO 饿狼传说冠军，这也是他的第七个EVO冠军！！ 赛后XIAOHAI曾卓君更博：王者归来！拿下大满贯！EVO美国饿狼夺冠！"
   },
   "23": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "From data to decisions: how LSEG is scaling trusted AI",
-    "link": "https://openai.com/index/lseg",
-    "snippet": "See how LSEG uses OpenAI to scale trusted AI across its global business, accelerating insights, shrinking release cycles, and empowering 4,000 employees."
+    "category": "社会民生 (Society & Life)",
+    "title": "凌晨四川宜宾发生 5.5 级地震，有当地人能讲讲震感有多明显吗？当时是怎样避险的？",
+    "link": "https://www.zhihu.com/question/2054886687050655628",
+    "snippet": ""
   },
   "24": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "How engineers at Nextdoor use Codex to build without limits",
-    "link": "https://openai.com/index/nextdoor",
-    "snippet": "How engineers at Nextdoor use Codex with GPT-5.5 to investigate hard-to-reproduce issues, build across platforms, and focus on product outcomes."
+    "category": "社会民生 (Society & Life)",
+    "title": "2026年MSI季中冠军赛入围赛T1 3:0 KC，如何评价这场比赛？",
+    "link": "https://www.zhihu.com/question/2054868568404128577",
+    "snippet": ""
   },
   "25": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "What Codex unlocks for Notion",
-    "link": "https://openai.com/index/notion",
-    "snippet": "How Notion uses Codex to one-shot specs, build AI Voice Input for the web, and multiply engineering power across small teams."
+    "category": "社会民生 (Society & Life)",
+    "title": "商务部宣布 20 家日本实体列入出口管制管控名单，20 家日本实体列入关注名单，有哪些信息值得关注？",
+    "link": "https://www.zhihu.com/question/2054868040655943361",
+    "snippet": "根据《中华人民共和国出口管制法》和《中华人民共和国两用物项出口管制条例》等法律法规有关规定，为维护国家安全和利益，履行防扩散等国际义务，决定将防卫研究所等参与提升日本军事实力的20家日本实体列入出口管制管控名单，并采取以下措施： 一、禁止出口经营者向上述20家实体出口两用物项，禁止境外组织和个人将原产于中华人民共和国的两用物项转移或提供给上述20家实体；正在开展的相关活动应当立即停止。 二、特殊情..."
   },
   "26": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "Industrial policy for the Intelligence Age",
-    "link": "https://openai.com/index/industrial-policy-for-the-intelligence-age",
-    "snippet": "Explore our ambitious, people-first industrial policy ideas for the AI era—focused on expanding opportunity, sharing prosperity, and building resilient institutions as advanced intelligence evolves."
+    "category": "社会民生 (Society & Life)",
+    "title": "WTT 美国大满贯，王楚钦 3-0 周启豪，晋级 32 强，如何评价本场比赛？",
+    "link": "https://www.zhihu.com/question/2054866069215344005",
+    "snippet": ""
   },
   "27": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "Confidential submission of draft S-1 to the SEC",
-    "link": "https://openai.com/index/openai-submits-confidential-s-1",
-    "snippet": "OpenAI confirms a confidential S-1 submission to the SEC and has not yet determined timing for further action."
+    "category": "社会民生 (Society & Life)",
+    "title": "韩国队世界杯惨遭淘汰，近 4 次参加世界杯 3次小组出局，这是韩国队真实水平吗？其当前主要问题是什么？",
+    "link": "https://www.zhihu.com/question/2054848866889855133",
+    "snippet": "6月28日，世界杯小组赛K组第3轮，民主刚果3-1逆转乌兹别克斯坦，韩国小组第三排名跌出前8确定出局，11亿韩元（约合487.3万人民币）的出线奖金泡汤！ 本届世界杯，韩国队在A组取得1胜2负，最终积3分、-1个净胜球排名A组第三。 但随着其他小组末轮比赛的推进，韩国队在几个小组第三中的排名一路下降，最终掉出前8，无缘晋级。 这是韩国队史第12次参加世界杯正赛，上届他们晋级淘汰赛但止步16强。算上..."
   },
   "28": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "Built to benefit everyone: our plan",
-    "link": "https://openai.com/index/built-to-benefit-everyone-our-plan",
-    "snippet": "A vision for the future of AI, focusing on access, safety, and shared prosperity as OpenAI works to ensure AGI benefits everyone."
+    "category": "社会民生 (Society & Life)",
+    "title": "广州一高校被曝禁止小米汽车进入，校方回应「车辆管理一视同仁，涉事保安言论不实正调查」，如何看待此事？",
+    "link": "https://www.zhihu.com/question/2054648629869146324",
+    "snippet": "6月28日晚23点，广州华立学院校长助理林海向都市现场记者介绍，此前保安所说言论并不属实，学校从未针对任何品牌车辆设置入校的限制，并会对这名保安进行调查。 据校长助理林海介绍，校园车流量较大，依据校园车辆管理规定，所有外来车辆均须凭码入校，并提前报备，这个规定与车辆品牌无关。 校方还向记者提供了近几天小米汽车进出校园的监控视频。他表示，视频里的这些小米汽车全是学校老师的，校外的小米汽车经过报备也是..."
   },
   "29": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "Introducing the OpenAI Economic Research Exchange",
-    "link": "https://openai.com/index/economic-research-exchange",
-    "snippet": "OpenAI launches the Economic Research Exchange to study AI’s impact on jobs, productivity, and the economy. Applications are now open for selected research projects."
+    "category": "社会民生 (Society & Life)",
+    "title": "如何看待韩国总统李在明怒批韩国队表现，世界杯出局令公众极为失望，这一结果显然是组织和人员方面的失误？",
+    "link": "https://www.zhihu.com/question/2054642851380826744",
+    "snippet": "世界杯小组赛今天结束，在民主刚果战胜乌兹别克斯坦后，韩国确定无缘淘汰赛。韩国总统李在明在社媒发文对此提出了批评。 在球队出局后，韩国文化体育观光部部长崔辉永在社媒发文称韩国足球必须重新出发，韩国总统李在明转发了这条社媒，并发文表示韩国此次出局，是组织和人事层面的失败。 李在明发文称： 我作为一名曾经的职业足球队名誉总经理，对于这个意料之外的结果，感到的不止是困惑，更感觉荒唐。 这再次证明了“人事即..."
   },
   "30": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "How Endava is redesigning software delivery around AI agents",
-    "link": "https://openai.com/index/endava-frontiers",
-    "snippet": "Learn how Endava is using AI agents, ChatGPT Enterprise, and Codex to accelerate software delivery, automate workflows, and build an AI-native culture across the enterprise."
-  },
-  "31": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "Stocks Sink in Broad AI Rout Sparked by China's DeepSeek",
-    "link": "https://www.wsj.com/articles/nikkei-may-rise-as-weak-yen-raises-earnings-hopes-776a8056?mod=rss_markets_main",
-    "snippet": "U.S. stocks were mostly lower, with the Nasdaq leading declines as makers of AI infrastructure suffered steep falls, many in the double digits. Nvidia was down 16%."
-  },
-  "32": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "Comex Gold, Silver Settle Lower",
-    "link": "https://www.wsj.com/articles/gold-edges-lower-feds-rate-decision-in-focus-09dbfceb?mod=rss_markets_main",
-    "snippet": "Gold settled 1.4% lower, down two of the past three sessions, and silver fell 2.5%, down three of the past four sessions."
-  },
-  "33": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "DeepSeek Won't Sink U.S. AI Titans",
-    "link": "https://www.wsj.com/articles/deepseek-us-ai-stocks-nvidia-broadcom-6cdfae81?mod=rss_markets_main",
-    "snippet": "Panic fueling the selloff of Nvidia, Broadcom and other tech giants is overblown."
-  },
-  "34": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "Financial Services Roundup: Market Talk",
-    "link": "https://www.wsj.com/articles/financial-services-roundup-market-talk-94f52cba?mod=rss_markets_main",
-    "snippet": "Gain insight on Experian, SoFi Technologies and more in the latest Market Talks covering Financial Services."
-  },
-  "35": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "Arabica Coffee Prices Hit Record on U.S., Colombia Tariff Spat",
-    "link": "https://www.wsj.com/articles/arabica-coffee-prices-hit-new-high-on-u-s-colombia-tariff-spat-582446fe?mod=rss_markets_main",
-    "snippet": "Arabica coffee prices hit a record level, as traders digested the withdrawal of President Trump’s threats to impose tariffs and economic sanctions on Colombia."
-  },
-  "36": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "Swiss franc, Japanese yen Rise as DeepSeek News Boosts Safe Havens",
-    "link": "https://www.wsj.com/articles/safe-haven-currencies-strengthen-amid-fears-over-global-tariffs-9964e17a?mod=rss_markets_main",
-    "snippet": "The Yen and Swiss Franc were stronger against the dollar as investors sought safe havens after Chinese start-up DeepSeek’s new AI model hit U.S. tech stocks."
-  },
-  "37": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "Natural Gas Falls on Shifting Weather Forecasts",
-    "link": "https://www.wsj.com/articles/u-s-natural-gas-futures-fall-on-shifting-weather-forecasts-1ef3e457?mod=rss_markets_main",
-    "snippet": "U.S. natural gas futures fell after weekend updates took some of the chill out of early February weather forecasts."
-  },
-  "38": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "Building-Products Distributor QXO Launches Hostile Bid for Beacon",
-    "link": "https://www.wsj.com/articles/building-products-distributor-qxo-launching-hostile-bid-for-beacon-de024410?mod=rss_markets_main",
-    "snippet": "QXO is taking its offer directly to shareholders after being rebuffed on several occasions."
-  },
-  "39": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "Natural-Gas Firm Diversified Energy Strikes Deal for Permian Basin Player",
-    "link": "https://www.wsj.com/articles/natural-gas-firm-diversified-energy-nears-deal-for-permian-basin-player-4c1c5ff5?mod=rss_markets_main",
-    "snippet": "Maverick Natural Resources has operations in Texas and Oklahoma."
-  },
-  "40": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "What's New This Tax Season That Can Save You Money",
-    "link": "https://www.wsj.com/articles/tax-season-2024-irs-filing-dates-explained-628a8b37?mod=rss_markets_main",
-    "snippet": "There are some new wrinkles, especially for those who sell things online or bought an EV."
-  },
-  "41": {
     "category": "社会民生 (Society & Life)",
-    "title": "[国产 API] GLM-5.2 满血 +纯血 DeepSeek V4，支持思维链、Cursor，全线 0.3 倍率 ｜注册送 5 美元 + 抽奖 200 美元",
-    "link": "https://www.v2ex.com/t/1223480",
-    "snippet": "huangyin0514: 官网地址： https://link-ai.cc/\n🤖 当前支持模型\nDeepSeek 系列（官签企业级高并发号池）\n💡 0.3x 极限倍率（全线支持最新 V4 架构）\ndeepseek-v4-pro （全新第四代旗舰，深度逻辑推理顶配）\ndeepseek-v4-flash （高吞吐极速响应，完美承接原 chat/reasoner 升级过渡）\n说明： 完美支持 20..."
-  },
-  "42": {
-    "category": "社会民生 (Society & Life)",
-    "title": "性价比中转站，额度 0.06 倍分组特惠 Pro 分组，评论区送体验额度",
-    "link": "https://www.v2ex.com/t/1223449",
-    "snippet": "flymeto: \npro 特惠限时 0.06 倍率分组，pro 混合 puls-0.13 倍率；\n纯 pro-0.2 倍率，首字 1s ，支持高并发\ngpt-image-2 生图 1k 分辨率，0.02 一张，测试中\n注册留言邮箱送 1 刀测试，看到就会加\nhttps://api.0elog.com/\n小铺限时促销，下单 10 得 11 ，50 得 58\nhttps://pay.ldxp.cn/..."
-  },
-  "43": {
-    "category": "社会民生 (Society & Life)",
-    "title": "局座讲大量三哥涌入深圳抢 IT 工作，真有这个状况吗？",
-    "link": "https://www.v2ex.com/t/1223445",
-    "snippet": "jacketma: \n一方面因为美英澳等提高签证门槛，另一方面 CN 大量开发 K 签，于是大量三哥 IT 人才涌入国内，主要是到深圳地区抢工作机会，据说已有 50 万左右。\n咱国内的 IT 工作都不好找了，内卷的不行，再加上三哥也进来抢码农工作，不是更卷了\n三哥别的不说，英语和编程这两手还是可以的，要价还不高，竞争力挺行的"
-  },
-  "44": {
-    "category": "社会民生 (Society & Life)",
-    "title": "某 mao 百亿补贴购买的 macbook air 未拆封在官网查询已经被激活，正常吗？",
-    "link": "https://www.v2ex.com/t/1223415",
-    "snippet": "zentraedi: 6.17 购买，黄纸皮包装箱上还有两个商家自己加的封条，21 到手查询在 18 日就已经激活了，有没有问题？是全新机器吗？看到网上说只有官网发货有预激活，第三方也可以吗？正在和商家交涉中，目前商家说只能退货，不给换"
-  },
-  "45": {
-    "category": "社会民生 (Society & Life)",
-    "title": "6 年前的洗面奶用完了，现在男的都用啥",
-    "link": "https://www.v2ex.com/t/1223399",
-    "snippet": "chenyu923132714: \nrt 男士洗面奶 \n爱出油洗完涩涩的最好"
-  },
-  "46": {
-    "category": "社会民生 (Society & Life)",
-    "title": "Claude Pro 也被封号了",
-    "link": "https://www.v2ex.com/t/1223397",
-    "snippet": "Keine: \n不知道是昨天搞得自动切换代理模块问题还是新机场 ip 问题\n我错了 Pro 也被拿下了 能退钱吗？"
-  },
-  "47": {
-    "category": "社会民生 (Society & Life)",
-    "title": "skills，真的重要嘛？大家来讨论下吧。",
-    "link": "https://www.v2ex.com/t/1223394",
-    "snippet": "mfsw: \n对于 codex 5.5 来说，个人开发网站应用，下面的这些 skill ，哪些是比较推荐的？谢谢大佬指教。\nsuperpowers\nBrainstorming\ngrill me\nFrontend Design\nclaude-design\nUI UX Pro Max\nclaude-mem\nGstack\nharness\nMatt 的前端 Skill\nponytail"
-  },
-  "48": {
-    "category": "社会民生 (Society & Life)",
-    "title": "codex business 48 个月的成品号靠谱吗?",
-    "link": "https://www.v2ex.com/t/1223392",
-    "snippet": "sigmadog: \n网上有卖的,说能换绑邮箱,有兄弟知道吗?"
-  },
-  "49": {
-    "category": "社会民生 (Society & Life)",
-    "title": "大家在家的笔记本会外接显示器吗？",
-    "link": "https://www.v2ex.com/t/1223388",
-    "snippet": "sunwq:"
-  },
-  "50": {
-    "category": "社会民生 (Society & Life)",
-    "title": "在家远程办公太容易分神了",
-    "link": "https://www.v2ex.com/t/1223386",
-    "snippet": "Slarda: \n不小心拿起手机，回过神半天就过去了😂\ntoken 还富裕，于是顺手给自己做了个专注工具，也分享给有同样需求的小伙伴。\n目前就 4 个专注场景 + 一个简单的番茄钟，对我来说基本够用了，没有乱七八糟的功能，打开就能用。\nhttps://deepfocus.space"
-  },
-  "51": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "I Wouldn't Bet Against This Financial Stock in a Recession.",
-    "link": "https://www.fool.com/investing/2026/06/28/i-wouldnt-bet-against-this-financial-stock-in-a-re/?source=iedfolrf0000001",
-    "snippet": "You can't drive a car without auto insurance, and Progressive can use the float to invest in a downturn."
-  },
-  "52": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "SpaceX's Starfall Could Open a Brand-New Revenue Stream Beyond Rockets and Starlink. Is That Enough to Change the Bull Case?",
-    "link": "https://www.fool.com/investing/2026/06/28/spacex-starfall-open-new-revenue-stream-starlink/?source=iedfolrf0000001",
-    "snippet": "If this catches on, one-hour deliveries from China could become a reality."
-  },
-  "53": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "Which Is the Better Intermediate-Term Bond ETF, Vanguard's VCIT or iShares' Treasury-Focused IEI?",
-    "link": "https://www.fool.com/coverage/etfs/2026/06/28/which-is-the-better-intermediate-term-bond-etf-vanguard-s-vcit-or-ishares-treasury-focused-iei/?source=iedfolrf0000001",
-    "snippet": "Compare risk profiles, income streams, and portfolio strategies to see how these two popular fixed-income ETFs stack up for different investor goals."
-  },
-  "54": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "3 Powerful Space Stocks That Could Benefit From SpaceX Dominance",
-    "link": "https://www.fool.com/investing/2026/06/28/3-powerful-space-stocks-that-could-benefit-from-sp/?source=iedfolrf0000001",
-    "snippet": "SpaceX dominates space, but investors may be missing the bigger question: which second-source stock becomes too important to ignore?"
-  },
-  "55": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "1 Stock That's More Than Doubled in 3 Years, and 3 Reasons It Will Keep Soaring",
-    "link": "https://www.fool.com/investing/2026/06/28/stock-doubled-value-reasons-keep-soaring-gm/?source=iedfolrf0000001",
-    "snippet": "General Motors has quietly tripled the performance of the S&P 500 over the past year, and it isn't slowing down."
-  },
-  "56": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "Is GameStop the Next Berkshire Hathaway?",
-    "link": "https://www.fool.com/investing/2026/06/28/is-gamestop-the-next-berkshire-hathaway/?source=iedfolrf0000001",
-    "snippet": "GameStop has gone from a meme stock to an audacious bid to take over eBay, but that doesn't make it the next Berkshire Hathaway."
-  },
-  "57": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "Meta Platforms vs. Snap: Comparing Revenue Scale and Recent Trajectories",
-    "link": "https://www.fool.com/coverage/charts/2026/06/28/meta-platforms-vs-snap-comparing-revenue-scale-and-recent-trajectories/?source=iedfolrf0000001",
-    "snippet": "Meta's revenue base and profitability sharply outpace Snap's, as recent filings highlight distinct financial trajectories for these digital advertising rivals."
-  },
-  "58": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "3 Dividend Stocks Yielding Over 8.5% to Buy With $1,000 Right Now -- and Hold for a Lifetime of Passive Income",
-    "link": "https://www.fool.com/investing/2026/06/28/3-dividend-stocks-yielding-over-85-to-buy-with-100/?source=iedfolrf0000001",
-    "snippet": "These companies offer high-yielding payouts at a time when the S&P 500's yield is low."
-  },
-  "59": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "Could Buying This Magnificent Seven ETF Today Set You Up for Life?",
-    "link": "https://www.fool.com/investing/2026/06/28/buy-magnificent-seven-etf-today-set-you-up-mags/?source=iedfolrf0000001",
-    "snippet": "Investors that want direct exposure to the most dominant tech companies have come to the right place."
-  },
-  "60": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "Why Braiin Stock Plummeted This Week",
-    "link": "https://www.fool.com/investing/2026/06/28/why-braiin-stock-plummeted-this-week/?source=iedfolrf0000001",
-    "snippet": "Braiin stock crashed nearly 40% this week, leaving investors wondering what was at the heart of the huge sell-off."
+    "title": "如何看待最近盛行的定型文「假如你是一个韩国人……」、「韩国黄金时代」?",
+    "link": "https://www.zhihu.com/question/2054567938204645292",
+    "snippet": "例句: “想象一下，假如你是一个韩国人，本周末见证韩国国家队取得本届世界杯首胜，拿起手机一看韩国股市指数涨了8%，今年累计涨幅已达300%李在明宣布要把三星海力士的超额利润平分给你，人们听着 kpop，再工作四天就是三天端午小长假，大家聊的都是三星海力士世界杯。这时候，你听到空气里飘来一句“韩国人吃不起肉和西瓜。” “今天有个韩国女孩发信息给我说，这是她成年以来最好的夏天，这一年她找到了工作，把所..."
   }
 }
