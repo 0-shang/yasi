@@ -1,308 +1,182 @@
 {
   "1": {
-    "category": "实用工具资源 (Tools & Resources)",
-    "title": "0xNyk/council-of-high-intelligence",
-    "link": "https://github.com/0xNyk/council-of-high-intelligence",
-    "snippet": "18 AI personas deliberate your hardest decisions across multiple LLM providers. Aristotle, Feynman, Kahneman, Torvalds & more — structured multi-round deliberation with genuine model diversity. One co..."
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "Databricks brings GPT-5.5 to enterprise agent workflows",
+    "link": "https://openai.com/index/databricks",
+    "snippet": "Databricks uses GPT-5.5 for enterprise agent workflows after the model set a new state of the art on the OfficeQA Pro benchmark."
   },
   "2": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "全球首个：隐空间世界模型，打通长时序双向物理因果链了！",
-    "link": "https://www.qbitai.com/2026/06/439891.html",
-    "snippet": "刚融了2亿美元，冲到了具身榜单第一"
+    "title": "How business operations teams use Codex",
+    "link": "https://openai.com/academy/codex-for-work/how-business-operations-teams-use-codex",
+    "snippet": "See how business operations teams can use Codex to create initiative briefs, strategy updates, leadership decision packets, progress updates, and more from real work inputs."
   },
   "3": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "How Endava builds an agentic organization with Codex",
-    "link": "https://openai.com/index/endava",
-    "snippet": "Learn how Endava uses Codex to build an agentic organization, accelerating software delivery and reducing requirements analysis from weeks to hours."
+    "title": "A new personal finance experience in ChatGPT",
+    "link": "https://openai.com/index/personal-finance-chatgpt",
+    "snippet": "Preview a new personal finance experience in ChatGPT for Pro users in the U.S. Securely connect your financial accounts and get AI-powered insights and guidance grounded in your financial context, goa..."
   },
   "4": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "MUFG aims to become AI-native with OpenAI",
-    "link": "https://openai.com/index/mufg",
-    "snippet": "MUFG uses ChatGPT Enterprise to build an AI-native organization, improve workflows, and deliver new AI-powered financial services at scale."
+    "title": "How sales teams use Codex",
+    "link": "https://openai.com/academy/codex-for-work/how-sales-teams-use-codex",
+    "snippet": "See how sales teams can use ChatGPT Codex to create pipeline briefs, meeting prep packets, forecast reviews, account plans, and stalled-deal diagnoses from real work inputs."
   },
   "5": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "OpenAI’s Frontier Governance Framework",
-    "link": "https://openai.com/index/openai-frontier-governance-framework",
-    "snippet": "Explore OpenAI’s Frontier Governance Framework and how our AI safety, security, and risk practices align with emerging EU and California regulations."
+    "title": "Sea's View on the Future of Agentic Software Development with Codex",
+    "link": "https://openai.com/index/sea-david-chen",
+    "snippet": "Sea Limited's CPO explains why the company is deploying Codex across engineering teams to accelerate AI-native software development in Asia."
   },
   "6": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "Cisco and OpenAI redefine enterprise engineering with Codex",
-    "link": "https://openai.com/index/cisco",
-    "snippet": "Cisco and OpenAI are redefining enterprise engineering with Codex, helping Cisco scale AI-native development, accelerate AI Defense work, and automate defect remediation."
+    "title": "Work with Codex from anywhere",
+    "link": "https://openai.com/index/work-with-codex-from-anywhere",
+    "snippet": "Use Codex anywhere with the ChatGPT mobile app. Monitor, steer, and approve coding tasks in real time across devices and remote environments."
   },
   "7": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "Building self-improving tax agents with Codex",
-    "link": "https://openai.com/index/building-self-improving-tax-agents-with-codex",
-    "snippet": "See how OpenAI, Thrive, and Crete built a self-improving tax agent with Codex, automating filings, improving accuracy, and accelerating workflows."
+    "title": "Helping ChatGPT better recognize context in sensitive conversations",
+    "link": "https://openai.com/index/chatgpt-recognize-context-in-sensitive-conversations",
+    "snippet": "Learn how new ChatGPT safety updates improve context awareness in sensitive conversations, helping detect risk over time and respond more safely."
   },
   "8": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "Election information and safeguards in 2026",
-    "link": "https://openai.com/index/election-safeguards-2026",
-    "snippet": "Ahead of global elections, we’re helping people access information, supporting cyber defenders, and increasing AI transparency"
+    "title": "Building a safe, effective sandbox to enable Codex on Windows",
+    "link": "https://openai.com/index/building-codex-windows-sandbox",
+    "snippet": "Learn how OpenAI built a safe, effective sandbox to enable Codex on Windows with controlled file access and network limits."
   },
   "9": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "Warp’s big bet on building open source with GPT-5.5",
-    "link": "https://openai.com/index/warp",
-    "snippet": "Warp uses GPT-5.5 and OpenAI models to coordinate coding agents across local, cloud, and open-source development workflows."
+    "title": "Our response to the TanStack npm supply chain attack",
+    "link": "https://openai.com/index/our-response-to-the-tanstack-npm-supply-chain-attack",
+    "snippet": "OpenAI details its response to the TanStack “Mini Shai-Hulud” supply chain attack, outlines protections taken to secure systems and signing certificates, and explains why macOS users must update OpenA..."
   },
   "10": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership",
-    "link": "https://openai.com/index/grupo-folha-grupo-uol-partnership",
-    "snippet": "OpenAI partners with Grupo Folha and Grupo UOL to bring trusted Brazilian journalism to ChatGPT, expanding access to news with attribution and transparency."
+    "title": "How finance teams use Codex",
+    "link": "https://openai.com/academy/how-finance-teams-use-codex",
+    "snippet": "See how finance teams can use Codex to build MBRs, reporting packs, variance bridges, model checks, and planning scenarios from real work inputs."
   },
   "11": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "OpenAI named a Leader in enterprise coding agents by Gartner",
-    "link": "https://openai.com/index/gartner-2026-agentic-coding-leader",
-    "snippet": "OpenAI is named a leader in the 2026 Gartner Magic Quadrant for Enterprise AI Coding Agents, with Codex recognized for innovation and enterprise-scale deployment."
+    "category": "理财投资 (Finance & Investment)",
+    "title": "Which Is the Better Short-Term Bond ETF for Income and Safety: iShares' ISTB or Schwab's SCHO?",
+    "link": "https://www.fool.com/coverage/etfs/2026/06/29/which-is-the-better-short-term-bond-etf-for-income-and-safety-ishares-istb-or-schwab-s-scho/?source=iedfolrf0000001",
+    "snippet": "These portfolio anchors differ in bond mix, volatility, and income approach. See how each ETF aligns with your fixed income strategy."
   },
   "12": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "SoFi Has Quietly Met the Bar for S&P 500 Inclusion. Here's What Index Entry Could Do for the Stock.",
-    "link": "https://www.fool.com/investing/2026/06/29/sofi-has-quietly-met-the-bar-for-sp-500-inclusion/?source=iedfolrf0000001",
-    "snippet": "It might be included as early as September."
+    "title": "Intuitive Machines Stock Is Falling: What Investors Need to Understand",
+    "link": "https://www.fool.com/investing/2026/06/29/intuitive-machines-stock-is-falling-what-investors/?source=iedfolrf0000001",
+    "snippet": "Intuitive Machines' revenue growth, billion-dollar backlog, and NASA relationships suggest the business is stronger than the share price implies."
   },
   "13": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "Is Nvidia Still a Millionaire-Maker Stock?",
-    "link": "https://www.fool.com/investing/2026/06/29/is-nvidia-still-a-millionaire-maker-stock/?source=iedfolrf0000001",
-    "snippet": "Can the legendary chipmaker regain its mojo?"
+    "title": "Rocket Lab Is Set to Acquire Satellite Telecom Giant Iridium for $8 BIllion",
+    "link": "https://www.fool.com/investing/2026/06/29/rocket-lab-is-set-to-acquire-satellite-telecom-giant-iridium-for-8-billion/?source=iedfolrf0000001",
+    "snippet": "Rocket Lab's strategy appears similar to SpaceX and its Starlink satellite business."
   },
   "14": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "Why AST SpaceMobile Keeps Gaining",
-    "link": "https://www.fool.com/investing/2026/06/29/why-asts-spacemobile-keeps-gaining/?source=iedfolrf0000001",
-    "snippet": "AST SpaceMobile shares surged after the company confirmed its newest satellites are alive and well in orbit."
+    "title": "Has Micron Technology Become the New Nvidia?",
+    "link": "https://www.fool.com/investing/2026/06/29/has-micron-technology-become-the-new-nvidia/?source=iedfolrf0000001",
+    "snippet": "Much of the attention from analysts and investors these days is on Micron, due to its incredibly impressive growth."
   },
   "15": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "This Vanguard ETF Is Built for a Market That's Finally Rotating Away From Big Tech",
-    "link": "https://www.fool.com/investing/2026/06/29/this-vanguard-etf-is-built-for-a-market-thats-fina/?source=iedfolrf0000001",
-    "snippet": "As the megacap tech trade sputters, one attractive fund already owns what's leading instead -- and it's beating the market this year."
+    "title": "Down 35% on Artificial Intelligence (AI) Panic: Why Smart Investors Are Loading Up on Microsoft Stock",
+    "link": "https://www.fool.com/investing/2026/06/29/down-35-on-artificial-intelligence-ai-panic-why-sm/?source=iedfolrf0000001",
+    "snippet": "Microsoft rarely gets this cheap."
   },
   "16": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "SpaceX Cracked the Nasdaq-100 in Just 15 Days — the Fastest Ever. Is It Time to Buy?",
-    "link": "https://www.fool.com/investing/2026/06/29/spacex-cracked-the-nasdaq-100-in-just-15-days-the-fastest-ever-is-it-time-to-buy/?source=iedfolrf0000001",
-    "snippet": "Joining the Nasdaq-100 is undoubtedly a bullish catalyst."
+    "title": "Prediction: This Artificial Intelligence (AI) Stock Will Be Worth More Than SpaceX by the End of 2026",
+    "link": "https://www.fool.com/investing/2026/06/29/prediction-this-artificial-intelligence-ai-stock-w/?source=iedfolrf0000001",
+    "snippet": "Broadcom is growing at a solid pace, and it trades at a significantly lower valuation than SpaceX."
   },
   "17": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "Which Is the Better Energy ETF, the Alerian MLP or VanEck's NLR Focused on Uranium and Nuclear?",
-    "link": "https://www.fool.com/coverage/etfs/2026/06/29/which-is-the-better-energy-etf-the-alerian-mlp-or-vaneck-s-nlr-focused-on-uranium-and-nuclear/?source=iedfolrf0000001",
-    "snippet": "Compare concentrated energy infrastructure exposure with a diversified nuclear power play as you weigh income, risk, and sector focus for your portfolio."
+    "title": "Should You Buy UnitedHealth Group Stock Before July 16?",
+    "link": "https://www.fool.com/investing/2026/06/29/should-you-buy-unitedhealth-group-stock-before-jul/?source=iedfolrf0000001",
+    "snippet": "The healthcare giant is scheduled to release its second-quarter results in a few weeks."
   },
   "18": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "Cathie Wood's Ark Venture Fund Is Sitting on SpaceX, OpenAI, and Anthropic All at Once. Here's What Investors Need to Know.",
-    "link": "https://www.fool.com/investing/2026/06/29/cathie-woods-ark-venture-fund-is-sitting-on-spacex/?source=iedfolrf0000001",
-    "snippet": "This investment vehicle removes barriers, but doesn't operate like a typical fund."
+    "title": "Which Is the Better Global Real Estate ETF, Vanguard's VNQI or the iShares REET?",
+    "link": "https://www.fool.com/coverage/etfs/2026/06/29/which-is-the-better-global-real-estate-etf-vanguard-s-vnqi-or-the-ishares-reet/?source=iedfolrf0000001",
+    "snippet": "Compare diversification strategies and income profiles as these two global real estate ETFs take different approaches to international exposure."
   },
   "19": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "SpaceX Just Lost $600 Billion in Value in Less Than Two Weeks. That's Why I'm Buying Bitcoin.",
-    "link": "https://www.fool.com/investing/2026/06/29/spacex-just-lost-600-billion-in-value-in-less-than/?source=iedfolrf0000001",
-    "snippet": "The world's most valuable cryptocurrency is still a better buy than the world's biggest IPO."
+    "title": "State Street's RWO or Xtrackers' HAUZ: Which Real Estate ETF Is the Better Buy?",
+    "link": "https://www.fool.com/coverage/etfs/2026/06/29/state-street-s-rwo-or-xtrackers-hauz-which-real-estate-etf-is-the-better-buy/?source=iedfolrf0000001",
+    "snippet": "Explore how portfolio composition and risk profiles differ between these two real estate ETFs, each offering unique global exposure."
   },
   "20": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "After a Weekend of Skirmishes, the U.S. and Iran Agree to Halt Hostilities. Here's What it Means for Energy Investors. ",
-    "link": "https://www.fool.com/investing/2026/06/29/after-a-weekend-of-skirmishes-the-us-and-iran-agree-to-halt-hostilties-heres-what-it-means-for-energy-investors/?source=iedfolrf0000001",
-    "snippet": "The reopening of the Strait of Hormuz continues to face obstacles."
+    "title": "Struggling With Rising Retirement Expenses in 2026? Here's What to Do.",
+    "link": "https://www.fool.com/retirement/2026/06/29/struggling-with-rising-retirement-expenses-in-2026/?source=iedfolrf0000001",
+    "snippet": "If your bills keep increasing, it's time to take action."
   },
   "21": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "2 Reasons to Buy MP Materials Stock, and 1 Reason to Sell",
-    "link": "https://www.fool.com/investing/2026/06/29/2-reasons-to-buy-mp-materials-stock-and-1-reason/?source=iedfolrf0000001",
-    "snippet": "The rare-earth mining company has emerged as a key player in the U.S.'s efforts to secure domestic production of these crucial materials."
+    "category": "社会民生 (Society & Life)",
+    "title": "日本人在心里层面已经输了",
+    "link": "https://bbs.hupu.com/640420247.html",
+    "snippet": "我在下半场就看到日本不敢控球突击，拿球就大脚解围，等于你从心里层面就是处于被围攻的状态，那么你怎么可能进球，一直被围攻"
   },
   "22": {
     "category": "社会民生 (Society & Life)",
-    "title": "中转站限时特惠， 0.075 倍率特惠分组，评论区送 50 刀体验额度",
-    "link": "https://www.v2ex.com/t/1223696",
-    "snippet": "lieliew: \nplus  特惠限时 0.075 倍率，高稳定\n纯 pro 0.16 倍率，高缓存命中率 90%以上 ，不支持高并发\ngpt-image-2 生图，0.03 一张\n注册留言 id 送 50 刀额度测试，看到就加\n网址 https://humanwill.xyz\n小铺充值 1 比 10 https://pay.ldxp.cn/shop/R1Q56348\nqq 群：82772956..."
+    "title": "我的王朝延续了47年",
+    "link": "https://bbs.hupu.com/640420240.html",
+    "snippet": ""
   },
   "23": {
     "category": "社会民生 (Society & Life)",
-    "title": "我的王朝延续了363年",
-    "link": "https://bbs.hupu.com/640419674.html",
+    "title": "我的王朝延续了420年",
+    "link": "https://bbs.hupu.com/640420194.html",
     "snippet": ""
   },
   "24": {
     "category": "社会民生 (Society & Life)",
-    "title": "巴西",
-    "link": "https://bbs.hupu.com/640419668.html",
-    "snippet": "绝杀"
+    "title": "没看过，随机抽的",
+    "link": "https://bbs.hupu.com/640420182.html",
+    "snippet": ""
   },
   "25": {
     "category": "社会民生 (Society & Life)",
-    "title": "巴西绝杀小鬼子简直不要太爽",
-    "link": "https://bbs.hupu.com/640419628.html",
+    "title": "我的王朝延续了420年",
+    "link": "https://bbs.hupu.com/640420169.html",
     "snippet": ""
   },
   "26": {
     "category": "社会民生 (Society & Life)",
-    "title": "我所知的支持日本队的一个猎奇原因",
-    "link": "https://bbs.hupu.com/640419590.html",
-    "snippet": "我高中右桌是不折不扣的日本队球迷，他买日本队球衣，在网上也会骂一些攻击日本的人，后来他告诉我，他任何作出支持日本队，打压自己国家的做法都是违心的，每次这样做心都很痛，但是他看到其他这样做的人这样做显得自己很有个性，所以只好附和他们的行为，但他发自内心的希望自己国家好。"
+    "title": "嘿嘿",
+    "link": "https://bbs.hupu.com/640420168.html",
+    "snippet": ""
   },
   "27": {
     "category": "社会民生 (Society & Life)",
-    "title": "我鲁网贷37万不还什么水平",
-    "link": "https://bbs.hupu.com/640419565.html",
-    "snippet": "信用卡也弄了6万"
+    "title": "第一视角体验广州大丰门瀑布溪降",
+    "link": "https://bbs.hupu.com/640420164.html",
+    "snippet": "第一视角体验广州大丰门瀑布溪降"
   },
   "28": {
     "category": "社会民生 (Society & Life)",
-    "title": "虎扑竞猜入口在哪里啊？",
-    "link": "https://bbs.hupu.com/640419559.html",
-    "snippet": "如题如题 在哪里？？这个app怎么这么难用？？"
+    "title": "詹金斯续约",
+    "link": "https://bbs.hupu.com/640420156.html",
+    "snippet": "据联盟消息人士透露@hoopshype，底特律活塞队将执行丹尼斯·詹金斯价值400万美元的球队选项。詹金斯上赛季为活塞队出战72场比赛，其中19场首发，场均得到9.3分（三分球命中率为37.4%）和3.9次助攻，场均出场时间为20.2分钟。"
   },
   "29": {
     "category": "社会民生 (Society & Life)",
-    "title": "日本队守门员功不可没，拦截了多少球？绝大部分时间巴西队都在对方球门区踢",
-    "link": "https://bbs.hupu.com/640419554.html",
+    "title": "看来自建想拿冠，流川樱木是必选了",
+    "link": "https://bbs.hupu.com/640420149.html",
     "snippet": ""
   },
   "30": {
     "category": "社会民生 (Society & Life)",
-    "title": "没白熬夜！",
-    "link": "https://bbs.hupu.com/640419494.html",
-    "snippet": "舒服了呀"
-  },
-  "31": {
-    "category": "社会民生 (Society & Life)",
-    "title": "我的王朝延续了400年",
-    "link": "https://bbs.hupu.com/640419453.html",
-    "snippet": ""
-  },
-  "32": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "How Virgin Atlantic ships faster with Codex",
-    "link": "https://openai.com/index/virgin-atlantic",
-    "snippet": "How Virgin Atlantic used Codex to ship its revamped mobile app on a fixed holiday travel deadline, reaching near-total unit test coverage and zero P1 defects."
-  },
-  "33": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "AdventHealth advances whole-person care with OpenAI",
-    "link": "https://openai.com/index/adventhealth",
-    "snippet": "AdventHealth is using ChatGPT for Healthcare to streamline workflows, reduce administrative burden, and return more time to patient care."
-  },
-  "34": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "An OpenAI model has disproved a central conjecture in discrete geometry",
-    "link": "https://openai.com/index/model-disproves-discrete-geometry-conjecture",
-    "snippet": "An OpenAI model solved the 80-year-old unit distance problem, disproving a major conjecture in discrete geometry and marking a milestone in AI-driven mathematics."
-  },
-  "35": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "How Ramp engineers accelerate code review with Codex",
-    "link": "https://openai.com/index/ramp",
-    "snippet": "How Ramp engineers use Codex with GPT-5.5 to review code and ship improvements, allowing them to get substantive feedback in minutes instead of hours."
-  },
-  "36": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "The next phase of OpenAI’s Education for Countries",
-    "link": "https://openai.com/index/the-next-phase-of-education-for-countries",
-    "snippet": "OpenAI advances Education for Countries, expanding AI adoption in schools with new partnerships, teacher training, and tools to improve global learning outcomes."
-  },
-  "37": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "Introducing OpenAI for Singapore",
-    "link": "https://openai.com/index/introducing-openai-for-singapore",
-    "snippet": "OpenAI for Singapore launches a multi-year AI partnership to expand deployment, build local talent, and support businesses and public services with AI."
-  },
-  "38": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "Advancing content provenance for a safer, more transparent AI ecosystem",
-    "link": "https://openai.com/index/advancing-content-provenance",
-    "snippet": "OpenAI advances AI content provenance with Content Credentials, SynthID, and a verification tool to help people identify and trust AI-generated media."
-  },
-  "39": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "OpenAI and Dell partner to bring Codex to hybrid and on-premise enterprise environments",
-    "link": "https://openai.com/index/dell-codex-enterprise-partnership",
-    "snippet": "OpenAI and Dell partner to bring Codex to hybrid and on-premise environments, helping enterprises deploy AI coding agents securely across data and workflows."
-  },
-  "40": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "OpenAI and Malta partner to bring ChatGPT Plus to all citizens",
-    "link": "https://openai.com/index/malta-chatgpt-plus-partnership",
-    "snippet": "OpenAI and Malta partner to expand AI access, offering ChatGPT Plus and training to help citizens build practical AI skills and use AI responsibly."
-  },
-  "41": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "How data science teams use Codex",
-    "link": "https://openai.com/academy/codex-for-work/how-data-science-teams-use-codex",
-    "snippet": "See how data science teams can use Codex to build root-cause briefs, impact readouts, KPI memos, scoped analyses, and dashboard specs from real work inputs."
-  },
-  "42": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "3 No-Brainer Dividend Stocks to Buy Right Now",
-    "link": "https://www.fool.com/investing/2026/06/29/x-no-brainer-dividend-stocks-to-buy-right-now/?source=iedfolrf0000001",
-    "snippet": "AbbVie, J&J, and Pfizer are all reliable income plays in this choppy market."
-  },
-  "43": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "AbbVie Stock Hits a New 52-Week High. Has It Gotten Too Expensive to Buy?",
-    "link": "https://www.fool.com/investing/2026/06/29/abbvie-stock-hits-a-new-52-week-high-has-it-gotten/?source=iedfolrf0000001",
-    "snippet": "In the past five years, this top healthcare stock has risen by close to 130%."
-  },
-  "44": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "What Does the Maze Therapeutics CEO's Sale of Nearly 30,000 Shares Mean for Investors?",
-    "link": "https://www.fool.com/coverage/filings/2026/06/29/what-does-the-maze-therapeutics-ceo-s-sale-of-nearly-30-000-shares-mean-for-investors/?source=iedfolrf0000001",
-    "snippet": "This clinical-stage biotech targeting kidney and metabolic diseases reported a notable insider sale, recent filings show."
-  },
-  "45": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "3 Monster Stocks to Buy Right Now With Dividend Yields of 5% or More",
-    "link": "https://www.fool.com/investing/2026/06/29/3-monster-stocks-to-buy-right-now-with-dividend-yi/?source=iedfolrf0000001",
-    "snippet": "Why settle for puny yields when you can buy these monster dividend stocks?"
-  },
-  "46": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "Will SpaceX Stock Double Anytime Soon? No -- but These 3 Stocks Could",
-    "link": "https://www.fool.com/investing/2026/06/29/will-spacex-stock-double-anytime-soon-no-but-these/?source=iedfolrf0000001",
-    "snippet": "These stocks are better bets to skyrocket than the much-hyped rocket stock."
-  },
-  "47": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "A CFO Departure. A Clinical Miss. A $43 Billion Question Mark. Should You Throw in the Towel on Pfizer Stock?",
-    "link": "https://www.fool.com/investing/2026/06/28/a-cfo-departure-a-clinical-miss-a-43-billion-quest/?source=iedfolrf0000001",
-    "snippet": "Things are going from bad to worse for the pharmaceutical giant."
-  },
-  "48": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "This Little-Known Biotech Just Delivered a Bigger IPO Pop Than SpaceX -- and Regeneron Is Already Invested",
-    "link": "https://www.fool.com/investing/2026/06/27/this-little-known-biotech-just-delivered-a-bigger/?source=iedfolrf0000001",
-    "snippet": "Parabilis Medicines is ambitious, but it has Regeneron on its side already."
-  },
-  "49": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "3 Stocks I'm Not Selling No Matter What the Market Does",
-    "link": "https://www.fool.com/investing/2026/06/27/3-stocks-im-not-selling-no-matter-what-the-market/?source=iedfolrf0000001",
-    "snippet": "I focus on well-run companies that pay reliable dividends; a bull or bear market doesn't change how well a company is run."
-  },
-  "50": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "What to Know About This $345,000 Enliven Insider Sale as the Stock Soars 130%",
-    "link": "https://www.fool.com/coverage/filings/2026/06/27/what-to-know-about-this-usd345-000-enliven-insider-sale-as-the-stock-soars-130/?source=iedfolrf0000001",
-    "snippet": "This Boulder biotech advancing cancer drugs saw a notable insider sale amid strong 1-year stock gains and early clinical progress."
-  },
-  "51": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "Oruka Stock Is Now Up Nearly 700%. Here's What a $687,000 Insider Sale Could Mean",
-    "link": "https://www.fool.com/coverage/filings/2026/06/27/oruka-stock-is-now-up-nearly-700-here-s-what-a-usd687-000-insider-sale-could-mean/?source=iedfolrf0000001",
-    "snippet": "This biotech innovator in monoclonal antibody therapies reported a notable insider sale amid ongoing clinical-stage developments."
+    "title": "贾马里布耶亚续约",
+    "link": "https://bbs.hupu.com/640420142.html",
+    "snippet": "据联盟消息人士透露@hoopshype ，菲尼克斯太阳队将执行贾马里·布耶亚2026-27赛季价值258万美元的非保障球队选项。布耶亚上赛季为太阳队出战46场，场均得到5.7分，投篮命中率为45.8%。"
   }
 }
