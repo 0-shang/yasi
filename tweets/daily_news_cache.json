@@ -1,182 +1,158 @@
 {
   "1": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "在格鲁吉亚的大地上：徒步篇",
-    "link": "https://sspai.com/post/111369",
-    "snippet": "Matrix首页推荐Matrix是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选Matrix最优质的文章，展示来自用户的最真实的体验和观点。文章代表作者个人观点 ...查看全文"
+    "category": "实用工具资源 (Tools & Resources)",
+    "title": "msitarzewski/agency-agents",
+    "link": "https://github.com/msitarzewski/agency-agents",
+    "snippet": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, a..."
   },
   "2": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "A blueprint for democratic governance of frontier AI",
-    "link": "https://openai.com/index/frontier-safety-blueprint",
-    "snippet": "OpenAI outlines a blueprint for U.S. governance of frontier AI, proposing a federal framework for safety, resilience, and national security."
+    "category": "实用工具资源 (Tools & Resources)",
+    "title": "soxoj/maigret",
+    "link": "https://github.com/soxoj/maigret",
+    "snippet": "🕵️‍♂️ Collect a dossier on a person by username from 3000+ sites\nLanguage: Python\nStars: 34101\nForks: 2587"
   },
   "3": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "OpenAI public policy agenda",
-    "link": "https://openai.com/index/public-policy-agenda",
-    "snippet": "OpenAI outlines its public policy agenda for AI, including safety, youth protection, workforce transition, and global standards to ensure AI benefits society."
+    "category": "实用工具资源 (Tools & Resources)",
+    "title": "logto-io/logto",
+    "link": "https://github.com/logto-io/logto",
+    "snippet": "🧑‍🚀 Authentication and authorization infrastructure for SaaS and AI apps, built on OIDC and OAuth 2.1 with multi-tenancy, SSO, and RBAC.\nLanguage: TypeScript\nStars: 12333\nForks: 846"
   },
   "4": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "Travelers deploys AI-powered claims countrywide with OpenAI",
-    "link": "https://openai.com/index/travelers",
-    "snippet": "Travelers built an AI-powered Claim Assistant with OpenAI to guide customers through filing claims, provide 24/7 support, and scale operations during peak demand."
+    "category": "实用工具资源 (Tools & Resources)",
+    "title": "Unclecheng-li/VulnClaw",
+    "link": "https://github.com/Unclecheng-li/VulnClaw",
+    "snippet": "基于 AI Agent + MCP 工具链 + 渗透 Skill 编排， 配合大语言模型， 自然语言输入 → 自动完成「信息收集 → 漏洞发现 → 漏洞利用 → 报告生成」全流程。\nLanguage: Python\nStars: 984\nForks: 158"
   },
   "5": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "Codex for every role, tool, and workflow",
-    "link": "https://openai.com/index/codex-for-every-role-tool-workflow",
-    "snippet": "Discover new Codex plugins, sites, and annotations that help analysts, marketers, designers, investors, and other teams get more done with AI."
+    "category": "实用工具资源 (Tools & Resources)",
+    "title": "refactoringhq/tolaria",
+    "link": "https://github.com/refactoringhq/tolaria",
+    "snippet": "Desktop app to manage markdown knowledge bases\nLanguage: TypeScript\nStars: 17313\nForks: 1198"
   },
   "6": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "Advancing youth safety and opportunity through global leadership",
-    "link": "https://openai.com/index/advancing-youth-safety-and-opportunity-through-global-leadership",
-    "snippet": "OpenAI calls for global action on youth AI safety, proposing an international institute to strengthen safeguards, standards, and opportunities for young people."
+    "category": "实用工具资源 (Tools & Resources)",
+    "title": "veracrypt/VeraCrypt",
+    "link": "https://github.com/veracrypt/VeraCrypt",
+    "snippet": "Disk encryption with strong security based on TrueCrypt\nLanguage: C\nStars: 10321\nForks: 1225"
   },
   "7": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "Codex is becoming a productivity tool for everyone",
-    "link": "https://openai.com/index/codex-for-knowledge-work",
-    "snippet": "The Next Era of Knowledge Work report explores how Codex is transforming productivity through AI-powered research, data analysis, workflow automation, and content creation."
+    "title": "Claude Mythos让梁文锋决定融资",
+    "link": "https://www.qbitai.com/2026/06/439863.html",
+    "snippet": "DeepSeek不储备弹药根本没法打下去了"
   },
   "8": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "Our views on AI policy and political advocacy",
-    "link": "https://openai.com/index/our-views-on-ai-policy-and-political-advocacy",
-    "snippet": "Our approach to AI policy and political advocacy, transparency, support for thoughtful regulation and AI safety, and that no outside political group speaks on the company’s behalf."
+    "title": "OceanBase发布AI数据库：以一套引擎融合湖库与多模态数据",
+    "link": "https://www.qbitai.com/2026/06/439876.html",
+    "snippet": "让AI真正“读懂”企业"
   },
   "9": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "Building the infrastructure for the Intelligence Age in Michigan",
-    "link": "https://openai.com/index/stargate-michigan-data-center",
-    "snippet": "OpenAI breaks ground on a 1GW data center project in Michigan as part of Stargate, building AI infrastructure to expand access, create jobs, and support communities."
+    "title": "国家队+千亿产业+头部财投集体入局，智平方200亿估值筑就大湾区具身智能名片",
+    "link": "https://www.qbitai.com/2026/06/439861.html",
+    "snippet": "大湾区首个200亿具身智能独角兽诞生！“最像特斯拉”智平方吸金50亿，全矩阵顶级资本重仓"
   },
   "10": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "OpenAI frontier models and Codex are now available on AWS",
-    "link": "https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws",
-    "snippet": "OpenAI frontier models and Codex are now generally available on AWS, giving enterprises a new path to build with OpenAI through the AWS environments, controls, and procurement workflows they already u..."
+    "title": "AI当老板，快给10家公司干破产了…",
+    "link": "https://www.qbitai.com/2026/06/439864.html",
+    "snippet": "画出那个矩阵的能力——还属于人类。"
   },
   "11": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "OpenAI Reportedly Considers Delaying Its IPO. Should You Worry About AI Stocks?",
-    "link": "https://www.fool.com/investing/2026/06/28/openai-reportedly-considers-delaying-its-ipo-shoul/?source=iedfolrf0000001",
-    "snippet": "Investors were expecting OpenAI to launch an IPO this year."
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "派评 | 近期值得关注的 App",
+    "link": "https://sspai.com/post/111697",
+    "snippet": ">下载少数派2.0客户端、关注少数派公众号，解锁全新阅读体验📰>实用、好用的正版软件，少数派为你呈现🚀查看全文"
   },
   "12": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "Tesla Reports Q2 Deliveries in a Matter of Days. Here's the Number That Matters.",
-    "link": "https://www.fool.com/investing/2026/06/28/tesla-reports-q2-deliveries-in-a-matter-of-days-he/?source=iedfolrf0000001",
-    "snippet": "One number due in the first few days of July matters more than any robotaxi update right now."
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "Mapping Europe’s AI Workforce Opportunity",
+    "link": "https://openai.com/index/mapping-ai-jobs-transition-eu",
+    "snippet": "A new OpenAI report maps how AI could reshape jobs across the EU, highlighting which occupations may face automation, growth, or workflow changes."
   },
   "13": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "3 Artificial Intelligence Stocks You Can Buy and Hold for the Next Decade",
-    "link": "https://www.fool.com/investing/2026/06/28/3-artificial-intelligence-stocks-you-can-buy-and-h/?source=iedfolrf0000001",
-    "snippet": "Growth investors are prioritizing AI stocks for market-beating returns, and it's no wonder why that's the case."
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "Boston Children’s uses AI to unlock new diagnoses",
+    "link": "https://openai.com/index/boston-childrens-hospital",
+    "snippet": "Boston Children’s Hospital uses OpenAI technology to improve patient care, reduce operational burden, and help diagnose more than 40 rare disease cases."
   },
   "14": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "This Unstoppable Vanguard ETF Could Set You Up for Life With $300 a Month. Here's How.",
-    "link": "https://www.fool.com/investing/2026/06/28/this-unstoppable-vanguard-etf-could-set-you-up-for/?source=iedfolrf0000001",
-    "snippet": "The right investment could help build life-changing wealth."
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "How Braintrust turns customer requests into code with Codex",
+    "link": "https://openai.com/index/braintrust",
+    "snippet": "How Braintrust engineers use Codex with GPT-5.5 to run experiments and code faster."
   },
   "15": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "The Case For and Against Buying Chevron Right Now",
-    "link": "https://www.fool.com/investing/2026/06/28/the-case-for-and-against-buying-chevron-right-now/?source=iedfolrf0000001",
-    "snippet": "Chevron is a high-yield energy giant, but industry fundamentals are being trumped by emotions today."
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "Strengthening societal resilience with Rosalind Biodefense",
+    "link": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense",
+    "snippet": "OpenAI launches Rosalind Biodefense, expanding trusted access to GPT-Rosalind for vetted developers and U.S. government partners advancing biodefense, public health, and pandemic preparedness through ..."
   },
   "16": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "Is Micron Stock the New Nvidia?",
-    "link": "https://www.fool.com/investing/2026/06/28/is-micron-stock-the-new-nvidia/?source=iedfolrf0000001",
-    "snippet": "Nvidia has been a major winner in the AI boom."
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "A shared playbook for trustworthy third party evaluations",
+    "link": "https://openai.com/index/trustworthy-third-party-evaluations-foundations",
+    "snippet": "OpenAI shares guidance on third-party AI evaluations, covering how to assess model capabilities, safeguards, and validity for frontier systems."
   },
   "17": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "Worried You'll Run Out of Money in Retirement? Don't Do This.",
-    "link": "https://www.fool.com/retirement/2026/06/28/worried-youll-run-out-of-money-in-retirement-dont/?source=iedfolrf0000001",
-    "snippet": "In an attempt to preserve your savings, you might overcorrect."
+    "title": "现在是买老登股吃利息的好时机吗？",
+    "link": "http://xueqiu.com/1914355400/397334893",
+    "snippet": "一、市场面：红利资产在成长股挤压下的分化与坚守\n从2026年上半年的市场表现来看，老登股似乎正在经历一场冰与火的考验。一方面，科技成长股成为市场绝对主线，人工智能、半导体、机器人等概念吸引了大量资金追逐，创业板指与红利指数的估值差已逼近两倍标准差，显示科技成长相对红利防御的估值溢价处于阶段性高位。国金证券在2026年初的一份研报中直言，在AI投资宏观风险较低、降息周期下全球制造业景气度向上的背景下..."
   },
   "18": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "Buy AST SpaceMobile Before Aug. 1 Due to This Opportunity",
-    "link": "https://www.fool.com/investing/2026/06/28/buy-ast-spacemobile-before-aug-1-due-to-this-oppor/?source=iedfolrf0000001",
-    "snippet": "AST SpaceMobile's next satellite launches could reveal more about whether its satellite network can get to scale."
+    "title": "跌跌不休，美团还能不能赚钱？",
+    "link": "http://xueqiu.com/9869724797/397282474",
+    "snippet": "2024年巅峰时，美团一年经调整净利润438亿。外卖大战一开打，利润直接归零转亏损。\n如今阿里还在烧钱，抖音还在抢地盘，美团还能不能赚钱？\n这不是一个简单的\"能\"或\"不能\"的问题。关键在于：外卖补贴战什么时候停？停了之后格局怎么分？美团还能不能回到巅峰盈利？\n01.\nAI与机器人：被低估的安全垫\n26Q1营收910.4亿，同比+5.6%；经营亏损64.7亿，环比25Q4的-160.7亿大幅收窄；经..."
   },
   "19": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "Wall Street Sees SpaceX Surpassing Nvidia in Long-Term Valuation",
-    "link": "https://www.fool.com/investing/2026/06/28/wall-street-sees-spacex-passing-nvidia-valuation/?source=iedfolrf0000001",
-    "snippet": "The space company has a long way to go to dethrone Nvidia."
+    "title": "谈谈最近思考的宏大叙事",
+    "link": "http://xueqiu.com/4027531808/397333957",
+    "snippet": "回到宏大叙事的主题，这一次极致分裂行情确实和历史上任何一次都不同，这次的极致分裂行情叠加了信息传递速度；不带任何情绪，永不畏高的量化交易；人工智能、太空竞争的本质是中美军备竞赛——这就注定了无论是中国、还是美国，谁也不敢停下来；这种军备竞赛在市场上的表现就是人工智能基础设施建设的大跃进，这种集采设施建设的脆弱度甚至比房地产泡沫还要高——毕竟房地产最终还有人类的需求买单。思考了很久、除了战争和有限的..."
   },
   "20": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "The Smartest Dividend Stocks to Buy With $3,000 Right Now",
-    "link": "https://www.fool.com/investing/2026/06/28/smartest-dividend-stocks-buy-with-3000-right-now/?source=iedfolrf0000001",
-    "snippet": "If you're an investor looking to generate more income from your holdings, you've come to the right place."
+    "title": "从“涨价”逻辑，看AI产业链利润究竟流向哪里？",
+    "link": "http://xueqiu.com/7888562186/397391781",
+    "snippet": "涨价”。\n每一轮产业周期中，几乎都会伴随着各种涨价消息：\n有的是产品升级带来的价值提升，例如从GB平台升级到Rubin平台、光模块从800G迭代至1.6T；也有的是供给紧张导致的价格上涨，例如HBM封装、高端PCB材料等。\n因此，市场容易形成一种惯性认知：谁涨价，谁就最赚钱。\n但如果回顾近几年AI产业链的发展，会发现真实情况并非如此。\n真正获得最高利润的，往往不是涨价最多的环节，而是拥有产业链定价..."
   },
   "21": {
-    "category": "社会民生 (Society & Life)",
-    "title": "法国 5 日内死亡人数飙升，医院紧急下单三万台空调，这一举措能缓解高温致死吗？欧洲需要普及空调吗？",
-    "link": "https://www.zhihu.com/question/2054894865851184155",
-    "snippet": "6月28日，法国国家公共卫生署发布报告称，过去五天每日死亡人数有所增加。自6月24日以来，该机构记录的死亡人数比前几个月同期增加了约1000人。 6月24日，法国记录的死亡人数（包括所有死因）超过1200人，6月25日和26日的单日死亡人数超过1400人，较4月和5月同期每天的死亡人数高出约40%。 法国卫生署称，该机构观察到的死亡病例中，有85%涉及65岁以上人群，其中家庭中发生的死亡人数大幅增..."
+    "category": "理财投资 (Finance & Investment)",
+    "title": "红利、低波、现金流ETF四要素对照表，附清单（2026年6月版）",
+    "link": "http://xueqiu.com/9391624441/397279704",
+    "snippet": "当我们一起体会冰火两重天的时候，浓眉大眼、稳重如山的红利类指数，也在这一轮的跌宕起伏中，出现了较大回撤。\n科技的抽水泵马力十足，当泛科技走强时，大部分板块都会受其影响。而当泛科技调头向下时，以低估值、股息率见长的红利板块，同样出现了较大回撤。\n从最近半年的走势来说：吃肉的时候光看着，挨打的时候没落下。\n从整体数据来看，红利、低波、现金流类指数年初至今收益率（价格指数）基本全军覆没、整体转绿，回撤深..."
   },
   "22": {
-    "category": "社会民生 (Society & Life)",
-    "title": "曾卓君夺得 2026 美国 EVO《饿狼传说》项目冠军，个人第七个 EVO 冠军，对此你有什么想说？",
-    "link": "https://www.zhihu.com/question/2054891757674784154",
-    "snippet": "XIAOHAI曾卓君获得了美国EVO 饿狼传说冠军，这也是他的第七个EVO冠军！！ 赛后XIAOHAI曾卓君更博：王者归来！拿下大满贯！EVO美国饿狼夺冠！"
+    "category": "理财投资 (Finance & Investment)",
+    "title": "锂电池行业更新6-27（市场常见误区一）",
+    "link": "http://xueqiu.com/5243796549/397205434",
+    "snippet": "有人问了，为什么这个行业正面的消息居多一点，为什么市场上传到更多的都是无中生有的负面消息呢？因为市场上一直有人想通过价格打压，来更低的采购原材料。所以哪怕基本面都是朝着多头在发展，但是市场上大家一直讨论的都是小zw。\n包括jxw复产的事情，从去年一直说到现在还在说，而且更离谱的都说出来的是如果这个矿不停产，根本不可能涨价到现在的位置。咋不说需求端如果没有这么炸裂，就如何如何呢？这种话没有任何意义，..."
   },
   "23": {
-    "category": "社会民生 (Society & Life)",
-    "title": "凌晨四川宜宾发生 5.5 级地震，有当地人能讲讲震感有多明显吗？当时是怎样避险的？",
-    "link": "https://www.zhihu.com/question/2054886687050655628",
-    "snippet": ""
+    "category": "理财投资 (Finance & Investment)",
+    "title": "高股息策略失效了吗",
+    "link": "http://xueqiu.com/3070860120/397311331",
+    "snippet": "失败的策略很多，尤其是十分贴合当下市场偏好的，风向一转，哪里来的回哪里去。但高股息策略，直指投资核心，投资人从公司拿到的回报，只能体现为股息与回购，它是绝对的，不依赖于市场风格的。高股息策略的这种特点，导致他很难失效。\n         但现实中，采用高股息策略却投资失败，主要有两方面的原因。一是买入了高股息不可持续股票，这就属于眼光问题，比如前几年地产股的高股息，最近的洋河的高股息，这种失败是水..."
   },
   "24": {
-    "category": "社会民生 (Society & Life)",
-    "title": "2026年MSI季中冠军赛入围赛T1 3:0 KC，如何评价这场比赛？",
-    "link": "https://www.zhihu.com/question/2054868568404128577",
-    "snippet": ""
+    "category": "理财投资 (Finance & Investment)",
+    "title": "（周记339）美股也有老登？丨这些企业是否会被替代",
+    "link": "http://xueqiu.com/1643044849/397267202",
+    "snippet": "是灾难还是遗憾\n本周下跌的企业4500家，依然是一个极端的市场，少量企业虹吸大部分企业的流动性，到什么程度呢？\n微盘股指数最近一个月下跌了23%，从今年上涨较多的版块，已经转为垫底的几个版块了。\n\nAI吸老登，可以理解，因为风格完全相反。\n而微盘股本身也是题材资金的最爱，之前表现也不错，到了当下也成了血包。\n美股那边也一样，美股七姐妹中，微软从高点跌了30%、亚马逊跌了接近20%、特斯拉跌了23%..."
   },
   "25": {
-    "category": "社会民生 (Society & Life)",
-    "title": "商务部宣布 20 家日本实体列入出口管制管控名单，20 家日本实体列入关注名单，有哪些信息值得关注？",
-    "link": "https://www.zhihu.com/question/2054868040655943361",
-    "snippet": "根据《中华人民共和国出口管制法》和《中华人民共和国两用物项出口管制条例》等法律法规有关规定，为维护国家安全和利益，履行防扩散等国际义务，决定将防卫研究所等参与提升日本军事实力的20家日本实体列入出口管制管控名单，并采取以下措施： 一、禁止出口经营者向上述20家实体出口两用物项，禁止境外组织和个人将原产于中华人民共和国的两用物项转移或提供给上述20家实体；正在开展的相关活动应当立即停止。 二、特殊情..."
+    "category": "理财投资 (Finance & Investment)",
+    "title": "SpaceX's $60 Billion Cursor Acquisition Changes Everything. Here's Why.",
+    "link": "https://www.fool.com/investing/2026/06/29/spacexs-60-billion-cursor-deal-changes-everything/?source=iedfolrf0000001",
+    "snippet": "By picking up Cursor developer Anysphere, Elon Musk's company enhances its offerings in what it sees as its largest potential addressable market."
   },
   "26": {
-    "category": "社会民生 (Society & Life)",
-    "title": "WTT 美国大满贯，王楚钦 3-0 周启豪，晋级 32 强，如何评价本场比赛？",
-    "link": "https://www.zhihu.com/question/2054866069215344005",
-    "snippet": ""
-  },
-  "27": {
-    "category": "社会民生 (Society & Life)",
-    "title": "韩国队世界杯惨遭淘汰，近 4 次参加世界杯 3次小组出局，这是韩国队真实水平吗？其当前主要问题是什么？",
-    "link": "https://www.zhihu.com/question/2054848866889855133",
-    "snippet": "6月28日，世界杯小组赛K组第3轮，民主刚果3-1逆转乌兹别克斯坦，韩国小组第三排名跌出前8确定出局，11亿韩元（约合487.3万人民币）的出线奖金泡汤！ 本届世界杯，韩国队在A组取得1胜2负，最终积3分、-1个净胜球排名A组第三。 但随着其他小组末轮比赛的推进，韩国队在几个小组第三中的排名一路下降，最终掉出前8，无缘晋级。 这是韩国队史第12次参加世界杯正赛，上届他们晋级淘汰赛但止步16强。算上..."
-  },
-  "28": {
-    "category": "社会民生 (Society & Life)",
-    "title": "广州一高校被曝禁止小米汽车进入，校方回应「车辆管理一视同仁，涉事保安言论不实正调查」，如何看待此事？",
-    "link": "https://www.zhihu.com/question/2054648629869146324",
-    "snippet": "6月28日晚23点，广州华立学院校长助理林海向都市现场记者介绍，此前保安所说言论并不属实，学校从未针对任何品牌车辆设置入校的限制，并会对这名保安进行调查。 据校长助理林海介绍，校园车流量较大，依据校园车辆管理规定，所有外来车辆均须凭码入校，并提前报备，这个规定与车辆品牌无关。 校方还向记者提供了近几天小米汽车进出校园的监控视频。他表示，视频里的这些小米汽车全是学校老师的，校外的小米汽车经过报备也是..."
-  },
-  "29": {
-    "category": "社会民生 (Society & Life)",
-    "title": "如何看待韩国总统李在明怒批韩国队表现，世界杯出局令公众极为失望，这一结果显然是组织和人员方面的失误？",
-    "link": "https://www.zhihu.com/question/2054642851380826744",
-    "snippet": "世界杯小组赛今天结束，在民主刚果战胜乌兹别克斯坦后，韩国确定无缘淘汰赛。韩国总统李在明在社媒发文对此提出了批评。 在球队出局后，韩国文化体育观光部部长崔辉永在社媒发文称韩国足球必须重新出发，韩国总统李在明转发了这条社媒，并发文表示韩国此次出局，是组织和人事层面的失败。 李在明发文称： 我作为一名曾经的职业足球队名誉总经理，对于这个意料之外的结果，感到的不止是困惑，更感觉荒唐。 这再次证明了“人事即..."
-  },
-  "30": {
-    "category": "社会民生 (Society & Life)",
-    "title": "如何看待最近盛行的定型文「假如你是一个韩国人……」、「韩国黄金时代」?",
-    "link": "https://www.zhihu.com/question/2054567938204645292",
-    "snippet": "例句: “想象一下，假如你是一个韩国人，本周末见证韩国国家队取得本届世界杯首胜，拿起手机一看韩国股市指数涨了8%，今年累计涨幅已达300%李在明宣布要把三星海力士的超额利润平分给你，人们听着 kpop，再工作四天就是三天端午小长假，大家聊的都是三星海力士世界杯。这时候，你听到空气里飘来一句“韩国人吃不起肉和西瓜。” “今天有个韩国女孩发信息给我说，这是她成年以来最好的夏天，这一年她找到了工作，把所..."
+    "category": "理财投资 (Finance & Investment)",
+    "title": "How SpaceX Uses a Secret Launch Subsidy to Make Starlink Look Insanely Profitable",
+    "link": "https://www.fool.com/investing/2026/06/29/spacex-secret-launch-subsidy-makes-starlink-profit/?source=iedfolrf0000001",
+    "snippet": "SpaceX charges most of its customers $102 million per rocket launch. It charges Starlink $0."
   }
 }
