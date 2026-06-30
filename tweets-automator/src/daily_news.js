@@ -38,12 +38,12 @@ const defaultRssSources = {
   "实用工具资源 (Tools & Resources)": {
     limit: 30,
     sources: [
-      // ── 实用工具与独立开发项目 ──
+      // ── GitHub 趋势 (无论是否重复，强制展示 15 条) ──
+      { url: "https://rsshub.rssforever.com/github/trending/daily/any",   quota: 15, ignoreSeen: true, label: "GitHub 每日趋势" },
+      // ── 其他随意 ──
       { url: "https://rsshub.rssforever.com/v2ex/topics/create",          label: "V2EX 创造(独立开发者自荐工具)" },
       { url: "https://rsshub.rssforever.com/v2ex/topics/share",           label: "V2EX 分享(实用工具发现)" },
-      { url: "https://rsshub.rssforever.com/hellogithub/article",         label: "HelloGitHub(优质开源干货)" },
-      { url: "https://rsshub.rssforever.com/github/trending/daily/any",   label: "GitHub 每日趋势" },
-      { url: "https://rsshub.rssforever.com/github/trending/weekly/any",  label: "GitHub 每周趋势" }
+      { url: "https://rsshub.rssforever.com/hellogithub/article",         label: "HelloGitHub(优质开源干货)" }
     ]
   },
   "科技人工智能 (Tech & AI)": {
@@ -96,7 +96,8 @@ async function fetchCategoryItems(sources, limit, seenLinks) {
 
   for (const source of sources) {
     if (collected.length >= limit) break;
-    const stillNeed = limit - collected.length;
+    // 如果源配置了 quota，则此源最多只取 quota 个；否则取完剩下的 limit
+    const stillNeed = source.quota ? Math.min(source.quota, limit - collected.length) : limit - collected.length;
 
     try {
       const feed = await parser.parseURL(source.url);
@@ -110,15 +111,22 @@ async function fetchCategoryItems(sources, limit, seenLinks) {
       items.sort((a, b) => b._parsedDate - a._parsedDate);
 
       const before = items.length;
-      items = items.filter(item => {
-        const link = item.link || item.guid || '';
-        return link && !seenLinks[link];
-      });
-      skipped += before - items.length;
+      if (!source.ignoreSeen) {
+        items = items.filter(item => {
+          const link = item.link || item.guid || '';
+          return link && !seenLinks[link];
+        });
+        skipped += before - items.length;
+      }
 
       const toAdd = items.slice(0, stillNeed);
       collected.push(...toAdd);
-      console.log(`  ✅ [${toAdd.length}] ${source.label} (过滤重复${before - items.length}条)`);
+      
+      if (source.ignoreSeen) {
+        console.log(`  ✅ [${toAdd.length}] ${source.label} (强制不过滤)`);
+      } else {
+        console.log(`  ✅ [${toAdd.length}] ${source.label} (过滤重复${before - items.length}条)`);
+      }
     } catch (e) {
       console.error(`  ⚠️ FAILED [${source.label}]: ${e.message}`);
     }
