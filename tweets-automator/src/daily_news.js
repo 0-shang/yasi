@@ -38,10 +38,11 @@ const defaultRssSources = {
   "实用工具资源 (Tools & Resources)": {
     limit: 30,
     sources: [
-      // ── 全部改为 GitHub 资源，确保都是开源项目/代码工具 ──
-      { url: "https://rsshub.rssforever.com/github/trending/daily/any",    quota: 15, label: "GitHub 每日趋势" },
-      { url: "https://rsshub.app/github/trending/daily/any",               quota: 10, label: "GitHub 每日趋势(备)" },
-      { url: "https://rsshub.rssforever.com/github/trending/weekly/any",   quota: 5,  label: "GitHub 每周趋势" }
+      // ── 实用工具与开源项目（增加更新频率高的源，避免全局去重后抓不到内容） ──
+      { url: "https://www.appinn.com/feed/",                               label: "小众软件(Appinn)" },
+      { url: "https://rsshub.rssforever.com/producthunt/today",            label: "Product Hunt" },
+      { url: "https://rsshub.rssforever.com/github/trending/daily/any",    label: "GitHub 每日趋势" },
+      { url: "https://rsshub.rssforever.com/github/trending/weekly/any",   label: "GitHub 每周趋势" }
     ]
   },
   "科技人工智能 (Tech & AI)": {
