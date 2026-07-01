@@ -5,7 +5,7 @@ const fs = require('fs');
 const path = require('path');
 const matter = require('gray-matter');
 const config = require('./config');
-const { postTweetOrThread, fetchRecentTweets } = require('./twitter');
+const { postTweetOrThread } = require('./twitter');
 const { generateTweetsFromContent, generateHotTweetsFromRSS, chatWithAI, simpleChatWithAI } = require('./ai');
 const Parser = require('rss-parser');
 const parser = new Parser();
@@ -222,109 +222,12 @@ bot.start((ctx) => {
     return ctx.reply("Sorry, you are not authorized to use this bot.");
   }
   ctx.reply(
-    "👋 欢迎！您可以直接发送任何长篇文字/链接，我将为您提炼为专业推文。\n\n💡 快捷指令:\n- `/daily` 抓取最新早报\n- `/news` 一键唤出上次早报\n- `/check` 检查并发布队列推文\n- `/chat` 切换纯聊天模式\n- `/sync_twitter` 同步你手动发送的推文",
+    "👋 欢迎！您可以直接发送任何长篇文字/链接，我将为您提炼为专业推文。\n\n💡 快捷指令:\n- `/daily` 抓取最新早报\n- `/news` 一键唤出上次早报\n- `/check` 检查并发布队列推文\n- `/chat` 切换纯聊天模式",
     Markup.inlineKeyboard([
       [Markup.button.callback('📰 抓取最新早报', 'fetch_daily')],
       [Markup.button.callback('📋 查看上次早报', 'show_cached_news')]
     ])
   );
-});
-
-async function performManualTweetSync(ctx = null) {
-  let loadingMsg = null;
-  if (ctx) {
-    loadingMsg = await ctx.reply('🔄 正在从 Twitter 拉取最近的推文并与本地库进行同步...');
-  }
-  
-  try {
-    const tweets = await fetchRecentTweets(20); // Get recent 20 tweets
-    
-    // Read all existing published tweets to gather known IDs
-    const publishedDir = config.paths.tweets.published;
-    let existingIds = new Set();
-    if (fs.existsSync(publishedDir)) {
-      const files = fs.readdirSync(publishedDir).filter(f => f.endsWith('.md'));
-      for (const file of files) {
-        const content = fs.readFileSync(path.join(publishedDir, file), 'utf-8');
-        const parsed = matter(content);
-        if (parsed.data.tweet_id) {
-          existingIds.add(parsed.data.tweet_id.toString());
-        }
-      }
-    }
-    
-    let addedCount = 0;
-    
-    for (const tweet of tweets) {
-      if (!existingIds.has(tweet.id.toString())) {
-        // Not found, so we create a file for it
-        const dateStr = tweet.created_at ? tweet.created_at.split('T')[0] : new Date().toISOString().split('T')[0];
-        const timeStr = Date.now().toString().slice(-6);
-        const filename = `${dateStr}_manual_${timeStr}.md`;
-        
-        let description = tweet.text.slice(0, 100).replace(/[\r\n]+/g, ' ');
-        if (tweet.text.length > 100) description += '...';
-        
-        const frontmatter = {
-          title: `Manual Tweet ${dateStr}`,
-          date: dateStr,
-          description: description,
-          tags: ['feed'],
-          status: 'published',
-          published_at: tweet.created_at || new Date().toISOString(),
-          tweet_id: tweet.id,
-          urls: [`https://x.com/i/web/status/${tweet.id}`]
-        };
-        
-        const fileContent = matter.stringify(tweet.text, frontmatter);
-        fs.writeFileSync(path.join(publishedDir, filename), fileContent, 'utf-8');
-        addedCount++;
-        await new Promise(resolve => setTimeout(resolve, 10)); // small delay to ensure unique timeStr
-      }
-    }
-    
-    if (addedCount > 0) {
-      // Sync to GitHub and cross repo
-      const repoRoot = path.join(__dirname, '..', '..');
-      const pat = process.env.GITHUB_PAT || '';
-      const pushCmd = pat ? `git push https://${pat}@github.com/0-shang/yasi.git HEAD:main` : 'git push';
-      
-      exec(`git add tweets/ && git commit -m "bot: auto-sync ${addedCount} manual tweets" && git pull --rebase origin main && ${pushCmd}`, { cwd: repoRoot }, (err) => {
-        if (err) console.error('Git sync failed:', err);
-        syncCrossRepo(null); // Silent sync cross repo
-        if (ctx && loadingMsg) {
-          ctx.telegram.editMessageText(ctx.chat.id, loadingMsg.message_id, undefined, `✅ 成功拉取并同步了 ${addedCount} 条手动发送的推文到 ai-nav！`);
-        } else {
-          console.log(`Scheduled sync: Successfully synced ${addedCount} manual tweets to ai-nav.`);
-        }
-      });
-    } else {
-      if (ctx && loadingMsg) {
-        ctx.telegram.editMessageText(ctx.chat.id, loadingMsg.message_id, undefined, `✨ 没有发现新的手动推文，本地库已经是最新的。`);
-      } else {
-        console.log('Scheduled sync: No new manual tweets found.');
-      }
-    }
-    
-  } catch (err) {
-    console.error('Manual Tweet Sync Error:', err);
-    if (ctx && loadingMsg) {
-      ctx.telegram.editMessageText(ctx.chat.id, loadingMsg.message_id, undefined, `❌ 同步失败: ${err.message}`);
-    }
-  }
-}
-
-// Cron job to automatically sync manual tweets every 2 hours
-cron.schedule('30 */2 * * *', () => {
-  console.log('Running scheduled manual tweet sync task...');
-  performManualTweetSync(null);
-}, {
-  timezone: "Asia/Shanghai"
-});
-
-bot.command('sync_twitter', async (ctx) => {
-  if (ctx.from.id !== myUserId) return;
-  await performManualTweetSync(ctx);
 });
 
 bot.command('chat', (ctx) => {

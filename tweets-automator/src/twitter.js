@@ -66,30 +66,6 @@ async function postTweetOrThread(tweets) {
   }
 }
 
-/**
- * Fetch recent original tweets (no retweets/replies) from the authenticated user
- * @param {number} maxResults - Max number of tweets to fetch
- * @returns {Promise<any[]>}
- */
-async function fetchRecentTweets(maxResults = 20) {
-  const client = getTwitterClient();
-  try {
-    const me = await client.v2.me();
-    const userId = me.data.id;
-    const timeline = await client.v2.userTimeline(userId, {
-      exclude: ['retweets', 'replies'],
-      max_results: maxResults,
-      'tweet.fields': ['created_at']
-    });
-    // Return array of tweet objects containing { id, text, created_at }
-    return timeline.data.data || [];
-  } catch (error) {
-    console.error('Error fetching recent tweets:', error);
-    throw error;
-  }
-}
-
 module.exports = {
-  postTweetOrThread,
-  fetchRecentTweets
+  postTweetOrThread
 };
