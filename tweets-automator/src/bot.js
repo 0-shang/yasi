@@ -237,9 +237,7 @@ async function performManualTweetSync(ctx = null) {
   }
   
   try {
-    // If triggered manually by user, fetch 10, otherwise fetch 5 to save quota
-    const fetchCount = ctx ? 10 : 5;
-    const tweets = await fetchRecentTweets(fetchCount);
+    const tweets = await fetchRecentTweets(20); // Get recent 20 tweets
     
     // Read all existing published tweets to gather known IDs
     const publishedDir = config.paths.tweets.published;
@@ -316,8 +314,8 @@ async function performManualTweetSync(ctx = null) {
   }
 }
 
-// Cron job to automatically sync manual tweets every 6 hours to save API quota
-cron.schedule('30 */6 * * *', () => {
+// Cron job to automatically sync manual tweets every 2 hours
+cron.schedule('30 */2 * * *', () => {
   console.log('Running scheduled manual tweet sync task...');
   performManualTweetSync(null);
 }, {
