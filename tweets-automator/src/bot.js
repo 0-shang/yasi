@@ -140,7 +140,7 @@ function syncCrossRepo(ctx = null) {
   
   const repoRoot = path.join(__dirname, '..', '..');
   const tempDir = path.join(repoRoot, 'temp-web');
-  const destDir = path.join(tempDir, 'content', 'insights', 'feed');
+  const destDir = path.join(tempDir, 'content', 'tweets');
   
   if (fs.existsSync(tempDir)) {
     fs.rmSync(tempDir, { recursive: true, force: true });
@@ -166,7 +166,7 @@ function syncCrossRepo(ctx = null) {
     }
     
     // Pull rebase first to avoid non-fast-forward, then push
-    const cmd = `git config user.name "bot" && git config user.email "bot@example.com" && git add content/insights/feed/ && (git diff-index --quiet HEAD || git commit -m "bot: auto-sync published tweets") && git pull --rebase https://${pat}@github.com/0-shang/ai-nav.git master && git push https://${pat}@github.com/0-shang/ai-nav.git HEAD:master`;
+    const cmd = `git config user.name "bot" && git config user.email "bot@example.com" && git add content/tweets/ && (git diff-index --quiet HEAD || git commit -m "bot: auto-sync published tweets") && git pull --rebase https://${pat}@github.com/0-shang/ai-nav.git master && git push https://${pat}@github.com/0-shang/ai-nav.git HEAD:master`;
     exec(cmd, { cwd: tempDir }, (err, stdout, stderr) => {
       if (err) {
         console.error('Cross-repo sync push failed:', err.message);
