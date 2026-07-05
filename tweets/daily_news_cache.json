@@ -250,5 +250,101 @@
     "title": "如何看待法国一超市爆发空调「抢购大战」：大门被撞烂、多人躺地互殴，仅10人抢到空调？",
     "link": "https://www.zhihu.com/question/2057044037853503573",
     "snippet": "https://baijiahao.baidu.com/s?id=1869615637254587615&wfr=spider&for=pc&searchword=%E5%A4%A7%E9%97%A8%E8%A2%AB%E6%92%9E%E7%83%82%E5%A4%9A%E4%BA%BA%E5%80%92%E5%9C%B0%E4%BA%92%E6%AE%B4"
+  },
+  "43": {
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "Unlocking large scale AI training networks with MRC (Multipath Reliable Connection)",
+    "link": "https://openai.com/index/mrc-supercomputer-networking",
+    "snippet": "OpenAI introduces MRC (Multipath Reliable Connection), a new supercomputer networking protocol released via OCP to improve resilience and performance in large-scale AI training clusters."
+  },
+  "44": {
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "New ways to buy ChatGPT ads",
+    "link": "https://openai.com/index/new-ways-to-buy-chatgpt-ads",
+    "snippet": "OpenAI expands ChatGPT ads with a beta self-serve Ads Manager, CPC bidding, and enhanced measurement tools—built to protect privacy and keep conversations separate from ads."
+  },
+  "45": {
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "DNSGlobe – Rust TUI to watch DNS propagate around the world",
+    "link": "https://github.com/514-labs/dnsglobe",
+    "snippet": "Comments"
+  },
+  "46": {
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "Had an idea for a Rust editor with simple Vim mode for learning",
+    "link": "https://github.com/electronicsleep/rust-vim",
+    "snippet": "Comments"
+  },
+  "47": {
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "Dungeon Proof Crawler: learn how to write proofs with RPG",
+    "link": "https://dhilst.github.io/algae/game/index.html",
+    "snippet": "Comments"
+  },
+  "48": {
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "Pint in England",
+    "link": "https://dispatch-media.com/the-best-pint-in-england/",
+    "snippet": "Comments"
+  },
+  "49": {
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "10 moments that defined AI’s turbulent first half of 2026",
+    "link": "https://thenewstack.io/biggest-ai-moments-2026/",
+    "snippet": "Halfway through 2026, artificial intelligence has been at the center of every major story inside the world of software development\nThe post 10 moments that defined AI’s turbulent first half of 2026 ap..."
+  },
+  "50": {
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "Fable is coming back: Federal government lifts export controls on Anthropic AI model",
+    "link": "https://thenewstack.io/anthropic-fable-ban-lifted/",
+    "snippet": "Anthropic can now bring back Fable. The U.S. Commerce Department is lifting the export controls it placed on both AI models,\nThe post Fable is coming back: Federal government lifts export controls on ..."
+  },
+  "51": {
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "Anthropic’s Claude Sonnet 5 system card says more about the future of AI than its benchmarks do",
+    "link": "https://thenewstack.io/ai-agent-infrastructure-reliability/",
+    "snippet": "With the debut of Anthropic’s Claude Sonnet 5 on Tuesday came its benchmark charts, showing improvements across coding, reasoning, and\nThe post Anthropic’s Claude Sonnet 5 system card says more about ..."
+  },
+  "52": {
+    "category": "理财投资 (Finance & Investment)",
+    "title": "The Average Spousal Social Security Benefit Is Headed for an Above-Average Boost in 2027",
+    "link": "https://www.fool.com/retirement/2026/07/05/average-spousal-social-security-benefit-boost/?source=iedfolrf0000001",
+    "snippet": "This could be enough to help spousal benefits pass a historic milestone."
+  },
+  "53": {
+    "category": "理财投资 (Finance & Investment)",
+    "title": "AMD Stock and Intel Crushed Nvidia in the First Half. Here's My Prediction for the Second Half.",
+    "link": "https://www.fool.com/investing/2026/07/05/amd-stock-and-intel-crushed-nvidia-in-the-first-ha/?source=iedfolrf0000001",
+    "snippet": "These Nvidia rivals climbed in the triple digits."
+  },
+  "54": {
+    "category": "理财投资 (Finance & Investment)",
+    "title": "3 Reasons to Load Up on Netflix Stock Before July 16",
+    "link": "https://www.fool.com/investing/2026/07/05/3-reasons-load-up-on-netflix-stock-before-july-16/?source=iedfolrf0000001",
+    "snippet": "Netflix reports earnings July 16, and these three overlooked metrics could reveal whether its next phase of growth is just beginning."
+  },
+  "55": {
+    "category": "理财投资 (Finance & Investment)",
+    "title": "If You'd Invested $10,000 in the SpaceX IPO, Here's How Much You Would Have Now",
+    "link": "https://www.fool.com/investing/2026/07/05/if-youd-invested-10000-in-the-spacex-ipo-heres-how/?source=iedfolrf0000001",
+    "snippet": "SpaceX completed a record IPO about three weeks ago."
+  },
+  "56": {
+    "category": "理财投资 (Finance & Investment)",
+    "title": " The Magnificent 7 stocks are starting to look mediocre ",
+    "link": "https://moneyweek.com/investments/tech-stocks/magnificent-7-stocks-starting-to-look-mediocre",
+    "snippet": "The Magnificent 7 stocks have been in the vanguard of the AI boom, but they are now falling out of favour among investors. Here's why"
+  },
+  "57": {
+    "category": "理财投资 (Finance & Investment)",
+    "title": " The investment opportunities at the heart of the energy transition ",
+    "link": "https://moneyweek.com/investments/renewables/energy-transition-materials-commodities",
+    "snippet": "A global structural shift towards renewable energy is pushing prices for certain key commodities higher. Here’s how to profit from the energy transition."
+  },
+  "58": {
+    "category": "理财投资 (Finance & Investment)",
+    "title": " Who is Andy Burnham, the ‘Manchester messiah’? ",
+    "link": "https://moneyweek.com/people/who-is-andy-burnham-the-manchester-messiah",
+    "snippet": "Andy Burnham's arrival on the national political stage  has been hailed enthusiastically by his supporters. But what kind of a man is he?"
   }
 }
