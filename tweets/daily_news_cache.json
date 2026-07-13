@@ -1,164 +1,272 @@
 {
   "1": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "中国首个十万卡集群落成！全国产算力支撑“十万卡时代”",
-    "link": "https://www.qbitai.com/2026/07/447902.html",
-    "snippet": "已跑通300余项应用"
+    "category": "实用工具资源 (Tools & Resources)",
+    "title": "Dicklesworthstone/destructive_command_guard",
+    "link": "https://github.com/Dicklesworthstone/destructive_command_guard",
+    "snippet": "The Destructive Command Guard (dcg) is for blocking dangerous git and shell commands from being executed by agents.\nLanguage: Rust\nStars: 2513\nForks: 91"
   },
   "2": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "中国首个十万卡集群落成！全国产算力支撑“十万卡时代”",
-    "link": "https://www.qbitai.com/2026/07/447891.html",
-    "snippet": "从FP64到INT8，全精度覆盖。"
+    "category": "实用工具资源 (Tools & Resources)",
+    "title": "wonderwhy-er/DesktopCommanderMCP",
+    "link": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
+    "snippet": "This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities\nLanguage: TypeScript\nStars: 7896\nForks: 982"
   },
   "3": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "GPT-5.6一小时解开50年数学猜想，700词Prompt驾驭64个子Agent",
-    "link": "https://www.qbitai.com/2026/07/447873.html",
-    "snippet": "神话级大模型驾驭宝典"
+    "category": "实用工具资源 (Tools & Resources)",
+    "title": "HKUDS/Vibe-Trading",
+    "link": "https://github.com/HKUDS/Vibe-Trading",
+    "snippet": "\"Vibe-Trading: Your Personal Trading Agent\"\nLanguage: Python\nStars: 20222\nForks: 3551"
   },
   "4": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "AI聪明够了，行动呢？WAIC首夜，来聊点下一步的真实判断｜活动报名",
-    "link": "https://www.qbitai.com/2026/07/447682.html",
-    "snippet": ""
+    "category": "实用工具资源 (Tools & Resources)",
+    "title": "PrefectHQ/prefect",
+    "link": "https://github.com/PrefectHQ/prefect",
+    "snippet": "Prefect is a workflow orchestration framework for building resilient data pipelines in Python.\nLanguage: Python\nStars: 23046\nForks: 2380"
   },
   "5": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "暴雨和洪涝的季节，这些技巧助你从容自保",
-    "link": "https://sspai.com/post/68024",
-    "snippet": "面对暴雨、内涝等自然灾害，你应该做什么准备？有人溺水时，该如何正确救援？这篇文章帮你掌握一些必要的知识，面对危情不再慌乱。查看全文"
+    "category": "实用工具资源 (Tools & Resources)",
+    "title": "Shubhamsaboo/awesome-llm-apps",
+    "link": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+    "snippet": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.\nLanguage: Python\nStars: 118323\nForks: 17602"
   },
   "6": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "TDS REVIEW | 小米耳夹式耳机体验",
-    "link": "https://sspai.com/post/112011",
-    "snippet": "这篇文章是TDSStudio在少数派上的第25篇文章，依然是全平台首发。小米也做了耳夹，其实是一件可以预料的事情，毕竟作为国内手机品牌中目前唯三愿意尝试挂耳式OWS形态的之一，他们显然是倾向于铺好全品 ...查看全文"
+    "category": "实用工具资源 (Tools & Resources)",
+    "title": "anthropics/claude-cookbooks",
+    "link": "https://github.com/anthropics/claude-cookbooks",
+    "snippet": "A collection of notebooks/recipes showcasing some fun and effective ways of using Claude.\nLanguage: Jupyter Notebook\nStars: 48208\nForks: 5706"
   },
   "7": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "iOS 27 Beta 2 & 3 值得关注的新特性",
-    "link": "https://sspai.com/post/112083",
-    "snippet": "近段时间，Apple陆续推出了iOS27的两个DeveloperBeta测试版本，对第一个版本中的一些新功能进行了优化改进，同时也新增了一些系统特性。接下来，就让我们一起来看看吧。编注：AppleIn ...查看全文"
+    "category": "实用工具资源 (Tools & Resources)",
+    "title": "home-assistant/core",
+    "link": "https://github.com/home-assistant/core",
+    "snippet": ":house_with_garden: Open source home automation that puts local control and privacy first.\nLanguage: Python\nStars: 88900\nForks: 38063"
   },
   "8": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "角落新声｜在陌生的城市里，寻找属于自己的角落",
-    "link": "https://sspai.com/post/111983",
-    "snippet": "角落的意义或许在于与世界保持恰当的距离，允许生活在身边流淌，也允许自己在这些声音之中，重新听见自己的声音。查看全文"
+    "category": "实用工具资源 (Tools & Resources)",
+    "title": "Crosstalk-Solutions/project-nomad",
+    "link": "https://github.com/Crosstalk-Solutions/project-nomad",
+    "snippet": "Project N.O.M.A.D, is a self-contained, offline survival computer packed with critical tools, knowledge, and AI to keep you informed and empowered—anytime, anywhere.\nLanguage: TypeScript\nStars: 33655\n..."
   },
   "9": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "GPT-5.6 is now the preferred model in Microsoft 365 Copilot",
-    "link": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot",
-    "snippet": "Learn how GPT-5.6 powers Microsoft 365 Copilot with stronger AI capabilities across Word, Excel, PowerPoint, Chat, and Cowork for faster, higher-quality work."
+    "category": "实用工具资源 (Tools & Resources)",
+    "title": "ColeMurray/background-agents",
+    "link": "https://github.com/ColeMurray/background-agents",
+    "snippet": "An open-source background agents coding system\nLanguage: TypeScript\nStars: 2185\nForks: 338"
   },
   "10": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "GPT-5.6: Frontier intelligence that scales with your ambition",
-    "link": "https://openai.com/index/gpt-5-6",
-    "snippet": "More intelligence from every token, stronger performance per dollar, and more capability on demand for your hardest work."
+    "category": "实用工具资源 (Tools & Resources)",
+    "title": "k1tbyte/Wand-Enhancer",
+    "link": "https://github.com/k1tbyte/Wand-Enhancer",
+    "snippet": "Advanced UX and interoperability extension for Wand (WeMod) app\nLanguage: C#\nStars: 6682\nForks: 18851"
   },
   "11": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "泰晶科技中报预告解读",
-    "link": "http://xueqiu.com/4533843739/399607095",
-    "snippet": "终于等到泰晶的中报预告，我一直说我很关心中报预告，但是这几个月有很多粉丝让我预测中报我都拒绝了，所以我从来没有讲过一句中报的预测值，因为不管怎么预测，只要你讲出这个预测值，都会影响干扰不同交易层段的人，对于昨天中报预告，我最关心的是二季度的扣非环比是否有增长，只要有就已经达到我的预期了。因为一季度净利润是有大额的研发补贴的，二季度是没有的，所以我只看环比的数据，因为看不到营收数据，可能有很多粉丝对..."
+    "category": "实用工具资源 (Tools & Resources)",
+    "title": "pingdotgg/t3code",
+    "link": "https://github.com/pingdotgg/t3code",
+    "snippet": "Language: TypeScript\nStars: 13664\nForks: 2865"
   },
   "12": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "中国铁建的基本面分析",
-    "link": "http://xueqiu.com/1755027802/399605544",
-    "snippet": "宗哥投资不推荐任何股票\n本报告为个人独立研究笔记，仅用于记录研究过程与逻辑推演，\n不构成任何投资（炒股）建议、要约或交易指令。\n文中观点基于公开信息及个人判断，可能存在偏差，\n投资决策需由读者自行承担风险。\n\n中国铁建的历史，从图从左到右\n先说左边。\n先\n熊市周期 ，\n再到2013年牛市周期，到2015年6月，\n股价28.18\n再到熊市周期，\n即将到来，牛市周期\n\n牛市周期，开始4.91元。\n在中..."
+    "category": "实用工具资源 (Tools & Resources)",
+    "title": "virattt/ai-hedge-fund",
+    "link": "https://github.com/virattt/ai-hedge-fund",
+    "snippet": "An AI Hedge Fund Team\nLanguage: Python\nStars: 61268\nForks: 10844"
   },
   "13": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "尝试从基金仓位的角度分析趋势",
-    "link": "http://xueqiu.com/7995619023/399601032",
-    "snippet": "基于以上业态，尝试弑神：\n1、基于基金经理通常都是高学历的背景，首先要有一个容易被理工男接受的叙事\n2、前景宏大，叙事性感，你无法证明线性外推N年是错的；增速快，即使当下估值贵，但只要线性外推几年，就不贵\n3、市场容量不能小；容量越大，意味着某个趋势可持续的时间潜力越大。所以选行业优于选个股，个股即使边际反转，容量也不以引发趋势，只能赚基本面的钱，无法赚市梦率的钱。\n4、有事实(营收增速)能支持以..."
+    "category": "实用工具资源 (Tools & Resources)",
+    "title": "chen08209/FlClash",
+    "link": "https://github.com/chen08209/FlClash",
+    "snippet": "A multi-platform proxy client based on ClashMeta,simple and easy to use, open-source and ad-free.\nLanguage: Dart\nStars: 45150\nForks: 2849"
   },
   "14": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "一个杀猪的、一个发电的、一个挖煤的——三个“土得掉渣”的行业，凭什么让你年赚30%？",
-    "link": "http://xueqiu.com/3139782047/399606851",
-    "snippet": "为什么你学了那么多投资方法，还是赚不到钱？\n你学巴菲特，买好公司长期持有——结果买了万科，它不分红了。\n你学彼得·林奇，从生活中发现牛股——结果买了海天味业，它跌了三分之二。\n你学格雷厄姆，捡烟蒂——结果捡了一手的“烟屁股”，吸一口全是灰。\n问题出在哪？\n曾经有一个老师，叫周文强，他说过一句话：\n“学习任何老师成功的方法，都不会让你成功。只有学习这个老师成功背后的思维，他是怎么成功的，一转身为自己..."
+    "category": "实用工具资源 (Tools & Resources)",
+    "title": "davila7/claude-code-templates",
+    "link": "https://github.com/davila7/claude-code-templates",
+    "snippet": "CLI tool for configuring and monitoring Claude Code\nLanguage: Python\nStars: 29163\nForks: 3200"
   },
   "15": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "关于锂电池板块近期的一些所谓利空",
-    "link": "http://xueqiu.com/9756381356/399402035",
-    "snippet": "那么接下来我就来一一说一下当前我看到的几个鬼故事。\n要注意这次大跌并不是锂电池的某个板块在跌，而是整个板块上中下游都在跌，也就宁王稍微好一点，所以有些鬼故事是很容易被证伪的，典型的如：\n1.我看到有人说曾毓群在论坛上面说固态电池如何如何，所以未来不要电解液了，所以引发天赐材料，璞泰来等等之类的暴跌？\n答：那为啥正极、锂矿、磷酸铁锂、甚至电芯这些都在大跌？所以这是很明显的不成立的，姑且不说固态电池成..."
+    "category": "实用工具资源 (Tools & Resources)",
+    "title": "par274/sharpemu",
+    "link": "https://github.com/par274/sharpemu",
+    "snippet": "An experimental PlayStation 5 emulator project.\nLanguage: C#\nStars: 1060\nForks: 66"
   },
   "16": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "CoreWeave Stock Sank 11% After Mark Zuckerberg's Meta Unveiled a Cloud Business Plan",
-    "link": "https://www.fool.com/investing/2026/07/11/coreweave-stock-sank-11-after-mark-zuckerbergs-me/?source=iedfolrf0000001",
-    "snippet": "Meta's announcement doesn't spell doom for the neocloud market."
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "98年哈工大教授创业，要做人形灵巧操作世界模型",
+    "link": "https://www.qbitai.com/2026/07/448034.html",
+    "snippet": "从采集触觉，到对齐触觉，再到使用触觉"
   },
   "17": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "Meet the Unstoppable Vanguard ETF Obliterating the S&P 500 in 2026",
-    "link": "https://www.fool.com/investing/2026/07/11/meet-the-vanguard-etf-obliterating-sp-500-in-2026/?source=iedfolrf0000001",
-    "snippet": "Investors have favored domestic companies amid the increasingly uncertain geopolitical environment."
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "老黄RTX Spark真机现身Bilibili World！CPU和GPU直接焊在一起，笔记本跑120B大模型",
+    "link": "https://www.qbitai.com/2026/07/447981.html",
+    "snippet": "老黄在ComputeX发布的“超级芯片”，已经在真机中落地了"
   },
   "18": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "Trump's Financial Disclosure Revealed a $1.67 Million Micron Stock Stake",
-    "link": "https://www.fool.com/investing/2026/07/11/trumps-financial-disclosure-revealed-a-167-million/?source=iedfolrf0000001",
-    "snippet": "Is this a sign to follow the president's lead?"
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "近百名玩家涌入具身数据：一年融资44.7亿，谁能真靠“卖数据”赚钱？",
+    "link": "https://www.qbitai.com/2026/07/447914.html",
+    "snippet": "为了帮你看清具身数据行业，我们总结了以下十个行业现状"
   },
   "19": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "Are You Reinvesting Your RMD as a Retiree? Here's What You Need to Know.",
-    "link": "https://www.fool.com/retirement/2026/07/11/are-you-reinvesting-your-rmd-as-a-retiree-heres-wh/?source=iedfolrf0000001",
-    "snippet": "Here's how to develop a strategy that makes the most of your required withdrawals."
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "6月音乐精选：不得不听的 17 张……没错 17 张专辑！",
+    "link": "https://sspai.com/post/112035",
+    "snippet": "编者注：2026年我们将重启少数派音乐推荐栏目FM3.14，特邀资深音乐从业者及爱好者为大家推荐优质的华语独立、流行音乐，今年我们也很荣幸邀请到老朋友飞傲，为本栏目冠名。飞傲目前拥有品牌以音乐发烧友为 ...查看全文"
   },
   "20": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": " Can Andy Burnham’s Manchesterism work for Britain? ",
-    "link": "https://moneyweek.com/economy/uk-economy/can-andy-burnhams-manchesterism-work-for-britain",
-    "snippet": "Andy Burnham wants to spread his “Manchesterism” to the rest of the country. But what is it, and will it work?"
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "派早报：GPT-5.6 即将开放使用、Nothing 发布 Phone (4b) 等",
+    "link": "https://sspai.com/post/112091",
+    "snippet": "Notion 推出全新应用 Agents、Jolla Phone (2026) 手机正式发售等。查看全文"
   },
   "21": {
-    "category": "社会民生 (Society & Life)",
-    "title": "7.11 号土区续费的 GPT plus 还是 499 里拉，下个周期也是",
-    "link": "https://www.v2ex.com/t/1226541",
-    "snippet": "yakun4566:"
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "ChatGPT is now a partner for your most ambitious work",
+    "link": "https://openai.com/index/chatgpt-for-your-most-ambitious-work",
+    "snippet": "ChatGPT Work is an agent that can take action across your apps and files, stay with a project for hours if needed, and turn a goal into finished work."
   },
   "22": {
-    "category": "社会民生 (Society & Life)",
-    "title": "小米手机强制更新系统",
-    "link": "https://www.v2ex.com/t/1226527",
-    "snippet": "Light3: \n早上起来发现备用机小米 13 闹钟没响 看了一下手机黑屏了 以为没电了..\n前夜 12 点还有 30%的电 确信\n也没多想 晚上回家充电 开机 发现系统从钉子户 miui 变成澎湃 os 了..\n很确定从来没有开启自动更新 虽然小米不要脸 把更新包自动下载 但每次弹窗我都关闭了\n开发者模式现在也是没有自动更新.\n所以就是小米把用户不当人 强制夜间更新系统了\n微博上没有几个人发  ..."
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "GPT-5.5 Bio Bug Bounty",
+    "link": "https://openai.com/index/bio-bug-bounty",
+    "snippet": "Details about the OpenAI Bio Bounty program"
   },
   "23": {
-    "category": "社会民生 (Society & Life)",
-    "title": "书接上文，确认了是个博彩和区块链的公司，想请教大佬们一些问题",
-    "link": "https://www.v2ex.com/t/1226526",
-    "snippet": "nanofei: 书接上文。https://www.v2ex.com/t/1225533?p=1#reply65\n说是国内试用期 3 个月远程发 u ，\n试用期转正后要去东京。说是办工签，有住宿，或者自己租房住\n交当地流水最低社保，其余的发 u ，3 个月有一周假期可以回国。机票也是自己买，直飞东京。\nhr 说是运营在菲律宾，东京只是研发团队，有菲律宾的运营执照\n地址好像是： https://ww..."
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "AI Boosts Research Careers but Flattens Scientific Discovery",
+    "link": "https://spectrum.ieee.org/ai-science-research-flattens-discovery",
+    "snippet": "Comments"
   },
   "24": {
-    "category": "社会民生 (Society & Life)",
-    "title": "时隔一天， codex 凌晨又重置了……",
-    "link": "https://www.v2ex.com/t/1226510",
-    "snippet": "blank0ken: \n今天好不容易周用量蹬掉一半，想着我还有一天过期的重置券能用上了，结果一点半官方重置了[捂脸哭]好好好"
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "Show HN: Only 1 of 4,356 reachable MCP servers is ready for the 2026-07-28 spec",
+    "link": "https://github.com/Roee-Tsur/mcp-spec-check",
+    "snippet": "Comments"
   },
   "25": {
-    "category": "社会民生 (Society & Life)",
-    "title": "长沙通报「体育局干部占车位事件」，彭某某被停职，纪检监察机关已对相关问题核实处理，哪些信息值得关注？",
-    "link": "https://www.zhihu.com/question/2059327392334745679",
-    "snippet": "“长沙发布”消息，长沙市联合调查组7月11日发布情况通报： 近日，长沙市体育局干部彭某某占用他人车位引发纠纷。对此，长沙市高度重视，成立纪检监察、公安、体育、属地街道等部门参加的联合调查组开展调查。现将有关情况通报如下。 一、彭某某个人情况 彭某某，女，1995年8月出生。户籍地：长沙市望城区高塘岭街道雷锋路社区XX组，租住在长沙市开福区德峰小区A区商业楼XX室。工作经历：2017年9月至2019..."
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "Making Crash Bandicoot (2011)",
+    "link": "https://all-things-andy-gavin.com/2011/02/02/making-crash-bandicoot-part-1/",
+    "snippet": "Comments"
   },
   "26": {
-    "category": "社会民生 (Society & Life)",
-    "title": "如何看待夏联杨瀚森12分9板4助，开拓者惜败太阳，马卢阿奇19+11 ？",
-    "link": "https://www.zhihu.com/question/2059264055395849985",
-    "snippet": "NBA夏季联赛，开拓者79-81不敌太阳，杨瀚森二年级夏联首秀表现不错。 杨瀚森出战26分钟，投篮10中5，三分3中2，砍下12分9篮板4助攻，正负值+6。"
+    "category": "理财投资 (Finance & Investment)",
+    "title": "即使英伟达Kyber延期，其对于光纤需求的影响也被放大了",
+    "link": "http://xueqiu.com/9693886933/399661451",
+    "snippet": "实际上，即使后续Kyber交付时间进度晚于预期，这只是柜内互联的光纤需求爆发节点推迟，而赵燕翎认为：柜内光纤用量在整个数据中心光纤需求中的占比，从来就不是市场预期的核心增量来源，即使英伟达Kyber延期，其对于光纤需求的影响被放大了。\n一、Semi小作文称Kyber NVL144延期，当天黄仁勋即辟谣\n7月6日（周一），半导体研究机构SemiAnalysis发布报告：Kyber NVL144机架因..."
   },
   "27": {
+    "category": "理财投资 (Finance & Investment)",
+    "title": "硬科技颠得像过山车",
+    "link": "http://xueqiu.com/7977283243/399716935",
+    "snippet": "现在的量化给人的感觉真是一个师傅教的，破不了招，都是在趋同交易放大市场的波动性，暴涨暴跌。\n整个市场走的结构比较好的都是低位，云服务厂商、创新药这些，预计月底CSP披露前，整个硬科技还会比较弱。这里市场核心问题还是，CSP的自由现金流将在今年底转为非常紧张的状态，如何解决这个问题是挺棘手的，而他也是解决当下这个负面螺旋的关键。\n存储五巨头这里，本周也是几天时间里完成了几件大事：1、贝恩资本当年私有..."
+  },
+  "28": {
+    "category": "理财投资 (Finance & Investment)",
+    "title": "集运相关跟踪周报 week2627",
+    "link": "http://xueqiu.com/3638220949/399687423",
+    "snippet": "一、运价跟踪\n\n（注意表中CCFI季度均值橙色之前是前推一个月均值，黄色为当季均值，7月开始切换成6月至今均值计算)\n德鲁里世界集装箱指数（WCI）上涨 2%，40 英尺集装箱运价达到 4639 美元。此次运价上涨主要受亚欧航线运费走高带动，该指数创下 2024 年 9 月以来新高。\n跨太平洋航线方面，上海‑洛杉矶航线运费上涨 2%，每 40 英尺集装箱运价为 6482 美元；上海‑纽约航线运价维..."
+  },
+  "29": {
+    "category": "理财投资 (Finance & Investment)",
+    "title": "锂电池行业更新7-11（多头崩溃）",
+    "link": "http://xueqiu.com/5243796549/399691623",
+    "snippet": "实际上去看看2024年10月份到2025年4月份，新易盛跌幅高达40-50%后，还出了毛衣占的利空，直接-20cm跌停，这期间基本面没有任何变化，而且当时在3月份的时候也传出来1季度业绩炸裂了，但是市场进入下降趋势和外部利空，谁会管你行业好不好？当时随便去找个人打听一下光模块供货是不是紧张都不行，开工率都是干冒烟的。但是市场会在意这些吗？\n新易盛跌倒40多的时候，我跟朋友说，没有见过科技股只有个位..."
+  },
+  "30": {
+    "category": "理财投资 (Finance & Investment)",
+    "title": "2026下半年投资计划：4000点以下别装死，运用市赚率调仓换股（七大行业前景分析）",
+    "link": "http://xueqiu.com/9363345092/399672922",
+    "snippet": "#2026上半年投资总结# \n最近点赞少得可怜，如果市赚率对您有用，烦请多多点赞+收藏，感谢大家。\n今年上半年，依靠老登股的高估卖出、低估接回，我实现了2%多点的投资收益。以往每次大盘跌破3000点，我都会写一篇《3000点以下运用市赚率调仓换股》。颇具讽刺意味的是，由于现在老登股和小登股的极度割裂，所以今天需要写一篇《4000点以下运用市赚率调仓换股》。其主要目的，就是把高估的换成低估的，把不确..."
+  },
+  "31": {
+    "category": "理财投资 (Finance & Investment)",
+    "title": "Caterpillar vs. Oshkosh: Which Industrials Stock Is a Better Buy in 2026?",
+    "link": "https://www.fool.com/coverage/better-buy/2026/07/12/caterpillar-vs-oshkosh-which-industrials-stock-is-a-better-buy-in-2026/?source=iedfolrf0000001",
+    "snippet": "One prioritizes global reach and infrastructure exposure; the other relies on government contracts and trades at a steep discount."
+  },
+  "32": {
+    "category": "理财投资 (Finance & Investment)",
+    "title": "A Stock Market Correction Could Be Coming. Here's 1 Move All Investors Should Make Right Now.",
+    "link": "https://www.fool.com/investing/2026/07/12/a-stock-market-correction-could-be-coming-heres-1/?source=iedfolrf0000001",
+    "snippet": "Multiple signs point to possible trouble ahead for the stock market."
+  },
+  "33": {
+    "category": "理财投资 (Finance & Investment)",
+    "title": "If I Could Tell Every Investor 1 Thing About the Next 12 Months in the Stock Market, It's This",
+    "link": "https://www.fool.com/investing/2026/07/12/tell-every-investor-1-thing-12-months-stock-market/?source=iedfolrf0000001",
+    "snippet": "Having the right temperament is perhaps the most critical skill for investing success."
+  },
+  "34": {
+    "category": "理财投资 (Finance & Investment)",
+    "title": "A Smarter Alternative to the Vanguard S&P 500 ETF for Risk-Aware Investors",
+    "link": "https://www.fool.com/investing/2026/07/12/a-smarter-alternative-to-the-vanguard-sp-500-etf/?source=iedfolrf0000001",
+    "snippet": "For equity investors looking to mitigate risk, the Vanguard U.S. Minimum Volatility ETF is a hidden gem in the issuer's vaunted stable."
+  },
+  "35": {
+    "category": "理财投资 (Finance & Investment)",
+    "title": " Will AI really wipe out all our jobs? ",
+    "link": "https://moneyweek.com/economy/will-ai-really-wipe-out-all-our-jobs",
+    "snippet": "How worried should we be about AI? Technological developments have always sparked fears of mass unemployment –but are those fears overdone?"
+  },
+  "36": {
     "category": "社会民生 (Society & Life)",
-    "title": "国务院安委会对福建泉州「7·9」重大火灾查处挂牌督办，哪些信息值得关注？",
-    "link": "https://www.zhihu.com/question/2059215563638018597",
-    "snippet": "国务院安委会对福建泉州“7·9”重大火灾查处挂牌督办 7月9日，福建省泉州市晋江市陈埭镇一鞋厂发生重大火灾，造成28人死亡。国务院安委会决定对该起重大火灾查处挂牌督办，并派出国家消防救援局牵头的现场督办组，督促指导福建省开展调查处理工作，要求福建省依照有关法律法规及规章规定，抓紧组织开展调查，尽快查明起火原因和管理原因，精准确定火灾性质，查清责任，严肃提出处理意见和整改措施。国务院安委会对福建泉州..."
+    "title": "最近准备更新系统到 windows 11，大家给 win 11 分配的 C 盘空间是多少",
+    "link": "https://www.v2ex.com/t/1226746",
+    "snippet": "uxff: \n考虑将来安装以下软件\nvmware\n各种梯子\nvs code\nclaude code\ncodex\ncursor\nCapCut\nGIMP\nGit\nChrome\nIntelliJ Idea\nOllama\nNVidia Cuda Toolkit\nMicrosoft Visual Studio\nOBS Studio\nPostman\nNavicat\nFiddler\nPython\nDavinci..."
+  },
+  "37": {
+    "category": "社会民生 (Society & Life)",
+    "title": "突然发现 chatgpt 语音多了 live 功能，感觉练口语挺好的",
+    "link": "https://www.v2ex.com/t/1226716",
+    "snippet": "swananan: 以前拿 chatgpt 练口语，都是 chatgpt 一句，我语音读一句。现在用这个 live 模式，终于有点像实时真人对话了，比菲律宾人的英语课效果还要好，至少不要钱。\n现在唯一的难点，就是得坚持了。\nhttps://openai.com/zh-Hans-CN/index/introducing-gpt-live/"
+  },
+  "38": {
+    "category": "社会民生 (Society & Life)",
+    "title": "奔三 感觉自己漂泊不定 怎么规划人生",
+    "link": "https://www.v2ex.com/t/1226703",
+    "snippet": "importmeta: \n奔三，这几年一直上班，被裁，化解抑郁症，经常家里蹲，还没谈过对象，之前写过经历。https://www.v2ex.com/t/1080820\n然后这 2 年自己 1 人搞了各种 AI 创业抓住风口赚了大钱（完全合规合法），大概有 1 注双色球一等奖奖金这么多，相当于赚了被裁前 40 年的工资。现在感觉像做梦一样。创业过程中，每天身心俱疲，像是被驱使着一样，没多少快乐，压力..."
+  },
+  "39": {
+    "category": "社会民生 (Society & Life)",
+    "title": "中国人的 homeLab，从 matrix 聊天服务器开始",
+    "link": "https://www.v2ex.com/t/1226693",
+    "snippet": "lj92458: \n今天的互联网，已经高度发达、停滞不前。要想继续发展，只剩下“家庭”这个没被开发的领域。\nHomeLab 在欧美流行，在中国冷淡。为什么？因为缺乏刚需、杀手级应用，国人顶多用一下 NAS 。但我认为每个家庭需要的不只是 NAS 网盘，更需要真正的服务器。因为这涉及到个人隐私、数据主权。最典型的就是聊天软件：你以为你在私聊，但它在运营商眼里享有和微博、知乎同样的风控。\n为了推动“家..."
+  },
+  "40": {
+    "category": "社会民生 (Society & Life)",
+    "title": "玩不了",
+    "link": "https://bbs.hupu.com/640796261.html",
+    "snippet": ""
+  },
+  "41": {
+    "category": "社会民生 (Society & Life)",
+    "title": "水浒",
+    "link": "https://bbs.hupu.com/640796213.html",
+    "snippet": "@深聊 这阵容输了"
+  },
+  "42": {
+    "category": "社会民生 (Society & Life)",
+    "title": "太难",
+    "link": "https://bbs.hupu.com/640796194.html",
+    "snippet": "就差一下啊"
+  },
+  "43": {
+    "category": "社会民生 (Society & Life)",
+    "title": "2026 MSI 决赛 BLG 输在哪？",
+    "link": "https://www.zhihu.com/question/2059726264324157732",
+    "snippet": ""
+  },
+  "44": {
+    "category": "社会民生 (Society & Life)",
+    "title": "如何看待中华人民共和国外交部发布关于有关国家炒作「南海仲裁案裁决」出台十年的声明？释放了哪些信号？",
+    "link": "https://www.zhihu.com/question/2059717066660303002",
+    "snippet": "关于美国、菲律宾、澳大利亚、加拿大、爱沙尼亚、德国、意大利、日本、拉脱维亚、立陶宛、新西兰、罗马尼亚、斯洛文尼亚、英国等国于2026年7月12日发表所谓“纪念南海仲裁案裁决”十年联合声明，中华人民共和国外交部郑重声明如下： 一、中国对南海诸岛，包括东沙群岛、西沙群岛、中沙群岛和南沙群岛拥有主权；中国南海诸岛拥有内水、领海、毗连区、专属经济区和大陆架；中国在南海拥有历史性权利。中国对南海诸岛的主权和..."
+  },
+  "45": {
+    "category": "社会民生 (Society & Life)",
+    "title": "2026 MSI 总决赛 HLE 3:2 复仇 BLG 夺得冠军，如何评价这场比赛？",
+    "link": "https://www.zhihu.com/question/2059612028357063761",
+    "snippet": ""
   }
 }
