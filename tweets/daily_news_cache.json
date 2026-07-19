@@ -1,254 +1,248 @@
 {
   "1": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "Shubhamsaboo/awesome-llm-apps",
-    "link": "https://github.com/Shubhamsaboo/awesome-llm-apps",
-    "snippet": "100+ AI Agent & RAG apps you can actually run — clone, customize, ship.\nLanguage: Python\nStars: 120563\nForks: 17852"
+    "title": "Robbyant/lingbot-map",
+    "link": "https://github.com/Robbyant/lingbot-map",
+    "snippet": "A feed-forward 3D foundation model for reconstructing scenes from streaming data\nLanguage: Python\nStars: 12810\nForks: 1333"
   },
   "2": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "mattpocock/skills",
-    "link": "https://github.com/mattpocock/skills",
-    "snippet": "Skills for Real Engineers. Straight from my .claude directory.\nLanguage: Shell\nStars: 169893\nForks: 14620"
+    "title": "apache/ossie",
+    "link": "https://github.com/apache/ossie",
+    "snippet": "Apache Ossie, industry wide specification effort to standardize how we exchange semantic metadata across analytics, AI and BI platforms, providing a vendor neutral, single source of truth for semantic..."
   },
   "3": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "Dicklesworthstone/destructive_command_guard",
-    "link": "https://github.com/Dicklesworthstone/destructive_command_guard",
-    "snippet": "The Destructive Command Guard (dcg) is for blocking dangerous git and shell commands from being executed by agents.\nLanguage: Rust\nStars: 4253\nForks: 161"
+    "title": "PostHog/posthog",
+    "link": "https://github.com/PostHog/posthog",
+    "snippet": ":hedgehog: PostHog is the leading platform for building self-driving products. Our developer tools – AI observability, analytics, session replay, flags, experiments, error tracking, logs, and more – c..."
   },
   "4": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "OpenCut-app/OpenCut",
-    "link": "https://github.com/OpenCut-app/OpenCut",
-    "snippet": "The open-source CapCut alternative\nLanguage: TypeScript\nStars: 68919\nForks: 7191"
+    "title": "ibelick/ui-skills",
+    "link": "https://github.com/ibelick/ui-skills",
+    "snippet": "Skills for Design Engineers\nLanguage: TypeScript\nStars: 4935\nForks: 206"
   },
   "5": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "virattt/ai-hedge-fund",
-    "link": "https://github.com/virattt/ai-hedge-fund",
-    "snippet": "An AI Hedge Fund Team\nLanguage: Python\nStars: 61778\nForks: 10904"
+    "title": "rohitg00/ai-engineering-from-scratch",
+    "link": "https://github.com/rohitg00/ai-engineering-from-scratch",
+    "snippet": "Learn it. Build it. Ship it for others.\nLanguage: Python\nStars: 39048\nForks: 6548"
   },
   "6": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "Nutlope/hallmark",
-    "link": "https://github.com/Nutlope/hallmark",
-    "snippet": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.\nLanguage: CSS\nStars: 5959\nForks: 345"
+    "title": "tirth8205/code-review-graph",
+    "link": "https://github.com/tirth8205/code-review-graph",
+    "snippet": "Local-first code intelligence graph for MCP and CLI. Builds a persistent map of your codebase so AI coding tools read only what matters, with benchmarked context reductions on reviews and large-repo w..."
   },
   "7": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "HKUDS/Vibe-Trading",
-    "link": "https://github.com/HKUDS/Vibe-Trading",
-    "snippet": "\"Vibe-Trading: Your Personal Trading Agent\"\nLanguage: Python\nStars: 22677\nForks: 3895"
+    "title": "elder-plinius/G0DM0D3",
+    "link": "https://github.com/elder-plinius/G0DM0D3",
+    "snippet": "LIBERATED AI CHAT\nLanguage: TypeScript\nStars: 9470\nForks: 2252"
   },
   "8": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "Raphire/Win11Debloat",
-    "link": "https://github.com/Raphire/Win11Debloat",
-    "snippet": "A simple, lightweight PowerShell script that allows you to remove pre-installed apps, disable telemetry, as well as perform various other changes to declutter and customize your Windows experience. Wi..."
+    "title": "lyogavin/airllm",
+    "link": "https://github.com/lyogavin/airllm",
+    "snippet": "AirLLM 70B inference with single 4GB GPU\nLanguage: Jupyter Notebook\nStars: 23283\nForks: 2652"
   },
   "9": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "hasaneyldrm/exercises-dataset",
-    "link": "https://github.com/hasaneyldrm/exercises-dataset",
-    "snippet": "1,324-exercise fitness dataset — animation GIFs, 180×180 thumbnails, muscle-group & equipment data, and step-by-step instructions in 6 languages. The exercise data layer behind the LogPress app.\nLangu..."
+    "title": "KnockOutEZ/wigolo",
+    "link": "https://github.com/KnockOutEZ/wigolo",
+    "snippet": "The go-to web for your AI coding agent — local-first search, fetch, crawl & research over MCP. No API keys, no cloud, $0/query. Public beta.\nLanguage: TypeScript\nStars: 1162\nForks: 82"
   },
   "10": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "penpot/penpot",
-    "link": "https://github.com/penpot/penpot",
-    "snippet": "Penpot: The open-source design platform for Product teams that need scalable collaboration.\nLanguage: Clojure\nStars: 56037\nForks: 3689"
+    "title": "codecrafters-io/build-your-own-x",
+    "link": "https://github.com/codecrafters-io/build-your-own-x",
+    "snippet": "Master programming by recreating your favorite technologies from scratch.\nLanguage: Markdown\nStars: 528159\nForks: 49978"
   },
   "11": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "AIEraDev/Clypra",
-    "link": "https://github.com/AIEraDev/Clypra",
-    "snippet": "A modern video editor built with Tauri, React, and TypeScript. Focus on building free capabilities of premium capcut functionalities\nLanguage: TypeScript\nStars: 2538\nForks: 274"
+    "title": "MoonshotAI/kimi-cli",
+    "link": "https://github.com/MoonshotAI/kimi-cli",
+    "snippet": "Kimi Code CLI is your next CLI agent.\nLanguage: Python\nStars: 9426\nForks: 1162"
   },
   "12": {
-    "category": "实用工具资源 (Tools & Resources)",
-    "title": "par274/sharpemu",
-    "link": "https://github.com/par274/sharpemu",
-    "snippet": "An experimental PlayStation 5 emulator project.\nLanguage: C#\nStars: 1969\nForks: 126"
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "科技爱好者周刊（第 404 期）：你需要知道的 AI 内存知识",
+    "link": "http://www.ruanyifeng.com/blog/2026/07/weekly-issue-404.html",
+    "snippet": "这里记录每周值得分享的科技内容，周五发布。\n本杂志开源，欢迎投稿。另有《谁在招人》服务，发布程序员招聘信息。合作请邮件联系（yifeng.ruan@gmail.com）。\n封面图\n\n上海某商场正在举办的\"海绵宝宝\"展览。（via）\n你需要知道的 AI 内存知识\n自己在家运行 AI 模型，可以选择两种硬件。\n一种是独立显卡，目前最顶级的消费级显卡是英伟达的 RTX 5090，带有 32GB 显存，售..."
   },
   "13": {
-    "category": "实用工具资源 (Tools & Resources)",
-    "title": "chenyme/grok2api",
-    "link": "https://github.com/chenyme/grok2api",
-    "snippet": "面向 Grok Build、Grok Web 与 Grok Console 的多账号 API 网关\nLanguage: Go\nStars: 5812\nForks: 1925"
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "WAIC看了一圈，这家公司的机器人在认真打工",
+    "link": "https://www.qbitai.com/2026/07/454040.html",
+    "snippet": "机器人真正具备了干活的完整能力"
   },
   "14": {
-    "category": "实用工具资源 (Tools & Resources)",
-    "title": "Graphify-Labs/graphify",
-    "link": "https://github.com/Graphify-Labs/graphify",
-    "snippet": "AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and more). Turn any folder of code, SQL schemas, R scripts, shell scripts, docs, papers, images, or videos into a queryable..."
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "WAIC 2026现场直击：万兴科技旗下万兴剧厂“无限画布”、新品Filmora.AI与Virbo AI火爆首秀",
+    "link": "https://www.qbitai.com/2026/07/454015.html",
+    "snippet": ""
   },
   "15": {
-    "category": "实用工具资源 (Tools & Resources)",
-    "title": "HenryNdubuaku/maths-cs-ai-compendium",
-    "link": "https://github.com/HenryNdubuaku/maths-cs-ai-compendium",
-    "snippet": "Become a cracked AI/ML Research Engineer\nLanguage: TypeScript\nStars: 5087\nForks: 690"
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "滴滴在WAIC分享：AI升级出行体验 好服务连接消费烟火气",
+    "link": "https://www.qbitai.com/2026/07/454003.html",
+    "snippet": ""
   },
   "16": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "刚刚，一个免费AI Coding选手杀入全球第一梯队",
-    "link": "https://www.qbitai.com/2026/07/448475.html",
-    "snippet": "一手实测这就奉上"
+    "title": "让VLA更懂接触，优理奇UniTac让机器人拥有“触觉想象力”",
+    "link": "https://www.qbitai.com/2026/07/453897.html",
+    "snippet": "入选ECCV 2026"
   },
   "17": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "马斯克“机器人还进不了厂”刚说完，小米机器人”上岗“汽车产线了",
-    "link": "https://www.qbitai.com/2026/07/449906.html",
-    "snippet": "全面硬刚Figure"
+    "title": "小米 NAS 拆解与初步上手：它会是你的第一台 NAS 吗？",
+    "link": "https://sspai.com/post/112398",
+    "snippet": "小米智能存储最适合两类用户：家里已经有较多米家设备的人，以及小米手机用户。查看全文"
   },
   "18": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "B站AI创造公开赛正式上线投币榜，单月参赛人数突破五千",
-    "link": "https://www.qbitai.com/2026/07/449863.html",
-    "snippet": ""
+    "title": "本周看什么 | 最近值得一看的 10 部作品",
+    "link": "https://sspai.com/post/112444",
+    "snippet": "📅本周新预告《蓦然回首》正式预告7月15日，电影《蓦然回首》发布了正式预告，将于9月11日在日本上映。是枝裕和执导、编剧、剪辑，出口夏希、莳田彩珠主演，菅田将晖、宫藤官九郎、野吕佳代、山田真步等出演， ...查看全文"
   },
   "19": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "百年德国「战车」征服欧陆，驾驶位上是中国AI司机",
-    "link": "https://www.qbitai.com/2026/07/449850.html",
-    "snippet": "一套模型，三个世界"
+    "title": "具透 | watchOS 27 公测版一览：动态应用网格、Liquid Glass 微调……",
+    "link": "https://sspai.com/post/112430",
+    "snippet": "AI 之外，watchOS 27 中还有这些新功能。查看全文"
   },
   "20": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "社区速递 149｜派友热议睡眠数据化、观穹 6×24 望远镜与 RG Rotate 旋转屏掌机",
-    "link": "https://sspai.com/post/112320",
-    "snippet": "除了首页时间流和侧栏的精选展位，少数派Matrix社区还有很多优秀内容因条件所限无法得到有效曝光，因此我们决定重启Matrix周报，并在此基础上添加更多社区内容、作者投稿新玩意呈现给大家。上周社区速递 ...查看全文"
+    "title": "UniGetUI：可能是 Windows 下最好用的应用商店",
+    "link": "https://sspai.com/post/111128",
+    "snippet": "UniGetUI 是一个不错的包管理器，它提供的统一的更新 UI，让你的软件最大程度集中在一起管理，还可以用于需要批量配置的场景。查看全文"
   },
   "21": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "具透 | iOS 27 首个公开测试版来了，这些是值得你关注的新功能",
-    "link": "https://sspai.com/post/112287",
-    "snippet": "少数派在体验了新版系统之后，帮你整理了 iOS 27 中值得关注的新功能和新特性，希望帮你能了解新版系统的方方面面。查看全文"
+    "title": "A scorecard for the AI age",
+    "link": "https://openai.com/index/a-scorecard-for-the-ai-age",
+    "snippet": "Sarah Friar, CFO of OpenAI, introduces a practical AI scorecard to measure ROI through useful work, cost per successful task, dependability, and return on compute."
   },
   "22": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "iOS / iPadOS 27 Public Beta 公测版来了：升降级指南 & 注意事项",
-    "link": "https://sspai.com/post/112288",
-    "snippet": "7月14日凌晨，Apple终于推送了今年iOS27、iPadOS27、watchOS27、macOSGoldenGate、HomePod软件27以及AirPods固件新版的首个PublicBeta公开 ...查看全文"
+    "category": "理财投资 (Finance & Investment)",
+    "title": "复盘2015：那个盛夏",
+    "link": "http://xueqiu.com/8801393218/400631484",
+    "snippet": "本话题在雪球有149条讨论，点击查看。\n雪球是一个投资者的社交网络，聪明的投资者都在这里。\n点击下载雪球手机客户端 http://xueqiu.com/xz]]>"
   },
   "23": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "派早报：全球智能手机出货量创 13 年来最低水平等",
-    "link": "https://sspai.com/post/112286",
-    "snippet": "少数派的近期动态声擎×少数派｜「角落新声」征文活动已经启动。投稿赚音箱少数派×AKKO灵犀Linx68键盘预售开启。看看新键盘你可能错过的文章你这图「保真」吗？AI生图时代的信息防伪依江伴湖，树影连绵 ...查看全文"
+    "category": "理财投资 (Finance & Investment)",
+    "title": "中国原油实际需求测算",
+    "link": "http://xueqiu.com/1910783512/400922408",
+    "snippet": "成品油净出口为零、国内原油产量维持当前水平、原油和成品油库存均不下降的情况下，中国平均每天需要进口大约：\n给出的答案是：\n1000万桶原油/日\n较合理的平衡区间是 970万—1030万桶/日。\n测算逻辑\n1. 中国满足国内需求所需的原油加工量\n2025年中国规模以上炼厂原油加工量为 7.376亿吨，折合约：\n7.376亿吨×7.33桶/吨÷365≈1480万桶/日7.376亿吨×7.33桶/吨÷3..."
   },
   "24": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "How to manage AI investments in the agentic era",
-    "link": "https://openai.com/index/managing-ai-investments-in-agentic-era",
-    "snippet": "Learn how enterprises can manage AI investments in the agentic era by measuring useful work per dollar, improving efficiency, and scaling high-value workflows."
+    "category": "理财投资 (Finance & Investment)",
+    "title": "A股跌破年线的杀伤力太大了",
+    "link": "http://xueqiu.com/3559889031/400892703",
+    "snippet": "如果不算2024年关税冲击时的单日暴跌，这是A股自“9·24”行情以来第一次跌破。\n\n周五A股的大跌，无疑是全球半导体板块集体回调中一连串事件中的一环。\n隔夜美股，费城半导体指数大跌4.29%，今年迄今最大回撤将近20%。\n\n周五，韩国股市因为节假日休市。当下亚太杠杆最强，赌性最强的市场休市，不知道是“幸\"还是\"不幸”，但单单是开市的日股，就带来了一阵下跌风暴。开盘半小时，跌幅就达3.5%，随后虽..."
   },
   "25": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "Getting started with ChatGPT",
-    "link": "https://openai.com/academy/getting-started",
-    "snippet": "Learn how to use ChatGPT, start your first conversation, and discover simple ways to write, brainstorm, and solve problems with AI."
+    "category": "理财投资 (Finance & Investment)",
+    "title": "铝业三巨头估值底牌大起底：云铝、神火、中铝，谁才是真正的长线印钞机？",
+    "link": "http://xueqiu.com/2884313460/400922694",
+    "snippet": "早上我分析了最近很火的云铝股份，很多其他网友提出不同意见，既然行业景气度反转，中铝、神火和云铝这三巨头到底该怎么选？对于习惯了在长电这类防御性高股息资产里拿确定性的长线投资者来说，面对这几家依然带有周期残影的标的，我们需要一套极其严苛的估值标尺。\n今天，我们抛开那些定性的研报，跟我之前一篇文章一样，用“市赚率（PR）”估值模型，来对这三家公司进行一次深度的极限交叉测试。\n一、 估值工具箱：用“市赚..."
   },
   "26": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "为什么中国根本不会出现Anthropic？",
-    "link": "http://xueqiu.com/9045460577/400082149",
-    "snippet": "过去二十年，中国互联网最喜欢讲一个故事：寻找“中国版XX”。\n百度是中国Google，滴滴是中国Uber，拼多多是中国Groupon……后来大家发现，这些公司没有一家真正活成了美国公司的翻版，它们最终都长成了自己的样子。\n进入AI时代，这个故事又回来了。\n最近一年，越来越多人把$智谱(02513)$ 智谱称作“中国版Anthropic”。两家公司都押注AI编程，都强调Agent，都把长程任务作为下..."
+    "title": "Quest Mobile数据又说大实话，抖省省偷家美团到店",
+    "link": "http://xueqiu.com/6056806984/400786724",
+    "snippet": "之前抖省省2月10日刚上线的时候，大多数人觉得这就是抖音把团购入口从主APP里拆出来而已。现在再看，这个判断可能低估了事情的严重性，尤其是对美团的到店——点评业务。\n大众点评、抖省省各玩各的\n从Quest Mobile数据看，从2月到6月，抖省省的用户规模曲线几乎是45度角往上冲，而且从目前看，增长斜率还没有趋缓的意思。而大众点评曲线，日活大致在2500万至4000多万之间波动，节假日和营销节点会..."
   },
   "27": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "光纤真的是只配10PE的“周期大宗商品”吗？",
-    "link": "http://xueqiu.com/9693886933/400063415",
-    "snippet": "用旧时代的标签去定义新时代的资产。\n光纤的估值锚，已经不应该再是“运营商集采价格”和“G.652.D产能”，而应该是“AI数据中心对高端光纤的需求缺口”和“G.657.A2/G.654.E的技术壁垒”。\n一、历史毛利率：光纤最差的时候，也没那么“惨”\n真正的周期大宗商品，在周期底部，毛利率是可能为负的，别说销售收入无法覆盖生产成本了，甚至产品价格连现金投入都无法覆盖。光伏硅料就曾经面临这样极端的情..."
+    "title": "The Social Security Cut Everyone Fears Is Not the Biggest Threat to Your Retirement",
+    "link": "https://www.fool.com/retirement/2026/07/18/the-social-security-cut-everyone-fears-is-not-the/?source=iedfolrf0000001",
+    "snippet": "An impending cut to Social Security benefits is bad, but another challenge for retirees is a more pressing matter."
   },
   "28": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "系统性阐述比亚迪的估值体系",
-    "link": "http://xueqiu.com/5707837520/399937791",
-    "snippet": "#赛力斯# #比亚迪# #宁德时代# $比亚迪(SZ002594)$ $比亚迪股份(01211)$ $赛力斯(SH601127)$\n如果喜欢作者，可以关注感谢！\n今天赛力斯公布半年报归母净利润扭赢为亏，赛力斯股票大跌，带动整个A股整车大跌，然后比亚迪官方股东群又开始担心比亚迪的二季度的会计利润，如下图：\n\n这个群的人都是买入比亚迪5年，7年，10年以上的人，这些人对于比亚迪的认知远高于市场普通散户..."
+    "title": "What Do SpaceX, AMD, and Palantir Have in Common?",
+    "link": "https://www.fool.com/investing/2026/07/18/what-do-spacex-amd-and-palantir-have-in-common/?source=iedfolrf0000001",
+    "snippet": "These three stocks are trading at expensive valuations."
   },
   "29": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "对近期海力士和存储下跌的思考",
-    "link": "http://xueqiu.com/5332385101/399965978",
-    "snippet": "这场由韩股蔓延至全球的抛售潮，除了是受到利润预期修正影响外，更多是拥挤交易下的流动性反噬。在宏观局势升级、AI硬件获利了结以及杠杆产品的多重因素下，全球科技股的估值体系正在经历一轮阶段性的自我修正。\n利润下修背后：长协的两面性\n引发海力士暴跌的直接导火索，是其本土主流券商KIS发布的一份研报。报告虽然预测海力士二季度收入同比增长264%，利润达60.4万亿韩元（+556%），但比市场预期65万亿下..."
+    "title": "Robinhood CFO Shiv Verma Sells 3,982 Shares for $457,000 -- Here's What it Signals for the Stock",
+    "link": "https://www.fool.com/coverage/filings/2026/07/18/robinhood-cfo-shiv-verma-sells-3-982-shares-for-usd457-000-here-s-what-it-signals-for-the-stock/?source=iedfolrf0000001",
+    "snippet": "Sale executed under pre-arranged Rule 10b5-1 trading plan reduces his direct stake by 7%, leaving him with 55,945 shares worth $6.5 million."
   },
   "30": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "随想312 周期股业绩的“反身性”",
-    "link": "http://xueqiu.com/1438190065/399967125",
-    "snippet": "业绩强吗？强得可怕，且是明牌。\n上半年，电解铝的价格一直在高位运行，哪怕是最近调整，沪铝的价格仍有23000元，而原料氧化铝的价格一直起不来。在这种情况下，以云铝为例，原料价格明牌、生产成本几乎明牌、商品价格明牌，三者结合，业绩也几近明牌。也就是说，最迟在今年5-6月份，市场对这几家公司的业绩就有预期了，雪球上也有各路人马计算业绩，八九不离十。\n然而股价还是一路下行，个人持有的云铝今年跌了30个点..."
+    "title": "Watch Out, Eli Lilly and Novo Nordisk: Viking Therapeutics Just Started Testing a Weight Loss Drug That Goes Beyond GLP-1",
+    "link": "https://www.fool.com/investing/2026/07/18/watch-out-eli-lilly-and-novo-nordisk-viking-just/?source=iedfolrf0000001",
+    "snippet": "Viking's latest program seeks to push the envelope in weight loss efficacy."
   },
   "31": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "Box vs. DocuSign: What Quarterly Revenue Trends Tell Investors About These Software Companies",
-    "link": "https://www.fool.com/coverage/charts/2026/07/14/box-vs-docusign-what-quarterly-revenue-trends-tell-investors-about-these-software-companies/?source=iedfolrf0000001",
-    "snippet": "DocuSign maintains a commanding revenue lead, but both companies show steady growth."
+    "title": " 'The Bank of England needs a radical overhaul' ",
+    "link": "https://moneyweek.com/economy/uk-economy/the-bank-of-england-needs-a-radical-overhaul",
+    "snippet": "The Bank of England has made many mistakes and is too complacent to face up to them, says Matthew Lynn."
   },
   "32": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "Williams-Sonoma vs. RH: Which Retail Stock Is the Better Buy Right Now?",
-    "link": "https://www.fool.com/coverage/charts/2026/07/14/williams-sonoma-vs-rh-which-retail-stock-is-the-better-buy-right-now/?source=iedfolrf0000001",
-    "snippet": "Both companies have experienced volatile revenue, but analysts expect one to deliver superior earnings growth."
+    "category": "社会民生 (Society & Life)",
+    "title": "大家用 AI 写代码真实感受是啥？",
+    "link": "https://www.v2ex.com/t/1228212",
+    "snippet": "karashoukpan: \n先说说，会感觉比较空虚；\n因为代码写完了，但是不是我写的，我没学到东西也没发现问题。没有仔细 review 代码，大概率也不会 review\n心里没底；\n连调和修 bug 的时候心理没底，因为不知道写了啥东西 🤣"
   },
   "33": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "SpaceX Is Now a Member of the Nasdaq-100: Here's What History Says Happens Next",
-    "link": "https://www.fool.com/investing/2026/07/14/spacex-member-nasdaq-100-history-next/?source=iedfolrf0000001",
-    "snippet": "Here's how new entrants have performed relative to the rest of the index over the last six years."
+    "category": "社会民生 (Society & Life)",
+    "title": "投资建议：自有宅基地建房出租。",
+    "link": "https://www.v2ex.com/t/1228206",
+    "snippet": "Hyvi: \n背景是这样子的。\n自有宅基地在县城的一中附近大概 500 米左右，想自建楼房出租，建 5 层楼，每层楼 4 套 50 平米的两室一厅，租金大概在每套 500 块钱一个月。关于投资的成本，主要包括建楼的成本、简单装修的成本。简单空调油烟机热水器的购买、安装，以及电梯的安装。预计成本在 100 万左右。\n想知道值不值得投入。"
   },
   "34": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "Goldman Sachs Saves the Dow From IBM's Worst Day in 39 Years",
-    "link": "https://www.fool.com/investing/2026/07/14/goldman-sachs-saves-the-dow-from-ibms-worst-day-in/?source=iedfolrf0000001",
-    "snippet": "The Nasdaq gained 0.9% while the Dow fell 0.2% in a split decision. IBM's 24.9% plunge and Goldman Sachs' 7.4% surge explain Tuesday's split decision."
+    "category": "社会民生 (Society & Life)",
+    "title": "PowerShell 和 Codex 在打架？可以试试这份提示词",
+    "link": "https://www.v2ex.com/t/1228204",
+    "snippet": "knowckx: \n今天花时间写了篇 codex 下使用 PowerShell 的文章 在 V2EX 上也发一份\n背景\n最近半年一直 Windows 下使用 Codex 开发项目，逐渐把开发环境打造得更接近 Linux 下的开发体验。最近看到很多人反馈 PowerShell 和 Codex 打架的情况，因为这问题我之前就解决了，所以想分享下我的方案。  \n现在这套环境谈不上多复杂，主要有两个重点：..."
   },
   "35": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": " How pension reforms could help you boost your pot by thousands ",
-    "link": "https://moneyweek.com/personal-finance/pensions/workplace-pensions-government-reform-roadmap",
-    "snippet": "A series of changes in the workplace pension landscape could improve visibility, control and potential returns for savers."
+    "category": "社会民生 (Society & Life)",
+    "title": "2026，我将博客部署到了 Cloudflare（CF）",
+    "link": "https://www.v2ex.com/t/1228199",
+    "snippet": "luojiedev: \n20 年的时候，我看别人写博客，自己也开始凑热闹，大多都是些没有啥价值的内容。当时想着，肯定要部署在国内的云服务上，于是发现成本还挺高的。要购买域名（还必须是 .com 后缀)，还要搞定备案，HTTPS 还要单独配置。\n并没有坚持写几篇内容，还要经常注意别让免费的证书过期了，虽然可以通过脚本来处理。但是当时自己的心智还不足以成熟到把一件事情做好。\n24 年的时候，我觉得自己..."
   },
   "36": {
     "category": "社会民生 (Society & Life)",
-    "title": "中医税？",
-    "link": "https://www.v2ex.com/t/1227206",
-    "snippet": "xiaowowo: \n这两天感冒发烧，在确诊乙型流感前后，去了两家不同的公立医院。\n第一家医院（尚未确诊乙流）给我开了：\n布洛芬（退烧）约 40 元；\n一盒中成药，约 90 元。\n第二天症状加重，我去了另一家医院，用试纸确诊乙型流感。医生开的药是：\n布洛芬约 40 元；\n奥司他韦约 14 元（抗病毒治疗）；\n头孢约 6 元；\n一盒中成药约 48 元。\n整个过程里，我按医嘱服用了奥司他韦、布洛芬等药..."
+    "title": "鸽鸽这队长给我当好了呀",
+    "link": "https://bbs.hupu.com/641005199.html",
+    "snippet": "没见过那个国乒队长不顾及男双的 只顾着混个混双的 好了现在男双国乒有优势了 而且混双你又不行了"
   },
   "37": {
     "category": "社会民生 (Society & Life)",
-    "title": "大家用中转站不怕被掺水么, 信息安全怎么保障",
-    "link": "https://www.v2ex.com/t/1227175",
-    "snippet": "WorkerMatt: \n虽然我自己也有在用，但不知道大家是怎么想的"
+    "title": "0",
+    "link": "https://bbs.hupu.com/641005181.html",
+    "snippet": "0"
   },
   "38": {
     "category": "社会民生 (Society & Life)",
-    "title": "就想问一句，你们老婆也是上班电话是都默认静音，电话不接么？",
-    "link": "https://www.v2ex.com/t/1227149",
-    "snippet": "E263AFF275EE4117: \n我：上班时间你可以开静音，至少开一个振动把，这样即使电话来了也能接到。\n她：平时又没有什么人会给我打电话，上班时候老板也都不玩手机的。\n我：我不是让你上班时间玩手机，我是说至少有事儿能打的通你电话。\n她：那你有什么重要的事儿？\n我：...\n给老婆哥找了一个班上，类似于外卖打包。现在她上班接近于失联，反正就是电话不接、消息不回的。就是比较老实、老板说了空了时候她..."
+    "title": "连锁酒店诡异事件录",
+    "link": "https://bbs.hupu.com/641004991.html",
+    "snippet": "连锁酒店诡异事件录"
   },
   "39": {
     "category": "社会民生 (Society & Life)",
-    "title": "两天时间，今年白干了",
-    "link": "https://www.v2ex.com/t/1227144",
-    "snippet": "DisastrousNet: \n主要回撤来自两倍做多海力士和兆易创新。\n割么，兄弟们"
+    "title": "王楚钦/孙颖莎 2-3 不敌袁励岑/王艺迪，无缘全锦赛混双决赛，怎样评价本场比赛？",
+    "link": "https://www.zhihu.com/question/2061941086679819536",
+    "snippet": "2026年全国乒乓球锦标赛混双半决赛，王楚钦 /孙颖莎2-3不敌袁励岑 /王艺迪 ，遗憾止步半决赛。"
   },
   "40": {
     "category": "社会民生 (Society & Life)",
-    "title": "這是我抽到各自單個分數最低的球員，但最後竟然能打進十六強",
-    "link": "https://bbs.hupu.com/640857756.html",
-    "snippet": ""
+    "title": "EWC半决赛KC 2:1 T1，如何评价这场比赛？",
+    "link": "https://www.zhihu.com/question/2061933785382380641",
+    "snippet": "决胜局T1手握巨大优势被KC翻盘，如何评价这场比赛？"
   },
   "41": {
     "category": "社会民生 (Society & Life)",
-    "title": "这阵容可以亚军，把我感动了",
-    "link": "https://bbs.hupu.com/640857754.html",
-    "snippet": ""
-  },
-  "42": {
-    "category": "社会民生 (Society & Life)",
-    "title": "96分冠军哈哈哈哈",
-    "link": "https://bbs.hupu.com/640857721.html",
-    "snippet": ""
+    "title": "2026乒乓球全锦赛男双林高远/袁煊松3:2林诗栋/温瑞博，晋级半决赛，如何评价？",
+    "link": "https://www.zhihu.com/question/2061912320582989026",
+    "snippet": "（7-11、11-7、11-9、9-11、11-8）"
   }
 }
