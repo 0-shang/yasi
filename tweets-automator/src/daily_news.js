@@ -82,16 +82,9 @@ const defaultRssSources = {
   "热门信息 (Trending Info)": {
     limit: 10,
     sources: [
-      { url: "https://rsshub.rssforever.com/xueqiu/today",              label: "雪球今日话题 (搞钱与宏观环境 - 主节点)" },
-      { url: "https://rsshub.app/xueqiu/today",                         label: "雪球今日话题 (备用节点)" },
-      { url: "https://rss.shab.fun/xueqiu/today",                       label: "雪球今日话题 (备用节点2)" },
-      { url: "https://zenhabits.net/feed/",                             label: "Zen Habits (顶级反焦虑/个人成长)" },
-      { url: "https://markmanson.net/feed",                             label: "Mark Manson (犀利的生活哲学)" },
-      { url: "https://waitbutwhy.com/feed",                             label: "Wait But Why (深度长文/底层逻辑)" },
-      { url: "https://rsshub.rssforever.com/eleduck/posts",             label: "电鸭社区 (数字游民/反内卷 - 主节点)" },
-      { url: "https://rsshub.app/eleduck/posts",                        label: "电鸭社区 (备用节点)" },
-      { url: "https://rsshub.rssforever.com/indiehackers/highest-voted",label: "Indie Hackers (独立开发者搞钱案例 - 主节点)" },
-      { url: "https://rsshub.app/indiehackers/highest-voted",           label: "Indie Hackers (备用节点)" }
+      { url: "https://markmanson.net/feed",                             quota: 5, allowRecentDuplicates: true, label: "Mark Manson (犀利的生活哲学)" },
+      { url: "https://jamesclear.com/feed",                             quota: 3, allowRecentDuplicates: true, label: "James Clear (原子习惯/微小进步)" },
+      { url: "https://tim.blog/feed/",                                  quota: 2, allowRecentDuplicates: true, label: "Tim Ferriss (顶级效率与个人成长)" }
     ]
   }
 };
@@ -131,12 +124,24 @@ async function fetchCategoryItems(sources, limit, seenLinks) {
         if (link && uniqueLinks.has(link)) return false;
         if (link) uniqueLinks.add(link);
         
-        // 2. 历史去重（除非配置了 ignoreSeen）
+        // 2. 历史去重（除非配置了 ignoreSeen，或者配置了允许24小时内重复且内容在24小时内）
         if (!source.ignoreSeen && link && seenLinks[link]) {
+          if (source.allowRecentDuplicates) {
+            const ageHours = (Date.now() - item._parsedDate.getTime()) / (1000 * 60 * 60);
+            if (ageHours <= 24) {
+              return true; // 24小时内，不去重
+            }
+          }
           return false;
         }
         return true;
       });
+      
+      // 3. 强制截断数量 (如果配置了 quota)
+      if (source.quota) {
+        items = items.slice(0, source.quota);
+      }
+      
       skipped += before - items.length;
 
       console.log(`  ✅ [${items.length}] ${source.label}`);
