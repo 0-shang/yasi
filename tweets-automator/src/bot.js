@@ -122,8 +122,9 @@ function saveAndSyncToGithub(content, type = 'published', tweetResult = null, sc
   }
   exec(`git add tweets/ && git commit -m "bot: auto saved ${type} tweet" && git pull --rebase origin main && ${pushCmd}`, { cwd: repoRoot }, (err, stdout, stderr) => {
     if (err) {
-      console.error('Git sync failed:', err);
-      if (ctx) ctx.reply(`❌ Git sync failed: ${err.message}`);
+      const safeMsg = pat ? err.message.replace(new RegExp(pat, 'g'), '***') : err.message;
+      console.error('Git sync failed:', safeMsg);
+      if (ctx) ctx.reply(`❌ Git sync failed: ${safeMsg}`);
     } else {
       console.log('Git sync success.');
       if (type === 'published') {
@@ -174,8 +175,9 @@ function syncCrossRepo(ctx = null) {
     const cmd = `git config user.name "bot" && git config user.email "bot@example.com" && git add content/tweets/ && (git diff-index --quiet HEAD || git commit -m "bot: auto-sync published tweets") && git pull --rebase https://${pat}@github.com/0-shang/ai-nav.git master && git push https://${pat}@github.com/0-shang/ai-nav.git HEAD:master`;
     exec(cmd, { cwd: tempDir }, (err, stdout, stderr) => {
       if (err) {
-        console.error('Cross-repo sync push failed:', err.message);
-        if (ctx) ctx.reply(`⚠️ ai-nav 同步过程中出现问题 (通常是因为没有新文件): ${err.message}`);
+        const safeMsg = pat ? err.message.replace(new RegExp(pat, 'g'), '***') : err.message;
+        console.error('Cross-repo sync push failed:', safeMsg);
+        if (ctx) ctx.reply(`⚠️ ai-nav 同步过程中出现问题: ${safeMsg}`);
       } else {
         if (ctx) ctx.reply('✅ Successfully synced cross-repository to ai-nav!');
       }
