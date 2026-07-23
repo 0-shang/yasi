@@ -1,254 +1,392 @@
 {
   "1": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "koala73/worldmonitor",
-    "link": "https://github.com/koala73/worldmonitor",
-    "snippet": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface\nLanguage: TypeScript\nStars: 6439..."
+    "title": "block/buzz",
+    "link": "https://github.com/block/buzz",
+    "snippet": "A hive mind communication platform\nLanguage: Rust\nStars: 6619\nForks: 534"
   },
   "2": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "bojieli/ai-agent-book",
-    "link": "https://github.com/bojieli/ai-agent-book",
-    "snippet": "《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码\nLanguage: Python\nStars: 14046\nForks: 1315"
+    "title": "koala73/worldmonitor",
+    "link": "https://github.com/koala73/worldmonitor",
+    "snippet": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface\nLanguage: TypeScript\nStars: 7141..."
   },
   "3": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "tirth8205/code-review-graph",
-    "link": "https://github.com/tirth8205/code-review-graph",
-    "snippet": "Local-first code intelligence graph for MCP and CLI. Builds a persistent map of your codebase so AI coding tools read only what matters, with benchmarked context reductions on reviews and large-repo w..."
+    "title": "shiyu-coder/Kronos",
+    "link": "https://github.com/shiyu-coder/Kronos",
+    "snippet": "Kronos: A Foundation Model for the Language of Financial Markets\nLanguage: Python\nStars: 33000\nForks: 5644"
   },
   "4": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "ayghri/i-have-adhd",
-    "link": "https://github.com/ayghri/i-have-adhd",
-    "snippet": "A skill for your coding agent to stop it from burying the answer. ADHD-friendly output.\nLanguage: Unknown\nStars: 6412\nForks: 256"
+    "title": "Pumpkin-MC/Pumpkin",
+    "link": "https://github.com/Pumpkin-MC/Pumpkin",
+    "snippet": "Empowering everyone to host fast and efficient Minecraft servers.\nLanguage: Rust\nStars: 8858\nForks: 612"
   },
   "5": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "earthtojake/text-to-cad",
-    "link": "https://github.com/earthtojake/text-to-cad",
-    "snippet": "A collection of agent skills for CAD, robotics and hardware design\nLanguage: JavaScript\nStars: 8940\nForks: 1015"
+    "title": "citrolabs/ego-lite",
+    "link": "https://github.com/citrolabs/ego-lite",
+    "snippet": "The best browser for both you and your AI agents work in parallel.\nLanguage: JavaScript\nStars: 1559\nForks: 91"
   },
   "6": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "1jehuang/jcode",
-    "link": "https://github.com/1jehuang/jcode",
-    "snippet": "The most intelligent agent harness for code\nLanguage: Rust\nStars: 10178\nForks: 1122"
+    "title": "chrislgarry/Apollo-11",
+    "link": "https://github.com/chrislgarry/Apollo-11",
+    "snippet": "Original Apollo 11 Guidance Computer (AGC) source code for the command and lunar modules.\nLanguage: Assembly\nStars: 71060\nForks: 7915"
   },
   "7": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "oblien/openship",
-    "link": "https://github.com/oblien/openship",
-    "snippet": "Self-hosted deployment platform\nLanguage: TypeScript\nStars: 5822\nForks: 415"
+    "title": "diegosouzapw/OmniRoute",
+    "link": "https://github.com/diegosouzapw/OmniRoute",
+    "snippet": "Never stop coding. Free MIT AI gateway: one endpoint, 290+ providers (90+ free), 500+ models — Kimi, Claude, GPT, OpenAI, Gemini, GLM, DeepSeek, MiniMax. Works with Claude Code, Codex, Cursor, OpenCod..."
   },
   "8": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "AstrBotDevs/AstrBot",
-    "link": "https://github.com/AstrBotDevs/AstrBot",
-    "snippet": "AI Agent Assistant & development framework that integrates lots of IM platforms, LLMs, plugins and AI feature, and can be your openclaw alternative. ✨\nLanguage: Python\nStars: 37389\nForks: 2604"
+    "title": "ComposioHQ/awesome-claude-skills",
+    "link": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "snippet": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows\nLanguage: Python\nStars: 69367\nForks: 7849"
   },
   "9": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "every-app/open-seo",
-    "link": "https://github.com/every-app/open-seo",
-    "snippet": "Open source alternative to Semrush and Ahrefs\nLanguage: TypeScript\nStars: 6421\nForks: 698"
+    "title": "earthtojake/text-to-cad",
+    "link": "https://github.com/earthtojake/text-to-cad",
+    "snippet": "A collection of agent skills for CAD, robotics and hardware design\nLanguage: JavaScript\nStars: 9926\nForks: 1095"
   },
   "10": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "tradesdontlie/tradingview-mcp",
-    "link": "https://github.com/tradesdontlie/tradingview-mcp",
-    "snippet": "AI-assisted TradingView chart analysis — connect Claude Code to your TradingView Desktop for personal workflow automation\nLanguage: JavaScript\nStars: 4711\nForks: 2167"
+    "title": "agegr/pi-web",
+    "link": "https://github.com/agegr/pi-web",
+    "snippet": "Web UI for the pi coding agent\nLanguage: TypeScript\nStars: 2329\nForks: 324"
   },
   "11": {
-    "category": "实用工具资源 (Tools & Resources)",
-    "title": "AlexsJones/llmfit",
-    "link": "https://github.com/AlexsJones/llmfit",
-    "snippet": "Hundreds of models & providers. One command to find what runs on your hardware.\nLanguage: Rust\nStars: 30069\nForks: 1835"
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "Namecheap Gave My Account to an Unverified Third Party Just Because They Asked",
+    "link": "https://news.ycombinator.com/item?id=49028037",
+    "snippet": "Comments"
   },
   "12": {
-    "category": "实用工具资源 (Tools & Resources)",
-    "title": "hyprwm/Hyprland",
-    "link": "https://github.com/hyprwm/Hyprland",
-    "snippet": "Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.\nLanguage: C++\nStars: 36923\nForks: 1858"
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "“We love the world where we can use both”: How Nvidia thinks about local and frontier models",
+    "link": "https://thenewstack.io/nvidia-local-frontier-models/",
+    "snippet": "The models small enough to run on the box on your desk are getting good enough that the interesting question\nThe post “We love the world where we can use both”: How Nvidia thinks about local and front..."
   },
   "13": {
-    "category": "实用工具资源 (Tools & Resources)",
-    "title": "chrislgarry/Apollo-11",
-    "link": "https://github.com/chrislgarry/Apollo-11",
-    "snippet": "Original Apollo 11 Guidance Computer (AGC) source code for the command and lunar modules.\nLanguage: Assembly\nStars: 69754\nForks: 7823"
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "Cursor, Ramp, and Meta are all building model routers — but two have major model ambitions themselves",
+    "link": "https://thenewstack.io/cursor-ramp-meta-model-router/",
+    "snippet": "Cursor, the AI coding tool recently acquired by Elon Musk’s SpaceX in a $60 billion all-stock deal, has launched a\nThe post Cursor, Ramp, and Meta are all building model routers — but two have major m..."
   },
   "14": {
-    "category": "实用工具资源 (Tools & Resources)",
-    "title": "DioxusLabs/dioxus",
-    "link": "https://github.com/DioxusLabs/dioxus",
-    "snippet": "Fullstack app framework for web, desktop, and mobile.\nLanguage: Rust\nStars: 37538\nForks: 1768"
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "What happened to TheNumbers.com",
+    "link": "https://stephenfollows.com/p/what-just-happened-to-thenumberscom-should-worry-us-all",
+    "snippet": "Comments"
   },
   "15": {
-    "category": "实用工具资源 (Tools & Resources)",
-    "title": "langchain-ai/open_deep_research",
-    "link": "https://github.com/langchain-ai/open_deep_research",
-    "snippet": "Language: Python\nStars: 12146\nForks: 1736"
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "The arguments against open source AI are bad",
+    "link": "https://tombedor.dev/arguments-against-open-source-ai-are-very-bad/",
+    "snippet": "Comments"
   },
   "16": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "WAIC重磅成果｜上海仪电智算牵头成立“智算系统架构联盟”并发布《超节点系统架构规范》",
-    "link": "https://www.qbitai.com/2026/07/456052.html",
-    "snippet": ""
+    "title": "Launch HN: Screenpipe (YC S26) – Record how you work and turn that into agents",
+    "link": "https://news.ycombinator.com/item?id=49024620",
+    "snippet": "Comments"
   },
   "17": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "WAIC重磅成果｜上海市教育算力专区正式开启试运行",
-    "link": "https://www.qbitai.com/2026/07/456026.html",
-    "snippet": ""
+    "title": "JEP 540: Simple JSON API (Now in Incubator)",
+    "link": "https://openjdk.org/jeps/540",
+    "snippet": "Comments"
   },
   "18": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "WAIC重磅成果｜智爱赛思全面升级并发布科研专属Token Plan",
-    "link": "https://www.qbitai.com/2026/07/456021.html",
-    "snippet": ""
+    "title": "Personalization is a ranking problem — architecture makes it work",
+    "link": "https://thenewstack.io/vespa-realtime-personalization-ranking/",
+    "snippet": "Every product team is chasing the same moment: The user opens a page and thinks, this understands me. A shopper\nThe post Personalization is a ranking problem — architecture makes it work appeared firs..."
   },
   "19": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "WAIC重磅成果｜仪电智算云在国家人工智能应用中试基地建设中展现全栈服务能力",
-    "link": "https://www.qbitai.com/2026/07/455998.html",
-    "snippet": ""
+    "title": "Show HN: OneCLI – OSS credential gateway that keeps secrets out of AI agents",
+    "link": "https://github.com/onecli/onecli",
+    "snippet": "Comments"
   },
   "20": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "社区速递 150｜派友热议磁吸配件、拯救呼吸通气鼻贴与国产三折叠自行车",
-    "link": "https://sspai.com/post/112582",
-    "snippet": "除了首页时间流和侧栏的精选展位，少数派Matrix社区还有很多优秀内容因条件所限无法得到有效曝光，因此我们决定重启Matrix周报，并在此基础上添加更多社区内容、作者投稿新玩意呈现给大家。上周社区速递 ...查看全文"
+    "title": "Startup founders urge U.S. government not to shut off Chinese open weight AI",
+    "link": "https://www.politico.com/news/2026/07/22/startup-founders-urge-trump-not-to-shut-off-chinese-open-weight-ai-01008992",
+    "snippet": "Comments"
   },
   "21": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "装上 Fedora 的 Surface Pro：一台老设备的新可能",
-    "link": "https://sspai.com/post/112200",
-    "snippet": "给 Surface Pro 5 安装上仍在积极更新的 Linux 发行版，它会成为一台更可用的设备吗？查看全文"
+    "category": "理财投资 (Finance & Investment)",
+    "title": "Better-Buy Chip Stock: Taiwan Semiconductor vs. Nvidia",
+    "link": "https://www.fool.com/investing/2026/07/23/better-buy-chip-stock-taiwan-semiconductor-vs-nvid/?source=iedfolrf0000001",
+    "snippet": "Taiwan Semiconductor and Nvidia are stalwarts in the semiconductor industry."
   },
   "22": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "App+1 | 把「从长视频截取片段」做到极致：Trimly",
-    "link": "https://sspai.com/post/111569",
-    "snippet": "作为有多年专业音视频开发经验的技术工作者，我给自己，以及可能也有类似需求的你，做了一个把「从长视频里截取片段」这件事做到极致的产品。查看全文"
+    "category": "理财投资 (Finance & Investment)",
+    "title": "Prediction: Here's What SpaceX Stock Will Do After Its First Earnings Report",
+    "link": "https://www.fool.com/investing/2026/07/23/predict-what-spacex-stock-do-after-earnings/?source=iedfolrf0000001",
+    "snippet": "The largest IPO in history is set to report earnings for the first time on Aug. 4. Here's what investors need to know."
   },
   "23": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "派早报：京沪高铁与京沪铁路试点提前 60 天预约购票等",
-    "link": "https://sspai.com/post/112565",
-    "snippet": "少数派的近期动态那个让你放松娱乐、拥抱心流、逃离纷扰或找回真我的角落，是如何构建起来的？「角落新声」征文活动火热征稿中少数派×AKKO灵犀Linx68键盘预售开启。看看新键盘你可能错过的文章2026年 ...查看全文"
+    "category": "理财投资 (Finance & Investment)",
+    "title": "Why Allegion Stock Is Rocketing Higher Today",
+    "link": "https://www.fool.com/investing/2026/07/23/why-allegion-stock-is-rocketing-higher-today/?source=iedfolrf0000001",
+    "snippet": "Allegion soared past analysts' expectations for its second-quarter earnings."
   },
   "24": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "Introducing the ChatGPT for small business program",
-    "link": "https://openai.com/index/introducing-chatgpt-small-business-program",
-    "snippet": "OpenAI launches the ChatGPT for Small Businesses program, helping entrepreneurs build AI skills, automate work, and grow with ChatGPT Work."
+    "category": "理财投资 (Finance & Investment)",
+    "title": "Here's Why Honeywell Shares Popped Higher Today",
+    "link": "https://www.fool.com/investing/2026/07/23/heres-why-honeywell-shares-popped-higher-today/?source=iedfolrf0000001",
+    "snippet": "Management significantly increased its full-year guidance just a few weeks after issuing its previous guidance update."
   },
   "25": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "Safety and alignment in an era of long-horizon models",
-    "link": "https://openai.com/index/safety-alignment-long-horizon-models",
-    "snippet": "OpenAI shares lessons from deploying long-running AI models, highlighting new safety risks, observed failures, and improved safeguards through iterative deployment."
+    "category": "理财投资 (Finance & Investment)",
+    "title": "This Overlooked Pipeline Stock Could Quietly Make You a Fortune",
+    "link": "https://www.fool.com/investing/2026/07/23/this-overlooked-pipeline-stock-could-quietly-make/?source=iedfolrf0000001",
+    "snippet": "As the adage goes, slow and steady wins the race."
   },
   "26": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "建行2026年中报业绩预测",
-    "link": "http://xueqiu.com/1821992043/401284102",
-    "snippet": "净利息收入评估：\n建行在一季度的净利息收入明显高于我评估的金额，主要是因为一季度建行的净息差表现要远远好于预期。建行第一季度的净息差环比显著反弹6bps，超过我的预估。通过净息差还原法分析，净息差大幅反弹的原因主要是资产收益率环比降幅显著收窄。\n一季度建行的净息差环比反弹6bps，其中生息资产收益率环比下滑2bps，负债成本环比下降7bps。负债成本降幅符合行业表现，资产收益率的环比下滑明显好于行..."
+    "title": "$5,000 Invested in This Silver ETF Could Be Worth This Much if Silver Hits $100",
+    "link": "https://www.fool.com/investing/2026/07/23/5000-invested-in-this-silver-etf-could-be-worth-th/?source=iedfolrf0000001",
+    "snippet": "This exchange-traded fund ebbs and flows almost perfectly in sync with the price of silver bullion itself."
   },
   "27": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "Kimi K3 背后的机会：高速连接器",
-    "link": "http://xueqiu.com/8755156034/401376891",
-    "snippet": "仔细的分析了Kimi K3背后训练的硬件平台资源，使用的是阿里的云服务，主要也是阿里是月之暗面的主要投资方之一，阿里自己的平头哥有自己的AI算力芯片PPU，阿里云服务 + 芯片的体系，对标Google。\nWAIC大会上，阿里也发布了的超节点：灵骏真武 M890，与华为成为国内唯二的超节点硬件供应商。\n阿里$阿里巴巴-W(09988)$ 的超节点体系里面：\n(1)AI算力芯片：平头哥自研；\n(2)A..."
+    "title": "Is an S&P 500 ETF a Safe Investment During a Market Crash?",
+    "link": "https://www.fool.com/investing/2026/07/23/is-an-sp-500-etf-a-safe-investment-during-a-market/?source=iedfolrf0000001",
+    "snippet": "Your portfolio might lose value, but that doesn't tell the whole story."
   },
   "28": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "对当前环境AI产业链机会的思考",
-    "link": "http://xueqiu.com/5332385101/401293118",
-    "snippet": "本周三盘后起陆续公布的财报及指引将是检验AI叙事的关键。抛开短期情绪和不确定性，当前环境下AI产业链存在哪些机会？\n一、当下环境的再梳理\n本轮全球科技的显著回调，核心原因是前期涨速过快、筹码过度集中，叠加多重杠杆的集中出清。\n1. 韩股市场放大器效应：作为全球科技股情绪的放大器，韩股市场此前叠加了融资信用、单股两倍/三倍ETF以及期权三重杠杆。在极度单边定价下，一旦基本面预期（如存储企业利润指引下..."
+    "title": "59% of Berkshire Hathaway's Portfolio Sits in 5 Dow Stocks. This Is My Top Pick to Buy Now.",
+    "link": "https://www.fool.com/investing/2026/07/23/berkshire-hathaways-portfolio-sits-in-5-dow-stocks/?source=iedfolrf0000001",
+    "snippet": "Due to its size, Berkshire Hathaway often invests in large, well-known companies that are also included in the Dow Jones Industrial Average."
   },
   "29": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "重新理解胃癌（上）：为什么一种癌症正在被拆成许多种疾病",
-    "link": "http://xueqiu.com/1449994841/401392913",
-    "snippet": "2024年，全球每90秒就有一名患者死于胃癌。中国贡献了其中近四成。\n这个数字足够大，大到很多投资人看一眼就会在心里默算市场空间。\n同时，2026年上半年，胃癌赛道密集发生了一连串事件：科济药业的 CLDN18.2 CAR-T（satri-cel）在美国获批，成为实体瘤 CAR-T 的历史性突破；和黄医药的沙沃替尼拿下中国 MET 扩增胃癌适应症；复宏汉霖的斯鲁利单抗成为全球首个获批胃癌围手术期免..."
+    "title": "Donald Trump's USTR Hit Brazil With a 25% Section 301 Tariff on July 15. Here's How That Could Play Out for These 2 Stocks.",
+    "link": "https://www.fool.com/investing/2026/07/23/donald-trumps-ustr-hit-brazil-with-a-25-section-30/?source=iedfolrf0000001",
+    "snippet": "Tariffs on Brazilian imports could reshape competitive dynamics for select companies."
   },
   "30": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "全宇宙最好的杰瑞帖子，海关进出口验证实物交付链",
-    "link": "http://xueqiu.com/5991307505/401376692",
-    "snippet": "当然，我自己是不会错过这么好的加仓机会的，我跟踪下来始终觉得杰瑞远没有被完全定价。$杰瑞股份(SZ002353)$ \n在中报出来前，我希望带大家捋一遍，从杰瑞的官网、海外子公司、OEM合作关系和进出口提单继续往下挖，而我也在过程中逐渐拼出了一条比预想中更完整的北美移动能源供应链。把时间、主体、货物重量和运输方向串起来后，可以看到杰瑞正在形成一套比较清晰的跨国协作模式。\n一、最直接的证据，11台GT..."
+    "title": "Rivian Just Followed Lucid's Most Criticized Growth Playbook and Investors Should Take Note",
+    "link": "https://www.fool.com/investing/2026/07/23/rivian-follow-lucid-criticize-playbook-shares/?source=iedfolrf0000001",
+    "snippet": "Rivian is preparing to dilute investors with a stock sale."
   },
   "31": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "Want to Buy the World? This ETF Lets You Own 10,000 Stocks",
-    "link": "https://www.fool.com/investing/2026/07/21/want-to-buy-the-world-this-etf-lets-you-own-10000/?source=iedfolrf0000001",
-    "snippet": "Many investors might not know this, but you can buy \"the whole world\" of stocks with one Vanguard ETF for a 0.06% expense ratio."
+    "category": "社会民生 (Society & Life)",
+    "title": "如何评价台球厅一男子拍助教屁股被索赔两千元，现因猥亵他人已被警方依法行政拘留？",
+    "link": "https://www.zhihu.com/question/2063568881944359958",
+    "snippet": "[2 张图片]"
   },
   "32": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "Will Micron Split Its Stock This Year?",
-    "link": "https://www.fool.com/investing/2026/07/21/will-micron-split-its-stock-this-year/?source=iedfolrf0000001",
-    "snippet": "A potential stock split could be beneficial for Micron stock as it could increase demand for the company's shares."
+    "category": "社会民生 (Society & Life)",
+    "title": "新能源车跨境自驾遭远程锁车，车主称「事前未提醒出境会被锁车」，汽车售出后厂商该不该保留「控制权」？",
+    "link": "https://www.zhihu.com/question/2063532260934907357",
+    "snippet": "近日，有网友在社交平台发布视频称，自己在跨境自驾的途中，其新能源汽车被厂家远程锁车机系统，车辆近乎沦为仅能开动的“半废品”，旅途行程受阻。 7月22日，车主刘先生向封面新闻表示，自己汽车的车机被厂家远程锁了30多个小时，期间，车辆智能功能瘫痪，甚至无法解锁储物箱拿个人资料证件及加油。 跨境自驾被锁车机超30个小时 河南车主刘先生表示，自己原计划利用暑假假期，带孩子自驾穿越中亚，并游历欧洲多国。可刚..."
   },
   "33": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "How to Earn $1,000 a Year from Energy Transfer Stock",
-    "link": "https://www.fool.com/investing/2026/07/21/how-to-earn-1000-a-year-from-energy-transfer-stock/?source=iedfolrf0000001",
-    "snippet": "The MLP pays quite a generous dividend."
+    "category": "社会民生 (Society & Life)",
+    "title": "如何看待旭旭宝宝展示水军「复制粘贴式同款黑文案」，硬刚黑粉报警且「每条有效水军证据悬赏10万元」？",
+    "link": "https://www.zhihu.com/question/2063520731019876318",
+    "snippet": "在“一地鸡毛”风波中，旭旭宝宝在直播间直接放映了多名账号发布的黑视频。画面显示，不同账号在攻击他时，从标题到文案（如“尖嘴猴腮”、“忘了来时路”、“飘了”）甚至语气词均完全一致，坐实了有组织水军的存在。 旭旭宝宝随后宣布公司已报警，并承诺只要有人提供有组织水军的内部聊天与转账证据，核实后每人奖励10万元悬赏金，且不设上限。 如何评价旭旭宝宝这波“公开撞衫文案+重金悬赏反杀”的操作？"
   },
   "34": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "Why Bloom Energy Stock Jumped Over 10% Today",
-    "link": "https://www.fool.com/investing/2026/07/21/why-bloom-energy-stock-jumped-over-10-today/?source=iedfolrf0000001",
-    "snippet": "One analyst projects 75% upside in the fuel cell stock."
+    "category": "社会民生 (Society & Life)",
+    "title": "耐克将清退数千家网络经销商，同款鞋官旗比经销商贵 400，为啥价差这么大？以后还能买到便宜的耐克吗？",
+    "link": "https://www.zhihu.com/question/2063298622393771043",
+    "snippet": "7月22日，滔搏国际及宝胜国际均在港交所公告，收到耐克的正式通知，目前在中国内地的耐克产品线上平台销售将于2027年1月1日起全面终止。 耐克公司表示，计划从1月起清退中国数千家在线经销商，以整顿已变得混乱的数字市场。自明年起，线上销售渠道将主要集中于品牌官网、官方App，以及其在国内主流电商与社交平台运营的品牌旗舰店。 第三方平台数据显示，以某电商平台为例，在近30天内，耐克品牌有7769个账号..."
   },
   "35": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": " Live: Did UK inflation rise in June? ",
-    "link": "https://moneyweek.com/economy/news/live/inflation-cpi-june-2026-report",
-    "snippet": "The Office for National Statistics (ONS) will release the latest UK inflation data tomorrow (22 July). Experts believe the rate of price rises will fall from 2.8% to 2.6%."
+    "category": "社会民生 (Society & Life)",
+    "title": "伊朗称袭击美国亚马逊公司在巴林的数据基础设施，这个地方有多重要？将造成哪些影响？",
+    "link": "https://www.zhihu.com/question/2063259853338972886",
+    "snippet": "据伊朗方面22日消息，伊朗武装部队袭击了位于巴林的美国亚马逊公司中央数据基础设施，称该设施是美军军事信息交换关键站点之一。https://ysxw.cctv.cn/article.html?toc_style_id=feeds_default&item_id=8670514468527785588&channelId=1119"
   },
   "36": {
     "category": "社会民生 (Society & Life)",
-    "title": "我们公司买了上海联通的跨境专线，发现贼稳定，机场就是用的这种专线吗？",
-    "link": "https://www.v2ex.com/t/1228804",
-    "snippet": "lynn1su: 是一个旁路由小盒子，我们买了美国和英国的，发现及其稳定\n不管什么时候我们买的 100m 永远能跑满，ping 都不波动的\n永远可以跑满速度\n这种是不是就是那种机场专线啊？"
+    "title": "苹果拟推出设备租赁计划，iPhone 可租用 24 个月，月付租机的模式可行吗？你会考虑租苹果设备吗？",
+    "link": "https://www.zhihu.com/question/2063258715155686223",
+    "snippet": "彭博社马克 · 古尔曼昨日报道称，苹果公司预计于 2026 年 7 月 28 日（下周二）在美国市场推出名为“Apple Upgrade”的全新设备租赁计划。 这项服务将覆盖 iPhone、Mac、iPad 及 Apple Watch 的大部分机型，是苹果在硬件销售模式上的一次重要调整。 据介绍，苹果将与金融科技公司 Klarna 合作，由后者为该租赁项目提供资金支持。受此消息影响，Klarna ..."
   },
   "37": {
     "category": "社会民生 (Society & Life)",
-    "title": "国家队支持，这次是不是稳了？",
-    "link": "https://www.v2ex.com/t/1228801",
-    "snippet": "tangzhik: \n刚刚看到央视新闻发的公众号，国家队出手托底，明确支持科技，科技是不是准备开始止跌上涨了？\n“国家队”600 亿增持中国股票！涌入这三大方向→ \n7 月 19 日，中国国新、中国诚通两大国资运营平台连夜发声，超 600 亿资金入场。20 日，中国证监会召开稳市场专题座谈会，中国神华、中国中车等五大央企盘前发声，回购、增持、分红，此时此刻，这些动作连起来看，释放明显信号，用“真金..."
+    "title": "到底谁觉得买断制游戏比手游便宜的，试错不是成本吗？",
+    "link": "https://www.zhihu.com/question/2063258261373935706",
+    "snippet": "我也买了不少游戏，放在库里吃灰的也有几款，网游手游也完过也氪了，但是还是不明白为什么有人会说买断制会比手游便宜…"
   },
   "38": {
     "category": "社会民生 (Society & Life)",
-    "title": "最近在 github 上看到很多所谓开源量化交易系统",
-    "link": "https://www.v2ex.com/t/1228796",
-    "snippet": "EliteOtaku: \nRT\n但是感觉一言难尽，值得吐槽的点：\n用 vibe coding 的思路去写传统机械指标，然后拼在一起\n粗暴的搞截图发数据给 LLM ，妄图用提示词工程来分析图表，根本没有多周期综合分析能力\n搞红蓝队辩论模式，实际上毫无意义\n整体看，一直没法回避的问题是 LLM 幻觉和分析一致性、可审计性。B 站知乎上面一群连 github 都不会用的韭菜只会用那些黑心 up 主发布的..."
+    "title": "为什么古代打仗不大量使用毒箭来快速消灭敌人？",
+    "link": "https://www.zhihu.com/question/2063203201608897319",
+    "snippet": ""
   },
   "39": {
     "category": "社会民生 (Society & Life)",
-    "title": "上班族想养一个小猫，想问下真的会养不熟吗",
-    "link": "https://www.v2ex.com/t/1228748",
-    "snippet": "zhushenggao: \n上班之后一直想养一个小猫或者小狗，小狗还要溜感觉精力跟不上，养小猫害怕养不熟，是不是小猫性格关系，有人来现身说法一下吗？"
+    "title": "如何评价索尼 FX5 (ILME-FX5) 电影摄影机？",
+    "link": "https://www.zhihu.com/question/2063078233512456755",
+    "snippet": ""
   },
   "40": {
     "category": "社会民生 (Society & Life)",
-    "title": "如何看待 Bin 发文暂别赛场，BLG 第三赛段启用 Wenbo，这可能会对队伍造成哪些影响？",
-    "link": "https://www.zhihu.com/question/2062948923971302955",
-    "snippet": "最近我的整个状态不太好和队伍沟通后会暂时离开赛场 休息调整一下 谢谢队伍和队友对我的体谅和包容 谢谢关心我的大家 希望大家也继续支持BLG  BLG#2026LPL第三赛段#大名单&赛程表】 BLG首战将于7月23日对阵TT战队。新的征程已经开启，期待队员们尽快磨合、并肩作战，以最好的状态迎接第三赛段的每一场挑战。信念不熄，全力向前，BLG加油！"
+    "title": "连续37天喝9.9元咖啡的贫困生补助金，是否该取消？有较多自称贫困生的大学生维护喝咖啡自由，合理吗？",
+    "link": "https://www.zhihu.com/question/2062876983864956330",
+    "snippet": "刚开始，看到这个信息，我是有点愤怒的。很多职场人，都不会一点不心疼的每天喝9.9元的咖啡。这种愤怒，在看到有些言论讲，抨击这种现象的，都是嫉妒时，也会怀疑我自己。 但随着看着自称贫困生的大学生，为喝咖啡自由辩护的各种言论，讲贫困生并不是一定要每天馒头咸菜，现在国家补贴很高，完全不需要过那么辛苦的生活。 我意识到了，不是“嫉妒”，愤怒就是愤怒。我和不支持这种行为的网友们，在愤怒国家的贫困生补贴，没有..."
   },
   "41": {
-    "category": "社会民生 (Society & Life)",
-    "title": "马宁首次回应无缘主哨淘汰赛，称到现在都不知道为什么，配置问题不是核心原因，那问题可能出在哪里？",
-    "link": "https://www.zhihu.com/question/2062863345573803605",
-    "snippet": "在本届世界杯中，47岁的中国裁判马宁成为时隔24年再度主哨世界杯的中国裁判，同时弥补了四年前只担任第四官员的遗憾，实现了职业理想。但为何只执法了一场比赛，无缘主哨淘汰赛等成为不少人议论的焦点。 “我们到现在都不知道为什么。”近日，在新华社的专访中，马宁首度回应了相关猜测，他表示，很多反响、评价都非常好，世界杯的裁判讲师团队对中国裁判的评价也非常好，但最终就这样结束了世界杯。 很多人猜测是配置问题，..."
+    "category": "热门信息 (Trending Info)",
+    "title": "The sights and sounds of Bhutan",
+    "link": "https://waitbutwhy.com/2025/11/bhutan.html",
+    "snippet": "Stories from my visit to the mysterious Himalayan kingdom\nThe post The sights and sounds of Bhutan appeared first on Wait But Why."
   },
   "42": {
-    "category": "社会民生 (Society & Life)",
-    "title": "如何看待世界杯决赛之后，西班牙队在官方的庆祝照片上把特朗普给裁剪掉了？",
-    "link": "https://www.zhihu.com/question/2062849285499138343",
-    "snippet": "去年的世俱杯决赛特朗普也是赖在了冠军队这边被国际足联拉下去的。 在本届世界杯决赛之后，特朗普继续站在领奖台不愿离开，国际足联主席一路小跑连拉带拽把川普领:到台下。 赛后西班牙官方在庆祝照片上把特朗普裁剪掉了。"
+    "category": "热门信息 (Trending Info)",
+    "title": "Tales from Toddlerhood",
+    "link": "https://waitbutwhy.com/2025/10/toddler.html",
+    "snippet": "Eight thoughts from a strange and harrowing world\nThe post Tales from Toddlerhood appeared first on Wait But Why."
+  },
+  "43": {
+    "category": "热门信息 (Trending Info)",
+    "title": "All My Thoughts After 40 Hours in the Vision Pro",
+    "link": "https://waitbutwhy.com/2024/02/vision-pro.html",
+    "snippet": "Welcome to the 2030s.\nThe post All My Thoughts After 40 Hours in the Vision Pro appeared first on Wait But Why."
+  },
+  "44": {
+    "category": "热门信息 (Trending Info)",
+    "title": "10 Thoughts from the Fourth Trimester",
+    "link": "https://waitbutwhy.com/2023/05/baby.html",
+    "snippet": "1 baby, many thoughts\nThe post 10 Thoughts from the Fourth Trimester appeared first on Wait But Why."
+  },
+  "45": {
+    "category": "热门信息 (Trending Info)",
+    "title": "A Short History of My Last Six Years",
+    "link": "https://waitbutwhy.com/2023/02/last-six-years.html",
+    "snippet": "On June 18, 2016, I slipped and fell down a deep, deep hole.\nThe post A Short History of My Last Six Years appeared first on Wait But Why."
+  },
+  "46": {
+    "category": "热门信息 (Trending Info)",
+    "title": "Mailbag #2",
+    "link": "https://waitbutwhy.com/2021/04/mailbag-2.html",
+    "snippet": "We have a whole lot to talk about.\nThe post Mailbag #2 appeared first on Wait But Why."
+  },
+  "47": {
+    "category": "热门信息 (Trending Info)",
+    "title": "The Trump-Biden Debate",
+    "link": "https://waitbutwhy.com/2020/09/debate2020.html",
+    "snippet": "In case you missed it...\nThe post The Trump-Biden Debate appeared first on Wait But Why."
+  },
+  "48": {
+    "category": "热门信息 (Trending Info)",
+    "title": "The Big and the Small",
+    "link": "https://waitbutwhy.com/2020/09/universe.html",
+    "snippet": "I have a surprise for you.\nThe post The Big and the Small appeared first on Wait But Why."
+  },
+  "49": {
+    "category": "热门信息 (Trending Info)",
+    "title": "You Won’t Believe My Morning",
+    "link": "https://waitbutwhy.com/2020/03/my-morning.html",
+    "snippet": "A highly unexpected turn of events.\nThe post You Won’t Believe My Morning appeared first on Wait But Why."
+  },
+  "50": {
+    "category": "热门信息 (Trending Info)",
+    "title": "It’s 2020 and you’re in the future",
+    "link": "https://waitbutwhy.com/2020/01/its-2020-and-youre-in-the-future.html",
+    "snippet": "Some people are young, just not you.\nThe post It’s 2020 and you’re in the future appeared first on Wait But Why."
+  },
+  "51": {
+    "category": "热门信息 (Trending Info)",
+    "title": "The Tim Ferriss Show Transcripts: Dr. Andrew Huberman — Peptides, Performance, and Protocols (#876)",
+    "link": "https://tim.blog/2026/07/22/dr-andrew-huberman-protocols-transcript/",
+    "snippet": "Please enjoy this transcript of my interview with Dr. Andrew Huberman, (IG: @hubermanlab), a neuroscientist and tenured professor in the Departments of Neurobiology and Ophthalmology at Stanford Unive..."
+  },
+  "52": {
+    "category": "热门信息 (Trending Info)",
+    "title": "Dr. Andrew Huberman — Peptides, Performance, and Protocols (#876)",
+    "link": "https://tim.blog/2026/07/22/dr-andrew-huberman-protocols/",
+    "snippet": "An interview with Dr. Andrew Huberman on The Tim Ferriss Show podcast! \nThe post Dr. Andrew Huberman — Peptides, Performance, and Protocols (#876) appeared first on The Blog of Author Tim Ferriss."
+  },
+  "53": {
+    "category": "热门信息 (Trending Info)",
+    "title": "My 2019 Annual Review",
+    "link": "https://jamesclear.com/2019-annual-review",
+    "snippet": "Another year complete. Here's a quick recap of 2019, which also happened to be one of the craziest years of my life. As always, this Annual Review will answer three questions. What went well this year..."
+  },
+  "54": {
+    "category": "热门信息 (Trending Info)",
+    "title": "Happy 1st Birthday, Atomic Habits! (plus 3 gifts for you…)",
+    "link": "https://jamesclear.com/atomic-habits-first-birthday",
+    "snippet": "One year ago today, Atomic Habits was born. The last 12 months have been a wild ride: 1.1 million copies sold worldwide 12 consecutive months on the New York Times best seller list (currently #3) Repe..."
+  },
+  "55": {
+    "category": "热门信息 (Trending Info)",
+    "title": "The Ultimate Productivity Hack is Saying No",
+    "link": "https://jamesclear.com/saying-no",
+    "snippet": "The ultimate productivity hack is saying no. Not doing something will always be faster than doing it. This statement reminds me of the old computer programming saying, “Remember that there is no code ..."
+  },
+  "56": {
+    "category": "热门信息 (Trending Info)",
+    "title": "4 Simple Steps to Change Your Life",
+    "link": "https://markmanson.net/four-steps-change-life",
+    "snippet": "If you want to change your life—like really, seriously, no bullshit, actually change your life—do this:\nStep 1: Write down everything you care about.\nPeople make this mistake of setting new goals ever..."
+  },
+  "57": {
+    "category": "热门信息 (Trending Info)",
+    "title": "I Chose This Over $5 Million",
+    "link": "https://markmanson.net/5-million-decision",
+    "snippet": "In 2023, my publisher offered me $5 million to write my next book.\nI said no.\nFrom 2016 to 2022, I was in full-blown author mode. Writing, touring, promoting. It felt like one never-ending deadline—an..."
+  },
+  "58": {
+    "category": "热门信息 (Trending Info)",
+    "title": "Purpose, the Untold Story",
+    "link": "https://markmanson.net/purpose-untold-story",
+    "snippet": "On a random night last January, I sat down next to a guy at a poker table. A month later, we decided to start a company together. Little did I know, it would completely change my life. \nThe guy’s name..."
+  },
+  "59": {
+    "category": "热门信息 (Trending Info)",
+    "title": "The Problem With AI Life Coaching—and My Solution",
+    "link": "https://markmanson.net/purpose-ai-coach",
+    "snippet": "This year has been one of the most important, yet challenging years of my life. And as we’ll see, that might not be a coincidence.\nAs you probably know, I’ve been calling out some of the shady dealing..."
+  },
+  "60": {
+    "category": "热门信息 (Trending Info)",
+    "title": "How to Conquer Your Biggest Fear",
+    "link": "https://markmanson.net/how-to-conquer-your-biggest-fear",
+    "snippet": "What is your biggest fear? What would it mean if you could overcome that fear, once and for all?\nIn this article, I'm going to help you do exactly that by teaching you five tactics to conquer anything..."
+  },
+  "61": {
+    "category": "热门信息 (Trending Info)",
+    "title": "My 2019 Annual Review",
+    "link": "https://jamesclear.com/2019-annual-review",
+    "snippet": "Another year complete. Here's a quick recap of 2019, which also happened to be one of the craziest years of my life. As always, this Annual Review will answer three questions. What went well this year..."
+  },
+  "62": {
+    "category": "热门信息 (Trending Info)",
+    "title": "Happy 1st Birthday, Atomic Habits! (plus 3 gifts for you…)",
+    "link": "https://jamesclear.com/atomic-habits-first-birthday",
+    "snippet": "One year ago today, Atomic Habits was born. The last 12 months have been a wild ride: 1.1 million copies sold worldwide 12 consecutive months on the New York Times best seller list (currently #3) Repe..."
+  },
+  "63": {
+    "category": "热门信息 (Trending Info)",
+    "title": "The Ultimate Productivity Hack is Saying No",
+    "link": "https://jamesclear.com/saying-no",
+    "snippet": "The ultimate productivity hack is saying no. Not doing something will always be faster than doing it. This statement reminds me of the old computer programming saying, “Remember that there is no code ..."
+  },
+  "64": {
+    "category": "热门信息 (Trending Info)",
+    "title": "The Tim Ferriss Show Transcripts: Dr. Andrew Huberman — Peptides, Performance, and Protocols (#876)",
+    "link": "https://tim.blog/2026/07/22/dr-andrew-huberman-protocols-transcript/",
+    "snippet": "Please enjoy this transcript of my interview with Dr. Andrew Huberman, (IG: @hubermanlab), a neuroscientist and tenured professor in the Departments of Neurobiology and Ophthalmology at Stanford Unive..."
+  },
+  "65": {
+    "category": "热门信息 (Trending Info)",
+    "title": "Dr. Andrew Huberman — Peptides, Performance, and Protocols (#876)",
+    "link": "https://tim.blog/2026/07/22/dr-andrew-huberman-protocols/",
+    "snippet": "An interview with Dr. Andrew Huberman on The Tim Ferriss Show podcast! \nThe post Dr. Andrew Huberman — Peptides, Performance, and Protocols (#876) appeared first on The Blog of Author Tim Ferriss."
   }
 }
