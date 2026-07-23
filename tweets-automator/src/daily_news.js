@@ -4,7 +4,12 @@ const { Telegraf, Markup } = require('telegraf');
 const Parser = require('rss-parser');
 const config = require('./config');
 
-const parser = new Parser({ timeout: 12000 });
+const parser = new Parser({ 
+  timeout: 12000,
+  headers: {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+  }
+});
 const botToken = process.env.TELEGRAM_BOT_TOKEN;
 const myUserId = parseInt(process.env.TELEGRAM_USER_ID, 10);
 
@@ -77,11 +82,16 @@ const defaultRssSources = {
   "热门信息 (Trending Info)": {
     limit: 10,
     sources: [
-      { url: "https://rsshub.rssforever.com/xueqiu/today",              label: "雪球今日话题 (搞钱与宏观环境)" },
-      { url: "https://rsshub.rssforever.com/eleduck/posts",             label: "电鸭社区 (数字游民/反内卷)" },
+      { url: "https://rsshub.rssforever.com/xueqiu/today",              label: "雪球今日话题 (搞钱与宏观环境 - 主节点)" },
+      { url: "https://rsshub.app/xueqiu/today",                         label: "雪球今日话题 (备用节点)" },
+      { url: "https://rss.shab.fun/xueqiu/today",                       label: "雪球今日话题 (备用节点2)" },
       { url: "https://zenhabits.net/feed/",                             label: "Zen Habits (顶级反焦虑/个人成长)" },
       { url: "https://markmanson.net/feed",                             label: "Mark Manson (犀利的生活哲学)" },
-      { url: "https://rsshub.rssforever.com/indiehackers/highest-voted",label: "Indie Hackers (独立开发者搞钱案例)" }
+      { url: "https://waitbutwhy.com/feed",                             label: "Wait But Why (深度长文/底层逻辑)" },
+      { url: "https://rsshub.rssforever.com/eleduck/posts",             label: "电鸭社区 (数字游民/反内卷 - 主节点)" },
+      { url: "https://rsshub.app/eleduck/posts",                        label: "电鸭社区 (备用节点)" },
+      { url: "https://rsshub.rssforever.com/indiehackers/highest-voted",label: "Indie Hackers (独立开发者搞钱案例 - 主节点)" },
+      { url: "https://rsshub.app/indiehackers/highest-voted",           label: "Indie Hackers (备用节点)" }
     ]
   }
 };
