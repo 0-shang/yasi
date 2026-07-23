@@ -83,13 +83,26 @@ const defaultRssSources = {
     limit: 10,
     shuffle: true,
     sources: [
-      { url: "https://markmanson.net/feed",      ignoreSeen: true, label: "Mark Manson (犀利的生活哲学)" },
-      { url: "https://jamesclear.com/feed",      ignoreSeen: true, label: "James Clear (原子习惯/微小进步)" },
-      { url: "https://fs.blog/feed/",            ignoreSeen: true, label: "Farnam Street (顶级思维模型/决策逻辑)" },
-      { url: "https://waitbutwhy.com/feed",      ignoreSeen: true, label: "Wait But Why (深度长文/底层逻辑)" },
-      { url: "https://zenhabits.net/feed/",      ignoreSeen: true, label: "Zen Habits (极简主义/反焦虑)" },
-      { url: "https://ryanholiday.net/feed/",    ignoreSeen: true, label: "Ryan Holiday (斯多葛学派/韧性心法)" },
-      { url: "https://seths.blog/feed/",         ignoreSeen: true, label: "Seth Godin (极简思维/破局)" }
+      { url: "https://markmanson.net/feed",                   ignoreSeen: true, label: "Mark Manson (犀利的生活哲学)" },
+      { url: "https://jamesclear.com/feed",                   ignoreSeen: true, label: "James Clear (原子习惯/微小进步)" },
+      { url: "https://fs.blog/feed/",                         ignoreSeen: true, label: "Farnam Street (顶级思维模型/决策逻辑)" },
+      { url: "https://waitbutwhy.com/feed",                   ignoreSeen: true, label: "Wait But Why (深度长文/底层逻辑)" },
+      { url: "https://zenhabits.net/feed/",                   ignoreSeen: true, label: "Zen Habits (极简主义/反焦虑)" },
+      { url: "https://ryanholiday.net/feed/",                 ignoreSeen: true, label: "Ryan Holiday (斯多葛学派/韧性心法)" },
+      { url: "https://seths.blog/feed/",                      ignoreSeen: true, label: "Seth Godin (极简思维/破局)" },
+      { url: "https://nav.al/feed",                           ignoreSeen: true, label: "Naval Ravikant (财富与幸福的底层逻辑)" },
+      { url: "https://sive.rs/en.atom",                       ignoreSeen: true, label: "Derek Sivers (反直觉的特立独行哲学)" },
+      { url: "https://www.scotthyoung.com/blog/feed/",        ignoreSeen: true, label: "Scott H. Young (超级学习法/深度成长)" },
+      { url: "https://calnewport.com/feed/",                  ignoreSeen: true, label: "Cal Newport (深度工作/数字极简主义)" },
+      { url: "https://www.raptitude.com/feed/",               ignoreSeen: true, label: "Raptitude (成为更好的人类/正念)" },
+      { url: "https://austinkleon.com/feed/",                 ignoreSeen: true, label: "Austin Kleon (创造力心法/艺术人生)" },
+      { url: "https://dailystoic.com/feed/",                  ignoreSeen: true, label: "Daily Stoic (每日斯多葛/控制力与平静)" },
+      { url: "https://nesslabs.com/feed",                     ignoreSeen: true, label: "Ness Labs (正念生产力/神经科学认知)" },
+      { url: "https://www.bakadesuyo.com/feed/",              ignoreSeen: true, label: "Barking Up The Wrong Tree (科学视角的成功学)" },
+      { url: "https://theminimalists.com/feed/",              ignoreSeen: true, label: "The Minimalists (极简生活/追寻真实意义)" },
+      { url: "https://tinybuddha.com/feed/",                  ignoreSeen: true, label: "Tiny Buddha (复杂生活的简单智慧/治愈)" },
+      { url: "https://moretothat.com/feed/",                  ignoreSeen: true, label: "More To That (存在主义思考/人生意义)" },
+      { url: "https://www.nateliason.com/feed",               ignoreSeen: true, label: "Nat Eliason (阅读/思考/生活方式设计)" }
     ]
   }
 };
