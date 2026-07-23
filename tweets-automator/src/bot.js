@@ -29,6 +29,11 @@ if (!botToken || !myUserId) {
 
 const bot = new Telegraf(botToken);
 
+// Global error handler to prevent crash loops from unhandled rejections (e.g. old queries)
+bot.catch((err, ctx) => {
+  console.error(`Ooops, encountered an error for ${ctx.updateType}`, err);
+});
+
 // In-memory store for pending tweets
 const pendingTweets = new Map();
 // In-memory store for pending files from GitHub
