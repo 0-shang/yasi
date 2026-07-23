@@ -1,272 +1,254 @@
 {
   "1": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "wonderwhy-er/DesktopCommanderMCP",
-    "link": "https://github.com/wonderwhy-er/DesktopCommanderMCP",
-    "snippet": "This is MCP server for Claude that gives it terminal control, file system search and diff file editing capabilities\nLanguage: TypeScript\nStars: 7155\nForks: 909"
+    "title": "koala73/worldmonitor",
+    "link": "https://github.com/koala73/worldmonitor",
+    "snippet": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface\nLanguage: TypeScript\nStars: 6439..."
   },
   "2": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "oven-sh/bun",
-    "link": "https://github.com/oven-sh/bun",
-    "snippet": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one\nLanguage: Rust\nStars: 94132\nForks: 4931"
+    "title": "bojieli/ai-agent-book",
+    "link": "https://github.com/bojieli/ai-agent-book",
+    "snippet": "《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码\nLanguage: Python\nStars: 14046\nForks: 1315"
   },
   "3": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "abseil/abseil-cpp",
-    "link": "https://github.com/abseil/abseil-cpp",
-    "snippet": "Abseil Common Libraries (C++)\nLanguage: C++\nStars: 17497\nForks: 3190"
+    "title": "tirth8205/code-review-graph",
+    "link": "https://github.com/tirth8205/code-review-graph",
+    "snippet": "Local-first code intelligence graph for MCP and CLI. Builds a persistent map of your codebase so AI coding tools read only what matters, with benchmarked context reductions on reviews and large-repo w..."
   },
   "4": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "addyosmani/agent-skills",
-    "link": "https://github.com/addyosmani/agent-skills",
-    "snippet": "Production-grade engineering skills for AI coding agents.\nLanguage: JavaScript\nStars: 76710\nForks: 8237"
+    "title": "ayghri/i-have-adhd",
+    "link": "https://github.com/ayghri/i-have-adhd",
+    "snippet": "A skill for your coding agent to stop it from burying the answer. ADHD-friendly output.\nLanguage: Unknown\nStars: 6412\nForks: 256"
   },
   "5": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "jbeder/yaml-cpp",
-    "link": "https://github.com/jbeder/yaml-cpp",
-    "snippet": "A YAML parser and emitter in C++\nLanguage: C++\nStars: 6069\nForks: 2253"
+    "title": "earthtojake/text-to-cad",
+    "link": "https://github.com/earthtojake/text-to-cad",
+    "snippet": "A collection of agent skills for CAD, robotics and hardware design\nLanguage: JavaScript\nStars: 8940\nForks: 1015"
   },
   "6": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "mattpocock/skills",
-    "link": "https://github.com/mattpocock/skills",
-    "snippet": "Skills for Real Engineers. Straight from my .claude directory.\nLanguage: Shell\nStars: 164441\nForks: 14147"
+    "title": "1jehuang/jcode",
+    "link": "https://github.com/1jehuang/jcode",
+    "snippet": "The most intelligent agent harness for code\nLanguage: Rust\nStars: 10178\nForks: 1122"
   },
   "7": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "obra/superpowers",
-    "link": "https://github.com/obra/superpowers",
-    "snippet": "An agentic skills framework & software development methodology that works.\nLanguage: Shell\nStars: 251691\nForks: 22456"
+    "title": "oblien/openship",
+    "link": "https://github.com/oblien/openship",
+    "snippet": "Self-hosted deployment platform\nLanguage: TypeScript\nStars: 5822\nForks: 415"
   },
   "8": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "microsoft/TypeScript",
-    "link": "https://github.com/microsoft/TypeScript",
-    "snippet": "TypeScript is a superset of JavaScript that compiles to clean JavaScript output.\nLanguage: TypeScript\nStars: 109740\nForks: 13629"
+    "title": "AstrBotDevs/AstrBot",
+    "link": "https://github.com/AstrBotDevs/AstrBot",
+    "snippet": "AI Agent Assistant & development framework that integrates lots of IM platforms, LLMs, plugins and AI feature, and can be your openclaw alternative. ✨\nLanguage: Python\nStars: 37389\nForks: 2604"
   },
   "9": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "catchorg/Catch2",
-    "link": "https://github.com/catchorg/Catch2",
-    "snippet": "A modern, C++-native, test framework for unit-tests, TDD and BDD - using C++14, C++17 and later (C++11 support is in v2.x branch, and C++03 on the Catch1.x branch)\nLanguage: C++\nStars: 20595\nForks: 34..."
+    "title": "every-app/open-seo",
+    "link": "https://github.com/every-app/open-seo",
+    "snippet": "Open source alternative to Semrush and Ahrefs\nLanguage: TypeScript\nStars: 6421\nForks: 698"
   },
   "10": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "chriskohlhoff/asio",
-    "link": "https://github.com/chriskohlhoff/asio",
-    "snippet": "Asio C++ Library\nLanguage: C++\nStars: 6057\nForks: 1498"
+    "title": "tradesdontlie/tradingview-mcp",
+    "link": "https://github.com/tradesdontlie/tradingview-mcp",
+    "snippet": "AI-assisted TradingView chart analysis — connect Claude Code to your TradingView Desktop for personal workflow automation\nLanguage: JavaScript\nStars: 4711\nForks: 2167"
   },
   "11": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "TencentCloud/TencentDB-Agent-Memory",
-    "link": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
-    "snippet": "TencentDB Agent Memory delivers fully local long-term memory for AI Agents via a 4-tier progressive pipeline, with zero external API dependencies.\nLanguage: TypeScript\nStars: 8166\nForks: 749"
+    "title": "AlexsJones/llmfit",
+    "link": "https://github.com/AlexsJones/llmfit",
+    "snippet": "Hundreds of models & providers. One command to find what runs on your hardware.\nLanguage: Rust\nStars: 30069\nForks: 1835"
   },
   "12": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "davila7/claude-code-templates",
-    "link": "https://github.com/davila7/claude-code-templates",
-    "snippet": "CLI tool for configuring and monitoring Claude Code\nLanguage: Python\nStars: 28727\nForks: 3155"
+    "title": "hyprwm/Hyprland",
+    "link": "https://github.com/hyprwm/Hyprland",
+    "snippet": "Hyprland is an independent, highly customizable, dynamic tiling Wayland compositor that doesn't sacrifice on its looks.\nLanguage: C++\nStars: 36923\nForks: 1858"
   },
   "13": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "zeux/meshoptimizer",
-    "link": "https://github.com/zeux/meshoptimizer",
-    "snippet": "Mesh optimization library that makes meshes smaller and faster to render\nLanguage: C++\nStars: 8000\nForks: 780"
+    "title": "chrislgarry/Apollo-11",
+    "link": "https://github.com/chrislgarry/Apollo-11",
+    "snippet": "Original Apollo 11 Guidance Computer (AGC) source code for the command and lunar modules.\nLanguage: Assembly\nStars: 69754\nForks: 7823"
   },
   "14": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "tailscale/tailscale",
-    "link": "https://github.com/tailscale/tailscale",
-    "snippet": "The easiest, most secure way to use WireGuard and 2FA.\nLanguage: Go\nStars: 33571\nForks: 2907"
+    "title": "DioxusLabs/dioxus",
+    "link": "https://github.com/DioxusLabs/dioxus",
+    "snippet": "Fullstack app framework for web, desktop, and mobile.\nLanguage: Rust\nStars: 37538\nForks: 1768"
   },
   "15": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "google-labs-code/stitch-skills",
-    "link": "https://github.com/google-labs-code/stitch-skills",
-    "snippet": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude C..."
+    "title": "langchain-ai/open_deep_research",
+    "link": "https://github.com/langchain-ai/open_deep_research",
+    "snippet": "Language: Python\nStars: 12146\nForks: 1736"
   },
   "16": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "科技爱好者周刊（第 403 期）：为什么 Dropbox 不成功",
-    "link": "http://www.ruanyifeng.com/blog/2026/07/weekly-issue-403.html",
-    "snippet": "这里记录每周值得分享的科技内容，周五发布。\n本杂志开源，欢迎投稿。另有《谁在招人》服务，发布程序员招聘信息。合作请邮件联系（yifeng.ruan@gmail.com）。\n封面图\n\n贵州修文县的\"穹岛·天坑咖啡\"，咖啡店建在巨大的溶洞之中。（via）\n为什么 Dropbox 不成功\nDropbox，大家都知道吧？\n它成立于2007年，创始人是麻省理工学院的学生，经常丢失 U 盘，于是想到可以把文件..."
+    "title": "WAIC重磅成果｜上海仪电智算牵头成立“智算系统架构联盟”并发布《超节点系统架构规范》",
+    "link": "https://www.qbitai.com/2026/07/456052.html",
+    "snippet": ""
   },
   "17": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "只剩7天！第三届蚂蚁InTech奖申报即将截止，图灵奖得主坐镇评审",
-    "link": "https://www.qbitai.com/2026/07/447846.html",
-    "snippet": "四大方向，奖金直给"
+    "title": "WAIC重磅成果｜上海市教育算力专区正式开启试运行",
+    "link": "https://www.qbitai.com/2026/07/456026.html",
+    "snippet": ""
   },
   "18": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "AI生物研发进入“操作系统时代”，许锦波团队MoleculeOS正式开放",
-    "link": "https://www.qbitai.com/2026/07/447832.html",
-    "snippet": "AI变为研发流程的“组织者”"
+    "title": "WAIC重磅成果｜智爱赛思全面升级并发布科研专属Token Plan",
+    "link": "https://www.qbitai.com/2026/07/456021.html",
+    "snippet": ""
   },
   "19": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "一群做自动驾驶的人，盯上了睡眠这件事",
-    "link": "https://www.qbitai.com/2026/07/447796.html",
-    "snippet": "把数据闭环搬进卧室"
+    "title": "WAIC重磅成果｜仪电智算云在国家人工智能应用中试基地建设中展现全栈服务能力",
+    "link": "https://www.qbitai.com/2026/07/455998.html",
+    "snippet": ""
   },
   "20": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "GPT-5.6一发布，Claude终于舍得重置Fable 5额度了",
-    "link": "https://www.qbitai.com/2026/07/447691.html",
-    "snippet": ""
+    "title": "社区速递 150｜派友热议磁吸配件、拯救呼吸通气鼻贴与国产三折叠自行车",
+    "link": "https://sspai.com/post/112582",
+    "snippet": "除了首页时间流和侧栏的精选展位，少数派Matrix社区还有很多优秀内容因条件所限无法得到有效曝光，因此我们决定重启Matrix周报，并在此基础上添加更多社区内容、作者投稿新玩意呈现给大家。上周社区速递 ...查看全文"
   },
   "21": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "本周看什么 | 最近值得一看的 8 部作品",
-    "link": "https://sspai.com/post/112169",
-    "snippet": "📅本周新预告《恐怖游轮》内地定档7月17日7月8日，电影《恐怖游轮》发布了中国内地定档预告，将于7月17日上映。克里斯托弗·史密斯执导、编剧，梅利莎·乔治主演，单亲母亲杰西和一帮朋友乘游艇出海游玩，但 ...查看全文"
+    "title": "装上 Fedora 的 Surface Pro：一台老设备的新可能",
+    "link": "https://sspai.com/post/112200",
+    "snippet": "给 Surface Pro 5 安装上仍在积极更新的 Linux 发行版，它会成为一台更可用的设备吗？查看全文"
   },
   "22": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "安达卢西亚的日与夜：格拉纳达漫游指南",
-    "link": "https://sspai.com/post/112097",
-    "snippet": "有些旅程就是这样，它最终并没有留在成百上千张照片里，而是长久地停留在某种气味与感官的记忆中。查看全文"
+    "title": "App+1 | 把「从长视频截取片段」做到极致：Trimly",
+    "link": "https://sspai.com/post/111569",
+    "snippet": "作为有多年专业音视频开发经验的技术工作者，我给自己，以及可能也有类似需求的你，做了一个把「从长视频里截取片段」这件事做到极致的产品。查看全文"
   },
   "23": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "Vibe Coding 时代，为什么降本不一定增效？",
-    "link": "https://sspai.com/post/111975",
-    "snippet": "Vibe Coding 虽然可以更快地生成代码，但依然不能替我们定义问题、理解用户、设计架构并承担结果。查看全文"
+    "title": "派早报：京沪高铁与京沪铁路试点提前 60 天预约购票等",
+    "link": "https://sspai.com/post/112565",
+    "snippet": "少数派的近期动态那个让你放松娱乐、拥抱心流、逃离纷扰或找回真我的角落，是如何构建起来的？「角落新声」征文活动火热征稿中少数派×AKKO灵犀Linx68键盘预售开启。看看新键盘你可能错过的文章2026年 ...查看全文"
   },
   "24": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "派早报：蔚来 ES8 大五座版正式上市等",
-    "link": "https://sspai.com/post/112143",
-    "snippet": "OpenAI 发布 GPT-5.6 系列模型等，SpaceXAI 发布编程智能体模型 Grok 4.5。查看全文"
+    "title": "Introducing the ChatGPT for small business program",
+    "link": "https://openai.com/index/introducing-chatgpt-small-business-program",
+    "snippet": "OpenAI launches the ChatGPT for Small Businesses program, helping entrepreneurs build AI skills, automate work, and grow with ChatGPT Work."
   },
   "25": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "How Deutsche Telekom is rewiring telecommunications with AI",
-    "link": "https://openai.com/index/deutsche-telekom",
-    "snippet": "How Deutsche Telekom is becoming an AI-native telco with OpenAI-transforming customer service, employee workflows, network operations, and the future of voice."
+    "title": "Safety and alignment in an era of long-horizon models",
+    "link": "https://openai.com/index/safety-alignment-long-horizon-models",
+    "snippet": "OpenAI shares lessons from deploying long-running AI models, highlighting new safety risks, observed failures, and improved safeguards through iterative deployment."
   },
   "26": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "中远海控2026年半年度归母净利润预测与全年展望！",
-    "link": "http://xueqiu.com/5742821612/399404145",
-    "snippet": "一、先上结论\n猫叔预计：\n中远海控2026年第二季度单季归母净利润将在98.00亿元至110.00亿元之间，2026年H1累计归母净利润在156.77亿元至168.77亿元之间。\n虽然比2025年上半年（175.36亿元）存在约3.7%至10.6%的小幅同比下滑，但这主要还是受制于2025年第一季度异常高基数（116.95亿元）的拖累，具体原因大家都懂，就不多说了。从环比与单季度同比的边际变化来看..."
+    "title": "建行2026年中报业绩预测",
+    "link": "http://xueqiu.com/1821992043/401284102",
+    "snippet": "净利息收入评估：\n建行在一季度的净利息收入明显高于我评估的金额，主要是因为一季度建行的净息差表现要远远好于预期。建行第一季度的净息差环比显著反弹6bps，超过我的预估。通过净息差还原法分析，净息差大幅反弹的原因主要是资产收益率环比降幅显著收窄。\n一季度建行的净息差环比反弹6bps，其中生息资产收益率环比下滑2bps，负债成本环比下降7bps。负债成本降幅符合行业表现，资产收益率的环比下滑明显好于行..."
   },
   "27": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "为什么长期持股难？",
-    "link": "http://xueqiu.com/2386334596/399462676",
-    "snippet": "一、任何事物都有周期，企业发展和经营有波动，但人们习惯以线性的思维去看问题，只要公司业绩出现向下的趋势，就唤起了悲观的潜意识，认为以后再都没有变好的机会了，于是在低位抛出。同样，遇上景气度好，业绩向上时，又会过度乐观，在高位接盘，不断买入卖出，持股成本反而越来越高。\n二、付出劳动就要有收获，人们习惯每月领工资，而赚企业经营的钱是以年为单位的，一年才派一次或两次股息，感觉时间太长了。而且，账面市值是..."
+    "title": "Kimi K3 背后的机会：高速连接器",
+    "link": "http://xueqiu.com/8755156034/401376891",
+    "snippet": "仔细的分析了Kimi K3背后训练的硬件平台资源，使用的是阿里的云服务，主要也是阿里是月之暗面的主要投资方之一，阿里自己的平头哥有自己的AI算力芯片PPU，阿里云服务 + 芯片的体系，对标Google。\nWAIC大会上，阿里也发布了的超节点：灵骏真武 M890，与华为成为国内唯二的超节点硬件供应商。\n阿里$阿里巴巴-W(09988)$ 的超节点体系里面：\n(1)AI算力芯片：平头哥自研；\n(2)A..."
   },
   "28": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "随想310 A股硬件板块的阶段性领跑",
-    "link": "http://xueqiu.com/1438190065/399393843",
-    "snippet": "现在节奏似乎是有了变化：昨天国内并没有受到韩股回调的干扰，AI硬件产业链从上午开始就显示出韧性，下午更是走出单边行情，与日韩形成共振；到了晚上，费城半导体指数止跌，内存、光模块的品种也大都收涨，但也有不少是收盘价低于开盘价的，强势程度上不如国内。\n前两天造成市场担忧“算力过剩”的Meta，又跳出来宣布最快2026年9月量产自己的芯片，并将2027年的算力目标翻倍至14GW。这波“借势打势”算是玩得..."
+    "title": "对当前环境AI产业链机会的思考",
+    "link": "http://xueqiu.com/5332385101/401293118",
+    "snippet": "本周三盘后起陆续公布的财报及指引将是检验AI叙事的关键。抛开短期情绪和不确定性，当前环境下AI产业链存在哪些机会？\n一、当下环境的再梳理\n本轮全球科技的显著回调，核心原因是前期涨速过快、筹码过度集中，叠加多重杠杆的集中出清。\n1. 韩股市场放大器效应：作为全球科技股情绪的放大器，韩股市场此前叠加了融资信用、单股两倍/三倍ETF以及期权三重杠杆。在极度单边定价下，一旦基本面预期（如存储企业利润指引下..."
   },
   "29": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "白酒泡沫启示录",
-    "link": "http://xueqiu.com/5928403639/399382066",
-    "snippet": "2020年3月到2021年3月的短短1年时间，基金净值狂飙突进，基金份额增加为原来的5倍，这就是快追涨；而在5年后，基金份额依还有峰值的50%，就这是慢杀跌。\n\n申购份额1年就5倍，崩盘后5年才跑50%，散户“急追涨、慢杀跌”的这一特征，给基金管理者提供了绝佳的致富路径：抱团一个题材极速拉高，请一些媒体专家写文章开直播，吸引投资者跟风，自己则不管不顾使劲抱团，直到再难维系，随之而来A型走势套住所有..."
+    "title": "重新理解胃癌（上）：为什么一种癌症正在被拆成许多种疾病",
+    "link": "http://xueqiu.com/1449994841/401392913",
+    "snippet": "2024年，全球每90秒就有一名患者死于胃癌。中国贡献了其中近四成。\n这个数字足够大，大到很多投资人看一眼就会在心里默算市场空间。\n同时，2026年上半年，胃癌赛道密集发生了一连串事件：科济药业的 CLDN18.2 CAR-T（satri-cel）在美国获批，成为实体瘤 CAR-T 的历史性突破；和黄医药的沙沃替尼拿下中国 MET 扩增胃癌适应症；复宏汉霖的斯鲁利单抗成为全球首个获批胃癌围手术期免..."
   },
   "30": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "以股息为锚",
-    "link": "http://xueqiu.com/7913104177/399392312",
-    "snippet": "优秀企业，股价长期低估，分红再投，总收益更高。我们天天念叨宁静的冬日这句话。白酒六年下跌，正是理论投入实践的时候，结果你发现自己不知道真便宜，假便宜，那么便宜对你一文不值，因为你不懂白酒这门生意，而不懂不做是基本原则。股价下跌对于长期主义者，这是一件高兴的事，不要把自己弄得太悲情。\n        高兴的开局，考验的过程，结局幸福不幸福，取决于你自己。坚持到底，结局就是幸福的，半途而废，最后叛逃，..."
+    "title": "全宇宙最好的杰瑞帖子，海关进出口验证实物交付链",
+    "link": "http://xueqiu.com/5991307505/401376692",
+    "snippet": "当然，我自己是不会错过这么好的加仓机会的，我跟踪下来始终觉得杰瑞远没有被完全定价。$杰瑞股份(SZ002353)$ \n在中报出来前，我希望带大家捋一遍，从杰瑞的官网、海外子公司、OEM合作关系和进出口提单继续往下挖，而我也在过程中逐渐拼出了一条比预想中更完整的北美移动能源供应链。把时间、主体、货物重量和运输方向串起来后，可以看到杰瑞正在形成一套比较清晰的跨国协作模式。\n一、最直接的证据，11台GT..."
   },
   "31": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "Why The iShares Semiconductor ETF Soared 112.8% In The First Half of 2026",
-    "link": "https://www.fool.com/investing/2026/07/10/why-the-ishares-semiconductor-etf-soared-1128-in-t/?source=iedfolrf0000001",
-    "snippet": "The sector is getting supercharged by the AI revolution."
+    "title": "Want to Buy the World? This ETF Lets You Own 10,000 Stocks",
+    "link": "https://www.fool.com/investing/2026/07/21/want-to-buy-the-world-this-etf-lets-you-own-10000/?source=iedfolrf0000001",
+    "snippet": "Many investors might not know this, but you can buy \"the whole world\" of stocks with one Vanguard ETF for a 0.06% expense ratio."
   },
   "32": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "Why Sandisk Stock Popped Again Today",
-    "link": "https://www.fool.com/investing/2026/07/10/why-sandisk-stock-popped-again-today/?source=iedfolrf0000001",
-    "snippet": "SK Hynix had an IPO today -- and some good news for Sandisk stock, too."
+    "title": "Will Micron Split Its Stock This Year?",
+    "link": "https://www.fool.com/investing/2026/07/21/will-micron-split-its-stock-this-year/?source=iedfolrf0000001",
+    "snippet": "A potential stock split could be beneficial for Micron stock as it could increase demand for the company's shares."
   },
   "33": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "Rivian Just Raised Guidance. So Why Is This Stock Falling?",
-    "link": "https://www.fool.com/investing/2026/07/10/rivian-just-raised-guidance-so-why-is-this-stock-f/?source=iedfolrf0000001",
-    "snippet": "Rivian is producing more cars than it expected and just raised its full-year production guidance."
+    "title": "How to Earn $1,000 a Year from Energy Transfer Stock",
+    "link": "https://www.fool.com/investing/2026/07/21/how-to-earn-1000-a-year-from-energy-transfer-stock/?source=iedfolrf0000001",
+    "snippet": "The MLP pays quite a generous dividend."
   },
   "34": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "Why This Pharmaceutical Stock Jumped Close to 100% This Week",
-    "link": "https://www.fool.com/investing/2026/07/10/why-this-pharmaceutical-stock-jumped-close-to-100/?source=iedfolrf0000001",
-    "snippet": "It is getting acquired by a larger firm in the sector."
+    "title": "Why Bloom Energy Stock Jumped Over 10% Today",
+    "link": "https://www.fool.com/investing/2026/07/21/why-bloom-energy-stock-jumped-over-10-today/?source=iedfolrf0000001",
+    "snippet": "One analyst projects 75% upside in the fuel cell stock."
   },
   "35": {
     "category": "理财投资 (Finance & Investment)",
-    "title": " Worried about an AI bubble? These investment trusts could help ",
-    "link": "https://moneyweek.com/investments/investment-trusts/investment-trusts-worried-about-ai-bubble",
-    "snippet": "Capital spend on artificial intelligence infrastructure is coming under more scrutiny, but the sector still dominates passive indices."
+    "title": " Live: Did UK inflation rise in June? ",
+    "link": "https://moneyweek.com/economy/news/live/inflation-cpi-june-2026-report",
+    "snippet": "The Office for National Statistics (ONS) will release the latest UK inflation data tomorrow (22 July). Experts believe the rate of price rises will fall from 2.8% to 2.6%."
   },
   "36": {
     "category": "社会民生 (Society & Life)",
-    "title": "小小农民新开中转站，欢迎来踩",
-    "link": "https://www.v2ex.com/t/1226359",
-    "snippet": "XiaoBo7: \n新开中转站，注册送 10 额度\n如何得到 10 额度：注册送 1 ，评论留账户+9  记得码账户\n0.1 倍率混池  支持最新 5.6 模型\nhttps://flowai.cyou\n支持 gpt ，claude"
+    "title": "我们公司买了上海联通的跨境专线，发现贼稳定，机场就是用的这种专线吗？",
+    "link": "https://www.v2ex.com/t/1228804",
+    "snippet": "lynn1su: 是一个旁路由小盒子，我们买了美国和英国的，发现及其稳定\n不管什么时候我们买的 100m 永远能跑满，ping 都不波动的\n永远可以跑满速度\n这种是不是就是那种机场专线啊？"
   },
   "37": {
     "category": "社会民生 (Society & Life)",
-    "title": "收入还可以，如何找个国外媳妇",
-    "link": "https://www.v2ex.com/t/1226342",
-    "snippet": "aaa0009: 请教大家一个问题。我这边收入还可以，一般长相。可以在国内负担一个对象不工作。\n工作比较自由，英语也不错，可以去国外呆个几个月半年的样子。\n请问像我这种情况，如何找一个外国媳妇呢。"
+    "title": "国家队支持，这次是不是稳了？",
+    "link": "https://www.v2ex.com/t/1228801",
+    "snippet": "tangzhik: \n刚刚看到央视新闻发的公众号，国家队出手托底，明确支持科技，科技是不是准备开始止跌上涨了？\n“国家队”600 亿增持中国股票！涌入这三大方向→ \n7 月 19 日，中国国新、中国诚通两大国资运营平台连夜发声，超 600 亿资金入场。20 日，中国证监会召开稳市场专题座谈会，中国神华、中国中车等五大央企盘前发声，回购、增持、分红，此时此刻，这些动作连起来看，释放明显信号，用“真金..."
   },
   "38": {
     "category": "社会民生 (Society & Life)",
-    "title": "一个严肃的话题：人如何活久点？",
-    "link": "https://www.v2ex.com/t/1226339",
-    "snippet": "apollo007: \n我前一阵子研究了一下复利，注意到活得越久，复利带来的资金越多。大部分的人如果用 100w 买 QQQ ，活得越久，就可以财务自由了，几乎人人都可以成为亿万富翁。那我的问题是，如何活得久点呢？"
+    "title": "最近在 github 上看到很多所谓开源量化交易系统",
+    "link": "https://www.v2ex.com/t/1228796",
+    "snippet": "EliteOtaku: \nRT\n但是感觉一言难尽，值得吐槽的点：\n用 vibe coding 的思路去写传统机械指标，然后拼在一起\n粗暴的搞截图发数据给 LLM ，妄图用提示词工程来分析图表，根本没有多周期综合分析能力\n搞红蓝队辩论模式，实际上毫无意义\n整体看，一直没法回避的问题是 LLM 幻觉和分析一致性、可审计性。B 站知乎上面一群连 github 都不会用的韭菜只会用那些黑心 up 主发布的..."
   },
   "39": {
     "category": "社会民生 (Society & Life)",
-    "title": "GPT-5.6 Sol Ultra 跑半个小时写出来的网页长这样",
-    "link": "https://www.v2ex.com/t/1226310",
-    "snippet": "shineonme: \n静态图放在了帖子最下面，网址： https://gpt-5-6-cn-intro.familiar-nova.workers.dev\nPrompt:\n参考 https://openai.com/index/gpt-5-6/ 的文字内容，生成一个 Web 介绍页面，不要调用任何 Skill ，网页文字为中文\n\n生成后又用两句对话让他将其部署在了最近 Cloudflare 推出..."
+    "title": "上班族想养一个小猫，想问下真的会养不熟吗",
+    "link": "https://www.v2ex.com/t/1228748",
+    "snippet": "zhushenggao: \n上班之后一直想养一个小猫或者小狗，小狗还要溜感觉精力跟不上，养小猫害怕养不熟，是不是小猫性格关系，有人来现身说法一下吗？"
   },
   "40": {
     "category": "社会民生 (Society & Life)",
-    "title": "德凯克拉雷今晚的表现夯爆了",
-    "link": "https://bbs.hupu.com/640740984.html",
-    "snippet": ""
+    "title": "如何看待 Bin 发文暂别赛场，BLG 第三赛段启用 Wenbo，这可能会对队伍造成哪些影响？",
+    "link": "https://www.zhihu.com/question/2062948923971302955",
+    "snippet": "最近我的整个状态不太好和队伍沟通后会暂时离开赛场 休息调整一下 谢谢队伍和队友对我的体谅和包容 谢谢关心我的大家 希望大家也继续支持BLG  BLG#2026LPL第三赛段#大名单&赛程表】 BLG首战将于7月23日对阵TT战队。新的征程已经开启，期待队员们尽快磨合、并肩作战，以最好的状态迎接第三赛段的每一场挑战。信念不熄，全力向前，BLG加油！"
   },
   "41": {
     "category": "社会民生 (Society & Life)",
-    "title": "半决赛法国和西班牙或比利时一组太闹心了。好想看法国和西班牙或比利时踢总决赛啊",
-    "link": "https://bbs.hupu.com/640740955.html",
-    "snippet": ""
+    "title": "马宁首次回应无缘主哨淘汰赛，称到现在都不知道为什么，配置问题不是核心原因，那问题可能出在哪里？",
+    "link": "https://www.zhihu.com/question/2062863345573803605",
+    "snippet": "在本届世界杯中，47岁的中国裁判马宁成为时隔24年再度主哨世界杯的中国裁判，同时弥补了四年前只担任第四官员的遗憾，实现了职业理想。但为何只执法了一场比赛，无缘主哨淘汰赛等成为不少人议论的焦点。 “我们到现在都不知道为什么。”近日，在新华社的专访中，马宁首度回应了相关猜测，他表示，很多反响、评价都非常好，世界杯的裁判讲师团队对中国裁判的评价也非常好，但最终就这样结束了世界杯。 很多人猜测是配置问题，..."
   },
   "42": {
     "category": "社会民生 (Society & Life)",
-    "title": "q",
-    "link": "https://bbs.hupu.com/640740951.html",
-    "snippet": ""
-  },
-  "43": {
-    "category": "社会民生 (Society & Life)",
-    "title": "如何看待周星驰电影《功夫女足》首日排片超 22.6 万场，刷新中国内地影史暑期档首日场次纪录？",
-    "link": "https://www.zhihu.com/question/2059024185498808451",
-    "snippet": "据猫眼专业版数据，周星驰电影《功夫女足》 首日场次超22.6万场，刷新中国影史暑期档首日场次纪录。"
-  },
-  "44": {
-    "category": "社会民生 (Society & Life)",
-    "title": "如何评价《明日方舟终末地》相伴庆典‌「向渊行」版本前瞻节目直播？",
-    "link": "https://www.zhihu.com/question/2058999798796227993",
-    "snippet": ""
-  },
-  "45": {
-    "category": "社会民生 (Society & Life)",
-    "title": "如何评价《歌手 2026》第八期，胡彦斌、窦靖童分列第一第二，艾略特、刘惜君、万妮达淘汰？",
-    "link": "https://www.zhihu.com/question/2058996098555975122",
-    "snippet": "歌手2026第八期结果 1.胡彦斌 2.窦靖童 3.齐豫 4.尤长靖 5.艾略特（淘汰） 6.刘惜君（淘汰） 万妮达（首轮淘汰）"
+    "title": "如何看待世界杯决赛之后，西班牙队在官方的庆祝照片上把特朗普给裁剪掉了？",
+    "link": "https://www.zhihu.com/question/2062849285499138343",
+    "snippet": "去年的世俱杯决赛特朗普也是赖在了冠军队这边被国际足联拉下去的。 在本届世界杯决赛之后，特朗普继续站在领奖台不愿离开，国际足联主席一路小跑连拉带拽把川普领:到台下。 赛后西班牙官方在庆祝照片上把特朗普裁剪掉了。"
   }
 }
