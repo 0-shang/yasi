@@ -84,7 +84,6 @@ const defaultRssSources = {
     sources: [
       { url: "https://markmanson.net/feed",      quota: 2, ignoreSeen: true, label: "Mark Manson (犀利的生活哲学)" },
       { url: "https://jamesclear.com/feed",      quota: 2, ignoreSeen: true, label: "James Clear (原子习惯/微小进步)" },
-      { url: "https://tim.blog/feed/",           quota: 2, ignoreSeen: true, label: "Tim Ferriss (顶级效率与个人成长)" },
       { url: "https://fs.blog/feed/",            quota: 2, ignoreSeen: true, label: "Farnam Street (顶级思维模型/决策逻辑)" },
       { url: "https://waitbutwhy.com/feed",      quota: 2, ignoreSeen: true, label: "Wait But Why (深度长文/底层逻辑)" },
       { url: "https://zenhabits.net/feed/",      quota: 2, ignoreSeen: true, label: "Zen Habits (极简主义/反焦虑)" },
