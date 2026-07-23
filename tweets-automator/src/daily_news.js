@@ -82,9 +82,9 @@ const defaultRssSources = {
   "热门信息 (Trending Info)": {
     limit: 10,
     sources: [
-      { url: "https://markmanson.net/feed",                             quota: 5, allowRecentDuplicates: true, label: "Mark Manson (犀利的生活哲学)" },
-      { url: "https://jamesclear.com/feed",                             quota: 3, allowRecentDuplicates: true, label: "James Clear (原子习惯/微小进步)" },
-      { url: "https://tim.blog/feed/",                                  quota: 2, allowRecentDuplicates: true, label: "Tim Ferriss (顶级效率与个人成长)" }
+      { url: "https://markmanson.net/feed",                             quota: 5, ignoreSeen: true, priority: 100, label: "Mark Manson (犀利的生活哲学)" },
+      { url: "https://jamesclear.com/feed",                             quota: 3, ignoreSeen: true, priority: 90, label: "James Clear (原子习惯/微小进步)" },
+      { url: "https://tim.blog/feed/",                                  quota: 2, ignoreSeen: true, priority: 80, label: "Tim Ferriss (顶级效率与个人成长)" }
     ]
   }
 };
@@ -114,6 +114,7 @@ async function fetchCategoryItems(sources, limit, seenLinks) {
         if (item.isoDate) d = new Date(item.isoDate);
         else if (item.pubDate) d = new Date(item.pubDate);
         item._parsedDate = d;
+        item._priority = source.priority || 0;
         return item;
       });
 
@@ -124,14 +125,8 @@ async function fetchCategoryItems(sources, limit, seenLinks) {
         if (link && uniqueLinks.has(link)) return false;
         if (link) uniqueLinks.add(link);
         
-        // 2. 历史去重（除非配置了 ignoreSeen，或者配置了允许24小时内重复且内容在24小时内）
+        // 2. 历史去重（除非配置了 ignoreSeen）
         if (!source.ignoreSeen && link && seenLinks[link]) {
-          if (source.allowRecentDuplicates) {
-            const ageHours = (Date.now() - item._parsedDate.getTime()) / (1000 * 60 * 60);
-            if (ageHours <= 24) {
-              return true; // 24小时内，不去重
-            }
-          }
           return false;
         }
         return true;
@@ -153,8 +148,13 @@ async function fetchCategoryItems(sources, limit, seenLinks) {
 
   if (skipped > 0) console.log(`  🔁 共跳过/去重: ${skipped} 条`);
   
-  // 所有源的数据汇总后，按时间最新倒序排
-  allItems.sort((a, b) => b._parsedDate - a._parsedDate);
+  // 所有源的数据汇总后，先按优先级排，同优先级按时间倒序排
+  allItems.sort((a, b) => {
+    const aPriority = a._priority || 0;
+    const bPriority = b._priority || 0;
+    if (aPriority !== bPriority) return bPriority - aPriority;
+    return b._parsedDate - a._parsedDate;
+  });
   
   // 返回前 limit 条，保证凑够数量
   return allItems.slice(0, limit);
