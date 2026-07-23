@@ -38,8 +38,10 @@ const defaultRssSources = {
   "实用工具资源 (Tools & Resources)": {
     limit: 10,
     sources: [
-      // ── GitHub 趋势 ──
-      { url: "https://rsshub.rssforever.com/github/trending/daily/any",   quota: 10, ignoreSeen: true, label: "GitHub 每日趋势" }
+      // ── GitHub 趋势 (多节点备用，防止某个节点失效，由于代码中新增了按链接去重，这里不会重复) ──
+      { url: "https://rsshub.app/github/trending/daily/any",        ignoreSeen: true, label: "GitHub 每日趋势(官方节点)" },
+      { url: "https://rsshub.rssforever.com/github/trending/daily/any", ignoreSeen: true, label: "GitHub 每日趋势(备用节点1)" },
+      { url: "https://rsshub.nl/github/trending/daily/any",         ignoreSeen: true, label: "GitHub 每日趋势(备用节点2)" }
     ]
   },
   "科技人工智能 (Tech & AI)": {
@@ -98,14 +100,11 @@ const categoryKeyMap = {
 // 抓取单个分类，自动补位，过滤已推送内容
 // ============================================================
 async function fetchCategoryItems(sources, limit, seenLinks) {
-  const collected = [];
+  let allItems = [];
   let skipped = 0;
+  const uniqueLinks = new Set(); // 用于当次抓取去重（比如多个备用源）
 
   for (const source of sources) {
-    if (collected.length >= limit) break;
-    // 如果源配置了 quota，则此源最多只取 quota 个；否则取完剩下的 limit
-    const stillNeed = source.quota ? Math.min(source.quota, limit - collected.length) : limit - collected.length;
-
     try {
       const feed = await parser.parseURL(source.url);
       let items = feed.items.map(item => {
@@ -115,32 +114,36 @@ async function fetchCategoryItems(sources, limit, seenLinks) {
         item._parsedDate = d;
         return item;
       });
-      items.sort((a, b) => b._parsedDate - a._parsedDate);
 
       const before = items.length;
-      if (!source.ignoreSeen) {
-        items = items.filter(item => {
-          const link = item.link || item.guid || '';
-          return link && !seenLinks[link];
-        });
-        skipped += before - items.length;
-      }
+      items = items.filter(item => {
+        const link = item.link || item.guid || '';
+        // 1. 本次抓取去重（防止多个备用源返回相同内容）
+        if (link && uniqueLinks.has(link)) return false;
+        if (link) uniqueLinks.add(link);
+        
+        // 2. 历史去重（除非配置了 ignoreSeen）
+        if (!source.ignoreSeen && link && seenLinks[link]) {
+          return false;
+        }
+        return true;
+      });
+      skipped += before - items.length;
 
-      const toAdd = items.slice(0, stillNeed);
-      collected.push(...toAdd);
-      
-      if (source.ignoreSeen) {
-        console.log(`  ✅ [${toAdd.length}] ${source.label} (强制不过滤)`);
-      } else {
-        console.log(`  ✅ [${toAdd.length}] ${source.label} (过滤重复${before - items.length}条)`);
-      }
+      console.log(`  ✅ [${items.length}] ${source.label}`);
+      allItems.push(...items);
     } catch (e) {
       console.error(`  ⚠️ FAILED [${source.label}]: ${e.message}`);
     }
   }
 
-  if (skipped > 0) console.log(`  🔁 共跳过已推送: ${skipped} 条`);
-  return collected.slice(0, limit);
+  if (skipped > 0) console.log(`  🔁 共跳过/去重: ${skipped} 条`);
+  
+  // 所有源的数据汇总后，按时间最新倒序排
+  allItems.sort((a, b) => b._parsedDate - a._parsedDate);
+  
+  // 返回前 limit 条，保证凑够数量
+  return allItems.slice(0, limit);
 }
 
 function escapeHTML(str) {
