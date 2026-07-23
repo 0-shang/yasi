@@ -36,14 +36,10 @@ function saveSeenLinks(seenLinks) {
 // ============================================================
 const defaultRssSources = {
   "实用工具资源 (Tools & Resources)": {
-    limit: 30,
+    limit: 10,
     sources: [
-      // ── GitHub 趋势 (无论是否重复，强制展示 15 条) ──
-      { url: "https://rsshub.rssforever.com/github/trending/daily/any",   quota: 15, ignoreSeen: true, label: "GitHub 每日趋势" },
-      // ── 其他随意 ──
-      { url: "https://rsshub.rssforever.com/v2ex/topics/create",          label: "V2EX 创造(独立开发者自荐工具)" },
-      { url: "https://rsshub.rssforever.com/v2ex/topics/share",           label: "V2EX 分享(实用工具发现)" },
-      { url: "https://rsshub.rssforever.com/hellogithub/article",         label: "HelloGitHub(优质开源干货)" }
+      // ── GitHub 趋势 ──
+      { url: "https://rsshub.rssforever.com/github/trending/daily/any",   quota: 10, ignoreSeen: true, label: "GitHub 每日趋势" }
     ]
   },
   "科技人工智能 (Tech & AI)": {
@@ -51,7 +47,6 @@ const defaultRssSources = {
     sources: [
       { url: "https://feeds.feedburner.com/ruanyifeng", quota: 3, label: "阮一峰" },
       { url: "https://www.qbitai.com/feed",             quota: 4, label: "量子位" },
-      { url: "https://sspai.com/feed",                  quota: 4, label: "少数派" },
       { url: "https://openai.com/blog/rss.xml",         quota: 2, label: "OpenAI" },
       { url: "https://news.ycombinator.com/rss",        quota: 4, label: "HackerNews" },
       { url: "https://thenewstack.io/feed/",            quota: 3, label: "The New Stack" },
@@ -76,6 +71,17 @@ const defaultRssSources = {
       // ── 知乎热榜: 经典的高质量/反常识问答聚集地 ──
       { url: "https://rsshub.rssforever.com/zhihu/hot",                 quota: 3, label: "知乎热榜" }
     ]
+  },
+  "热门信息 (Trending Info)": {
+    limit: 10,
+    sources: [
+      { url: "https://rsshub.rssforever.com/xueqiu/today",              quota: 3, label: "雪球今日话题" },
+      { url: "https://rsshub.rssforever.com/eleduck/posts",             quota: 2, label: "电鸭社区(数字游民)" },
+      { url: "https://www.v2ex.com/index.xml",                          quota: 2, label: "V2EX最热主题" },
+      { url: "https://rsshub.rssforever.com/readhub/daily",             quota: 3, label: "Readhub" },
+      { url: "https://rsshub.rssforever.com/smzdm/ranking/zhiyou/11/3", quota: 2, label: "什么值得买数码榜" },
+      { url: "https://rsshub.rssforever.com/producthunt/today",         quota: 2, label: "Product Hunt" }
+    ]
   }
 };
 
@@ -85,6 +91,7 @@ const categoryKeyMap = {
   tech:    "科技人工智能 (Tech & AI)",
   finance: "理财投资 (Finance & Investment)",
   society: "社会民生 (Society & Life)",
+  trending:"热门信息 (Trending Info)",
 };
 
 // ============================================================
@@ -261,6 +268,7 @@ async function runFetch(telegramBot, userId, categoryKeys = null) {
       [Markup.button.callback('🤖 仅重抓 科技AI',   'refetch_tech')],
       [Markup.button.callback('💰 仅重抓 理财投资', 'refetch_finance')],
       [Markup.button.callback('🌍 仅重抓 社会民生', 'refetch_society')],
+      [Markup.button.callback('🔥 仅重抓 热门信息', 'refetch_trending')],
     ])
   );
 

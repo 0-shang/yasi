@@ -318,6 +318,7 @@ bot.command('refetch', async (ctx) => {
       [Markup.button.callback('🤖 仅重抓 科技AI',   'refetch_tech')],
       [Markup.button.callback('💰 仅重抓 理财投资', 'refetch_finance')],
       [Markup.button.callback('🌍 仅重抓 社会民生', 'refetch_society')],
+      [Markup.button.callback('🔥 仅重抓 热门信息', 'refetch_trending')],
     ])
   );
 });
@@ -354,6 +355,7 @@ bot.action('refetch_tools',   (ctx) => handleRefetchCategory(ctx, 'tools'));
 bot.action('refetch_tech',    (ctx) => handleRefetchCategory(ctx, 'tech'));
 bot.action('refetch_finance', (ctx) => handleRefetchCategory(ctx, 'finance'));
 bot.action('refetch_society', (ctx) => handleRefetchCategory(ctx, 'society'));
+bot.action('refetch_trending', (ctx) => handleRefetchCategory(ctx, 'trending'));
 
 bot.command('rss', async (ctx) => {
   if (ctx.from.id !== myUserId) return;
