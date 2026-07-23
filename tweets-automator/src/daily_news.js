@@ -81,14 +81,15 @@ const defaultRssSources = {
   },
   "热门信息 (Trending Info)": {
     limit: 10,
+    shuffle: true,
     sources: [
-      { url: "https://markmanson.net/feed",      quota: 2, ignoreSeen: true, label: "Mark Manson (犀利的生活哲学)" },
-      { url: "https://jamesclear.com/feed",      quota: 2, ignoreSeen: true, label: "James Clear (原子习惯/微小进步)" },
-      { url: "https://fs.blog/feed/",            quota: 2, ignoreSeen: true, label: "Farnam Street (顶级思维模型/决策逻辑)" },
-      { url: "https://waitbutwhy.com/feed",      quota: 2, ignoreSeen: true, label: "Wait But Why (深度长文/底层逻辑)" },
-      { url: "https://zenhabits.net/feed/",      quota: 2, ignoreSeen: true, label: "Zen Habits (极简主义/反焦虑)" },
-      { url: "https://ryanholiday.net/feed/",    quota: 2, ignoreSeen: true, label: "Ryan Holiday (斯多葛学派/韧性心法)" },
-      { url: "https://seths.blog/feed/",         quota: 2, ignoreSeen: true, label: "Seth Godin (极简思维/破局)" }
+      { url: "https://markmanson.net/feed",      ignoreSeen: true, label: "Mark Manson (犀利的生活哲学)" },
+      { url: "https://jamesclear.com/feed",      ignoreSeen: true, label: "James Clear (原子习惯/微小进步)" },
+      { url: "https://fs.blog/feed/",            ignoreSeen: true, label: "Farnam Street (顶级思维模型/决策逻辑)" },
+      { url: "https://waitbutwhy.com/feed",      ignoreSeen: true, label: "Wait But Why (深度长文/底层逻辑)" },
+      { url: "https://zenhabits.net/feed/",      ignoreSeen: true, label: "Zen Habits (极简主义/反焦虑)" },
+      { url: "https://ryanholiday.net/feed/",    ignoreSeen: true, label: "Ryan Holiday (斯多葛学派/韧性心法)" },
+      { url: "https://seths.blog/feed/",         ignoreSeen: true, label: "Seth Godin (极简思维/破局)" }
     ]
   }
 };
@@ -105,7 +106,7 @@ const categoryKeyMap = {
 // ============================================================
 // 抓取单个分类，自动补位，过滤已推送内容
 // ============================================================
-async function fetchCategoryItems(sources, limit, seenLinks) {
+async function fetchCategoryItems(sources, limit, seenLinks, shuffle = false) {
   let allItems = [];
   let skipped = 0;
   const uniqueLinks = new Set(); // 用于当次抓取去重（比如多个备用源）
@@ -151,8 +152,16 @@ async function fetchCategoryItems(sources, limit, seenLinks) {
 
   if (skipped > 0) console.log(`  🔁 共跳过/去重: ${skipped} 条`);
   
-  // 所有源的数据汇总后，按时间最新倒序排
-  allItems.sort((a, b) => b._parsedDate - a._parsedDate);
+  if (shuffle) {
+    // 随机打乱数组（Fisher-Yates 洗牌算法），保证每次看到的都不一样
+    for (let i = allItems.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [allItems[i], allItems[j]] = [allItems[j], allItems[i]];
+    }
+  } else {
+    // 所有源的数据汇总后，按时间最新倒序排
+    allItems.sort((a, b) => b._parsedDate - a._parsedDate);
+  }
   
   // 返回前 limit 条，保证凑够数量
   return allItems.slice(0, limit);
@@ -191,7 +200,7 @@ async function runFetch(telegramBot, userId, categoryKeys = null) {
 
   for (const [category, cfg] of targetCategories) {
     console.log(`\n📂 [${category}] 目标: ${cfg.limit} 条`);
-    const items = await fetchCategoryItems(cfg.sources, cfg.limit, seenLinks);
+    const items = await fetchCategoryItems(cfg.sources, cfg.limit, seenLinks, cfg.shuffle);
     console.log(`  📊 获取: ${items.length}/${cfg.limit} 条`);
     categoryResults[category] = items;
     totalFetched += items.length;
