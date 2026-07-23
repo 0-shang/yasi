@@ -77,12 +77,11 @@ const defaultRssSources = {
   "热门信息 (Trending Info)": {
     limit: 10,
     sources: [
-      { url: "https://rsshub.rssforever.com/xueqiu/today",              quota: 3, label: "雪球今日话题" },
-      { url: "https://rsshub.rssforever.com/eleduck/posts",             quota: 2, label: "电鸭社区(数字游民)" },
-      { url: "https://www.v2ex.com/index.xml",                          quota: 2, label: "V2EX最热主题" },
-      { url: "https://rsshub.rssforever.com/readhub/daily",             quota: 3, label: "Readhub" },
-      { url: "https://rsshub.rssforever.com/smzdm/ranking/zhiyou/11/3", quota: 2, label: "什么值得买数码榜" },
-      { url: "https://rsshub.rssforever.com/producthunt/today",         quota: 2, label: "Product Hunt" }
+      { url: "https://rsshub.rssforever.com/xueqiu/today",              label: "雪球今日话题 (搞钱与宏观环境)" },
+      { url: "https://rsshub.rssforever.com/eleduck/posts",             label: "电鸭社区 (数字游民/反内卷)" },
+      { url: "https://zenhabits.net/feed/",                             label: "Zen Habits (顶级反焦虑/个人成长)" },
+      { url: "https://markmanson.net/feed",                             label: "Mark Manson (犀利的生活哲学)" },
+      { url: "https://rsshub.rssforever.com/indiehackers/highest-voted",label: "Indie Hackers (独立开发者搞钱案例)" }
     ]
   }
 };
