@@ -280,5 +280,125 @@
     "title": "How to Just Do a Thing",
     "link": "https://www.raptitude.com/2026/05/how-to-just-do-a-thing/",
     "snippet": "I keep reading books from the 19th century and earlier, fiction and nonfiction, because I envy something about the lives of the people in them. I don’t think I’d want to trade places. I’m too accustom..."
+  },
+  "48": {
+    "category": "实用工具资源 (Tools & Resources)",
+    "title": "block/buzz",
+    "link": "https://github.com/block/buzz",
+    "snippet": "A hive mind communication platform\nLanguage: Rust\nStars: 8756\nForks: 673"
+  },
+  "49": {
+    "category": "实用工具资源 (Tools & Resources)",
+    "title": "koala73/worldmonitor",
+    "link": "https://github.com/koala73/worldmonitor",
+    "snippet": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface\nLanguage: TypeScript\nStars: 7284..."
+  },
+  "50": {
+    "category": "实用工具资源 (Tools & Resources)",
+    "title": "ComposioHQ/awesome-claude-skills",
+    "link": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "snippet": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows\nLanguage: Python\nStars: 69827\nForks: 7876"
+  },
+  "51": {
+    "category": "实用工具资源 (Tools & Resources)",
+    "title": "Pumpkin-MC/Pumpkin",
+    "link": "https://github.com/Pumpkin-MC/Pumpkin",
+    "snippet": "Empowering everyone to host fast and efficient Minecraft servers.\nLanguage: Rust\nStars: 9191\nForks: 625"
+  },
+  "52": {
+    "category": "实用工具资源 (Tools & Resources)",
+    "title": "shiyu-coder/Kronos",
+    "link": "https://github.com/shiyu-coder/Kronos",
+    "snippet": "Kronos: A Foundation Model for the Language of Financial Markets\nLanguage: Python\nStars: 33362\nForks: 5669"
+  },
+  "53": {
+    "category": "实用工具资源 (Tools & Resources)",
+    "title": "Automattic/harper",
+    "link": "https://github.com/Automattic/harper",
+    "snippet": "Offline, privacy-first grammar checker. Fast, open-source, Rust-powered\nLanguage: Rust\nStars: 12776\nForks: 473"
+  },
+  "54": {
+    "category": "实用工具资源 (Tools & Resources)",
+    "title": "likec4/likec4",
+    "link": "https://github.com/likec4/likec4",
+    "snippet": "Visualize, collaborate, and evolve the software architecture with always actual and live diagrams from your code\nLanguage: TypeScript\nStars: 4903\nForks: 330"
+  },
+  "55": {
+    "category": "实用工具资源 (Tools & Resources)",
+    "title": "citrolabs/ego-lite",
+    "link": "https://github.com/citrolabs/ego-lite",
+    "snippet": "The fastest browser for AI agents to run web automation, built for sharing your logged-in browser state with your AI agents, like Codex or Claude Code, without disturbing you. Zero cost, zero config.\n..."
+  },
+  "56": {
+    "category": "实用工具资源 (Tools & Resources)",
+    "title": "yorukot/superfile",
+    "link": "https://github.com/yorukot/superfile",
+    "snippet": "Pretty fancy and modern terminal file manager\nLanguage: Go\nStars: 19231\nForks: 587"
+  },
+  "57": {
+    "category": "实用工具资源 (Tools & Resources)",
+    "title": "ruvnet/RuView",
+    "link": "https://github.com/ruvnet/RuView",
+    "snippet": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.\nLanguage: Rust\nStars: 85681\nForks: 11422"
+  },
+  "58": {
+    "category": "热门信息 (Trending Info)",
+    "title": "Why You’re Drawn to the Wrong People (And It Feels Like Love)",
+    "link": "https://tinybuddha.com/blog/why-youre-drawn-to-the-wrong-people-and-it-feels-like-love/",
+    "snippet": "“The heart that’s been through the most can sometimes mistake chaos for connection.” ~Unknown\nI remember the exact moment I knew something was wrong.\nWe had been talking for three weeks. Every convers..."
+  },
+  "59": {
+    "category": "热门信息 (Trending Info)",
+    "title": "How to Be Successful in Life",
+    "link": "https://markmanson.net/how-to-be-successful-in-life",
+    "snippet": "The internet is inundated with countless videos and advice columns promising to teach you how to become more successful than 99% of the world's population.\nMost of these claims revolve around setting ..."
+  },
+  "60": {
+    "category": "热门信息 (Trending Info)",
+    "title": "Understand your neurodivergent brain with Dr George Sachs, co-founder of Inflow",
+    "link": "https://nesslabs.com/inflow-featured-tool?utm_source=rss&utm_medium=rss&utm_campaign=inflow-featured-tool",
+    "snippet": "FEATURED TOOL Welcome to this edition of our Tools for Thought series, where we interview founders on a mission to help us think better and work smarter. Dr George Sachs is the co-founder of Inflow, a..."
+  },
+  "61": {
+    "category": "热门信息 (Trending Info)",
+    "title": "In Favor of Enjoying Things on Purpose",
+    "link": "https://www.raptitude.com/2026/03/in-favor-of-enjoying-things-on-purpose/",
+    "snippet": "The human being is an enjoyment-seeking creature. There’s a reason people are always trying to restrain themselves from excessive eating, drinking, scrolling, and shopping. It’s perfectly normal to pu..."
+  },
+  "62": {
+    "category": "热门信息 (Trending Info)",
+    "title": "Less Clueless by Steve Sima",
+    "link": "https://sive.rs/2025-08-sima",
+    "snippet": "How to Live and its orchestra metaphor, Asian parent guilt, family dynamics, romantic relationships, loneliness, money and morality of business, shallow vs deep joy from money, everything is figureout..."
+  },
+  "63": {
+    "category": "热门信息 (Trending Info)",
+    "title": "Art of Spending Money - by Morgan Housel",
+    "link": "https://sive.rs/book/SpendingMoney",
+    "snippet": "summary:\nPhilosophical thoughts on what to do with your money, which then relates to happiness, independence, envy, scarcity, and more. Putting money into savings is like buying independence. Imagine ..."
+  },
+  "64": {
+    "category": "热门信息 (Trending Info)",
+    "title": "Resources and focus",
+    "link": "https://seths.blog/2026/07/resources-and-focus/",
+    "snippet": "There are lots of things you can do, but it’s not clear you should. OpenAI has virtually unlimited resources. And in addition to building a chat-based AI, they chose to launch pretty good image genera..."
+  },
+  "65": {
+    "category": "热门信息 (Trending Info)",
+    "title": "I shall be released! (a mixtape)",
+    "link": "https://austinkleon.com/2026/05/28/i-shall-be-released-a-mixtape/",
+    "snippet": "My latest mixtape captures my attempt to get over the depression and anxiety that can accompany “The Gulp” in between when you finish something and finally push it out into the world. (Don’t worry, it..."
+  },
+  "66": {
+    "category": "热门信息 (Trending Info)",
+    "title": "Private journal to internalize it",
+    "link": "https://sive.rs/u53",
+    "snippet": "Once you find a viewpoint you want to adopt, a great tool to internalize it is a private journal.\n\tWhether you write, type, or just talk, the point is to fill your mind with this new perspective.\n\nStr..."
+  },
+  "67": {
+    "category": "热门信息 (Trending Info)",
+    "title": "Winston Weinberg: Speed, Stress, and Better Decisions",
+    "link": "https://fs.blog/knowledge-project-podcast/winston-weinberg/",
+    "snippet": "Winston Weinberg is the CEO and co-founder of Harvey, the AI platform built for the legal industry. Available Now: YouTube | Spotify | Apple Podcasts | Transcript In this episode, Winston explains how..."
   }
 }
