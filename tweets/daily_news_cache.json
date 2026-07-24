@@ -3,37 +3,37 @@
     "category": "实用工具资源 (Tools & Resources)",
     "title": "block/buzz",
     "link": "https://github.com/block/buzz",
-    "snippet": "A hive mind communication platform\nLanguage: Rust\nStars: 6744\nForks: 543"
+    "snippet": "A hive mind communication platform\nLanguage: Rust\nStars: 7794\nForks: 612"
   },
   "2": {
     "category": "实用工具资源 (Tools & Resources)",
     "title": "koala73/worldmonitor",
     "link": "https://github.com/koala73/worldmonitor",
-    "snippet": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface\nLanguage: TypeScript\nStars: 7147..."
+    "snippet": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface\nLanguage: TypeScript\nStars: 7226..."
   },
   "3": {
     "category": "实用工具资源 (Tools & Resources)",
     "title": "shiyu-coder/Kronos",
     "link": "https://github.com/shiyu-coder/Kronos",
-    "snippet": "Kronos: A Foundation Model for the Language of Financial Markets\nLanguage: Python\nStars: 33016\nForks: 5646"
+    "snippet": "Kronos: A Foundation Model for the Language of Financial Markets\nLanguage: Python\nStars: 33231\nForks: 5660"
   },
   "4": {
     "category": "实用工具资源 (Tools & Resources)",
     "title": "Pumpkin-MC/Pumpkin",
     "link": "https://github.com/Pumpkin-MC/Pumpkin",
-    "snippet": "Empowering everyone to host fast and efficient Minecraft servers.\nLanguage: Rust\nStars: 8879\nForks: 612"
+    "snippet": "Empowering everyone to host fast and efficient Minecraft servers.\nLanguage: Rust\nStars: 9064\nForks: 620"
   },
   "5": {
     "category": "实用工具资源 (Tools & Resources)",
     "title": "citrolabs/ego-lite",
     "link": "https://github.com/citrolabs/ego-lite",
-    "snippet": "The best browser for both you and your AI agents work in parallel.\nLanguage: JavaScript\nStars: 1585\nForks: 92"
+    "snippet": "The best browser for both you and your AI agents work in parallel.\nLanguage: JavaScript\nStars: 1966\nForks: 102"
   },
   "6": {
     "category": "实用工具资源 (Tools & Resources)",
     "title": "chrislgarry/Apollo-11",
     "link": "https://github.com/chrislgarry/Apollo-11",
-    "snippet": "Original Apollo 11 Guidance Computer (AGC) source code for the command and lunar modules.\nLanguage: Assembly\nStars: 71078\nForks: 7915"
+    "snippet": "Original Apollo 11 Guidance Computer (AGC) source code for the command and lunar modules.\nLanguage: Assembly\nStars: 71204\nForks: 7926"
   },
   "7": {
     "category": "实用工具资源 (Tools & Resources)",
@@ -45,210 +45,240 @@
     "category": "实用工具资源 (Tools & Resources)",
     "title": "ComposioHQ/awesome-claude-skills",
     "link": "https://github.com/ComposioHQ/awesome-claude-skills",
-    "snippet": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows\nLanguage: Python\nStars: 69391\nForks: 7850"
+    "snippet": "A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows\nLanguage: Python\nStars: 69631\nForks: 7864"
   },
   "9": {
     "category": "实用工具资源 (Tools & Resources)",
     "title": "earthtojake/text-to-cad",
     "link": "https://github.com/earthtojake/text-to-cad",
-    "snippet": "A collection of agent skills for CAD, robotics and hardware design\nLanguage: JavaScript\nStars: 9949\nForks: 1095"
+    "snippet": "A collection of agent skills for CAD, robotics and hardware design\nLanguage: JavaScript\nStars: 10194\nForks: 1113"
   },
   "10": {
     "category": "实用工具资源 (Tools & Resources)",
     "title": "agegr/pi-web",
     "link": "https://github.com/agegr/pi-web",
-    "snippet": "Web UI for the pi coding agent\nLanguage: TypeScript\nStars: 2340\nForks: 324"
+    "snippet": "Web UI for the pi coding agent\nLanguage: TypeScript\nStars: 2496\nForks: 336"
   },
   "11": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "Learn OpenGL, extensive tutorial resource for learning Modern OpenGL",
-    "link": "https://learnopengl.com/",
+    "title": "The PImpl idiom and the C++26 std:indirect type",
+    "link": "https://mariusbancila.ro/blog/2026/07/23/the-pimpl-idiom-and-the-cpp26-stdindirect-type/",
     "snippet": "Comments"
   },
   "12": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "Writing by hand is good for your brain",
-    "link": "https://nealstephenson.substack.com/p/writing-by-hand-is-good-for-your",
+    "title": "Flux 3",
+    "link": "https://bfl.ai/blog/flux-3",
     "snippet": "Comments"
   },
   "13": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "Software rendering in 500 lines of bare C++",
-    "link": "https://haqr.eu/tinyrenderer/",
-    "snippet": "Comments"
+    "title": "亚太唯一！阿里云跻身Gartner可观测魔力象限“挑战者”象限",
+    "link": "https://www.qbitai.com/2026/07/458864.html",
+    "snippet": "\"看得懂、定得准\"的智能运维底座"
   },
   "14": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "How regulated organizations can increase AI code velocity safely",
-    "link": "https://thenewstack.io/regulated-ai-continuous-verification/",
-    "snippet": "Many industries are excited about the possibilities AI opens up for software development. Still, for regulated industries, there’s something extra\nThe post How regulated organizations can increase AI ..."
+    "title": "长内容创作者苦AI失忆久矣，这个新Agent漂亮填坑！门槛低到只需要会用键盘打字",
+    "link": "https://www.qbitai.com/2026/07/458687.html",
+    "snippet": "再长的上下文也救不了长内容任务"
   },
   "15": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "Can prompt caching tame RAG costs without sacrificing accuracy?",
-    "link": "https://thenewstack.io/production-rag-architecture-fixes/",
-    "snippet": "The AI ecosystem is drowning in tutorials on how to build a retrieval-augmented generation (RAG) app in five minutes. The\nThe post Can prompt caching tame RAG costs without sacrificing accuracy? appea..."
+    "title": "OPC创业者看过来，最高10万美元云资源等你拿",
+    "link": "https://www.qbitai.com/2026/07/458622.html",
+    "snippet": "还有明星导师阵容"
   },
   "16": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "Kimi K3: White House alleges Fable 5 siphoning",
-    "link": "https://thenewstack.io/moonshot-fable5-distillation-accusations/",
-    "snippet": "Top White House technology official Michael Kratsios on Wednesday accused Chinese artificial intelligence startup Moonshot of using deceptive practices to\nThe post Kimi K3: White House alleges Fable 5..."
+    "title": "10万字速记一口吞，金山办公新Agent开始直接交活了",
+    "link": "https://www.qbitai.com/2026/07/458438.html",
+    "snippet": "重做一遍WPS"
   },
   "17": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "The Beam Engine",
-    "link": "https://glinscott.github.io/beam-engine/",
-    "snippet": "Comments"
+    "title": "科技爱好者周刊（第 405 期）：资源，社会公平与算力",
+    "link": "http://www.ruanyifeng.com/blog/2026/07/weekly-issue-405.html",
+    "snippet": "这里记录每周值得分享的科技内容，周五发布。\n本杂志开源，欢迎投稿。另有《谁在招人》服务，发布程序员招聘信息。合作请邮件联系（yifeng.ruan@gmail.com）。\n封面图\n\n西安大明宫遗址，使用亚克力透明板绘制古代建筑，让游客在原址体验当年的场景。（via）\n资源，社会公平与算力\n分享一个有趣的观点：资源太多，会造成社会不公平。我谈不上同意这个观点，就是觉得思路很奇特。\n\n这是奥地利哲学家..."
   },
   "18": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "How Codex became a collaborator for OpenAI’s creative team",
-    "link": "https://openai.com/index/codex-collaborator-creative-team",
-    "snippet": "How OpenAI’s creative team uses Codex to build custom creative tools, accelerate ideation, and prototype faster with context-aware AI."
+    "title": "Why Software Factories Fail (or: harness engineering is not enough)",
+    "link": "https://github.com/humanlayer/advanced-context-engineering-for-coding-agents/blob/main/wsff.md",
+    "snippet": "Comments"
   },
   "19": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "How to use ChatGPT Work for everyday tasks",
-    "link": "https://openai.com/academy/how-to-use-chatgpt-work-for-everyday-tasks",
-    "snippet": "Explore practical ChatGPT Work use cases to automate tasks, create deliverables, and turn real inputs into outputs across tools, files, and workflows."
+    "title": "Agents keep changing their answers. Harness just built delivery pipelines that don’t care.",
+    "link": "https://thenewstack.io/harness-ai-agent-dlc/",
+    "snippet": "Software delivery lifecycle company (SDLC) Harness wants to put agents through the same pipelines and controls that all application code\nThe post Agents keep changing their answers. Harness just built..."
   },
   "20": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "BioNTech's Next Act Has Nothing to Do With COVID. Here's the $500 Billion Market Some Investors Are Ignoring",
-    "link": "https://www.fool.com/investing/2026/07/23/biontechs-next-act-has-nothing-to-do-with-covid-he/?source=iedfolrf0000001",
-    "snippet": "Could it become as successful in this niche as it was in the coronavirus vaccine market?"
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "OpenAI built support agents for its own customer service line, now it hopes big enterprises will trust them too",
+    "link": "https://thenewstack.io/openai-presence-enterprise-agents/",
+    "snippet": "The general consensus emerging across the AI and industrial spheres is that the models themselves are no longer the bottleneck\nThe post OpenAI built support agents for its own customer service line, n..."
   },
   "21": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "If You'd Invested $10,000 in Ford Stock 10 Years Ago, Here's How Much You'd Have Today",
-    "link": "https://www.fool.com/investing/2026/07/23/you-invest-10000-ford-stock-10-years-ago-how-much/?source=iedfolrf0000001",
-    "snippet": "Shares have performed exceptionally well in the past 12 months, which is an aberration."
+    "title": "Prediction: SpaceX Will Underperform Planet Labs This Year",
+    "link": "https://www.fool.com/investing/2026/07/24/prediction-spacex-will-underperform-planet-labs-th/?source=iedfolrf0000001",
+    "snippet": "The magnitude of SpaceX's overvaluation bodes poorly for it in the near term."
   },
   "22": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "Crypto Market Today, July 23: Bitcoin Slides as Odds of Passing Clarity Act Fall",
-    "link": "https://www.fool.com/coverage/stock-market-today/2026/07/23/crypto-market-today-july-23-bitcoin-slides-as-odds-of-passing-clarity-act-fall/?source=iedfolrf0000001",
-    "snippet": "Today, July 23, 2026, macro headwinds, including rising oil prices and Treasury yields, weighed on crypto sentiment as key legislation appears less likely to pass."
+    "title": "SpaceX Investors Should Mark Their Calendars for Aug. 4",
+    "link": "https://www.fool.com/investing/2026/07/24/spacex-investors-should-mark-their-calendars-for-a/?source=iedfolrf0000001",
+    "snippet": "Space Exploration Technologies will report its second-quarter earnings after market close on Aug. 4"
   },
   "23": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "Stock Market Today, July 23: Cleveland-Cliffs Stock Soars on Robust Steel Demand and Pricing",
-    "link": "https://www.fool.com/coverage/stock-market-today/2026/07/23/stock-market-today-july-23-cleveland-cliffs-stock-soars-on-robust-steel-demand-and-pricing/?source=iedfolrf0000001",
-    "snippet": "On July 23, 2026, the steelmaker told investors to expect earnings to continue improving."
+    "title": "UiPath Stock Just Fell by 15%. Here's Why This Could Be a Great Buying Opportunity.",
+    "link": "https://www.fool.com/investing/2026/07/24/uipath-stock-just-fell-15-heres-why-this-could-be/?source=iedfolrf0000001",
+    "snippet": "The robotic process automation and agentic AI specialist is a cheap growth stock that just got cheaper."
   },
   "24": {
     "category": "理财投资 (Finance & Investment)",
-    "title": " Summer Sale ",
-    "link": "https://moneyweek.com/subscription/summersale26_bs",
-    "snippet": "Summer Sale"
+    "title": "David Tepper Has 5% of His Portfolio in This Little-Known Energy Stock. Here's Why.",
+    "link": "https://www.fool.com/investing/2026/07/24/david-tepper-has-5-of-his-portfolio-in-this-little/?source=iedfolrf0000001",
+    "snippet": "It may have found itself in the right place at the right time."
   },
   "25": {
     "category": "理财投资 (Finance & Investment)",
-    "title": " Summer Sale ",
-    "link": "https://moneyweek.com/subscription/summersale26_bing",
-    "snippet": "Summer Sale"
+    "title": " How will inheritance tax apply to pensions from 2027? ",
+    "link": "https://moneyweek.com/personal-finance/pensions/inheritance-tax-workplace-private-pensions",
+    "snippet": "Thousands more estates will be dragged into paying inheritance tax from April 2027 following changes around pension rules – here’s what you need to know to prepare."
   },
   "26": {
     "category": "理财投资 (Finance & Investment)",
-    "title": " Summer Sale ",
-    "link": "https://moneyweek.com/subscription/summersale26_ppc",
-    "snippet": "Summer Sale"
+    "title": " Andy Burnham becomes prime minister – what could be announced? ",
+    "link": "https://moneyweek.com/economy/news/live/andy-burnham-uk-prime-minister",
+    "snippet": "The ex-mayor of Greater Manchester took up top job in politics after Sir Keir Starmer’s resignation. What does a new prime minister mean for you?"
   },
   "27": {
-    "category": "社会民生 (Society & Life)",
-    "title": "2026年十大风口行业",
-    "link": "https://bbs.hupu.com/641219793.html",
-    "snippet": ""
+    "category": "理财投资 (Finance & Investment)",
+    "title": " How hedge fund wizard Michael Platt lost a £200m tax battle ",
+    "link": "https://moneyweek.com/people/how-hedge-fund-wizard-michael-platt-lost-tax-battle",
+    "snippet": "Michael Platt exploited an obsession with data to build one of the world's leading hedge funds. A run-in with HMRC has put the billionaire in the spotlight."
   },
   "28": {
     "category": "社会民生 (Society & Life)",
-    "title": "7.24",
-    "link": "https://bbs.hupu.com/641219792.html",
-    "snippet": "7.24号黄金早间点评\n金价从高点4166一路接连下行，一小时周期的通道持续向外敞开，价格沿着通道下沿不断走低，4082这个点位如今已经变成难以突破的压力位置。目前市场卖方力量占据上风，不过经过持续下跌之后，行情存在回弹修复的可能性。\n关键点位\n压力位：4082、4109\n支撑位：4040、4018\n操作思路\n哆箪：价格回落至4020-4040区间止跌后布局，第一目标看向4060，突破之后再看40..."
+    "title": "梅西不是历史第三的球王吗？为啥欧冠淘汰赛进球数+世界杯淘汰赛进球数，断档落后于C罗？",
+    "link": "https://bbs.hupu.com/641231738.html",
+    "snippet": "C罗：欧冠淘汰赛进球数+世界杯淘汰赛进球数，一共68球，5个核心欧冠冠军\n——————\n梅西：欧冠淘汰赛进球数+世界杯淘汰赛进球数，一共56球，3个核心欧冠冠军+1个替补伤缺欧冠冠军+1个核心世界杯冠军\n——————\n梅西不是历史第三的球王吗？为啥欧冠淘汰赛进球数+世界杯淘汰赛进球数，断档落后于C罗？而且冠军也比不过C罗，两人欧冠+世界杯加起来都是5冠，但梅西06年那个欧冠冠军是以替补伤缺身份拿的..."
   },
   "29": {
     "category": "社会民生 (Society & Life)",
-    "title": "红色爱的热烈",
-    "link": "https://bbs.hupu.com/641219768.html",
-    "snippet": ""
+    "title": "怎么让别人看起来自己不是那么好欺负？",
+    "link": "https://bbs.hupu.com/641231730.html",
+    "snippet": "图文无关，请勿无端联想\n\n正常穿搭，无任何不良引导！\n\n净化虎扑空气，减少JR暴戾气息！\n\n少争吵，多交流，共分享！\n\n创造和谐友爱互助的论坛环境！"
   },
   "30": {
     "category": "社会民生 (Society & Life)",
-    "title": "男子因门诊排队掌掴拳打医生，获刑 11 个月，这反映出当前医患关系面临哪些挑战？",
-    "link": "https://www.zhihu.com/question/2062565758266242024",
-    "snippet": "男子因门诊排队掌掴拳打医生，获刑11个月"
+    "title": "大家叫外卖一般点什么品牌呢",
+    "link": "https://bbs.hupu.com/641231697.html",
+    "snippet": ""
   },
   "31": {
     "category": "社会民生 (Society & Life)",
-    "title": "动画电影《八仙！》票房能超越《功夫女足》吗？",
-    "link": "https://www.zhihu.com/question/2062105664369979647",
-    "snippet": "正式公映前点映及预售总票房已突破1亿元。上映首日累计票房突破1.1亿元，猫眼专业版预测内地总票房约11.62亿元。"
+    "title": "继续推广我的 gpt 中转站，注册就送 28.8$余额，已稳定运行五月有余了 稳定不跑路",
+    "link": "https://www.v2ex.com/t/1229539",
+    "snippet": "zhlsk: \n小站稳定运营，满血 gpt plus pro 号池，开通多种套餐订阅：\n\nV 站用户专属福利：新用户注册即赠送$10 （记得用注册链接），在本帖回复 [ 注册 ID ] ，即可免费再送$18.8 余额！\n[ 加 q 群 745564314 ] 联系管理员冰冰也可发放，评论区看到也会\n注册邀请链接： https://xinx.best/register?promo=V2EX%26XI..."
   },
   "32": {
     "category": "社会民生 (Society & Life)",
-    "title": "2026 年菲尔兹奖公布，中国籍数学家邓煜、王虹获奖，如何理解他们获奖的意义？",
-    "link": "https://www.zhihu.com/question/2061502500440465960",
-    "snippet": "王虹、邓煜获菲尔兹奖 中国数学实现历史性突破 2026年国际数学家大会（ICM 2026）——费城国际数学家大会:https://www.mathunion.org/icm/icm-2026 菲尔兹奖 | 国际数学联盟 (IMU) 奖项:https://www.mathunion.org/imu-awards/fields-medal"
+    "title": "全国首条穿越长江高铁隧道贯通，这是一个怎样的工程？在长江底下挖高铁隧道，有多难？",
+    "link": "https://www.zhihu.com/question/2063952005505324990",
+    "snippet": "7月24日，渝厦高铁重庆菜园坝长江铁路隧道全线顺利贯通。这是国内首条穿越长江的高铁隧道，也是渝厦高铁全线关键控制性工程。https://mp.weixin.qq.com/s/Aiuk-0chId1DE5jx-b11-Q?scene=1"
   },
   "33": {
-    "category": "热门信息 (Trending Info)",
-    "title": "The Having/Doing job gap",
-    "link": "https://seths.blog/2026/07/the-having-doing-job-gap/",
-    "snippet": "It’s a dance between workers, bosses and the market. The most stable quadrant happens when a thoughtful and consistent boss hires the right person, pays them fairly, creates positive working condition..."
+    "category": "社会民生 (Society & Life)",
+    "title": "房子卖了，感觉自己很蠢",
+    "link": "https://www.v2ex.com/t/1229503",
+    "snippet": "Arthas1024: \n背景：\n2021 年在县城买了套小房子，目的是未来给父母做养老房，成交价 38 万，装修花了 15 万，总高 32 层，选的 8 楼，父母暂时不住，疫情期间我居家回到这个县城，并入住这套房子，父母在老家\n卖房原因：\n1.母亲腿脚不太好，不适合爬楼，超高层的住宅，电梯久了容易坏\n2.安置房，小区里老人很多，素质偏低，爸妈跟小区其他人并不熟悉\n3.父母暂时不住，担心县城房价会..."
   },
   "34": {
-    "category": "热门信息 (Trending Info)",
-    "title": "An Unlikely Empire | J.W. Marriott",
-    "link": "https://fs.blog/knowledge-project-podcast/outliers-jw-marriott/",
-    "snippet": "The world’s largest hotel company spent its first 30 years without a hotel. It started as a root beer stand in 1927. The first room didn’t open until 1957. The man behind it was J. Willard Marriott. I..."
+    "category": "社会民生 (Society & Life)",
+    "title": "AI 辅助面试如何识别",
+    "link": "https://www.v2ex.com/t/1229501",
+    "snippet": "villainLin: \n最近招聘遇到一些感觉像是 AI 辅助面试的，有没有大佬教一下怎么识别这类"
   },
   "35": {
-    "category": "热门信息 (Trending Info)",
-    "title": "Tales from Toddlerhood",
-    "link": "https://waitbutwhy.com/2025/10/toddler.html",
-    "snippet": "Eight thoughts from a strange and harrowing world\nThe post Tales from Toddlerhood appeared first on Wait But Why."
+    "category": "社会民生 (Society & Life)",
+    "title": "做了一年的个人站, 被月活 50W 网站 100%抄袭, 已实锤",
+    "link": "https://www.v2ex.com/t/1229472",
+    "snippet": "dismantle: \n一.个人观点\n个人认同 IDEA 不受保护\n不能让作恶者单纯受益\n只针对网站运营者进行谴责，不针对其他社区成员\n二.本人已实施行为\n已加入该社区 QQ 群 at 群主抄袭我个人站, 已经很及时的被群主 T 了\n我认为, 我不需要跟抄袭者沟通解决, 这相当于增加了我的维权成本!\n截止本贴发布未收到相关社区任何人员联系\n我的网站: https://www.helpaio.com..."
   },
   "36": {
-    "category": "热门信息 (Trending Info)",
-    "title": "Traits of useful perspectives",
-    "link": "https://sive.rs/u47",
-    "snippet": "To list all the beliefs I’ve found useful would fill a whole book.\n\t(Actually, four books so far, since that’s what my previous books were about.)\n\tSo instead, for your own ideation, it might help if ..."
+    "category": "社会民生 (Society & Life)",
+    "title": "如何看待腾讯 317 万年终奖员工因泄密被辞退，「打入黑名单，永不录用」？大厂保密红线究竟有多严？",
+    "link": "https://www.zhihu.com/question/2063929870984242778",
+    "snippet": "日前，腾讯发布内部通报，WXG（微信事业群）某项目组负责人叶某因泄露公司敏感信息，被公司辞退并列入黑名单，永不录用。 据了解，此次事件起源于此前一张刷屏全网的年终收入截图。截图显示，叶某年末激励由现金与股票两部分组成，总额接近320万元，其中现金奖金82万余元，股票激励235万余元。 随后，有网友发现截图自带腾讯内部水印，随即引发薪资泄密争议。风波发酵后，叶某的内部会议日程被迅速清空，业内当时便猜..."
   },
   "37": {
-    "category": "热门信息 (Trending Info)",
-    "title": "39 (Or So) Lessons On The Way To 39",
-    "link": "https://ryanholiday.net/39-or-so-lessons-on-the-way-to-39/",
-    "snippet": "Well, I’m now almost 40. Like officially almost 40. I woke up yesterday in Cle Elum, Washington, ran 20 miles and then turned 39. I did a little talk for Amazon and then flew home, getting in very lat..."
+    "category": "社会民生 (Society & Life)",
+    "title": "如何看待新晋菲尔兹奖得主 Jacob Tsimerman 颁奖当天宣布加入OpenAI？",
+    "link": "https://www.zhihu.com/question/2063832242242184073",
+    "snippet": "Jacob Tsimerman ，这位领奖台上和王虹邓煜站在一起的人刚拿到数学界最高荣誉，转头就宣布：我要去OpenAI了。"
   },
   "38": {
-    "category": "热门信息 (Trending Info)",
-    "title": "Learning Leader by Ryan Hawk",
-    "link": "https://sive.rs/2025-08-ll",
-    "snippet": "No speed limit, creating your own opportunities, adding value, First Follower, Useful Not True, Explorer vs Leader"
-  },
-  "39": {
-    "category": "热门信息 (Trending Info)",
-    "title": "The Dark Side of the Jevons Paradox",
-    "link": "https://calnewport.com/the-dark-side-of-the-jevons-paradox/",
-    "snippet": "If you’ve been following technology news recently, you’ve probably noticed a sudden increase in references to a 19th-century economics theory called the ​Jevons Paradox​, which ... Read more\nThe post ..."
-  },
-  "40": {
     "category": "热门信息 (Trending Info)",
     "title": "You Don’t Know It Till You Know the Original",
     "link": "https://www.raptitude.com/2026/02/you-dont-know-it-till-you-know-the-original/",
     "snippet": "There should be a German compound word for the emotion you feel when you encounter a famous thing and realize you’d never actually seen it until that moment. (Ikonerwachen?) I had seen a thousand imag..."
   },
+  "39": {
+    "category": "热门信息 (Trending Info)",
+    "title": "This Is How To Live A Good Life: 5 Secrets From Ancient Wisdom",
+    "link": "https://bakadesuyo.com/2026/07/how-to-live-a-good-life/?utm_source=rss&utm_medium=rss&utm_campaign=how-to-live-a-good-life",
+    "snippet": "How do we live a good life? Gahhhhhhhhh. Why don’t we ever deal with easy questions on this blog, huh? Who decides this stuff? (Don’t answer that.) Look, alright, nobody, and I mean NOBODY, knows what..."
+  },
+  "40": {
+    "category": "热门信息 (Trending Info)",
+    "title": "A shortage of fun",
+    "link": "https://austinkleon.com/2026/07/13/a-shortage-of-fun/",
+    "snippet": "I found this diary comic from (checks notes) five years ago. In last Friday’s newsletter, I wrote: In the “Who’s having fun?” section of Don’t Call It Art, I quote Ed Emberley saying, “I am determined..."
+  },
   "41": {
     "category": "热门信息 (Trending Info)",
-    "title": "Keep tuning and adjusting",
-    "link": "https://sive.rs/u57",
-    "snippet": "When I got my first guitar, the nice man at the shop put on new strings and tuned it.\n\tA week later, I brought it back to the shop because it sounded terrible.\n\tHe told me it was just out of tune.\n\tI ..."
+    "title": "Elephant in the Brain - by Kevin Simler and Robin Hanson",
+    "link": "https://sive.rs/book/BrainMotives",
+    "snippet": "summary:\nYou have hidden motives and subconscious incentives. Two reasons for doing anything: a good reason and the real reason. Instititutions do this too: wasteful because they’re serving hidden pur..."
   },
   "42": {
     "category": "热门信息 (Trending Info)",
-    "title": "Proven, Better, New: Mark Pincus on the Rules of Innovation",
-    "link": "https://fs.blog/knowledge-project-podcast/mark-pincus/",
-    "snippet": "Mark Pincus is the creator behind Farmville and Words with Friends. He built Zynga into one of the biggest gaming companies in the world and helped shape the early era of social products on the intern..."
+    "title": "The sights and sounds of Bhutan",
+    "link": "https://waitbutwhy.com/2025/11/bhutan.html",
+    "snippet": "Stories from my visit to the mysterious Himalayan kingdom\nThe post The sights and sounds of Bhutan appeared first on Wait But Why."
+  },
+  "43": {
+    "category": "热门信息 (Trending Info)",
+    "title": "The Day I Realized Love Couldn’t Save Someone",
+    "link": "https://tinybuddha.com/blog/the-day-i-realized-love-couldnt-save-someone/",
+    "snippet": "“When it comes down to it, that’s what life is all about: showing up for the people you love, again and again, until you can’t show up anymore.” ~Rebecca Walker\nThe first time my dad admitted he was s..."
+  },
+  "44": {
+    "category": "热门信息 (Trending Info)",
+    "title": "Inside the Mind of Robinhood Co-Founder Vlad Tenev",
+    "link": "https://fs.blog/knowledge-project-podcast/vlad-tenev/",
+    "snippet": "Robinhood’s co-founder reveals the brutal reality of surviving an 80% market crash, going “founder mode” to cut corporate bloat, and what actually happened during GameStop. Vlad Tenev is the co-founde..."
+  },
+  "45": {
+    "category": "热门信息 (Trending Info)",
+    "title": "In Praise of Commercial Culture - by Tyler Cowen",
+    "link": "https://sive.rs/book/CommercialCulture",
+    "snippet": "summary:\nCultural optimism! I’d never considered that term before, but I love its mindset. My life was changed when Camille Paglia said, in the 90s, that Hollywood movies are the high art of our times..."
+  },
+  "46": {
+    "category": "热门信息 (Trending Info)",
+    "title": "Count Your Blessings, but Count Carefully",
+    "link": "https://www.raptitude.com/2026/04/count-your-blessings-but-count-carefully/",
+    "snippet": "I’m obsessed with the idea that a guy who wears jeans and drives a Jeep today is basically the same creature that wore animal skins and lived on hand-caught river fish 20,000 years ago. Those beings h..."
+  },
+  "47": {
+    "category": "热门信息 (Trending Info)",
+    "title": "How to Just Do a Thing",
+    "link": "https://www.raptitude.com/2026/05/how-to-just-do-a-thing/",
+    "snippet": "I keep reading books from the 19th century and earlier, fiction and nonfiction, because I envy something about the lives of the people in them. I don’t think I’d want to trade places. I’m too accustom..."
   }
 }
