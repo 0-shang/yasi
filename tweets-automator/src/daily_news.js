@@ -269,6 +269,7 @@ async function runFetch(telegramBot, userId, categoryKeys = null) {
       finalMessage += `\n🔹 <b>【${currentCat}】</b>\n`;
     }
     const title2 = translatedMap[i] || data.title;
+    data.title = title2; // Save translated title to cache
     if (data.link) {
       finalMessage += `<b>[${i}]</b> <a href="${escapeHTML(data.link)}">${escapeHTML(title2)}</a>\n\n`;
     } else {
