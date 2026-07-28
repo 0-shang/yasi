@@ -692,8 +692,41 @@ bot.on('text', async (ctx) => {
       const cache = JSON.parse(fs.readFileSync(cacheFile, 'utf-8'));
       if (cache[num]) {
         const item = cache[num];
-        await ctx.reply(`🔄 正在提取早报内容 [${num}] 并生成推文...`);
         const feedText = `Title: ${item.title}\nLink: ${item.link}\nSnippet: ${item.snippet}`;
+        
+        if (isWeChatMode.get(myUserId)) {
+          const loadingMsg = await ctx.reply(`🔄 [公众号模式] 正在提取早报内容 [${num}] 并撰写微信公众号文章，请稍候...`);
+          try {
+            const article = await generateWeChatArticle(feedText);
+            const newMsgId = Date.now();
+            pendingWechatDrafts.set(newMsgId, article);
+            
+            let previewContent = article.content.replace(/<[^>]*>?/gm, '');
+            if (previewContent.length > 2500) previewContent = previewContent.substring(0, 2500) + '...\n\n(内容过长已截断)';
+            
+            await ctx.telegram.editMessageText(
+              ctx.chat.id,
+              loadingMsg.message_id,
+              undefined,
+              `✅ <b>公众号文章已生成！</b>\n\n<b>标题：</b>${article.title}\n\n<b>正文预览：</b>\n${previewContent}\n\n您想现在推送到草稿箱吗？(推送前请发送一张照片作为封面)`,
+              {
+                parse_mode: 'HTML',
+                reply_markup: {
+                  inline_keyboard: [
+                    [Markup.button.callback('🚀 准备推送到草稿箱', `push_wechat_${newMsgId}`)],
+                    [Markup.button.callback('❌ 取消', `cancel_wechat_${newMsgId}`)]
+                  ]
+                }
+              }
+            );
+          } catch (e) {
+            console.error(e);
+            await ctx.telegram.editMessageText(ctx.chat.id, loadingMsg.message_id, undefined, `❌ 生成公众号文章失败: ${e.message}`);
+          }
+          return;
+        }
+
+        await ctx.reply(`🔄 正在提取早报内容 [${num}] 并生成推文...`);
         try {
           const aiResults = await generateTweetsFromContent(feedText, item.category);
           for (let i = 0; i < aiResults.length; i++) {
@@ -758,15 +791,23 @@ bot.on('text', async (ctx) => {
       
       pendingWechatDrafts.set(newMsgId, article);
       
+      let previewContent = article.content.replace(/<[^>]*>?/gm, '');
+      if (previewContent.length > 2500) previewContent = previewContent.substring(0, 2500) + '...\n\n(内容过长已截断)';
+      
       await ctx.telegram.editMessageText(
         ctx.chat.id,
         loadingMsg.message_id,
         undefined,
-        `✅ 公众号文章已生成！\n\n标题：${article.title}\n正文长度：${article.content.length}字\n（配图已就绪）\n\n您想现在推送到草稿箱吗？(推送前请发送一张照片作为封面)`,
-        Markup.inlineKeyboard([
-          [Markup.button.callback('🚀 准备推送到草稿箱', `push_wechat_${newMsgId}`)],
-          [Markup.button.callback('❌ 取消', `cancel_wechat_${newMsgId}`)]
-        ])
+        `✅ <b>公众号文章已生成！</b>\n\n<b>标题：</b>${article.title}\n\n<b>正文预览：</b>\n${previewContent}\n\n您想现在推送到草稿箱吗？(推送前请发送一张照片作为封面)`,
+        {
+          parse_mode: 'HTML',
+          reply_markup: {
+            inline_keyboard: [
+              [Markup.button.callback('🚀 准备推送到草稿箱', `push_wechat_${newMsgId}`)],
+              [Markup.button.callback('❌ 取消', `cancel_wechat_${newMsgId}`)]
+            ]
+          }
+        }
       );
     } catch (e) {
       console.error(e);
