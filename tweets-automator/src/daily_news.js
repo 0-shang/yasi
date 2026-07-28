@@ -106,14 +106,17 @@ const defaultRssSources = {
     ]
   },
   "推文 (Tweets)": {
-    limit: 20,
+    limit: 30,
     shuffle: true,
     sources: [
       { url: "https://rsshub.rssforever.com/weibo/search/hot", quota: 10, ignoreSeen: true, label: "微博热搜" },
-      { url: "https://rsshub.rssforever.com/zhihu/hotlist", quota: 10, ignoreSeen: true, label: "知乎热榜" },
-      { url: "https://rsshub.rssforever.com/v2ex/topics/hot", quota: 10, ignoreSeen: true, label: "V2EX热门" },
-      { url: "https://rsshub.rssforever.com/tieba/forum/tieba", quota: 10, ignoreSeen: true, label: "贴吧热议" },
-      { url: "https://rsshub.rssforever.com/douban/group/explore", quota: 10, ignoreSeen: true, label: "豆瓣讨论" }
+      { url: "https://rsshub.rssforever.com/tieba/forum/%E5%BC%B1%E6%99%BA%E5%90%A7", quota: 10, ignoreSeen: true, label: "贴吧(弱智吧段子)" },
+      { url: "https://rsshub.rssforever.com/bilibili/popular/all", quota: 10, ignoreSeen: true, label: "B站全站热门" },
+      { url: "https://rsshub.rssforever.com/douban/group/explore", quota: 10, ignoreSeen: true, label: "豆瓣讨论精选" },
+      { url: "https://rsshub.rssforever.com/chouti/hot", quota: 10, ignoreSeen: true, label: "抽屉新热榜" },
+      { url: "https://rsshub.rssforever.com/huxiu/article", quota: 10, ignoreSeen: true, label: "虎嗅(深度热点)" },
+      { url: "https://rsshub.rssforever.com/sspai/matrix", quota: 10, ignoreSeen: true, label: "少数派(数字生活)" },
+      { url: "https://rsshub.rssforever.com/guokr/scientific", quota: 10, ignoreSeen: true, label: "果壳科学(冷知识)" }
     ]
   }
 };
