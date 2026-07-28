@@ -26,6 +26,9 @@ const TWITTER_API_SECRET = process.env.TWITTER_API_SECRET;
 const TWITTER_ACCESS_TOKEN = process.env.TWITTER_ACCESS_TOKEN;
 const TWITTER_ACCESS_SECRET = process.env.TWITTER_ACCESS_SECRET;
 
+const WECHAT_APP_ID = process.env.WECHAT_APP_ID;
+const WECHAT_APP_SECRET = process.env.WECHAT_APP_SECRET;
+
 const RSS_FEED_URL = process.env.RSS_FEED_URL || 'https://news.ycombinator.com/rss';
 
 // Resolve workspaces and tweets directories
@@ -76,6 +79,10 @@ module.exports = {
     apiSecret: TWITTER_API_SECRET,
     accessToken: TWITTER_ACCESS_TOKEN,
     accessSecret: TWITTER_ACCESS_SECRET
+  },
+  WECHAT: {
+    appId: WECHAT_APP_ID,
+    appSecret: WECHAT_APP_SECRET
   },
   paths: {
     workspace: workspacePath,

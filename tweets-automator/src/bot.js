@@ -6,12 +6,14 @@ const path = require('path');
 const matter = require('gray-matter');
 const config = require('./config');
 const { postTweetOrThread } = require('./twitter');
-const { generateTweetsFromContent, generateHotTweetsFromRSS, chatWithAI, simpleChatWithAI } = require('./ai');
+const { generateTweetsFromContent, generateHotTweetsFromRSS, chatWithAI, simpleChatWithAI, generateWeChatArticle } = require('./ai');
 const Parser = require('rss-parser');
 const parser = new Parser();
 const cron = require('node-cron');
 const cheerio = require('cheerio');
 const { runFetch, categoryKeyMap } = require('./daily_news');
+const wechat = require('./wechat');
+const { marked } = require('marked');
 
 // Setup environment and paths
 config.ensureDirs();
@@ -44,6 +46,9 @@ const editingState = new Map();
 const chatMemory = new Map();
 // In-memory store for chat mode toggle
 const isChatMode = new Map();
+// In-memory store for WeChat mode toggle
+const isWeChatMode = new Map();
+const pendingWechatDrafts = new Map();
 
 // Helper: Fetch URL content
 async function enrichTextWithUrls(text) {
@@ -245,6 +250,19 @@ bot.command('chat', (ctx) => {
     ctx.reply("🤖 已切换到【闲聊模式】。在这个模式下，我会像一个普通的智能体助手一样与你对话，不会自动帮你生成推文。再次发送 /chat 可以切回推文模式。");
   } else {
     ctx.reply("🐦 已切换回【推文生成模式】。你发送给我的任何想法都会被提炼为推文草稿。");
+  }
+});
+
+bot.command('mp', (ctx) => {
+  if (ctx.from.id !== myUserId) return;
+  const current = isWeChatMode.get(myUserId) || false;
+  isWeChatMode.set(myUserId, !current);
+  if (!current) {
+    ctx.reply("📝 已切换到【微信公众号模式】。你发送给我的任何主题，我都会自动为您撰写一篇图文并茂的公众号长文。再次发送 /mp 可以切回推文模式。");
+    // Ensure chat mode is off
+    isChatMode.set(myUserId, false);
+  } else {
+    ctx.reply("🐦 已切换回【推文生成模式】。");
   }
 });
 
@@ -730,6 +748,31 @@ bot.on('text', async (ctx) => {
   // Keep last 10 turns (20 messages max if we include assistant)
   if (history.length > 20) history = history.slice(-20);
   
+  if (isWeChatMode.get(myUserId)) {
+    const loadingMsg = await ctx.reply('🔄 正在构思并撰写微信公众号文章，请稍候（通常需要1-2分钟）...');
+    try {
+      const article = await generateWeChatArticle(enrichedText);
+      const newMsgId = Date.now();
+      
+      pendingWechatDrafts.set(newMsgId, article);
+      
+      await ctx.telegram.editMessageText(
+        ctx.chat.id,
+        loadingMsg.message_id,
+        undefined,
+        `✅ 公众号文章已生成！\n\n标题：${article.title}\n正文长度：${article.content.length}字\n（配图已就绪）\n\n您想现在推送到草稿箱吗？(推送前请发送一张照片作为封面)`,
+        Markup.inlineKeyboard([
+          [Markup.button.callback('🚀 准备推送到草稿箱', `push_wechat_${newMsgId}`)],
+          [Markup.button.callback('❌ 取消', `cancel_wechat_${newMsgId}`)]
+        ])
+      );
+    } catch (e) {
+      console.error(e);
+      await ctx.telegram.editMessageText(ctx.chat.id, loadingMsg.message_id, undefined, `❌ 生成公众号文章失败: ${e.message}`);
+    }
+    return;
+  }
+  
   if (isChatMode.get(myUserId)) {
     try {
       const replyText = await simpleChatWithAI(history);
@@ -956,12 +999,133 @@ bot.action(/cancel_(.+)/, async (ctx) => {
   await ctx.deleteMessage();
 });
 
+// ---------- WeChat Handlers ---------- //
+
+bot.action(/cancel_wechat_(.+)/, async (ctx) => {
+  if (ctx.from.id !== myUserId) return;
+  const msgId = parseInt(ctx.match[1], 10);
+  pendingWechatDrafts.delete(msgId);
+  await ctx.answerCbQuery('Cancelled');
+  await ctx.deleteMessage();
+});
+
+bot.action(/push_wechat_(.+)/, async (ctx) => {
+  if (ctx.from.id !== myUserId) return;
+  const msgId = parseInt(ctx.match[1], 10);
+  const article = pendingWechatDrafts.get(msgId);
+
+  if (!article) {
+    return ctx.answerCbQuery('文章内容已过期或不存在。');
+  }
+
+  await ctx.answerCbQuery();
+  const loadingMsg = await ctx.reply('🔄 正在处理文章内部的配图，并转换为微信格式...');
+
+  try {
+    let mdContent = article.content;
+    
+    // Find markdown images ![alt](url)
+    const imgRegex = /!\[([^\]]*)\]\((https?:\/\/[^\s]+)\)/g;
+    let match;
+    const replacements = [];
+    
+    while ((match = imgRegex.exec(mdContent)) !== null) {
+      const fullMatch = match[0];
+      const altText = match[1];
+      const imgUrl = match[2];
+      
+      try {
+        console.log('Downloading image:', imgUrl);
+        const imgRes = await fetch(imgUrl);
+        const buffer = await imgRes.buffer();
+        const wechatUrl = await wechat.uploadArticleImage(buffer, 'image.jpg');
+        replacements.push({ old: fullMatch, new: `![${altText}](${wechatUrl})` });
+      } catch (err) {
+        console.error('Failed to process image:', imgUrl, err);
+      }
+    }
+    
+    for (const rep of replacements) {
+      mdContent = mdContent.replace(rep.old, rep.new);
+    }
+    
+    // Convert to HTML
+    article.htmlContent = marked.parse(mdContent);
+    
+    // Save state and ask for cover
+    editingState.set(myUserId, { type: 'wechat_cover', msgId });
+    await ctx.telegram.editMessageText(
+      ctx.chat.id,
+      loadingMsg.message_id,
+      undefined,
+      '✅ 内部配图处理完成！\n\n🖼️ **请发送一张图片作为这篇文章的封面图。**\n(请直接发送图片文件)'
+    );
+
+  } catch (e) {
+    console.error(e);
+    await ctx.telegram.editMessageText(ctx.chat.id, loadingMsg.message_id, undefined, `❌ 处理图片时出错: ${e.message}`);
+  }
+});
+
+bot.on('photo', async (ctx) => {
+  if (ctx.from.id !== myUserId) return;
+
+  if (editingState.has(myUserId)) {
+    const state = editingState.get(myUserId);
+    if (state.type === 'wechat_cover') {
+      const article = pendingWechatDrafts.get(state.msgId);
+      if (!article) return ctx.reply('❌ 找不到对应的文章草稿。');
+
+      const loadingMsg = await ctx.reply('🔄 正在上传封面并推送到微信草稿箱...');
+      try {
+        // Get highest resolution photo
+        const photo = ctx.message.photo[ctx.message.photo.length - 1];
+        const fileId = photo.file_id;
+        const fileUrl = await ctx.telegram.getFileLink(fileId);
+        
+        const res = await fetch(fileUrl);
+        const buffer = await res.buffer();
+        
+        const mediaId = await wechat.uploadCoverImage(buffer, 'cover.jpg');
+        article.thumb_media_id = mediaId;
+        
+        // Push to WeChat
+        const draftMediaId = await wechat.addDraft({
+          title: article.title,
+          content: article.htmlContent,
+          thumb_media_id: article.thumb_media_id,
+          author: 'Bot'
+        });
+        
+        pendingWechatDrafts.delete(state.msgId);
+        editingState.delete(myUserId);
+        
+        await ctx.telegram.editMessageText(
+          ctx.chat.id,
+          loadingMsg.message_id,
+          undefined,
+          `✅ 成功推送到微信草稿箱！\n\n草稿 Media ID: \`${draftMediaId}\`\n\n现在您可以去公众号后台查看并群发了。`,
+          { parse_mode: 'Markdown' }
+        );
+      } catch (e) {
+        console.error(e);
+        await ctx.telegram.editMessageText(ctx.chat.id, loadingMsg.message_id, undefined, `❌ 推送失败: ${e.message}`);
+      }
+      return;
+    }
+  }
+});
+
+// ---------- End WeChat Handlers ---------- //
+
+
 bot.telegram.setMyCommands([
   { command: 'daily',   description: '📰 抓取最新全矩阵早报' },
   { command: 'refetch', description: '🔄 重新抓取（全部或单板块）' },
   { command: 'news',    description: '📋 一键唤出上次早报缓存' },
   { command: 'check',   description: '🚀 检查并发布草稿队列推文' },
   { command: 'chat',    description: '💬 切换纯聊天模式/推文模式' },
+  { command: 'mp',      description: '📝 切换微信公众号撰写模式' },
   { command: 'start',   description: '🏠 回到主菜单' }
 ]).then(() => {
   console.log('✅ Bot commands menu set!');

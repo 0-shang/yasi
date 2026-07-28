@@ -93,6 +93,22 @@ Formatting (strict):
 Write one high-virality tweet (or short Thread) based on the following material:
 `;
 
+const wechatArticlePrompt = `
+你是一位资深的微信公众号爆款文章写手。
+请根据我提供的主题/素材，写一篇深度、有趣、排版清晰的微信公众号长文。
+
+【核心要求】
+1. **吸睛标题**：给出一个非常吸引人点击的公众号标题。
+2. **引人入胜的开头**：抛出痛点、引起共鸣，或者用一个故事切入。
+3. **结构清晰**：主体部分必须分段落，使用小标题。
+4. **配图占位**：为了让文章更生动，你必须在文章中穿插 3-5 张相关的配图。
+   插入配图的格式必须为 Markdown 图片，并且图片链接使用以下固定格式：
+   \`![描述](https://image.pollinations.ai/prompt/<用下划线分隔的英文图像提示词>?width=800&height=400&nologo=true)\`
+   例如：\`![夕阳下的城市](https://image.pollinations.ai/prompt/cyberpunk_city_sunset_beautiful_lighting?width=800&height=400&nologo=true)\`
+   注意：提示词必须是英文，用下划线替代空格，描述你想要的画面。
+5. **结尾互动**：总结升华，并留下一个互动问题，引导读者留言。
+`;
+
 
 
 /**
@@ -233,6 +249,66 @@ async function generateTweetsFromContent(content, category) {
     return generateWithDeepSeek(content, isSociety);
   } else {
     return generateWithGemini(content, isSociety);
+  }
+}
+
+/**
+ * Generate WeChat Article
+ */
+async function generateWeChatArticle(topic) {
+  const prompt = `
+${wechatArticlePrompt}
+
+主题/素材：
+"""
+${topic}
+"""
+
+Output Format:
+You MUST output a valid JSON object. Do not write any explanations.
+The object must have exactly these keys:
+- "title": The article title.
+- "content": The article body in Markdown format (including the image links).
+`;
+
+  if (config.AI_PROVIDER === 'deepseek') {
+    const response = await fetch('https://api.deepseek.com/chat/completions', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${config.DEEPSEEK_API_KEY}`
+      },
+      body: JSON.stringify({
+        model: config.DEEPSEEK_MODEL,
+        messages: [
+          { role: 'system', content: 'You are an expert copywriter. Output JSON only.' },
+          { role: 'user', content: prompt }
+        ],
+        response_format: { type: 'json_object' }
+      })
+    });
+    const result = await response.json();
+    let text = result.choices[0].message.content.trim();
+    if (text.startsWith('\`\`\`')) text = text.replace(/^\`\`\`json\s*/i, '').replace(/\`\`\`$/, '').trim();
+    return JSON.parse(text);
+  } else {
+    const ai = getGeminiClient();
+    const response = await ai.models.generateContent({
+      model: config.GEMINI_MODEL,
+      contents: prompt,
+      config: {
+        responseMimeType: 'application/json',
+        responseSchema: {
+          type: 'object',
+          properties: {
+            title: { type: 'string' },
+            content: { type: 'string' }
+          },
+          required: ['title', 'content']
+        }
+      }
+    });
+    return JSON.parse(response.text);
   }
 }
 
@@ -546,5 +622,6 @@ module.exports = {
   generateHotTweetsFromRSS,
   chatWithAI,
   simpleChatWithAI,
-  translateToChinese
+  translateToChinese,
+  generateWeChatArticle
 };
