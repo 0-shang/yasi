@@ -1037,7 +1037,8 @@ bot.action(/push_wechat_(.+)/, async (ctx) => {
       try {
         console.log('Downloading image:', imgUrl);
         const imgRes = await fetch(imgUrl);
-        const buffer = await imgRes.buffer();
+        const arrayBuffer = await imgRes.arrayBuffer();
+        const buffer = Buffer.from(arrayBuffer);
         const wechatUrl = await wechat.uploadArticleImage(buffer, 'image.jpg');
         replacements.push({ old: fullMatch, new: `![${altText}](${wechatUrl})` });
       } catch (err) {
@@ -1084,7 +1085,8 @@ bot.on('photo', async (ctx) => {
         const fileUrl = await ctx.telegram.getFileLink(fileId);
         
         const res = await fetch(fileUrl);
-        const buffer = await res.buffer();
+        const arrayBuffer = await res.arrayBuffer();
+        const buffer = Buffer.from(arrayBuffer);
         
         const mediaId = await wechat.uploadCoverImage(buffer, 'cover.jpg');
         article.thumb_media_id = mediaId;
