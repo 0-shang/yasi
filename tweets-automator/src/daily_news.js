@@ -104,6 +104,17 @@ const defaultRssSources = {
       { url: "https://moretothat.com/feed/",                  ignoreSeen: true, label: "More To That (存在主义思考/人生意义)" },
       { url: "https://www.nateliason.com/feed",               ignoreSeen: true, label: "Nat Eliason (阅读/思考/生活方式设计)" }
     ]
+  },
+  "推文 (Tweets)": {
+    limit: 20,
+    shuffle: true,
+    sources: [
+      { url: "https://rsshub.rssforever.com/weibo/search/hot", quota: 5, label: "微博热搜" },
+      { url: "https://rsshub.rssforever.com/zhihu/hotlist", quota: 5, label: "知乎热榜" },
+      { url: "https://rsshub.rssforever.com/v2ex/topics/hot", quota: 5, label: "V2EX热门" },
+      { url: "https://rsshub.rssforever.com/tieba/forum/tieba", quota: 5, label: "贴吧热议" },
+      { url: "https://rsshub.rssforever.com/douban/group/explore", quota: 5, label: "豆瓣讨论" }
+    ]
   }
 };
 
@@ -114,6 +125,7 @@ const categoryKeyMap = {
   finance: "理财投资 (Finance & Investment)",
   society: "社会民生 (Society & Life)",
   trending:"热门信息 (Trending Info)",
+  tweets:  "推文 (Tweets)"
 };
 
 // ============================================================
@@ -302,6 +314,7 @@ async function runFetch(telegramBot, userId, categoryKeys = null) {
     '💬 对以上内容不满意？选择重新抓取：',
     Markup.inlineKeyboard([
       [Markup.button.callback('🔄 重新抓取全部',     'refetch_all')],
+      [Markup.button.callback('🐦 仅重抓 推文',     'refetch_tweets')],
       [Markup.button.callback('🛠️ 仅重抓 实用工具', 'refetch_tools')],
       [Markup.button.callback('🤖 仅重抓 科技AI',   'refetch_tech')],
       [Markup.button.callback('💰 仅重抓 理财投资', 'refetch_finance')],

@@ -339,6 +339,7 @@ bot.command('refetch', async (ctx) => {
     '🔄 请选择重新抓取的范围：',
     Markup.inlineKeyboard([
       [Markup.button.callback('🔄 重新抓取全部',     'refetch_all')],
+      [Markup.button.callback('🐦 仅重抓 推文',     'refetch_tweets')],
       [Markup.button.callback('🛠️ 仅重抓 实用工具', 'refetch_tools')],
       [Markup.button.callback('🤖 仅重抓 科技AI',   'refetch_tech')],
       [Markup.button.callback('💰 仅重抓 理财投资', 'refetch_finance')],
@@ -381,6 +382,7 @@ bot.action('refetch_tech',    (ctx) => handleRefetchCategory(ctx, 'tech'));
 bot.action('refetch_finance', (ctx) => handleRefetchCategory(ctx, 'finance'));
 bot.action('refetch_society', (ctx) => handleRefetchCategory(ctx, 'society'));
 bot.action('refetch_trending', (ctx) => handleRefetchCategory(ctx, 'trending'));
+bot.action('refetch_tweets',  (ctx) => handleRefetchCategory(ctx, 'tweets'));
 
 bot.command('rss', async (ctx) => {
   if (ctx.from.id !== myUserId) return;
