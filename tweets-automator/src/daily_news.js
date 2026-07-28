@@ -109,11 +109,11 @@ const defaultRssSources = {
     limit: 20,
     shuffle: true,
     sources: [
-      { url: "https://rsshub.rssforever.com/weibo/search/hot", quota: 5, label: "微博热搜" },
-      { url: "https://rsshub.rssforever.com/zhihu/hotlist", quota: 5, label: "知乎热榜" },
-      { url: "https://rsshub.rssforever.com/v2ex/topics/hot", quota: 5, label: "V2EX热门" },
-      { url: "https://rsshub.rssforever.com/tieba/forum/tieba", quota: 5, label: "贴吧热议" },
-      { url: "https://rsshub.rssforever.com/douban/group/explore", quota: 5, label: "豆瓣讨论" }
+      { url: "https://rsshub.rssforever.com/weibo/search/hot", quota: 10, ignoreSeen: true, label: "微博热搜" },
+      { url: "https://rsshub.rssforever.com/zhihu/hotlist", quota: 10, ignoreSeen: true, label: "知乎热榜" },
+      { url: "https://rsshub.rssforever.com/v2ex/topics/hot", quota: 10, ignoreSeen: true, label: "V2EX热门" },
+      { url: "https://rsshub.rssforever.com/tieba/forum/tieba", quota: 10, ignoreSeen: true, label: "贴吧热议" },
+      { url: "https://rsshub.rssforever.com/douban/group/explore", quota: 10, ignoreSeen: true, label: "豆瓣讨论" }
     ]
   }
 };
