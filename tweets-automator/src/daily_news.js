@@ -72,11 +72,11 @@ const defaultRssSources = {
     limit: 10,
     sources: [
       // ── V2EX 热门主题: 程序员/互联网人的真实生活、职场、情感、搞钱吐槽，极具话题性 ──
-      { url: "https://rsshub.rssforever.com/v2ex/topics/hot",           quota: 4, label: "V2EX 热门讨论" },
+      { url: "https://rsshub.rssforever.com/v2ex/topics/hot",           quota: 10, label: "V2EX 热门讨论" },
       // ── 虎扑步行街: 极度接地气的两性、生活、社会毒打真实案例 ──
-      { url: "https://rsshub.rssforever.com/hupu/bbs/bxj",              quota: 3, label: "虎扑步行街" },
+      { url: "https://rsshub.rssforever.com/hupu/bbs/bxj",              quota: 10, label: "虎扑步行街" },
       // ── 知乎热榜: 经典的高质量/反常识问答聚集地 ──
-      { url: "https://rsshub.rssforever.com/zhihu/hot",                 quota: 3, label: "知乎热榜" }
+      { url: "https://rsshub.rssforever.com/zhihu/hot",                 quota: 10, label: "知乎热榜" }
     ]
   },
   "热门信息 (Trending Info)": {
@@ -111,12 +111,9 @@ const defaultRssSources = {
     sources: [
       { url: "https://rsshub.rssforever.com/weibo/search/hot", quota: 10, label: "微博热搜" },
       { url: "https://rsshub.rssforever.com/tieba/forum/%E5%BC%B1%E6%99%BA%E5%90%A7", quota: 10, label: "贴吧(弱智吧段子)" },
-      { url: "https://rsshub.rssforever.com/douban/group/explore", quota: 10, label: "豆瓣讨论精选" },
-      { url: "https://rsshub.rssforever.com/chouti/hot", quota: 10, label: "抽屉新热榜" },
-      { url: "https://rsshub.rssforever.com/huxiu/article", quota: 10, label: "虎嗅(深度热点)" },
-      { url: "https://rsshub.rssforever.com/guokr/scientific", quota: 10, label: "果壳科学(冷知识)" },
-      { url: "https://rsshub.rssforever.com/readhub/category/topic", quota: 10, label: "Readhub热门话题" },
-      { url: "https://rsshub.rssforever.com/36kr/newsflashes", quota: 10, label: "36氪快讯" }
+      { url: "https://rsshub.rssforever.com/reddit/subreddit/Showerthoughts/hot", quota: 10, label: "Reddit (洗澡奇思妙想)" },
+      { url: "https://rsshub.rssforever.com/reddit/subreddit/LifeProTips/hot", quota: 10, label: "Reddit (生活小技巧)" },
+      { url: "https://rsshub.rssforever.com/juejin/pins/recommended", quota: 10, label: "掘金沸点 (程序员日常吐槽)" }
     ]
   }
 };
@@ -135,7 +132,7 @@ const categoryKeyMap = {
 // 抓取单个分类，自动补位，过滤已推送内容
 // ============================================================
 async function fetchCategoryItems(sources, limit, seenLinks, shuffle = false) {
-  let allItems = [];
+  let sourceResults = [];
   let skipped = 0;
   const uniqueLinks = new Set(); // 用于当次抓取去重（比如多个备用源）
 
@@ -172,7 +169,7 @@ async function fetchCategoryItems(sources, limit, seenLinks, shuffle = false) {
       skipped += before - items.length;
 
       console.log(`  ✅ [${items.length}] ${source.label}`);
-      allItems.push(...items);
+      sourceResults.push(items);
     } catch (e) {
       console.error(`  ⚠️ FAILED [${source.label}]: ${e.message}`);
     }
@@ -180,19 +177,33 @@ async function fetchCategoryItems(sources, limit, seenLinks, shuffle = false) {
 
   if (skipped > 0) console.log(`  🔁 共跳过/去重: ${skipped} 条`);
   
-  if (shuffle) {
-    // 随机打乱数组（Fisher-Yates 洗牌算法），保证每次看到的都不一样
-    for (let i = allItems.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [allItems[i], allItems[j]] = [allItems[j], allItems[i]];
+  // 交叉获取每个源的数据，实现平均抓取
+  let interleaved = [];
+  let maxLen = Math.max(0, ...sourceResults.map(arr => arr.length));
+  
+  for (let i = 0; i < maxLen; i++) {
+    for (const arr of sourceResults) {
+      if (i < arr.length) {
+        interleaved.push(arr[i]);
+      }
     }
-  } else {
-    // 所有源的数据汇总后，按时间最新倒序排
-    allItems.sort((a, b) => b._parsedDate - a._parsedDate);
   }
   
-  // 返回前 limit 条，保证凑够数量
-  return allItems.slice(0, limit);
+  // 先截取前 limit 条，确保是从各个源平均分配的
+  let finalItems = interleaved.slice(0, limit);
+
+  if (shuffle) {
+    // 随机打乱数组（Fisher-Yates 洗牌算法），保证每次看到的顺序不同
+    for (let i = finalItems.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [finalItems[i], finalItems[j]] = [finalItems[j], finalItems[i]];
+    }
+  } else {
+    // 如果不打乱，就按时间最新倒序排
+    finalItems.sort((a, b) => b._parsedDate - a._parsedDate);
+  }
+  
+  return finalItems;
 }
 
 function escapeHTML(str) {
