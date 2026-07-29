@@ -1102,7 +1102,7 @@ bot.action(/push_wechat_(.+)/, async (ctx) => {
   }
 
   await ctx.answerCbQuery();
-  const loadingMsg = await ctx.reply('🔄 正在处理文章内部的配图，并转换为微信格式...');
+  const loadingMsg = await ctx.reply('🔄 正在自动提取首图作为封面，并推送到微信草稿箱...');
 
   try {
     let mdContent = article.content;
@@ -1111,6 +1111,7 @@ bot.action(/push_wechat_(.+)/, async (ctx) => {
     const imgRegex = /!\[([^\]]*)\]\((https?:\/\/[^\s]+)\)/g;
     let match;
     const replacements = [];
+    let coverBuffer = null;
     
     while ((match = imgRegex.exec(mdContent)) !== null) {
       const fullMatch = match[0];
@@ -1122,6 +1123,11 @@ bot.action(/push_wechat_(.+)/, async (ctx) => {
         const imgRes = await fetch(imgUrl);
         const arrayBuffer = await imgRes.arrayBuffer();
         const buffer = Buffer.from(arrayBuffer);
+        
+        if (!coverBuffer) {
+           coverBuffer = buffer;
+        }
+
         const wechatUrl = await wechat.uploadArticleImage(buffer, 'image.jpg');
         replacements.push({ old: fullMatch, new: `![${altText}](${wechatUrl})` });
       } catch (err) {
@@ -1136,68 +1142,35 @@ bot.action(/push_wechat_(.+)/, async (ctx) => {
     // Convert to HTML
     article.htmlContent = marked.parse(mdContent);
     
-    // Save state and ask for cover
-    editingState.set(myUserId, { type: 'wechat_cover', msgId });
+    if (!coverBuffer) {
+      const fallbackRes = await fetch(`https://image.pollinations.ai/prompt/abstract_finance_technology_background?width=900&height=500&nologo=true&model=flux`);
+      coverBuffer = Buffer.from(await fallbackRes.arrayBuffer());
+    }
+
+    const thumbMediaId = await wechat.uploadCoverImage(coverBuffer, 'cover.jpg');
+    article.thumb_media_id = thumbMediaId;
+
+    const draftMediaId = await wechat.addDraft({
+      title: article.title,
+      content: article.htmlContent,
+      thumb_media_id: article.thumb_media_id,
+      author: 'Bot',
+      digest: article.content.replace(/<[^>]+>/g, '').substring(0, 100)
+    });
+
+    pendingWechatDrafts.delete(msgId);
+
     await ctx.telegram.editMessageText(
       ctx.chat.id,
       loadingMsg.message_id,
       undefined,
-      '✅ 内部配图处理完成！\n\n🖼️ **请发送一张图片作为这篇文章的封面图。**\n(请直接发送图片文件)'
+      `✅ 成功推送到微信草稿箱！\n\n草稿 Media ID: \`${draftMediaId}\`\n\n您现在可以去公众号后台查看并群发了。`,
+      { parse_mode: 'Markdown' }
     );
 
   } catch (e) {
     console.error(e);
-    await ctx.telegram.editMessageText(ctx.chat.id, loadingMsg.message_id, undefined, `❌ 处理图片时出错: ${e.message}`);
-  }
-});
-
-bot.on('photo', async (ctx) => {
-  if (ctx.from.id !== myUserId) return;
-
-  if (editingState.has(myUserId)) {
-    const state = editingState.get(myUserId);
-    if (state.type === 'wechat_cover') {
-      const article = pendingWechatDrafts.get(state.msgId);
-      if (!article) return ctx.reply('❌ 找不到对应的文章草稿。');
-
-      const loadingMsg = await ctx.reply('🔄 正在上传封面并推送到微信草稿箱...');
-      try {
-        // Get highest resolution photo
-        const photo = ctx.message.photo[ctx.message.photo.length - 1];
-        const fileId = photo.file_id;
-        const fileUrl = await ctx.telegram.getFileLink(fileId);
-        
-        const res = await fetch(fileUrl);
-        const arrayBuffer = await res.arrayBuffer();
-        const buffer = Buffer.from(arrayBuffer);
-        
-        const mediaId = await wechat.uploadCoverImage(buffer, 'cover.jpg');
-        article.thumb_media_id = mediaId;
-        
-        // Push to WeChat
-        const draftMediaId = await wechat.addDraft({
-          title: article.title,
-          content: article.htmlContent,
-          thumb_media_id: article.thumb_media_id,
-          author: 'Bot'
-        });
-        
-        pendingWechatDrafts.delete(state.msgId);
-        editingState.delete(myUserId);
-        
-        await ctx.telegram.editMessageText(
-          ctx.chat.id,
-          loadingMsg.message_id,
-          undefined,
-          `✅ 成功推送到微信草稿箱！\n\n草稿 Media ID: \`${draftMediaId}\`\n\n现在您可以去公众号后台查看并群发了。`,
-          { parse_mode: 'Markdown' }
-        );
-      } catch (e) {
-        console.error(e);
-        await ctx.telegram.editMessageText(ctx.chat.id, loadingMsg.message_id, undefined, `❌ 推送失败: ${e.message}`);
-      }
-      return;
-    }
+    await ctx.telegram.editMessageText(ctx.chat.id, loadingMsg.message_id, undefined, `❌ 推送失败: ${e.message}`);
   }
 });
 
