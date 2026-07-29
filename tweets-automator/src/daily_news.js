@@ -79,30 +79,35 @@ const defaultRssSources = {
       { url: "https://rsshub.rssforever.com/zhihu/hot",                 quota: 10, label: "知乎热榜" }
     ]
   },
-  "热门信息 (Trending Info)": {
+  "个人成长 (Personal Growth)": {
     limit: 10,
     shuffle: true,
     sources: [
-      { url: "https://markmanson.net/feed",                   ignoreSeen: true, label: "Mark Manson (犀利的生活哲学)" },
-      { url: "https://jamesclear.com/feed",                   ignoreSeen: true, label: "James Clear (原子习惯/微小进步)" },
-      { url: "https://fs.blog/feed/",                         ignoreSeen: true, label: "Farnam Street (顶级思维模型/决策逻辑)" },
-      { url: "https://waitbutwhy.com/feed",                   ignoreSeen: true, label: "Wait But Why (深度长文/底层逻辑)" },
-      { url: "https://zenhabits.net/feed/",                   ignoreSeen: true, label: "Zen Habits (极简主义/反焦虑)" },
-      { url: "https://ryanholiday.net/feed/",                 ignoreSeen: true, label: "Ryan Holiday (斯多葛学派/韧性心法)" },
-      { url: "https://seths.blog/feed/",                      ignoreSeen: true, label: "Seth Godin (极简思维/破局)" },
-      { url: "https://nav.al/feed",                           ignoreSeen: true, label: "Naval Ravikant (财富与幸福的底层逻辑)" },
-      { url: "https://sive.rs/en.atom",                       ignoreSeen: true, label: "Derek Sivers (反直觉的特立独行哲学)" },
-      { url: "https://www.scotthyoung.com/blog/feed/",        ignoreSeen: true, label: "Scott H. Young (超级学习法/深度成长)" },
-      { url: "https://calnewport.com/feed/",                  ignoreSeen: true, label: "Cal Newport (深度工作/数字极简主义)" },
-      { url: "https://www.raptitude.com/feed/",               ignoreSeen: true, label: "Raptitude (成为更好的人类/正念)" },
-      { url: "https://austinkleon.com/feed/",                 ignoreSeen: true, label: "Austin Kleon (创造力心法/艺术人生)" },
-      { url: "https://dailystoic.com/feed/",                  ignoreSeen: true, label: "Daily Stoic (每日斯多葛/控制力与平静)" },
-      { url: "https://nesslabs.com/feed",                     ignoreSeen: true, label: "Ness Labs (正念生产力/神经科学认知)" },
-      { url: "https://www.bakadesuyo.com/feed/",              ignoreSeen: true, label: "Barking Up The Wrong Tree (科学视角的成功学)" },
-      { url: "https://theminimalists.com/feed/",              ignoreSeen: true, label: "The Minimalists (极简生活/追寻真实意义)" },
-      { url: "https://tinybuddha.com/feed/",                  ignoreSeen: true, label: "Tiny Buddha (复杂生活的简单智慧/治愈)" },
-      { url: "https://moretothat.com/feed/",                  ignoreSeen: true, label: "More To That (存在主义思考/人生意义)" },
-      { url: "https://www.nateliason.com/feed",               ignoreSeen: true, label: "Nat Eliason (阅读/思考/生活方式设计)" }
+      { url: "https://markmanson.net/feed",                   quota: 3, label: "Mark Manson (犀利的生活哲学)" },
+      { url: "https://jamesclear.com/feed",                   quota: 3, label: "James Clear (原子习惯/微小进步)" },
+      { url: "https://fs.blog/feed/",                         quota: 3, label: "Farnam Street (顶级思维模型/决策逻辑)" },
+      { url: "https://waitbutwhy.com/feed",                   quota: 3, label: "Wait But Why (深度长文/底层逻辑)" },
+      { url: "https://zenhabits.net/feed/",                   quota: 3, label: "Zen Habits (极简主义/反焦虑)" },
+      { url: "https://ryanholiday.net/feed/",                 quota: 3, label: "Ryan Holiday (斯多葛学派/韧性心法)" },
+      { url: "https://seths.blog/feed/",                      quota: 3, label: "Seth Godin (极简思维/破局)" },
+      { url: "https://nav.al/feed",                           quota: 3, label: "Naval Ravikant (财富与幸福的底层逻辑)" },
+      { url: "https://sive.rs/en.atom",                       quota: 3, label: "Derek Sivers (反直觉的特立独行哲学)" },
+      { url: "https://www.scotthyoung.com/blog/feed/",        quota: 3, label: "Scott H. Young (超级学习法/深度成长)" },
+      { url: "https://calnewport.com/feed/",                  quota: 3, label: "Cal Newport (深度工作/数字极简主义)" },
+      { url: "https://www.raptitude.com/feed/",               quota: 3, label: "Raptitude (成为更好的人类/正念)" },
+      { url: "https://austinkleon.com/feed/",                 quota: 3, label: "Austin Kleon (创造力心法/艺术人生)" },
+      { url: "https://dailystoic.com/feed/",                  quota: 3, label: "Daily Stoic (每日斯多葛/控制力与平静)" },
+      { url: "https://nesslabs.com/feed",                     quota: 3, label: "Ness Labs (正念生产力/神经科学认知)" },
+      { url: "https://www.bakadesuyo.com/feed/",              quota: 3, label: "Barking Up The Wrong Tree (科学视角的成功学)" },
+      { url: "https://theminimalists.com/feed/",              quota: 3, label: "The Minimalists (极简生活/追寻真实意义)" },
+      { url: "https://tinybuddha.com/feed/",                  quota: 3, label: "Tiny Buddha (复杂生活的简单智慧/治愈)" },
+      { url: "https://moretothat.com/feed/",                  quota: 3, label: "More To That (存在主义思考/人生意义)" },
+      { url: "https://www.nateliason.com/feed",               quota: 3, label: "Nat Eliason (阅读/思考/生活方式设计)" },
+      { url: "https://thomasjfrank.com/feed/",                quota: 3, label: "Thomas Frank (高效生产力/学习方法)" },
+      { url: "https://stevepavlina.com/feed/",                quota: 3, label: "Steve Pavlina (个人发展探索)" },
+      { url: "https://aliabdaal.com/feed/",                   quota: 3, label: "Ali Abdaal (生产力/生活方式设计)" },
+      { url: "https://chrisguillebeau.com/feed/",             quota: 3, label: "Chris Guillebeau (打破常规的艺术)" },
+      { url: "https://tim.blog/feed/",                        quota: 3, label: "Tim Ferriss (高绩效生活/效率解构)" }
     ]
   },
   "推文 (Tweets)": {
@@ -129,7 +134,7 @@ const categoryKeyMap = {
   tech:    "科技人工智能 (Tech & AI)",
   finance: "理财投资 (Finance & Investment)",
   society: "社会民生 (Society & Life)",
-  trending:"热门信息 (Trending Info)",
+  trending:"个人成长 (Personal Growth)",
   tweets:  "推文 (Tweets)"
 };
 
@@ -338,7 +343,7 @@ async function runFetch(telegramBot, userId, categoryKeys = null) {
       [Markup.button.callback('🤖 仅重抓 科技AI',   'refetch_tech')],
       [Markup.button.callback('💰 仅重抓 理财投资', 'refetch_finance')],
       [Markup.button.callback('🌍 仅重抓 社会民生', 'refetch_society')],
-      [Markup.button.callback('🔥 仅重抓 热门信息', 'refetch_trending')],
+      [Markup.button.callback('🌱 仅重抓 个人成长', 'refetch_trending')],
     ])
   );
 
