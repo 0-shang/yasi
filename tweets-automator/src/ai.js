@@ -112,9 +112,11 @@ const wechatArticlePrompt = `
 `;
 
 async function fetchPexelsImage(query) {
+  const fallbackUrl = `https://image.pollinations.ai/prompt/${encodeURIComponent('Cinematic photography of ' + query + ', hyper realistic, highly detailed')}?width=800&height=400&nologo=true&model=flux`;
+
   if (!config.PEXELS_API_KEY) {
-    console.log('No PEXELS_API_KEY found, using fallback loremflickr');
-    return `https://loremflickr.com/800/400/${encodeURIComponent(query)}`;
+    console.log('No PEXELS_API_KEY found, using fallback pollinations');
+    return fallbackUrl;
   }
   try {
     const res = await fetch(`https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}&per_page=15&orientation=landscape`, {
@@ -128,8 +130,9 @@ async function fetchPexelsImage(query) {
   } catch (e) {
     console.error('Pexels API error:', e);
   }
-  return `https://loremflickr.com/800/400/${encodeURIComponent(query)}`;
+  return fallbackUrl;
 }
+
 
 async function processImagePlaceholders(content) {
   const regex = /\[IMAGE_PLACEHOLDER:\s*(.+?)\]/g;
