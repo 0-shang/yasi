@@ -109,11 +109,11 @@ const defaultRssSources = {
     limit: 10,
     shuffle: true,
     sources: [
-      { url: "https://rsshub.rssforever.com/weibo/search/hot", quota: 10, label: "微博热搜" },
       { url: "https://rsshub.rssforever.com/tieba/forum/%E5%BC%B1%E6%99%BA%E5%90%A7", quota: 10, label: "贴吧(弱智吧段子)" },
-      { url: "https://rsshub.rssforever.com/reddit/subreddit/Showerthoughts/hot", quota: 10, label: "Reddit (洗澡奇思妙想)" },
-      { url: "https://rsshub.rssforever.com/reddit/subreddit/LifeProTips/hot", quota: 10, label: "Reddit (生活小技巧)" },
-      { url: "https://rsshub.rssforever.com/juejin/pins/recommended", quota: 10, label: "掘金沸点 (程序员日常吐槽)" }
+      { url: "https://rsshub.rssforever.com/douban/group/explore", quota: 10, label: "豆瓣讨论精选" },
+      { url: "https://rsshub.rssforever.com/chouti/hot", quota: 10, label: "抽屉新热榜" },
+      { url: "https://rsshub.rssforever.com/jike/topic/54dffb40e4b0f57466e675f0", quota: 10, label: "即刻(开发者日常)" },
+      { url: "https://rsshub.rssforever.com/jike/topic/553870e8e4b0eb9b2d69dc06", quota: 10, label: "即刻(即刻精选)" }
     ]
   }
 };
