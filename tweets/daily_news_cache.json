@@ -1,536 +1,332 @@
 {
   "1": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "pascalorg/editor",
-    "link": "https://github.com/pascalorg/editor",
-    "snippet": "Create and share 3D architectural projects.\nLanguage: TypeScript\nStars: 18358\nForks: 2506"
+    "title": "opengeos/GeoLibre",
+    "link": "https://github.com/opengeos/GeoLibre",
+    "snippet": "A lightweight, cloud-native GIS platform for visualizing, exploring, and analyzing geospatial data. It runs in the web browser, on the desktop, on mobile, and inside Jupyter notebooks.\nLanguage: TypeS..."
   },
   "2": {
-    "category": "实用工具资源 (Tools & Resources)",
-    "title": "jenkinsci/jenkins",
-    "link": "https://github.com/jenkinsci/jenkins",
-    "snippet": "Jenkins automation server\nLanguage: Java\nStars: 26002\nForks: 9683"
-  },
-  "3": {
     "category": "实用工具资源 (Tools & Resources)",
     "title": "moeru-ai/airi",
     "link": "https://github.com/moeru-ai/airi",
     "snippet": "💖🧸 Self hosted, you-owned Grok Companion, a container of souls of waifu, cyber livings to bring them into our worlds, wishing to achieve Neuro-sama's altitude. Capable of realtime voice chat, Minecr..."
   },
-  "4": {
-    "category": "实用工具资源 (Tools & Resources)",
-    "title": "andrewyng/aisuite",
-    "link": "https://github.com/andrewyng/aisuite",
-    "snippet": "Simple, unified interface to multiple Generative AI providers \nLanguage: Python\nStars: 15592\nForks: 1651"
-  },
-  "5": {
+  "3": {
     "category": "实用工具资源 (Tools & Resources)",
     "title": "affaan-m/ECC",
     "link": "https://github.com/affaan-m/ECC",
     "snippet": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.\nLanguage: JavaScript\nStars: ..."
   },
-  "6": {
+  "4": {
     "category": "实用工具资源 (Tools & Resources)",
     "title": "huggingface/speech-to-speech",
     "link": "https://github.com/huggingface/speech-to-speech",
-    "snippet": "Build local voice agents with open-source models\nLanguage: Python\nStars: 6888\nForks: 935"
+    "snippet": "Build local voice agents with open-source models\nLanguage: Python\nStars: 7644\nForks: 983"
+  },
+  "5": {
+    "category": "实用工具资源 (Tools & Resources)",
+    "title": "1jehuang/jcode",
+    "link": "https://github.com/1jehuang/jcode",
+    "snippet": "The most RAM effiecent harness\nLanguage: Rust\nStars: 13148\nForks: 1454"
+  },
+  "6": {
+    "category": "实用工具资源 (Tools & Resources)",
+    "title": "grokability/snipe-it",
+    "link": "https://github.com/grokability/snipe-it",
+    "snippet": "A free open source IT asset/license management system\nLanguage: PHP\nStars: 14297\nForks: 3894"
   },
   "7": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "virgiliojr94/book-to-skill",
-    "link": "https://github.com/virgiliojr94/book-to-skill",
-    "snippet": "Turn any technical book PDF into a Claude Code skill — ready to study, reference, and use while you work.\nLanguage: Python\nStars: 10882\nForks: 1306"
+    "title": "deepfakes/faceswap",
+    "link": "https://github.com/deepfakes/faceswap",
+    "snippet": "Deepfakes Software For All\nLanguage: Python\nStars: 56035\nForks: 13416"
   },
   "8": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "opengeos/GeoLibre",
-    "link": "https://github.com/opengeos/GeoLibre",
-    "snippet": "A lightweight, cloud-native GIS platform for visualizing, exploring, and analyzing geospatial data. It runs in the web browser, on the desktop, on mobile, and inside Jupyter notebooks.\nLanguage: TypeS..."
+    "title": "microsoft/VibeVoice",
+    "link": "https://github.com/microsoft/VibeVoice",
+    "snippet": "Open-Source Frontier Voice AI\nLanguage: Python\nStars: 51098\nForks: 5705"
   },
   "9": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "paperswithbacktest/awesome-systematic-trading",
-    "link": "https://github.com/paperswithbacktest/awesome-systematic-trading",
-    "snippet": "A curated list of awesome libraries, packages, strategies, books, blogs, tutorials for systematic trading.\nLanguage: Python\nStars: 9271\nForks: 1283"
+    "title": "different-ai/openwork",
+    "link": "https://github.com/different-ai/openwork",
+    "snippet": "The open-source alternative to Claude Cowork (powered by opencode)\nLanguage: TypeScript\nStars: 17476\nForks: 1829"
   },
   "10": {
     "category": "实用工具资源 (Tools & Resources)",
-    "title": "microsoft/agent-governance-toolkit",
-    "link": "https://github.com/microsoft/agent-governance-toolkit",
-    "snippet": "AI Agent Governance Toolkit — Policy enforcement, zero-trust identity, execution sandboxing, and reliability engineering for autonomous AI agents. Covers 10/10 OWASP Agentic Top 10.\nLanguage: Python\nS..."
+    "title": "obra/superpowers",
+    "link": "https://github.com/obra/superpowers",
+    "snippet": "An agentic skills framework & software development methodology that works.\nLanguage: Shell\nStars: 262996\nForks: 23490"
   },
   "11": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "展示 HN：tale.fyi，我们值得拥有一个小说家园",
-    "link": "https://tale.fyi/@sam/announcing-tale-fyi-read-or-listen-to-an-entire-book-from-a-single-link",
+    "title": "Handbook.md 表明，长篇政策文件并不能可靠地约束智能体",
+    "link": "https://arxiv.org/abs/2607.25398",
     "snippet": "Comments"
   },
   "12": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "新型 HIV 疫苗在临床前研究中显示出前所未有的成功",
-    "link": "https://www.lji.org/news-events/news/post/new-hiv-vaccine-shows-unprecedented-success-in-preclinical-study/",
+    "title": "AI 崩溃之后",
+    "link": "https://potsandpansbyccg.com/2026/07/29/after-the-ai-crash/",
     "snippet": "Comments"
   },
   "13": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "展示 HN：形式化验证的三维构造实体几何——相信 93 行规约，而非 1000 行 AI 代码",
-    "link": "https://github.com/schildep/verified-3d-mesh-intersection",
+    "title": "Show HN: 扯淡检测器 —— 对视频和文章进行事实核查的智能体技能",
+    "link": "https://github.com/SerhiiKorniienko/bullshit-detector",
     "snippet": "Comments"
   },
   "14": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "Diagrid 让失败的 AI 智能体能够恢复运行",
-    "link": "https://thenewstack.io/diagrid-catalyst-agent-recovery/",
-    "snippet": "AI agents can impress in a demo and still fumble in production. Diagrid’s Catalyst 2.0 aims to make them more\nThe post Diagrid gives failed AI agents a way to resume appeared first on The New Stack."
+    "title": "破坏针对 NPM 和 GitHub Actions 的供应链攻击",
+    "link": "https://github.blog/security/supply-chain-security/disrupting-supply-chain-attacks-on-npm-and-github-actions/",
+    "snippet": "Comments"
   },
   "15": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "当原厂支持举足轻重：AI 如何改变开源安全格局",
-    "link": "https://thenewstack.io/ai-open-source-security/",
-    "snippet": "Every enterprise runs on open source, but keeping it secure has become significantly harder. Frontier AI models are uncovering vulnerabilities\nThe post When vendor-supplied support matters: How AI is ..."
+    "title": "Opus 5 的价格仅为原来的三分之一——而这正是问题所在",
+    "link": "https://thenewstack.io/opus-5-agentic-coding-cost/",
+    "snippet": "On Friday, Anthropic launched Opus 5, the latest iteration of its heavyweight model. Arriving just two months after Opus 4.8\nThe post Opus 5 costs a third of the price — and that’s actually the proble..."
   },
   "16": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "“低代码、无代码存在保质期”：Tines 对下一步的展望",
-    "link": "https://thenewstack.io/tines-ai-workflow-governance/",
-    "snippet": "After eight years of building a no-code automation platform, Tines launched 3B Tuesday, a new platform that uses AI to\nThe post “There is a sell-by date on low-code, no-code”: What Tines thinks comes ..."
+    "title": "黄仁勋发布了第一条 X 帖子，用来游说华盛顿有关开放权重 AI 的事宜",
+    "link": "https://thenewstack.io/nvidia-open-weight-letter/",
+    "snippet": "Nvidia CEO Jensen Huang used his first post on X to share a public letter backing frontier open-weight models. Signed\nThe post Jensen Huang made his first X post. He used it to lobby Washington about ..."
   },
   "17": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "Kimi Linear：一种高效、表达力强的注意力架构",
-    "link": "https://arxiv.org/abs/2510.26692",
-    "snippet": "Comments"
+    "title": "在 Responses API 中使用 WebSocket 加速智能体工作流",
+    "link": "https://openai.com/index/speeding-up-agentic-workflows-with-websockets",
+    "snippet": "A deep dive into the Codex agent loop, showing how WebSockets and connection-scoped caching reduced API overhead and improved model latency."
   },
   "18": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "豆包搜索，走出了豆包",
-    "link": "https://www.qbitai.com/2026/07/461961.html",
-    "snippet": "把搜索能力开放给Agent了"
+    "title": "推出 OpenAI 隐私过滤器",
+    "link": "https://openai.com/index/introducing-openai-privacy-filter",
+    "snippet": "OpenAI Privacy Filter is an open-weight model for detecting and redacting personally identifiable information (PII) in text with state-of-the-art accuracy"
   },
   "19": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "Kimi K3、Unlimited OCR包揽全球前二，中国开源模型持续刷屏海外",
-    "link": "https://www.qbitai.com/2026/07/461949.html",
-    "snippet": ""
+    "category": "理财投资 (Finance & Investment)",
+    "title": "直播：英国央行会将利率维持在 3.75% 吗？",
+    "link": "https://moneyweek.com/economy/news/live/uk-interest-rates-july-bank-of-england",
+    "snippet": "Experts expect the Bank of England to hold interest rates on Thursday (30 July) as positive economic data is not enough to offset uncertainty from the Iran war."
   },
   "20": {
-    "category": "科技人工智能 (Tech & AI)",
-    "title": "当AI学会“仿真思维”，教师才能回归育人本质",
-    "link": "https://www.qbitai.com/2026/07/461939.html",
-    "snippet": "从“工具效率”到“认知理解”，教育AI进入深水区"
+    "category": "理财投资 (Finance & Investment)",
+    "title": "你的社保支票在 2027 年会增加多少？早期数据透露线索",
+    "link": "https://www.fool.com/retirement/2026/07/29/how-much-will-your-social-security-check-increase/?source=iedfolrf0000001",
+    "snippet": "Seniors could be in for a notable raise if current estimates hold up."
   },
   "21": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "揭晓 Alphabet 所持 SpaceX 股份的确切价值",
-    "link": "https://www.fool.com/investing/2026/07/28/heres-how-much-alphabets-spacex-shares-worth/?source=iedfolrf0000001",
-    "snippet": "Alphabet's 2015 investment in SpaceX has been an incredible success."
+    "title": "想在 55 岁退休？职业生涯早期要做的 3 件事",
+    "link": "https://www.fool.com/retirement/2026/07/28/want-to-retire-at-55-3-things-to-do-early-in-your/?source=iedfolrf0000001",
+    "snippet": "With the right approach, it's a goal that may be more than attainable."
   },
   "22": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "PayPal 刚超预期盈利，这会终结 Stripe 的 60.50 美元出价吗？",
-    "link": "https://www.fool.com/investing/2026/07/28/paypal-just-beat-earnings-does-that-kill-stripes-6/?source=iedfolrf0000001",
-    "snippet": "The fintech just made a strong case for raising its asking price."
+    "title": "想在退休后降低 Medicare 保费？需要做的 3 件事",
+    "link": "https://www.fool.com/retirement/2026/07/28/want-lower-medicare-premiums-in-retirement-3-thing/?source=iedfolrf0000001",
+    "snippet": "The right strategy could leave you paying less."
   },
   "23": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "AMD 对 Intel：到 2027 年底，哪只 AI 芯片股更值得持有？",
-    "link": "https://www.fool.com/investing/2026/07/28/amd-vs-intel-which-is-the-better-artificial-intell/?source=iedfolrf0000001",
-    "snippet": "Both chipmakers have made investors significantly richer over the past year, and they can sustain their healthy growth rates owing to the improving demand for their chips."
+    "title": "这项扣除可在 2026 年将我的应税收入减少 7,500 美元。下面是我欣然放弃它的原因",
+    "link": "https://www.fool.com/retirement/2026/07/27/this-deduction-could-reduce-my-taxable-income-by-7/?source=iedfolrf0000001",
+    "snippet": "I'm giving up savings now to get a bigger reward later."
   },
   "24": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "甲骨文股价刚触及 52 周新低，是时候放弃，还是长线买入良机？",
-    "link": "https://www.fool.com/investing/2026/07/28/oracle-stock-just-hit-a-52-week-low-is-it-time-to/?source=iedfolrf0000001",
-    "snippet": "Just when it looks as if it can't sink any lower, the sell-off worsens. This discounting can't go on forever, though."
+    "title": "可欣赏海景的在售最佳房产",
+    "link": "https://moneyweek.com/spending-it/properties/properties-for-sale-overlooking-the-sea",
+    "snippet": "The best properties for sale overlooking the sea – from a modernist house in Pembrokeshire to a contemporary house on a private island in Argyll & Bute."
   },
   "25": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "股市展望：大型科技与 AI 之外的投资机遇在哪里？",
-    "link": "https://moneyweek.com/investments/tech-stocks/equity-outlook-investment-opportunities-beyond-big-tech-and-ai",
-    "snippet": "AI has dominated markets for the past few years, but investors can still gain exposure without directly investing in AI stocks."
+    "title": "如何交易 Expedia 股价",
+    "link": "https://moneyweek.com/investments/stocks-and-shares/should-you-invest-in-expedia",
+    "snippet": "Holiday booking platform Expedia should weather the travel sector's turbulence. Matthew Partridge explains how he would play the share price"
   },
   "26": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "关于英伟达周末的骚操作",
-    "link": "http://xueqiu.com/9225669847/402401477",
-    "snippet": "$英伟达(NVDA)$ 说干就干，CDS暴涨20%，股价暴跌5%。\n从一个绝对中立的角度来看，英伟达用自己从AI浪潮中挣得钱反哺AI硬件行业，帮助降低企业融资成本，实际上是非常正面的行为。但为什么市场却反向定价呢？从财务层面来说，这些支出的确会降低英伟达盈利质量，提高债务风险，但这并不是重点。\n重点是这些铲子企业的相互持股相互担保，虽然是促进了行业的发展，但必然导致过度投资，扭曲了市场真实的供需格..."
+    "category": "社会民生 (Society & Life)",
+    "title": "韩国几十万股民本金亏光",
+    "link": "https://bbs.hupu.com/641396957.html",
+    "snippet": ""
   },
   "27": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "白酒淡季|价格跌不动，需求也没起来",
-    "link": "http://xueqiu.com/8276920975/402433638",
-    "snippet": "当前，白酒已经进入全年当中最淡的月份，判断是简单的，就是气温，气温越高，白酒的销售影响越大，过去平滑这个季节因素最主要的需求就是“Z商务宴请”，这个平滑因素肯定是下来的，所以就呈现出淡旺季极度分化的特征，淡季占比更小，旺季自身量未必增长，但是占比上来了。\n1、价格跌不动\n从去年年底的年度稿件中就提了这个观点，主要就是跌的太多了，主流白酒企业的标品价格已经大幅度下跌，过去800元价位的产品下探到了五..."
+    "category": "社会民生 (Society & Life)",
+    "title": "，猜猜这是哪个时期地图",
+    "link": "https://bbs.hupu.com/641396951.html",
+    "snippet": ""
   },
   "28": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "公募60%仓位全押AI！新能源被抽血抽到崩，历史极值抱团何时散？",
-    "link": "http://xueqiu.com/9756381356/402456104",
-    "snippet": "一.这轮新能源为啥会杀跌？跟AI的抱团有啥关系？\n简单说一句话：这轮新能源大跌，不是因为新能源不行了，而是因为全市场的钱都被AI吸干了。\n这一轮A股结构性极端行情，核心原因只有一个——公募基金的极致调仓与极致抱团，也是A股历史上罕见的正负反馈双向极端行情。\n首先，本轮市场最大的特征，是AI板块的机构抱团达到了史无前例的程度。从最新基金持仓数据可以清晰看出，公募直接配置AI的仓位已经达到60%左右，..."
+    "category": "社会民生 (Society & Life)",
+    "title": "就是很好。",
+    "link": "https://bbs.hupu.com/641396943.html",
+    "snippet": ""
   },
   "29": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "AI学习笔记（五）：液冷",
-    "link": "http://xueqiu.com/5332385101/402477798",
-    "snippet": "液冷这一概念在24年3月受英伟达GTC大会及B100全液冷规划催化首次爆火，25年随GB200量产进入业绩验证期，今年又因芯片功耗突破风冷极限、PUE标准确立为必选项而全面爆发。\n今天和大家分享液冷行业。\n提示：本文仅为学习笔记分享，不构成任何投资建议\n一、液冷基本概念\n先总结常见定义：\n\n液冷：用液体代替空气作为冷却介质，带走发热元件热的热量，确保服务器在安全温度下工作。它是温控技术之一，另一种..."
+    "category": "社会民生 (Society & Life)",
+    "title": "五代乱世根源，魏博牙兵。",
+    "link": "https://bbs.hupu.com/641396942.html",
+    "snippet": ""
   },
   "30": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "成长股的好日子结束了吗",
-    "link": "http://xueqiu.com/3559889031/402352310",
-    "snippet": "而作为镜子的另一面，不少在7月终于享受到反弹的价值股玩家，则是期待2023年那种价值股的好日子能早日重回。\n那么，成长的好日子要结束了吗？\n关于这个问题，还是不预设结论，先看历史。\n观察成长和价值的轮动，我喜欢用成长100R(480080.CNI)和价值100R(480081.CNI)这对Smartbeta指数。\n作为使用多重因子选出100只个股的Smartbeta指数，这对指数能够呈现“结构性”..."
+    "category": "社会民生 (Society & Life)",
+    "title": "不因一时波动急躁，恪守思路、从容应对。",
+    "link": "https://bbs.hupu.com/641396906.html",
+    "snippet": ""
   },
   "31": {
     "category": "社会民生 (Society & Life)",
-    "title": "日本熊本县连续发生 7.1 级、6.1 级地震，长三角多地网友称有震感，目前情况如何？",
-    "link": "https://www.zhihu.com/question/2065460492231864765",
-    "snippet": "据日本气象厅28日消息，当地时间17时08分左右，日本熊本县再次发生地震，震级为6.1级，最大震感为震度5弱，震源深度极浅。更多资讯请下载央视新闻客户端 稍早前，熊本县附近发生7.1级地震，最大震感为震度7，震源深度10公里。（总台报道员 柏春洋） 日本气象厅28日发布报告称，当地时间当天16时27分，日本熊本县附近发生7.1级地震，最大震感为震度7。日本气象厅发布海啸预警信息，提示附近可能发生海..."
+    "title": "如何看待IFAB认定恩博洛世界杯第二黄改判属于规则误用？VAR的边界在哪？",
+    "link": "https://www.zhihu.com/question/2065761038373541729",
+    "snippet": "IFAB 于 7 月 28 日正式回应了阿根廷 vs 瑞士那场 1/4 决赛的判罚争议。 简单回顾一下经过：裁判最初吹帕雷德斯犯规，给了黄牌。VAR介入复核后，取消帕雷德斯的黄牌，改判恩博洛假摔——这是恩博洛第二张黄牌，两黄变一红罚下。瑞士少打一人，最终止步八强。 IFAB的结论很明确：这属于规则误用，世界杯结束后不再沿用。 他们给出的边界是：VAR在非第二张黄牌的常规场景下，只能纠正「犯规球员的..."
   },
   "32": {
     "category": "社会民生 (Society & Life)",
-    "title": "中国王中王围棋争霸赛，柯洁击败李轩豪，如何评价本场对局？",
-    "link": "https://www.zhihu.com/question/2065444929082324439",
-    "snippet": "北京时间7月28日，在第六届“嵊州杯”中国王中王围棋争霸赛胜者组决赛中，柯洁执白162手中盘胜卫冕冠军李轩豪，率先晋级总决赛。王中王围棋争霸赛：柯洁执白中盘完胜李轩豪晋级总决赛"
+    "title": "深圳灵活就业社保费用一直涨，都快坚持不住了。",
+    "link": "https://www.v2ex.com/t/1230577",
+    "snippet": "Bullish: 自费交了几年灵活就业社保了，记的刚开始交灵活就业社保时每个月还不到一千块。现在每个月是 1493.64 元（ 不知道后续还会不会继续涨 ），有时候想停交养老险，只交医疗保险（ 深圳的灵活就业社保是可以单独交的，没有绑定 ）。\n但是看缴费记录都已经累积 13 年了（ 本人九零后 ），到了一个比较尴尬的点，停了有点可惜，继续交不知道后面政策怎么变化，目前收入又断了，有点子坚持不住。"
   },
   "33": {
     "category": "社会民生 (Society & Life)",
-    "title": "商务部发布《关于所谓「产能过剩」问题的中方立场》，称保护主义只会扰乱全球经贸秩序，如何解读此文件？",
-    "link": "https://www.zhihu.com/question/2065427614815332294",
-    "snippet": "商务部7月28日发布《关于所谓“产能过剩”问题的中方立场》，澄清有关事实，阐明中方对所谓“产能过剩”相关问题的政策立场。 文件除前言、结束语外共四章，分别是全面客观看待全球产能和所谓“过剩”、对“产能过剩”相关四对关系的看法立场、中国坚持在开放合作中建设现代化产业体系、共同推动构建开放包容的全球产供链合作格局。 文件提出，中方始终认为，看待产能问题，要坚持全面、客观、公正的态度，既要历史地看、也要..."
+    "title": "许多网友反馈在泸溪河桃酥里吃出牙冠、牙齿、头发等异物，山姆已将其下架，可能是什么环节的问题？",
+    "link": "https://www.zhihu.com/question/2065716053770859492",
+    "snippet": "今天，泸溪河坚果桃酥因被曝吃出疑似金属牙冠而陷入食品安全争议。7月29日11时21分，都市现场记者查看山姆会员商店APP发现，该款产品已下架。 当日上午10点50分之前，记者还在山姆会员商店APP发现，该款产品目前仍在正常售卖，位列“饼干糕点热销榜”第4名，月销量超过20万件，每人限购10件，售价48.9元/件，支持全国配送。 网友在山姆超市购买的泸溪河桃酥中吃出疑似金属牙冠异物引质疑，山姆APP..."
   },
   "34": {
     "category": "社会民生 (Society & Life)",
-    "title": "遇到酷似汤唯的女生，聊了俩小时~~~",
-    "link": "https://www.v2ex.com/t/1230390",
-    "snippet": "yummy007: \n  周末打完球腿很疼想去按一下，来到了熟悉的场景，空气中弥漫着熟悉的味道，已经好久没来过了，曾经相熟的技师回家的回家，转店的转店，店里的人也差不多换了个遍,随便点了一个号码开始等待~~~\n  不一会有人敲门进来，开门的一瞬加哥们儿愣了，好面熟啊，怎么像在那见过，特别的熟悉。。。妹子身材很好，02 年的，偏瘦穿着内红外黑的一个吊带薄纱连体裙，显得很高，开始流程，我脑子还在想妹子..."
+    "title": "有说法称印度成首个被 AI 做空的国家，真的是这样吗？会对印度经济产生哪些影响？",
+    "link": "https://www.zhihu.com/question/2065710393360479149",
+    "snippet": "[4 张图片]"
   },
   "35": {
     "category": "社会民生 (Society & Life)",
-    "title": "讲一讲我遇到的老师吧",
-    "link": "https://www.v2ex.com/t/1230336",
-    "snippet": "ShiBuYi: \n背景\n这个老师是交友软件上遇到的，你懂的，男的上上面只想聊瑟瑟。但是这个老师不许我聊瑟瑟，然后就加了微信，就类似网友那种聊天，每次我聊瑟瑟，她都会不理我， 我觉得没意思，后面就没聊。\n契机\n我之前跟女的约了出去玩，写了日记分享了给她，她看了之后 感觉我人很真诚（这个是见了面之后说的）。\n我们之前网络上有交换过照片，有互相视频过。她朋友圈都是她照片（个人照片 10 分给到 7 分..."
+    "title": "网红私占宁波无人岛直播改造被查处，个人可以开发利用无居民海岛吗？荒岛为何不能随意建房、居住？",
+    "link": "https://www.zhihu.com/question/2065709716009743417",
+    "snippet": "碧海环绕，孤岛伫立，小屋错落、炊烟袅袅。有网红凭借抖音平台“荒岛改造”系列视频走红网络，视频中，博主登岛建房、开路通电、捕鱼烹食、圈养家禽，吸引大批网友点赞追捧、打赏热议，让不少人心生向往。然而，该行为已触碰法律红线，属于违规侵占国家海岛资源的违法行为。 据浙江日报报业集团潮新闻客户端报道，近日，宁波海警局象山第二工作站接警称，有人在象山县爵溪镇乔木湾岛擅自开展捕鱼、居住等活动，并通过抖音平台全程..."
   },
   "36": {
-    "category": "社会民生 (Society & Life)",
-    "title": "老婆同事的母亲去世了，该不该送礼",
-    "link": "https://www.v2ex.com/t/1230301",
-    "snippet": "shalou8023: \n前情提要：老婆公司里的事（诸如同事买房、领导结婚）送礼送了三四次了，每次 500-1000 不等。\n然后最近得知标题这事，忍不住跟老婆吵起来了，我意思是送个一两百就得了；老婆意思是人家都送 xx ，xx 是起步价，其他人都送，我好意思不送吗\n这事 V 友怎么看，如何沟通，老婆说我不懂人情世故，我人要麻了，想听听大家的看法。。"
+    "category": "热门信息 (Trending Info)",
+    "title": "活在未来",
+    "link": "https://nav.al/future",
+    "snippet": "Naval with three founders who are living in the future: Garry Tan (Y Combinator), Daniel Francis (Abel Police), and Farbood Nivi (A-LIST). More"
   },
   "37": {
-    "category": "社会民生 (Society & Life)",
-    "title": "兄弟们交物业吗？",
-    "link": "https://www.v2ex.com/t/1230287",
-    "snippet": "sevenyangcc: \n从收房开始一直在交的，可是昨天去物业缴费的时候，听物业的说小区的收缴率不到 6 成，虽然物业很多地方我也不爽，但是看到最近很多物业撤离的新闻，担心物业干不下去真撤了小区质量会更差，感觉有一点无解。"
+    "category": "热门信息 (Trending Info)",
+    "title": "塑造我的 16 个完全可养成的习惯",
+    "link": "https://ryanholiday.net/the-16-perfectly-reachable-habits-that-made-me-who-i-am/",
+    "snippet": "For 2,130 consecutive games, Lou Gehrig played first base for the New York Yankees—a streak that would stand for five and a half decades. He put up a career .340 batting average. He was a two-time MVP..."
   },
   "38": {
     "category": "热门信息 (Trending Info)",
-    "title": "第一段/下一段/最后一段",
-    "link": "https://seths.blog/2026/07/first-take-next-take-last-take/",
-    "snippet": "Nailing it in the first take is a sign of preparation and professionalism. No need for two tries if you are clear about what you’re doing and how. The next take is where hope lies. This one was pretty..."
+    "title": "改变人生的 4 个简单步骤",
+    "link": "https://markmanson.net/four-steps-change-life",
+    "snippet": "If you want to change your life—like really, seriously, no bullshit, actually change your life—do this:\nStep 1: Write down everything you care about.\nPeople make this mistake of setting new goals ever..."
   },
   "39": {
     "category": "热门信息 (Trending Info)",
-    "title": "《存在主义：入门指南》——托马斯·瓦滕伯格 著",
-    "link": "https://sive.rs/book/Existentialism",
-    "snippet": "summary:\nLight introduction to Existentialism. Points to some more important works, and gives some context. Good information and insights but written in a style that was hard for me to parse. Happy to..."
+    "title": "[异类] 约翰·D·洛克菲勒：史上最大财富背后的原则",
+    "link": "https://fs.blog/knowledge-project-podcast/outliers-john-d-rockefeller/",
+    "snippet": "John D. Rockefeller became the richest man the world had ever known by thinking differently about business, competition, and family. This episode isn’t just the story of Standard Oil. It’s about the p..."
   },
   "40": {
     "category": "热门信息 (Trending Info)",
-    "title": "《十个词汇里的中国》——余华 著",
-    "link": "https://sive.rs/book/China10Words",
-    "snippet": "summary:\nFamous fiction author. I loved the movie from his book “To Live”. Memoir of growing up in China filtered through ten topics. Sometimes it’s cultural insights, but sometimes just his personal ..."
+    "title": "我的 2019 年度回顾",
+    "link": "https://jamesclear.com/2019-annual-review",
+    "snippet": "Another year complete. Here's a quick recap of 2019, which also happened to be one of the craziest years of my life. As always, this Annual Review will answer three questions. What went well this year..."
   },
   "41": {
     "category": "热门信息 (Trending Info)",
-    "title": "人工智能工业革命",
-    "link": "https://nav.al/industrial",
-    "snippet": "Full episode with 20 minutes of new material at the end. With Guillermo Rauch (Vercel), Blake Scholl (Boom Supersonic), and Max Hodak (Science).\n\n\n\n\n\n\n\nNivi: Welcome. You’re listening to Naval Podcast..."
+    "title": "失败常见，尝试罕见",
+    "link": "https://www.raptitude.com/2026/07/failing-is-common-trying-is-rare/",
+    "snippet": "When you die, you appear before a studio audience and they give you a standing ovation. The host then interviews you about your great successes and misses in life. One thing you realize, when they rev..."
   },
   "42": {
     "category": "热门信息 (Trending Info)",
-    "title": "《阿特拉斯耸耸肩》最佳摘要",
-    "link": "https://fs.blog/atlas-shrugged-summary/",
-    "snippet": "A brief, no-fluff, summary of Atlas Shrugged by Ayn Rand. If you want to learn how capitalist countries become socialist, this book will help you. Let’s dive in. Atlas Shrugged: The Simple Version The..."
+    "title": "OpenAI 的新模型“失控”了吗？",
+    "link": "https://calnewport.com/did-openais-new-model-go-rogue/",
+    "snippet": "A couple of weeks ago, the AI company Hugging Face ​announced​ that they had discovered an intrusion into their production infrastructure. They didn’t know the ... Read more\nThe post Did OpenAI’s New ..."
   },
   "43": {
     "category": "热门信息 (Trending Info)",
-    "title": "播客第 549 集 | 谦卑之事",
-    "link": "https://www.theminimalists.com/p549/",
-    "snippet": "The things that humble you often heal you.\nThe post Podcast Ep. 549 | Humble Things appeared first on The Minimalists."
+    "title": "不丹的风景与声音",
+    "link": "https://waitbutwhy.com/2025/11/bhutan.html",
+    "snippet": "Stories from my visit to the mysterious Himalayan kingdom\nThe post The sights and sounds of Bhutan appeared first on Wait But Why."
   },
   "44": {
     "category": "热门信息 (Trending Info)",
-    "title": "产后第四期的十个感悟",
-    "link": "https://waitbutwhy.com/2023/05/baby.html",
-    "snippet": "1 baby, many thoughts\nThe post 10 Thoughts from the Fourth Trimester appeared first on Wait But Why."
+    "title": "推文",
+    "link": "https://sive.rs/d",
+    "snippet": "I write to see what I can write. I code to see what I can code."
   },
   "45": {
     "category": "热门信息 (Trending Info)",
-    "title": "我们记住的不是想法，而是做过的事",
-    "link": "https://www.raptitude.com/2026/01/we-dont-remember-what-we-think-only-what-we-do/",
-    "snippet": "A longtime reader emails me every five years or so, to say that he still thinks of me every morning when he makes his bed. Back in 2009 I wrote a post about the psychological benefit of immediately ma..."
+    "title": "急于放弃自主性",
+    "link": "https://seths.blog/2026/07/eager-to-give-up-agency/",
+    "snippet": "We work so hard to have freedom and leverage and choice. And then, as soon as a social network, boss or cultural force instructs us to do something, we fold our tents and go along. Responsibility is s..."
   },
   "46": {
-    "category": "热门信息 (Trending Info)",
-    "title": "赞美商业文化——泰勒·科文 著",
-    "link": "https://sive.rs/book/CommercialCulture",
-    "snippet": "summary:\nCultural optimism! I’d never considered that term before, but I love its mindset. My life was changed when Camille Paglia said, in the 90s, that Hollywood movies are the high art of our times..."
+    "category": "推文 (Tweets)",
+    "title": "OnlyMarms：在 OnlyFans 上资助科学研究",
+    "link": "https://kottke.org/26/07/onlymarms-funding-science-research-on-onlyfans",
+    "snippet": "This is an extremely 2026 story (derogatory): because of the Trump regime’s assualt on scientific funding, a group of scientists who has been studying marmot populations in Colorado since 1962 turned ..."
   },
   "47": {
-    "category": "热门信息 (Trending Info)",
-    "title": "有用视角的特质",
-    "link": "https://sive.rs/u47",
-    "snippet": "To list all the beliefs I’ve found useful would fill a whole book.\n\t(Actually, four books so far, since that’s what my previous books were about.)\n\tSo instead, for your own ideation, it might help if ..."
+    "category": "推文 (Tweets)",
+    "title": "女人不再想要孩子，因为过去帮忙一起养育孩子的“村子”已基本消失。如今你只能全靠自己。",
+    "link": "https://www.reddit.com/r/Showerthoughts/comments/1v9bgrh/women_dont_want_children_anymore_because_the/",
+    "snippet": "submitted by    /u/Ok-Spite-5454  \n [link]   [comments]"
   },
   "48": {
     "category": "推文 (Tweets)",
-    "title": "“万一免五”股票 ETF 大笑脸低佣开户，抽键盘迈从 Ace 68 V2；鼠标迈从 A7 V3 PRO+。 [7.28 日~8.3 日]",
-    "link": "https://www.v2ex.com/t/1230280",
-    "snippet": "daxiaolian: 这周抽键盘迈从 Ace 68 V2 ；鼠标迈从 A7 V3 PRO+\n大笑脸开户，最近新增了很多新的低门槛免 5 券商，股票，etf 全网超低费率，欢迎来开！开户和推荐朋友都有红包！\n⚠️回帖即可参与抽奖！\n\n⚠️大笑脸低佣开户推荐：\nYH 证券：ETF 万 0.5 免 5  [etf 费率最低，适合 etf ，打新，纳指，宽基，LOF 套利 ，逆回购 1 折，新手必备]\n..."
+    "title": "为了保证孩子受教育的权利，我们首先剥夺他们拒绝受教育的权利。",
+    "link": "https://www.reddit.com/r/Showerthoughts/comments/1v98nkn/to_guarantee_a_childs_right_to_education_we_first/",
+    "snippet": "submitted by    /u/Relaxing_Cat  \n [link]   [comments]"
   },
   "49": {
     "category": "推文 (Tweets)",
-    "title": "都说生育率低，身边结婚的都有娃了",
-    "link": "https://www.v2ex.com/t/1230286",
-    "snippet": "Bologna: \n我是 99 年的，结婚的同学不论男女都陆续有娃了\n当然他们有一个共同点，男方都是体制内工作或者小有家资"
+    "title": "再也无需担心停电——Jackery HomePower 3600 Plus 在亚马逊上直降 1,550 美元",
+    "link": "https://mashable.com/tech/july-29-jackery-homepower-plus-portable-power-station-deal",
+    "snippet": "As of July 29, you can get the Jackery HomePower 3600 Plus portable power station for $2,149, down from $3,699, at Amazon."
   },
   "50": {
     "category": "推文 (Tweets)",
-    "title": "老婆同事的母亲去世了，该不该送礼",
-    "link": "https://www.v2ex.com/t/1230301",
-    "snippet": "shalou8023: \n前情提要：老婆公司里的事（诸如同事买房、领导结婚）送礼送了三四次了，每次 500-1000 不等。\n然后最近得知标题这事，忍不住跟老婆吵起来了，我意思是送个一两百就得了；老婆意思是人家都送 xx ，xx 是起步价，其他人都送，我好意思不送吗\n这事 V 友怎么看，如何沟通，老婆说我不懂人情世故，我人要麻了，想听听大家的看法。。"
+    "title": "新英格兰正午需要点蜡烛，没人知道为什么",
+    "link": "https://boingboing.net/2026/07/29/new-englands-dark-day.html",
+    "snippet": "On the morning of May 19, 1780, the sky over New England went dark enough that people burned candles from noon on. In Ipswich, Massachusetts, the roosters and the frogs started up at two in the aftern..."
   },
   "51": {
     "category": "推文 (Tweets)",
-    "title": "“万一免五”股票 ETF 大笑脸低佣开户，抽键盘迈从 Ace 68 V2；鼠标迈从 A7 V3 PRO+。 [7.28 日~8.3 日]",
-    "link": "https://www.v2ex.com/t/1230280",
-    "snippet": "daxiaolian: 这周抽键盘迈从 Ace 68 V2 ；鼠标迈从 A7 V3 PRO+\n大笑脸开户，最近新增了很多新的低门槛免 5 券商，股票，etf 全网超低费率，欢迎来开！开户和推荐朋友都有红包！\n⚠️回帖即可参与抽奖！\n\n⚠️大笑脸低佣开户推荐：\nYH 证券：ETF 万 0.5 免 5  [etf 费率最低，适合 etf ，打新，纳指，宽基，LOF 套利 ，逆回购 1 折，新手必备]\n..."
+    "title": "[赞助商] 为您推介 Agent Fone",
+    "link": "https://fail.xyz/phone/",
+    "snippet": "Every phone now ships with an assistant. You ask, it answers. Lame. We built a phone that writes software instead. The app idea you’ve had in your notes for years. The side hustle you will never get a..."
   },
   "52": {
     "category": "推文 (Tweets)",
-    "title": "公司只有我一个开发，该离职吗",
-    "link": "https://www.v2ex.com/t/1230400",
-    "snippet": "ColinLi: \n公司是教培行业，老板招我进公司之前把以前的所有技术人员都开了，然后留下来一堆烂摊子，啥文档都没有，也没有交接，全都要我一个人摸索着干活。之前还有一个测试，前几周测试也走了，现在我连交流的人都没有。感觉我会被憋出病来，感觉好压抑。这公司稍微好点的地方就是双休，不加班，离得近，但是早上 8:30 打卡也是有点难受，工资的话正常行业平均工资。问一下 V 友们，该怎么办？目前在杭州，如..."
+    "title": "史蒂夫·乔布斯在 2011 年说：“我们打造的产品也是我们自己想要的，而且我们就是不要广告。”",
+    "link": "https://www.businessinsider.com/apple-snubs-the-iad-2011-6",
+    "snippet": "Dan Frommer, writing for Business Insider in 2011 about that year’s WWDC (Jobs’s last):\nWhile discussing Apple’s free, new iCloud email service, he took\nan apparent jab at Gmail, Yahoo Mail, and the o..."
   },
   "53": {
     "category": "推文 (Tweets)",
-    "title": "真的是营销鬼才啊",
-    "link": "https://www.v2ex.com/t/1230332",
-    "snippet": "Wolvin: \n全系支持 92 号、95 号、98 号汽油；"
+    "title": "吐司涂黄油的一面落地时确实总是朝下，物理学解释了原因",
+    "link": "https://boingboing.net/2026/07/29/buttered-toast-phenomenon.html",
+    "snippet": "For more than a century, people have grumbled that dropped bread always lands butter-side down and chalked it up to plain pessimism. When the BBC science show Q.E.D. tossed toast into the air in 1991,..."
   },
   "54": {
     "category": "推文 (Tweets)",
-    "title": "讲一讲我遇到的老师吧",
-    "link": "https://www.v2ex.com/t/1230336",
-    "snippet": "ShiBuYi: \n背景\n这个老师是交友软件上遇到的，你懂的，男的上上面只想聊瑟瑟。但是这个老师不许我聊瑟瑟，然后就加了微信，就类似网友那种聊天，每次我聊瑟瑟，她都会不理我， 我觉得没意思，后面就没聊。\n契机\n我之前跟女的约了出去玩，写了日记分享了给她，她看了之后 感觉我人很真诚（这个是见了面之后说的）。\n我们之前网络上有交换过照片，有互相视频过。她朋友圈都是她照片（个人照片 10 分给到 7 分..."
+    "title": "研究：希克苏鲁伯撞击后，恐龙被生生烤焦……",
+    "link": "https://kottke.org/26/07/0049404-study-dinosaurs-were-char",
+    "snippet": "Study: Dinosaurs Were Charbroiled After Chicxulub Impact. “The impact would have produced an immense cloud of dust that superheated the upper atmosphere, charbroiling living organisms unable to take s..."
   },
   "55": {
     "category": "推文 (Tweets)",
-    "title": "都说生育率低，身边结婚的都有娃了",
-    "link": "https://www.v2ex.com/t/1230286",
-    "snippet": "Bologna: \n我是 99 年的，结婚的同学不论男女都陆续有娃了\n当然他们有一个共同点，男方都是体制内工作或者小有家资"
-  },
-  "56": {
-    "category": "推文 (Tweets)",
-    "title": "兄弟们交物业吗？",
-    "link": "https://www.v2ex.com/t/1230287",
-    "snippet": "sevenyangcc: \n从收房开始一直在交的，可是昨天去物业缴费的时候，听物业的说小区的收缴率不到 6 成，虽然物业很多地方我也不爽，但是看到最近很多物业撤离的新闻，担心物业干不下去真撤了小区质量会更差，感觉有一点无解。"
-  },
-  "57": {
-    "category": "推文 (Tweets)",
-    "title": "存了 100w+，太想躺平了",
-    "link": "https://www.v2ex.com/t/1230348",
-    "snippet": "Yuki321: \n现金存款，公积金，商业保险（储蓄性质类）\n加起来超 100w 了，无房无贷无娃\n每天都想摆烂躺平，低物欲，如果是你们，你们会怎么选择！！\n原来想的是，100w 了就去外面上学体验下，现在这个想法又没那么强烈了"
-  },
-  "58": {
-    "category": "推文 (Tweets)",
-    "title": "收到律师函了，不让用了",
-    "link": "https://www.v2ex.com/t/1230329",
-    "snippet": "sjjgpt: \nmac 有没有类似于 navicat 的数据库管理工具，找了几个 dbx,hexhub 都差强人意"
-  },
-  "59": {
-    "category": "推文 (Tweets)",
-    "title": "遇到酷似汤唯的女生，聊了俩小时~~~",
-    "link": "https://www.v2ex.com/t/1230390",
-    "snippet": "yummy007: \n  周末打完球腿很疼想去按一下，来到了熟悉的场景，空气中弥漫着熟悉的味道，已经好久没来过了，曾经相熟的技师回家的回家，转店的转店，店里的人也差不多换了个遍,随便点了一个号码开始等待~~~\n  不一会有人敲门进来，开门的一瞬加哥们儿愣了，好面熟啊，怎么像在那见过，特别的熟悉。。。妹子身材很好，02 年的，偏瘦穿着内红外黑的一个吊带薄纱连体裙，显得很高，开始流程，我脑子还在想妹子..."
-  },
-  "60": {
-    "category": "推文 (Tweets)",
-    "title": "路边一块，用心雕琢，也可以变成大家喜欢的样子。",
-    "link": "https://www.bilibili.com/video/BV12v3w6jEBc",
-    "snippet": "祝你快乐！"
-  },
-  "61": {
-    "category": "推文 (Tweets)",
-    "title": "我们做了个浏览器 ，让人类和 AI 无缝共享一套上网环境",
-    "link": "https://sspai.com/post/112795",
-    "snippet": "TL;DR\n我们团队做了一个产品：ego lite，这是一个基于 Chromium 的浏览器，让你和 AI Agent 共用同一套上网环境。\n你可以日常用它浏览，AI Agent 则在独立的 Space 里并行处理网页任务，并且复用你已经登录好的状态。目前已经免费推出 macOS 版本可以下载使用。\n官网在这里：https://lite.ego.app/\nGitHub：citrolabs/ego-..."
-  },
-  "62": {
-    "category": "推文 (Tweets)",
-    "title": "传统的八仙里，长最帅的其实是他？",
-    "link": "https://www.guokr.com/article/469769/",
-    "snippet": "⚠️ 剧透警告：本文将不可避免地出现一些电影《八仙！》的剧透。\n对于八仙，大多数人的印象就是那句“八仙过海，各显神通”。要说八仙具体有哪几个，大部分人其实没法像报菜名一样全报出来。\n最近的动画电影《八仙！》，让很多人记住了八仙的名字，以及八仙原来是个草台班子，八仙过海的“过海”原来是瞒天过海的“过海”……\n其实，民间传说里的八仙，曾经有过多个版本，比如有的版本有徐神翁、张四郎、刘海（刘海蟾），却没..."
-  },
-  "63": {
-    "category": "推文 (Tweets)",
-    "title": "AI新基建里，我们是“卖铲人”背后的“修铲人”",
-    "link": "https://www.guokr.com/article/469778/",
-    "snippet": "医学上的X光机我们都很熟悉，但是工业上的X光机呢？其实，任何可能存在焊接缺陷的工业品，从电动车电池到芯片电路板，都需要X光机来检测。\n一台 X 光机的核心竞争力是什么？是核物理吗？是AI吗？是高端硬件吗？吴明炜的答案是数学，更具体地说，是复变函数和傅里叶变换。\n这位上海交大机械工程专业出身的创业者，用了整整20年观察一个行业，最终在疫情期间带着一支“草台班子”起步，把现实问题写成应用题，把应用题拆..."
-  },
-  "64": {
-    "category": "推文 (Tweets)",
-    "title": "肺癌是怎么从“几个月”治到“几年”的",
-    "link": "https://www.guokr.com/article/469776/",
-    "snippet": "一个基因，一颗药，和很多家庭被改写的命运\n这是一个关于“读懂”与“改写”的故事。\n它的主角有三个：一个潜伏在基因里的破坏者，一颗在实验室里被反复打磨的药，和一群本不该这么年轻就被肺癌击中的人。\n故事的起点，是科学家在二十多年前意识到的一件几乎反直觉的事：在某些癌症身上，疯狂生长的背后，藏着一个致命的破绽。\n很多肿瘤的失控，并不是一团彻底的混乱，而是被某个出了故障的基因死死踩住了“油门”。整个肿瘤的..."
-  },
-  "65": {
-    "category": "推文 (Tweets)",
-    "title": "长沙是如何激活服务消费的",
-    "link": "https://www.huxiu.com/article/4878883.html",
-    "snippet": "此前，它还曾是新消费的样本之城。在「给服务消费市场找增量」这道几乎所有城市都要作答的命题里，比起北上广深，长沙可能是对更多数城市来说更值得参考的一个样本——它没有政策上的稀缺资源，经济体量在29座万亿GDP城市里居于中游；它的服务消费是更日常的、平价的，但无所不入、时刻在微创新，是更适合普通城市参考和成为的样......\n本文来自微信公众号： 窄播 ，作者：窄播\n此前，它还曾是新消费的样本之城。\n..."
-  },
-  "66": {
-    "category": "推文 (Tweets)",
-    "title": "黄仁勋、Kimi K3，与一场即将到来的开源战争。",
-    "link": "https://www.guokr.com/article/469780/",
-    "snippet": "你要说最近AI行业里，最热的、被讨论最多的一件事。\n那必然就是一个由老黄、Anthropic、kimi、开源，这几个看着风牛马不相及的4个词，共同串起的故事。\n故事是这样的。\n前几天，7月24日，黄仁勋发了自己在X上的第一篇帖子。\n\n这个AI圈可能最火的男人，为了发这封公开信，不惜注册了个X。\n这封信的名字叫《Open Weights and American AI Leadership》，开放权..."
-  },
-  "67": {
-    "category": "推文 (Tweets)",
-    "title": "地狱猫复刻中途加油，全速怕什么怕拉爆直升机！",
-    "link": "https://www.bilibili.com/video/BV1d73P6iEko",
-    "snippet": ""
-  },
-  "68": {
-    "category": "推文 (Tweets)",
-    "title": "月之暗面全面开源Kimi K3；新研究推翻三星堆祭祀坑献祭说；台风“白海豚”生成",
-    "link": "https://www.guokr.com/article/469781/",
-    "snippet": "今天是7月28日，星期二。1851年的今天，摄影师Herr Berkowski在柯尼斯堡采用银版摄影法拍摄了人类历史上第一张日全食照片。\n\n重点新闻速览\n1.月之暗面全面开源Kimi K3\n2.腾讯WorkBuddy成为首款鸿蒙原生桌面办公AI智能体\n3.三星堆祭祀坑研究获重大新进展，推翻献祭旧说\n4.台风“红霞”残余制造强降雨，台风“白海豚”生成\n科技亚马逊申请部署5000余颗通信卫星\n7月28..."
-  },
-  "69": {
-    "category": "推文 (Tweets)",
-    "title": "月之暗面宣称Kimi K3是“每人可用”的大模型，实则最低入场券200万",
-    "link": "https://www.huxiu.com/article/4878881.html",
-    "snippet": "7月27日晚，月之暗面把Kimi K3的完整模型权重挂上了Hugging Face。2.8万亿参数，1040亿激活参数，100万Token上下文，原生多模态。同步公开的还有技术报告，以及三项支撑K3训练的关键基础设施技术——MoonEP、FlashKDA和AgentEnv。用月之暗面官方的表述，这是“Kimi......\n本文来自微信公众号： 未来图灵 ，作者：张凤静\n7月27日晚，月之暗面把Ki..."
-  },
-  "70": {
-    "category": "推文 (Tweets)",
-    "title": "锅已就位",
-    "link": "https://www.bilibili.com/video/BV1Qy3v6JEiq",
-    "snippet": "-"
-  },
-  "71": {
-    "category": "推文 (Tweets)",
-    "title": "【苏新皓｜4K直拍】囍 直拍｜梦寐以求·演唱会",
-    "link": "https://www.bilibili.com/video/BV1Dx3i6nEm8",
-    "snippet": "#苏新皓 个人舞台 囍 两日合集｜梦寐以求·演唱会"
-  },
-  "72": {
-    "category": "推文 (Tweets)",
-    "title": "“显腿长的阔腿裤能把人绊成骨折”，通勤人最爱的女装踩了多少坑？",
-    "link": "https://www.guokr.com/article/469782/",
-    "snippet": "安全与科学的设计，不该是追求时尚和美丽的代价。\n文：张舒\n炎炎夏日，不见一丝云彩和风声的正午，25岁的朱朱走在前往公司大楼的路上。\n当她走在平整干净的水泥台阶时，却感到一股异常的拉力从脚踝传来，仿佛被人扯着后腿，忽然抬不起膝盖来。\n下一秒，伴随着天旋地转的晕眩，朱朱猝不及防，直接跪倒在晒得又烫又硬的水泥台阶上，随着钻心的剧痛，她的膝盖上立即刮青了一大片。四下无人，她踉跄起身，满是后怕和尴尬，平平无..."
-  },
-  "73": {
-    "category": "推文 (Tweets)",
-    "title": "了不起的韩国股民",
-    "link": "https://www.huxiu.com/article/4878892.html",
-    "snippet": "成也萧何，败也萧何近期，韩国股市经历了史无前例的剧烈震荡，大量使用杠杆的散户账户爆仓，连环踩踏，引发了严重的社会问题。2026年上半年，韩国综合指数（KOSPI）翻了一倍，6月19日创下9385.59点的历史最高纪录。正当人们欢欣鼓舞期待它突破一万点时，它却掉头一路下挫。据不完全统计，韩国散户杠杆交易的合计亏......\n本文来自微信公众号： 秦朔朋友圈 ，作者：悟00000空\n成也萧何，败也萧何..."
-  },
-  "74": {
-    "category": "推文 (Tweets)",
-    "title": "2026春日西藏游记（上）",
-    "link": "https://sspai.com/post/112347",
-    "snippet": "作为一个在江南水乡长大的孩子，我一直对西藏抱有各种神秘的想象，过往了解西藏的主要方式集中于纪录片等方式，却始终未有机会踏上这片秘境。2026年的五月底，我与朋友一行八人终于踏上了前往西藏自治区首府拉萨的青藏铁路列车，开启了这趟我心心念念了多年的高原之旅。\nDAY 1 宁波-西宁-拉萨\n旅途的第一日，我乘坐东方航空MU6323航班从宁波栎社飞往西宁曹家堡，航程总长约2个小时，抵达西宁的时间为晚上8点..."
-  },
-  "75": {
-    "category": "推文 (Tweets)",
-    "title": "【独家】《百日成王》第11集 快看！天上有金子！【7月国创】",
-    "link": "https://www.bilibili.com/video/BV1cggC6QE1T",
-    "snippet": "每周二、周五12:00，哔哩哔哩独家呈现！"
-  },
-  "76": {
-    "category": "推文 (Tweets)",
-    "title": "【乾乾特工·剧场版】大制作来啦！！！",
-    "link": "https://www.bilibili.com/video/BV1VC3q6ZEtP",
-    "snippet": "-"
-  },
-  "77": {
-    "category": "推文 (Tweets)",
-    "title": "【新玩意】390 块的成品卡组，通往赛场的优速通",
-    "link": "https://sspai.com/post/112658",
-    "snippet": "今年1月，北京中关村领展广场新开了一家宝可梦官方道馆。有段时间我隔几周就去逛一圈，买买毛绒玩具买买新品，经常看到有人买卡牌打比赛。直到7月16日，我花390元入手了这套刚上市的大师战略卡组构筑套装-多龙巴鲁托ex。\n\n先说我是谁\n我身上同时有宝可梦爱好者和卡牌游戏爱好者的双重标签。\n宝可梦方面，我是看无印篇动画长大的，游戏从红绿一路玩到朱紫和宝可梦 ZA，家里还摆着一些毛绒玩具、冰箱贴和徽章等等。..."
-  },
-  "78": {
-    "category": "推文 (Tweets)",
-    "title": "被赋予重任，“准万亿”省会不能再慢了",
-    "link": "https://www.huxiu.com/article/4878887.html",
-    "snippet": "上半年地方经济数据陆续出炉。辽宁GDP16227.2亿元，同比增长2.5%，低于去年同期（4.7%），也低于全国平均水平（4.7%）。省内“双核”两极分化，大连以5.1%的增速跑出上扬曲线，沈阳则录得2.2%的增速，二者增速差达2.9个百分点，这是沈阳连续六个季度在经济增速上落后于大连。扛起省会担当，辽宁又一......\n本文来自微信公众号： 城市进化论 ，作者：刘旭强\n上半年地方经济数据陆续出炉..."
-  },
-  "79": {
-    "category": "推文 (Tweets)",
-    "title": "角落新声｜清退90%的应用与通知，我从算法中夺回了「数字主权」",
-    "link": "https://sspai.com/post/112676",
-    "snippet": "本文参加声擎×少数派「角落新声」征文活动。\n随着移动世界的普及，派生于电子产品的「第二维度」融入了我们每个人的生活中。\n看到征文题目后，第一个进入脑海的是我房间的那张黑色电脑桌，高中毕业时，我去宜家花了几百大洋，将电脑桌搬回家后，亲手为自己的电子设备们打造了一个容身之所，但我的桌搭实在普通。思来想去，怎么也凑不出一篇有意义的文章……\n关掉少数派，我盯着手机主屏幕发呆，想要写点什么的心情和无题可写的..."
-  },
-  "80": {
-    "category": "推文 (Tweets)",
-    "title": "当老六租了一个6000W的号挑战一晚上花光，梦回COD",
-    "link": "https://www.bilibili.com/video/BV1pH3v6NEK5",
-    "snippet": "小程序：二哈电竞园区\n肖程序：二哈电竞园区，有你需要的三角洲的一切"
-  },
-  "81": {
-    "category": "推文 (Tweets)",
-    "title": "泡沫将裂？AI 没有意识，但它正在制造最昂贵的幻觉",
-    "link": "https://www.huxiu.com/article/4878889.html",
-    "snippet": "过去一个月，AI叙事第一次不像神话，更像一张正在被重新报价的资产负债表。截至2026年7月28日，SpaceX的股价已经从上市后高点跌去接近一半。它仍然是全世界最会讲未来故事的公司之一，火箭、星链、火星、AI，每一个词都能把投资人往更远的时间里推。但市场最近给出的回答很冷：故事可以继续讲，估值先回到地面。韩国......\n本文来自微信公众号： 不懂经 ，作者：不懂经也叔的Rust\n过去一个月，AI..."
-  },
-  "82": {
-    "category": "推文 (Tweets)",
-    "title": "专访极智嘉联合创始人陈曦：脱离效率的泛化，没有商业价值",
-    "link": "https://www.huxiu.com/article/4878893.html",
-    "snippet": "2015年，陈曦和其他核心成员一起创立极智嘉。当时，他的目标是造出一款好用的AMR产品（自主移动机器人）。此次，「甲子光年」与极智嘉联合创始人、极智嘉具身智能CEO陈曦进行了一场对话，探讨了对当前具身智能热点问题的独到见解。脱离效率的泛化，没有商业价值：对于行业普遍把泛化能力当成具身智能最高标尺的情况，极智嘉......\n本文来自微信公众号： 具身研习社 \n2015年，陈曦和其他核心成员一起创立极..."
-  },
-  "83": {
-    "category": "推文 (Tweets)",
-    "title": "SpaceX星舰完成第13次试飞；中国多机构共建太空算力创新中心；甘肃渭源发生山洪灾害",
-    "link": "https://www.guokr.com/article/469774/",
-    "snippet": "今天是7月27日，星期一。1921年的今天，多伦多大学Frederick Banting和Charles Best团队证实胰岛素能调节血糖水平，彻底改变糖尿病的治疗，从此糖尿病从致命疾病变为可控慢性病。\n\n重点新闻速览\n1.SpaceX星舰完成第13次试飞\n2.中国星网数科联合北邮、蓝箭鸿擎共建太空算力创新中心\n3.中南大学联合腾讯发表AI驱动虚拟细胞UniPert-G2CP\n4.甘肃渭源山洪灾害..."
-  },
-  "84": {
-    "category": "推文 (Tweets)",
-    "title": "第1次在闲鱼投诉的经历：投诉成功，卖家不配合，这7天我都做了什么？",
-    "link": "https://sspai.com/post/112653",
-    "snippet": "作者声明：\n\n本文仅基于个人经历的真实记录，不作任何消费引导或倾向性猜测。\n为保护相关方隐私，文中所有可识别买家或卖家个人信息的内容均已做打码模糊处理。\n文章由本人独立撰写，结构优化由DeepSeek协助完成。\n封面图片由本人构思并提供素材，经Seedream4.5(豆包AI内置图像生成模型）辅助生成。\n\n事情发生在一周前，为了补全我的收藏和制作新一期古早数码图文，7月10号在闲鱼购入了一台售价5..."
-  },
-  "85": {
-    "category": "推文 (Tweets)",
-    "title": "🏨杀死伪人🏨",
-    "link": "https://www.bilibili.com/video/BV1tQ3c62Ed2",
-    "snippet": "本视频的所有角色立绘与部分高精度动效均为AI生成+人工后期调整+差分制作，场景为gmod地图内录制，角色配音由GPT–SOVITS完成，其余全部视觉效果均为人工手搓缝合。\n\n这期视频是八幡海铃的个人回，原本是当作主线的插叙来做的，结果越做越多，干脆做成特别篇了，故事线发生在立希家被攻陷之后海铃到睦家之前。抠图抠到晕厥，做得最辛苦的一集，这集比起游戏更偏向影视化，毕竟是特别篇，所以我想要稍微做这种风..."
-  },
-  "86": {
-    "category": "推文 (Tweets)",
-    "title": "当它们选择放弃全自研，能否上全球新牌桌？",
-    "link": "https://www.huxiu.com/article/4878894.html",
-    "snippet": "过去两年，在全球具身智能产业最喧嚣的日子里，融资纪录在中美之间轮流刷新，两个区域的人形机器人几乎同时开进工厂、走上发布会。不少业内人士发出感慨，具身智能或人形机器人全球范围内只有两个玩家。在所有讨论中，那个曾经定义了\"机器人\"三个字的日本，却近乎失语。行业研究机构统计，2025年全球人形机器人出货量前六名全部......\n本文来自微信公众号： 具身研习社 ，作者：Vincent，编辑：吕鑫燚\n过去..."
-  },
-  "87": {
-    "category": "推文 (Tweets)",
-    "title": "外企高工资背后，没人公开的真相",
-    "link": "https://www.huxiu.com/article/4878884.html",
-    "snippet": "线下聚会，一个在民企做销售的哥们，拍着我肩膀说，你们干外企的就是好，工资高，还稳定，真是我们这帮「泥腿子」羡慕的对象。我笑了笑，没说什么，我知道他在开玩笑。不过饭后，那句话在我脑子里倒是待了很久。外企工资高，没错，相比很多行业，确实还可以。但「羡慕」这两个字，要不是我在外企待过，还真信了。这些年过来，我是觉得......\n本文来自微信公众号： 外企观CHA ，作者：MK麦客\n线下聚会，一个在民企做..."
-  },
-  "88": {
-    "category": "推文 (Tweets)",
-    "title": "川西自驾复盘：一场因高反而提前结束的旅行",
-    "link": "https://sspai.com/post/112654",
-    "snippet": "凌晨 4:30分，我在格聂山脚下的民宿收拾行李。\n房间里很安静，只有拉链被反复拉开的声音。几个小时前，我们还在讨论第二天要早起看日照金山、要去隔壁的小山坡上徒步，去找网红点「一棵树」在哪儿。现在，这些问题都不用讨论了，我俩一致决定，整理好行李，等天一亮就返程回成都。\n做出这个决定很难。\n当晚 2 点，我被剧烈的头痛弄醒，眼睛肿胀到不像自己的，我慌张地摸向床头的制氧机，试图缓解身体的不适。可症状却愈..."
-  },
-  "89": {
-    "category": "推文 (Tweets)",
-    "title": "Notion 剪藏Skill+Cli，一行命令把任意链接存进 Notion",
-    "link": "https://sspai.com/post/112690",
-    "snippet": "告别手动复制粘贴：一行命令把任意链接存进 Notion，还能让 Claude 帮你存\n用 Notion 做知识库的人，大概都干过同一件事：看到一篇好文章、一条有用的推、一个 GitHub 仓库，想收进 Notion，于是打开页面、复制标题、复制正文、切回 Notion、粘贴、再手动补上作者和标签……一套下来两三分钟，收藏十条就是半小时。\n我最近把这件事彻底交给了一行命令。clipno 是一个命令行..."
+    "title": "迈克尔·B·乔丹主演的《天罗地网》预告片，让那辆逃逸面包车成了“梵高”",
+    "link": "https://mashable.com/entertainment/thomas-crown-affair-michael-b-jordan-trailer",
+    "snippet": "Remember the Pierce Brosnan classic? \"The Thomas Crown Affair\" has had an update starring Michael B. Jordan. Trailer."
   }
 }
