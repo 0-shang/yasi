@@ -697,6 +697,26 @@ bot.on('text', async (ctx) => {
       const displayTime = parsedDate.toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' });
       await ctx.reply(`✅ 已加入定时队列，计划发送时间: ${displayTime} (北京时间)\n(将存入 drafts 并标记 approved)`);
       return;
+    } else if (state.type === 'wechat') {
+       pendingWechatDrafts.set(state.msgId, { ...pendingWechatDrafts.get(state.msgId), content: text });
+       const article = pendingWechatDrafts.get(state.msgId);
+       let previewContent = article.content.replace(/<[^>]*>?/gm, '');
+       if (previewContent.length > 2500) previewContent = previewContent.substring(0, 2500) + '...\n\n(内容过长已截断)';
+       await ctx.reply(
+         `✅ 公众号文章已更新！\n\n<b>标题：</b>${article.title}\n\n<b>正文预览：</b>\n${previewContent}\n\n您想现在推送到草稿箱吗？(推送前请发送一张照片作为封面)`,
+         {
+           parse_mode: 'HTML',
+           reply_markup: {
+             inline_keyboard: [
+               [Markup.button.callback('🚀 准备推送到草稿箱', `push_wechat_${state.msgId}`)],
+               [Markup.button.callback('✏️ 更改文章', `edit_wechat_${state.msgId}`)],
+               [Markup.button.callback('🌐 同步到我的网站博客', `sync_wechat_blog_${state.msgId}`)],
+               [Markup.button.callback('❌ 取消', `cancel_wechat_${state.msgId}`)]
+             ]
+           }
+         }
+       );
+       return;
     }
   }
 
@@ -730,6 +750,8 @@ bot.on('text', async (ctx) => {
                 reply_markup: {
                   inline_keyboard: [
                     [Markup.button.callback('🚀 准备推送到草稿箱', `push_wechat_${newMsgId}`)],
+                    [Markup.button.callback('✏️ 更改文章', `edit_wechat_${newMsgId}`)],
+                    [Markup.button.callback('🌐 同步到我的网站博客', `sync_wechat_blog_${newMsgId}`)],
                     [Markup.button.callback('❌ 取消', `cancel_wechat_${newMsgId}`)]
                   ]
                 }
@@ -820,6 +842,8 @@ bot.on('text', async (ctx) => {
           reply_markup: {
             inline_keyboard: [
               [Markup.button.callback('🚀 准备推送到草稿箱', `push_wechat_${newMsgId}`)],
+              [Markup.button.callback('✏️ 更改文章', `edit_wechat_${newMsgId}`)],
+              [Markup.button.callback('🌐 同步到我的网站博客', `sync_wechat_blog_${newMsgId}`)],
               [Markup.button.callback('❌ 取消', `cancel_wechat_${newMsgId}`)]
             ]
           }
@@ -1178,6 +1202,78 @@ bot.on('photo', async (ctx) => {
 });
 
 // ---------- End WeChat Handlers ---------- //
+
+bot.action(/edit_wechat_(.+)/, async (ctx) => {
+  if (ctx.from.id !== myUserId) return;
+  const msgId = parseInt(ctx.match[1], 10);
+  const article = pendingWechatDrafts.get(msgId);
+  if (!article) return ctx.answerCbQuery('文章已过期');
+
+  editingState.set(myUserId, { type: 'wechat', msgId: msgId });
+  await ctx.answerCbQuery();
+  await ctx.reply(`✏️ **更改公众号文章**\n\n请复制下方的 Markdown 内容，修改后作为新消息发送给我：\n\n\`\`\`text\n${article.content}\n\`\`\``, { parse_mode: 'Markdown' });
+});
+
+bot.action(/sync_wechat_blog_(.+)/, async (ctx) => {
+  if (ctx.from.id !== myUserId) return;
+  const msgId = parseInt(ctx.match[1], 10);
+  const article = pendingWechatDrafts.get(msgId);
+
+  if (!article) {
+    return ctx.answerCbQuery('文章内容已过期或不存在。');
+  }
+
+  await ctx.answerCbQuery();
+  const loadingMsg = await ctx.reply('⏳ 正在同步到网站博客...');
+
+  try {
+    const repoRoot = path.join(__dirname, '..', '..');
+    const tempDir = path.join(repoRoot, 'temp-ai-nav-blog');
+    const pat = process.env.GITHUB_PAT;
+    
+    if (fs.existsSync(tempDir)) fs.rmSync(tempDir, { recursive: true, force: true });
+    
+    let cloneCmd = \`git clone https://github.com/0-shang/ai-nav.git temp-ai-nav-blog\`;
+    if (pat) cloneCmd = \`git clone https://\${pat}@github.com/0-shang/ai-nav.git temp-ai-nav-blog\`;
+    
+    exec(cloneCmd, { cwd: repoRoot }, (err) => {
+      if (err) return ctx.telegram.editMessageText(ctx.chat.id, loadingMsg.message_id, undefined, '❌ Failed to clone repo.');
+      
+      const dateStr = new Date().toISOString().split('T')[0];
+      const safeTitle = article.title.replace(/[\\/\\\\]/g, '-').replace(/\\s+/g, '-');
+      const filename = \`\${dateStr}-\${safeTitle}.md\`;
+      const destDir = path.join(tempDir, 'content', 'blog');
+      
+      fs.mkdirSync(destDir, { recursive: true });
+      
+      const fileContent = \`---
+title: "\${article.title}"
+date: \${dateStr}
+description: ""
+---
+
+\${article.content}\`;
+      
+      fs.writeFileSync(path.join(destDir, filename), fileContent, 'utf-8');
+      
+      const pushCmd = pat ? \`git push https://\${pat}@github.com/0-shang/ai-nav.git HEAD:master\` : 'git push';
+      const cmd = \`git config user.name "bot" && git config user.email "bot@example.com" && git add content/blog/ && git commit -m "bot: sync wechat article to blog" && git pull --rebase origin master && \${pushCmd}\`;
+      
+      exec(cmd, { cwd: tempDir }, (pushErr) => {
+        fs.rmSync(tempDir, { recursive: true, force: true });
+        if (pushErr) {
+          const safeMsg = pat ? pushErr.message.replace(new RegExp(pat, 'g'), '***') : pushErr.message;
+          ctx.telegram.editMessageText(ctx.chat.id, loadingMsg.message_id, undefined, \`❌ 同步失败: \${safeMsg}\`);
+        } else {
+          ctx.telegram.editMessageText(ctx.chat.id, loadingMsg.message_id, undefined, \`✅ 已成功同步《\${article.title}》到网站博客！\`);
+        }
+      });
+    });
+  } catch (e) {
+    console.error(e);
+    await ctx.telegram.editMessageText(ctx.chat.id, loadingMsg.message_id, undefined, \`❌ 同步时出错: \${e.message}\`);
+  }
+});
 
 
 bot.telegram.setMyCommands([

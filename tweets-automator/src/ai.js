@@ -104,10 +104,10 @@ const wechatArticlePrompt = `
 2. **引人入胜的开头**：抛出痛点、引起共鸣，或者用一个故事切入。
 3. **结构清晰**：主体部分必须分段落，使用小标题。
 4. **配图占位**：为了让文章更生动，你必须在文章中穿插 3-5 张相关的配图。
-   插入配图的格式必须为 Markdown 图片，并且图片链接使用以下固定格式：
-   \`![描述](https://image.pollinations.ai/prompt/<用下划线分隔的英文图像提示词>?width=800&height=400&nologo=true)\`
-   例如：\`![夕阳下的城市](https://image.pollinations.ai/prompt/cyberpunk_city_sunset_beautiful_lighting?width=800&height=400&nologo=true)\`
-   注意：提示词必须是英文，用下划线替代空格，描述你想要的画面。
+   插入配图的格式必须为 Markdown 图片，为了确保图片真实好看，请使用 loremflickr 的免费实景图库服务，链接格式如下：
+   \`![描述](https://loremflickr.com/800/400/<用逗号分隔的1到2个英文关键词>)\`
+   例如：\`![夕阳下的城市](https://loremflickr.com/800/400/city,sunset)\`
+   注意：关键词必须是核心英文单词，尽量准确描述画面主题，不要使用长句。
 5. **结尾互动**：总结升华，并留下一个互动问题，引导读者留言。
 `;
 
