@@ -676,10 +676,26 @@ bot.on('text', async (ctx) => {
       if (!pendingText) {
         return ctx.reply('❌ 找不到对应的推文内容，可能已过期。');
       }
-      // Check if text looks like a time
-      saveAndSyncToGithub(pendingText, 'draft', null, text);
+      
+      let scheduledTimeStr = text.trim();
+      // Auto-append Beijing Time offset if missing in YYYY-MM-DD HH:mm format
+      if (/^\d{4}-\d{2}-\d{2}[ T]\d{2}:\d{2}(:\d{2})?$/.test(scheduledTimeStr)) {
+         scheduledTimeStr = scheduledTimeStr.replace(' ', 'T') + '+08:00';
+      }
+      
+      const parsedDate = new Date(scheduledTimeStr);
+      if (isNaN(parsedDate.getTime())) {
+          // Re-ask
+          editingState.set(myUserId, state); // restore state
+          return ctx.reply('❌ 时间格式无法识别，请输入标准格式，例如：2026-07-29 15:30');
+      }
+      
+      const finalIsoTime = parsedDate.toISOString();
+      saveAndSyncToGithub(pendingText, 'draft', null, finalIsoTime);
       pendingTweets.delete(state.msgId);
-      await ctx.reply(`✅ 已加入定时队列，计划发送时间: ${text}\n(将存入 drafts 并标记 approved)`);
+      
+      const displayTime = parsedDate.toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' });
+      await ctx.reply(`✅ 已加入定时队列，计划发送时间: ${displayTime} (北京时间)\n(将存入 drafts 并标记 approved)`);
       return;
     }
   }
