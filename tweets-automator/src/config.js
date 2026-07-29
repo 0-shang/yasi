@@ -29,6 +29,8 @@ const TWITTER_ACCESS_SECRET = process.env.TWITTER_ACCESS_SECRET;
 const WECHAT_APP_ID = process.env.WECHAT_APP_ID;
 const WECHAT_APP_SECRET = process.env.WECHAT_APP_SECRET;
 
+const PEXELS_API_KEY = process.env.PEXELS_API_KEY;
+
 const RSS_FEED_URL = process.env.RSS_FEED_URL || 'https://news.ycombinator.com/rss';
 
 // Resolve workspaces and tweets directories
@@ -74,6 +76,7 @@ module.exports = {
   DEEPSEEK_MODEL,
   AI_PROVIDER,
   RSS_FEED_URL,
+  PEXELS_API_KEY,
   TWITTER: {
     apiKey: TWITTER_API_KEY,
     apiSecret: TWITTER_API_SECRET,

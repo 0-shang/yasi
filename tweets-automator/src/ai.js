@@ -104,14 +104,46 @@ const wechatArticlePrompt = `
 2. **引人入胜的开头**：抛出痛点、引起共鸣，或者用一个故事切入。
 3. **结构清晰**：主体部分必须分段落，使用小标题。
 4. **配图占位**：为了让文章更生动，你必须在文章中穿插 3-5 张相关的配图。
-   插入配图的格式必须为 Markdown 图片，为了确保生成极高质量、无AI痕迹的真实感配图，请使用最新支持 FLUX 模型的生成接口。链接格式如下：
-   \`![描述](https://image.pollinations.ai/prompt/<用下划线分隔的超长英文图像提示词>?width=800&height=400&nologo=true&model=flux)\`
-   例如：\`![夕阳下的城市](https://image.pollinations.ai/prompt/Cinematic_photography_of_a_city_sunset_golden_hour_shot_on_35mm_lens_hyper_realistic_8k_highly_detailed?width=800&height=400&nologo=true&model=flux)\`
-   注意：提示词必须是英文，必须包含描述真实摄影、电影感、高清晰度等词汇（例如 cinematic photography, hyper realistic, shot on 35mm lens 等），用下划线替代空格。这非常关键，只有加入这些摄影提示词才能生成极其惊艳的照片级图像，避免产生廉价的 AI 感。
+   由于我们将调用真实免版权图库 API（Pexels），请在需要插入图片的位置使用特定的占位符格式：
+   \`[IMAGE_PLACEHOLDER: 1到2个英文关键词]\`
+   例如：\`[IMAGE_PLACEHOLDER: artificial intelligence, finance]\`
+   注意：关键词必须是英文名词，尽量提取该段落最核心的主题词，不要使用长句。
 5. **结尾互动**：总结升华，并留下一个互动问题，引导读者留言。
 `;
 
+async function fetchPexelsImage(query) {
+  if (!config.PEXELS_API_KEY) {
+    console.log('No PEXELS_API_KEY found, using fallback loremflickr');
+    return `https://loremflickr.com/800/400/${encodeURIComponent(query)}`;
+  }
+  try {
+    const res = await fetch(`https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}&per_page=15&orientation=landscape`, {
+      headers: { 'Authorization': config.PEXELS_API_KEY }
+    });
+    const data = await res.json();
+    if (data.photos && data.photos.length > 0) {
+      const photo = data.photos[Math.floor(Math.random() * data.photos.length)];
+      return photo.src.large;
+    }
+  } catch (e) {
+    console.error('Pexels API error:', e);
+  }
+  return `https://loremflickr.com/800/400/${encodeURIComponent(query)}`;
+}
 
+async function processImagePlaceholders(content) {
+  const regex = /\[IMAGE_PLACEHOLDER:\s*(.+?)\]/g;
+  const matches = [...content.matchAll(regex)];
+  let newContent = content;
+  
+  for (const match of matches) {
+    const fullMatch = match[0];
+    const query = match[1].trim();
+    const imageUrl = await fetchPexelsImage(query);
+    newContent = newContent.replace(fullMatch, `![${query}](${imageUrl})`);
+  }
+  return newContent;
+}
 
 /**
  * Generate tweets using DeepSeek API
@@ -273,6 +305,7 @@ The object must have exactly these keys:
 - "content": The article body in Markdown format (including the image links).
 `;
 
+  let articleData;
   if (config.AI_PROVIDER === 'deepseek') {
     const response = await fetch('https://api.deepseek.com/chat/completions', {
       method: 'POST',
@@ -291,8 +324,8 @@ The object must have exactly these keys:
     });
     const result = await response.json();
     let text = result.choices[0].message.content.trim();
-    if (text.startsWith('\`\`\`')) text = text.replace(/^\`\`\`json\s*/i, '').replace(/\`\`\`$/, '').trim();
-    return JSON.parse(text);
+    if (text.startsWith('```')) text = text.replace(/^```json\s*/i, '').replace(/```$/, '').trim();
+    articleData = JSON.parse(text);
   } else {
     const ai = getGeminiClient();
     const response = await ai.models.generateContent({
@@ -310,8 +343,11 @@ The object must have exactly these keys:
         }
       }
     });
-    return JSON.parse(response.text);
+    articleData = JSON.parse(response.text);
   }
+  
+  articleData.content = await processImagePlaceholders(articleData.content);
+  return articleData;
 }
 
 /**
