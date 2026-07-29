@@ -52,11 +52,12 @@ const defaultRssSources = {
   "科技人工智能 (Tech & AI)": {
     limit: 10,
     sources: [
-      { url: "https://feeds.feedburner.com/ruanyifeng", quota: 3, label: "阮一峰" },
-      { url: "https://www.qbitai.com/feed",             quota: 4, label: "量子位" },
-      { url: "https://openai.com/blog/rss.xml",         quota: 2, label: "OpenAI" },
-      { url: "https://news.ycombinator.com/rss",        quota: 4, label: "HackerNews" },
-      { url: "https://thenewstack.io/feed/",            quota: 3, label: "The New Stack" },
+      { url: "https://www.qbitai.com/feed", quota: 4, label: "量子位 (前沿AI资讯)" },
+      { url: "https://rsshub.rssforever.com/jiqizhixin/daily", quota: 4, label: "机器之心 (AI产业纵深)" },
+      { url: "https://huggingface.co/blog/feed.xml", quota: 3, label: "Hugging Face (开源AI生态)" },
+      { url: "https://techcrunch.com/category/artificial-intelligence/feed/", quota: 3, label: "TechCrunch AI (硅谷AI创投)" },
+      { url: "https://www.marktechpost.com/feed/", quota: 3, label: "MarkTechPost (AI前沿研究/工具)" },
+      { url: "https://openai.com/news/rss.xml", quota: 2, label: "OpenAI 官方动态" }
     ]
   },
   "理财投资 (Finance & Investment)": {
