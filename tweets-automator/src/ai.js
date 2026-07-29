@@ -43,7 +43,8 @@ const userTweetPrompt = `
 请阅读我提供的内容，然后用你自己的话重新表述，写成一条推文（或 Thread）。
 
 【最重要的原则】
-把事情讲清楚。这是第一优先级。
+1. 必须使用中文（简体）进行输出，即使我提供的原文是英文。
+2. 把事情讲清楚。这是第一优先级。
 不要为了"简洁"而牺牲表达的完整性。一个观点如果需要三句话才能说明白，就用三句话。
 但也不要注水、不要重复、不要废话。说完就停。
 
@@ -590,7 +591,7 @@ async function simpleChatWithAI(messages) {
 }
 
 async function translateToChinese(text) {
-  const prompt = `Translate the following RSS headlines and snippets into Chinese. Do not add any extra conversational filler, just return the translated text directly.\n\n${text}`;
+  const prompt = `Translate the following list into Chinese (Simplified). Keep the exact original index format (e.g. [1], [2]). Do not add any extra conversational filler, just return the translated text directly.\n\n${text}`;
   
   if (config.AI_PROVIDER === 'deepseek') {
     if (!config.DEEPSEEK_API_KEY || config.DEEPSEEK_API_KEY === 'your_deepseek_api_key_here') throw new Error('Missing API key');

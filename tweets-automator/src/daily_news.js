@@ -271,7 +271,7 @@ async function runFetch(telegramBot, userId, categoryKeys = null) {
 
   const translatedMap = {};
   for (const line of translatedText.split('\n')) {
-    const m = line.match(/^\[(\d+)\]\s*(.*)$/);
+    const m = line.match(/^\s*[-*]?\s*\[?(\d+)\]?[\s:：.]*(.*)$/);
     if (m) translatedMap[m[1]] = m[2].trim();
   }
 
