@@ -109,11 +109,16 @@ const defaultRssSources = {
     limit: 10,
     shuffle: true,
     sources: [
-      { url: "https://rsshub.rssforever.com/tieba/forum/%E5%BC%B1%E6%99%BA%E5%90%A7", quota: 10, ignoreSeen: true, label: "贴吧(弱智吧段子)" },
-      { url: "https://rsshub.rssforever.com/douban/group/explore", quota: 10, ignoreSeen: true, label: "豆瓣讨论精选" },
-      { url: "https://rsshub.rssforever.com/chouti/hot", quota: 10, ignoreSeen: true, label: "抽屉新热榜" },
-      { url: "https://rsshub.rssforever.com/jike/topic/54dffb40e4b0f57466e675f0", quota: 10, ignoreSeen: true, label: "即刻(开发者日常)" },
-      { url: "https://rsshub.rssforever.com/jike/topic/553870e8e4b0eb9b2d69dc06", quota: 10, ignoreSeen: true, label: "即刻(即刻精选)" }
+      { url: "https://www.reddit.com/r/Showerthoughts/top/.rss?t=day", quota: 10, ignoreSeen: true, label: "Reddit (脑洞/神回复)" },
+      { url: "https://www.reddit.com/r/todayilearned/top/.rss?t=day", quota: 10, ignoreSeen: true, label: "Reddit (冷知识/TIL)" },
+      { url: "https://www.reddit.com/r/LifeProTips/top/.rss?t=day", quota: 10, ignoreSeen: true, label: "Reddit (生活小妙招)" },
+      { url: "https://www.reddit.com/r/AskReddit/top/.rss?t=day", quota: 10, ignoreSeen: true, label: "Reddit (热门脑洞讨论)" },
+      { url: "https://www.reddit.com/r/Damnthatsinteresting/top/.rss?t=day", quota: 10, ignoreSeen: true, label: "Reddit (奇闻趣事)" },
+      { url: "https://www.reddit.com/r/mildlyinteresting/top/.rss?t=day", quota: 10, ignoreSeen: true, label: "Reddit (有趣发现)" },
+      { url: "http://feeds.kottke.org/main", quota: 10, ignoreSeen: true, label: "Kottke.org (有趣事物/链接)" },
+      { url: "https://daringfireball.net/feeds/main", quota: 10, ignoreSeen: true, label: "Daring Fireball (科技微观/吐槽)" },
+      { url: "https://boingboing.net/feed", quota: 10, ignoreSeen: true, label: "Boing Boing (极客流行文化)" },
+      { url: "https://mashable.com/feeds/rss/all", quota: 10, ignoreSeen: true, label: "Mashable (网络热门流行)" }
     ]
   }
 };
