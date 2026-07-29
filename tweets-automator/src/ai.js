@@ -104,10 +104,10 @@ const wechatArticlePrompt = `
 2. **引人入胜的开头**：抛出痛点、引起共鸣，或者用一个故事切入。
 3. **结构清晰**：主体部分必须分段落，使用小标题。
 4. **配图占位**：为了让文章更生动，你必须在文章中穿插 3-5 张相关的配图。
-   插入配图的格式必须为 Markdown 图片，为了确保图片真实好看，请使用 loremflickr 的免费实景图库服务，链接格式如下：
-   \`![描述](https://loremflickr.com/800/400/<用逗号分隔的1到2个英文关键词>)\`
-   例如：\`![夕阳下的城市](https://loremflickr.com/800/400/city,sunset)\`
-   注意：关键词必须是核心英文单词，尽量准确描述画面主题，不要使用长句。
+   插入配图的格式必须为 Markdown 图片，为了确保生成极高质量、无AI痕迹的真实感配图，请使用最新支持 FLUX 模型的生成接口。链接格式如下：
+   \`![描述](https://image.pollinations.ai/prompt/<用下划线分隔的超长英文图像提示词>?width=800&height=400&nologo=true&model=flux)\`
+   例如：\`![夕阳下的城市](https://image.pollinations.ai/prompt/Cinematic_photography_of_a_city_sunset_golden_hour_shot_on_35mm_lens_hyper_realistic_8k_highly_detailed?width=800&height=400&nologo=true&model=flux)\`
+   注意：提示词必须是英文，必须包含描述真实摄影、电影感、高清晰度等词汇（例如 cinematic photography, hyper realistic, shot on 35mm lens 等），用下划线替代空格。这非常关键，只有加入这些摄影提示词才能生成极其惊艳的照片级图像，避免产生廉价的 AI 感。
 5. **结尾互动**：总结升华，并留下一个互动问题，引导读者留言。
 `;
 
