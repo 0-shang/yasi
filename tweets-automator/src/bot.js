@@ -1158,8 +1158,6 @@ bot.action(/push_wechat_(.+)/, async (ctx) => {
       digest: article.content.replace(/<[^>]+>/g, '').substring(0, 100)
     });
 
-    pendingWechatDrafts.delete(msgId);
-
     await ctx.telegram.editMessageText(
       ctx.chat.id,
       loadingMsg.message_id,
