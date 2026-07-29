@@ -1233,45 +1233,45 @@ bot.action(/sync_wechat_blog_(.+)/, async (ctx) => {
     
     if (fs.existsSync(tempDir)) fs.rmSync(tempDir, { recursive: true, force: true });
     
-    let cloneCmd = \`git clone https://github.com/0-shang/ai-nav.git temp-ai-nav-blog\`;
-    if (pat) cloneCmd = \`git clone https://\${pat}@github.com/0-shang/ai-nav.git temp-ai-nav-blog\`;
+    let cloneCmd = `git clone https://github.com/0-shang/ai-nav.git temp-ai-nav-blog`;
+    if (pat) cloneCmd = `git clone https://${pat}@github.com/0-shang/ai-nav.git temp-ai-nav-blog`;
     
     exec(cloneCmd, { cwd: repoRoot }, (err) => {
       if (err) return ctx.telegram.editMessageText(ctx.chat.id, loadingMsg.message_id, undefined, '❌ Failed to clone repo.');
       
       const dateStr = new Date().toISOString().split('T')[0];
-      const safeTitle = article.title.replace(/[\\/\\\\]/g, '-').replace(/\\s+/g, '-');
-      const filename = \`\${dateStr}-\${safeTitle}.md\`;
+      const safeTitle = article.title.replace(/[\/\\]/g, '-').replace(/\s+/g, '-');
+      const filename = `${dateStr}-${safeTitle}.md`;
       const destDir = path.join(tempDir, 'content', 'blog');
       
       fs.mkdirSync(destDir, { recursive: true });
       
-      const fileContent = \`---
-title: "\${article.title}"
-date: \${dateStr}
+      const fileContent = `---
+title: "${article.title}"
+date: ${dateStr}
 description: ""
 ---
 
-\${article.content}\`;
+${article.content}`;
       
       fs.writeFileSync(path.join(destDir, filename), fileContent, 'utf-8');
       
-      const pushCmd = pat ? \`git push https://\${pat}@github.com/0-shang/ai-nav.git HEAD:master\` : 'git push';
-      const cmd = \`git config user.name "bot" && git config user.email "bot@example.com" && git add content/blog/ && git commit -m "bot: sync wechat article to blog" && git pull --rebase origin master && \${pushCmd}\`;
+      const pushCmd = pat ? `git push https://${pat}@github.com/0-shang/ai-nav.git HEAD:master` : 'git push';
+      const cmd = `git config user.name "bot" && git config user.email "bot@example.com" && git add content/blog/ && git commit -m "bot: sync wechat article to blog" && git pull --rebase origin master && ${pushCmd}`;
       
       exec(cmd, { cwd: tempDir }, (pushErr) => {
         fs.rmSync(tempDir, { recursive: true, force: true });
         if (pushErr) {
           const safeMsg = pat ? pushErr.message.replace(new RegExp(pat, 'g'), '***') : pushErr.message;
-          ctx.telegram.editMessageText(ctx.chat.id, loadingMsg.message_id, undefined, \`❌ 同步失败: \${safeMsg}\`);
+          ctx.telegram.editMessageText(ctx.chat.id, loadingMsg.message_id, undefined, `❌ 同步失败: ${safeMsg}`);
         } else {
-          ctx.telegram.editMessageText(ctx.chat.id, loadingMsg.message_id, undefined, \`✅ 已成功同步《\${article.title}》到网站博客！\`);
+          ctx.telegram.editMessageText(ctx.chat.id, loadingMsg.message_id, undefined, `✅ 已成功同步《${article.title}》到网站博客！`);
         }
       });
     });
   } catch (e) {
     console.error(e);
-    await ctx.telegram.editMessageText(ctx.chat.id, loadingMsg.message_id, undefined, \`❌ 同步时出错: \${e.message}\`);
+    await ctx.telegram.editMessageText(ctx.chat.id, loadingMsg.message_id, undefined, `❌ 同步时出错: ${e.message}`);
   }
 });
 
