@@ -466,7 +466,6 @@ bot.command('rss', async (ctx) => {
           [Markup.button.callback('🚀 发布这个版本', `post_${newMsgId}`)],
           [Markup.button.callback('🧵 转为 Thread', `thread_${newMsgId}`)],
           [Markup.button.callback('✏️ 修改', `edittweet_${newMsgId}`)],
-          [Markup.button.callback('💾 存为草稿', `save_${newMsgId}`)],
           [Markup.button.callback('📅 定时发送', `schedule_${newMsgId}`)]
         ])
       );
@@ -721,7 +720,6 @@ bot.on('text', async (ctx) => {
           [Markup.button.callback('🚀 立即发布', `post_${state.msgId}`)],
           [Markup.button.callback('🧵 转为 Thread', `thread_${state.msgId}`)],
           [Markup.button.callback('✨ AI 润色 (AI Polish)', `ai_${state.msgId}`)],
-          [Markup.button.callback('💾 存为草稿', `save_${state.msgId}`)],
           [Markup.button.callback('📅 定时发送', `schedule_${state.msgId}`)],
           [Markup.button.callback('✏️ 再次修改', `edittweet_${state.msgId}`)],
           [Markup.button.callback('❌ 取消', `cancel_${state.msgId}`)]
@@ -818,7 +816,6 @@ bot.on('text', async (ctx) => {
             [Markup.button.callback('🚀 发布', `post_${newMsgId}`)],
             [Markup.button.callback('🧵 转为 Thread', `thread_${newMsgId}`)],
             [Markup.button.callback('✏️ 修改', `edittweet_${newMsgId}`)],
-                [Markup.button.callback('💾 草稿', `save_${newMsgId}`)],
                 [Markup.button.callback('📅 定时', `schedule_${newMsgId}`)]
               ])
             );
@@ -927,7 +924,6 @@ bot.on('text', async (ctx) => {
           Markup.inlineKeyboard([
             [Markup.button.callback('🚀 发布', `post_${newMsgId}`)],
             [Markup.button.callback('✏️ 修改', `edittweet_${newMsgId}`)],
-            [Markup.button.callback('💾 草稿', `save_${newMsgId}`)],
             [Markup.button.callback('📅 定时', `schedule_${newMsgId}`)]
           ])
         );
@@ -998,8 +994,7 @@ bot.action(/ai_(.+)/, async (ctx) => {
         Markup.inlineKeyboard([
           [Markup.button.callback('🚀 发布这个版本', `post_${newMsgId}`)],
           [Markup.button.callback('🧵 转为 Thread', `thread_${newMsgId}`)],
-          [Markup.button.callback('✏️ 修改', `edittweet_${newMsgId}`)],
-          [Markup.button.callback('💾 存为草稿', `save_${newMsgId}`)]
+          [Markup.button.callback('✏️ 修改', `edittweet_${newMsgId}`)]
         ])
       );
     }
@@ -1050,7 +1045,6 @@ bot.action(/thread_(.+)/, async (ctx) => {
             [Markup.button.callback('🚀 发布', `post_${newMsgId}`)],
             [Markup.button.callback('🧵 转为 Thread', `thread_${newMsgId}`)],
             [Markup.button.callback('✏️ 修改', `edittweet_${newMsgId}`)],
-            [Markup.button.callback('💾 草稿', `save_${newMsgId}`)],
             [Markup.button.callback('📅 定时', `schedule_${newMsgId}`)]
           ])
         );
