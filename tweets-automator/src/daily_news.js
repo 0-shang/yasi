@@ -126,6 +126,14 @@ const defaultRssSources = {
       { url: "https://boingboing.net/feed", quota: 10, ignoreSeen: true, label: "Boing Boing (极客流行文化)" },
       { url: "https://mashable.com/feeds/rss/all", quota: 10, ignoreSeen: true, label: "Mashable (网络热门流行)" }
     ]
+  },
+  "体育产业 (Sports Industry)": {
+    limit: 10,
+    shuffle: true,
+    sources: [
+      { url: "https://frontofficesports.com/feed/", quota: 6, label: "Front Office Sports (体育商业)" },
+      { url: "https://www.sportico.com/feed/", quota: 6, label: "Sportico (体育产业投资)" }
+    ]
   }
 };
 
@@ -136,7 +144,8 @@ const categoryKeyMap = {
   finance: "理财投资 (Finance & Investment)",
   society: "社会民生 (Society & Life)",
   trending:"个人成长 (Personal Growth)",
-  tweets:  "推文 (Tweets)"
+  tweets:  "推文 (Tweets)",
+  sports:  "体育产业 (Sports Industry)"
 };
 
 // ============================================================
@@ -345,6 +354,7 @@ async function runFetch(telegramBot, userId, categoryKeys = null) {
       [Markup.button.callback('💰 仅重抓 理财投资', 'refetch_finance')],
       [Markup.button.callback('🌍 仅重抓 社会民生', 'refetch_society')],
       [Markup.button.callback('🌱 仅重抓 个人成长', 'refetch_trending')],
+      [Markup.button.callback('🏅 仅重抓 体育产业', 'refetch_sports')],
     ])
   );
 

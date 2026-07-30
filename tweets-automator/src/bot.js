@@ -373,6 +373,7 @@ bot.command('refetch', async (ctx) => {
       [Markup.button.callback('💰 仅重抓 理财投资', 'refetch_finance')],
       [Markup.button.callback('🌍 仅重抓 社会民生', 'refetch_society')],
       [Markup.button.callback('🌱 仅重抓 个人成长', 'refetch_trending')],
+      [Markup.button.callback('🏅 仅重抓 体育产业', 'refetch_sports')],
     ])
   );
 });
@@ -411,6 +412,7 @@ bot.action('refetch_finance', (ctx) => handleRefetchCategory(ctx, 'finance'));
 bot.action('refetch_society', (ctx) => handleRefetchCategory(ctx, 'society'));
 bot.action('refetch_trending', (ctx) => handleRefetchCategory(ctx, 'trending'));
 bot.action('refetch_tweets',  (ctx) => handleRefetchCategory(ctx, 'tweets'));
+bot.action('refetch_sports',  (ctx) => handleRefetchCategory(ctx, 'sports'));
 
 bot.command('rss', async (ctx) => {
   if (ctx.from.id !== myUserId) return;
