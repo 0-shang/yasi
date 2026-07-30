@@ -50,6 +50,11 @@ const isChatMode = new Map();
 const isWeChatMode = new Map();
 const pendingWechatDrafts = new Map();
 
+// Scheduling state
+let lastScheduledTime = 0;
+let scheduleIntervalIndex = 0;
+const SCHEDULE_INTERVALS = [37, 47, 57];
+
 // Helper: Fetch URL content
 async function enrichTextWithUrls(text) {
   const urlRegex = /(https?:\/\/[^\s]+)/g;
@@ -237,33 +242,49 @@ bot.start((ctx) => {
     "👋 欢迎！您可以直接发送任何长篇文字/链接，我将为您提炼为专业推文。\n\n💡 快捷指令:\n- `/daily` 抓取最新早报\n- `/news` 一键唤出上次早报\n- `/check` 检查并发布队列推文\n- `/chat` 切换纯聊天模式",
     Markup.inlineKeyboard([
       [Markup.button.callback('📰 抓取最新早报', 'fetch_daily')],
-      [Markup.button.callback('📋 查看上次早报', 'show_cached_news')]
+      [Markup.button.callback('📋 查看上次早报', 'show_cached_news')],
+      [Markup.button.callback('💬 切换为 闲聊模式', 'mode_chat'), Markup.button.callback('🐦 切换为 推文模式', 'mode_tweet')],
+      [Markup.button.callback('📝 切换为 公众号模式', 'mode_mp')]
     ])
   );
 });
 
+bot.action('mode_chat', async (ctx) => {
+  if (ctx.from.id !== myUserId) return;
+  isChatMode.set(myUserId, true);
+  isWeChatMode.set(myUserId, false);
+  await ctx.answerCbQuery('已切换到闲聊模式');
+  await ctx.reply("🤖 已切换到【闲聊模式】。在这个模式下，我会像一个普通的智能体助手一样与你对话，不会自动帮你生成推文。");
+});
+
+bot.action('mode_tweet', async (ctx) => {
+  if (ctx.from.id !== myUserId) return;
+  isChatMode.set(myUserId, false);
+  isWeChatMode.set(myUserId, false);
+  await ctx.answerCbQuery('已切换到推文模式');
+  await ctx.reply("🐦 已切换回【推文生成模式】。你发送给我的任何想法都会被提炼为推文草稿。");
+});
+
+bot.action('mode_mp', async (ctx) => {
+  if (ctx.from.id !== myUserId) return;
+  isWeChatMode.set(myUserId, true);
+  isChatMode.set(myUserId, false);
+  await ctx.answerCbQuery('已切换到公众号模式');
+  await ctx.reply("📝 已切换到【微信公众号模式】。你发送给我的任何主题，我都会自动为您撰写一篇图文并茂的公众号长文。");
+});
+
 bot.command('chat', (ctx) => {
   if (ctx.from.id !== myUserId) return;
-  const current = isChatMode.get(myUserId) || false;
-  isChatMode.set(myUserId, !current);
-  if (!current) {
-    ctx.reply("🤖 已切换到【闲聊模式】。在这个模式下，我会像一个普通的智能体助手一样与你对话，不会自动帮你生成推文。再次发送 /chat 可以切回推文模式。");
-  } else {
-    ctx.reply("🐦 已切换回【推文生成模式】。你发送给我的任何想法都会被提炼为推文草稿。");
-  }
+  isChatMode.set(myUserId, true);
+  isWeChatMode.set(myUserId, false);
+  ctx.reply("🤖 已切换到【闲聊模式】。在这个模式下，我会像一个普通的智能体助手一样与你对话，不会自动帮你生成推文。");
 });
 
 bot.command('mp', (ctx) => {
   if (ctx.from.id !== myUserId) return;
-  const current = isWeChatMode.get(myUserId) || false;
-  isWeChatMode.set(myUserId, !current);
-  if (!current) {
-    ctx.reply("📝 已切换到【微信公众号模式】。你发送给我的任何主题，我都会自动为您撰写一篇图文并茂的公众号长文。再次发送 /mp 可以切回推文模式。");
-    // Ensure chat mode is off
-    isChatMode.set(myUserId, false);
-  } else {
-    ctx.reply("🐦 已切换回【推文生成模式】。");
-  }
+  isWeChatMode.set(myUserId, true);
+  isChatMode.set(myUserId, false);
+  ctx.reply("📝 已切换到【微信公众号模式】。你发送给我的任何主题，我都会自动为您撰写一篇图文并茂的公众号长文。");
 });
 
 // Helper: re-send cached news board
@@ -619,6 +640,7 @@ bot.action('cancel_publish', async (ctx) => {
   await ctx.editMessageText('🚫 Cancelled publishing.');
 });
 
+
 bot.on('text', async (ctx) => {
   if (ctx.from.id !== myUserId) return;
 
@@ -670,32 +692,6 @@ bot.on('text', async (ctx) => {
           [Markup.button.callback('❌ 取消', `cancel_${state.msgId}`)]
         ])
       );
-      return;
-    } else if (state.type === 'schedule') {
-      const pendingText = pendingTweets.get(state.msgId);
-      if (!pendingText) {
-        return ctx.reply('❌ 找不到对应的推文内容，可能已过期。');
-      }
-      
-      let scheduledTimeStr = text.trim();
-      // Auto-append Beijing Time offset if missing in YYYY-MM-DD HH:mm format
-      if (/^\d{4}-\d{2}-\d{2}[ T]\d{2}:\d{2}(:\d{2})?$/.test(scheduledTimeStr)) {
-         scheduledTimeStr = scheduledTimeStr.replace(' ', 'T') + '+08:00';
-      }
-      
-      const parsedDate = new Date(scheduledTimeStr);
-      if (isNaN(parsedDate.getTime())) {
-          // Re-ask
-          editingState.set(myUserId, state); // restore state
-          return ctx.reply('❌ 时间格式无法识别，请输入标准格式，例如：2026-07-29 15:30');
-      }
-      
-      const finalIsoTime = parsedDate.toISOString();
-      saveAndSyncToGithub(pendingText, 'draft', null, finalIsoTime);
-      pendingTweets.delete(state.msgId);
-      
-      const displayTime = parsedDate.toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' });
-      await ctx.reply(`✅ 已加入定时队列，计划发送时间: ${displayTime} (北京时间)\n(将存入 drafts 并标记 approved)`);
       return;
     } else if (state.type === 'wechat') {
        pendingWechatDrafts.set(state.msgId, { ...pendingWechatDrafts.get(state.msgId), content: text });
@@ -1069,9 +1065,25 @@ bot.action(/schedule_(.+)/, async (ctx) => {
     return ctx.answerCbQuery('Tweet content expired or not found.');
   }
 
-  editingState.set(myUserId, { type: 'schedule', msgId: msgId });
-  await ctx.answerCbQuery();
-  await ctx.reply('📅 **设置定时发送**\n\n请直接回复我想发送的时间（格式建议：`2026-06-26 15:30`，或者直接输入 `明天上午10点` 等，格式不限只要发布脚本能懂即可，建议用标准时间格式）。');
+  const now = Date.now();
+  if (lastScheduledTime < now) {
+    lastScheduledTime = now;
+    scheduleIntervalIndex = 0;
+  }
+  
+  const intervalMinutes = SCHEDULE_INTERVALS[scheduleIntervalIndex];
+  scheduleIntervalIndex = (scheduleIntervalIndex + 1) % SCHEDULE_INTERVALS.length;
+  
+  lastScheduledTime += intervalMinutes * 60 * 1000;
+  const finalIsoTime = new Date(lastScheduledTime).toISOString();
+
+  // Save to approved so /check can see it and publish.js will pick it up
+  saveAndSyncToGithub(text, 'approved', null, finalIsoTime);
+  pendingTweets.delete(msgId);
+
+  const displayTime = new Date(lastScheduledTime).toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' });
+  await ctx.answerCbQuery('已加入定时发布队列');
+  await ctx.editMessageText(`✅ 已自动加入定时队列\n计划发送时间: ${displayTime} (北京时间)\n(已存入 approved 文件夹，可用 /check 查看)`);
 });
 
 bot.action(/cancel_(.+)/, async (ctx) => {
