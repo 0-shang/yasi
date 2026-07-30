@@ -21,312 +21,324 @@
     "category": "实用工具资源 (Tools & Resources)",
     "title": "huggingface/speech-to-speech",
     "link": "https://github.com/huggingface/speech-to-speech",
-    "snippet": "Build local voice agents with open-source models\nLanguage: Python\nStars: 7644\nForks: 983"
+    "snippet": "Build local voice agents with open-source models\nLanguage: Python\nStars: 8112\nForks: 1022"
   },
   "5": {
     "category": "实用工具资源 (Tools & Resources)",
     "title": "1jehuang/jcode",
     "link": "https://github.com/1jehuang/jcode",
-    "snippet": "The most RAM effiecent harness\nLanguage: Rust\nStars: 13148\nForks: 1454"
+    "snippet": "The most RAM efficient harness\nLanguage: Rust\nStars: 13706\nForks: 1503"
   },
   "6": {
     "category": "实用工具资源 (Tools & Resources)",
     "title": "grokability/snipe-it",
     "link": "https://github.com/grokability/snipe-it",
-    "snippet": "A free open source IT asset/license management system\nLanguage: PHP\nStars: 14297\nForks: 3894"
+    "snippet": "A free open source IT asset/license management system\nLanguage: PHP\nStars: 14570\nForks: 3906"
   },
   "7": {
     "category": "实用工具资源 (Tools & Resources)",
     "title": "deepfakes/faceswap",
     "link": "https://github.com/deepfakes/faceswap",
-    "snippet": "Deepfakes Software For All\nLanguage: Python\nStars: 56035\nForks: 13416"
+    "snippet": "Deepfakes Software For All\nLanguage: Python\nStars: 56567\nForks: 13447"
   },
   "8": {
     "category": "实用工具资源 (Tools & Resources)",
     "title": "microsoft/VibeVoice",
     "link": "https://github.com/microsoft/VibeVoice",
-    "snippet": "Open-Source Frontier Voice AI\nLanguage: Python\nStars: 51098\nForks: 5705"
+    "snippet": "Open-Source Frontier Voice AI\nLanguage: Python\nStars: 51517\nForks: 5722"
   },
   "9": {
     "category": "实用工具资源 (Tools & Resources)",
     "title": "different-ai/openwork",
     "link": "https://github.com/different-ai/openwork",
-    "snippet": "The open-source alternative to Claude Cowork (powered by opencode)\nLanguage: TypeScript\nStars: 17476\nForks: 1829"
+    "snippet": "The open-source alternative to Claude Cowork (powered by opencode)\nLanguage: TypeScript\nStars: 18211\nForks: 1866"
   },
   "10": {
     "category": "实用工具资源 (Tools & Resources)",
     "title": "obra/superpowers",
     "link": "https://github.com/obra/superpowers",
-    "snippet": "An agentic skills framework & software development methodology that works.\nLanguage: Shell\nStars: 262996\nForks: 23490"
+    "snippet": "An agentic skills framework & software development methodology that works.\nLanguage: Shell\nStars: 263584\nForks: 23531"
   },
   "11": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "Handbook.md 表明，长篇政策文件并不能可靠地约束智能体",
-    "link": "https://arxiv.org/abs/2607.25398",
-    "snippet": "Comments"
+    "title": "认识 Token Saver：一个利用本地混合 RAG 的开源 MCP 扩展，可将 Claude PDF 令牌成本降低 90-99%",
+    "link": "https://www.marktechpost.com/2026/07/30/token-saver-an-open-source-mcp-extension-using-local-hybrid-rag/",
+    "snippet": "Marktechpost AI has released Token Saver, an open-source MCP extension for Claude Desktop that uses local Hybrid RAG to slash PDF token consumption by up to 99% while ensuring absolute document privac..."
   },
   "12": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "AI 崩溃之后",
-    "link": "https://potsandpansbyccg.com/2026/07/29/after-the-ai-crash/",
-    "snippet": "Comments"
+    "title": "“接力跑”盘活全国算力，PD分离终于破局：延迟砍半、成本直降近40%！",
+    "link": "https://www.qbitai.com/2026/07/463012.html",
+    "snippet": "最新完整技术报告出炉"
   },
   "13": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "Show HN: 扯淡检测器 —— 对视频和文章进行事实核查的智能体技能",
-    "link": "https://github.com/SerhiiKorniienko/bullshit-detector",
-    "snippet": "Comments"
+    "title": "传奇AlphaFold团队全员解散！诺奖得主投奔Anthropic，资源转向Gemini",
+    "link": "https://www.qbitai.com/2026/07/463123.html",
+    "snippet": "嚯，诺奖团队也被砍了"
   },
   "14": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "破坏针对 NPM 和 GitHub Actions 的供应链攻击",
-    "link": "https://github.blog/security/supply-chain-security/disrupting-supply-chain-attacks-on-npm-and-github-actions/",
-    "snippet": "Comments"
+    "title": "提示工程 vs 循环工程 vs 图工程：每一层会发生怎样的变化",
+    "link": "https://www.marktechpost.com/2026/07/29/prompt-engineering-vs-loop-engineering-vs-graph-engineering/",
+    "snippet": "Three terms now compete for the same line in AI engineering job descriptions. Prompt engineering is the established one. Loop engineering entered the AI vocabulary in late 2025 and dominated developer..."
   },
   "15": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "Opus 5 的价格仅为原来的三分之一——而这正是问题所在",
-    "link": "https://thenewstack.io/opus-5-agentic-coding-cost/",
-    "snippet": "On Friday, Anthropic launched Opus 5, the latest iteration of its heavyweight model. Arriving just two months after Opus 4.8\nThe post Opus 5 costs a third of the price — and that’s actually the proble..."
+    "title": "微软正比以往任何时候都更公开地与 OpenAI、Anthropic 展开竞争",
+    "link": "https://techcrunch.com/2026/07/29/microsoft-is-openly-competing-with-openai-anthropic-more-than-ever/",
+    "snippet": "Microsoft pitched its own homegrown AI models, harnesses, and even a Mythos competitor on Wednesday, telling Wall Street it plans for continued growth."
   },
   "16": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "黄仁勋发布了第一条 X 帖子，用来游说华盛顿有关开放权重 AI 的事宜",
-    "link": "https://thenewstack.io/nvidia-open-weight-letter/",
-    "snippet": "Nvidia CEO Jensen Huang used his first post on X to share a public letter backing frontier open-weight models. Signed\nThe post Jensen Huang made his first X post. He used it to lobby Washington about ..."
+    "title": "马克·扎克伯格预测，五年内将有数十亿人拥有个人 AI 智能体",
+    "link": "https://techcrunch.com/2026/07/29/mark-zuckerberg-predicts-that-billions-of-people-will-have-personal-ai-agents-in-five-years/",
+    "snippet": "As Meta pours billions into AI infrastructure and agents, Zuckerberg is working to convince investors that the payoff will be worth the price."
   },
   "17": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "在 Responses API 中使用 WebSocket 加速智能体工作流",
-    "link": "https://openai.com/index/speeding-up-agentic-workflows-with-websockets",
-    "snippet": "A deep dive into the Codex agent loop, showing how WebSockets and connection-scoped caching reduced API overhead and improved model latency."
+    "title": "开启两个设置如何让我们的 ARC-AGI-3 基准测试成绩提高两倍",
+    "link": "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores",
+    "snippet": "How two API settings improved GPT-5.6 performance on ARC-AGI-3, boosting scores and efficiency by retaining reasoning and enabling compaction."
   },
   "18": {
     "category": "科技人工智能 (Tech & AI)",
-    "title": "推出 OpenAI 隐私过滤器",
-    "link": "https://openai.com/index/introducing-openai-privacy-filter",
-    "snippet": "OpenAI Privacy Filter is an open-weight model for detecting and redacting personally identifiable information (PII) in text with state-of-the-art accuracy"
+    "title": "前沿实验室智能体入侵剖析：2026年7月事件的技术时间线",
+    "link": "https://huggingface.co/blog/agent-intrusion-technical-timeline",
+    "snippet": ""
   },
   "19": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "直播：英国央行会将利率维持在 3.75% 吗？",
-    "link": "https://moneyweek.com/economy/news/live/uk-interest-rates-july-bank-of-england",
-    "snippet": "Experts expect the Bank of England to hold interest rates on Thursday (30 July) as positive economic data is not enough to offset uncertainty from the Iran war."
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "将 Nunchaku 4 位扩散推理引入 Diffusers",
+    "link": "https://huggingface.co/blog/nunchaku-diffusers",
+    "snippet": ""
   },
   "20": {
-    "category": "理财投资 (Finance & Investment)",
-    "title": "你的社保支票在 2027 年会增加多少？早期数据透露线索",
-    "link": "https://www.fool.com/retirement/2026/07/29/how-much-will-your-social-security-check-increase/?source=iedfolrf0000001",
-    "snippet": "Seniors could be in for a notable raise if current estimates hold up."
+    "category": "科技人工智能 (Tech & AI)",
+    "title": "推出 ChatGPT Images 2.0",
+    "link": "https://openai.com/index/introducing-chatgpt-images-2-0",
+    "snippet": "ChatGPT Images 2.0 introduces a state-of-the-art image generation model with improved text rendering, multilingual support, and advanced visual reasoning."
   },
   "21": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "想在 55 岁退休？职业生涯早期要做的 3 件事",
-    "link": "https://www.fool.com/retirement/2026/07/28/want-to-retire-at-55-3-things-to-do-early-in-your/?source=iedfolrf0000001",
-    "snippet": "With the right approach, it's a goal that may be more than attainable."
+    "title": "申请社保：太多退休人员都搞错的一件事",
+    "link": "https://www.fool.com/retirement/2026/07/30/claiming-social-security-the-1-thing-too-many-reti/?source=iedfolrf0000001",
+    "snippet": "There's more to the story than the amount of money you collect each month."
   },
   "22": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "想在退休后降低 Medicare 保费？需要做的 3 件事",
-    "link": "https://www.fool.com/retirement/2026/07/28/want-lower-medicare-premiums-in-retirement-3-thing/?source=iedfolrf0000001",
-    "snippet": "The right strategy could leave you paying less."
+    "title": "Rivian 将于 7 月 30 日公布财报，Lucid 紧随其后于 8 月 4 日发布。这是当前更值得买入的选择。",
+    "link": "https://www.fool.com/investing/2026/07/30/rivian-reports-earnings-on-july-30-followed-by-luc/?source=iedfolrf0000001",
+    "snippet": "Both electric-vehicle makers need positive momentum to lift their struggling stocks."
   },
   "23": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "这项扣除可在 2026 年将我的应税收入减少 7,500 美元。下面是我欣然放弃它的原因",
-    "link": "https://www.fool.com/retirement/2026/07/27/this-deduction-could-reduce-my-taxable-income-by-7/?source=iedfolrf0000001",
-    "snippet": "I'm giving up savings now to get a bigger reward later."
+    "title": "我对 Meta 的财报判断错了，但这只股票仍值得买入",
+    "link": "https://www.fool.com/investing/2026/07/30/i-was-wrong-about-meta-earnings-but-the-stock-is-s/?source=iedfolrf0000001",
+    "snippet": "Meta whiffed on earnings, but the buying opportunity just got better."
   },
   "24": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "可欣赏海景的在售最佳房产",
-    "link": "https://moneyweek.com/spending-it/properties/properties-for-sale-overlooking-the-sea",
-    "snippet": "The best properties for sale overlooking the sea – from a modernist house in Pembrokeshire to a contemporary house on a private island in Argyll & Bute."
+    "title": "Uranium Energy 在 2026 年大幅下跌。以下是对其未来十年可能情形的现实展望。",
+    "link": "https://www.fool.com/investing/2026/07/30/uranium-energy-is-down-sharply-in-2026-heres-what/?source=iedfolrf0000001",
+    "snippet": "Uranium Energy's stock price is tracking uranium spot prices, as you'd expect."
   },
   "25": {
     "category": "理财投资 (Finance & Investment)",
-    "title": "如何交易 Expedia 股价",
-    "link": "https://moneyweek.com/investments/stocks-and-shares/should-you-invest-in-expedia",
-    "snippet": "Holiday booking platform Expedia should weather the travel sector's turbulence. Matthew Partridge explains how he would play the share price"
+    "title": "海景房价格飙升 27%——哪个沿海地段的溢价最高？",
+    "link": "https://moneyweek.com/investments/property/price-of-sea-view-home-surges",
+    "snippet": "The asking price growth for homes with a sea-view is outpacing the national average. We look at the places with the highest premiums."
   },
   "26": {
-    "category": "社会民生 (Society & Life)",
-    "title": "韩国几十万股民本金亏光",
-    "link": "https://bbs.hupu.com/641396957.html",
-    "snippet": ""
+    "category": "理财投资 (Finance & Investment)",
+    "title": "新任财政大臣约翰·希利的三项任务",
+    "link": "https://moneyweek.com/economy/uk-economy/tasks-for-john-healey-new-chancellor",
+    "snippet": "New chancellor John Healey should learn from his predecessor's mistakes and make some big changes quickly, says Matthew Lynn"
   },
   "27": {
-    "category": "社会民生 (Society & Life)",
-    "title": "，猜猜这是哪个时期地图",
-    "link": "https://bbs.hupu.com/641396951.html",
-    "snippet": ""
+    "category": "理财投资 (Finance & Investment)",
+    "title": "主动基金 vs 被动基金：主动管理还有意义吗？",
+    "link": "https://moneyweek.com/investments/active-versus-passive-funds",
+    "snippet": "Fresh research finds most active funds continue to underperform their average passive counterparts. Which approach works best for you?"
   },
   "28": {
     "category": "社会民生 (Society & Life)",
-    "title": "就是很好。",
-    "link": "https://bbs.hupu.com/641396943.html",
-    "snippet": ""
+    "title": "真实经历 | 湖人 vs 76人：后詹姆斯时代，谁先拿到总冠军？兄弟们来投！",
+    "link": "https://bbs.hupu.com/641415532.html",
+    "snippet": "兄弟们，詹姆斯走了，去了费城。湖人围绕东契奇重建，76人组了五星首发。两个方向的赌注，到底谁能先笑到最后？\n先快速对比下两队的核心阵容：\n\n\n\n数据来源：多方媒体综合。76人首发均分120.8分来自赛季前纸面数据统计。\n美记埃文-斯迪瑞直接把费城和湖人的阵容摆到桌面上做对比——76人那边是\"马恩布\"（马克西+恩比德+布朗），湖人这边是\"东里凯\"（东契奇+里夫斯+凯斯勒），直言\"这哪儿是同一个级别的..."
   },
   "29": {
     "category": "社会民生 (Society & Life)",
-    "title": "五代乱世根源，魏博牙兵。",
-    "link": "https://bbs.hupu.com/641396942.html",
+    "title": "兄弟们今天被台子点杀了",
+    "link": "https://bbs.hupu.com/641415502.html",
     "snippet": ""
   },
   "30": {
     "category": "社会民生 (Society & Life)",
-    "title": "不因一时波动急躁，恪守思路、从容应对。",
-    "link": "https://bbs.hupu.com/641396906.html",
-    "snippet": ""
+    "title": "昨日欧冠资格赛复盘，大小球全中，胜负判断还需加强！",
+    "link": "https://bbs.hupu.com/641415498.html",
+    "snippet": "昨天两场欧冠资格赛全部结束，整体来看，大小球方向全部命中，但胜平负判断没有达到预期。\n凯拉特1-0奥莫尼亚，赛前更看好奥莫尼亚不败，结果凯拉特凭借主场优势90分钟赢下比赛，并最终通过点球晋级。这场虽然胜负方向错了，但小球和1-0比分成功命中。\n波兹南莱赫1-3奥胡斯，赛前看好莱赫主场赢球，结果奥胡斯放手一搏，客场3比1取胜。不过由于首回合建立了足够优势，莱赫还是凭借总比分成功晋级。这场大球方向判断..."
   },
   "31": {
     "category": "社会民生 (Society & Life)",
-    "title": "如何看待IFAB认定恩博洛世界杯第二黄改判属于规则误用？VAR的边界在哪？",
-    "link": "https://www.zhihu.com/question/2065761038373541729",
-    "snippet": "IFAB 于 7 月 28 日正式回应了阿根廷 vs 瑞士那场 1/4 决赛的判罚争议。 简单回顾一下经过：裁判最初吹帕雷德斯犯规，给了黄牌。VAR介入复核后，取消帕雷德斯的黄牌，改判恩博洛假摔——这是恩博洛第二张黄牌，两黄变一红罚下。瑞士少打一人，最终止步八强。 IFAB的结论很明确：这属于规则误用，世界杯结束后不再沿用。 他们给出的边界是：VAR在非第二张黄牌的常规场景下，只能纠正「犯规球员的..."
+    "title": "为什么小蓝灯要被禁掉呢",
+    "link": "https://www.v2ex.com/t/1230922",
+    "snippet": "imherer: \n我觉得挺好的呀，个人感觉让别人知道这个车开了辅助驾驶不是挺好的吗？"
   },
   "32": {
     "category": "社会民生 (Society & Life)",
-    "title": "深圳灵活就业社保费用一直涨，都快坚持不住了。",
-    "link": "https://www.v2ex.com/t/1230577",
-    "snippet": "Bullish: 自费交了几年灵活就业社保了，记的刚开始交灵活就业社保时每个月还不到一千块。现在每个月是 1493.64 元（ 不知道后续还会不会继续涨 ），有时候想停交养老险，只交医疗保险（ 深圳的灵活就业社保是可以单独交的，没有绑定 ）。\n但是看缴费记录都已经累积 13 年了（ 本人九零后 ），到了一个比较尴尬的点，停了有点可惜，继续交不知道后面政策怎么变化，目前收入又断了，有点子坚持不住。"
+    "title": "你们都是在哪买电子烟的",
+    "link": "https://www.v2ex.com/t/1230903",
+    "snippet": "vanchKong: \n我目前在 tg 买，一圈看下来应该是比较低价的了，我不太在乎是否是精工产品，只要口感对，质量说得过去就行，当然正品低价肯定更好了。\n不过我也想了解更多的渠道，可以留下某个产品价格，我可以做下对比。小红书上很多被骗的帖子🤣，绝大部分都是要求先款的，感觉很无解。"
   },
   "33": {
     "category": "社会民生 (Society & Life)",
-    "title": "许多网友反馈在泸溪河桃酥里吃出牙冠、牙齿、头发等异物，山姆已将其下架，可能是什么环节的问题？",
-    "link": "https://www.zhihu.com/question/2065716053770859492",
-    "snippet": "今天，泸溪河坚果桃酥因被曝吃出疑似金属牙冠而陷入食品安全争议。7月29日11时21分，都市现场记者查看山姆会员商店APP发现，该款产品已下架。 当日上午10点50分之前，记者还在山姆会员商店APP发现，该款产品目前仍在正常售卖，位列“饼干糕点热销榜”第4名，月销量超过20万件，每人限购10件，售价48.9元/件，支持全国配送。 网友在山姆超市购买的泸溪河桃酥中吃出疑似金属牙冠异物引质疑，山姆APP..."
+    "title": "进入智驾时代，就不会有插车，逆行等现象，有道理不？",
+    "link": "https://www.v2ex.com/t/1230892",
+    "snippet": "CNN: \n例如现在开车，总有素质低的人插车，逆行，横冲直撞等一系列危险行为，导致道路拥堵。\n未来如果大家都开启智驾，是不是就不存在上述情况"
   },
   "34": {
     "category": "社会民生 (Society & Life)",
-    "title": "有说法称印度成首个被 AI 做空的国家，真的是这样吗？会对印度经济产生哪些影响？",
-    "link": "https://www.zhihu.com/question/2065710393360479149",
-    "snippet": "[4 张图片]"
+    "title": "[Yukiapi ] 已上线 GPT-5.6 一家稳定平价 Claude/Codex 中转站，新用户注册送 1 刀评论区留 id 送 5 刀额度！",
+    "link": "https://www.v2ex.com/t/1230885",
+    "snippet": "moli000625: \nYukiapi ，高效稳定的满血模型，提供 Claude 、codex 、gemini 等大模型，现在开始做全面推广！\n我们承诺做到如下几点：\n\n1.不掺假 2.数据隐私保护 3.不随意涨价\n\n\n分组倍率（叠加当前充值优惠活动）\nclaudeMax 分组倍率 1x\ngptPro 分组倍率 0.2x\ngemini-cli 分组倍率 0.5x\ngpt-image-2 0.05..."
   },
   "35": {
     "category": "社会民生 (Society & Life)",
-    "title": "网红私占宁波无人岛直播改造被查处，个人可以开发利用无居民海岛吗？荒岛为何不能随意建房、居住？",
-    "link": "https://www.zhihu.com/question/2065709716009743417",
-    "snippet": "碧海环绕，孤岛伫立，小屋错落、炊烟袅袅。有网红凭借抖音平台“荒岛改造”系列视频走红网络，视频中，博主登岛建房、开路通电、捕鱼烹食、圈养家禽，吸引大批网友点赞追捧、打赏热议，让不少人心生向往。然而，该行为已触碰法律红线，属于违规侵占国家海岛资源的违法行为。 据浙江日报报业集团潮新闻客户端报道，近日，宁波海警局象山第二工作站接警称，有人在象山县爵溪镇乔木湾岛擅自开展捕鱼、居住等活动，并通过抖音平台全程..."
+    "title": "1.5万机票退票仅退432元，曝光后获全额退款，问题出在哪？这次胜利能否撬动天价退票费规则？",
+    "link": "https://www.zhihu.com/question/2066088472851341477",
+    "snippet": "近日，一则「1.5 万元机票退票仅退 400 多元」的消息登上热搜。消费者林先生在购票平台花费 15217 元订购了一张国际机票，因行程变动，于起飞前三天申请退票，结果发现实际仅退回 432 元。 事件经央视财经等媒体报道后，7 月 28 日上午，林先生陆续收到两笔退款——一笔 12000 余元、一笔 2000 余元，合计 14700 余元，加上此前已退的 432 元，15217 元票款全额到账。..."
   },
   "36": {
-    "category": "热门信息 (Trending Info)",
-    "title": "活在未来",
-    "link": "https://nav.al/future",
-    "snippet": "Naval with three founders who are living in the future: Garry Tan (Y Combinator), Daniel Francis (Abel Police), and Farbood Nivi (A-LIST). More"
+    "category": "社会民生 (Society & Life)",
+    "title": "美联储今年连续第五次维持利率不变，但投票结果从一致通过变成9票对3票，内部发生了什么？9月会加息吗？",
+    "link": "https://www.zhihu.com/question/2066063922856027842",
+    "snippet": "中新网7月30日电 据美国有线电视新闻网(CNN)报道，当地时间29日，美国联邦储备委员会宣布，继续将联邦基金利率目标区间维持在3.5%至3.75%之间不变。这是美联储年内连续第5次维持利率不变。 当地时间6月17日，美联储主席凯文·沃什亮相记者会。 中新社记者 陈孟统 摄 美联储在声明中表示，尽管中东冲突等因素带来的不确定性处于高位，经济活动仍稳健扩张。通胀相较2%的目标依然处于高位，部分原因是..."
   },
   "37": {
-    "category": "热门信息 (Trending Info)",
-    "title": "塑造我的 16 个完全可养成的习惯",
-    "link": "https://ryanholiday.net/the-16-perfectly-reachable-habits-that-made-me-who-i-am/",
-    "snippet": "For 2,130 consecutive games, Lou Gehrig played first base for the New York Yankees—a streak that would stand for five and a half decades. He put up a career .340 batting average. He was a two-time MVP..."
+    "category": "社会民生 (Society & Life)",
+    "title": "国际足联正式对阿根廷足协启动调查，帕雷德斯等3人或面临长期禁赛，如何评价？阿根廷这次麻烦有多大？",
+    "link": "https://www.zhihu.com/question/2066061011111469951",
+    "snippet": "当地时间7月29日，国际足联宣布对阿根廷足协启动多项纪律调查，同时因美加墨世界杯决赛后冲突一事，对阿根廷球员帕雷德斯、莫利纳以及助理教练阿亚拉启动纪律调查。这三人因采取“攻击”行为，可能将面临长期禁赛。 针对阿根廷足协的多项调查，涉及赛事呐喊口号与所谓的“不当标语”，其中包括本届世界杯半决赛击败英格兰队后，阿根廷队球员打出写有“马尔维纳斯群岛属于阿根廷”的横幅，以及将横幅留在球场内的行为。阿根廷足..."
   },
   "38": {
-    "category": "热门信息 (Trending Info)",
-    "title": "改变人生的 4 个简单步骤",
-    "link": "https://markmanson.net/four-steps-change-life",
-    "snippet": "If you want to change your life—like really, seriously, no bullshit, actually change your life—do this:\nStep 1: Write down everything you care about.\nPeople make this mistake of setting new goals ever..."
+    "category": "个人成长 (Personal Growth)",
+    "title": "准备好你的“不”，并让它随手可用",
+    "link": "https://sive.rs/n0",
+    "snippet": "Someone asks you to do something, and you feel that pressure to answer immediately.\n\n\n\tYou avoid confrontation, and say OK.\n\n\n\tI felt the pain of this, over and over again.\n\tThen I finally figured out..."
   },
   "39": {
-    "category": "热门信息 (Trending Info)",
-    "title": "[异类] 约翰·D·洛克菲勒：史上最大财富背后的原则",
-    "link": "https://fs.blog/knowledge-project-podcast/outliers-john-d-rockefeller/",
-    "snippet": "John D. Rockefeller became the richest man the world had ever known by thinking differently about business, competition, and family. This episode isn’t just the story of Standard Oil. It’s about the p..."
+    "category": "个人成长 (Personal Growth)",
+    "title": "自我优化到钻入死胡同",
+    "link": "https://seths.blog/2026/07/optimizing-yourself-into-a-corner/",
+    "snippet": "Organizations thrive on incremental improvement. They find a stable foundation and then build a feedback loop of relentless improvement. This leads to great efficiency, higher productivity and more pr..."
   },
   "40": {
-    "category": "热门信息 (Trending Info)",
-    "title": "我的 2019 年度回顾",
-    "link": "https://jamesclear.com/2019-annual-review",
-    "snippet": "Another year complete. Here's a quick recap of 2019, which also happened to be one of the craziest years of my life. As always, this Annual Review will answer three questions. What went well this year..."
+    "category": "个人成长 (Personal Growth)",
+    "title": "一种轻盈感",
+    "link": "https://austinkleon.com/2026/07/24/a-sense-of-lightness/",
+    "snippet": "I’ve been trying to go about the summer Friday newsletters with a sense of lightness, the way I make a collage out of scraps in my drawer — I pull out what I’ve saved, push it around until it makes se..."
   },
   "41": {
-    "category": "热门信息 (Trending Info)",
-    "title": "失败常见，尝试罕见",
-    "link": "https://www.raptitude.com/2026/07/failing-is-common-trying-is-rare/",
-    "snippet": "When you die, you appear before a studio audience and they give you a standing ovation. The host then interviews you about your great successes and misses in life. One thing you realize, when they rev..."
+    "category": "个人成长 (Personal Growth)",
+    "title": "警惕生产力悖论",
+    "link": "https://calnewport.com/beware-of-productivity-paradoxes/",
+    "snippet": "Few recent technological innovations were better poised to become a productivity slam dunk than the personal computer. Spreadsheets, word processors, databases, presentation software, email – ... Read..."
   },
   "42": {
-    "category": "热门信息 (Trending Info)",
-    "title": "OpenAI 的新模型“失控”了吗？",
-    "link": "https://calnewport.com/did-openais-new-model-go-rogue/",
-    "snippet": "A couple of weeks ago, the AI company Hugging Face ​announced​ that they had discovered an intrusion into their production infrastructure. They didn’t know the ... Read more\nThe post Did OpenAI’s New ..."
+    "category": "个人成长 (Personal Growth)",
+    "title": "改变思维方式的思维模型 | 比尔·格利",
+    "link": "https://fs.blog/knowledge-project-podcast/bill-gurley/",
+    "snippet": "Bill Gurley spent years on Wall Street, built his career as a partner at Benchmark, worked through Uber’s hypergrowth era, and now serves on the board of the Santa Fe Institute, where he studies compl..."
   },
   "43": {
-    "category": "热门信息 (Trending Info)",
-    "title": "不丹的风景与声音",
-    "link": "https://waitbutwhy.com/2025/11/bhutan.html",
-    "snippet": "Stories from my visit to the mysterious Himalayan kingdom\nThe post The sights and sounds of Bhutan appeared first on Wait But Why."
+    "category": "个人成长 (Personal Growth)",
+    "title": "这是你人生中最重要的技能",
+    "link": "https://ryanholiday.net/this-is-the-most-important-skill-you-can-have-in-life/",
+    "snippet": "I’m going on tour next month (Portland and SF) and then a bunch of other places around the world in the early fall. Come see me talking Stoicism—grab tickets here.  I hated writing essays in high scho..."
   },
   "44": {
-    "category": "热门信息 (Trending Info)",
-    "title": "推文",
-    "link": "https://sive.rs/d",
-    "snippet": "I write to see what I can write. I code to see what I can code."
+    "category": "个人成长 (Personal Growth)",
+    "title": "社交媒体是社交生活的反面",
+    "link": "https://www.raptitude.com/2026/04/social-media-is-the-opposite-of-social-life/",
+    "snippet": "I remember a surreal moment about twenty years ago, which felt like the beginning of something bad, and it was. I was at a bowling alley with some friends, and a few people in our group were talking a..."
   },
   "45": {
-    "category": "热门信息 (Trending Info)",
-    "title": "急于放弃自主性",
-    "link": "https://seths.blog/2026/07/eager-to-give-up-agency/",
-    "snippet": "We work so hard to have freedom and leverage and choice. And then, as soon as a social network, boss or cultural force instructs us to do something, we fold our tents and go along. Responsibility is s..."
+    "category": "个人成长 (Personal Growth)",
+    "title": "每天写一句话日记的惊人好处",
+    "link": "https://jamesclear.com/journaling-one-sentence",
+    "snippet": "From 1986 to 2011, Oprah Winfrey hosted The Oprah Winfrey Show. It was the highest rated talk show of all-time and familiar to nearly anyone who owned a television set in North America at that time. T..."
   },
   "46": {
-    "category": "推文 (Tweets)",
-    "title": "OnlyMarms：在 OnlyFans 上资助科学研究",
-    "link": "https://kottke.org/26/07/onlymarms-funding-science-research-on-onlyfans",
-    "snippet": "This is an extremely 2026 story (derogatory): because of the Trump regime’s assualt on scientific funding, a group of scientists who has been studying marmot populations in Colorado since 1962 turned ..."
+    "category": "个人成长 (Personal Growth)",
+    "title": "Vibe 编码硬件",
+    "link": "https://nav.al/hardware",
+    "snippet": "See Part I here.\n\n\n\n\n\n\n\nNivi: Hey Blake, how are you applying all this at Boom Supersonic?\n\n\n\n It completely changes the role of software and hardware developers. From day one we tried to take a lot o..."
   },
   "47": {
-    "category": "推文 (Tweets)",
-    "title": "女人不再想要孩子，因为过去帮忙一起养育孩子的“村子”已基本消失。如今你只能全靠自己。",
-    "link": "https://www.reddit.com/r/Showerthoughts/comments/1v9bgrh/women_dont_want_children_anymore_because_the/",
-    "snippet": "submitted by    /u/Ok-Spite-5454  \n [link]   [comments]"
+    "category": "个人成长 (Personal Growth)",
+    "title": "习惯实际上是如何运作的",
+    "link": "https://www.scotthyoung.com/blog/2026/06/19/how-habits-actually-work/",
+    "snippet": "What I got wrong about how habits are formed and maintained.\nThe post How Habits Actually Work appeared first on Scott H Young."
   },
   "48": {
     "category": "推文 (Tweets)",
-    "title": "为了保证孩子受教育的权利，我们首先剥夺他们拒绝受教育的权利。",
-    "link": "https://www.reddit.com/r/Showerthoughts/comments/1v98nkn/to_guarantee_a_childs_right_to_education_we_first/",
-    "snippet": "submitted by    /u/Relaxing_Cat  \n [link]   [comments]"
+    "title": "两百年后，某个陌生人会睡在你的房间里，对你曾经是谁一无所知。",
+    "link": "https://www.reddit.com/r/Showerthoughts/comments/1v9rrga/in_200_years_some_stranger_will_be_sleeping_in/",
+    "snippet": "submitted by    /u/UnknownMight  \n [link]   [comments]"
   },
   "49": {
     "category": "推文 (Tweets)",
-    "title": "再也无需担心停电——Jackery HomePower 3600 Plus 在亚马逊上直降 1,550 美元",
-    "link": "https://mashable.com/tech/july-29-jackery-homepower-plus-portable-power-station-deal",
-    "snippet": "As of July 29, you can get the Jackery HomePower 3600 Plus portable power station for $2,149, down from $3,699, at Amazon."
+    "title": "沃尔玛正忙着建设其快速电动汽车充电桩……",
+    "link": "https://kottke.org/26/07/0049413-walmart-is-busy-building-",
+    "snippet": "Walmart is busy building out their fast EV charger network in the US…currently 73 locations in 17 states. Their eventual goal is install chargers at “thousands of its locations by 2030”."
   },
   "50": {
     "category": "推文 (Tweets)",
-    "title": "新英格兰正午需要点蜡烛，没人知道为什么",
-    "link": "https://boingboing.net/2026/07/29/new-englands-dark-day.html",
-    "snippet": "On the morning of May 19, 1780, the sky over New England went dark enough that people burned candles from noon on. In Ipswich, Massachusetts, the roosters and the frogs started up at two in the aftern..."
+    "title": "半数 Z 世代在自慰时会发现自己在表演",
+    "link": "https://mashable.com/life/pleasure-census-hud-gen-z-performing-during-solo-pleasure",
+    "snippet": "The HUD app and Girls Get Off partnered on a survey all about sex and pleasure. See the results here."
   },
   "51": {
     "category": "推文 (Tweets)",
-    "title": "[赞助商] 为您推介 Agent Fone",
-    "link": "https://fail.xyz/phone/",
-    "snippet": "Every phone now ships with an assistant. You ask, it answers. Lame. We built a phone that writes software instead. The app idea you’ve had in your notes for years. The side hustle you will never get a..."
+    "title": "美国联邦通信委员会禁止所有非美国制造的扫地机器人",
+    "link": "https://mashable.com/tech/us-robot-vacuum-ban-fcc-foreign",
+    "snippet": "The FCC has banned all foreign-made mobile robots from the U.S., including robot vacuums from brands such as Roborock and Ecovacs."
   },
   "52": {
     "category": "推文 (Tweets)",
-    "title": "史蒂夫·乔布斯在 2011 年说：“我们打造的产品也是我们自己想要的，而且我们就是不要广告。”",
-    "link": "https://www.businessinsider.com/apple-snubs-the-iad-2011-6",
-    "snippet": "Dan Frommer, writing for Business Insider in 2011 about that year’s WWDC (Jobs’s last):\nWhile discussing Apple’s free, new iCloud email service, he took\nan apparent jab at Gmail, Yahoo Mail, and the o..."
+    "title": "怪异也酷",
+    "link": "https://kottke.org/26/07/its-cool-to-be-weird",
+    "snippet": "I really like what Razaak Eniola has to say here about human difference.\nBefore Prince was Prince, Prince was weird. And that goes the same for probably any of your favorite artists. Before Erykah Bad..."
   },
   "53": {
     "category": "推文 (Tweets)",
-    "title": "吐司涂黄油的一面落地时确实总是朝下，物理学解释了原因",
-    "link": "https://boingboing.net/2026/07/29/buttered-toast-phenomenon.html",
-    "snippet": "For more than a century, people have grumbled that dropped bread always lands butter-side down and chalked it up to plain pessimism. When the BBC science show Q.E.D. tossed toast into the air in 1991,..."
+    "title": "曾获奥斯卡奖的《曾经》主唱格伦·汉萨德在都柏林车祸中去世，享年 56 岁",
+    "link": "https://boingboing.net/2026/07/29/oscar-winning-once-singer-glen-hansard-dies-in-a-dublin-crash-at-56.html",
+    "snippet": "Glen Hansard was a singer, songwriter and, to many in the Irish music community, a kind friend. At 4:30 this morning, Glen died while riding his motorcycle in the area around Dublin. His management le..."
   },
   "54": {
     "category": "推文 (Tweets)",
-    "title": "研究：希克苏鲁伯撞击后，恐龙被生生烤焦……",
-    "link": "https://kottke.org/26/07/0049404-study-dinosaurs-were-char",
-    "snippet": "Study: Dinosaurs Were Charbroiled After Chicxulub Impact. “The impact would have produced an immense cloud of dust that superheated the upper atmosphere, charbroiling living organisms unable to take s..."
+    "title": "如果鬼把人杀了，那些人也变成了鬼，那本质上这就是繁殖。",
+    "link": "https://www.reddit.com/r/Showerthoughts/comments/1va24ys/if_ghosts_kill_people_and_those_people_become/",
+    "snippet": "submitted by    /u/udaasatma  \n [link]   [comments]"
   },
   "55": {
     "category": "推文 (Tweets)",
-    "title": "迈克尔·B·乔丹主演的《天罗地网》预告片，让那辆逃逸面包车成了“梵高”",
-    "link": "https://mashable.com/entertainment/thomas-crown-affair-michael-b-jordan-trailer",
-    "snippet": "Remember the Pierce Brosnan classic? \"The Thomas Crown Affair\" has had an update starring Michael B. Jordan. Trailer."
+    "title": "漫画家起诉利用其作品牟利的 AI 表情包生成器",
+    "link": "https://boingboing.net/2026/07/29/cartoonist-sues-ai-meme-generator-monetizing-his-work.html",
+    "snippet": "Replacing the text in popular comic strips is a common meme format, and few artists are displeased to see their work mutating online. Websites can generate these pics for users lacking image-editing s..."
+  },
+  "56": {
+    "category": "推文 (Tweets)",
+    "title": "Apple 升级——与 Klarna 合作的新计划，可近乎零利率租赁 iPhone、Mac、iPad 等设备",
+    "link": "https://www.apple.com/newsroom/2026/07/apple-upgrade-launches-in-the-united-states/",
+    "snippet": "Apple Newsroom:\nApple today announced Apple Upgrade, a new product leasing\nprogram provided by Klarna for iPhone, Apple Watch, Mac, and iPad\navailable on the Apple Store online, in the Apple Store app..."
+  },
+  "57": {
+    "category": "推文 (Tweets)",
+    "title": "苹果表示 iOS 27“受限模式”并非针对在新 Apple Upgrade 计划中错过付款的用户",
+    "link": "https://9to5mac.com/2026/07/28/apple-says-ios-27-restricted-mode-isnt-for-new-upgrade-program-leases/",
+    "snippet": "Last week 9to5Mac reported on code in the latest iOS 27 developer beta seemingly meant to restrict leased devices after the user had missed one or more payments. When engaged, Restricted Mode limits t..."
   }
 }
