@@ -280,6 +280,13 @@ bot.command('chat', (ctx) => {
   ctx.reply("🤖 已切换到【闲聊模式】。在这个模式下，我会像一个普通的智能体助手一样与你对话，不会自动帮你生成推文。");
 });
 
+bot.command('tweet', (ctx) => {
+  if (ctx.from.id !== myUserId) return;
+  isChatMode.set(myUserId, false);
+  isWeChatMode.set(myUserId, false);
+  ctx.reply("🐦 已切换回【推文生成模式】。你发送给我的任何想法都会被提炼为推文草稿。");
+});
+
 bot.command('mp', (ctx) => {
   if (ctx.from.id !== myUserId) return;
   isWeChatMode.set(myUserId, true);
@@ -533,9 +540,37 @@ bot.action(/viewfile_(.+)/, async (ctx) => {
     Markup.inlineKeyboard([
       [Markup.button.callback('🚀 确认发布', `pubfile_${fileId}`)],
       [Markup.button.callback('✏️ 修改内容', `editfile_${fileId}`)],
+      [Markup.button.callback('🗑️ 删除', `delfile_${fileId}`)],
       [Markup.button.callback('❌ 返回', `cancel_publish`)]
     ])
   );
+});
+
+bot.action(/delfile_(.+)/, async (ctx) => {
+  if (ctx.from.id !== myUserId) return;
+  const fileId = parseInt(ctx.match[1], 10);
+  const filename = checkPendingFiles.get(fileId);
+  
+  if (!filename) {
+    return ctx.answerCbQuery('File session expired.');
+  }
+
+  const filePath = path.join(config.paths.tweets.approved, filename);
+  if (fs.existsSync(filePath)) {
+    fs.rmSync(filePath);
+    
+    // Sync to GitHub
+    const repoRoot = path.join(__dirname, '..', '..');
+    const pat = process.env.GITHUB_PAT || '';
+    const pushCmd = pat ? `git push https://${pat}@github.com/0-shang/yasi.git HEAD:main` : 'git push';
+    exec(`git rm tweets/approved/${filename} && git commit -m "bot: deleted ${filename}" && git pull --rebase origin main && ${pushCmd}`, { cwd: repoRoot }, (err) => {
+      if (err) console.error('Git delete sync failed:', err.message);
+    });
+  }
+
+  checkPendingFiles.delete(fileId);
+  await ctx.answerCbQuery('Deleted successfully.');
+  await ctx.editMessageText(`🗑️ 已成功删除推文草稿：${filename}`);
 });
 
 bot.action(/editfile_(.+)/, async (ctx) => {
@@ -1264,8 +1299,9 @@ bot.telegram.setMyCommands([
   { command: 'refetch', description: '🔄 重新抓取（全部或单板块）' },
   { command: 'news',    description: '📋 一键唤出上次早报缓存' },
   { command: 'check',   description: '🚀 检查并发布草稿队列推文' },
-  { command: 'chat',    description: '💬 切换纯聊天模式/推文模式' },
-  { command: 'mp',      description: '📝 切换微信公众号撰写模式' },
+  { command: 'chat',    description: '💬 切换为 闲聊模式' },
+  { command: 'tweet',   description: '🐦 切换为 推文模式' },
+  { command: 'mp',      description: '📝 切换为 微信公众号模式' },
   { command: 'start',   description: '🏠 回到主菜单' }
 ]).then(() => {
   console.log('✅ Bot commands menu set!');
