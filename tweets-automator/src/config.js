@@ -41,7 +41,6 @@ const tweetsBaseDir = path.resolve(baseDir, process.env.TWEETS_DIR || '../tweets
 const tweetsDir = {
   base: tweetsBaseDir,
   drafts: path.join(tweetsBaseDir, 'drafts'),
-  approved: path.join(tweetsBaseDir, 'approved'),
   published: path.join(tweetsBaseDir, 'published'),
   failed: path.join(tweetsBaseDir, 'failed'),
   stateFile: path.join(tweetsBaseDir, 'state.json')
@@ -52,7 +51,6 @@ function ensureDirs() {
   const dirs = [
     tweetsDir.base,
     tweetsDir.drafts,
-    tweetsDir.approved,
     tweetsDir.published,
     tweetsDir.failed
   ];

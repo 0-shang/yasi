@@ -488,21 +488,21 @@ bot.command('check', async (ctx) => {
       return ctx.telegram.editMessageText(ctx.chat.id, loadingMsg.message_id, undefined, `❌ Failed to pull from GitHub:\n${err.message}`);
     }
     
-    // Scan approved directory
+    // Scan drafts directory
     let files = [];
-    if (fs.existsSync(config.paths.tweets.approved)) {
-      files = fs.readdirSync(config.paths.tweets.approved).filter(f => f.endsWith('.md'));
+    if (fs.existsSync(config.paths.tweets.drafts)) {
+      files = fs.readdirSync(config.paths.tweets.drafts).filter(f => f.endsWith('.md'));
     }
     
     if (files.length === 0) {
-      return ctx.telegram.editMessageText(ctx.chat.id, loadingMsg.message_id, undefined, '📭 No pending tweets found in the "approved" folder.');
+      return ctx.telegram.editMessageText(ctx.chat.id, loadingMsg.message_id, undefined, '📭 No pending tweets found in the "drafts" folder.');
     }
     
     ctx.telegram.editMessageText(
       ctx.chat.id, 
       loadingMsg.message_id, 
       undefined,
-      `📦 Found ${files.length} pending tweet(s) in "approved" folder.\nSelect a file to preview/publish:`,
+      `📦 Found ${files.length} pending tweet(s) in "drafts" folder.\nSelect a file to preview/publish:`,
       Markup.inlineKeyboard(
         files.map((f, index) => {
           const fileId = Date.now() + index;
@@ -526,7 +526,7 @@ bot.action(/viewfile_(.+)/, async (ctx) => {
     return ctx.answerCbQuery('File session expired, please /check again.');
   }
 
-  const filePath = path.join(config.paths.tweets.approved, filename);
+  const filePath = path.join(config.paths.tweets.drafts, filename);
   if (!fs.existsSync(filePath)) {
     return ctx.answerCbQuery('File no longer exists.');
   }
@@ -555,7 +555,7 @@ bot.action(/delfile_(.+)/, async (ctx) => {
     return ctx.answerCbQuery('File session expired.');
   }
 
-  const filePath = path.join(config.paths.tweets.approved, filename);
+  const filePath = path.join(config.paths.tweets.drafts, filename);
   if (fs.existsSync(filePath)) {
     fs.rmSync(filePath);
     
@@ -563,7 +563,7 @@ bot.action(/delfile_(.+)/, async (ctx) => {
     const repoRoot = path.join(__dirname, '..', '..');
     const pat = process.env.GITHUB_PAT || '';
     const pushCmd = pat ? `git push https://${pat}@github.com/0-shang/yasi.git HEAD:main` : 'git push';
-    exec(`git rm tweets/approved/${filename} && git commit -m "bot: deleted ${filename}" && git pull --rebase origin main && ${pushCmd}`, { cwd: repoRoot }, (err) => {
+    exec(`git rm tweets/drafts/${filename} && git commit -m "bot: deleted ${filename}" && git pull --rebase origin main && ${pushCmd}`, { cwd: repoRoot }, (err) => {
       if (err) console.error('Git delete sync failed:', err.message);
     });
   }
@@ -580,7 +580,7 @@ bot.action(/editfile_(.+)/, async (ctx) => {
   
   if (!filename) return ctx.answerCbQuery('File session expired.');
 
-  const filePath = path.join(config.paths.tweets.approved, filename);
+  const filePath = path.join(config.paths.tweets.drafts, filename);
   if (!fs.existsSync(filePath)) return ctx.answerCbQuery('File no longer exists.');
 
   const content = fs.readFileSync(filePath, 'utf-8');
@@ -618,7 +618,7 @@ bot.action(/pubfile_(.+)/, async (ctx) => {
       return ctx.editMessageText(`❌ Failed to publish ${filename}:\n${err.message}\n\n${stderr}`);
     }
     
-    // Automatically commit and push the changes (moved files from approved to published)
+    // Automatically commit and push the changes (moved files from drafts to published)
     const repoRoot = path.join(__dirname, '..', '..');
     const patForPub = process.env.GITHUB_PAT || '';
     const pushCmdForPub = patForPub ? `git push https://${patForPub}@github.com/0-shang/yasi.git HEAD:main` : 'git push';
@@ -639,7 +639,7 @@ bot.action(/pubfile_(.+)/, async (ctx) => {
 bot.action('publish_approved', async (ctx) => {
   if (ctx.from.id !== myUserId) return;
   await ctx.answerCbQuery();
-  await ctx.editMessageText('⏳ Publishing all approved tweets... Please wait.');
+  await ctx.editMessageText('⏳ Publishing all approved/scheduled tweets... Please wait.');
   
   const automatorDir = path.join(__dirname, '..');
   const env = Object.assign({}, process.env, { 
@@ -652,11 +652,11 @@ bot.action('publish_approved', async (ctx) => {
       return ctx.editMessageText(`❌ Failed to publish:\n${err.message}\n\n${stderr}`);
     }
     
-    // Automatically commit and push the changes (moved files from approved to published)
+    // Automatically commit and push the changes (moved files from drafts to published)
     const repoRoot = path.join(__dirname, '..', '..');
     const patForBulk = process.env.GITHUB_PAT || '';
     const pushCmdForBulk = patForBulk ? `git push https://${patForBulk}@github.com/0-shang/yasi.git HEAD:main` : 'git push';
-    exec(`git add tweets/ && git commit --allow-empty -m "bot: published from approved folder" && ${pushCmdForBulk}`, { cwd: repoRoot }, () => {
+    exec(`git add tweets/ && git commit --allow-empty -m "bot: published from drafts folder" && ${pushCmdForBulk}`, { cwd: repoRoot }, () => {
       // Find the Twitter URLs from the stdout logs to show to the user
       const lines = stdout.split('\n');
       const urlLines = lines.filter(l => l.includes('Moved file to'));
@@ -688,7 +688,7 @@ bot.on('text', async (ctx) => {
     editingState.delete(myUserId); // clear state immediately
     
     if (state.type === 'file') {
-      const filePath = path.join(config.paths.tweets.approved, state.filename);
+      const filePath = path.join(config.paths.tweets.drafts, state.filename);
       if (fs.existsSync(filePath)) {
         const fileContent = fs.readFileSync(filePath, 'utf-8');
         const parsed = matter(fileContent);
@@ -1084,11 +1084,11 @@ bot.action(/save_(.+)/, async (ctx) => {
     return ctx.answerCbQuery('Tweet content expired or not found.');
   }
 
-  saveAndSyncToGithub(text, 'approved', null);
+  saveAndSyncToGithub(text, 'drafts', null);
   pendingTweets.delete(msgId);
 
-  await ctx.answerCbQuery('Saved to approved!');
-  await ctx.editMessageText('💾 Saved to approved folder and syncing to GitHub...');
+  await ctx.answerCbQuery('Saved to drafts!');
+  await ctx.editMessageText('💾 Saved to drafts folder and syncing to GitHub...');
 });
 
 bot.action(/schedule_(.+)/, async (ctx) => {
@@ -1112,13 +1112,13 @@ bot.action(/schedule_(.+)/, async (ctx) => {
   lastScheduledTime += intervalMinutes * 60 * 1000;
   const finalIsoTime = new Date(lastScheduledTime).toISOString();
 
-  // Save to approved so /check can see it and publish.js will pick it up
-  saveAndSyncToGithub(text, 'approved', null, finalIsoTime);
+  // Save to drafts so /check can see it and publish.js will pick it up
+  saveAndSyncToGithub(text, 'drafts', null, finalIsoTime);
   pendingTweets.delete(msgId);
 
   const displayTime = new Date(lastScheduledTime).toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' });
   await ctx.answerCbQuery('已加入定时发布队列');
-  await ctx.editMessageText(`✅ 已自动加入定时队列\n计划发送时间: ${displayTime} (北京时间)\n(已存入 approved 文件夹，可用 /check 查看)`);
+  await ctx.editMessageText(`✅ 已自动加入定时队列\n计划发送时间: ${displayTime} (北京时间)\n(已存入 drafts 文件夹，可用 /check 查看)`);
 });
 
 bot.action(/cancel_(.+)/, async (ctx) => {

@@ -8,7 +8,6 @@ const { postTweetOrThread } = require('./twitter');
 config.ensureDirs();
 
 const draftsDir = config.paths.tweets.drafts;
-const approvedDir = config.paths.tweets.approved;
 const publishedDir = config.paths.tweets.published;
 const failedDir = config.paths.tweets.failed;
 
@@ -28,43 +27,11 @@ async function main() {
     return;
   }
 
-  console.log('Approved directory:', approvedDir);
   console.log('Drafts directory (checking for "approved" status):', draftsDir);
 
   let approvedFiles = [];
 
-  // 1. Scan approved/ folder for markdown files
-  if (fs.existsSync(approvedDir)) {
-    const files = fs.readdirSync(approvedDir);
-    files.forEach(file => {
-      if (file.endsWith('.md')) {
-        const filePath = path.join(approvedDir, file);
-        try {
-          const content = fs.readFileSync(filePath, 'utf-8');
-          const parsed = matter(content);
-          let canPublish = true;
-          if (parsed.data && parsed.data.schedule_time) {
-            const scheduleTime = new Date(parsed.data.schedule_time);
-            if (now < scheduleTime) {
-              canPublish = false;
-              console.log(`Skipping ${file} (scheduled for ${scheduleTime.toUTCString()})`);
-            }
-          }
-          if (canPublish) {
-            approvedFiles.push({
-              absolutePath: filePath,
-              filename: file,
-              origin: 'approved_folder'
-            });
-          }
-        } catch(e) {
-          // ignore
-        }
-      }
-    });
-  }
-
-  // 2. Scan drafts/ folder for files with status: "approved" in frontmatter
+  // Scan drafts/ folder for files with status: "approved" in frontmatter
   if (fs.existsSync(draftsDir)) {
     const files = fs.readdirSync(draftsDir);
     files.forEach(file => {
@@ -73,7 +40,7 @@ async function main() {
         try {
           const content = fs.readFileSync(filePath, 'utf-8');
           const parsed = matter(content);
-          if (parsed.data && parsed.data.status === 'approved') {
+          if (parsed.data && (parsed.data.status === 'approved' || (process.env.TARGET_FILE && process.env.TARGET_FILE === file))) {
             let canPublish = true;
             if (parsed.data.schedule_time) {
               const scheduleTime = new Date(parsed.data.schedule_time);
