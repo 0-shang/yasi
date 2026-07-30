@@ -131,8 +131,11 @@ const defaultRssSources = {
     limit: 10,
     shuffle: true,
     sources: [
-      { url: "https://frontofficesports.com/feed/", quota: 6, label: "Front Office Sports (体育商业)" },
-      { url: "https://www.sportico.com/feed/", quota: 6, label: "Sportico (体育产业投资)" }
+      { url: "https://rsshub.rssforever.com/36kr/search/article/%E4%BD%93%E8%82%B2%E4%BA%A7%E4%B8%9A", quota: 3, label: "36Kr 体育产业观察 (国内深度)" },
+      { url: "https://rsshub.rssforever.com/dongqiudi/top", quota: 3, label: "懂球帝 头条 (国内体育热点)" },
+      { url: "https://rsshub.rssforever.com/sina/sports", quota: 3, label: "新浪体育 (国内体育热点)" },
+      { url: "https://frontofficesports.com/feed/", quota: 3, label: "Front Office Sports (海外商业视野)" },
+      { url: "https://www.sportico.com/feed/", quota: 3, label: "Sportico (全球体育资本并购)" }
     ]
   }
 };
