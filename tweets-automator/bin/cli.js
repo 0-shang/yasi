@@ -18,6 +18,7 @@ function printHelp() {
   bot        启动 Telegram 机器人守护进程
   daily      获取 RSS 并生成每日资讯简报
   article    <topic> 自动生成一篇带配图的微信公众号排版长文
+  clippings  列出本地收藏(Clippings)并选择生成推文或长文
 
 示例:
   content-automator init
@@ -79,6 +80,9 @@ switch (command) {
     // Set argv for the existing script
     process.argv[2] = topic;
     require('../generate-article.js');
+    break;
+  case 'clippings':
+    require('../src/clippings.js');
     break;
   default:
     printHelp();
