@@ -681,13 +681,15 @@ bot.action('cancel_publish', async (ctx) => {
   await ctx.editMessageText('🚫 Cancelled publishing.');
 });
 
-async function processClippingContent(ctx, myUserId, filename, content) {
+async function processClippingContent(ctx, myUserId, filename, content, mode) {
   const parsed = matter(content);
   let pureContent = parsed.content.trim();
   if (pureContent.length > 5000) pureContent = pureContent.substring(0, 5000) + '... (已截断)';
   const feedText = `标题: ${filename}\n内容: ${pureContent}`;
 
-  if (isWeChatMode.get(myUserId)) {
+  const isWechat = mode === 'wechat' || (mode === undefined && isWeChatMode.get(myUserId));
+
+  if (isWechat) {
     const loadingMsg = await ctx.reply(`🔄 [公众号模式] 正在提取【${filename}】并撰写微信公众号文章，请稍候...`);
     try {
       const article = await generateWeChatArticle(feedText);
@@ -783,23 +785,8 @@ bot.command('clippings', async (ctx) => {
   clippingsCache.set(myUserId, cacheMap);
   activeListContext.set(myUserId, 'clippings');
   
-  const keyboard = [];
-  let row = [];
-  files.forEach((f, index) => {
-    const num = index + 1;
-    row.push(Markup.button.callback(`📄 详情: ${num}`, `viewclipping_${num}`));
-    if (row.length === 3) {
-      keyboard.push(row);
-      row = [];
-    }
-  });
-  if (row.length > 0) keyboard.push(row);
-  
   await ctx.reply(msg, {
-    parse_mode: 'HTML',
-    reply_markup: {
-      inline_keyboard: keyboard
-    }
+    parse_mode: 'HTML'
   });
 });
 
@@ -891,7 +878,19 @@ bot.on('text', async (ctx) => {
         const filePath = path.join(config.paths.workspace, 'Clippings', filename);
         if (fs.existsSync(filePath)) {
           const content = fs.readFileSync(filePath, 'utf-8');
-          await processClippingContent(ctx, myUserId, filename, content);
+          const parsed = matter(content);
+          let pureContent = parsed.content.trim();
+          if (pureContent.length > 1000) pureContent = pureContent.substring(0, 1000) + '...\n\n(以下已截断)';
+          
+          await ctx.reply(`📄 **${filename}**\n\n${pureContent}`, {
+            reply_markup: {
+              inline_keyboard: [
+                [Markup.button.callback('🚀 提取并生成推文', `clip_tweet_${num}`)],
+                [Markup.button.callback('📝 提取并生成公众号文章', `clip_wechat_${num}`)],
+                [Markup.button.callback('🗑️ 删除', `delclipping_${num}`)]
+              ]
+            }
+          });
         } else {
            await ctx.reply(`❌ 文件不存在: ${filename}`);
         }
@@ -1456,14 +1455,15 @@ bot.action(/viewclipping_(.+)/, async (ctx) => {
   await ctx.reply(`📄 **${filename}**\n\n${pureContent}`, {
     reply_markup: {
       inline_keyboard: [
-        [Markup.button.callback('🚀 提取并生成', `processclipping_${num}`)],
-        [Markup.button.callback('🗑️ 删除此文章', `delclipping_${num}`)]
+        [Markup.button.callback('🚀 提取并生成推文', `clip_tweet_${num}`)],
+        [Markup.button.callback('📝 提取并生成公众号文章', `clip_wechat_${num}`)],
+        [Markup.button.callback('🗑️ 删除', `delclipping_${num}`)]
       ]
     }
   });
 });
 
-bot.action(/processclipping_(.+)/, async (ctx) => {
+bot.action(/clip_tweet_(.+)/, async (ctx) => {
   if (ctx.from.id !== myUserId) return;
   const num = ctx.match[1];
   const cache = clippingsCache.get(myUserId);
@@ -1475,7 +1475,22 @@ bot.action(/processclipping_(.+)/, async (ctx) => {
   
   const content = fs.readFileSync(filePath, 'utf-8');
   await ctx.answerCbQuery();
-  await processClippingContent(ctx, myUserId, filename, content);
+  await processClippingContent(ctx, myUserId, filename, content, 'tweet');
+});
+
+bot.action(/clip_wechat_(.+)/, async (ctx) => {
+  if (ctx.from.id !== myUserId) return;
+  const num = ctx.match[1];
+  const cache = clippingsCache.get(myUserId);
+  if (!cache || !cache[num]) return ctx.answerCbQuery('缓存已过期');
+  
+  const filename = cache[num];
+  const filePath = path.join(config.paths.workspace, 'Clippings', filename);
+  if (!fs.existsSync(filePath)) return ctx.answerCbQuery('文件不存在');
+  
+  const content = fs.readFileSync(filePath, 'utf-8');
+  await ctx.answerCbQuery();
+  await processClippingContent(ctx, myUserId, filename, content, 'wechat');
 });
 
 bot.action(/delclipping_(.+)/, async (ctx) => {
