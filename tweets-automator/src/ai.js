@@ -112,25 +112,28 @@ const wechatArticlePrompt = `
 `;
 
 async function fetchPexelsImage(query) {
-  const fallbackUrl = `https://image.pollinations.ai/prompt/${encodeURIComponent('Cinematic photography of ' + query + ', hyper realistic, highly detailed')}?width=800&height=400&nologo=true&model=flux`;
-
   if (!config.PEXELS_API_KEY) {
-    console.log('No PEXELS_API_KEY found, using fallback pollinations');
-    return fallbackUrl;
+    throw new Error('❌ 未配置 PEXELS_API_KEY。为了使用自动配图功能，请在 .env 文件中填入你的 Pexels API Key。');
   }
   try {
     const res = await fetch(`https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}&per_page=15&orientation=landscape`, {
       headers: { 'Authorization': config.PEXELS_API_KEY }
     });
+    
+    if (res.status === 401) {
+      throw new Error('❌ Pexels API Key 无效，请检查 .env 中的配置。');
+    }
+
     const data = await res.json();
     if (data.photos && data.photos.length > 0) {
       const photo = data.photos[Math.floor(Math.random() * data.photos.length)];
       return photo.src.large;
     }
   } catch (e) {
-    console.error('Pexels API error:', e);
+    console.error('Pexels API error:', e.message);
+    throw e;
   }
-  return fallbackUrl;
+  return '';
 }
 
 
@@ -142,8 +145,17 @@ async function processImagePlaceholders(content) {
   for (const match of matches) {
     const fullMatch = match[0];
     const query = match[1].trim();
-    const imageUrl = await fetchPexelsImage(query);
-    newContent = newContent.replace(fullMatch, `![${query}](${imageUrl})`);
+    try {
+      const imageUrl = await fetchPexelsImage(query);
+      if (imageUrl) {
+        newContent = newContent.replace(fullMatch, `![${query}](${imageUrl})`);
+      } else {
+        newContent = newContent.replace(fullMatch, `*(未找到关于 "${query}" 的图片，请尝试更换关键词)*`);
+      }
+    } catch (e) {
+      newContent = newContent.replace(fullMatch, `*(图片获取失败: ${e.message})*`);
+      console.error(e.message);
+    }
   }
   return newContent;
 }
