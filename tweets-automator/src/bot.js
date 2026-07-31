@@ -50,6 +50,10 @@ const isChatMode = new Map();
 const isWeChatMode = new Map();
 const pendingWechatDrafts = new Map();
 
+// In-memory store for clippings and context
+const clippingsCache = new Map();
+const activeListContext = new Map();
+
 // Scheduling state
 let lastScheduledTime = 0;
 let scheduleIntervalIndex = 0;
@@ -312,6 +316,7 @@ async function sendCachedNews(ctx) {
     return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
   }
   
+  activeListContext.set(ctx.from.id, 'news');
   let msg = "📰 <b>早报看板（缓存）</b>\n\n回复【数字序号】生成推文草稿：\n\n";
   let currentCategory = "";
   
@@ -676,6 +681,129 @@ bot.action('cancel_publish', async (ctx) => {
   await ctx.editMessageText('🚫 Cancelled publishing.');
 });
 
+async function processClippingContent(ctx, myUserId, filename, content) {
+  const parsed = matter(content);
+  let pureContent = parsed.content.trim();
+  if (pureContent.length > 5000) pureContent = pureContent.substring(0, 5000) + '... (已截断)';
+  const feedText = `标题: ${filename}\n内容: ${pureContent}`;
+
+  if (isWeChatMode.get(myUserId)) {
+    const loadingMsg = await ctx.reply(`🔄 [公众号模式] 正在提取【${filename}】并撰写微信公众号文章，请稍候...`);
+    try {
+      const article = await generateWeChatArticle(feedText);
+      const newMsgId = Date.now();
+      pendingWechatDrafts.set(newMsgId, article);
+      
+      let previewContent = article.content.replace(/<[^>]*>?/gm, '');
+      if (previewContent.length > 2500) previewContent = previewContent.substring(0, 2500) + '...\n\n(内容过长已截断)';
+      
+      await ctx.telegram.editMessageText(
+        ctx.chat.id,
+        loadingMsg.message_id,
+        undefined,
+        `✅ <b>公众号文章已生成！</b>\n\n<b>标题：</b>${article.title}\n\n<b>正文预览：</b>\n${previewContent}\n\n您想现在推送到草稿箱吗？(推送前请发送一张照片作为封面)`,
+        {
+          parse_mode: 'HTML',
+          reply_markup: {
+            inline_keyboard: [
+              [Markup.button.callback('🚀 准备推送到草稿箱', `push_wechat_${newMsgId}`)],
+              [Markup.button.callback('✏️ 更改文章', `edit_wechat_${newMsgId}`)],
+              [Markup.button.callback('🌐 同步到我的网站博客', `sync_wechat_blog_${newMsgId}`)],
+              [Markup.button.callback('❌ 取消', `cancel_wechat_${newMsgId}`)]
+            ]
+          }
+        }
+      );
+    } catch (e) {
+      console.error(e);
+      await ctx.telegram.editMessageText(ctx.chat.id, loadingMsg.message_id, undefined, `❌ 生成公众号文章失败: ${e.message}`);
+    }
+    return;
+  }
+
+  await ctx.reply(`🔄 正在提取【${filename}】并生成推文...`);
+  try {
+    const aiResults = await generateTweetsFromContent(feedText, '个人收藏');
+    for (let i = 0; i < aiResults.length; i++) {
+      const option = aiResults[i];
+      const newMsgId = Date.now() + i;
+      pendingTweets.set(newMsgId, option.content);
+      
+      const parts = option.content.split(/\r?\n---\r?\n/);
+      let preview;
+      if (parts.length > 1) {
+        preview = `🧵 Thread (${parts.length} 条)\n\n` + parts.map((p, idx) => `[${idx+1}/${parts.length}]\n${p.trim()}`).join('\n\n────────────\n\n');
+      } else {
+        preview = option.content;
+      }
+      
+      await ctx.reply(
+        `💡 Angle: ${option.angle}\n\n${preview}`,
+        Markup.inlineKeyboard([
+          [Markup.button.callback('🚀 发布', `post_${newMsgId}`)],
+          [Markup.button.callback('🧵 转为 Thread', `thread_${newMsgId}`)],
+          [Markup.button.callback('✏️ 修改', `edittweet_${newMsgId}`)],
+          [Markup.button.callback('📅 定时', `schedule_${newMsgId}`)]
+        ])
+      );
+    }
+  } catch (e) {
+    await ctx.reply(`❌ 生成失败: ${e.message}`);
+  }
+}
+
+bot.command('clippings', async (ctx) => {
+  if (ctx.from.id !== myUserId) return;
+  const clippingsDir = path.join(config.paths.workspace, 'Clippings');
+  if (!fs.existsSync(clippingsDir)) {
+    return ctx.reply('📭 Clippings 文件夹不存在。');
+  }
+  
+  const files = fs.readdirSync(clippingsDir)
+    .filter(f => f.endsWith('.md'))
+    .map(f => ({ name: f, time: fs.statSync(path.join(clippingsDir, f)).mtime.getTime() }))
+    .sort((a, b) => b.time - a.time)
+    .slice(0, 30)
+    .map(f => f.name);
+
+  if (files.length === 0) {
+    return ctx.reply('📭 Clippings 文件夹为空。');
+  }
+  
+  let msg = "📚 <b>本地收藏文章 (Clippings)</b>\n\n回复【数字序号】提取并生成推文/长文：\n\n";
+  const cacheMap = {};
+  
+  files.forEach((f, index) => {
+    const num = index + 1;
+    cacheMap[num] = f;
+    const title = f.replace('.md', '');
+    msg += `<b>[${num}]</b> ${title}\n`;
+  });
+  
+  clippingsCache.set(myUserId, cacheMap);
+  activeListContext.set(myUserId, 'clippings');
+  
+  const keyboard = [];
+  let row = [];
+  files.forEach((f, index) => {
+    const num = index + 1;
+    row.push(Markup.button.callback(`📄 详情: ${num}`, `viewclipping_${num}`));
+    if (row.length === 3) {
+      keyboard.push(row);
+      row = [];
+    }
+  });
+  if (row.length > 0) keyboard.push(row);
+  
+  await ctx.reply(msg, {
+    parse_mode: 'HTML',
+    reply_markup: {
+      inline_keyboard: keyboard
+    }
+  });
+});
+
+
 
 bot.on('text', async (ctx) => {
   if (ctx.from.id !== myUserId) return;
@@ -751,81 +879,100 @@ bot.on('text', async (ctx) => {
     }
   }
 
-  // Check for number wakeup (daily news)
+  // Check for number wakeup
   if (/^\d+$/.test(text.trim())) {
     const num = text.trim();
-    const cacheFile = path.join(config.paths.tweets.base, 'daily_news_cache.json');
-    if (fs.existsSync(cacheFile)) {
-      const cache = JSON.parse(fs.readFileSync(cacheFile, 'utf-8'));
-      if (cache[num]) {
-        const item = cache[num];
-        const feedText = `Title: ${item.title}\nLink: ${item.link}\nSnippet: ${item.snippet}`;
-        
-        if (isWeChatMode.get(myUserId)) {
-          const loadingMsg = await ctx.reply(`🔄 [公众号模式] 正在提取早报内容 [${num}] 并撰写微信公众号文章，请稍候...`);
-          try {
-            const article = await generateWeChatArticle(feedText);
-            const newMsgId = Date.now();
-            pendingWechatDrafts.set(newMsgId, article);
-            
-            let previewContent = article.content.replace(/<[^>]*>?/gm, '');
-            if (previewContent.length > 2500) previewContent = previewContent.substring(0, 2500) + '...\n\n(内容过长已截断)';
-            
-            await ctx.telegram.editMessageText(
-              ctx.chat.id,
-              loadingMsg.message_id,
-              undefined,
-              `✅ <b>公众号文章已生成！</b>\n\n<b>标题：</b>${article.title}\n\n<b>正文预览：</b>\n${previewContent}\n\n您想现在推送到草稿箱吗？(推送前请发送一张照片作为封面)`,
-              {
-                parse_mode: 'HTML',
-                reply_markup: {
-                  inline_keyboard: [
-                    [Markup.button.callback('🚀 准备推送到草稿箱', `push_wechat_${newMsgId}`)],
-                    [Markup.button.callback('✏️ 更改文章', `edit_wechat_${newMsgId}`)],
-                    [Markup.button.callback('🌐 同步到我的网站博客', `sync_wechat_blog_${newMsgId}`)],
-                    [Markup.button.callback('❌ 取消', `cancel_wechat_${newMsgId}`)]
-                  ]
+    const context = activeListContext.get(myUserId) || 'news';
+
+    if (context === 'clippings') {
+      const cache = clippingsCache.get(myUserId);
+      if (cache && cache[num]) {
+        const filename = cache[num];
+        const filePath = path.join(config.paths.workspace, 'Clippings', filename);
+        if (fs.existsSync(filePath)) {
+          const content = fs.readFileSync(filePath, 'utf-8');
+          await processClippingContent(ctx, myUserId, filename, content);
+        } else {
+           await ctx.reply(`❌ 文件不存在: ${filename}`);
+        }
+      }
+      return;
+    }
+
+    if (context === 'news') {
+      const cacheFile = path.join(config.paths.tweets.base, 'daily_news_cache.json');
+      if (fs.existsSync(cacheFile)) {
+        const cache = JSON.parse(fs.readFileSync(cacheFile, 'utf-8'));
+        if (cache[num]) {
+          const item = cache[num];
+          const feedText = `Title: ${item.title}\nLink: ${item.link}\nSnippet: ${item.snippet}`;
+          
+          if (isWeChatMode.get(myUserId)) {
+            const loadingMsg = await ctx.reply(`🔄 [公众号模式] 正在提取早报内容 [${num}] 并撰写微信公众号文章，请稍候...`);
+            try {
+              const article = await generateWeChatArticle(feedText);
+              const newMsgId = Date.now();
+              pendingWechatDrafts.set(newMsgId, article);
+              
+              let previewContent = article.content.replace(/<[^>]*>?/gm, '');
+              if (previewContent.length > 2500) previewContent = previewContent.substring(0, 2500) + '...\n\n(内容过长已截断)';
+              
+              await ctx.telegram.editMessageText(
+                ctx.chat.id,
+                loadingMsg.message_id,
+                undefined,
+                `✅ <b>公众号文章已生成！</b>\n\n<b>标题：</b>${article.title}\n\n<b>正文预览：</b>\n${previewContent}\n\n您想现在推送到草稿箱吗？(推送前请发送一张照片作为封面)`,
+                {
+                  parse_mode: 'HTML',
+                  reply_markup: {
+                    inline_keyboard: [
+                      [Markup.button.callback('🚀 准备推送到草稿箱', `push_wechat_${newMsgId}`)],
+                      [Markup.button.callback('✏️ 更改文章', `edit_wechat_${newMsgId}`)],
+                      [Markup.button.callback('🌐 同步到我的网站博客', `sync_wechat_blog_${newMsgId}`)],
+                      [Markup.button.callback('❌ 取消', `cancel_wechat_${newMsgId}`)]
+                    ]
+                  }
                 }
+              );
+            } catch (e) {
+              console.error(e);
+              await ctx.telegram.editMessageText(ctx.chat.id, loadingMsg.message_id, undefined, `❌ 生成公众号文章失败: ${e.message}`);
+            }
+            return;
+          }
+
+          await ctx.reply(`🔄 正在提取早报内容 [${num}] 并生成推文...`);
+          try {
+            const aiResults = await generateTweetsFromContent(feedText, item.category);
+            for (let i = 0; i < aiResults.length; i++) {
+              const option = aiResults[i];
+              const newMsgId = Date.now() + i;
+              pendingTweets.set(newMsgId, option.content);
+              
+              // Format preview: show thread parts with visual divider
+              const parts = option.content.split(/\r?\n---\r?\n/);
+              let preview;
+              if (parts.length > 1) {
+                preview = `🧵 Thread (${parts.length} 条)\n\n` + parts.map((p, idx) => `[${idx+1}/${parts.length}]\n${p.trim()}`).join('\n\n────────────\n\n');
+              } else {
+                preview = option.content;
               }
-            );
+              
+              await ctx.reply(
+                `💡 Angle: ${option.angle}\n\n${preview}`,
+                Markup.inlineKeyboard([
+              [Markup.button.callback('🚀 发布', `post_${newMsgId}`)],
+              [Markup.button.callback('🧵 转为 Thread', `thread_${newMsgId}`)],
+              [Markup.button.callback('✏️ 修改', `edittweet_${newMsgId}`)],
+                  [Markup.button.callback('📅 定时', `schedule_${newMsgId}`)]
+                ])
+              );
+            }
           } catch (e) {
-            console.error(e);
-            await ctx.telegram.editMessageText(ctx.chat.id, loadingMsg.message_id, undefined, `❌ 生成公众号文章失败: ${e.message}`);
+            await ctx.reply(`❌ 生成失败: ${e.message}`);
           }
           return;
         }
-
-        await ctx.reply(`🔄 正在提取早报内容 [${num}] 并生成推文...`);
-        try {
-          const aiResults = await generateTweetsFromContent(feedText, item.category);
-          for (let i = 0; i < aiResults.length; i++) {
-            const option = aiResults[i];
-            const newMsgId = Date.now() + i;
-            pendingTweets.set(newMsgId, option.content);
-            
-            // Format preview: show thread parts with visual divider
-            const parts = option.content.split(/\r?\n---\r?\n/);
-            let preview;
-            if (parts.length > 1) {
-              preview = `🧵 Thread (${parts.length} 条)\n\n` + parts.map((p, idx) => `[${idx+1}/${parts.length}]\n${p.trim()}`).join('\n\n────────────\n\n');
-            } else {
-              preview = option.content;
-            }
-            
-            await ctx.reply(
-              `💡 Angle: ${option.angle}\n\n${preview}`,
-              Markup.inlineKeyboard([
-            [Markup.button.callback('🚀 发布', `post_${newMsgId}`)],
-            [Markup.button.callback('🧵 转为 Thread', `thread_${newMsgId}`)],
-            [Markup.button.callback('✏️ 修改', `edittweet_${newMsgId}`)],
-                [Markup.button.callback('📅 定时', `schedule_${newMsgId}`)]
-              ])
-            );
-          }
-        } catch (e) {
-          await ctx.reply(`❌ 生成失败: ${e.message}`);
-        }
-        return;
       }
     }
   }
@@ -1290,11 +1437,79 @@ ${article.content}`;
 });
 
 
+bot.action(/viewclipping_(.+)/, async (ctx) => {
+  if (ctx.from.id !== myUserId) return;
+  const num = ctx.match[1];
+  const cache = clippingsCache.get(myUserId);
+  if (!cache || !cache[num]) return ctx.answerCbQuery('缓存已过期，请重新执行 /clippings');
+  
+  const filename = cache[num];
+  const filePath = path.join(config.paths.workspace, 'Clippings', filename);
+  if (!fs.existsSync(filePath)) return ctx.answerCbQuery('文件不存在');
+  
+  const content = fs.readFileSync(filePath, 'utf-8');
+  const parsed = matter(content);
+  let pureContent = parsed.content.trim();
+  if (pureContent.length > 1000) pureContent = pureContent.substring(0, 1000) + '...\n\n(以下已截断)';
+  
+  await ctx.answerCbQuery();
+  await ctx.reply(`📄 **${filename}**\n\n${pureContent}`, {
+    reply_markup: {
+      inline_keyboard: [
+        [Markup.button.callback('🚀 提取并生成', `processclipping_${num}`)],
+        [Markup.button.callback('🗑️ 删除此文章', `delclipping_${num}`)]
+      ]
+    }
+  });
+});
+
+bot.action(/processclipping_(.+)/, async (ctx) => {
+  if (ctx.from.id !== myUserId) return;
+  const num = ctx.match[1];
+  const cache = clippingsCache.get(myUserId);
+  if (!cache || !cache[num]) return ctx.answerCbQuery('缓存已过期');
+  
+  const filename = cache[num];
+  const filePath = path.join(config.paths.workspace, 'Clippings', filename);
+  if (!fs.existsSync(filePath)) return ctx.answerCbQuery('文件不存在');
+  
+  const content = fs.readFileSync(filePath, 'utf-8');
+  await ctx.answerCbQuery();
+  await processClippingContent(ctx, myUserId, filename, content);
+});
+
+bot.action(/delclipping_(.+)/, async (ctx) => {
+  if (ctx.from.id !== myUserId) return;
+  const num = ctx.match[1];
+  const cache = clippingsCache.get(myUserId);
+  if (!cache || !cache[num]) return ctx.answerCbQuery('缓存已过期');
+  
+  const filename = cache[num];
+  const filePath = path.join(config.paths.workspace, 'Clippings', filename);
+  if (fs.existsSync(filePath)) {
+    fs.rmSync(filePath);
+    
+    const repoRoot = path.join(__dirname, '..', '..');
+    const pat = process.env.GITHUB_PAT || '';
+    // Must quote the filename in git rm in case of spaces
+    const safeFilename = filename.replace(/(["\s'$`\\])/g,'\\$1');
+    const pushCmd = pat ? `git push https://${pat}@github.com/0-shang/yasi.git HEAD:main` : 'git push';
+    exec(`git rm "Clippings/${safeFilename}" && git commit -m "bot: deleted ${filename}" && git pull --rebase origin main && ${pushCmd}`, { cwd: repoRoot }, (err) => {
+      if (err) console.error('Git delete sync failed:', err.message);
+    });
+  }
+
+  await ctx.answerCbQuery('Deleted successfully.');
+  await ctx.editMessageText(`🗑️ 已成功删除本地和 GitHub 上的收藏文章：${filename}`);
+});
+
+
 bot.telegram.setMyCommands([
   { command: 'daily',   description: '📰 抓取最新全矩阵早报' },
   { command: 'refetch', description: '🔄 重新抓取（全部或单板块）' },
   { command: 'news',    description: '📋 一键唤出上次早报缓存' },
   { command: 'check',   description: '🚀 检查并发布草稿队列推文' },
+  { command: 'clippings', description: '📚 呼出收藏文章列表' },
   { command: 'chat',    description: '💬 切换为 闲聊模式' },
   { command: 'tweet',   description: '🐦 切换为 推文模式' },
   { command: 'mp',      description: '📝 切换为 微信公众号模式' },

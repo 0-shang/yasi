@@ -1,13 +1,17 @@
 const path = require('path');
 const fs = require('fs');
 
-// Load environment variables from .env file in the project root
-const envPath = path.resolve(__dirname, '../.env');
-if (fs.existsSync(envPath)) {
-  require('dotenv').config({ path: envPath });
+// 优先从用户执行命令的当前目录读取 .env
+const cwdEnvPath = path.resolve(process.cwd(), '.env');
+if (fs.existsSync(cwdEnvPath)) {
+  require('dotenv').config({ path: cwdEnvPath });
 } else {
-  // Try loading from current working dir as fallback
-  require('dotenv').config();
+  const envPath = path.resolve(__dirname, '../.env');
+  if (fs.existsSync(envPath)) {
+    require('dotenv').config({ path: envPath });
+  } else {
+    require('dotenv').config();
+  }
 }
 
 // Configuration options
@@ -33,10 +37,9 @@ const PEXELS_API_KEY = process.env.PEXELS_API_KEY;
 
 const RSS_FEED_URL = process.env.RSS_FEED_URL || 'https://news.ycombinator.com/rss';
 
-// Resolve workspaces and tweets directories
-const baseDir = path.resolve(__dirname, '..');
-const workspacePath = path.resolve(baseDir, process.env.WORKSPACE_PATH || '../');
-const tweetsBaseDir = path.resolve(baseDir, process.env.TWEETS_DIR || '../tweets/');
+// Resolve workspaces and tweets directories relative to user's current working directory
+const workspacePath = path.resolve(process.cwd(), process.env.WORKSPACE_PATH || './');
+const tweetsBaseDir = path.resolve(process.cwd(), process.env.TWEETS_DIR || './tweets/');
 
 const tweetsDir = {
   base: tweetsBaseDir,
