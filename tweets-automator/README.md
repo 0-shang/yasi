@@ -37,14 +37,29 @@
    cd path/to/my-second-brain
    ```
 
-### 步骤 2：一键初始化工具
+### 步骤 2：获取工具 (两种方式任选其一)
 
-在你的知识库文件夹中，直接运行以下命令（不需要手动下载代码）：
+#### 方式 A：NPM 全局安装 (极简模式，推荐)
+直接在你的知识库文件夹中，运行以下命令（不需要手动下载代码）：
 
 ```bash
 npx content-automator init
 ```
-*运行成功后，你的文件夹里会自动生成一个 `.env` 配置文件，接下来我们需要把各种“钥匙”填进去。*
+
+#### 方式 B：Git 源码克隆 (开发者模式)
+如果你想自己修改代码或者二次开发，可以直接克隆开源仓库：
+
+```bash
+git clone https://github.com/0-shang/content-automator.git
+cd content-automator
+npm install
+cp .env.example .env
+```
+*(注意：使用源码模式时，你需要在 `.env` 中手动配置 `WORKSPACE_PATH=你的知识库绝对路径`，并且下文所有的 `npx content-automator ...` 指令都可以用相应的 `node src/xxx.js` 替代)*
+
+---
+
+*无论使用哪种方式，完成后你都会得到一个 `.env` 配置文件，接下来我们需要把各种“钥匙”填进去。*
 
 ### 步骤 3：配置各种超能力 API (填写 `.env`)
 
@@ -88,8 +103,29 @@ npx content-automator bot
 
 ### 🚀 进阶：如何部署到 VPS 实现 24 小时永不宕机？
 
-如果你购买了便宜的云服务器 (VPS) 想要 24 小时挂机，你完全**不需要**用 Git 拉取源代码（因为你已经把它发布成了全局命令），只需这 3 步：
+如果你购买了便宜的云服务器 (VPS) 想要 24 小时挂机，你可以选择以下两种方式之一：
 
+#### 方案 A：使用 Docker 极速部署 (推荐 🌟)
+这是最干净、最省心的部署方式，自带后台守护与环境隔离。
+1. **获取代码**：
+   ```bash
+   git clone https://github.com/你的用户名/content-automator.git
+   cd content-automator
+   ```
+2. **准备知识库与环境**：
+   机器人需要读取你的笔记（燃料）。如果你已经在使用 GitHub、Syncthing 或 OSS 同步你的 Obsidian/Markdown 笔记，请把它们拉取/同步到 VPS 上。如果是全新开始，可以新建一个空文件夹：
+   ```bash
+   mkdir my-second-brain  # 或者 git clone 你的私有笔记仓库地址
+   # 然后新建并填写 .env 文件，填入你的各类 API Keys
+   ```
+3. **一键启动**：
+   ```bash
+   docker-compose up -d
+   ```
+   *(大功告成！你的机器人已经在后台静默运行。需要看日志随时执行 `docker logs -f content-automator-bot` 即可。)*
+
+#### 方案 B：使用 Node.js + PM2 部署
+如果你更熟悉原生 Node.js 全局命令模式，只需这 3 步：
 1. **环境准备**：在 VPS 终端用一行命令安装 Node.js（参考步骤 1），然后创建文件夹并初始化：
    ```bash
    mkdir my-ai-bot && cd my-ai-bot
