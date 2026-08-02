@@ -257,6 +257,7 @@ bot.action('mode_chat', async (ctx) => {
   if (ctx.from.id !== myUserId) return;
   isChatMode.set(myUserId, true);
   isWeChatMode.set(myUserId, false);
+  activeListContext.delete(myUserId);
   await ctx.answerCbQuery('已切换到闲聊模式');
   await ctx.reply("🤖 已切换到【闲聊模式】。在这个模式下，我会像一个普通的智能体助手一样与你对话，不会自动帮你生成推文。");
 });
@@ -265,6 +266,7 @@ bot.action('mode_tweet', async (ctx) => {
   if (ctx.from.id !== myUserId) return;
   isChatMode.set(myUserId, false);
   isWeChatMode.set(myUserId, false);
+  activeListContext.delete(myUserId);
   await ctx.answerCbQuery('已切换到推文模式');
   await ctx.reply("🐦 已切换回【推文生成模式】。你发送给我的任何想法都会被提炼为推文草稿。");
 });
@@ -273,6 +275,7 @@ bot.action('mode_mp', async (ctx) => {
   if (ctx.from.id !== myUserId) return;
   isWeChatMode.set(myUserId, true);
   isChatMode.set(myUserId, false);
+  activeListContext.delete(myUserId);
   await ctx.answerCbQuery('已切换到公众号模式');
   await ctx.reply("📝 已切换到【微信公众号模式】。你发送给我的任何主题，我都会自动为您撰写一篇图文并茂的公众号长文。");
 });
@@ -281,6 +284,7 @@ bot.command('chat', (ctx) => {
   if (ctx.from.id !== myUserId) return;
   isChatMode.set(myUserId, true);
   isWeChatMode.set(myUserId, false);
+  activeListContext.delete(myUserId);
   ctx.reply("🤖 已切换到【闲聊模式】。在这个模式下，我会像一个普通的智能体助手一样与你对话，不会自动帮你生成推文。");
 });
 
@@ -288,6 +292,7 @@ bot.command('tweet', (ctx) => {
   if (ctx.from.id !== myUserId) return;
   isChatMode.set(myUserId, false);
   isWeChatMode.set(myUserId, false);
+  activeListContext.delete(myUserId);
   ctx.reply("🐦 已切换回【推文生成模式】。你发送给我的任何想法都会被提炼为推文草稿。");
 });
 
@@ -295,6 +300,7 @@ bot.command('mp', (ctx) => {
   if (ctx.from.id !== myUserId) return;
   isWeChatMode.set(myUserId, true);
   isChatMode.set(myUserId, false);
+  activeListContext.delete(myUserId);
   ctx.reply("📝 已切换到【微信公众号模式】。你发送给我的任何主题，我都会自动为您撰写一篇图文并茂的公众号长文。");
 });
 
@@ -866,8 +872,8 @@ bot.on('text', async (ctx) => {
     }
   }
 
-  // Check for number wakeup
-  if (/^\d+$/.test(text.trim())) {
+  // Check for number wakeup — only intercept when a list (news/clippings) is active
+  if (/^\d+$/.test(text.trim()) && activeListContext.has(myUserId)) {
     const num = text.trim();
     const context = activeListContext.get(myUserId) || 'news';
 
@@ -894,6 +900,8 @@ bot.on('text', async (ctx) => {
         } else {
            await ctx.reply(`❌ 文件不存在: ${filename}`);
         }
+      } else {
+        await ctx.reply(`⚠️ 序号 [${num}] 不在收藏列表范围内，请重新输入。`);
       }
       return;
     }
@@ -970,6 +978,9 @@ bot.on('text', async (ctx) => {
           } catch (e) {
             await ctx.reply(`❌ 生成失败: ${e.message}`);
           }
+          return;
+        } else {
+          await ctx.reply(`⚠️ 序号 [${num}] 不在早报列表中，请检查序号是否正确。`);
           return;
         }
       }
