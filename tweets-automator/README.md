@@ -42,18 +42,25 @@
 
 只需简单的四步，即可在您的本地或服务器上搭建起这个强大的控制中心。
 
-#### 步骤 1：环境准备
+#### 步骤 1：环境与知识库准备
 - **安装 Node.js**：请确保您的计算机或服务器已安装 Node.js (推荐 v18 或以上版本)。可在 [Node.js 官网](https://nodejs.org/) 下载并安装。
-- **准备知识库**：在本地创建一个文件夹作为您的知识库（如 `my-second-brain`），机器人将以此目录为基础进行读写。
+- **定位知识库**：找到您本地现有的知识库文件夹（如您的 Obsidian Vault 根目录）。我们将把这个 Agent（智能体）直接“安装”到您的知识库中。
 
-#### 步骤 2：获取并初始化项目
-在您的知识库文件夹下，打开终端（命令行），运行以下命令以初始化项目：
+#### 步骤 2：注入 Agent 并初始化
+为了保持知识库的整洁，我们需要在知识库内部为这个 Agent 创建一个专属的“小房间”。
+
+在您的知识库根目录下，打开终端（命令行），运行以下命令来创建文件夹并进入：
+```bash
+mkdir content-automator
+cd content-automator
+```
+接着，在 `content-automator` 文件夹内运行初始化命令：
 ```bash
 npx content-automator init
 ```
 *(开发者也可选择通过 Git 克隆源码：`git clone https://github.com/0-shang/content-automator.git`)*
 
-运行后，项目目录会自动生成一个 `.env` 配置文件。
+运行后，项目目录会自动生成一个 `.env` 配置文件。由于我们在子目录中，默认配置中的路径 `../` 将完美指向您的知识库根目录！
 
 #### 步骤 3：配置核心 API (.env)
 使用任意文本编辑器打开 `.env` 文件，填入各项必须的 API 密钥：
@@ -114,18 +121,25 @@ Facing writer's block? Send a casual, trivial thought or inspiration to the bot.
 
 Set up your powerful command center in just four simple steps.
 
-#### Step 1: Environment Preparation
+#### Step 1: Environment & Knowledge Base Preparation
 - **Install Node.js**: Ensure Node.js (v18 or above recommended) is installed on your machine or VPS. Download it from the [official Node.js website](https://nodejs.org/).
-- **Prepare Knowledge Base**: Create a local directory for your knowledge base (e.g., `my-second-brain`), which the bot will use for read/write operations.
+- **Locate Knowledge Base**: Find your existing local knowledge base directory (e.g., your Obsidian Vault root). We will "install" this Agent directly into your knowledge base.
 
-#### Step 2: Project Initialization
-Open a terminal in your knowledge base directory and run:
+#### Step 2: Inject the Agent and Initialize
+To keep your knowledge base clean, we need to create a dedicated subfolder for this Agent.
+
+Open a terminal in your knowledge base root directory, and run the following commands to create the folder and enter it:
+```bash
+mkdir content-automator
+cd content-automator
+```
+Then, initialize the Agent inside the `content-automator` folder:
 ```bash
 npx content-automator init
 ```
 *(Alternatively, developers can clone the repository: `git clone https://github.com/0-shang/content-automator.git`)*
 
-This command initializes the environment and generates a `.env` configuration file.
+This command initializes the environment and generates a `.env` configuration file. Since we are in a subfolder, the default paths (`../`) in the config will perfectly point to your knowledge base root!
 
 #### Step 3: Core API Configuration (.env)
 Open the generated `.env` file with any text editor and fill in the required API keys:
