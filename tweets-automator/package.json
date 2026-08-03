@@ -1,6 +1,6 @@
 {
   "name": "content-automator",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Automated Twitter/X draft generator and publisher from Obsidian Markdown thoughts",
   "main": "src/generate.js",
   "bin": {
