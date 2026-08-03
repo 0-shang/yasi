@@ -1,6 +1,6 @@
 {
   "name": "content-automator",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Automated Twitter/X draft generator and publisher from Obsidian Markdown thoughts",
   "main": "src/generate.js",
   "bin": {
@@ -8,7 +8,7 @@
   },
   "scripts": {
     "generate": "node src/generate.js",
-    "publish": "node src/publish.js",
+    "post-tweets": "node src/publish.js",
     "watch": "node src/watch.js",
     "bot": "node src/bot.js",
     "daily": "node src/daily_news.js"

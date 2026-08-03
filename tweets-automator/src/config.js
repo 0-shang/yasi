@@ -55,7 +55,8 @@ function ensureDirs() {
     tweetsDir.base,
     tweetsDir.drafts,
     tweetsDir.published,
-    tweetsDir.failed
+    tweetsDir.failed,
+    path.join(workspacePath, 'Clippings')
   ];
 
   dirs.forEach(dir => {

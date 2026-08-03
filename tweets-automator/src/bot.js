@@ -219,7 +219,7 @@ cron.schedule('0 7-23 * * *', () => {
       // 如果继续发推，会导致机器人发出旧内容或者重复发推。
       return;
     }
-    exec('npm run publish', { cwd: automatorDir, env }, (err, stdout, stderr) => {
+    exec('npm run post-tweets', { cwd: automatorDir, env }, (err, stdout, stderr) => {
       if (err) {
         console.error('Hourly publish failed:', err.message);
         return;
@@ -625,7 +625,7 @@ bot.action(/pubfile_(.+)/, async (ctx) => {
     IGNORE_TIME_RESTRICTION: 'true'
   });
   
-  exec('npm run publish', { cwd: automatorDir, env }, (err, stdout, stderr) => {
+  exec('npm run post-tweets', { cwd: automatorDir, env }, (err, stdout, stderr) => {
     if (err) {
       return ctx.editMessageText(`❌ Failed to publish ${filename}:\n${err.message}\n\n${stderr}`);
     }
@@ -659,7 +659,7 @@ bot.action('publish_approved', async (ctx) => {
   });
   
   // Run the existing publish.js script
-  exec('npm run publish', { cwd: automatorDir, env }, (err, stdout, stderr) => {
+  exec('npm run post-tweets', { cwd: automatorDir, env }, (err, stdout, stderr) => {
     if (err) {
       return ctx.editMessageText(`❌ Failed to publish:\n${err.message}\n\n${stderr}`);
     }
