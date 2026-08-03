@@ -6,102 +6,142 @@
 
 ## 中文
 
-### 项目简介
-Content Automator 是一款高级的、全自动化的 AI 内容创作助手，旨在打破个人知识管理与内容输出之间的壁垒。专为内容创作者和知识工作者设计，该工具大幅降低了内容整理、生成与分发过程中的运营摩擦，使您能够专注于核心的灵感创作。
+### 告别内容焦虑，你的终极 Telegram 内容运营指挥中心
 
-### 设计初衷与核心功能
+**你在内容创作时是否面临这些痛点？**
+- 知识库里收藏了上百篇文章，却永远在吃灰，从未得到真正的阅读和利用。
+- 每天浏览大量科技、理财新闻，却无法将信息转化为可复用的内容资产。
+- 灵感一闪而过，但切换 AI 工具、排版、配图、多平台分发的繁琐流程直接杀死了创作欲。
 
-1. **移动端知识库随时阅读**
-   解决个人知识库中大量收藏文章未能及时阅读和利用的问题。该系统能随时将未读文章抓取并推送到手机端，实现随时随地阅读。
+**Content Automator 是一套为你量身打造的全自动化内容生产线。** 
+它抛弃了臃肿的网页后台，**将 Telegram 客户端化作你唯一的超级控制台**。只需一部手机，即可实现从“信息获取 - 深度阅读 - AI 创作 - 自动排版配图 - 一键发布”的极致丝滑过渡，让您的生产力实现真正的跃迁。
 
-2. **从阅读到创作的自动化转化**
-   实现生产力的跃迁。在阅读知识库文章后，系统可根据文章内容自动提炼，生成可直接发布的推文或微信公众号文章草稿。
+### 核心特性：为什么它不可替代？
 
-3. **定制化新闻资讯聚合**
-   实现新闻资讯的高度定制化。系统支持定向抓取科技、理财等各类题材的新闻，提供专属的信息流服务。
+#### 1. Telegram 即终端，打破平台壁垒
+这是本工具最核心的灵魂。所有操作全在 Telegram 内完成。你在手机上即可阅读本地知识库文章、审核 AI 生成的草稿、下发运营指令。随时随地，无需打开电脑即可掌控全盘，实现内容获取到产出的丝滑过渡。
 
-4. **内容批量生成与自动高质量配图**
-   将每日新闻高效转化为可复用的内容资产。系统支持根据新闻内容批量生产推文或公众号文章，并针对公众号文章自动匹配高质量配图，免除排版烦恼。
+#### 2. 唤醒沉睡的知识库：从阅读到创作的一体化
+系统自动抓取你知识库中未读的干货，推送到手机供你碎片化阅读。读完后，只需下达指令，机器人便会自动提炼文章精华，生成可直接发布的 Twitter 推文或微信公众号文章草稿。
 
-5. **一键多平台分发**
-   极大缩短内容运营过程中的琐碎时间。系统支持一键将生成的内容直接发布至 Twitter，或同步至微信公众号草稿箱，构建无缝的发布工作流。
+#### 3. 智能新闻源定制与批量生产
+告别信息过载。你可以定制专属资讯源（如科技、理财），机器人将每天为你抓取聚合，并根据新闻内容批量生成相关的推文矩阵或公众号文章。系统甚至会自动为公众号文章匹配高质量的封面配图，免去所有排版烦恼。
 
-6. **内嵌大模型全能工作区**
-   原生接入 DeepSeek 与 Gemini 等领先的大语言模型。切换至“闲聊模式”后，机器人可随时辅助解答各类问题。在创作过程中，免除在不同 AI 工具间频繁切换的时间成本。
+#### 4. 一键直达多平台发布流
+内容产出后，繁杂的分发工作交由程序完成。你在 Telegram 端点击确认，内容即刻一键发布至 Twitter，或同步存入微信公众号草稿箱，极大缩短内容运营的琐碎时间。
 
-7. **灵感捕捉与高质量推文生成**
-   彻底解决内容运营者灵感枯竭的痛点。在“推文生成模式”下，仅需发送日常琐碎的灵感片段，系统即可自动扩写并生成高质量的推文内容。
+#### 5. 无缝集成的全能 AI 智库
+原生接入 DeepSeek、Gemini 等顶级大语言模型。无需在创作中途跳出当前界面去打开其他 AI 工具，只需切换至“闲聊模式”，它就是无所不知的私人助理，随时为您答疑解惑、梳理逻辑。
 
-### 快速开始
+#### 6. 捕捉碎片灵感，生成专业爆款
+灵感枯竭时，只需向机器人发送一句简单的灵感或日常琐事，它即可在“推文生成模式”下自动扩写，生成高质量的专业内容，填补您的灵感空白。
 
-#### 1. 准备工作
-确保系统已安装 Node.js，并在本地准备好您的知识库目录。
+---
 
-#### 2. 安装与配置
-可通过 NPM 全局安装或克隆源码：
+### 详细安装与部署指南
+
+只需简单的四步，即可在您的本地或服务器上搭建起这个强大的控制中心。
+
+#### 步骤 1：环境准备
+- **安装 Node.js**：请确保您的计算机或服务器已安装 Node.js (推荐 v18 或以上版本)。可在 [Node.js 官网](https://nodejs.org/) 下载并安装。
+- **准备知识库**：在本地创建一个文件夹作为您的知识库（如 `my-second-brain`），机器人将以此目录为基础进行读写。
+
+#### 步骤 2：获取并初始化项目
+在您的知识库文件夹下，打开终端（命令行），运行以下命令以初始化项目：
 ```bash
 npx content-automator init
 ```
-系统将自动生成 `.env` 配置文件。您需要配置以下核心参数：
-- 大语言模型密钥 (GEMINI_API_KEY 或 DEEPSEEK_API_KEY)
-- 社交平台开发凭证 (Twitter API 凭证等)
-- Telegram 机器人控制凭证 (TELEGRAM_BOT_TOKEN 及 TELEGRAM_USER_ID)
+*(开发者也可选择通过 Git 克隆源码：`git clone https://github.com/0-shang/content-automator.git`)*
 
-#### 3. 启动服务
+运行后，项目目录会自动生成一个 `.env` 配置文件。
+
+#### 步骤 3：配置核心 API (.env)
+使用任意文本编辑器打开 `.env` 文件，填入各项必须的 API 密钥：
+
+1. **Telegram 机器人配置 (核心控制枢纽)**：
+   - 在 Telegram 中搜索 `@BotFather`，发送 `/newbot` 创建一个机器人，获取 **Bot Token** 填入 `TELEGRAM_BOT_TOKEN`。
+   - 搜索 `@userinfobot` 获取你个人的数字 ID，填入 `TELEGRAM_USER_ID`（确保只有你能控制该机器人）。
+2. **大模型配置 (提供智力引擎)**：
+   - 申请并填入 `DEEPSEEK_API_KEY` 或 `GEMINI_API_KEY`。
+3. **发布平台凭证 (用于一键发布)**：
+   - 若需发推，请在 Twitter Developer 平台申请 API Key 及 Access Token（需赋予读写权限）。
+   - 若需同步至公众号，请准备相应的微信开发者凭证（或按后续扩展文档操作）。
+
+#### 步骤 4：启动服务
 在终端执行以下命令启动常驻服务：
 ```bash
 npx content-automator bot
 ```
-服务启动后，您即可通过 Telegram 客户端随时进行远程交互与指令下发。
+看到成功提示后，服务即在后台运行。现在，您可以打开 Telegram 找到您刚刚创建的机器人，发送 `/start` 开始您的全自动化内容创作之旅！
 
 ---
 
 ## English
 
-### Introduction
-Content Automator is an advanced, fully-automated AI content creation assistant designed to bridge the gap between personal knowledge management and content output. Built for content creators and knowledge workers, this tool minimizes the operational friction involved in content curation, generation, and distribution, allowing you to focus entirely on creative ideation.
+### Overcome Content Anxiety: Your Ultimate Telegram Command Center
 
-### Core Capabilities & Design Intent
+**Are you facing these friction points in content creation?**
+- You have hundreds of saved articles in your personal knowledge base gathering dust, never to be read.
+- You consume daily tech and finance news but fail to convert them into reusable content assets.
+- You have a flash of inspiration, but the friction of switching AI tools, formatting, sourcing images, and publishing kills your drive.
 
-1. **Mobile Knowledge Accessibility**
-   Solve the issue of unread articles accumulating in your personal knowledge base. The system fetches saved articles and pushes them directly to your mobile device, enabling ubiquitous reading.
+**Content Automator is a fully-automated production line tailored for you.**
+It abandons bloated web dashboards and **turns your Telegram client into a unified super-console**. With just your smartphone, you achieve a seamlessly smooth workflow: Information Intake -> Deep Reading -> AI Generation -> Auto-formatting & Image Sourcing -> One-Click Distribution. Experience a true leap in productivity.
 
-2. **Automated Reading-to-Creation Workflow**
-   Achieve a leap in productivity. After reading an article from your knowledge base, the assistant automatically synthesizes the information to generate publish-ready Tweets or WeChat Official Account draft articles.
+### Core Highlights: Why is it Irreplaceable?
 
-3. **Customized News Curation**
-   Experience highly customized news aggregation. The system fetches daily news across various designated topics, such as technology and finance, providing a tailored information feed.
+#### 1. Telegram as the Ultimate Interface
+This is the soul of the project. Everything happens within Telegram. Read knowledge base articles, review AI-generated drafts, and issue operational commands right from your phone. Absolute control, anytime, anywhere, without opening a laptop, enabling a seamless transition from intake to output.
 
-4. **Batch Content Generation & High-Quality Auto-Sourcing for Media**
-   Transform daily news into reusable content assets efficiently. The system batch-generates Tweets or WeChat articles based on news topics and automatically sources high-quality cover images for WeChat articles, eliminating formatting efforts.
+#### 2. Revive Your Knowledge Base: From Reading to Output
+The system fetches unread gems from your knowledge base and pushes them to your phone for fragmented reading. Once read, a simple command instructs the bot to extract the essence and generate publish-ready Twitter threads or WeChat Official Account drafts.
 
-5. **One-Click Multi-Platform Distribution**
-   Drastically reduce trivial operational time. The system features one-click publishing directly to Twitter and synchronization to the WeChat Official Account draft box, constructing a seamless publishing workflow.
+#### 3. Intelligent News Curation & Batch Production
+Say goodbye to information overload. Define your customized news feeds (e.g., tech, finance). The bot aggregates them daily and batch-generates related tweet matrices or long-form WeChat articles. It even auto-fetches high-quality cover images for WeChat, eliminating formatting headaches.
 
-6. **Integrated LLM Workspace**
-   Natively powered by industry-leading large language models including DeepSeek and Gemini. By switching to 'Chat Mode', the assistant answers any queries on demand, saving the context-switching time between different AI tools during the creative process.
+#### 4. Frictionless Multi-Platform Distribution
+Once content is ready, the system handles the tedious distribution. Tap to approve in Telegram, and the content is instantly pushed live to Twitter or synced directly to your WeChat Drafts, drastically reducing trivial operational time.
 
-7. **Inspiration Capture & High-Quality Tweet Generation**
-   Overcome writer's block. In 'Tweet Generation Mode', you can input fragmented, trivial daily inspirations, and the system will automatically expand them into high-quality, professional Tweets.
+#### 5. Seamless Integrated LLM Omniscience
+Natively integrated with top-tier LLMs like DeepSeek and Gemini. Never switch context or open another AI app during your creative workflow. Simply switch to "Chat Mode" in Telegram, and the bot acts as an omniscient private assistant to answer questions and untangle logic on the fly.
 
-### Quick Start
+#### 6. Turn Fleeting Inspiration into Professional Output
+Facing writer's block? Send a casual, trivial thought or inspiration to the bot. In "Tweet Generation Mode," it automatically expands your ideas into professional, high-quality, and highly-engaging posts.
 
-#### 1. Prerequisites
-Ensure Node.js is installed on your system and your local knowledge base directory is prepared.
+---
 
-#### 2. Installation & Configuration
-Install globally via NPM or clone the repository:
+### Detailed Installation & Deployment Guide
+
+Set up your powerful command center in just four simple steps.
+
+#### Step 1: Environment Preparation
+- **Install Node.js**: Ensure Node.js (v18 or above recommended) is installed on your machine or VPS. Download it from the [official Node.js website](https://nodejs.org/).
+- **Prepare Knowledge Base**: Create a local directory for your knowledge base (e.g., `my-second-brain`), which the bot will use for read/write operations.
+
+#### Step 2: Project Initialization
+Open a terminal in your knowledge base directory and run:
 ```bash
 npx content-automator init
 ```
-The system will generate a `.env` configuration file. You need to provide the following parameters:
-- LLM API Keys (GEMINI_API_KEY or DEEPSEEK_API_KEY)
-- Social Media Developer Credentials (e.g., Twitter API keys)
-- Telegram Bot Credentials (TELEGRAM_BOT_TOKEN and TELEGRAM_USER_ID)
+*(Alternatively, developers can clone the repository: `git clone https://github.com/0-shang/content-automator.git`)*
 
-#### 3. Start the Service
-Run the following command in your terminal to start the background service:
+This command initializes the environment and generates a `.env` configuration file.
+
+#### Step 3: Core API Configuration (.env)
+Open the generated `.env` file with any text editor and fill in the required API keys:
+
+1. **Telegram Bot Setup (The Core Hub)**:
+   - Search for `@BotFather` on Telegram, send `/newbot` to create your bot, and get the **Bot Token**. Set it as `TELEGRAM_BOT_TOKEN`.
+   - Search for `@userinfobot` to get your personal numerical ID. Set it as `TELEGRAM_USER_ID` (ensuring only you can control the bot).
+2. **LLM Engine Configuration**:
+   - Provide your `DEEPSEEK_API_KEY` or `GEMINI_API_KEY`.
+3. **Publishing Platform Credentials**:
+   - For Twitter: Apply for an API Key and Access Token (with Read & Write permissions) via the Twitter Developer Portal.
+   - For WeChat: Prepare the relevant WeChat developer credentials.
+
+#### Step 4: Launch the Service
+Start the persistent background service by running:
 ```bash
 npx content-automator bot
 ```
-Once started, you can remotely control and issue commands to your assistant anytime via the Telegram client.
+Once you see the success message, the service is running. Open Telegram, find your newly created bot, send `/start`, and embark on your fully automated content creation journey!
